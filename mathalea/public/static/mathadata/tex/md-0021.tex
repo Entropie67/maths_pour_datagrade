@@ -1,0 +1,57 @@
+%source mathadata
+\begin{multicols}{2}
+		À chaque lancer, on regarde de quelle cible il est le plus proche : ce lancer est alors attribué à la joueuse correspondante. Cette joueuse marque un point. En cas d'égalité, aucun point n'est attribué. Au bout de 6 lancers, la joueuse ayant le plus de points a gagné.
+
+		\begin{center}
+			\includegraphics[scale=0.8]{images/dart2.png}
+		\end{center}
+	\end{multicols}
+
+	\begin{multicols}{2}
+
+		\begin{MADenumerate}
+
+			\item Retracer les points cibles $S$ et $A$ sur le nouveau graphique.
+
+			\item Tracer chaque lancer dans le repère, puis compléter le tableau ci-dessous. Pour les lancers marqués d'un $*$, calculer les deux distances avant de conclure.
+
+			\begin{center}
+				\begin{tabular}{|c|c|c|c|}
+					\hline
+					\rowcolor{floralwhite}
+					Lancer & Joueuse & Coordonnées & Point attribué à \\ \hline
+					1$*$   & Samia   & $(2;3)$     &                  \\ \hline
+					2      & Samia   & $(5;3)$     &                  \\ \hline
+					3$*$   & Alicia  & $(1;5)$     &                  \\ \hline
+					4$*$   & Samia   & $(2;4)$     &                  \\ \hline
+					5      & Alicia  & $(5;4)$     &                  \\ \hline
+					6      & Samia   & $(0;3)$     &                  \\ \hline
+				\end{tabular}
+			\end{center}
+
+			\item Qui a gagné la partie ?
+
+		\end{MADenumerate}
+
+		\columnbreak
+
+		\begin{figure}[H]
+			\centering
+			\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1cm,y=1cm,scale=0.8]
+				\begin{axis}[
+						x=1cm,y=1cm,
+						axis lines=middle,
+						ymajorgrids=true,
+						xmajorgrids=true,
+						xmin=-1,
+						xmax=7,
+						ymin=-1,
+						ymax=6,
+						xtick={-1,...,7},
+						ytick={-1,...,5},
+					]
+				\end{axis}
+			\end{tikzpicture}
+		\end{figure}
+
+	\end{multicols}

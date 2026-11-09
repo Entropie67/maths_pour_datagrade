@@ -1,0 +1,55 @@
+\begin{enumerate}
+    \item Si le nombre saisi est 2, on a successivement : \vskip-8mm
+       \begin{align*}
+          a &=2 \\
+          b &=2\times2+5 =9 \\
+          c &=5\times2-4 =6 \\
+          d &=9\times6 =54
+       \end{align*}
+       \con{Si l'utilisateur saisit 2, le programme A retourne le nombre 54}.
+    \item Si le nombre saisi est 1,15, on a successivement : \vskip-8mm
+       \begin{align*}
+          a &=1,15 \\
+          b &=2\times1,15+5 =7,3 \\
+          c &=5\times1,15-4 =1,75 \\
+          d &=7,3\times1,75 =12,775
+       \end{align*}
+       \con{Si l'utilisateur saisit 1,15, le programme A retourne le nombre 12,775}.
+    \item Pour un résultat nul, il faut avoir $d =0$, c'est à dire $b\times c =0$, soit $(2\times a+5)(5\times a-4) =0$. \par
+       \ResolEquation[Produit,Facteurs,Lettre=a]{2}{5}{5}{-4}
+       \con{Si le nombre demandé est $-\dfrac52$ ou $\dfrac45$, le résultat est nul.}
+    \item 
+       \begin{enumerate}
+          \item Si on choisit le nombre 3, on a successivement : \ProgCalcul[Ecart=12mm]{3,*2 +5 **2} \par
+             \con{Si le nombre choisi est 3, le nombre retourné est 121}. \smallskip
+          \item Si on choisit le nombre $\dfrac34$, on a successivement : \ProgCalcul[SansCalcul,Ecart=12mm]{\dfrac34,*2 +5 **2, \dfrac64=\dfrac32 \dfrac{13}{2} \dfrac{169}{4}} \par \smallskip
+             \con{Si le nombre choisi est $\dfrac34$, le nombre retourné est $\dfrac{169}{4}$}.
+       \end{enumerate}
+    \item
+       \begin{enumerate}
+          \item \con{La cellule \texttt{D2} permet de retrouver le résultat de la question 4.(a)}.
+          \item \con{Dans la cellule \texttt{A2}, on peut saisir la formule \texttt{=(A1*2+5)$\wedge$2}}.
+       \end{enumerate}
+    \item
+       \begin{enumerate}
+          \item Le programme B, appliqué à un nombre quelconque $x$ donne : \par \smallskip
+             \ProgCalcul[SansCalcul]{x,*2 +5 **2,2x 2x+5 (2x+5)^2} \par
+             Or, $(2x+5)^2 =0$ est équivalent à $2x+5 =0$ soit : \vskip-8mm
+             \ResolEquation{2}{5}{0}{0} \par
+             \con{Si le nombre choisi est $-\dfrac52$, le nombre retourné est 0}.
+          \item $-\dfrac52$ est un nombre écrit sous forme fractionnaire dans laquelle le numérateur et le dénominateur sont des nombres entiers relatif donc, \con{le nombre $-\dfrac52$ est un nombre rationnel}. \par
+          \item $-\dfrac52 =-2,5 =-\dfrac{25}{10}$ qui est une fraction dont le dénominateur est 10 donc, \con{le nombre $-\dfrac52$ est un nombre décimal}.
+       \end{enumerate}
+    \item Soit $x$ le nombre de départ choisi. On obtient les résultats suivants, en fonction de $x$ : \par
+       Pour le programme A : $(2x+5)(5x-4)$ \qquad Pour le programme B : $(2x+5)^2$ \par
+       Le résultat des deux programmes est le même si, et seulement si, $(2x+5)(5x-4) =(2x+5)^2$.
+       \begin{align*}
+          (2x+5)(5x-4) & = (2x+5)^2 \\
+          (2x+5)(5x-4)-(2x+5)^2 & = 0 \\
+          (2x+5)[(5x-4)-(2x+5)] & = 0 \\
+          (2x+5)(5x-4-2x-5) & = 0 \\
+          (2x+5)(3x-9) & = 0
+       \end{align*}
+       \ResolEquation[Produit,Facteurs,Entier,Simplification]{2}{5}{3}{-9}
+       \con{Si on entre les nombres $-\dfrac52$ ou 3, les deux programmes retournent la même valeur.}
+ \end{enumerate}

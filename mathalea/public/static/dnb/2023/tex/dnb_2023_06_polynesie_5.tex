@@ -1,0 +1,70 @@
+
+\medskip
+
+Un professionnel et un amateur vont faire une séance de karting sur la piste ci-dessous (représentée en traits pleins).
+
+Cette piste est constituée de segments, de demi-cercles et de quarts de cercles. 
+
+Le professionnel fait un tour de piste en $60$ secondes.
+
+L'amateur fait un tour de piste en $72$ secondes.
+
+
+\begin{center}
+\psset{unit=0.9cm}
+\begin{pspicture}(16.4,11.6)
+%\psgrid
+\psset{linewidth=1.3pt}
+\psline(3,0.6)(8.4,0.6)%CB
+\psline(9.8,2)(9.8,4.5)%AL
+\psline(11,5.9)(13.7,5.9)%KJ
+\psline(13.7,11.2)(9.6,11.2)%IH
+\psline(8.2,10)(8.2,7.3)%GF
+\psline(3,6)(7,6)%ED
+\psarc(8.4,2){1.4}{-90}{0}
+\psarc(11.2,4.5){1.4}{90}{180}
+\psarc(13.7,8.55){2.65}{-90}{90}
+\psarc(9.6,9.8){1.4}{90}{180}
+\psarc(6.8,7.4){1.4}{-90}{0}
+\psarc(3,3.3){2.7}{90}{270}
+\psset{linewidth=1pt}
+\psline[linestyle=dashed](3,0.6)(3,6)%CD
+\psline[linestyle=dashed](0.25,3.3)(3,3.3)
+\psline[linestyle=dashed](8.4,0.6)(8.4,2)(9.8,2)%BXA
+\psline[linestyle=dashed](9.8,4.5)(11,4.5)(11,5.9)%JXL
+\psline[linestyle=dashed](13.7,5.9)(13.7,11.2)%JI
+\psline[linestyle=dashed](13.7,8.55)(16.4,8.55)
+\psline[linestyle=dashed](9.6,11.2)(9.6,9.8)(8.2,9.8)%HXG
+\psline[linestyle=dashed](8.2,7.3)(7,7.3)(7,6)%FXE
+\psframe(3,3.3)(2.8,3.5)\psframe(7,7.3)(7.2,7.1)
+\psframe(13.7,8.55)(13.9,8.35) \psframe(11,4.5)(10.8,4.7)
+\psframe(8.4,2)(8.6,1.8)
+\uput[r](9.8,2){A} \uput[d](8.4,0.6){B} \uput[d](3,0.6){C} \uput[u](3,6){D \small (Départ)} 
+\uput[d](7,6){E} \uput[r](8.2,7.3){F} \uput[l](8.2,10){G} \uput[u](9.6,11.2){H} 
+\uput[u](13.7,11.2){I} \uput[d](13.7,5.9){J}  \uput[u](11,5.9){K} \uput[l](9.8,4.5){L}
+\psline(6.9,6.55)(7.1,6.55)\psline(7.6,7.2)(7.6,7.4)
+\psline(8.3,1.3)(8.5,1.3)\psline(9.1,1.9)(9.1,2.1)
+\psline(10.4,4.4)(10.4,4.6)\psline(10.9,5.2)(11.1,5.2)
+\psline(8.9,9.7)(8.9,9.9)\psline(9.5,10.5)(9.7,10.5)
+\psdots[dotstyle=+,dotangle=45,dotscale=2.2](14.9,8.55)(13.7,7.2)(13.7,9.9)(1.5,3.3)(3,1.8)(3,4.6)(8.2,8.5)(12.4,5.9)(9.8,3.25)
+\psdots[dotstyle=square*,dotscale=1.5](5,6)(11.85,11.2)% 90 m
+\uput[u](5,6){90~m}\uput[d](5.7,0.6){120~m}\uput[r](9.8,3.25){60~m}
+\uput[r](9.6,10.6){30~m}
+\end{pspicture}
+\end{center}
+
+\begin{enumerate}
+\item Montrer que la longueur de la piste est de \np{1045}~m, arrondie à l'unité près.
+
+Toute trace de recherche sera valorisée.
+\item Calculer la vitesse moyenne du professionnel en m/s. On arrondira au centième près.
+\item Pour des raisons de sécurité sur ce circuit, les amateurs ne doivent pas dépasser les $60$~km/h de moyenne. Cet amateur respecte-t-il les règles de sécurité ?
+\item Le professionnel et l'amateur partent en même temps de la ligne de départ et font plusieurs tours de circuit. 
+
+On rappelle que le professionnel effectue un tour en $60$~s et l'amateur en $72$~s.
+	\begin{enumerate}
+		\item Décomposer $60$ et $72$ en produit de facteurs premiers.
+		\item Au bout de combien de temps se retrouveront-ils pour la première fois sur la ligne de départ ensemble ?
+		\item Combien auront-ils alors effectué de tours chacun?
+	\end{enumerate}
+\end{enumerate}

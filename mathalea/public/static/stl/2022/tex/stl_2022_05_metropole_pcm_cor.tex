@@ -1,0 +1,46 @@
+
+\medskip
+
+\begin{enumerate}
+\item La \og courbe \fg{} semble avoir la droite d'équation $v = 0,96$ comme asymptote horizontale en $+\infty$, donc  la valeur de la vitesse limite $v_{\text{lim}}$  atteinte par la bille est de 0,96~m.s$^{-1}$.
+\end{enumerate}
+
+\begin{center}
+\psset{xunit=10cm,yunit=5cm,comma=true}
+\begin{pspicture}(-0.11,-0.15)(0.9,1.3)
+\multido{\n=0.00+0.02}{46}{\psline[linewidth=0.25pt,linecolor=orange](\n,0)(\n,1.2)}
+\multido{\n=0.00+0.04}{31}{\psline[linewidth=0.25pt,linecolor=orange](0,\n)(0.9,\n)}
+\psaxes[linewidth=1.25pt,Dx=0.1,Dy=0.2]{->}(0,0)(0,0)(0.9,1.3)
+\psdots[dotstyle=+,dotscale=1.5](0.04,0.29)(0.08,0.51)(0.12,0.63)(0.16,0.75)(0.2,0.82)
+(0.24,0.87)(0.28,0.89)(0.32,0.9)(0.36,0.91)(0.4,0.93)
+(0.44,0.93)(0.48,0.95)(0.52,0.95)(0.56,0.95)(0.60,0.96)
+(0.64,0.96)(0.68,0.95)(0.72,0.97)(0.76,0.96)(0.8,0.96)
+\rput(0.45,1.3){\textbf{Évolution de la vitesse de la bille au cours du temps}}
+\rput(0.45,-0.2){\textbf{temps (s)}}
+\rput{90}(-0.15,0.6){\textbf{vitesse (m.s$^{-1}$)}}
+%%% corrigé
+\psline[linecolor=red,linewidth=1.2pt](0,0.96)(0.9,0.96)
+\psplot[linecolor=blue,plotpoints=3000]{0}{0.8}{0.96 1 2.7183 -9 x mul exp sub mul}
+\end{pspicture}
+\end{center}
+
+\begin{enumerate}[start=5]
+\item On veut déterminer la fonction solution de l'équation différentielle $(E)$ s'annulant en $0$.
+
+\begin{list}{\textbullet}{}
+\item D'après le cours, l'équation différentielle $y'=-9y$ a pour solutions les fonctions $f$ définies par $f(t)=k \e^{-9t}$ où $k\in\R$.
+\item L'équation $y'=-9y+8,6$ a pour solution constante la fonction $t \longmapsto\dfrac{8,6}{9}$ soit environ $0,96$.
+\item L'équation $y'=-9y+8,6$ a donc pour solutions les fonctions $f$ définies par\\ $f(t)=k\e^{-9t}+0,96$, où $k\in\R$.
+\item La solution qui s'annule en 0 vérifie $k\e^{0}+0,96=0$, ce qui entraine que $k=-9,6$.
+\end{list}
+
+La fonction solution cherchée est donc la fonction $f$ définie par $f(t)=0,96 - 0,96\e^{-9t}$.
+
+\item $\ds\lim_{t\to +\infty} -9t = -\infty$ et $\ds\lim_{T\to -\infty} \e^{T}=0$ donc $\ds\lim_{t\to +\infty} \e^{-9t}=0$.
+
+On en déduit que $\ds\lim_{t\to +\infty} 1-\e^{-9t}=1$ et donc que $\ds\lim_{t\to +\infty} 0,96\left ( 1-\e^{-9t}\right ) =0,96$.
+\end{enumerate}
+
+\bigskip
+
+

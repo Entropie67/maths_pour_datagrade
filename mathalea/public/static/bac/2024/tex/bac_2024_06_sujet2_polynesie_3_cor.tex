@@ -1,0 +1,122 @@
+
+\medskip
+
+On considère la suite $\left(u_n\right)$ définie par : 
+
+\begin{center} $u_0 = 8$ \:  et pour tout entier naturel \:\:$n,\:\:~u_{n+1} = u_n -\ln\left(\dfrac{u_n}{4}\right)$.\end{center}
+
+\begin{enumerate}
+\item 
+	\begin{enumerate}
+		\item ~%Donner les valeurs arrondies au centième de $u_1$ et $u_2$.
+		
+$\bullet~u_1 = 8 - \ln 2 \approx 7,31$ ;
+		
+$\bullet~u_2 = 8 - \ln 2  \ln {8 - \ln 2}{4}- \approx 6,70$.
+
+		\item %On considère la fonction \texttt{mystere} définie ci-dessous en \textsf{Python}. On admet que, pour tout réel strictement positif \texttt{a}, \texttt{log(a)} renvoie la valeur du logarithme népérien de \texttt{a}.
+
+%\begin{center}
+%\begin{tabular}{|l|}\hline
+%def mystere(k) :\\
+%\qquad u = 8\\
+%\qquad S = 0\\
+%\qquad for i in range(k) :\\
+%\qquad \qquad S = S + u\\
+%\qquad \qquad u = u $-$ log( u / 4 )\\
+%\qquad return S\\ \hline
+%\end{tabular}
+%\end{center}
+	
+%L'exécution de \texttt{mystere(10)} renvoie \texttt{58.44045206721732}. Que représente ce résultat ?
+\texttt{mystere(10)} donne la somme des premiers termes de la suite de $u_0$ à $u_9$, soit 
+
+$u_0 + u_1 + \ldots + u_9 = \displaystyle\sum_{k=0}^n u_k$.
+		\item %Modifier la fonction précédente afin qu'elle renvoie la moyenne des $k$ premiers termes de la suite $\left(u_n\right)$.
+Il suffit en ligne 7 de remplacer S par (S /k)
+	\end{enumerate}
+\item %On considère la fonction $f$ définie et dérivable sur $]0~;~+\infty[$ par :
+
+\[ f(x) = x - \ln\left(\dfrac{x}{4}\right).\]
+
+%On donne ci-dessous une représentation graphique $\mathcal{C}_f$ de la fonction $f$ pour les valeurs de $x$ comprises entre 0 et 6.
+%	
+%\begin{center}
+%\psset{xunit=2cm,yunit=1.2cm,arrowsize=2pt 3}
+%\begin{pspicture}(-0.5,-0.25)(6.1,6.1)
+%\psgrid[gridlabels=0pt,subgriddiv=1,gridwidth=0.3pt]
+%\psaxes[linewidth=1.25pt,labelFontSize=\scriptstyle]{->}(0,0)(0,0)(6.1,6.1)
+%\psaxes[linewidth=1.25pt,labelFontSize=\scriptstyle](0,0)(0,0)(6.1,6.1)
+%\psplot[plotpoints=2000,linewidth=1.25pt,linecolor=red]{0.01}{6}{x  x 4 div ln sub}
+%\uput[u](5.5,5.2){\red $\mathcal{C}_f$}
+%\end{pspicture}
+%\end{center}
+	
+%Étudier les variations de $f$ sur $[0~;~+\infty[$ et dresser son tableau de variations.
+	
+%\emph{On précisera la valeur exacte du minimum de $f$ sur $[0~;~+\infty[$. Les limites ne sont pas demandées.}
+La fonction $f$ somme de fonctions dérivables sur $[0~;~+\infty[$ est dérivable et sur cet intervalle en posant $u(x) = \dfrac x4$, d'où $u'(x) = \dfrac14$,
+
+$f'(x) = 1 - \dfrac14 \times \dfrac{1}{\dfrac x4} = 1 - \dfrac14 \times 4 \dfrac 1x  = 1 - \dfrac 1x  = \dfrac{x - 1}{x}$
+
+Comme $x > 0$, le signe de $f'(x)$ est celui de $x - 1$ :
+
+$\bullet~$ si $0< x < 1$, alors $x - 1 < 0$  : la fonction $f$ est décroissante sur $]0~;~1[$ ;
+
+$\bullet~$ si $x > 1$, alors $x - 1 > 0$ : la fonction $f$ est croissante sur $–1~;~+ \infty[$
+
+$\bullet~$si $x = 1$, alors $f'(1) = 0$ et $f(1) = 1 - \ln \dfrac14 = 1 - (-\ln 4) = 1 + \ln 4$ est le minimum de la fonction $f$ sur $[0~;~+ \infty[$.
+\end{enumerate}
+
+Dans la suite de l'exercice, on remarquera que pour tout entier naturel $n$,\: $u_{n+1} = f\left(u_n\right)$.
+
+\begin{enumerate}[resume]
+\item 
+	\begin{enumerate}
+		\item %Démontrer, par récurrence, que pour tout entier naturel $n$, on a : 
+
+%		\[ 1 \leqslant u_{n+1} \leqslant u_n. \]
+\emph{Initialisation} : on a vu que $u_1 \approx 7,3$ et comme $u_0 = 8$, on a donc :
+
+\[1 \leqslant u_{1} \leqslant u_0\]
+l'encadrement est vrai au rang 0.
+
+\emph{Hérédité} : soit $n \in \N$, tel que  $1 \leqslant u_{n+1} \leqslant u_n$.
+
+On sait que sur l'intervalle $[1~;~+ \infty[$ la fonction $f$ est croissante, donc on a 
+
+$f(1) \leqslant f\left(u_{n+1}\right) \leqslant f\left(u_{n}\right)$ .
+
+Or $f(1) = 1 - \ln \dfrac14 \approx 2,39$, donc $f(1) \geqslant 1$ et on a 
+
+$1 \leqslant u_{n+2} \leqslant u_{n+1}$ : l'encadrement est vrai au rang $n + 1$.
+
+\emph{Conclusion} : l'encadrement est vrai au rang 0 et s'il est vrai au rang $n \in \N$ il l'est encore au rang suivant : d'après le principe de récurrence :
+
+pour tout entier naturel $n$, on a : $1 \leqslant u_{n+1} \leqslant u_n.$
+
+	\item L'encadrement précédent montre que : pour tout naturel $n$
+
+$\bullet~ u_{n+1} \leqslant u_n$ : la suite $\left(u_n\right)$ est décroissante ;
+
+$\bullet~ 1 \leqslant u_n$ :  la suite $\left(u_n\right)$ est minorée par 1.
+
+On sait qu'alors la suite $\left(u_n\right)$ converge vers une limite $\ell \geqslant 1$
+%		\item En déduire que la suite $\left(u_n\right)$ converge vers une limite réelle.
+
+%On note $\ell$ la valeur de cette limite. 
+%Par continuité de la fonction $f$ (car elle est dérivable sur $]0~;~+ \infty[$)
+		\item %Résoudre l'équation $f(x) = x$.
+$f(x) = x \iff x - \ln \left(\dfrac x4 \right) = x \iff 0 = \ln \left(\dfrac x4 \right) \iff \dfrac x4  = 1 \iff x = 4$.
+		\item %En déduire la valeur de $\ell$.
+Par continuité de la fonction $f$ (car elle est dérivable sur $]0~;~+ \infty[$), la relation 
+
+$u_{n+1} = u_n - \ln \left(\dfrac{u_n}{4}\right)$, donne puisque $\displaystyle\lim_{ n \to + \infty} u_n = \ell$ :
+
+$\ell = \ell - \ln \left(\dfrac{\ell}{4}\right)$ : d'après la question précédente $\ell = 4$.
+
+	\end{enumerate}
+\end{enumerate}
+
+\bigskip
+

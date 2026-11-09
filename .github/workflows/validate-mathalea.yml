@@ -17,6 +17,8 @@ jobs:
           node-version: '24.13.0'
       - name: Vérifier la copie amont
         run: node scripts/verify-upstream.mjs
+      - name: Vérifier les fichiers des annales
+        run: python scripts/verify-annales.py
       - name: Installer les dépendances verrouillées
         working-directory: mathalea
         run: |
@@ -51,11 +53,27 @@ jobs:
             sleep 2
           done
           node scripts/smoke-browser.mjs
+      - name: Tester les annales locales sans accès aux médias externes
+        shell: bash
+        run: |
+          set -euo pipefail
+          cd mathalea
+          env -u CI pnpm exec vite --config ../vite.annales-locales.config.mjs --port 5180 --strictPort > ../annales-serveur.log 2>&1 &
+          SERVER_PID=$!
+          trap 'kill "$SERVER_PID"' EXIT
+          cd ..
+          for attempt in $(seq 1 90); do
+            if curl --fail --silent http://localhost:5180/alea/ > /dev/null; then break; fi
+            sleep 2
+          done
+          node scripts/test-annales-locales.mjs
       - uses: actions/upload-artifact@v4
         if: always()
         with:
           name: validation-mathalea
           path: |
             validation/browser-smoke.json
+            validation/annales-browser.json
             validation/screenshots/
             serveur.log
+            annales-serveur.log

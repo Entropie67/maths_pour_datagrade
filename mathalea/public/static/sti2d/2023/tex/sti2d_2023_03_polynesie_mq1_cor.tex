@@ -1,0 +1,32 @@
+
+\medskip
+
+\begin{enumerate}
+\item On a $f(x) = \dfrac{x}{\e^x}$; or on sait que $\displaystyle\lim_{x \to + \infty}  \dfrac{\e^x}{x} = + \infty$, donc $\displaystyle\lim_{x \to + \infty}  \dfrac{x}{\e^x} = 0$.
+\item La fonction $f$ produit de deux fonctions dérivables sur $\R$ est dérivable en particulier sur $[0~;~ +\infty[$ et sur cet intervalle, en dérivant comme un produit :
+$f'(x) = 1\e^{-x} - 1\times x\e^{-x} = \e^{-x} (1 - x)$.
+\item On sait que quel que soit $x \in [0~;~ +\infty[$, \: $\e^{- x} > 0$ : le signe de $f'(x)$ est donc celui de $1 - x$ :
+
+$\bullet~~1 - x > 0 \iff 1 > x$ : on a donc $f'(x) > 0$ sur $[0~;~1[$ ; la fonction est croissante sur $[0~;~1[$ ;
+
+$\bullet~~1 - x < 0 \iff 1 < x$ : on a donc $f'(x) < 0$ sur $[1~;~+\infty]$ ; la fonction est décroissante sur $[1~;~+\infty]$ ;
+
+$\bullet~~1 - x = 0 \iff 1 = x$ : on a donc $f'(1) = 0$ ; la fonction $f$ a un maximum en 1 égal à $f(1) = 1\e^{-1} = \dfrac{1}{\text{e}} \approx 0,368$.
+
+$\bullet~~$D'autre part $f(0) = 0 \times \e^{0} = 0 \times 1 = 0$. D'où le tableau de variations :
+
+\begin{center}
+\psset{unit=1cm,arrowsize=2pt 3}
+\begin{pspicture}(7,2.5)
+\psframe(7,2.5)\psline(0,1.5)(7,1.5)\psline(0,2)(7,2)\psline(1,0)(1,2.5)
+\uput[u](0.5,1.9){$x$} \uput[u](1.15,1.9){$0$} \uput[u](4,1.9){$1$} \uput[u](6.5,1.9){$+\infty$} 
+\rput(0.5,1.75){$f'(x)$}\rput(2.5,1.75){$+$}\rput(4,1.75){0}\rput(5.5,1.75){$-$}
+\uput[u](1.15,0){0}\uput[d](4,1.5){$\e^{-1}$}\uput[u](6.5,0){0}
+\psline{->}(1.5,0.5)(3.5,1)\psline{->}(4.5,1.)(6.5,0.5)
+\rput(0.5,0.75){$f(x)$}
+\end{pspicture}
+\end{center}
+\end{enumerate}
+
+\bigskip
+

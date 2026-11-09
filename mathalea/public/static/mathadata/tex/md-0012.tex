@@ -1,0 +1,89 @@
+%source mathadata
+\begin{multicols}{2}
+
+		Le plan est séparé en trois zones A, B et C.
+
+		La droite $\mathcal{D}$ représentant la frontière entre les zones A et B admet pour équation $y=2x+40$.
+		\begin{MADenumerate}
+
+			\item \begin{enumerate}
+				\item
+				      Placer le point $M(20 ~;~80)$.
+				\item Remplacer dans l'équation $y=2x+40$ la variable $x$ par la valeur $x_M=20$. Que remarque-t-on ?
+			\end{enumerate}\label{refquestion1}
+			\item Reprendre les questions \ref{refquestion1}(a) et \ref{refquestion1}(b) pour les points $N(40 ~;~120)$, $P(60 ~;~80)$ et $Q(0 ~;~100)$.
+			\item Pouvez-vous déterminer si le point $R(100 ~;~230)$ est sur la droite $\mathcal{D}$ ? Justifier.
+			\item Le point $S(45 ~;~y_S)$ est sur la droite $\mathcal{D}$. Calculer l'ordonnée $y_S$ du point S.
+		\end{MADenumerate}
+
+		\columnbreak
+
+		\begin{tikzpicture}[scale=1]
+			\begin{axis}[
+					name=plotA,
+					axis lines=middle,
+					ymajorgrids=true,
+					xmajorgrids=true,
+					xmin=-1.1,
+					xmax=180,
+					ymin=-0.1,
+					ymax=180,
+					xtick={20,40,...,180},
+					ytick={20,40,...,180},
+					xlabel={\Large {\color{red} $x$}},
+					xlabel style={at={(axis description cs:1.02,-0.1)}, anchor=north},
+					ylabel={\color{blue}{\Large $y$}},
+					ylabel style={at={(axis description cs:-0.2,1.02)}, anchor=west},
+				]
+				% Coordonnées cohérentes dans le repère (0 à 180)
+				\node (A) at (0,0){};
+				\node (B) at (180,90){};
+				\node (C) at (180,0){};
+				\node (D) at (0,0){};
+				\draw[thick,pattern=checkerboard, pattern color=BleuCeladon,opacity=0.2] (A.center) -- (B.center) -- (C.center) -- (D.center) -- cycle;
+				\draw[thick,color=black] (A.center) -- (B.center) ;
+
+				\node (A) at (0,0){};
+				\node (B) at (0,40){};
+				\node (C) at (180,400){};
+
+				\node (D) at (180,90){};
+				\draw[thick,pattern=bricks, pattern color=OrangeCarotte,opacity=0.2] (A.center) -- (B.center) -- (C.center) -- (D.center) -- cycle;
+
+				\draw[thick,color=black] (A.center) -- (B.center) ;
+
+				\node (A) at (0,40){};
+				\node (B) at (180,400){};
+				\node (C) at (0,400){};
+
+				\draw[thick,pattern=dots, pattern color=VertMenthe,opacity=0.5] (A.center) -- (B.center) -- (C.center) -- cycle;
+				% Nouvelle légende claire et alignée
+				\begin{scope}[shift={(4,6)}]
+					% Encadré autour de la légende, placé à la position (150, 100)
+					\node[draw, rounded corners, fill=white] (legend) at (150, 140) {
+						\begin{tikzpicture}[scale=0.7]
+							% Rectangle zone A (orange, motif briques)
+							\draw[thick,pattern=checkerboard, pattern color=BleuCeladon, opacity=0.2] (0,-60) rectangle (20,-40);
+							\node[anchor=west] at (20.2,10) {zone A};
+							% Rectangle zone B (bleu, motif damier)
+							\draw[thick,pattern=bricks, pattern color=OrangeCarotte, opacity=0.2] (0,-30) rectangle (20,-10);
+							\node[anchor=west] at (20.2,-20) {zone B};
+							% Rectangle zone C (vert, motif points)
+							\draw[thick,pattern=dots, pattern color=VertMenthe, opacity=0.5] (0,0) rectangle (20,20);
+							\node[anchor=west] at (20.2,-50) {zone C};
+						\end{tikzpicture}
+					};
+				\end{scope}
+			\end{axis}
+			\draw (0,0) node[below left]{\footnotesize $O$};
+			%\clip(-0.2,-0.2) rectangle (8,6);
+		\end{tikzpicture}
+	\end{multicols}
+	\begin{MADenumerate}[5]
+
+		\item Parmi les équations suivantes, lesquelles sont des équations possibles pour la droite frontière entre les zones B et C ? Justifiez votre réponse.
+		\begin{center}
+			$y=2x+20 \quad y=2x \quad y=0,5x+10 \quad y=0,5x \quad 2y=x$
+		\end{center}
+		\textit{Aide : Vous pouvez utiliser les coordonnées d'un point sur la droite et vérifier si elles vérifient l'équation.}
+	\end{MADenumerate}

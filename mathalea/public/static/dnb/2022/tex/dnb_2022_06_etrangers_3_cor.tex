@@ -1,0 +1,70 @@
+
+\medskip
+
+On considère la figure suivante, où toutes les longueurs sont données en centimètre. Les points C, A et E sont alignés et les points B, A et D sont alignés. 
+
+\emph{La figure n'est pas représentée en vraie grandeur.}
+
+\begin{center}
+\psset{unit=0.9cm}
+\begin{pspicture}(7.5,4.4)
+%\psgrid
+\psline(0,0.2)(7.4,0.2)\psline(0,4)(7.4,4)
+\psline(0,0)(7.3,4.3)\psline(2.2,0)(2.2,4.2)
+\uput[l](2.1,2.7){9,6}\uput[dr](4.5,2.7){19,2}
+\uput[ul](1.2,0.8){8}\rput(1.8,0.7){$60\degres$}
+\psframe(2.2,0.2)(2,0.4)
+\uput[ur](2.2,0.9){A} \uput[ur](2.2,0.2){B} \uput[ul](0.2,0.2){C} \uput[u](2.2,4){D} \uput[ul](7,4){E}\psarc(2.2,1.3){0.4}{210}{270}
+\end{pspicture}
+\end{center}
+
+\begin{enumerate}
+\item %Prouver que le segment [AB] mesure 4 cm.
+Le triangle ABC est rectangle en B donc
+$\cos \left ( \widehat{\text{BAC}} \right )=\dfrac{\text{AB}}{\text{AC}}$.
+
+Or $\widehat{\text{BAC}}=60\degres{}$ et $\cos \left (60\degres{}\right )=\dfrac{1}{2}$.
+De plus $\text{AC}=8$.
+
+Donc
+$\dfrac{1}{2}= \dfrac{\text{AB}}{8}$
+donc $\text{AB}=4$.
+Le segment [AB] mesure 4 cm.
+
+\item% En utilisant la question précédente, démontrer que les droites (BC) et (DE) sont parallèles.
+Les points B, A, D d'une part, et C, A, E d'autre part sont alignés dans cet ordre.
+
+$\dfrac{\text{AD}}{\text{AB}} = \dfrac{9,6}{4}=2,4$
+et
+$\dfrac{\text{AE}}{\text{AC}} = \dfrac{19,2}{8}=2,4$
+donc
+$\dfrac{\text{AD}}{\text{AB}} = \dfrac{\text{AE}}{\text{AC}}$.
+
+D'après la réciproque du théorème de Thalès, on peut en conclure que les droites (BC) et (DE) sont parallèles.
+
+\item% En déduire que la droite (DB) est perpendiculaire à la droite (DE).
+La droite (DB) est perpendiculaire à la droite (BC), et les droites (BC) et (DE) sont parallèles.
+Or, quand deux droites sont parallèles, toute droite perpendiculaire à l'une est perpendiculaire à l'autre.
+
+On en déduit que  la droite (DB) est perpendiculaire à la droite (DE).
+
+\item L'aire du triangle ADE, rectangle en D, est:
+$\dfrac{\text{DE}\times \text{AD}}{2}$; on calcule DE.
+
+Le triangle ADE est rectangle en D donc, d'après le théorème de Pythagore, on a:
+
+$\text{AE}^2 = \text{AD}^2 + \text{DE}^2$
+donc
+$19,2^2 = 9,6^2 + \text{DE}^2$ 
+donc
+$\text{DE}^2 = 276,48$ donc $\text{DE}= \ds\sqrt{276,48}$
+
+$\dfrac{\text{DE}\times \text{AD}}{2}=\dfrac{\ds\sqrt{276,48}\times 9,6}{2}
+\approx 80$
+
+L'aire du triangle ADE vaut environ 80~cm$^2$.
+
+\end{enumerate}
+
+%\bigskip
+

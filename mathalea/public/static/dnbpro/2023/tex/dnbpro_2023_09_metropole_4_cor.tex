@@ -1,0 +1,139 @@
+
+\vspace{0.25cm}
+
+Dans un jeu vidéo réalisé avec le logiciel Scratch, l'avatar d'un joueur au maillot foncé prend le ballon à la sortie d'une mêlée puis se déplace vers la zone grisée. 
+La partie est gagnée lorsque l'avatar entre dans la zone grisée en évitant les autres joueurs.
+
+%Les programmes 1, 2 et 3 ci-dessous simulent différents chemins du joueur qui se déplace.
+
+\begin{enumerate}
+\item On trace en tirets rouges sur le graphique ci-dessous le chemin parcouru par l'avatar du joueur lorsqu'on utilise le programme 3.
+
+%La ressource d'aide ci-dessous précise les commandes  \og s'orienter \fg{}  et \og tourner \fg{}.
+
+\smallskip
+
+\begin{tabularx}{\linewidth}{ |*3{>{\centering\arraybackslash} X|}}
+\hline
+\textbf{Programme 1} & $\blue\text{\bf Programme 2}$ & $\red\text{\bf Programme 3}$\\
+\hline
+&&\\
+\scalebox{0.8}{
+\begin{scratch}
+\blockinit{quand \greenflag est cliqué}
+\blockmove{aller à x: \ovalnum{20} y: \ovalnum{20}}
+\blockmove{s'orienter à \ovalnum{90}}
+\blockmove{avancer de \ovalnum{120} pas}
+\blockmove{tourner \turnleft{} de \ovalnum{90} degrés}
+\blockmove{avancer de \ovalnum{40} pas}
+\blockmove{tourner \turnright{} de \ovalnum{90} degrés}
+\blockmove{avancer de \ovalnum{20} pas}
+\blockmove{tourner \turnleft{} de \ovalnum{90} degrés}
+\blockmove{avancer de \ovalnum{20} pas}
+\end{scratch}}
+&
+\scalebox{0.8}{
+\begin{scratch}
+\blockinit{quand \greenflag est cliqué}
+\blockmove{aller à x: \ovalnum{20} y: \ovalnum{20}}
+\blockmove{s'orienter à \ovalnum{90}}
+\blockmove{avancer de \ovalnum{40} pas}
+\blockmove{tourner \turnleft{} de \ovalnum{90} degrés}
+\blockmove{avancer de \ovalnum{80} pas}
+\blockmove{tourner \turnright{} de \ovalnum{90} degrés}
+\blockmove{avancer de \ovalnum{40} pas}
+\blockmove{tourner \turnleft{} de \ovalnum{90} degrés}
+\blockmove{avancer de \ovalnum{90} pas}
+\end{scratch}}
+&
+\scalebox{0.8}{
+\begin{scratch}
+\blockinit{quand \greenflag est cliqué}
+\blockmove{aller à x: \ovalnum{20} y: \ovalnum{20}}
+\blockmove{s'orienter à \ovalnum{90}}
+\blockmove{avancer de \ovalnum{80} pas}
+\blockmove{tourner \turnleft{} de \ovalnum{90} degrés}
+\blockmove{avancer de \ovalnum{80} pas}
+\blockmove{tourner \turnright{} de \ovalnum{90} degrés}
+\blockmove{avancer de \ovalnum{100} pas}
+\blockmove{tourner \turnleft{} de \ovalnum{90} degrés}
+\blockmove{avancer de \ovalnum{20} pas}
+\end{scratch}}\\
+&&\\
+\hline
+\end{tabularx}
+
+\smallskip
+
+%\begin{center}
+%\textbf{Ressources}
+%\end{center}
+%
+%\setlength{\columnseprule}{1pt}
+%\begin{multicols}{2}
+%\begin{center}
+%\begin{scratch}\blockmove{s'orienter à \ovalnum{90}}\end{scratch}
+%\parbox{3cm}{\psset{unit=0.7cm,arrowsize=2pt 1}
+%\begin{pspicture}(-2,-2)(2,2)
+%%\psgrid
+%\psframe[fillstyle=solid,fillcolor=gray!70,linecolor=gray!70](-1.7,-1.7)(1.7,1.7)
+%\pspolygon[fillstyle=solid,fillcolor=gray!70,linecolor=gray!70](-0.3,1.7)(0,2)(0.3,1.7)
+%\pscircle[fillstyle=solid,fillcolor=gray,linecolor=gray](0,0){1.2}
+%\pswedge[fillstyle=solid,fillcolor=gray!50,linecolor=gray!50](0,0){1.2}{0}{90}
+%\multido{\i=0+15}{24}{\psline[linecolor=white](0.9;\i)(1.1;\i)}
+%\psline[linecolor=white,linewidth=1.5pt](0,1.2)(0,0)(1.2,0)
+%\psdots[dotscale=1.5,linecolor=white](0,0)
+%\pscircle[fillstyle=solid,fillcolor=white,linecolor=white](1.2,0){0.3}
+%\psline[linewidth=1.5pt]{->}(1,0)(1.4,0)
+%\end{pspicture}}
+%
+%\smallskip
+%
+%\emph{Le joueur s'oriente pour courir\\ dans le sens de la flèche}
+%\end{center}
+%
+%\columnbreak
+%
+%\begin{center}
+%
+%\vspace*{0.48cm}
+%
+%\begin{scratch}\blockmove{tourner \turnleft{} de \ovalnum{90} degrés}\end{scratch}
+%
+%\smallskip
+%
+%\emph{Le joueur tourne de 90\degres{} \\
+%dans le sens de la flèche}
+%\end{center}
+%\end{multicols}
+
+\item On trace en bleu sur le graphique le chemin du programme 2 permettant à l'avatar de gagner.
+
+%\textbf{Remarque} : Les chemins des 3 programmes se superposent en début de parcours.
+
+{\psset{unit=0.05cm}
+\begin{pspicture*}(-20,-40)(230,220)
+\psframe[fillstyle=solid,fillcolor=lightgray!30](0,180)(220,200)
+\psgrid[unit=1cm,subgriddiv=5,  gridlabels=0, subgridcolor=lightgray!40,gridcolor=lightgray](0,0)(11,10)
+\psaxes[labelFontSize=\scriptstyle,arrowsize=3pt 3, ticksize=-2pt 2pt,Dx=20,Dy=20]{->}(0,0)(-19,-10)(220,200)
+\uput[d](220,0){\scriptsize $x$} \uput[l](0,200){\scriptsize $y$}
+\uput[r](-10,210){\scriptsize\textbf{Nombre de pas : déplacement vertical}}
+\uput[l](215,-15){\scriptsize\textbf{Nombre de pas : déplacement horizontal}}
+\psset{dotstyle=+,dotscale=1,linecolor=black,linewidth=5pt}
+\psdots(39,38)(108,30)(150,24)(190,12)
+\psset{dotstyle=+,linecolor=gray}
+\psdots(39,53)(80,60)(120,60)(160,80)(20,100)(60,120)(200,120)
+\psset{dotstyle=x,linecolor=red}
+\psdots(20,20)
+\uput[u](160,184){\textbf{ZONE GRISÉE}}  
+%%%%%%%%%%%%%%
+\psline[linestyle=dashed,linewidth=2pt](20,20)(100,20)(100,100)(200,100)(200,120)
+\uput[u](150,100){\red\scriptsize programme 3}
+\psline[linecolor=blue,linewidth=1.2pt](20,20)(60,20)(60,100)(100,100)(100,190)
+\uput[r](100,150){\blue\scriptsize programme 2}
+\uput[d](20,18){\red\scriptsize départ}
+\end{pspicture*}}
+
+\end{enumerate}
+
+

@@ -1,0 +1,136 @@
+
+\textbf{Principaux domaines abordés :} suites, fonctions, primitives
+
+\medskip
+
+%\emph{Cet exercice est un questionnaire à choix multiples.\\
+%Pour chacune des questions suivantes, une seule des quatre réponses proposées est exacte.\\
+%Une réponse fausse, une réponse multiple ou l'absence de réponse à une question ne rapporte ni n'enlève de point.\\
+%Pour répondre, indiquer sur la copie le numéro de la question et la lettre de la réponse choisie.\\
+%Aucune justification n'est demandée.}
+%
+%\medskip
+
+\begin{enumerate}
+\item %On considère la suite $\left(u_n\right)$ définie pour tout entier naturel $n$ par
+
+\[u_n = \dfrac{(- 1)^n}{n + 1}.\]
+
+%On peut affirmer que:
+%\begin{center}
+%\begin{tabularx}{\linewidth}{X X}
+%\textbf{a.~~} la suite $\left(u_n\right)$ diverge vers $+\infty$. &\textbf{b.~~} la suite $\left(u_n\right)$ diverge vers $-\infty$.\\
+%\textbf{c.~~}  la suite $\left(u_n\right)$ n'a pas de limite. &\textbf{d.~~} la suite $\left(u_n\right)$ converge.
+%\end{tabularx}
+%\end{center}
+On a $- 1 \leqslant (- 1)^n \leqslant 1$, donc puisque $n+1 \geqslant 1 > 0$ et que $\dfrac{1}{n  1} > 0$, on en déduit que pour tout naturel :
+
+\[- \dfrac{1}{n+1} \leqslant u_n \leqslant \dfrac{1}{n+1}\]
+
+La suite $\left(u_n\right)$ encadrée par deux suites ayant pour limite 0 a pour limite 0.
+\begin{center} \decosix \decosix \decosix  \end{center}
+\end{enumerate}
+
+Dans les questions 2 et 3, on considère deux suites $\left(v_n\right)$  et $\left(w_n\right)$ vérifiant la relation : 
+
+\[w_n = \e^{- 2v_n} + 2.\]
+
+%\begin{enumerate}[resume]
+%\item  Soit $a$ un nombre réel strictement positif. On a $v_0 = \ln (a)$.
+%
+%\begin{center}
+%\begin{tabularx}{\linewidth}{X X}
+%\textbf{a.~~} $w_0 = \dfrac{1}{a^2}  +2$&\textbf{b.~~}$w_0 = \dfrac{1}{a^2  +2}$\\
+%\textbf{c.~~} $w_0 = -2a +2$&\textbf{d.~~}$w_0 = \dfrac{1}{- 2a} + 2$
+%\end{tabularx}
+%\end{center}
+On a $w_0 = \e^{- 2v_0} + 2 = \e^{- 2\ln (a)} + 2 = \dfrac{1}{\e^{2\ln(a)}} + 2=  \dfrac{1}{\e^{\ln \left(a^2\right)}} + 2 = \dfrac{1}{a^2} + 2$.
+
+\begin{enumerate}[resume]
+\item On sait que la suite $\left(v_n\right)$ est croissante. On peut affirmer que la suite $\left(w_n\right)$ est :
+
+%\begin{center}
+%\begin{tabularx}{\linewidth}{X X}
+%\textbf{a.~~}décroissante et majorée par 3.&\textbf{b.~~}décroissante et minorée par 2 .\\
+%\textbf{c.~~}croissante et majorée par 3 .&\textbf{d.~~}croissante et minorée par 2.
+%\end{tabularx}
+%\end{center}
+On a successivement :
+
+$v_n \leqslant v_{n+1} \Rightarrow 2v_n \leqslant 2v_{n+1} \Rightarrow - 2v_{n+1} \leqslant - 2v_n\Rightarrow \e^{- 2v_{n+1}} \leqslant \e^{- 2v_n}$ par croissance de la fonction exponentielle et enfin $\e^{- 2v_{n+1}} + 2 \leqslant \e^{- 2v_n} + 2$, soit $w_{n+1} \leqslant w_n$ : la suite $\left(w_n\right)$ est décroissante.
+
+D'autre part on sait que quel que soit le réel$\alpha, \: \e^{\alpha} > 0$ donc  la suite est minorée par 2.
+\item %On considère la suite $\left(a_n\right)$ ainsi définie :
+
+\[a_0 = 2 \:\:\text{et, pour tout entier naturel}\: n, \quad a_{n+1} = \dfrac13a_n + \dfrac83.\]
+
+%Pour tout entier naturel $n$,on a :
+%\begin{center}
+%\begin{tabularx}{\linewidth}{X X}
+%\textbf{a.~~}$a_n = 4 \times \left(\dfrac13\right)^n - 2$&\textbf{b.~~}$a_n = - \dfrac{2}{3^n} + 4$\\
+%\textbf{c.~~}$a_n = 4 - \left(\dfrac13\right)^n$ & \textbf{d.~~} $a_n = 2 \times \left(\dfrac13\right)^n + \dfrac{8n}{3}$
+%\end{tabularx}
+%\end{center}
+Soit la suite $\left(b_n\right)$ définie pour tout naturel $n$ par $b_n = a_n + \alpha$.
+
+Alors $b_{n+1} = a_{n+1} + \alpha = \dfrac13a_n + \dfrac83 + \alpha = \dfrac13\left(b_n - \alpha \right) + \dfrac83 + \alpha = \dfrac13b_n - \dfrac{\alpha}{3} + \dfrac83 + \alpha = \dfrac13b_n + \dfrac{8 + 2\alpha}{3}$.
+
+Prenons $\alpha = - 4$, alors $b_{n+1} = \dfrac13b_n$ : cette égalité montre que la suite $\left(b_n\right)$ est une suite géométrique de raison $\dfrac13$ et de premier terme $b_0 = a_0 + \alpha = 2 - 4 = - 2$.
+
+On sait qu'alors que, quel que soit le naturel $n$, \: $b_n = b_0 \times \left(\dfrac{1}{3}\right)^n = - 2 \times \left(\dfrac{1}{3}\right)^n$.
+
+Finalement $b_n = a_n - 4 \iff a_n = 4 + b_n = 4 - 2\times \left(\dfrac{1}{3}\right)^n$.
+\item On considère une suite $\left(b_n\right)$ telle que, pour tout entier naturel $n$, on a :
+
+\[b_{n+1} = b_n + \ln \left(\dfrac{2}{\left(b_n \right)^2 + 3}\right).\]
+
+%On peut affirmer que :
+%
+%\begin{center}
+%\begin{tabularx}{\linewidth}{X X}
+%\textbf{a.~~} la suite $\left(b_n\right)$ est croissante.&\textbf{b.~~}la suite $\left(b_n\right)$ est décroissante.\\
+%\textbf{c.~~} la suite $\left(b_n\right)$ n'est pas monotone.&\textbf{d.~~}  Le sens de variation de la suite $\left(b_n\right)$ dépend de $b_0$.
+%\end{tabularx}
+%\end{center}
+On a quel que soit le naturel $n$, \: $b_{n+1} - b_n = \ln \left(\dfrac{2}{\left(b_n \right)^2 + 3}\right)$.
+
+Or quel que soit le réel $b_n$, \: $b_n^2 \geqslant 0$, donc $\left(b_n\right)^2 + 3 \geqslant 3 > 2$, donc $\dfrac{2}{\left(b_n \right)^2 + 3} < 1$ et enfin $\ln \left(\dfrac{2}{\left(b_n \right)^2 + 3}\right) < 0$.
+
+Conclusion : $b_{n+1} - b_n < 0$ montre que la suite $\left(b_n\right)$ est décroissante.
+
+\item %On considère la fonction $g$ définie sur l'intervalle $]0~;~+\infty[$ par : 
+
+\[g(x) = \dfrac{\e^x}{x}.\]
+
+%On note $\mathcal{C}_g$ la courbe représentative de la fonction $g$ dans un repère orthogonal.
+%
+%La courbe $\mathcal{C}_g$ admet :
+%
+%\begin{center}
+%\begin{tabularx}{\linewidth}{X X}
+%\textbf{a.~~}une asymptote verticale
+%et une asymptote horizontale.&\textbf{b.~~}une asymptote verticale
+%et aucune asymptote horizontale.\\
+%\textbf{c.~~}aucune asymptote verticale et une asymptote horizontale.&\textbf{d.~~}aucune asymptote verticale et aucune asymptote horizontale.
+%\end{tabularx}
+%\end{center}
+$\bullet~~$Au voisinage de zéro : $\displaystyle\lim_{x \to 0} \e^x = 1$ et $\displaystyle\lim_{x \to 0}x  = 0$, donc $\displaystyle\lim_{x \to 0} g(x) = +\infty$ : géométriquement l'axe des ordonnées est asymptote verticale à $\mathcal{C}_g$.
+
+$\bullet~~$Au voisinage de plus l'infini : on sait que $\displaystyle\lim_{x \to + \infty} g(x) = + \infty$, donc pas d'asymptote.
+
+\item %Soit $f$ la fonction définie sur $\R$ par
+
+\[f(x) = x\e^{x^2+1}.\]
+
+%Soit $F$ une primitive sur $\R$ de la fonction $f$. Pour tout réel $x$, on a :
+
+%\begin{center}
+%\begin{tabularx}{\linewidth}{X X}
+%\textbf{a.~~}$F(x) = \dfrac12x^2\e^{x^2+1}$ 	& \textbf{b.~~}$F(x) = \left(1 + 2x^2 \right)\e^{x^2+1}$ \\
+%\textbf{c.~~}$F(x) = \e^{x^2+1}$				& \textbf{d.~~}$F(x) = \dfrac12\e^{x^2+1}$
+%\end{tabularx}
+%\end{center}
+En posant $u(x) = x^2 + 1$, on a $u'(x) = 2x$ et l'on peut écrire $f(x) = \dfrac12 \times 2x \times \e^{x^2+1} = \dfrac12 u'\e^u$ : on reconnait la dérivée de $\dfrac12\e^u = \dfrac12\e^{x^2 + 1}$.
+
+Donc $F(x) = \dfrac12\e^{x^2+1}$.
+\end{enumerate}

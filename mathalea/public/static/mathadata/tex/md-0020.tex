@@ -1,0 +1,43 @@
+%source mathadata
+On considère trois nuages de points représentés dans le repère ci-contre. Les points de référence sont :
+		\begin{itemize}
+			\item $A(1\,;\,2)$ pour le chiffre 1 ;
+			\item $B(5\,;\,2)$ pour le chiffre 3 ;
+			\item $C(3\,;\,6)$ pour le chiffre 8.
+		\end{itemize}
+
+		\begin{multicols}{2}
+
+			\begin{MADenumerate}
+
+				\item On cherche à estimer le chiffre du point $T(2\,;\,5)$.
+				\begin{enumerate}
+					\item Calculer les distances $TA$, $TB$ et $TC$.
+					\item Quel chiffre l'algorithme estime-t-il pour $T$ ?
+				\end{enumerate}
+
+				\item Même question pour le point $U(4\,;\,2)$.
+
+				\item Placer les points de référence $A$, $B$, $C$ ainsi que les points $T$ et $U$ dans le repère ci-contre. Vos estimations vous semblent-elles cohérentes avec la position des points ?
+
+			\end{MADenumerate}
+
+			\begin{figure}[H]
+				\centering
+				\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1cm,y=1cm,scale=0.7]
+					\begin{axis}[
+							x=1cm,y=1cm,
+							axis lines=middle,
+							ymajorgrids=true,
+							xmajorgrids=true,
+							xmin=-1,
+							xmax=8,
+							ymin=-1,
+							ymax=8,
+							xtick={0,1,...,7},
+							ytick={0,1,...,7},]
+					\end{axis}
+				\end{tikzpicture}
+			\end{figure}
+
+		\end{multicols}

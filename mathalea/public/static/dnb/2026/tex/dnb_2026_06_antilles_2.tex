@@ -1,0 +1,54 @@
+On considère le programme de calcul ci-dessous.
+
+\begin{center}
+	\fbox{
+		\begin{minipage}{0.55\linewidth}
+			\centering \textbf{Programme A}
+			\begin{itemize}[label=$\bullet~$]
+				\item Choisir un nombre
+				\item Soustraire 2
+				\item Multiplier par 5
+				\item Ajouter le triple du nombre de départ
+			\end{itemize}
+		\end{minipage}
+	}
+\end{center}
+
+\begin{enumerate}
+	\item Vérifier qu'en choisissant 1 comme nombre de départ, on obtient $-2$ avec ce programme de calcul.
+
+	\item On note $x$ le nombre choisi au départ.
+	\begin{enumerate}
+		\item Montrer que le résultat du programme est $8x - 10$.
+
+		\item Quel nombre de départ faut-il choisir pour que le résultat du programme soit égal à 0 ?
+	\end{enumerate}
+
+	\item \emph{Question d'algorithmique}
+	\begin{enumerate}
+		\item On considère ci-dessous le programme de calcul B, réalisé avec le logiciel \og Scratch \fg.
+
+		\begin{center}
+			%\fbox{
+				%\begin{minipage}{0.6\linewidth}
+				\centering \textbf{Programme B}\\[6pt]
+
+				\begin{scratch}
+					\blockinit{Quand \greenflag est cliqué}
+					\blocksensing{demander \ovalnum{choisir un nombre} et attendre}
+					\blockvariable{mettre \selectmenu{résultat} à \ovaloperator{\ovalnum{4}*\ovalvariable{réponse}}}
+					\blockvariable{mettre \selectmenu{résultat} à \ovaloperator{\ovalvariable{résultat} - \ovalnum{5}}}
+					\blockvariable{mettre \selectmenu{résultat} à \ovaloperator{\ovalnum{2} *\ovalvariable{résultat}}}
+					\blocklook{dire \ovalvariable{résultat}}
+				\end{scratch}
+				%\end{minipage}
+				%}
+		\end{center}
+
+		En appliquant ce programme de calcul au nombre 1, quel résultat final obtient-on ?
+
+		\item Montrer que le résultat du programme A est toujours le même que celui du programme B quel que soit le nombre choisi au départ.
+	\end{enumerate}
+\end{enumerate}
+
+\needspace{10\baselineskip}

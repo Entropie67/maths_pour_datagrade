@@ -1,0 +1,79 @@
+\medskip
+
+Le plan est muni d'un repère orthonormé \Ouv. 
+
+Soit A et B les points d'affixes respectives:
+
+\[z_{\text{A}} = \e^{\text{i} \frac{5\pi}{6}} \text{ et } z_{\text{B}} = \e^{-\text{i} \frac{2\pi}{3}}.\]
+
+\begin{enumerate}
+\item Les points A et B sont correctement représentés sur l'une des figures ci-dessous.
+
+Laquelle ? Aucune justification n'est attendue.
+
+\begin{tabularx}{\linewidth}{X|X|X|X}
+\psset{unit=1cm,arrowsize=2pt 2}
+\def\xmin {-1.5}   \def\xmax {1.5}
+\def\ymin {-2}   \def\ymax {1.5}
+\begin{pspicture*}(\xmin,\ymin)(\xmax,\ymax)
+%\psgrid[subgriddiv=1,  gridlabels=0, gridcolor=lightgray] 
+%\psaxes[arrowsize=3pt 3, ticksize=-2pt 2pt, labels=none]{->}(0,0)(\xmin,\ymin)(\xmax,\ymax) 
+\uput[dl](0,0){O} 
+\uput[d](0.5,0){$\vec{u}$}  \uput[l](0,0.5){$\vec{v}$} 
+\pscircle(0,0){1}
+\psline{->}(-1,0)(1,0) \psline{->}(0,-1)(0,1) 
+\psdots[dotstyle=x,dotscale=1.4,linecolor=blue](1;-30)(1;-120)
+\uput[-30](1;-30){\blue A} \uput[-120](1;-120){\blue B} 
+\uput[d](0,-1.5){\bf Figure 1}
+\end{pspicture*}
+&
+\psset{unit=1cm,arrowsize=2pt 2}
+\def\xmin {-1.5}   \def\xmax {1.5}
+\def\ymin {-2}   \def\ymax {1.5}
+\begin{pspicture*}(\xmin,\ymin)(\xmax,\ymax)
+%\psgrid[subgriddiv=1,  gridlabels=0, gridcolor=lightgray] 
+%\psaxes[arrowsize=3pt 3, ticksize=-2pt 2pt, labels=none]{->}(0,0)(\xmin,\ymin)(\xmax,\ymax) 
+\uput[dl](0,0){O} 
+\uput[d](0.5,0){$\vec{u}$}  \uput[l](0,0.5){$\vec{v}$} 
+\pscircle(0,0){1}
+\psline{->}(-1,0)(1,0) \psline{->}(0,-1)(0,1) 
+\psdots[dotstyle=x,dotscale=1.4,linecolor=blue](1;150)(1;-120)
+\uput[150](1;150){\blue A} \uput[-120](1;-120){\blue B} 
+\uput[d](0,-1.5){\bf Figure 2}
+\end{pspicture*}
+&
+\psset{unit=1cm,arrowsize=2pt 2}
+\def\xmin {-1.5}   \def\xmax {1.5}
+\def\ymin {-2}   \def\ymax {1.5}
+\begin{pspicture*}(\xmin,\ymin)(\xmax,\ymax)
+%\psgrid[subgriddiv=1,  gridlabels=0, gridcolor=lightgray] 
+%\psaxes[arrowsize=3pt 3, ticksize=-2pt 2pt, labels=none]{->}(0,0)(\xmin,\ymin)(\xmax,\ymax) 
+\uput[dl](0,0){O} 
+\uput[d](0.5,0){$\vec{u}$}  \uput[l](0,0.5){$\vec{v}$} 
+\pscircle(0,0){1}
+\psline{->}(-1,0)(1,0) \psline{->}(0,-1)(0,1) 
+\psdots[dotstyle=x,dotscale=1.4,linecolor=blue](1;-30)(1;120)
+\uput[-30](1;-30){\blue A} \uput[120](1;120){\blue B} 
+\uput[d](0,-1.5){\bf Figure 3}
+\end{pspicture*}
+&
+\psset{unit=1cm,arrowsize=2pt 2}
+\def\xmin {-1.5}   \def\xmax {1.5}
+\def\ymin {-2}   \def\ymax {1.5}
+\begin{pspicture*}(\xmin,\ymin)(\xmax,\ymax)
+%\psgrid[subgriddiv=1,  gridlabels=0, gridcolor=lightgray] 
+%\psaxes[arrowsize=3pt 3, ticksize=-2pt 2pt, labels=none]{->}(0,0)(\xmin,\ymin)(\xmax,\ymax) 
+\uput[dl](0,0){O} 
+\uput[d](0.5,0){$\vec{u}$}  \uput[l](0,0.5){$\vec{v}$} 
+\pscircle(0,0){1}
+\psline{->}(-1,0)(1,0) \psline{->}(0,-1)(0,1) 
+\psdots[dotstyle=x,dotscale=1.4,linecolor=blue](1;150)(1;120)
+\uput[150](1;150){\blue A} \uput[120](1;120){\blue B} 
+\uput[d](0,-1.5){\bf Figure 4}
+\end{pspicture*}
+\end{tabularx}
+
+\item Montrer qu'un argument de $\dfrac{z_{\text A}}{z_{\text B}}$ est $\dfrac{-\pi}{2}$.
+\end{enumerate}
+
+\bigskip

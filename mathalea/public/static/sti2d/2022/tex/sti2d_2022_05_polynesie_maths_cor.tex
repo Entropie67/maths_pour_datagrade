@@ -1,0 +1,126 @@
+
+\medskip
+
+\textbf{Question 1}
+
+\medskip
+
+$\theta(t) = 80\e^{-0,1t} + 70$ donc $\theta'(t)=80\times(-0,1)\e^{-0,1t} = -8\e^{-0,1t}$.
+
+Or $-0,1 \theta(t)+7 = -0,1\left (80\e^{-0,1t} + 70\right ) + 7 = -8\e^{-0,1t}-7+7 = -8\e^{-0,1t}= \theta'(t)$.
+
+Donc la fonction $\theta$ est solution de l'équation différentielle $y' = - 0,1y + 7$.
+
+$\theta(0)=80\e^{0}+70 = 80+70=150.$
+
+On peut donc dire que la fonction $\theta$ est solution de cette équation différentielle et qu'elle vérifie la condition initiale $\theta(0) = 150$.
+
+\bigskip
+
+\textbf{Question 2}
+
+\medskip
+
+\begin{enumerate}
+\item $\left |z\right | = \left |-1+\text{i}\right | = \ds\sqrt{(-1)^2+1^2}=\ds\sqrt{2}$.
+
+Donc :
+
+$z=\ds\sqrt{2}\left (-\dfrac{1}{\sqrt{2}} +\text{i} \dfrac{1}{\sqrt{2}}\right )=\ds\sqrt{2}\left (-\dfrac{ \sqrt{2}}{2} + \text{i}\dfrac{ \sqrt{2}}{2}\right )$.
+
+Le nombre $z$ a pour argument le réel $\theta$ tel que $\cos \left (\theta\right ) = -\dfrac{ \sqrt{2}}{2}$ et $\sin \left (\theta\right ) = \dfrac{ \sqrt{2}}{2}$ ; donc on peut prendre $\theta = \dfrac{3\pi}{4}$.
+
+L'écriture exponentielle de $z$ est donc $\sqrt{2}\e^{\text{i}\frac{3\pi}{4}}$.
+
+\item 
+$z^4 = \left (\sqrt{2} \e^{\text{i}\frac{3\pi}{4}}\right )^4
+= \left (\sqrt{2} \right )^4 \times \e^{\text{i}\frac{3\pi}{4}\times 4}
+= 4\times \e^{3\pi}
+= 4\times(-1)
+=-4$.
+
+Donc la partie imaginaire de $z^4$ est 0.
+\end{enumerate}
+
+\bigskip
+
+\textbf{Question 3}
+
+\medskip
+
+On veut déterminer $t_0$, arrondi à la minute, tel que :
+\begin{align*}
+&E(t_0) = 9 \\
+\iff &18\left(1 - \e^{-0,45t_0}\right) = 9 \\
+\iff &1 - \e^{-0,45t_0} = 0,5 \\
+\iff &0,5 = \e^{-0,45t_0} \\
+\iff &\ln(0,5) = -0,45 t_0 \\
+\iff &-\dfrac{\ln(0,5)}{0,45} = t_0 \\
+\iff &t_0\approx 1,54.
+\end{align*}
+Comme $0,54 = \dfrac{54}{100} = \dfrac{32,4}{60}$, le temps cherché est d'environ 1 heure 32 minutes.
+
+\bigskip
+
+\textbf{Question 4}
+
+\medskip
+
+On étudie le signe de $f'(x) = \dfrac{-3x+2}{x}$ sur $]0~;~ +\infty[$.
+
+\begin{center}
+{\renewcommand{\arraystretch}{1.5}
+\def\esp{\hspace*{3cm}}
+$\begin{array}{|c | *{5}{c} |} 
+\hline
+x  & 0 & \esp & \dfrac{2}{3} & \esp  & +\infty \\
+\hline
+-3x+2 &  & \pmb{+} &  \vline\hspace{-2.7pt}{0} & \pmb{-} &   \\
+\hline
+%x+1 &  & \pmb{+} &  \vline\hspace{-2.7pt}{\phantom 0} & \pmb{+} &   \\
+%\hline
+x & 0 \hfill{} & \pmb{+} &  \vline\hspace{-2.7pt}{\phantom 0} & \pmb{+} &   \\
+\hline 
+\dfrac{-3x+2}{x} \rule[-10pt]{0pt}{30pt} &  \vline\,\,\vline\hfill{} & \pmb{+} &  \vline\hspace{-2.7pt}{0} & \pmb{-} &   \\
+\hline
+\end{array}$
+}
+\end{center}
+
+Donc la fonction $f$ est strictement croissante sur $\left ]0\,; \dfrac{2}{3}\right ]$, et strictement décroissante sur $\left [ \dfrac{2}{3}\,; +\infty \right [$.
+
+\bigskip
+
+\textbf{Question 5}
+\begin{align*}
+&3 \ln(x) - \ln (x + 30) = 2\ln (5) \\
+\iff &\ln\left (x^3\right ) - \ln\left (x+30\right ) = \ln\left (5^2\right ) \\
+\iff &\ln \dfrac{x^3}{x+30} = \ln(25) \\
+\iff &\dfrac{x^3}{x+30} = 25.
+\end{align*}
+Pour $x = 10$, $\dfrac{x^3}{x+30} = \dfrac{\np{1000}}{40} = 25 \rightarrow$ Réponse \textbf{c.}
+
+\bigskip
+
+\textbf{Question 6}
+
+\medskip
+
+\begin{enumerate}
+\item La hauteur initiale de la nacelle est, en mètre :
+\[h(0)=-15\e^{0}+18 = -15+18=3.\]
+
+\item On sait que $\ds\lim_{T\to -\infty} \e^{T}=0$.
+
+Or $\ds\lim_{t\to +\infty} -0,2t= -\infty$.
+
+Donc $\ds\lim_{t\to +\infty} \e^{-0,2t}=0$.
+
+On en déduit que $\ds\lim_{t\to +\infty} h(t)=18$.
+
+La nacelle ne peut donc pas dépasser la hauteur de 18 mètres.
+\end{enumerate}
+
+\bigskip
+
+

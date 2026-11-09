@@ -1,0 +1,214 @@
+
+\bigskip
+
+\textbf{Question 1}
+
+\medskip
+
+La tangente $T$ à $\mathcal{C}_f$ en A a pour équation $y= f'(x_{\text A})\left (x-x_{\text A}\right ) + f(x_{\text A})$ soit $y=f'(\e)\left (x-\e\right ) + f(\e)$.
+
+$f(x)=\ln(x) $ donc $f(\e)=\ln(\e)=1$
+
+$f(x)=\ln(x) $ donc $f'(x)=\dfrac{1}{x}$ et donc $f'(\e)=\dfrac{1}{\e}$
+
+$T$ a donc pour équation $y=\dfrac{1}{\e} \left (x-\e\right ) + 1$ soit $y=\dfrac{1}{\e}x -1+1$ ou encore $y=\dfrac{1}{\e}x$.
+
+Et si $x=0$, alors $y=\dfrac{1}{\e}x = 0$ donc la droite $T$ passe par l'origine du repère.
+
+\bigskip
+
+\textbf{Question 2}
+
+\medskip
+
+On considère la fonction $f$ définie sur l'intervalle $[0,5~;~10]$ par :
+$f(x) = x^2 - x - 2- 3 \ln (x).$
+
+On note $f'$ la fonction dérivée de $f$.
+
+\begin{enumerate}
+\item Pour tout $x$ appartenant à l'intervalle $[0,5~;~10]$ :
+$f'(x)=2x-1 -0 - 3\dfrac{1}{x} = \dfrac{2x^2 - x -3}{x}$
+
+Or $(x+1)(2x-3)=2x^2 + 2x -3x - 3 = 2x^2 -x-3$ donc $f'(x) = \dfrac{(x + 1)(2x - 3)}{x}$.
+
+\item On va déterminer les variations de la fonction $f$ et, pour cela, étudier le signe de $f'(x)$.
+
+\begin{center}
+{\renewcommand{\arraystretch}{1.3}
+\psset{nodesep=3pt,arrowsize=2pt 3}  % paramètres
+\def\esp{\hspace*{1.5cm}}% pour modifier la largeur du tableau
+\def\hauteur{0pt}% mettre au moins 20pt pour augmenter la hauteur
+$\begin{array}{|c| *4{c} c|}
+\hline
+ x & 0,5 & \esp & 1,5 & \esp & +\infty \\
+ \hline
+x+1 &  &  \pmb{+} & \vline\hspace{-2.7pt}0 & \pmb{+} & \\  
+ \hline
+2x-3 &  &  \pmb{-} & \vline\hspace{-2.7pt}0 & \pmb{+} & \\  
+ \hline
+x &  &  \pmb{+} & \vline\hspace{-2.7pt}0 & \pmb{+} & \\  
+ \hline
+f'(x) &  &  \pmb{-} & \vline\hspace{-2.7pt}0 & \pmb{+} & \\  
+\hline
+  & \Rnode{max1}{\phantom A}  &  &  &  & \Rnode{max2}{\phantom C}   \\
+f(x) & &  & & &  \rule{0pt}{\hauteur} \\
+ &  & &   \Rnode{min}{\phantom B} & & \rule{0pt}{\hauteur}
+\ncline{->}{max1}{min} \ncline{->}{min}{max2}\\
+\hline
+\end{array}$
+}
+\end{center}
+
+La fonction $f$ admet donc un minimum en $x=1,5$ qui vaut :
+\[f(1,5) = 1,5^2 - 1,5 - 2 -3\ln(1,5) = -1,25-3\ln(1,5) \approx -2,47.\]
+\end{enumerate}
+
+\bigskip
+
+\textbf{Question 3}
+
+\medskip
+
+\begin{enumerate}
+\item On résout dans $\R$ l'équation $\e^{\np{- 0.0434} x} = 0,01$. 
+
+$\e^{\np{- 0,0434} x} = 0,01
+\iff
+\np{- 0.0434} x = \ln(0,01)
+\iff
+x = -\dfrac{\ln(0,01)}{\np{0,0434}}$
+
+\item Le signal aura perdu 99\,\% de sa puissance pour une distance $x$ telle que : 
+\[P(x) = P(0)\times \left (1-\dfrac{99}{100}\right) = 6,75\times 0,01.\]
+Soit :
+\begin{align*}
+&6,75\e^{\np{- 0.0434} x} = 6,75\times 0,01 \\
+\iff &\e^{\np{- 0.0434} x} = 0,01 \\
+\iff &x = -\dfrac{\ln(0,01)}{\np{0,0434}} \\
+\iff & x \approx 106,12,
+\end{align*}
+soit environ 106~km au kilomètre près.
+\end{enumerate}
+
+\bigskip
+
+\textbf{Question 4}
+
+\medskip
+
+\begin{minipage}{0.65\linewidth}
+Les points O, A et B sont alignés si les vecteurs $\vectt{OA}$ et $\vectt{OB}$ sont colinéaires.
+
+$\vectt{OA}$ a pour affixe $z_{\text A}$ et $\vectt{OB}$ a pour affixe $z_{\text B}$.
+
+$z_{\text{A}} = 3\e^{- \text{i}\frac{\pi}{3}} = 3 \left ( \cos \left (-\dfrac{\pi}{3}\right ) + \text{i} \sin \left ( -\dfrac{\pi}{3} \right ) \right ) = 3\left ( \dfrac{1}{2} - \text{i} \dfrac{\sqrt{3}}{2} \right )\\
+\phantom{z_{\text{A}}}
+= -\dfrac{3}{2}\left ( -1 + \text{i} \sqrt{3}\right ) = -\dfrac{3}{2} z_{\text B}$
+
+Donc les vecteurs $\vectt{OA}$ et $\vectt{OB}$ sont colinéaires, et donc les points O, A et B sont alignés.
+\end{minipage}
+\hfill
+\begin{minipage}{0.25\linewidth}
+%\begin{center}
+\psset{unit=0.7cm}
+\def\xmin {-2}   \def\xmax {3}
+\def\ymin {-3}   \def\ymax {3}
+\begin{pspicture*}(\xmin,\ymin)(\xmax,\ymax)
+\psgrid[subgriddiv=1,  gridlabels=0, gridcolor=lightgray] 
+\psaxes[arrowsize=3pt 3, ticksize=-2pt 2pt, labels=none](0,0)(\xmin,\ymin)(\xmax,\ymax) 
+\psaxes[linewidth=1.5pt]{->}(0,0)(1,1)
+\uput[dl](0,0){O}
+\psline[showpoints,linecolor=blue](3;-60)(-1,1.732)(0,0)
+{\blue
+\uput[ur](3;-60){A} \uput[ur](-1,1.732){B}
+}
+\end{pspicture*}
+%\end{center}
+\end{minipage}
+
+\bigskip
+
+\textbf{Question 5}
+
+\medskip
+
+\parbox{0.71\linewidth}{
+
+\begin{enumerate}
+\item $\mathcal A = \displaystyle\int_1^2 f(x)\: \text{d}x$ est l'aire de la région du plan comprise entre la courbe $\mathcal{C}_f$, l'axe des abscisses et les droites d'équations $x=1$ et $x=2$.
+
+$\mathcal A$ est compris entre l'aire $\mathcal A_1$ du trapèze ABDC et l'aire $\mathcal A_2$ du trapèze ABFE.
+
+$\mathcal A_1 = \dfrac{(\text{AC} + \text{BD}) \times \text{AB}}{2} = \dfrac{(2+8)\times 1}{2}=5$
+
+$\mathcal A_2 = \dfrac{(\text{AE} + \text{BF}) \times \text{AB}}{2} = \dfrac{(3+9)\times 1}{2}=6$
+
+Donc : $5\leqslant  \displaystyle\int_1^2 f(x)\: \text{d}x \leqslant 6$.
+
+\item Une primitive de la fonction $f$ sur $[1~;~2]$ :
+\begin{list}{\textbullet}{}
+\item La fonction $x\longmapsto x$, a pour primitive : $\dfrac{x^2}{2}$.
+\item La fonction $x\longmapsto \e^{x}$, a pour primitive : $\e^{x}$.
+\item La fonction $x\longmapsto \dfrac{1}{x}$, a pour primitive : $\ln(x)$.
+\end{list}
+Donc la fonction $f$ a pour primitive la fonction $F$ définie par :
+\[F(x) = \dfrac{x^2}{2} + \e^{x}-\ln(x).\]
+\end{enumerate}}
+\hfill
+\parbox{0.26\linewidth}{
+\psset{unit=1cm}
+\begin{pspicture*}(-0.5,-0.7)(3,9.2)
+\psaxes[linewidth=1.25pt,labelFontSize=\scriptstyle]{->}(0,0)(0,0)(3,9.2)
+\def\f{2.71828 x exp x add 1 x div sub}
+\pscustom[fillstyle=solid,fillcolor=blue!10]
+{\psplot[plotpoints=4000]{1}{2}{\f}
+\psplot[plotpoints=4000]{2}{1}{0}
+\closepath
+}
+\psgrid[gridlabels=0pt,subgriddiv=1,gridwidth=0.1pt]
+\psplot[plotpoints=2000,linewidth=1.25pt,linecolor=blue]{1}{2}{\f}
+\psline[linestyle=dashed,linewidth=1.25pt](1,3)(2,9)
+\psline[linestyle=dashed,linewidth=1.25pt](1,2)(2,8)
+\psdots(1,0)(2,0)(2,8)(1,2)(2,9)(1,3)
+\uput[ul](1,0){A}\uput[ur](2,0){B}\uput[dl](1,2){C}
+\uput[ur](2,8){D}\uput[ul](1,3){E}\uput[l](2,9){F}
+\uput[l](1,2.75){\blue $\mathcal{C}_f$}
+\end{pspicture*}}
+
+\begin{align*}
+\displaystyle\int_1^2 f(x)\: \text{d}x &= \left [ F(x)\strut\right ]_{1}^{2} = F(2)-F(1) \\
+&= \left (\dfrac{4}{2} + \e^{2} - \ln(2)  \right ) - \left ( \dfrac{1}{2} +\e^{1} - \ln(1) \right ) \\
+&= 2+\e^{2}-\ln(2) -\dfrac{1}{2} - \e \\
+&= \dfrac{3}{2}+ \e^{2}-\ln(2) - \e
+\end{align*}
+
+\begin{center}
+\textbf{Remarque :} $ \dfrac{3}{2}+ \e^{2}-\ln(2) - \e \approx 5,48$ qui est compris entre 5 et 6.
+\end{center}
+
+\bigskip
+
+\textbf{Question 6}
+
+\medskip
+
+\begin{enumerate}
+\item  Pour tout $t$ de l'intervalle $[0~;~+\infty[$, 
+
+$120\sqrt{2} \cos \left(70t + \dfrac{\pi}{4}\right)
+= 120\sqrt{2} \left ( \cos \left (70t\right ) \cos \left (\frac{\pi}{4}\right ) - \sin \left (70t\right ) \sin \left (\frac{\pi}{4}\right )\right )\\
+\phantom{120\sqrt{2} \cos \left(70t + \dfrac{\pi}{4}\right)}
+= 120\sqrt{2} \left ( \cos \left (70t\right ) \times \dfrac{\sqrt{2}}{2} - \sin \left (70t\right )  \times \dfrac{\sqrt{2}}{2}\right )\\
+\phantom{120\sqrt{2} \cos \left(70t + \dfrac{\pi}{4}\right)}
+= 120 \cos \left (70t\right )  - 120 \sin \left (70t\right )\\
+\phantom{120\sqrt{2} \cos \left(70t + \dfrac{\pi}{4}\right)}
+=u(t)$
+
+\item On déduit de la question précédente que la pulsation $\omega$ est égale à 70 et que la fréquence $f$ est égale à
+$\dfrac{\omega}{2\pi} = \dfrac{70}{2\pi}\approx 11$.
+\end{enumerate}
+
+\bigskip
+
+

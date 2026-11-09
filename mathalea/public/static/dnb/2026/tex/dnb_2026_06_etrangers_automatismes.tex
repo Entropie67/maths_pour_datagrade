@@ -1,0 +1,179 @@
+Pour chaque question, recopier sur la copie son numéro et la réponse correspondante.
+
+Pour cette partie, aucune justification n'est demandée.
+
+Pour les questions à choix multiple, une seule réponse est exacte.
+
+\subsection*{Question 1}
+
+Voici la série des températures minimales relevées à Strasbourg lors des cinq premiers jours de février : 0~\degres C ; $-1$~\degres C ; 3~\degres C ; 7~\degres C ; 1~\degres C.
+
+Déterminer la médiane de cette série.
+
+\begin{minipage}{0.48\linewidth}
+	\textbf{Question 2}
+
+	Quelle est l'image du motif \no 4 par la translation qui transforme le motif \no 2 en \no 6 ?
+\end{minipage}\hfill
+\begin{minipage}{0.48\linewidth}
+	\begin{center}
+		%Début PSTricks}
+	\psset{xunit=1.2cm,yunit=1cm}
+	\begin{pspicture}(5.5,3.5)
+		%\psgrid
+		\def\motif{\pspolygon(0,0)(0.7,0.35)(1.1,0)(1.8,1)(1.4,1.35)(0.7,1)}
+		\rput(0,0){\motif}
+		\multido{\n=0.0+1.1}{3}{\rput(\n,0){\motif}}
+		\rput(2.6,2.8){\no 1}\rput(3.7,2.8){\no 2}\rput(4.8,2.8){\no 3}
+		\multido{\n=0.7+1.1}{3}{\rput(\n,1){\motif}}
+		\rput(1.8,1.8){\no 4}\rput(2.9,1.8){\no 5}\rput(4,1.8){\no 6}
+		\multido{\n=1.4+1.1}{3}{\rput(\n,2){\motif}}
+		\rput(1,0.8){\no 7}\rput(2.1,0.8){\no 8}\rput(3.2,0.8){\no 9}
+	\end{pspicture}
+\end{center}
+\end{minipage}
+%Tikz
+%\begin{center}
+%\begin{tikzpicture}[scale=1.1]
+%  % grid of rhombi labeled 1-9 in 3x3, offset rows
+%  \def\dx{1.4}
+%  \def\dy{0.9}
+%  \foreach \row/\rowlabels in {0/{1,2,3},1/{4,5,6},2/{7,8,9}} {
+%    \pgfmathsetmacro{\yy}{-\row*\dy*1.6}
+%    \pgfmathsetmacro{\xoff}{Mod(\row,2)*0.5}
+%  }
+%  % manual placement
+%  \node[draw, minimum width=1.6cm, minimum height=1.2cm, shape=rectangle] (n1) at (0,2.4) {n°1};
+%  \node[draw, minimum width=1.6cm, minimum height=1.2cm, shape=rectangle] (n2) at (1.6,2.4) {n°2};
+%  \node[draw, minimum width=1.6cm, minimum height=1.2cm, shape=rectangle] (n3) at (3.2,2.4) {n°3};
+%  \node[draw, minimum width=1.6cm, minimum height=1.2cm, shape=rectangle] (n4) at (0,1.2) {n°4};
+%  \node[draw, minimum width=1.6cm, minimum height=1.2cm, shape=rectangle] (n5) at (1.6,1.2) {n°5};
+%  \node[draw, minimum width=1.6cm, minimum height=1.2cm, shape=rectangle] (n6) at (3.2,1.2) {n°6};
+%  \node[draw, minimum width=1.6cm, minimum height=1.2cm, shape=rectangle] (n7) at (0,0) {n°7};
+%  \node[draw, minimum width=1.6cm, minimum height=1.2cm, shape=rectangle] (n8) at (1.6,0) {n°8};
+%  \node[draw, minimum width=1.6cm, minimum height=1.2cm, shape=rectangle] (n9) at (3.2,0) {n°9};
+%\end{tikzpicture}
+%Fin Tikz
+%\end{center}
+
+\subsection*{Question 3}
+
+Une boîte opaque contient 3 boules rouges et 5 boules vertes identiques et indiscernables au toucher. On pioche une boule au hasard.
+
+Quelle est la probabilité qu'elle soit rouge ?
+
+\subsection*{Question 4}
+
+\begin{minipage}{0.63\linewidth}
+Recopier sur la copie et compléter avec des longueurs des côtés du triangle JLK pour que l'égalité ci-dessous soit vraie.
+
+\[\cos(\widehat{\text{LKJ}}) = \frac{\dots}{\dots}\]
+\end{minipage}\hfill
+\begin{minipage}{0.30\linewidth}
+\psset{unit=1cm}
+\begin{center}
+	\begin{pspicture}(4.5,3.4)\
+		\pspolygon(0.2,0.8)(4.25,0.2)(2.2,2.5)%JKL
+		\uput[dl](0.2,0.8){J} \uput[dr](4.25,0.2){K} \uput[u](2.2,2.5){L}
+		\rput{-137}(2.2,2.5){\psframe(0.25,0.25)}\psarc(4.25,0.2){0.7}{129}{170}
+	\end{pspicture}
+\end{center}
+\end{minipage}
+%Début Tikz
+%\begin{tikzpicture}[scale=1]
+%\coordinate (J) at (0,0);
+%\coordinate (K) at (4,0);
+%\coordinate (L) at (3.3,1.6);
+%\draw (J) -- (K) -- (L) -- cycle;
+%\draw (3.05,1.45) -- (3.2,1.25) -- (3.4,1.4);
+%\node[below left] at (J) {J};
+%\node[below right] at (K) {K};
+%\node[above] at (L) {L};
+%\end{tikzpicture}
+%Fin Tikz
+%début PSTricks
+%\end{center}
+
+\subsection*{Question 5}
+
+La distance entre la Terre et Mars est environ égale à \np{311200000}~kilomètres.
+
+Donner la notation scientifique de \np{311200000}.
+
+\subsection*{Question 6}
+
+Charlie a effectué un trajet en vélo en 2~h 30~min à une vitesse moyenne de 40 km/h.
+
+Calculer la distance, en km, parcourue par Charlie.
+
+\subsection*{Question 7}
+Recopier sur la copie la forme factorisée de l'expression $5x + 5$.
+
+\begin{center}
+\begin{tblr}{*{4}{|X[c]}|}\hline
+	$5(x+1)$ & $5(x+5)$ & $10x$ & $25x$ \\
+	\hline
+\end{tblr}
+\end{center}
+
+\subsection*{Question 8}
+Un article coûte 80~\euro. Son prix baisse de 10\,\%. Recopier sur la copie le calcul permettant de trouver le prix final de l'article.
+
+\begin{center}
+\begin{tblr}{*{4}{|X[c]}|}
+	\hline
+	$80 - 10$ & $80 - \dfrac{10}{100}$ & $80 - \dfrac{10}{100} \times 80$ & $\left(80 - \dfrac{10}{100}\right) \times 80$ \\
+	\hline
+\end{tblr}
+\end{center}
+
+\subsection*{Question 9}
+Le graphique suivant donne la hauteur d'eau dans le port de Quiberon le 23 juillet 2025.
+
+%Début Tikz
+%\begin{center}
+%\begin{tikzpicture}
+%\begin{axis}[
+%title={Hauteur d'eau dans le port de Quiberon \\ 23 juillet 2025},
+%xlabel={Heure (en h)},
+%ylabel={Hauteur d'eau (en m)},
+%xmin=13, xmax=20,
+%ymin=2, ymax=5,
+%xtick={13,14,...,20},
+%xticklabels={13h,14h,15h,16h,17h,18h,19h,20h},
+%ytick={2,3,4,5},
+%grid=both,
+%width=11cm, height=7cm,
+%thick
+%]
+%\addplot[smooth, thick, domain=13:20, samples=100] {2.6 + 2.25*sin((x-13)*25)};
+%\end{axis}
+%\end{tikzpicture}
+%\end{center}
+%Fin Tikz
+%PSTricks
+
+\medskip
+
+\begin{center}
+\psset{unit=1.25cm}
+\begin{pspicture}(-1,-1)(8.5,4)
+	\psaxes[linewidth=1.25pt,Ox=12,Oy=2,labelFontSize=\scriptstyle](0,0)(0,0)(7.5,3)
+	\multido{\n=0.0+0.5}{17}{\psline[linewidth=0.15pt](\n,0)(\n,3)}
+	\multido{\n=0.0+0.5}{7}{\psline[linewidth=0.15pt](0,\n)(8,\n)}
+	\pscspline[linecolor=blue,linewidth=1.25pt](1,0.7)(2,1.55)(3,2.3)(4,2.7)(5,2.8)(6,2.65)(7,2.05)(8,1.15)
+	\rput(3.75,3.4){\small 23 juillet 2025}
+	\rput(3.75,3.75){\small Hauteur d'eau dans le port de Quiberon}
+	\uput[u](7.5,0){\small Heure (en h)}
+	\rput{90}(-0.7,1.5){\small Hauteur d'eau (en m)}
+\end{pspicture}
+\end{center}
+%Fin PSTricks
+
+Avec la précision permise par le graphique, recopier sur la copie la durée pendant laquelle la hauteur d'eau dans le port a été supérieure à 4 m.
+
+\begin{center}
+\begin{tblr}{*{4}{|X[c]}|}\hline
+	2 h 30 min & 4 h 30 min & 5 h 30 min & 7 h \\ \hline
+\end{tblr}
+\end{center}

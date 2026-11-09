@@ -1,0 +1,99 @@
+
+\medskip
+
+Les propriétaires d'une maison souhaitent créer une rampe d'accès à leur terrasse.
+
+Cette rampe devra avoir la forme d'un prisme droit à base triangulaire comme représenté sur le schéma en perspective cavalière ci-dessous:
+
+\begin{center}
+\psset{unit=1cm}
+\begin{pspicture}(0,-1)(15,5.3)
+\pscurve(0,0)(0.33,0.33)(0,0.5)(0.5,0.66)(0,1)(1,1.6)(1.9,2)(2.5,3.2)(3.2,3.7)(3.4,4.2)(4.2,4.1)(4.7,4.3)
+\psline(4.7,4.3)(8.3,4.3)(12.1,3.3)(14.8,3.3)
+\psline(12.1,3.3)(7.5,0)(3.6,1)(0,1)
+\psline(0,0)(10,0)
+\psline(8.3,4.3)(3.6,1)(3.6,0)%DAC
+\psline[linestyle=dashed](3.6,0)(8.3,3.3)(8.3,4.3)%CFD
+\psline[linestyle=dashed](8.3,3.3)(12.1,3.3)%FE
+\pscurve(10,0)(10.3,0.8)(10.5,1)(11.3,0.8)(12,1.1)(12.2,2.2)(13,2.5)(14,2.8)(14.3,2.7)(14.8,3.3)
+\rput(4.2,2.9){TERRASSE}\rput(8.4,1.9){RAMPE D'ACCÈS}\rput(11.2,1.6){SOL}
+\uput[ul](3.6,1){A}\uput[d](7.5,0){B}\uput[d](3.6,0){C}
+\uput[u](8.3,4.3){D}\uput[ur](12.1,3.3){E}\uput[dr](8.3,3.3){F}
+\end{pspicture}
+\end{center}
+
+%Les figures ci-dessus ne sont pas à l'échelle.
+
+\begin{multicols}{2}
+Vue de face de la rampe :
+
+\psset{unit=0.8cm}
+\begin{pspicture}(-1,-0.8)(7,3)
+\pspolygon(0,0)(6,0)(0,2)%CBA
+\psframe(0,0)(0.2,0.2)
+\uput[dl](0,0){C}\uput[d](6,0){B}\uput[u](0,2){A}
+\end{pspicture}
+
+\columnbreak
+
+\begin{list}{\textbullet}{On donne les informations suivantes :}
+\item la hauteur [AC] de la rampe mesure $30$~cm ;
+\item AB $= 124$~cm ;
+\item la longueur BE de la rampe mesure $9$~m ;
+\item l'angle $\widehat{\text{ACB}}$ est un angle droit.
+\end{list}
+\end{multicols}
+
+%\medskip
+
+\begin{enumerate}
+\item %Déterminer la mesure de l'angle $\widehat{\text{ABC}}$ que doit faire la rampe avec le sol du jardin.
+Dans le triangle ACB rectangle en C, on a:
+$\sin \left (\widehat{\text{ABC}}\right )= \dfrac{\text{AC}}{\text{AB}} = \dfrac{30}{124}$.
+
+On en déduit que l'angle $\widehat{\text{ABC}}$ mesure, au degré près, $14\degres{}$.
+
+%On arrondira au degré près.
+
+\item %Montrer que la longueur BC doit être environ égale à $120$~cm.
+Le triangle ACB est rectangle en C donc
+
+$\text{AB}^2 = \text{AC}^2 + \text{BC}^2$
+donc
+$\text{AB}^2 - \text{AC}^2 = \text{BC}^2$
+ou encore $124^2-30^2 = \text{BC}^2$,
+et donc $\text{BC}^2 = \np{14476}$.
+
+On en déduit que BC vaut, en centimètre, environ 120.
+
+\item Pour réaliser cette rampe, les propriétaires envisagent de se faire livrer $2$~m$^3$ de béton.
+
+%Ce volume est-il suffisant ?
+
+La longueur BE de la rampe mesure $9$~m soit 900~cm.
+
+La rampe est un prisme de base le triangle ACB et de hauteur BE donc son volume vaut, en cm$^3$:
+$\left (\text{aire de ABC}\right ) \times \text{BE}$ soit
+$\dfrac{\text{AC} \times \text{BC}}{2}\times \text{BE}$
+soit environ
+$\dfrac{30\times 120}{2}\times 900$
+c'est-à-dire $\np{1620000}$.
+
+Le volume de la rampe est donc, en m$^3$, d'environ $1,62$.
+
+Donc le volume de 2~m$^3$ de béton est suffisant.
+
+\item %En utilisant le volume de $2$~m$^3$ de béton, sans modifier les longueurs AC et BE de la rampe, quelle serait la valeur de BC ?
+On cherche BC pour utiliser les 2~m$^3$ de béton soit $\np{2000000}$~cm$^3$.
+
+Donc BC est tel que:
+$\dfrac{\text{AC} \times \text{BC}}{2}\times \text{BE} = \np{2000000}$
+donc
+$\text{BC} = \dfrac{\np{2000000}\times 2}{\text{AC}\times \text{BE}}
+= \dfrac{\np{4000000}}{30\times 900}$
+soit 148~cm en arrondissant au centimètre.
+
+%On arrondira au centimètre près.
+\end{enumerate}
+
+

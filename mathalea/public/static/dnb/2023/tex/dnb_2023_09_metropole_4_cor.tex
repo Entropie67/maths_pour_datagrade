@@ -1,0 +1,78 @@
+
+\medskip
+
+Un funiculaire est un type de transport en commun circulant sur des rails et dont la traction est
+assurée par câble. Il est généralement utilisé pour des lignes comportant des fortes pentes.
+
+Les documents suivants permettent de répondre aux questions.
+
+\medskip
+{\footnotesize
+	\textbf{Document 1 : tarifs du funiculaire}
+
+\begin{center}
+\begin{tabularx}{\linewidth}{|m{4.5cm}|X|m{4.5cm}|X|}\hline
+\multicolumn{2}{|c}{Tarif individuel}& \multicolumn{2}{|c|}{Tarif de groupe à partir de 20 personnes}\\
+\multicolumn{2}{|c}{(tarif enfant accordé pour les enfants de 5 à 11 ans)}& \multicolumn{2}{|c|}{(adultes et enfants)}\\ \hline
+Aller simple par adulte&8 euros		&Aller simple par adulte&7 euros\\ \hline
+Aller-retour par adulte&10 euros	&Aller-retour par adulte&8,50 euros\\ \hline
+Aller simple par enfant&6,50 euros	&Aller simple par enfant &5,50 euros\\ \hline
+Aller-retour par enfant&8 euros		&Aller- retour par enfant&7 euros\\ \hline
+\end{tabularx}
+\end{center}
+
+\textbf{Document 2 : trajet du funiculaire vu de profil}
+
+\begin{center}
+\psset{unit=1cm,arrowsize=2pt 3}
+\begin{pspicture}(15,5.5)
+\psline(0.5,0)(10.7,0)(10.7,4)%DEB
+\psline[linewidth=1.25pt](10.7,4)(6.8,2.9)(0.5,0)%BAD
+\psline[linestyle=dashed](6.8,2.9)(10.7,2.9)%AC
+\psline[linewidth=0.6pt]{<->}(0.3,0.6)(6.6,3.5)\rput{24.7}(3.45,2.25){448,5 m}
+\psline[linewidth=0.6pt]{<->}(11.5,2.9)(11.5,4)\uput[r](11.5,3.45){Dénivelée : 50 m}
+\uput[d](8.75,2.9){\small Longueur horizontale}
+\psframe(10.7,2.9)(10.4,3.2)
+\uput[ul](6.8,2.9){A} \uput[u](10.7,4){B} \uput[dr](10.7,2.9){C} \uput[dl](0.5,0){D} \uput[dr](10.7,0){E} 
+\end{pspicture}
+\end{center}
+}
+
+\begin{enumerate}
+\item Un groupe constitué de 12 adultes et de 8 enfants (âgés de 6 à 10 ans) fait un aller-retour en funiculaire.
+	\begin{enumerate}
+		\item Déterminons le prix à payer par le groupe en utilisant le tarif individuel 
+		
+		$12\times 10+8\times 8=120+64=184$ 
+		le prix à payer est donc de 184 \euro.
+		\item Déterminons le prix à payer par le groupe en utilisant le tarif de groupe.
+		
+		$12\times\np{8.50}+8\times \np{7}=102+56=158$
+		
+		Le prix à payer est alors de 158 \euro.
+		\item Déterminons le pourcentage de la réduction obtenue en appliquant le tarif groupe par rapport au tarif individuel.
+		
+		$\dfrac{158-184}{184}\approx \np{0.1413}$
+		
+		Le pourcentage de réduction est donc de \np{14.13}\,\%.
+	\end{enumerate}
+\item Sur la première partie du trajet [DA], le funiculaire parcourt $448,5$~m en 8~min 45~s.
+
+Déterminons sa vitesse moyenne en mètres par seconde ? 
+
+Sachant que la vitesse est une distance divisée par un temps, nous avons alors 
+
+ $v=\dfrac{\np{448.5}}{8\times 60+45}\approx \np{0.854}$
+
+Sa vitesse, au centième près, en moyenne est d'environ \np[m/s]{0.85}.
+
+ .
+\item Sur la dernière partie du trajet [AB], la pente est de 25\,\% et la dénivelée BC est de $50$~m, calculons la longueur horizontale AC.
+\end{enumerate}
+
+{ \footnotesize \emph{Définition} : Pente $= \dfrac{\text{Dénivelée}}{\text{Longueur horizontale}}$}
+
+Nous avons donc : $\dfrac{50}{\text{AC}}=\dfrac{25}{100}$  d'où $AC = 200$
+
+\bigskip
+

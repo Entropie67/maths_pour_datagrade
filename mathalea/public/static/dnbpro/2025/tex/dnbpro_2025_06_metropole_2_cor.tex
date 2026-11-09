@@ -1,0 +1,90 @@
+
+\medskip
+
+%Dans le cadre de son travail, Elsa doit se déplacer régulièrement à Paris. Elle voyage en train.
+%
+%Le billet coûte $80$~\euro.
+%
+%Elsa peut acheter une carte à l'année qui coute $49$~\euro{} et qui lui permet d'obtenir toute l'année
+%une réduction de 30\,\% sur les billets.
+%
+%\medskip
+
+\begin{enumerate}
+\item Étude des tarifs :
+	\begin{enumerate}
+		\item %Calculer le prix qu'Elsa paiera pour 3 billets sans carte de réduction.
+		
+Elsa paiera pour 3 billets sans carte de réduction : $3 \times 80 = 240$~\euro.
+		\item %Justifier que le prix d'un billet de train après une remise de 30\,\% est $56$~\euro.
+$\bullet~$La remise sur un billet est égale à $80 \times \dfrac{30}{100} = 80 \times 0,30 = 24$~F.
+
+Il lui reste à payer $80 - 24 = 56$~F.
+
+$\bullet~$ Directement : il lui reste à payer $\dfrac{100}{100} - \dfrac{30}{100} = \dfrac{70}{100}$ de 80 soit $80 \times \dfrac{70}{100} = 80 \times 0,7 = 56$~\euro.
+		\item %Calculer le prix total payé par Elsa pour trois billets avec la carte, achat de la carte compris.
+Avec la carte à 49~\euro{} et 3 voyages coûtant $3 \times 56 = 168$~\euro, Elsa paiera $49 + 168 = 217$~(\euro).
+	\end{enumerate}
+\item Comparaison des tarifs :
+
+%Elsa achète $x$ billets.
+%
+%On nomme :
+%
+%\begin{itemize}[label=$\bullet~$]
+%\item $f$ la fonction qui associe à $x$ le montant total que paie Elsa dans le cas où elle n'achète pas la carte de réduction.
+%\item $g$ la fonction qui associe à $x$ le montant total que paie Elsa dans le cas où elle achète la carte de réduction et en tenant compte de l'achat de la carte.
+%\end{itemize}
+%
+%Dans le repère ci-dessous sont représentées les fonctions $f$ et $g$.
+%
+
+	\begin{enumerate}
+		\item \hspace*{1cm}
+		
+\begin{center}
+\psset{xunit=1cm,yunit=0.01cm,arrowsize=2pt 3}
+\begin{pspicture}(-1,-50)(13,1000)
+\psaxes[linewidth=1.25pt,Dy=100,labelFontSize=\scriptstyle]{->}(0,0)(0,0)(13,1000)
+\multido{\n=0+1}{14}{\psline[linewidth=0.25pt](\n,0)(\n,1000)}
+\multido{\n=0+100}{11}{\psline[linewidth=0.25pt](0,\n)(13,\n)}
+\uput[u](10.8,0){Nombre de billets achetés}\uput[r](0,950){Prix à payer (en \euro)}
+\uput[r](13,0){$x$}\uput[u](0,1000){$y$}
+\psplot[plotpoints=600,linewidth=1.25pt,linecolor=red]{0}{12}{80 x mul}\rput{38}(10,833){\red Fonction : $f$}
+\psplot[plotpoints=600,linewidth=1.25pt,linecolor=blue]{0}{12}{56 x mul 49 add}\rput{30}(10,635){\blue Fonction : $g$}
+\end{pspicture}
+\end{center}
+		
+$\bullet~$ Sans carte d'abonnement chaque voyage coûte 80~\euro{}, donc $x$ voyages coûtent $80x$~\euro. 0 voyage coûte 0~\euro, donc la représentation de cette fonction (linéaire) est une droite contenant l'origine : c'est la droite rouge.
+
+$\bullet~$Avec la carte d'abonnement coûtant 56~\euro{} chaque voyage revient à 56~\euro{} : elle paiera pour $x$ voyages : $56x + 49$~\euro. La représentation de cette fonction (affine) est donc la droite bleue contenant le point de coordonnées (0~;~49).
+		\item %Choisir et recopier sur la copie l'expression algébrique de la fonction $g$ :
+		
+%Choix 1 : $g(x) =56x+49$ 
+
+%Choix 2: $g(x) =56x$ 
+
+%%Choix 3: $g(x) = 80x$ 
+
+%Choix 4 : $g(x) = 49x +56$
+On a vu que $g(x) = 56x + 49$.
+		\item %Calculer $g(8)$.
+On a donc $g(8) = 56 \times 8 + 49 = 448 + 49 = 497$.
+		\item %Indiquer 
+Le prix à payer pour $8$ billets avec la carte de réduction est donc $497$~(\euro).
+		\item %Sachant qu'Elsa achètera plus de $8$ billets dans l'année, déterminer le tarif le plus
+%avantageux pour elle.
+
+%Justifier la réponse en expliquant la méthode utilisée.
+$\bullet~$ Sans carte $x > 8$, donc $80x > 640$~(\euro).
+
+$\bullet~$ Avec la carte : $x > 8$, donc $56x > 56 \times 8$ ou $56x > 448$ et $56x + 49 > 448 + 48$ ou $56x + 49 > 496$.
+
+$\bullet~$Graphiquement on voit que si on trace la droite verticale $x = 8$ cette droite rencontre la droite bleue (représentation de $g$) avant celle de $f$. C'est donc le choix de l'achat de la carte qui sera le plus intéressant.
+
+En fait ceci est vrai à partir de 3 voyages comme on l'a vu dans la question \textbf{1.}
+	\end{enumerate}
+\end{enumerate}
+
+\bigskip
+

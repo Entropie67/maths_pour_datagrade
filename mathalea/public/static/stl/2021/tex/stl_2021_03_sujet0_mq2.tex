@@ -1,0 +1,192 @@
+
+\medskip
+
+\begin{center}
+\textbf{Figure 1}
+
+\psset{xunit=1cm,yunit=1cm,labelFontSize=\scriptstyle,comma=true}
+\begin{pspicture}(-1,-0.75)(11,3.75)
+\multido{\n=0+1}{11}{\psline[linewidth=0.75pt,linecolor=lightgray](\n,0)(\n,3.5)}
+\multido{\n=0+1}{4}{\psline[linewidth=0.75pt,linecolor=lightgray](0,\n)(10.25,\n)}
+\psframe[linewidth=0.8pt, linecolor=gray](9,0)(9.3,0.3)
+\psaxes[linewidth=0.8pt,Dx=1,Dy=1]{->}(0,0)(10.25,3.5)
+\pstVerb{ /xmax 9 ln 1 add def }
+\pscustom[fillstyle=hlines, hatchcolor=cyan, hatchwidth=0.8pt, hatchsep=5.5pt, hatchangle=-45]{
+	\psplot[plotpoints=1000]{1}{9}{x ln}
+	\psline(9,0)
+	\psplot[plotpoints=1000]{9}{1}{0}
+	\closepath
+}
+\psplot[plotpoints=1000,linewidth=1.25pt,linecolor=blue]{1}{9}{x ln}
+\psplot[plotpoints=1000,linewidth=1.25pt,linecolor=blue]{1}{9}{0}
+\psline[linecolor=blue,linewidth=1.25pt](9,0)(!9 9 ln)
+\uput[ul](1,0){A}\uput[dr](9,0){B}\uput[ur](!9 9 ln){C}\uput[ur](5.4,2.4){$C_f$}
+\psline[arrows=->,linewidth=1pt](5.5,2.5)(!5 5 ln)
+\psdot[dotsize=4pt,linecolor=red](1,0)
+\psdot[dotsize=4pt,linecolor=red](9,0)
+\psdot[dotsize=4pt,linecolor=red](!9 9 ln)
+\end{pspicture}
+\end{center}
+
+\begin{itemize}
+\item Sur la figure 1 ci-dessus, l'unité de longueur est le centimètre ;
+\item la courbe $C_f$ tracée est celle de la fonction $f$ définie sur $[1~;~9]$ par $f(x) = \ln(x)$ ;
+\item le point A a pour coordonnées $(1~;~0)$, le point B a pour coordonnées $(9~;~0)$ ;
+\item C est le point de $C_f$ d'abscisse 9.
+\end{itemize}
+
+On désigne par $\Delta$ le domaine hachuré sur la figure 1, délimité par la courbe $C_f$, l'axe des abscisses et le segment [BC]. On note $A_2$ l'aire de $\Delta$, exprimée en cm$^2$.
+
+\smallskip
+
+Dans le but d'utiliser la méthode des rectangles pour estimer $A_2$, on a écrit la fonction Python ci-dessous :
+
+\begin{lstlisting}[frame=single, language=Python, basicstyle=\ttfamily, breaklines=true, xleftmargin=80pt, xrightmargin=80pt]
+from math import log as ln
+def meth_rect(pas):
+    s = 0
+    x = 1
+    while x<9:
+        s = s+ln(x)*pas
+        x = x+pas
+    return s
+\end{lstlisting}
+
+\begin{enumerate}
+\item Laquelle des figures ci-dessous correspond à l'exécution de l'instruction \texttt{meth\_rect(2)} ?
+
+$\textit{Aucune justification n'est attendue.}$
+
+\noindent
+\begin{minipage}[t]{0.48\textwidth}
+
+\begin{center}
+\psset{xunit=0.55cm,yunit=0.5cm,labelFontSize=\scriptstyle,comma=true}
+\begin{pspicture}(-1,-0.75)(11,3.75)
+\multido{\n=0+1}{11}{\psline[linewidth=0.75pt,linecolor=lightgray](\n,0)(\n,3.5)}
+\multido{\n=0+1}{4}{\psline[linewidth=0.75pt,linecolor=lightgray](0,\n)(10.25,\n)}
+\psaxes[linewidth=0.8pt,Dx=1,Dy=1]{->}(0,0)(10.25,3.5)
+\psframe[fillstyle=hlines,hatchangle=45,hatchsep=4pt,hatchcolor=red,linewidth=0.5pt,linecolor=red](1,0)(!3 3 ln)
+\psframe[fillstyle=hlines,hatchangle=45,hatchsep=4pt,hatchcolor=red,linewidth=0.5pt,linecolor=red](!1 2 add 0)(!5 5 ln)
+\psframe[fillstyle=hlines,hatchangle=45,hatchsep=4pt,hatchcolor=red,linewidth=0.5pt,linecolor=red](!1 4 add 0)(!7 7 ln)
+\psframe[fillstyle=hlines,hatchangle=45,hatchsep=4pt,hatchcolor=red,linewidth=0.5pt,linecolor=red](!1 6 add 0)(!9 9 ln)
+\psplot[plotpoints=1000,linewidth=1.25pt,linecolor=blue]{1}{9}{x ln}
+\psplot[plotpoints=1000,linewidth=1.25pt,linecolor=blue]{1}{9}{0}
+\psline[linecolor=blue,linewidth=1.25pt](9,0)(!9 9 ln)
+\uput[ul](1,0){A}\uput[dr](9,0){B}\uput[ur](!9 9 ln){C}\uput[ul](!3 3 ln){$C_f$}
+\psdot[dotsize=4pt,linecolor=red](1,0)
+\psdot[dotsize=4pt,linecolor=red](9,0)
+\psdot[dotsize=4pt,linecolor=red](!9 9 ln)
+\end{pspicture}
+
+\smallskip
+
+Figure 2
+
+\end{center}
+
+\end{minipage}\hfill
+\begin{minipage}[t]{0.48\textwidth}
+
+\begin{center}
+\psset{xunit=0.55cm,yunit=0.5cm,labelFontSize=\scriptstyle,comma=true}
+\begin{pspicture}(-1,-0.75)(11,3.75)
+\multido{\n=0+1}{11}{\psline[linewidth=0.75pt,linecolor=lightgray](\n,0)(\n,3.5)}
+\multido{\n=0+1}{4}{\psline[linewidth=0.75pt,linecolor=lightgray](0,\n)(10.25,\n)}
+\psaxes[linewidth=0.8pt,Dx=1,Dy=1]{->}(0,0)(10.25,3.5)
+\psframe[fillstyle=hlines,hatchangle=45,hatchsep=4pt,hatchcolor=red,linewidth=0.5pt,linecolor=red](1,0)(!2 2 ln)
+\psframe[fillstyle=hlines,hatchangle=45,hatchsep=4pt,hatchcolor=red,linewidth=0.5pt,linecolor=red](!1 1 add 0)(!3 3 ln)
+\psframe[fillstyle=hlines,hatchangle=45,hatchsep=4pt,hatchcolor=red,linewidth=0.5pt,linecolor=red](!1 2 add 0)(!4 4 ln)
+\psframe[fillstyle=hlines,hatchangle=45,hatchsep=4pt,hatchcolor=red,linewidth=0.5pt,linecolor=red](!1 3 add 0)(!5 5 ln)
+\psframe[fillstyle=hlines,hatchangle=45,hatchsep=4pt,hatchcolor=red,linewidth=0.5pt,linecolor=red](!1 4 add 0)(!6 6 ln)
+\psframe[fillstyle=hlines,hatchangle=45,hatchsep=4pt,hatchcolor=red,linewidth=0.5pt,linecolor=red](!1 5 add 0)(!7 7 ln)
+\psframe[fillstyle=hlines,hatchangle=45,hatchsep=4pt,hatchcolor=red,linewidth=0.5pt,linecolor=red](!1 6 add 0)(!8 8 ln)
+\psframe[fillstyle=hlines,hatchangle=45,hatchsep=4pt,hatchcolor=red,linewidth=0.5pt,linecolor=red](!1 7 add 0)(!9 9 ln)
+\psplot[plotpoints=1000,linewidth=1.25pt,linecolor=blue]{1}{9}{x ln}
+\psplot[plotpoints=1000,linewidth=1.25pt,linecolor=blue]{1}{9}{0}
+\psline[linecolor=blue,linewidth=1.25pt](9,0)(!9 9 ln)
+\uput[ul](1,0){A}\uput[dr](9,0){B}\uput[ur](!9 9 ln){C}\uput[ul](!3 3 ln){$C_f$}
+\psdot[dotsize=4pt,linecolor=red](1,0)
+\psdot[dotsize=4pt,linecolor=red](9,0)
+\psdot[dotsize=4pt,linecolor=red](!9 9 ln)
+\end{pspicture}
+
+\smallskip
+
+Figure 3
+
+\end{center}
+
+\end{minipage}
+
+%\vspace{0.5cm}
+%\hrule
+%\vspace{0.5cm}
+
+\noindent
+\begin{minipage}[t]{0.48\textwidth}
+
+\begin{center}
+\psset{xunit=0.55cm,yunit=0.5cm,labelFontSize=\scriptstyle,comma=true}
+\begin{pspicture}(-1,-0.75)(11,3.75)
+\multido{\n=0+1}{11}{\psline[linewidth=0.75pt,linecolor=lightgray](\n,0)(\n,3.5)}
+\multido{\n=0+1}{4}{\psline[linewidth=0.75pt,linecolor=lightgray](0,\n)(10.25,\n)}
+\psaxes[linewidth=0.8pt,Dx=1,Dy=1]{->}(0,0)(10.25,3.5)
+\psframe[fillstyle=hlines,hatchangle=45,hatchsep=4pt,hatchcolor=red,linewidth=0.5pt,linecolor=red](3,0)(!5 3 ln)
+\psframe[fillstyle=hlines,hatchangle=45,hatchsep=4pt,hatchcolor=red,linewidth=0.5pt,linecolor=red](!3 2 add 0)(!7 5 ln)
+\psframe[fillstyle=hlines,hatchangle=45,hatchsep=4pt,hatchcolor=red,linewidth=0.5pt,linecolor=red](!3 4 add 0)(!9 7 ln)
+\psplot[plotpoints=1000,linewidth=1.25pt,linecolor=blue]{1}{9}{x ln}
+\psplot[plotpoints=1000,linewidth=1.25pt,linecolor=blue]{1}{9}{0}
+\psline[linecolor=blue,linewidth=1.25pt](9,0)(!9 9 ln)
+\uput[ul](1,0){A}\uput[dr](9,0){B}\uput[ur](!9 9 ln){C}\uput[ul](!3 3 ln){$C_f$}
+\psdot[dotsize=4pt,linecolor=red](1,0)
+\psdot[dotsize=4pt,linecolor=red](9,0)
+\psdot[dotsize=4pt,linecolor=red](!9 9 ln)
+\end{pspicture}
+
+\smallskip
+
+Figure 4
+
+\end{center}
+
+\end{minipage}\hfill
+\begin{minipage}[t]{0.48\textwidth}
+
+\begin{center}
+\psset{xunit=0.55cm,yunit=0.5cm,labelFontSize=\scriptstyle,comma=true}
+\begin{pspicture}(-1,-0.75)(11,3.75)
+\multido{\n=0+1}{11}{\psline[linewidth=0.75pt,linecolor=lightgray](\n,0)(\n,3.5)}
+\multido{\n=0+1}{4}{\psline[linewidth=0.75pt,linecolor=lightgray](0,\n)(10.25,\n)}
+\psaxes[linewidth=0.8pt,Dx=1,Dy=1]{->}(0,0)(10.25,3.5)
+\psframe[fillstyle=hlines,hatchangle=45,hatchsep=4pt,hatchcolor=red,linewidth=0.5pt,linecolor=red](2,0)(!3 2 ln)
+\psframe[fillstyle=hlines,hatchangle=45,hatchsep=4pt,hatchcolor=red,linewidth=0.5pt,linecolor=red](!2 1 add 0)(!4 3 ln)
+\psframe[fillstyle=hlines,hatchangle=45,hatchsep=4pt,hatchcolor=red,linewidth=0.5pt,linecolor=red](!2 2 add 0)(!5 4 ln)
+\psframe[fillstyle=hlines,hatchangle=45,hatchsep=4pt,hatchcolor=red,linewidth=0.5pt,linecolor=red](!2 3 add 0)(!6 5 ln)
+\psframe[fillstyle=hlines,hatchangle=45,hatchsep=4pt,hatchcolor=red,linewidth=0.5pt,linecolor=red](!2 4 add 0)(!7 6 ln)
+\psframe[fillstyle=hlines,hatchangle=45,hatchsep=4pt,hatchcolor=red,linewidth=0.5pt,linecolor=red](!2 5 add 0)(!8 7 ln)
+\psframe[fillstyle=hlines,hatchangle=45,hatchsep=4pt,hatchcolor=red,linewidth=0.5pt,linecolor=red](!2 6 add 0)(!9 8 ln)
+\psplot[plotpoints=1000,linewidth=1.25pt,linecolor=blue]{1}{9}{x ln}
+\psplot[plotpoints=1000,linewidth=1.25pt,linecolor=blue]{1}{9}{0}
+\psline[linecolor=blue,linewidth=1.25pt](9,0)(!9 9 ln)
+\uput[ul](1,0){A}\uput[dr](9,0){B}\uput[ur](!9 9 ln){C}\uput[ul](!3 3 ln){$C_f$}
+\psdot[dotsize=4pt,linecolor=red](1,0)
+\psdot[dotsize=4pt,linecolor=red](9,0)
+\psdot[dotsize=4pt,linecolor=red](!9 9 ln)
+\end{pspicture}
+
+\smallskip
+
+Figure 5
+
+\end{center}
+
+\end{minipage}
+
+\medskip
+
+\item Comparer $A_2$ à la valeur \texttt{9.307920700315046} renvoyée par l'exécution de \texttt{meth\_rect(2)}.
+\end{enumerate}
+
+\bigskip
+

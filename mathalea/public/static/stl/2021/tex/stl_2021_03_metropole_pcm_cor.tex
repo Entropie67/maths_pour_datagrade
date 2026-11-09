@@ -1,0 +1,31 @@
+
+\medskip
+
+\begin{enumerate}[start=4]
+\item
+	\begin{enumerate}[start=3]
+	\item Les solutions de l'équation différentielle $y'+ay=b$ sur $\R$ sont les fonctions $y$ définies par :
+\[y(x) = C\e^{-ax} + \dfrac{b}{a}, \text{ où } C \text{ est une constante quelconque.}\]
+
+Ici $a = 1,125 \times 10^6 \text{ et } b = 1,811$. Par conséquent, sur $\R$ :
+\[v(x) = C \e^{-1,125 \times 10^6t}+\dfrac{1,811}{1,125 \times 10^6}.\]	
+
+	\item Déterminons $C$ :
+\[v(0) = C\e^{-1,125 \times 10^6 \times 0} + \dfrac{1,811}{1,125 \times 10^6} = 0 \quad \text{d'où}\quad C = -\dfrac{1,811}{1,125 \times 10^6} \approx -1,610 \times 10^{-6}.\]
+
+Au final :
+\begin{align*}
+v(t) &\approx -1,610 \times 10^{-6} \times \e^{-1,125 \times 10^6t} + 1,610 \times 10^{-6} \\
+&= 1,610 \times 10^{-6} \times \left(1 - \e^{-1,125 \times 10^6t}\right).
+\end{align*}
+	\end{enumerate}
+\item $\ds\lim_{t\to +\infty} \e^{-1{,}125 \times 10^6 t} = 0$, d'où :
+\[\lim_{t \to +\infty} v(t) = 1{,}610 \times 10^{-6} \times \left(1 - 0\right) = 1{,}610 \times 10^{-6}~\text{m}\cdot\text{s}^{-1}.
+\]
+
+Cette valeur correspond à la \textbf{vitesse limite} ou \textbf{vitesse de sédimentation} de l'hématie dans le plasma sanguin. Cela signifie qu'après un temps suffisamment long, l'hématie cesse d'accélérer et atteint une vitesse constante. Cette situation correspond à un régime permanent où la somme des forces (poids, poussée d'Archimède et force de frottement fluide) est nulle.
+\end{enumerate}
+
+\bigskip
+
+

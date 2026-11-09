@@ -1,0 +1,136 @@
+
+\medskip
+
+\textbf{Dans cet exercice, seulement 4 questions au choix parmi les 6 questions proposées sont à traiter. Toutes ces questions sont indépendantes les unes des autres.}
+
+\bigskip
+
+\textbf{Question 1}
+
+\medskip
+
+On considère la fonction $f$ définie sur $]0~;~+\infty[$ par $f(x) = ax + b - \ln (x)$ où $a$ et $b$ sont des réels. On note $\mathcal{C}_f$, la courbe représentative de $f$ tracée dans le repère ci-dessous.
+
+On note A le point d'abscisse $0,5$ appartenant à la courbe $\mathcal{C}_f$.
+
+On note $T$ la tangente à la courbe $\mathcal{C}_f$ au point A. La droite $T$ est parallèle à l'axe des abscisses.
+
+Le point $B(1~;~1)$ appartient à la courbe $\mathcal{C}_f$.
+
+\begin{center}
+\psset{unit=3cm,comma=true}
+\begin{pspicture*}(-0.5,-0.5)(3.3,3.3)
+\psgrid[gridlabels=0pt,subgriddiv=2,gridcolor=gray](0,0)(4,4)
+\psaxes[linewidth=1.25pt,Dx=0.5,Dy=0.5,labelFontSize=\scriptstyle]{->}(0,0)(0,0)(3.3,3.3)[$x$,110][$y$,2000]
+\psplot[plotpoints=2000,linewidth=1.25pt,linecolor=red]{0.01}{3}{2 x mul 1 sub x ln sub}
+\psline[linecolor=blue](0,0.6931)(3.25,0.6931) \uput[u](2.2,0.6932){\blue $T$}
+\psdots(0.5,0.6931)(1,1)
+\uput[d](0.5,0.6931){A}\uput[ul](1,1){B}
+\uput[dr](2.5,3){\red $\mathcal{C}_f$}
+\end{pspicture*}
+\end{center}
+
+\begin{enumerate}
+\item Donner la valeur de $f(1)$. En déduire une relation entre $a$ et $b$.
+
+\item Justifier que $f'(0,5) = 0$. En déduire la valeur de $a$.
+
+\item En déduire la valeur de $b$.
+\end{enumerate}
+
+\bigskip
+
+\textbf{Question 2}
+
+\medskip
+
+Une entreprise achète une machine d'une valeur de \np{300000}~\euro. Cette machine perd de sa valeur au fil des années. 
+Cette perte exprimée en euro, à l'instant $t$ exprimé en année, est modélisée par la fonction $f $ définie sur [0~;~15] par:
+\[f(t) = \np{300000}\left(1 - \e^{- 0,09 t}\right).\]
+
+Au bout de combien d'années (résultat arrondi à l'unité) la machine aura-t-elle perdu la moitié de sa valeur ?
+
+\bigskip
+
+\textbf{Question 3}
+
+\medskip
+
+On considère la fonction $f$ définie sur $]0~;~+ \infty[$ par 
+$f(x) = 2x - 1 - \ln (x).$
+
+\begin{enumerate}
+\item Montrer que pour tout $x$ appartenant à $]0~;~+ \infty[$, $f'(x) = \dfrac{2x-1}{x}$.
+
+\item Dresser le tableau de variation de la fonction $f$ sur $]0~;~+ \infty[$ en faisant figurer la valeur exacte de son extremum. 
+On précisera les limites aux bornes de l'intervalle.
+\end{enumerate}
+
+\bigskip
+
+\textbf{Question 4}
+
+\medskip
+
+\begin{enumerate}
+\item On considère l'équation différentielle 
+$(E) : \quad y' + \np{0,0434}y = 0.$
+
+Déterminer sur $[0~;~+ \infty[$ la solution $P$ de cette équation différentielle qui vérifie la condition initiale $y(0) = 6,75$.
+
+\item Un signal de puissance initiale $P(0) =6,75$~mW parcourt une fibre optique. La puissance du signal, exprimée en mW, lorsque celui-ci a parcouru une distance de $x$ kilomètres depuis l'entrée de la fibre optique, est donnée par $P(x)$ où $P$ est la fonction déterminée à la question \textbf{1.}
+
+Montrer que la perte de puissance une fois que le signal a parcouru un kilomètre depuis l'entrée est d'environ $287~ \mu$W.
+\end{enumerate}
+
+\bigskip
+
+\textbf{Question 5}
+
+\medskip
+
+Soit $f$ la fonction définie sur $\mathbb{R}$ par 
+$f(x) = \left(x^2 + 5x + 4\right)\e^{x}.$
+
+Soit $F$ la fonction définie sur $\mathbb{R}$ par 
+$F(x) = \left(x^2 + 3x + 1\right) \e^{x}$. 
+
+\begin{enumerate}
+\item Montrer que, pour tout $x$ appartenant à $\mathbb{R}$, $F'(x) = f(x)$.
+
+\item Calculer $\displaystyle\int_0^1 f(x)\d x$.
+\end{enumerate}
+
+\bigskip
+
+\textbf{Question 6}
+
+\medskip
+
+\begin{center}
+\fbox{
+\begin{minipage}{0.9\textwidth}
+\textbf{Rappel :} pour $a$ et $b$ deux réels, on a les formules suivantes :
+\[\bullet~~\cos(a + b) = \cos (a) \cos(b) - \sin(a) \sin(b)\]
+\[\bullet~~\cos(a - b) = \cos (a) \cos(b) + \sin(a) \sin(b)\]
+\[\bullet~~\sin(a + b) = \sin(a) \cos(b) + \cos (a) \sin(b)\]
+\[\bullet~~\sin(a - b) = \sin(a) \cos(b) - \cos (a) \sin(b)\]
+\end{minipage}}
+\end{center}
+
+La tension $u$ aux bornes d'un générateur dépendant du temps $t$ est donnée par:
+\[u(t) = 240 \cos (50t) - 240 \sin (50t).\]
+
+La tension $u$ est exprimée en volt et le temps $t$ est exprimé en seconde.
+
+\begin{enumerate}
+\item Montrer que pour tout $t$ appartenant à $[0~;~+ \infty[$,
+$u(t) = 240 \sqrt{2} \cos \left(50t + \dfrac{\pi}{4}\right)$
+
+\item En déduire la fréquence $f= \dfrac{\omega}{2\pi}$, exprimée en Hz, délivrée par le générateur, où $\omega$ désigne la pulsation. 
+On arrondira le résultat à l'unité.
+\end{enumerate}
+
+\bigskip
+
+

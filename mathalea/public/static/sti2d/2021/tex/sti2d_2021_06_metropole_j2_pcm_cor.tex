@@ -1,0 +1,65 @@
+
+\medskip
+
+\begin{enumerate}
+\item L'équation peut être mise sous la forme :
+\[y' + \dfrac{1}{800} y = \dfrac{600}{800}.\]
+
+La durée caractéristique pour ce type d'équation est donnée par la constante de temps $\tau$, qui est l'inverse du coefficient de $y$ dans $y'$.
+
+Cela signifie que $\tau = \frac{1}{k}$, où $k$ est le coefficient du terme $y$ dans l'équation.
+
+Dans notre cas $k = \frac{1}{800}$, donc la durée caractéristique est : $\tau = \frac{1}{\frac{1}{800}} = 800 \, \text{s}.$
+
+À long terme ($t \to +\infty$), la solution de l'équation différentielle tend vers un état d'équilibre, qui est déterminé en annulant $y'$ dans l'équation.
+
+En posant $y' = 0$, on obtient : $\displaystyle \lim_{t \to +\infty} y(t) = 600 \degres \, \text{C}$.
+
+\medskip
+
+\item 
+	\begin{enumerate}
+		\item Posons : $y = \theta(t) = 600 - 575 \e^{-0,00125t},$
+		
+		et : $y' = \theta'(t) = -575 \times (-0,00125) \e^{-0,00125t} = 0,71875 \e^{-0,00125t}.$
+
+    		L'équation $800 y' + y = 600$ devient, après substitution :
+    		\[800 \times 0,71875 \e^{-0,00125t} + \left(600 - 575 \e^{-0,00125t}\right)\]
+    		\[575 \e^{-0,00125t} + 600 - 575 \e^{-0,00125t} = 600,\]
+    		\[600 = 600\]
+		La fonction $\theta(t) = 600 - 575 \e^{-0,00125t}$ est bien une solution de l'équation différentielle donnée.
+		
+\medskip
+		
+		\item Temps $t = 10 \text{ minutes} = 600 \text{ secondes}$.
+		\begin{align*}
+		\theta(600) &= 600 - 575 \e^{-0,00125 \times 600} \\
+		&= 600 - 575 \e^{-0,75} \\
+		&\approx 328,39.
+		\end{align*}
+		La température du four au bout de 10 minutes est d'environ $328,4 \degres$ C.
+	\end{enumerate}
+
+\medskip
+
+\item
+	\begin{enumerate}
+		\item On cherche $\theta(t) = 550$, soit :
+		\begin{align*}
+		&600 - 575 \e^{-0,00125t} = 550 \\
+		\iff &-575 \e^{-0,00125t} = 550 - 600 \\
+		\iff &-575 \e^{-0,00125t} = -50 \\
+		\iff &\e^{-0,00125t} = \dfrac{50}{575} \\
+		\iff &-0,00125t = \ln\left(\dfrac{50}{575}\right) \\
+		\iff &t = -\dfrac{\ln\left(\dfrac{50}{575}\right)}{0,00125} \\
+		\iff &t \approx 1954
+		\end{align*}
+		Le temps nécessaire pour que \(\theta(t) = 550\) est donc d'environ 33 minutes.
+
+		\item D'après les questions \textbf{1.} et \textbf{2.a.}, on a vu que la température dans le four croissait jusqu'à la valeur limite de $600 \degres$C. \textbf{La température dans le four ne dépassera donc pas les 600 \degres C.}
+	\end{enumerate}
+\end{enumerate}
+
+\bigskip
+
+

@@ -1,0 +1,47 @@
+
+\vspace{0.25cm}
+
+On considère la figure suivante.
+
+\begin{center}
+\psset{xunit=1.6cm,yunit=1.6cm,arrowsize=3pt 2,radius=0pt}
+\begin{pspicture}(-1,-0.5)(6,4)
+%\psgrid
+\psframe[linecolor=gray](0,0)(5,3.5)
+\psframe[linecolor=gray](0,0)(0.2,0.2) \psframe[linecolor=gray](5,3.5)(4.8,3.3)
+\psframe[linecolor=gray](5,0)(4.8,0.2) \psframe[linecolor=gray](0,3.5)(0.2,3.3)
+\Cnode*(0,3.5){B} \Cnode*(0,1.5){D} \Cnode*(4,1.5){O} 
+\Cnode*(2.2,1.5){C}  \Cnode*(2.2,2.4){A}
+\psframe[linecolor=gray](0,1.5)(0.2,1.7) \psframe[linecolor=gray](2.2,1.5)(2.4,1.7)
+\pspolygon[linewidth=1.5pt](A)(C)(O)(B)(D)(C) 
+\psline[linestyle=dashed](C)(2.2,-0.3) \psline[linestyle=dashed](O)(4,-0.3)
+\uput[u](A){A} \uput[l](B){B} \uput[dl](C){C} \uput[ul](D){D} \uput[r](O){O} 
+\psline{<->}(0,-0.2)(2.2,-0.2) \uput[d](1.1,-0.2){22 mètres}
+\psline{<->}(4,-0.2)(5,-0.2) \uput[d](4.5,-0.2){10 mètres}
+\psline{<->}(0,3.7)(5,3.7) \uput[u](2.5,3.7){50 mètres}
+\psline{<->}(5.2,0)(5.2,3.5) \uput[r]{-90}(5.2,1.75){35 mètres}
+\psline{<->}(-0.2,0)(-0.2,1.5) \uput[l]{-90}(-0.2,0.75){15 mètres}
+\end{pspicture}
+\end{center}
+
+\begin{enumerate}
+\item Calculer la longueur du segment [BD].
+\item Montrer par un calcul que la longueur du segment [OC] est 18 mètres.
+\item 
+\begin{list}{\textbullet}{On souhaite calculer la longueur du segment [AC] en utilisant le théorème de Thalès sachant que:}
+\item Dans le triangle (ODB) les droites (AC) et (BD) sont parallèles
+\item Les points O, A et B sont alignés
+\item Les points O, C et D sont alignés
+\end{list}
+
+\begin{enumerate}
+\item L'une des égalités suivantes correspond au théorème de Thalès appliqué à la figure ci-dessus:
+
+\[\dfrac{\text{OC}}{\text{OD}} = \dfrac{\text{AC}}{\text{BD}} \;;\quad\quad \dfrac{\text{OC}}{\text{CD}} = \dfrac{\text{AC}}{\text{BD}} \;;\quad\quad\dfrac{\text{DC}}{\text{DO}} = \dfrac{\text{OA}}{\text{OB}} \;;\quad\quad\dfrac{\text{OD}}{\text{OC}} = \dfrac{\text{OA}}{\text{OB}}\]
+
+Recopier la bonne égalité sur la copie.
+
+\item Calculer la longueur du segment [AC] en donnant toutes les étapes du calcul.
+\end{enumerate}
+\end{enumerate}
+

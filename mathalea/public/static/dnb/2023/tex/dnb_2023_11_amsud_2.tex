@@ -1,0 +1,97 @@
+
+\medskip
+
+\begin{minipage}{8cm}
+À partir d'une feuille rectangulaire de dimension
+10 cm sur 8 cm, on coupe les quatre coins de manière
+identique.
+
+On obtient ainsi un polygone FELKJIHG et quatre triangles rectangles isocèles égaux comme représenté ci-contre.
+
+AD $= 10$ cm ; AB $= 8$ cm.
+\end{minipage} \hspace{0.5cm}
+\begin{minipage}{7.2cm}
+\psset{unit=0.9cm}
+\begin{pspicture}(7.2,6.5)
+\def\barbar{\psline(-0.05,-0.1)(-0.05,0.1)\psline(0.05,-0.1)(0.05,0.1)}
+\psline[linestyle=dashed](2.1,5.6)(0.3,3.8)
+\psline[linestyle=dashed](0.3,2.4)(2.1,0.6)
+\psline[linestyle=dashed](4.7,0.6)(6.5,2.4)
+\psline[linestyle=dashed](6.5,3.8)(4.7,5.6)
+\psframe[linewidth=1.5pt](0.3,0.6)(6.5,5.6)
+\rput(1.2,5.6){\barbar}\rput(5.6,5.6){\barbar}
+\rput(1.2,0.6){\barbar}\rput(5.6,0.6){\barbar}
+\rput{90}(0.3,4.7){\barbar}\rput{90}(0.3,1.5){\barbar}
+\rput{90}(6.5,4.7){\barbar}\rput{90}(6.5,1.5){\barbar}
+\rput{-45}(1.2,1.5){\Large \ding{36}}
+\uput[ul](0.3,5.6){A} \uput[dl](0.3,0.6){B} \uput[dr](6.5,0.6){C} \uput[ur](6.5,5.6){D}
+\uput[u](2.1,5.6){E} \uput[l](0.3,3.8){F} \uput[l](0.3,2.4){G} \uput[d](2.1,0.6){H}
+\uput[d](4.7,0.6){I} \uput[r](6.5,2.4){J} \uput[r](6.5,3.8){K} \uput[u](4.7,5.6){L}
+\end{pspicture}
+\end{minipage}
+
+\medskip
+
+\textbf{Les deux parties sont indépendantes.}
+
+\medskip
+
+\textbf{Première partie : on suppose que AE = 3 cm.}
+
+\begin{enumerate}
+\item Quelle est l'aire du triangle AEF ?
+\item En déduire l'aire du polygone FELKJIHG.
+\end{enumerate}
+
+\medskip
+
+\textbf{Deuxième partie :}
+
+On souhaite que l'aire du polygone FELKJIHG soit de 60 cm$^2$.
+
+ Pour cela, on fait varier la longueur AE et on observe l'effet sur l'aire du polygone FELKJIHG.
+ 
+ On note $x$ la longueur AE exprimée en cm.
+
+\begin{enumerate}[resume]
+\item 
+	\begin{enumerate}
+		\item Exprimer l'aire du triangle AEF en fonction de $x$.
+		\item Montrer que l'aire du polygone FELKJIHG, en cm$^2$, est donnée par l'expression $80 - 2x^2$.
+	\end{enumerate}	
+\item On considère la fonction $f : x \longmapsto ~80 - 2x^2$.
+
+À l'aide d'un tableur, on a produit le tableau de valeurs ci-dessous :
+\begin{center}
+\begin{tabularx}{0.9\linewidth}{|c|*{10}{>{\centering \arraybackslash}X|}}\hline
+&A&B&C&D & E&F& G& H&I&J\\ \hline
+1&$x$&0&0,5&1&1,5&2& 2,5&3&3,5& 4\\ \hline
+2&$f(x)$&80&79,5&78&45,5&72& 67,5& 62&55,5& 48\\ \hline
+\end{tabularx}
+\end{center}
+
+Proposer une formule qui a pu être saisie en B2 avant d'être étirée vers la droite.
+
+Ne pas justifier.
+\item Voici la courbe représentative de la fonction $f$ :
+\begin{center}
+\psset{xunit=2.2cm,yunit=0.1cm,comma=true}
+\begin{pspicture}(4.5,90)
+\multido{\n=0.0+0.5}{10}{\psline[linewidth=0.2pt](\n,0)(\n,90)}
+\multido{\n=0+10}{10}{\psline[linewidth=0.2pt](0,\n)(4.5,\n)}
+\psaxes[linewidth=1.25pt,Dx=0.5,Dy=10]{->}(0,0)(4.5,90)
+\uput[d](4.4,0){$x$}\uput[l](0,87){$f(x)$}
+\psplot[plotpoints=2000,linewidth=1.25pt,linecolor=blue]{0}{4.5}{80 x dup mul 2 mul sub}
+\end{pspicture}
+\end{center}
+\medskip
+
+	\begin{enumerate}
+		\item La fonction $f$ est-elle affine ?
+		\item Par lecture graphique, déterminer une valeur approchée de la longueur AE permettant d'obtenir un polygone FELKJIHG d'aire égale à 60 cm$^2$.
+		\item Trouver par le calcul la valeur exacte de cette longueur.
+	\end{enumerate}
+\end{enumerate}
+
+\bigskip
+

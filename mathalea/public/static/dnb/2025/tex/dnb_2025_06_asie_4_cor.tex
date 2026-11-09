@@ -1,0 +1,37 @@
+
+\subsection*{Partie A :}
+
+\begin{enumerate}
+	\item \begin{minipage}[t]{7cm}
+		On veut un triangle équilatéral de côté 50 pas, donc on va avancer de 50 pas.
+
+	Après avoir tracé le premier segment de 50 pas, le lutin est toujours orienté à droite, donc il doit tourner de 120\degres{} pour que le prochain segment forme un angle de 60\degres{} avec le précédent. On a donc :
+	\end{minipage}
+	\hfill
+	\begin{scratch}[num blocks,baseline=1]
+		\initmoreblocks{définir \namemoreblocks{triangle équilatéral}}
+		\blockrepeat{répéter \ovalnum{~3~~} fois}
+		{	\blockmove{avancer de \ovalnum{~50~~} pas}
+			\blockmove{tourner de \turnleft{} de \ovalnum{~120~~} degrés}}
+	\end{scratch}
+
+	\item
+	\textbf{Réponse :} C'est le programme A :  Les sommets successifs d'un hexagone régulier sont images les uns des autres par une rotation de centre le centre du polygone régulier et d'angle $\dfrac{360}{6}=60^{\circ}$. Or, après l'exécution du bloc \begin{scratch} \blockmoreblocks{triangle équilatéral}	\end{scratch}, le lutin a effectué trois rotations de 120\degres{}, donc il a tourné de 360\degres{}, et il est orienté dans le même sens qu'au départ, en étant revenu à son point de départ (le centre de l'hexagone). En le faisant tourner de 60\degres{} avant de recommencer, cela permettra que le triangle équilatéral suivant soit la rotation du triangle précédent, avec un angle de 60\degres{}.
+\end{enumerate}
+
+\subsection*{Partie B : Hexagone régulier}
+
+\begin{enumerate}
+	\item \begin{minipage}[t]{9cm}
+		Il faut avancer de 50 pas pour que les segments fassent 50 pas de long.
+
+	Après le premier segment tracé, on sera "en bas à droite" de l'hexagone avec le lutin orienté à droite, donc il faut tourner vers la gauche, de 60\degres{} pour que le lutin s'oriente à 60\degres{} de l'horizontale, vers le haut et la droite, afin de laisser 120\degres{} entre le premier et le deuxième segment. On a donc :
+	\end{minipage}\hfill
+	\begin{scratch}[scale=0.8]
+			\blockrepeat{répéter \ovalnum{A} fois}
+			{\blockmove{avancer de \ovalnum{~50~~} pas}
+			 \blockmove{tourner \turnleft{} de \ovalnum{~60~~} degrés}}
+		\end{scratch}
+\end{enumerate}
+
+

@@ -1,0 +1,66 @@
+%source mathadata
+\begin{center}
+			\begin{tikzpicture}[scale=0.9]
+				\begin{axis}[
+						name=plotMed2corr,
+						axis lines=middle,
+						ymajorgrids=true,
+						xmajorgrids=true,
+						xmin=-1.1,
+						xmax=105,
+						ymin=-1.1,
+						ymax=105,
+						xtick={0,5,...,100},
+						ytick={0,5,...,100},
+						xlabel={\Large{\color{red}$x$}},
+						xlabel style={at={(axis description cs:1.02,-0.1)}, anchor=north},
+						ylabel={\color{blue}{\Large$y$}},
+						ylabel style={at={(axis description cs:-0.12,1.02)}, anchor=west},
+						width=14cm,
+						height=14cm,
+						scatter/classes={
+								A={mark=square*,mark size=2pt,draw=blue,  fill=BleuCeladon},
+								B={mark=*,      mark size=2pt,draw=black, fill=OrangeCarotte}
+							}
+					]
+					\addplot[scatter,only marks,scatter src=explicit symbolic,opacity=0.7]
+					coordinates {
+							(20,75)[A]
+							(35,80)[A]
+							(25,60)[A]
+							(40,70)[A]
+							(15,65)[A]
+							(30,85)[A]
+							(45,75)[A]
+							(25,50)[A]
+							(40,55)[A]
+							(60,60)[A]
+							(65,35)[B]
+							(50,30)[B]
+							(70,45)[B]
+							(55,25)[B]
+							(75,40)[B]
+							(45,50)[B]
+							(60,55)[B]
+							(40,45)[B]
+							(65,55)[B]
+							(45,65)[B]
+						};
+					% points de référence R et S
+					\addplot[only marks, mark=star, mark size=5pt, draw=blue, fill=blue]
+					coordinates {(30,70)};
+					\addplot[only marks, mark=star, mark size=5pt, draw=orange, fill=orange]
+					coordinates {(60,40)};
+					% milieu M
+					\addplot[only marks, mark=diamond*, mark size=4pt, draw=black, fill=black]
+					coordinates {(45,55)};
+					% médiatrice y = x + 10
+					\addplot[domain=0:100, samples=2, thick, dashed, black] {x+10};
+					% labels
+					\node[anchor=south west] at (axis cs:30,70) {$R$};
+					\node[anchor=north east] at (axis cs:60,40) {$S$};
+					\node[anchor=south west] at (axis cs:45,55) {$M$};
+				\end{axis}
+				\draw (0,0) node[below left]{\footnotesize $O$};
+			\end{tikzpicture}
+		\end{center}

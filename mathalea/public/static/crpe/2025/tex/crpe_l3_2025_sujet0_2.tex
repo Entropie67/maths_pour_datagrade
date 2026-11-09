@@ -1,0 +1,67 @@
+\textbf{\textit{Toutes les réponses de cet exercice devront être justifiées.}}
+
+\bigskip
+Un musée propose trois formules de visites guidées pour des classes durant l’année scolaire. 
+
+\medskip
+\fbox{
+\begin{minipage}{\linewidth}
+Formule A : 45~\euro{} par visite de classe. 
+
+Formule B : Abonnement annuel de 90~\euro{} par école auquel s'ajoute un montant de 25~\euro{}~50 par visite de classe de l'école. 
+
+Formule C : Abonnement annuel d'un montant de 300~\euro{} qui permet autant de visites que le souhaite l'école.	
+\end{minipage}
+}
+
+\medskip
+\begin{enumerate}
+	\item Une école est composée de quatre classes.
+	\begin{enumerate}
+		\item Si chaque classe effectue une visite, quelle formule est la plus avantageuse ? 
+		\item Si chaque classe effectue deux visites, quelle formule est la plus avantageuse ?
+	\end{enumerate}
+	\item À partir de combien de visites de classe la formule C est-elle plus économique que la formule~B ?
+	\item En vous aidant de la représentation ci-dessous, déterminer graphiquement le nombre de visites de classe à partir duquel la formule B est plus économique que la formule A.
+	
+	\begin{tikzpicture}
+\begin{axis}[
+    axis lines = left,
+    xmin=0, xmax=12,
+    ymin=0, ymax=320,
+    xtick={0,2,...,12},
+    ytick={0,50,...,300},
+    grid=major,
+    width=16cm,
+    height=16cm
+    ]
+
+\addplot [
+    domain=0:12, 
+    samples=100, 
+    color=blue,
+    thick
+    ]
+    {45*x};
+
+\addplot [
+    domain=0:12, 
+    samples=100, 
+    color=black,
+    thick
+    ]
+    {90+25.5*x};
+
+\addplot [
+    domain=0:12, 
+    samples=100, 
+    color=red,
+    thick
+    ]
+    {300};
+
+\end{axis}
+\end{tikzpicture}
+
+	\item L'équipe pédagogique de l'école de quatre classes décide d'organiser deux visites par classe. Elle choisit la formule la plus avantageuse et bénéficie d’une subvention de 15~\% du prix à payer de la mairie. Quel montant l’école doit-elle prévoir ?
+\end{enumerate}

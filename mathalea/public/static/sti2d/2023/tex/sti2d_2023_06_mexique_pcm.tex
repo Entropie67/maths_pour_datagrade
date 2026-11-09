@@ -1,0 +1,52 @@
+
+\begin{center}
+\textbf{Étude en laboratoire de la décharge d'un supercondensateur}
+\end{center}
+
+On réalise un montage qui permet de charger un supercondensateur de  capacité égale à 372~F avec un générateur, puis de le décharger dans un conducteur ohmique de résistance $R$.
+
+\medskip
+
+Le graphique ci-dessous représente l'enregistrement de l'évolution de la tension aux bornes du supercondensateur au cours de sa décharge.
+
+\begin{center}
+\psset{xunit=0.036cm,yunit=4.55cm,comma=true}
+\begin{pspicture}(-20,-0.2)(360,2.7)
+\multido{\n=0+10}{37}{\psline[linewidth=0.025pt](\n,0)(\n,2.5)}
+\multido{\n=0.0+0.1}{26}{\psline[linewidth=0.025pt](0,\n)(360,\n)}
+\psaxes[linewidth=1.25pt,Dx=50,Dy=0.5](0,0)(360,2.5)
+\uput[u](360,0){$t$ (en s)}\uput[r](0,2.6){$u$ (en V)}
+\psplot[plotpoints=2000,linewidth=1.25pt,linecolor=red]{0}{360}{2.3 2.71828 0.0112 x mul exp div}
+\psplot[linestyle=dashed,linewidth=1.25pt]{0}{89}{2.3 0.02576 x mul sub}
+\end{pspicture}
+\end{center}
+
+\medskip
+
+L'évolution de la tension aux bornes du supercondensateur est modélisée par la fonction $f$ définie sur l'intervalle $[0~;~+\infty[$ par:
+\[f(x) = 2,3\text{e}^{-\np{0,0112}x},\]
+
+où $x$ représente le temps en seconde.
+
+\begin{enumerate}[start=5]
+\item Montrer qu'une équation de la tangente à la courbe représentative de la fonction $f$ au point d'abscisse 0 est : 
+\[y = -\np{0,02576}x + 2,3.\]
+
+On rappelle qu'une équation de la tangente à la courbe représentative d'une fonction $f$ au point d'abscisse $a$ est
+\begin{center} $y = f'(a)(x - a) + f(a)$ où $f'$ est la fonction dérivée de $f$.
+\end{center}
+
+\item Déterminer l'abscisse $\tau$ du point d'intersection de cette tangente avec
+l'axe des abscisses.
+
+On donnera une valeur approchée à $10^{-1}$ près.
+
+\item Déterminer la capacité $C$ du supercondensateur sachant que
+$\tau = R \times C$ et $R = 0,235~\Omega$.
+
+Comparer la valeur obtenue à partir de ce modèle avec les données du constructeur.
+\end{enumerate}
+
+\bigskip
+
+

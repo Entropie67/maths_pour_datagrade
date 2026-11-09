@@ -1,0 +1,15 @@
+%source mathadata
+\begin{MADenumerate}
+			\item Pour chaque image, il faut calculer la moyenne des valeurs des pixels situés dans le rectangle rouge.
+			$$x_1 = \frac{220+240+0+0}{4} = 115 \quad x_2 = 7,5 \quad x_3  = 112,5 \quad x_4  = 0$$
+			\item Si une nouvelle image a $x=20$, on observe que les images du chiffre 7 ont des valeurs de $x$ proches de 0, 5, 7 et 80, tandis que les images du chiffre 2 ont des valeurs plus élevées (100, 150, 160, 162, 190, 230). Ainsi, $x=20$ est plus proche des valeurs associées au chiffre 7. On peut donc penser qu'il s'agit d'un 7.
+			\item Pour que l'algorithme fasse le moins d'erreurs, il faut choisir $a=7$ et $b=2$. En effet, si $x<10$, alors l'image ressemble à un 7 (car les valeurs de $x$ pour 7 sont proches de 0, 5, 7). Sinon, c'est un 2.
+			\item Pourcentage d'erreur de l'algorithme :
+			\begin{itemize}
+				\item Pour $x<10$ deux images de 7 sont mal classées.
+				\item Les images de 2 sont toutes bien classées, car elles ont des valeurs de $x$ supérieures à 10.
+
+				\item Il y a donc 2 erreurs sur 10 images, soit 20\% d'erreur.
+			\end{itemize}
+			\item Pour améliorer l'algorithme, on peut modifier la condition en prenant une valeur seuil différente, par exemple $x<90$. On teste cette nouvelle condition sur le tableau et on recalcule le pourcentage d'erreur. Avec $x<90$, on classe bien les images sauf un 7 soit 10\% d'erreur.
+		\end{MADenumerate}

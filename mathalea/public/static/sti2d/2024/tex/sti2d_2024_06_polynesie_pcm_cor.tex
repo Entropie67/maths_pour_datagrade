@@ -1,0 +1,63 @@
+\bigskip
+
+\begin{enumerate}[start=2]
+\item La fonction proposée est :
+$y = f(t) = -14\e^{-\frac{1}{90}t} + 21$.
+
+Sa dérivée est :
+$y' = f'(t) = -14 \times \left(-\dfrac{1}{90}\right)\e^{-\frac{1}{90}t} + 0 = \dfrac{14}{90}\e^{-\frac{1}{90}t}$.
+
+Substituons $y$ dans l'équation différentielle :
+\begin{align*}
+y' &= -\dfrac{1}{90}y + \dfrac{7}{30} \\
+&= -\dfrac{1}{90}\left(-14\e^{-\dfrac{1}{90}t} + 21\right) + \dfrac{7}{30} \\
+&= -\dfrac{1}{90}\left(-14\e^{-\frac{1}{90}t}\right) - \dfrac{21}{90} + \dfrac{7}{30} \\
+&= \dfrac{14}{90}\e^{-\frac{1}{90}t}.
+\end{align*}
+
+Le membre de droite correspond à la valeur de $f'(t)$. Ainsi, $f(t) = -14\e^{-\frac{1}{90}t} + 21$ est une solution de l'équation différentielle.
+
+\textbf{Correction alternative :}
+
+Il s'agit d'une équation différentielle linéaire du premier ordre de la forme :
+\[y' + ay = b \quad \text{avec } a = \dfrac{1}{90} \text{ et } b = \dfrac{7}{30}.\]
+
+La solution générale est :
+\begin{align*}
+f(t) &= k\e^{-at} + \dfrac{b}{a} \\
+&= k\e^{-\frac{1}{90}t} + \dfrac{\frac{7}{30}}{\frac{1}{90}} \\
+&= k\e^{-\frac{1}{90}t} + 21 \text{ où } k \in \mathbb{R}.
+\end{align*}
+
+Avec la condition initiale :
+\begin{align*}
+f(0) &= 7 \\
+k\e^{-\frac{1}{90}\times0} + 21 &= 7 \\
+k + 21 &= 7 \\
+k &= -14.
+\end{align*}
+
+Une solution est donc bien :
+\[f(t) = -14\e^{-\frac{1}{90}t} + 21.\]
+
+\item Lorsque $t \to +\infty$, le terme exponentiel $\e^{-\frac{1}{90}t}$ tend vers 0.
+
+Donc : $\displaystyle\lim_{t \to +\infty} f(t) = -14 \times 0 + 21 = 21.$
+
+Cela signifie que la température du contenu de la tasse tendra vers $21\degres$C, la température de l'air ambiant.
+
+\item Déterminer le temps $t$ pour lequel $f(t) = 20$.
+\begin{align*}
+&-14\e^{-\frac{1}{90}t} + 21 = 20 \\
+\iff &-14\e^{-\frac{1}{90}t} = 20 - 21 \\
+\iff &-14\e^{-\frac{1}{90}t} = -1 \\
+\iff &\e^{-\frac{1}{90}t} = \dfrac{1}{14} \\
+\iff &-\dfrac{1}{90}t = \ln\left(\dfrac{1}{14}\right) \\
+\iff &t = -90 \ln\left(\frac{1}{14}\right) \\
+\iff &t = 90 \ln(14) \\
+\iff &t \approx 238.
+\end{align*}
+Le temps pour que la boisson atteigne $20\degres$C est d'environ $238$ minutes.
+\end{enumerate}
+
+\bigskip

@@ -19,7 +19,7 @@ Le moteur embarquable existant expose `initialiser`, `preparerExercice`, `affich
 
 Le dépôt officiel exclut notamment `public/static`, les médias d'annales DNB/BAC/E3C/CRPE et certains autres dossiers de ressources. En développement, `vite.config.ts` relaie `/alea/static` vers `coopmaths.fr`. Le déploiement officiel relie des répertoires de médias partagés (`tasks/deploy_site.sh`). Un build réussi ne prouve donc pas que ces ressources fonctionnent hors ligne ou sur un nouvel hébergement.
 
-Il reste à inventorier et récupérer les médias correspondant exactement aux dictionnaires importés, vérifier leurs licences, puis tester chaque famille d'annales sur l'hébergement cible. L'ancien guide `src/exercicesStatiques/README.md` référence des dépôts séparés ; ne pas supposer qu'il couvre à lui seul les dictionnaires actuels.
+Les médias référencés ont maintenant été inventoriés et téléchargés lorsqu'ils sont disponibles ; ils sont livrés dans `mathalea/public/`. Le [rapport des annales](../resources/README.md) détaille la couverture, les liens indisponibles et les huit familles testées localement, avec énoncé et correction et accès réseau externe bloqué. Le profil `vite.annales-locales.config.mjs` désactive le proxy des médias. Il reste à traiter les liens manquants et à tester les exports et l'hébergement cible. L'ancien guide `src/exercicesStatiques/README.md` ne couvre pas seul les dictionnaires actuels.
 
 Certaines fonctions reposent sur des services externes : Capytale/Moodle, applications en iframe, collaboration, calculatrices NumWorks, médias partenaires. Préserver leurs interfaces ne fournit ni leurs serveurs ni leurs comptes. Elles nécessitent des tests avec leurs environnements respectifs.
 

@@ -1,0 +1,63 @@
+\bigskip
+
+\textbf{\large Partie I}
+
+\medskip
+
+\begin{enumerate}
+\item  On a : $z_1 = \sqrt{3} - \i$.
+
+Son module vaut : $|z_1|=\sqrt{(\sqrt{3})^2+(-1)^2}=\sqrt{3+1}=2$.
+
+On cherche un argument $\theta$ de $z_1$.
+
+On a $\cos(\theta)=\dfrac{\sqrt{3}}{2}$ et $\sin(\theta)=-\dfrac{1}{2}$, on peut donc prendre $\theta=-\dfrac{\pi}{6}$.
+
+Ainsi, la forme exponentielle de $z_1$ est : $z_1=2\e^{-\i\frac{\pi}{6}}$.
+
+\item D'après la question précédente, $z_1=2\e^{-\i\frac{\pi}{6}}$ et, d'après l'énoncé, $z_2=2\e^{\i\frac{\pi}{4}}$. Donc:
+\[
+\begin{aligned}
+z&=z_1^3\times z_2^2\\
+&=\left(2\e^{-\i\frac{\pi}{6}}\right)^3\times\left(2\e^{\i\frac{\pi}{4}}\right)^2\\
+&=8\e^{-\i\frac{\pi}{2}}\times 4\e^{\i\frac{\pi}{2}}\\
+&=32\e^0\\
+&=32.
+\end{aligned}
+\]
+Le nombre $z$ est donc bien un réel.
+\end{enumerate}
+
+\bigskip
+
+\textbf{\large Partie II}
+
+\medskip
+
+\begin{enumerate}
+\item  L'équation différentielle $y' = -4y + 80$ peut s'écrire $y' + 4y = 80$.
+    
+Il s'agit d'une équation différentielle du premier ordre de la forme :
+\[y' + ay = b \text{ avec } a = 4 \text{ et } b = 80.\]
+
+L'ensemble des solutions de $(E)$ est :
+\begin{align*}
+f(x) &= k\e^{-ax} + \dfrac{b}{a} \\
+&= k\e^{-4x} + \dfrac{80}{4} \\
+&= k\e^{-4x} + 20 \text{ où } k \in \mathbb{R}.
+\end{align*}
+
+\item Avec la condition initiale :
+\begin{align*}
+f(0) &= 100 \\
+k\e^{-4\times0} + 20 &= 100 \\
+k\e^0 &= 100 - 20 \\
+k &= 80.
+\end{align*}
+
+La solution de $(E)$ est donc : $f(x) = 80\e^{-4x} + 20$.
+
+\item Lorsque $x$ tend vers $+\infty$, $\e^{-4x}$ tend vers $0$. Par conséquent: $\displaystyle\lim_{x\to +\infty} f(x)=20$.
+\end{enumerate}
+
+\bigskip

@@ -1,0 +1,24 @@
+
+\medskip
+
+\parbox{0.45\linewidth}{On a tracé dans le repère orthonormé ci-contre la courbe représentative $\mathcal{C}_f$ de la fonction $f$ définie sur $]0~;~+\infty[$ par :
+\[f(x) = \ln (x).\]
+
+On note A le point de $\mathcal{C}_f$ de coordonnées $(\e~;~1)$.
+
+On note $T$ la tangente à la courbe $\mathcal{C}_f$ au point A.
+
+La tangente $T$ passe-t-elle par l'origine du repère ? Justifier.}\hfill
+\parbox{0.52\linewidth}{
+\psset{unit=1.2cm}
+\begin{pspicture*}(-0.5,-2.2)(6.2,2.2)
+\psgrid[gridlabels=0pt,subgriddiv=1,gridwidth=0.1pt]
+\psaxes[linewidth=1.25pt,labelFontSize=\scriptstyle]{->}(0,0)(-0.5,-2.2)(6.2,2.2)
+\psplot[plotpoints=2000,linewidth=1.25pt,linecolor=red]{0.1}{6.2}{x ln}
+\psline[linestyle=dashed,linewidth=1.25pt](0,1)(2.71828,1)(2.71828,0)
+\psdots(2.71828,1)\uput[ul](2.71828,1){A}
+\uput[u](5.3,1.5){\red $\mathcal{C}_f$}
+\end{pspicture*}}
+
+\bigskip
+

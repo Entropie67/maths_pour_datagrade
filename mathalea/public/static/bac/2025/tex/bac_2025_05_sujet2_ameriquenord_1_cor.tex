@@ -1,0 +1,154 @@
+
+\medskip
+
+%Au basket-ball, il est possible de marquer des paniers rapportant un point, deux points ou trois points.
+
+Les parties \textbf{A} et \textbf{B} sont indépendantes.
+
+\bigskip
+
+\textbf{Partie A}
+
+\medskip
+%L'entraineur d'une équipe de basket décide d'étudier les statistiques de réussite des lancers de ses joueurs. Il constate qu'à l'entrainement, lorsque Victor tente un panier à trois points, il le réussit avec une probabilité de $0,32$.
+%
+%Lors d'un entrainement, Victor effectue une série de $15$ lancers à trois points. On suppose que ces lancers sont indépendants.
+%
+%\medskip
+
+On note $N$ la variable aléatoire qui donne le nombre de paniers marqués.
+
+\medskip
+
+\emph{Les résultats des probabilités demandées seront, si nécessaire, arrondis au millième.}
+
+\begin{enumerate}
+\item %On admet que la variable aléatoire $N$ suit une loi binomiale. Préciser ses paramètres.
+L'épreuve est effectuée 15 fois de façon indépendante et à chaque lancer la probabilité de marquer est égale à $0,32$. $N$ suit donc la loi binomiale $\mathcal{B}(15~;~0,32)$.
+\item %Calculer la probabilité que Victor réussisse exactement 4 paniers lors de cette série.
+La probabilité que Victor réussisse exactement 4 paniers est :
+
+$P(N = 4) = \displaystyle \binom{15}{4}\times 0,32^4 \times (1 - 0,32)^{15-4} \approx 0,206$ au millième près.
+\item %Déterminer la probabilité que Victor réussisse au plus 6 paniers lors de cette série.
+La probabilité que Victor réussisse au plus 6 paniers est :
+
+$P(N \leqslant 6) = P(N=0) + P(N = 1) + \ldots + P(N = 6) \approx 0,828$ (calculatrice).
+\item %Déterminer l'espérance de la variable aléatoire $N$.
+On sait que : $E(N) = n \times p = 15 \times 0,32 = 4,8$.
+
+Donc en moyenne sur 150 lancers, Victor marque 48 paniers.
+\item %On note $T$ la variable aléatoire qui donne le nombre de \textbf{points} marqués après cette série de lancers.
+	\begin{enumerate}
+		\item %Exprimer $T$ en fonction de $N$.
+Chaque lancer étant à 3 points, on a donc $T = 3N$.
+		\item %En déduire l'espérance de la variable aléatoire $T$. Donner une interprétation de cette valeur dans le contexte de l'exercice.
+On a $E(T) = E (3N) = 3E(N)$\quad d'après la linéarité de l'espérance, soit
+
+$E(T) = 3 \times 4,8 = 14,4$, donc une moyenne de 144 points marqués sur 150 lancers.
+		\item %Calculer $P(12 \leqslant T \leqslant 18)$.
+On a $P(12 \leqslant T = 3N \leqslant 18) = P(4 \leqslant N \leqslant 6)$.
+
+Cette probabilité est égale à :
+
+$P(4 \leqslant N \leqslant 6) = P(N=4) + P(N=5) + P(N = 6) \approx 0,206 + 0,213 + 0,167$, soit
+
+\[P(12 \leqslant T \leqslant 18) \approx 0,586.\]
+	\end{enumerate}
+\end{enumerate}
+
+\medskip
+
+\textbf{Partie B}
+
+\medskip
+
+%On note $X$ la variable aléatoire donnant le nombre de points marqués par Victor lors d'un match.
+%
+%\medskip
+%
+%On admet que l'espérance $E(X) = 22$ et la variance $V(X) = 65$.
+%
+%\medskip
+%
+%Victor joue $n$ matchs, où $n$ est un nombre entier strictement positif.
+%
+%On note $X_{1}, X_{2}, \ldots, X_{n}$ les variables aléatoires donnant le nombre de points marqués au cours des $1\up{er},\, 2\up{e},\, \ldots, n$-ième matchs. On admet que les variables aléatoires $X_{1},\, X_{2},\, \ldots,\, X_{n}$ sont indépendantes et suivent la même loi que celle de $X$.
+%
+%\medskip
+%
+%On pose $\quad M_{n}=\dfrac{X_{1} + X_{2} + \ldots + X_{n}}{n}$.
+%
+%\medskip
+
+\begin{enumerate}
+\item Dans cette question, on prend $n = 50$.
+
+	\begin{enumerate}
+		\item %Que représente la variable aléatoire $M_{50}$ ?
+$M_{50}$ représente la moyenne empirique, sur 50 matchs, des points marqués par Victor
+		\item %Déterminer l'espérance et la variance de $M_{50}$.
+$\bullet~$Chaque variable $X_1,\ldots, X_{50}$ suit la même loi que $X$ donc on a :
+
+{$E(M_{50}) = E (X) = 22$ ;}
+
+$\bullet~$ Comme les variables $X_1$, $X_2$,... $X_50$ sont indépendantes, on en déduit : \quad $V(M_{50}) = \dfrac{1}{50}V(X) = \dfrac{1}{50} \times 65 = \dfrac{65}{50} = \dfrac{130}{100} = 1,3$.
+
+		\item %Démontrer que $P\left(\left|M_{50}-22\right| \geqslant 3\right) \leqslant \dfrac{13}{90}$.
+D'après l'inégalité de Bienaymé-Tchébychev, pour une variable aléatoire $X$  d’espérance $E(X)$ et de variance $V (X)$,  pour tout réel $a > 0$ :
+		$$P(|X - E(X)|\geqslant a) \leqslant \dfrac{V(X)}{a^2}$$
+
+donc  ici  : $P(|M_{50} - E(M_{50})| \geqslant 3) \leqslant \dfrac{V(M_{50})}{3^2}$
+
+
+
+Comme $\dfrac{V(M_{50})}{3^2} = \dfrac{1,3}{9} = \dfrac{13}{90}$, on a bien  :  $P\left(\left|M_{50}- 22\right| \geqslant 3\right) \leqslant \dfrac{13}{90}$.
+
+
+
+		\item %En déduire que la probabilité de l'événement \og  $19<M_{50}<25$ \fg{}  est strictement supérieure à 0,85.
+		L'événement \og  $19 <M_{50}< 25$ \fg{} revient à $\left|M_{50} - 22 \right| < 3$ et
+
+$P\big(\left|M_{50} - 22 \right| < 3\big) = 1 - P\big(\left|M_{50} - 22 \right| \geqslant 3\big)$.
+
+Soit $P\big(\left|M_{50} - 22 \right| \geqslant 3\big) \leqslant \dfrac{13}{90}$ entraîne $P\big(19 < M_{50} < 25 \big) \geqslant 1 - \dfrac{13}{90} = \dfrac{77}{90} \approx 0,856$ : cette probabilité est bien supérieure à 0,85.
+	\end{enumerate}
+
+
+\item %Indiquer, en justifiant, si l'affirmation suivante est vraie ou fausse :
+%
+%	\og Il n'existe aucun entier naturel $n$ tel que $P\big(\left|M_{n}-22\right| \geqslant 3\big)< 0,01$\fg.
+
+D'après la loi faible des grands nombres, $\forall t \in \R^{*+}, \quad \lim\limits_{n \to +\infty} P\Big(\big|M_n - E(X)\big| \geqslant t\Big) = 0$, donc en particulier ici,  $\lim\limits_{n \to +\infty} P\Big(\big|M_n - 22\big| \geqslant 3\Big) = 0$ .
+
+
+donc pour tout $r>0$ il existe un rang $N$ tel que pour tout $n \geqslant N$, $P\big(\left|M_{n}-22\right| \geqslant 3\big)< r$ et c'est vrai en particulier pour $r=0,01$.
+
+
+L'affirmation est donc fausse.
+
+\textbf{Autre méthode : }
+
+Pour tout réel $t>0$, d'après l'inégalité de  concentration, on a :
+
+$ P\big(\left|M_n-E(X)\right| \geqslant t\big) \leqslant \dfrac{V(X)}{t^2 n}$
+
+	Pour $t=3$ on obtient :  $ P\big(|M_n-22| \geqslant 3\big)\leqslant \dfrac{65}{ n \times 3^2}$.
+
+
+
+On veut donc que  :\quad $\begin{aligned}[t]
+	 \dfrac{65}{9 n} \leqslant 0,01 &\iff
+	 \dfrac{6500}{9} \leqslant n \\
+	 &\iff 722+\dfrac{2}{9}\leqslant n
+\end{aligned}$
+
+L'inégalité est donc vraie pour tout entier $n \geqslant 723$.
+
+
+
+\end{enumerate}
+
+
+
+\bigskip
+

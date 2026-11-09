@@ -1,0 +1,46 @@
+
+\medskip
+
+La fonction $f$ est définie sur $[0~;~ +\infty[$ par : $f(x) = x\e^{\np{0.02}x}- \np{10 000}$.
+
+\medskip
+
+Quatre fonctions A, B, C et D sont écrites dans le même programme Python
+ci-dessous.
+
+Laquelle de ces quatre fonctions permet de déterminer la plus petite valeur
+entière dont l'image par $f$ est positive ?
+
+\begin{center}
+\fbox{
+\begin{minipage}{6cm}
+from math import exp\\
+def A(~):\\
+\phantom{de}n = 0\\
+\phantom{de}return n * exp(0.02 * n) – 10000\\
+
+def B(~):\\
+\phantom{de}n = 0\\
+\phantom{de}f = – 10000\\
+\phantom{de}while f < 0:\\
+\phantom{dem}n = n + 1\\
+\phantom{dem}f = n * exp(0.02 * n) – 10000\\
+\phantom{de}return n\\
+
+def C(~):\\
+\phantom{de}f = – 10000\\
+\phantom{de}for n in range(0,1000):\\
+\phantom{demn}f = n * exp(0.02 * n) – 10000\\
+return f\\
+\phantom{xxxx}\\
+def D(~):\\
+\phantom{de}n = 0\\
+\phantom{de}f = – 10000\\
+\phantom{de}if f < 0:\\
+\phantom{denm}n = n + 1\\
+\phantom{denm}f = n * exp(0.02 * n) – 10000\\
+return n\\
+\end{minipage}
+}
+\end{center}
+

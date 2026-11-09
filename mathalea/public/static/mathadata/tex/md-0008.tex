@@ -1,0 +1,53 @@
+%source mathadata
+\begin{multicols}{2}
+		Une droite $d$ est donnée par sa forme réduite : $$\displaystyle d : y=\frac{2}{3}x-\frac{7}{3}.$$ Les points au-dessus de la droite sont considérés comme verts ;  et en dessous ou sur la droite,  comme bleus.
+		\begin{MADenumerate}
+			\item Pour chaque point, déterminer si le point appartient à la droite $d$ ou non par un calcul, sans regarder le graphique.
+
+			(a) $A(5;1)$ \; (b) $B(3;2)$ \; (c) $C(5;-3)$
+
+			(d) $D(2;-1)$ \; (e) $E(0,5;-2)$ \; (f) $F(-1; -2)$
+
+			\item Tracer la droite $d$ et les points donnés afin de vérifier vos résultats.
+
+			\item Déterminer les couleurs des 6 points.
+
+			\columnbreak
+
+			\item (Bonus) Proposer un point $G$ à coordonnées entières qui appartient à $d$ et un point $H$ d'ordonnée comprise entre -0,5 et 0,5 qui appartient à $d$. Quelles sont leurs couleurs ?
+
+		\end{MADenumerate}
+
+		%\begin{center}
+		\begin{figure}[H]\centering
+			\definecolor{wrwrwr}{rgb}{0.380,0.380,0.380}
+			\definecolor{rvwvcq}{rgb}{0.082,0.396,0.753}
+			\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1cm,y=1cm,scale=0.7]
+				\begin{axis}[
+						x=1cm,y=1cm,
+						axis lines=middle,
+						ymajorgrids=true,
+						xmajorgrids=true,
+						xmin=-1.5,
+						xmax=7.5,
+						ymin=-4.5,
+						ymax=4.5,
+						xtick={-1,...,7},
+						ytick={-4,...,4},
+						tick label style={font=\Large},
+					]
+
+					%\draw[domain=-1:7] plot(\x,{(2*\x-7)/3});
+
+					%\node[above,font=\LARGE] at (axis cs:6,2) {d};
+
+					% Annotations pour les zones de classification
+					\node[font=\normalsize, text=green!60!black] at (axis cs:3,3.5) {Au-dessus : verts};
+					\node[font=\normalsize, text=blue!60!black] at (axis cs:3,-3.5) {En dessous : bleus};
+
+				\end{axis}
+			\end{tikzpicture}
+		\end{figure}
+		%\end{center}
+
+	\end{multicols}

@@ -1,0 +1,136 @@
+\medskip
+
+\textbf{Question 1}
+
+\medskip
+
+\begin{enumerate}
+\item Comme $6 > 0$ et $\e^{-t} > 0$, quel que soit $t \in [0~;~+ \infty[$, le signe de $g'(t)$ est celui de $1 - t$.
+
+$\bullet~~$ $1 - t > 0 \iff 1 > t \iff t < 1$ : $g'(t) > 0$ sur $[0~;~1]$ ;
+
+$\bullet~~$ $1 - t < 0 \iff 1 < t \iff t > 1$ : $g'(t) < 0$ sur $[1~;~+ \infty]$ ;
+
+$\bullet~~$ $1 - t = 0 \iff 1 = t \iff t = 1$ : $g'(1) = 0$.
+
+\item Des résultats précédents on déduit que :
+
+$\bullet~~$ $g$ est croissante sur $[0~;~1]$ ;
+
+$\bullet~~$ $g$ est décroissante sur $[1~;~+ \infty[$ ;
+
+$\bullet~~$ $g(1)$ est donc le maximum de la fonction $g$ sur l'intervalle $[0~;~+ \infty[$.
+\end{enumerate}
+
+\bigskip
+
+\textbf{Question 2}
+
+\medskip
+
+\begin{enumerate}
+\item Pour $z_{\text{A}}$ : puisque un argument est $\frac{5\pi}{6} = \pi - \frac{\pi}{6}$ : A appartient au deuxième quadrant, donc 2 et 4 sont possibles.
+
+Pour $z_{\text{B}}$ : puisque un argument est $-\frac{2\pi}{3} = - \pi + \frac{\pi}{3}$ B appartient au troisième cadran : il ne reste que la figure 2. 
+
+\item $\dfrac{z_{\text A}}{z_{\text B}} = \dfrac{\e^{\text{i} \frac{5\pi}{6}}}{\e^{-\text{i} \frac{2\pi}{3}}} = \e^{\text{i} \left(\frac{5\pi}{6} + \frac{2\pi}{3}\right)} = \e^{\text{i} \left(\frac{5\pi}{6} + \frac{4\pi}{6}\right)} = \e^{\text{i} \left(\frac{9\pi}{6}\right)} = \e^{\text{i} \frac{3\pi}{2}} = \e^{\text{i} \left(2\pi - \frac{\pi}{2}\right)}  = \e^{\text{i} \frac{-\pi}{2}}$.
+\end{enumerate}
+
+\bigskip
+
+\textbf{Question 3}
+
+\medskip
+
+On a $x^2 - 1 = (x + 1)(x - 1)$, donc $\ln \left(x^2 - 1\right) = \ln [(x + 1)(x - 1)] = \ln (x + 1) + \ln (x - 1)$.
+
+Les logarithmes de cette équation sont définis si :
+
+$x + 1 > 0, \quad x - 1 > 0, \quad x > 0$, soit si $x > 1$.
+
+Conclusion : les solutions sont à chercher dans l'intervalle$]1\;;\; +\infty[$.
+
+Tout d'abord $\ln \left (x^2-1\right ) - \ln\left (0,5\right ) = \ln \dfrac{x^2 - 1}{0,5} = \ln 2\left(x^2 - 1 \right)$.
+
+On peut donc écrire :
+
+$\ln\left (x - 1\right ) + \ln \left (x + 1\right ) - \ln\left (x\right ) = \ln \left (x^2-1\right ) - \ln\left (0,5\right ) \iff \ln x(x - 1)(x + 1) = \ln 2\left(x^2 - 1 \right)$ et par croissance de la fonction logarithme népérien :
+
+$x\left(x^2 - 1\right)= 2\left(x^2 - 1 \right) \iff  x\left(x^2 - 1\right) - 2\left(x^2 - 1 \right) = 0 \iff \left(x^2 - 1\right)(x - 2) = 0 \iff$
+
+$ (x + 1)(x - 1)(x - 2) = 0$.
+
+Il y a donc trois possibilités : $x = - 1$, ou $x = 1$ ou $x = 2$, mais seul $2 \in ]1~;~+ \infty[$. Donc $S = \{2\}$.
+
+\bigskip
+
+\textbf{Question 4}
+
+\medskip
+
+\begin{enumerate}
+\item Les solutions de l'équation $y' = - y$ sont les fonctions définies par $t \longmapsto f(t) = K\text{e}^{- t}$, avec $K \in \R$ ;
+
+Soit la solution constante $y = \alpha$ solution de $y'=-y+2$, donc $y' = 0 = - \alpha + 2 \iff \alpha = 2$.
+
+Conclusion :toutes les solutions sont les fonctions définies par : $ t \longmapsto f(t ) =2 + K\text{e}^{- t}$, avec $K \in \R$
+
+\item On a $f(0) = 0 \iff 2 + K\text{e}^{- 0} = 0 \iff 2 + K = 0 \iff K = - 2$.
+
+La solution $g$ telle que $g(0) = 0$ est donc définie par $g(t) = 2 - 2\text{e}^{-t}$. 
+\end{enumerate}
+
+\bigskip
+
+\textbf{Question 5}
+
+\medskip
+
+\begin{enumerate}
+\item Pour tout réel $x$ de $\R$, $f(x)= x^2 - 2\e^{x} = x^2\times \e^{x} \times \e^{-x}- 2\e^{x} = \e^{x}\left(x^2\e^{-x} - 2\right)$.
+
+\item Le théorème des croissances comparées affirme que toute fonction polynomiale est négligeable devant l'exponentielle.\\On peut écrire $x^2\e^{-x} = \dfrac{x^2}{\e^x}$ d'où $\ds\lim_{x\to +\infty} x^2\e^{-x} = 0$, donc $\ds\lim_{x\to +\infty} \left(x^2\e^{-x} - 2\right) = -2 $.\\Comme $\ds\lim_{x\to +\infty} \e^{x} = + \infty$, par produit de limites : $\ds\lim_{x\to +\infty} f(x) = - \infty$.
+\end{enumerate}
+
+\bigskip
+
+\textbf{Question 6}
+
+\medskip
+
+\begin{enumerate}
+\item Par application de la première formule, on peut écrire :
+
+\[u(t)= \ds\sqrt{3}\;\cos (t) - \sin (t) = 2\left(\dfrac{\sqrt{3}}{2}\;\cos (t) - \dfrac12\sin (t)\right),\]
+
+soit puisque $\dfrac{\sqrt{3}}{2} = \cos \dfrac{\pi}{6}$ et $\dfrac{1}{2} = \sin \dfrac{\pi}{6}$,
+
+\[u(t) = 2\left(\cos t \cos \dfrac{\pi}{6} - \sin t \sin \dfrac{\pi}{6} \right),\]
+
+d'où par application de la troisième formule, on peut écrire :
+
+\[u(t) = 2\cos \left(t + \dfrac{\pi}{6} \right).\]
+
+\item $u(t)=1 \iff 2\cos \left(t + \dfrac{\pi}{6} \right) = 1 \iff \cos \left(t + \dfrac{\pi}{6} \right) = \dfrac 12 \iff \cos \left(t + \dfrac{\pi}{6} \right) = \cos \dfrac{\pi}{3},$
+
+d'où deux possibilités :
+
+$\left\{\begin{array}{l}
+t + \dfrac{\pi}{6} = \dfrac{\pi}{3} + 2k \pi \\
+\\
+t + \dfrac{\pi}{6} = -\dfrac{\pi}{3} + 2k \pi
+\end{array}\right. \iff \left\{\begin{array}{l}
+t = \dfrac{\pi}{3} - \dfrac{\pi}{6} + 2k\pi \\
+\\
+t = \dfrac{\pi}{3} - \dfrac{\pi}{6} + 2k\pi \\
+\end{array}\right. \iff
+\left\{\begin{array}{l}
+t = \dfrac{\pi}{6} + 2k\pi\\
+\\
+t = -\dfrac{\pi}{2} + 2k\pi
+\end{array}\right.$
+
+$S = \left\{\dfrac{\pi}{6}~;~-\dfrac{\pi}{2} \right\}$ à $2k\pi$ près.
+\end{enumerate}
+
+\bigskip

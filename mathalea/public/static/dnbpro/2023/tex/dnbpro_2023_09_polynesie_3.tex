@@ -1,0 +1,64 @@
+
+\vspace{0.25cm}
+
+De 2000 à 2015, on a noté l'évolution des températures moyennes à Tahiti au mois de janvier.
+
+\begin{center}
+\psset{xunit=0.8cm,yunit=1.2cm}
+\begin{pspicture}(0,26)(17,30)
+\psgrid[subgriddiv=5,  gridlabels=0, subgridcolor=lightgray,gridcolor=gray] 
+\psaxes[labelFontSize=\scriptstyle,arrowsize=3pt 3, ticksize=-2pt 2pt, labels=y,Oy=26]{->}(0,26)(0,26)(17,30)
+\def\data{1 28.6 2 27.6 3 28 4 28 5 28.1 6 28.3 7 27.8 8 27.6 9 26.9 10 27.9 11 28.7 12 27.2 13 26.9 14 26.8 15 27.4 16 28.1}
+\psset{dotstyle=x,dotscale=2,linecolor=blue}
+\listplot[plotstyle=line,showpoints]{\data}
+\multido{\i=1+1,\I=2000+1}{16}{\uput[d](\i,26){\scriptsize \I}}
+\uput*[r](0.2,29.6){\small Températures moyennes (en \degres{}C)}
+\uput*[u](16,26){\small Années} 
+\end{pspicture}
+\end{center}
+
+\medskip
+
+\begin{enumerate}
+\item \textbf{Relever}, à l'aide du graphique, les informations suivantes :
+\begin{enumerate}
+\item La température moyenne en janvier 2002.
+\item La température moyenne en janvier 2006.
+\item L'année où la température moyenne en janvier est la plus basse.
+\end{enumerate}
+\item \textbf{Décrire}, à l'aide du graphique, l'évolution des températures moyennes en janvier de 2013 à 2015.
+\item \textbf{Placer} les points dans le repère suivant, correspondant aux températures moyennes en janvier pour 2016, 2017, 2018 et 2019.
+
+{\psset{xunit=0.7cm,yunit=1.2cm}
+\begin{pspicture}(0,26)(21,30)
+\psgrid[subgriddiv=5,  gridlabels=0, subgridcolor=lightgray,gridcolor=gray] 
+\psaxes[labelFontSize=\scriptstyle,arrowsize=3pt 3, ticksize=-2pt 2pt, labels=y,Oy=26]{->}(0,26)(0,26)(21,30)
+\def\data{1 28.6 2 27.6 3 28 4 28 5 28.1 6 28.3 7 27.8 8 27.6 9 26.9 10 27.9 11 28.7 12 27.2 13 26.9 14 26.8 15 27.4 16 28.1}
+\psset{dotstyle=x,dotscale=2,linecolor=blue}
+\listplot[plotstyle=line,showpoints]{\data}
+\multido{\i=1+1,\I=2000+1}{20}{\uput[d](\i,26){\scriptsize \I}}
+\uput*[r](0.2,29.6){\small Températures moyennes (en \degres{}C)}
+\uput*[u](20,26){\small Années} 
+\end{pspicture}}
+
+
+\begin{center}
+\begin{tabular}{|c|c|}
+\hline
+\hspace*{0.5cm}\textbf{Date}\hspace*{0.5cm} & \textbf{Températures moyennes en janvier (en \degres{}C)}\\
+ \hline
+ 2016 & $28$\\
+ \hline
+ 2017 & $27,8$\\
+ \hline
+ 2018 & $28$\\
+ \hline
+ 2019 & $28,2$\\
+ \hline
+\end{tabular}
+\end{center}
+
+\end{enumerate}
+
+\vspace{0.5cm}
+

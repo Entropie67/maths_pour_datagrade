@@ -1,0 +1,74 @@
+
+\medskip
+
+Un agriculteur souhaiterait louer un camion pour transporter tous ses matériaux agricoles. 
+
+\begin{list}{\textbullet}{Il hésite entre deux entreprises.}
+\item Tarif de l'entreprise A : 450 F par kilomètre.
+\item Tarif de l'entreprise B : un forfait de \np{8400} F et 250 F par kilomètre.
+\end{list}
+
+\begin{enumerate}
+\item %Pour l'entreprise A et l'entreprise B, \textbf{calculer} le prix qu'il devra payer pour une distance de 100 km.
+\begin{list}{\textbullet}{Pour une distance de 100 km:}
+\item le prix qu'il devra payer pour l'entreprise A est $450\times 100$ soit \np[F]{45000};
+\item le prix qu'il devra payer pour l'entreprise B est $250\times 100+\np{8400}$ soit \np[F]{33400}.
+\end{list}
+
+\item 
+\begin{list}{\textbullet}{On appelle $x$ la distance exprimée en kilomètre.}
+\item La fonction $f$ représente le tarif de l'entreprise A
+\item La fonction $g$ représente le tarif de l'entreprise B
+\item Les fonctions $f$ et $g$ sont définies, pour toute valeur de $x$ sur l'intervalle $[0\,;\,150]$, par:  $f(x) = 450 x \text{ et } g(x) = 250 x + \np{8400}$.
+\end{list}
+
+Les fonctions $f$ et $g$ sont représentées graphiquement ci-dessous.
+
+\begin{center}
+\psset{xunit=0.1cm,yunit=0.6cm,arrowsize=3pt 2}
+\def\xmin{0}   \def\xmax{110} \def\ymin{0}   \def\ymax{16}
+\begin{pspicture}(\xmin,\ymin)(\xmax,\ymax)
+\psset{yMaxValue=\ymax,yMinValue=\ymin}
+\psgrid[xunit=1cm,yunit=0.6cm,subgriddiv=5, gridlabels=0, subgridcolor=lightgray, gridcolor=gray](0,0)(11,16)
+\multido{\i=0+1,\I=0+2000}{16}{\uput[l](0,\i){\footnotesize \np{\I}}}
+\psaxes[labelFontSize=\scriptstyle, ticksize=-0pt 0pt,Dx=10,labels=x]{->}(0,0)(\xmin,\ymin)(\xmax,\ymax)
+\psplot[linewidth=1.2pt,linecolor=red]{\xmin}{\xmax}{450 x mul 2000 div}
+\psplot[linewidth=1.2pt,linecolor=blue]{\xmin}{\xmax}{8400 250 x mul add 2000 div}
+\rput*(12,15){Prix (en F)} \rput*(90,1){Distance (en km)}  
+\rput*(45,14){\parbox{1cm}{\rule[-0.4cm]{0cm}{1cm}\centering $\red f$}} 
+\rput*(82,12){\parbox{1cm}{\rule[-0.4cm]{0cm}{1cm}\centering $\blue g$}} 
+\psline[linestyle=dashed](30,0)(30,10)
+\psdots[linecolor=red](30,6.75) 
+\psline[linestyle=dashed,linecolor=red](30,6.75)(0,6.75) 
+\psdots[linecolor=blue](30,7.95)
+\psline[linestyle=dashed,linecolor=blue](30,7.95)(0,7.95)
+\psline[linestyle=dashed](42,0)(42,12) \uput*{8pt}[d](42,0){\small 42}
+\end{pspicture}
+\end{center}
+
+On a indiqué le nom de chaque fonction représentée dans le graphique.
+
+\item À l'aide du graphique:
+\begin{enumerate}
+\item% \textbf{Déterminer} le tarif pour lequel le prix payé est proportionnel à la distance exprimée en kilomètre. \textbf{Justifier} la réponse.
+Si le prix est proportionnel à la distance, on doit payer 0~F pour 0~km; cela correspond donc à la droite qui passe par le point de coordonnées $(0\,,\,0)$ donc celle représentant $f$.
+
+\item L'entreprise qui a le tarif le moins cher si la distance à parcourir est de 30 km est l'entreprise A (voir graphique).
+
+\item La distance  pour laquelle les deux tarifs sont égaux est le nombre $x$ tel que\\ $f(x)=g(x)$. On résout cette équation.
+
+$f(x)=g(x)$ équivaut à
+$450x = 250 x + \np{8400}$ équivaut à
+$450x - 250 x = \np{8400}$ équivaut à
+$200x = \np{8400}$ équivaut à
+$x=\dfrac{\np{8400}}{200}$ équivaut à
+$x=42$
+
+Donc pour une distance de 42~km, les deux tarifs sont égaux.
+
+\item %\textbf{Indiquer} le tarif le moins cher en fonction de la distance parcourue, exprimée en kilomètre.
+On déduit que, pour une distance inférieure à 42~km c'est l'entreprise A qui a le tarif le plus bas, et que pour une distance supérieure à 42~km c'est l'entreprise B.
+\end{enumerate}
+\end{enumerate}
+
+ 

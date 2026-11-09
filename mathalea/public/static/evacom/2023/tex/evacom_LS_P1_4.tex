@@ -1,0 +1,46 @@
+\medskip
+
+Donne l’expression algébrique réduite de l’aire de la figure ci-dessous en fonction de $x$.
+\begin{center}
+\begin{tikzpicture}[thick]
+    \coordinate (A) at (0,0);
+    \coordinate (B) at (3,0);
+    \coordinate (C) at (3,1);
+    \coordinate (D) at (6,1);
+    \coordinate (E) at (6,0);
+    \coordinate (F) at (9,0);
+    \coordinate (G) at (9,-6);
+    \coordinate (H) at (6,-6);
+    \coordinate (I) at (6,-3);
+    \coordinate (J) at (6,-2);
+    \coordinate (K) at (3,-2);
+    \coordinate (L) at (3,-3);
+    \coordinate (M) at (0,-3);
+\draw (A)--(B)--(C)--(D)--(E)--(F)--(G)--(H)--(I)--(J)--(K)--(L)--(M)--cycle;
+\tkzMarkSegment[color=black,pos=.5,mark=|](A,B)
+\tkzMarkSegment[color=blue,pos=.5,mark=||](B,C)
+\tkzMarkSegment[color=black,pos=.5,mark=|](C,D)
+\tkzMarkSegment[color=blue,pos=.5,mark=||](D,E)
+\tkzMarkSegment[color=black,pos=.5,mark=|](E,F)
+\tkzMarkSegment[color=black,pos=.5,mark=|](G,H)
+\tkzMarkSegment[color=black,pos=.5,mark=|](H,I)
+\tkzMarkSegment[color=blue,pos=.5,mark=||](I,J)
+\tkzMarkSegment[color=black,pos=.5,mark=|](J,K)
+\tkzMarkSegment[color=blue,pos=.5,mark=||](K,L)
+\tkzMarkSegment[color=black,pos=.5,mark=|](L,M)
+\tkzMarkSegment[color=black,pos=.5,mark=|](M,A)
+
+\tkzMarkRightAngle[fill=orange!10](M,A,B)
+\tkzMarkRightAngle[fill=orange!10](B,C,D)
+\tkzMarkRightAngle[fill=orange!10](C,D,E)
+\tkzMarkRightAngle[fill=orange!10](E,F,G)
+\tkzMarkRightAngle[fill=orange!10](F,G,H)
+\tkzMarkRightAngle[fill=orange!10](G,H,I)
+\tkzMarkRightAngle[fill=orange!10](L,M,A)
+\tkzMarkRightAngle[fill=orange!10](K,L,M)
+
+\tkzDrawSegment[dim={$1$,10pt,}](I,J)
+\tkzDrawSegment[dim={$x$,10pt,}](L,M)
+\end{tikzpicture}
+
+\end{center}

@@ -1,0 +1,56 @@
+
+\medskip
+
+\begin{enumerate}
+\item La solution générale $v$ d'une équation différentielle du premier ordre :
+\[v' + a v = b \text{, est de la forme  } v(t) = k \e^{-a t} + \dfrac{b}{a}\]
+
+Comme :
+\[v' + 1,3 \times 10^{13}v = 3,9\times 10^8,\]
+
+alors : $a = 1,3 \times 10^{13} \text{ et } b = 3,9 \times 10^8$,
+
+d'où :
+\begin{align*}
+v(t) &= k \e^{-1,3 \times 10^{13} t} + \dfrac{3{,}9 \times 10^8}{1{,}3 \times 10^{13}} \\
+&= k \e^{-1,3 \times 10^{13} t} + 3 \times 10^{-5}.
+\end{align*}
+
+\item On utilise la condition initiale :
+\begin{align*}
+v(0) &= 0 \\
+k \e^{-1,3 \times 10^{13} \times 0} + 3 \times 10^{-5} &= 0 \\
+k \times 1 + 3 \times 10^{-5} &= 0 \\
+k &= -3 \times 10^{-5}
+\end{align*}
+
+Donc :
+\[v(t) = -3 \times 10^{-5} e^{-1{,}3 \times 10^{13} t} + 3 \times 10^{-5} = 3 \times 10^{-5} (1 - e^{-1{,}3 \times 10^{13} t}).\]
+
+\item $\displaystyle\lim_{t \to + \infty}  \e^{-1,3 \times 10^{13} t} = 0$, donc :
+\begin{align*}
+\displaystyle\lim_{t \to + \infty}  v(t) &= 3 \times 10^{-5} (1 - 0) \\
+&= 3 \times 10^{-5},
+\end{align*}
+la limite est bien justifiée.
+
+\item On cherche $t_{90}$ tel que :
+\[v(t_{90}) = 0,9 \times 3 \times 10^{-5} = 2,7 \times 10^{-5}.\]
+
+On cherche :
+\begin{align*}
+3 \times 10^{-5} (1 - \e^{-1,3 \times 10^{13} t}) &= 2,7 \times 10^{-5} \\
+1 - \e^{-1,3 \times 10^{13} t} &= 0,9 \\
+\e^{-1,3 \times 10^{13} t} &= 0,1 \\
+-1,3 \times 10^{13} t &= \ln(0,1) \\
+t &= \dfrac{\ln(0,1)}{-1,3 \times 10^{13}} \\
+t &= \dfrac{\ln(10)}{1,3 \times 10^{13}} \\
+t &\approx 1,771 \times 10^{-13}.
+\end{align*}
+
+Donc $t_{90} \approx 1,8 \times 10^{-13}$s, arrondi à $10^{-14}$.
+\end{enumerate}
+
+\bigskip
+
+

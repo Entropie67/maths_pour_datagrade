@@ -1,0 +1,119 @@
+
+\medskip
+
+%Dans cet exercice, aucune justification n'est demandée.
+%
+%\smallskip
+%
+%Une élève souhaite réaliser un programme avec un logiciel de programmation pour dessiner des frises constituées de carrés et de rectangles.
+%
+%Pour cela, elle commence par créer les 3 blocs ci-dessous:
+%
+%\medskip
+%
+%\begin{center}
+%\renewcommand{\arraystretch}{1.5}
+%\begin{tabular}{|p{3.5cm}|p{5.4cm}|p{5.1cm}|}
+%\hline
+%~~\newline
+%\begin{scratch}
+%\initmoreblocks{d\'efinir \namemoreblocks{initialisation}}
+%\blockpen{effacer tout}
+%\blockmove{aller à x: \ovalnum{-220} y: \ovalnum0}
+%\blockmove{s'orienter à \ovalnum{90}}
+%\end{scratch}\newline
+%~~\newline
+%La commande\newline \og s'orienter à 90 \fg{}\newline signifie que le lutin est tourné vers la droite.
+%&
+%~~\newline
+%\begin{scratch}[num blocks]
+%\initmoreblocks{d\'efinir \namemoreblocks{carré}}
+%\blockpen{stylo en position d'\'ecriture}
+%\blockrepeat{répéter \ovalnum{\hphantom{4}} fois}
+%{
+%\blockmove{avancer de \ovalnum{50} pas}
+%\blockmove{tourner \turnright{} de \ovalnum{\hphantom{90}} degrés}
+%}
+%\end{scratch}
+%&
+%~~\newline
+%\begin{scratch}
+%\initmoreblocks{d\'efinir \namemoreblocks{rectangle}}
+%\blockpen{stylo en position d'\'ecriture}
+%\blockrepeat{répéter \ovalnum{2} fois}
+%{
+%\blockmove{avancer de \ovalnum{100} pas}
+%\blockmove{tourner \turnright{} de \ovalnum{90} degrés}
+%\blockmove{avancer de \ovalnum{50} pas}
+%\blockmove{tourner \turnright{} de \ovalnum{90} degrés}
+%}
+%\end{scratch}\newline
+%~~\newline
+%\\
+%\hline
+%\hfill{~}\textbf{Bloc 1}\hfill{~} & \hfill{~}\textbf{Bloc 2}\hfill{~} &\hfill{~}\textbf{Bloc 3}\hfill{~} \\
+%\hline
+%\end{tabular}
+%\end{center}
+%
+%%\medskip
+
+\begin{enumerate}
+\item %Quelles sont les coordonnées du lutin après l'exécution du bloc 1 ?
+Le lutin a pour coordonnées $- 220$ et $0$.
+\item %Par quelles valeurs doit-on compléter les lignes 3 et 5 du bloc 2 pour obtenir un carré?
+Ligne 3 : pour tracer les 4 côtés il faut répéter 4 fois.
+
+Ligne 5 : le carré a 4 angles droits : il faut donc tourner de $90\degres{}$.
+\item %Construire ce que dessine le lutin lorsque le bloc 3 est utilisé. On prendra 1~cm pour 20 pas.
+%\begin{center}
+%\psset{unit=1cm}
+%\begin{pspicture}(5,2.5)
+%\psframe(5,2.5)
+%\end{pspicture}
+%\end{center}
+%\item %L'élève souhaite réaliser les deux frises ci-dessous.
+%
+%\medskip
+%
+\begin{minipage}{0.65\linewidth}
+\psset{unit=1cm}
+
+\def\xmin {0}   \def\xmax {9} \def\ymin {-1}   \def\ymax {4}
+\begin{pspicture}(\xmin,\ymin)(\xmax,\ymax)
+%\psgrid[subgriddiv=1, gridcolor=gray] 
+\psframe(0,2)(9,3) \uput[u](0.6,3){Frise 1}
+\psline(1,2)(1,3) \psline(3,2)(3,3) \psline(4,2)(4,3) \psline(6,2)(6,3) \psline(7,2)(7,3) 
+\psframe(0,0)(9,1) \uput[u](0.6,1){Frise 2}
+\psline(1,0)(1,1) \psline(2,0)(2,1) \psline(3,0)(3,1) \psline(5,0)(5,1) \psline(7,0)(7,1) 
+\end{pspicture}
+\begin{enumerate}
+\item %Elle rédige le script ci-contre. Indiquer le numéro de la frise qu'elle va réaliser lorsque le drapeau vert est cliqué.
+L'exécution du script donne le dessin de la frise 1.
+\item %Écrire un script qui permet de réaliser la frise qui n'a pas été obtenue.
+Voir le script ci-contre :
+\end{enumerate}
+\vspace*{1cm}
+\end{minipage}
+\hfill
+\begin{minipage}{0.3\linewidth}
+\begin{scratch}
+\blockinit{Quand \greenflag est cliqué}
+\blockmove{initialisation}
+\blockrepeat{répéter \ovalnum{3} fois}
+{
+\blockmove{carré}
+\blockmove{avancer de \ovalnum{50} pas}
+}
+\blockrepeat{répéter \ovalnum{3} fois}
+{
+\blockmove{rectangle}
+\blockmove{avancer de \ovalnum{100} pas}
+}
+\end{scratch}
+\end{minipage}
+
+\end{enumerate}
+
+\bigskip
+

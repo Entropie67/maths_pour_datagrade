@@ -1,0 +1,71 @@
+%source mathadata
+\textbf{Correction de l'exercice 4 :}
+		\begin{enumerate}
+			\item \textbf{Position des points par rapport aux droites :}
+
+			      \begin{enumerate}
+				      \item \textbf{Point $A(2;3)$ et droite $d_1 : y = 2x + 1$}
+
+				            On calcule l'ordonnée du point de la droite ayant la même abscisse que $A$ :
+				            $$y_{\text{droite}} = 2 \times 2 + 1 = 4 + 1 = 5$$
+
+				            On compare : $y_A = 3$ et $y_{\text{droite}} = 5$
+
+				            Comme $3 < 5$, le point $A$ est \boxed{\text{en dessous}} de la droite $d_1$.
+
+				      \item \textbf{Point $B(2,5;2,5)$ et droite $d_2 : y = -x + 4$}
+
+				            On calcule l'ordonnée du point de la droite ayant la même abscisse que $B$ :
+				            $$y_{\text{droite}} = -2,5 + 4 = 1,5$$
+
+				            On compare : $y_B = 2,5$ et $y_{\text{droite}} = 1,5$
+
+				            Comme $2,5 > 1,5$, le point $B$ est \boxed{\text{au-dessus}} de la droite $d_2$.
+
+				      \item \textbf{Point $C(6;-1)$ et droite $d_3 : y = \frac{2}{3}x - 5$}
+
+				            On calcule l'ordonnée du point de la droite ayant la même abscisse que $C$ :
+				            $$y_{\text{droite}} = \frac{2}{3} \times 6 - 5 = \frac{12}{3} - 5 = 4 - 5 = -1$$
+
+				            On compare : $y_C = -1$ et $y_{\text{droite}} = -1$
+
+				            Comme $-1 = -1$, le point $C$ est \boxed{\text{sur}} la droite $d_3$.
+			      \end{enumerate}
+
+			\item \textbf{Script Python complété :}
+
+			      Pour répondre à la question \ref{premierequestion} (droite $d_1 : y = 2x + 1$ et point $A(2;3)$) :
+
+			      \begin{lstlisting}[language=Python]
+# y = mx + p
+# A(a; b) 
+  
+m = 2
+p = 1
+a = 2
+b = 3
+y = m * a + p
+
+if y == b :
+    print("Point sur la droite")
+elif b > y :
+    print("Point au-dessus")
+else:
+    print("Point en dessous")
+\end{lstlisting}
+
+			      \textbf{Explication :}
+			      \begin{itemize}
+				      \item On définit les coefficients de la droite : $m = 2$ (coefficient directeur) et $p = 1$ (ordonnée à l'origine).
+				      \item On définit les coordonnées du point : $a = 2$ (abscisse) et $b = 3$ (ordonnée).
+				      \item On calcule l'ordonnée du point de la droite à l'abscisse $a$ : \texttt{y = m * a + p = 2 * 2 + 1 = 5}.
+				      \item On compare l'ordonnée $b$ du point avec $y$ :
+				            \begin{itemize}
+					            \item Si \texttt{y == b}, le point est sur la droite.
+					            \item Si \texttt{b > y}, le point est au-dessus de la droite.
+					            \item Sinon, le point est en dessous de la droite.
+				            \end{itemize}
+			      \end{itemize}
+
+			      Le script affichera : \texttt{"Point en dessous"} (car $3 < 5$).
+		\end{enumerate}

@@ -1,0 +1,56 @@
+Voici deux programmes de calcul : \par \smallskip
+   \hskip18mm
+   \begin{minipage}[t]{7.5cm}
+      \hskip12mm \texttt{Programme A} \par \medskip
+      \begin{Scratch}[Echelle=0.8]
+         Place Drapeau;
+         Place Demander("Donner un nombre");
+         Place MettreVar("a",OvalCap("réponse"));
+         Place MettreVar("b",OpAdd(OpMul("2",OvalVar("a")),"5"));
+         Place MettreVar("c",OpSous(OpMul("5",OvalVar("a")),"4"));
+         Place MettreVar("d",OpMul(OvalVar("b"),OvalVar("c")));
+         Place Dire(OvalVar("d"));
+      \end{Scratch}
+   \end{minipage}
+   \qquad
+   \begin{minipage}[t]{6cm}
+      \hskip8mm \texttt{Programme B} \par \medskip
+      \colorbox{white}{\parbox{5cm}{Choisir un nombre \par
+      Prendre son double \par
+      Ajouter 5 \par
+      Calculer le carré du résultat \par
+      Retourner le résultat trouvé}}
+   \end{minipage}
+   \begin{enumerate}
+      \setlength{\itemsep}{-1mm}
+      \item Montrer que si l’utilisateur saisit le nombre 2, alors le programme A retourne le nombre 54.
+      \item Calculer le résultat obtenu avec le programme A si le nombre saisi par l’utilisateur est 1,15.
+      \item Pour quel(s) nombre(s) de départ le programme A retourne-t-il le nombre 0 ?
+      \item 
+         \begin{enumerate}
+            \setlength{\itemsep}{-1mm}
+            \item Si l’utilisateur saisit le nombre 3, quel résultat le programme B retourne-t-il ?
+            \item Si l’utilisateur saisit le nombre 4 , quel résultat le programme B retourne-t-il ?
+         \end{enumerate}
+      \item On détermine les résultats suivants retournés par le programme B à l’aide d’une feuille de calcul automatisé.
+         \begin{center}
+            \begin{Tableur}[Bandeau=false,Colonnes=10,Largeur=9mm]
+               \RowStyle[rowcolor=white]{} 0 & 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 & \\
+               \RowStyle[rowcolor=white]{} 25 & 49 & 81 & 121 & 169 & 225 & 289 & 361 & 441 & \\
+               \RowStyle[rowcolor=white]{} & & & & & & & & & \\
+            \end{Tableur}
+         \end{center}
+         \begin{enumerate}
+            \setlength{\itemsep}{-1mm}
+            \item Quelle cellule du tableur permet de retrouver la réponse à la question 4.(a) ci-dessus ?
+            \item Quelle formule a pu être saisie dans la cellule \texttt{A2} de la feuille de calcul automatisé afin de la copier-glisser sur la ligne 2 ?
+         \end{enumerate}
+      \item 
+         \begin{enumerate}
+            \setlength{\itemsep}{-1mm}
+            \item Pour quel nombre de départ le programme B retourne-t-il le nombre zéro ?
+            \item Ce nombre de départ est-il rationnel ? Justifier.
+            \item Ce nombre de départ est-il décimal ? Justifier.
+         \end{enumerate}
+      \item Pour quel(s) nombre(s) de départ le programme A retourne-t-il le même résultat que le programme B ?
+      \end{enumerate}

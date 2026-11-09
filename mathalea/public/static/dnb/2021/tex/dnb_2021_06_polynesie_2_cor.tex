@@ -1,0 +1,48 @@
+
+\medskip
+
+%Un professeur propose un jeu à ses élèves.
+%
+%Ils doivent tirer un jeton dans une boîte de leur choix et gagnent lorsqu'ils tombent sur un jeton noir. 
+%
+%Le professeur leur précise que :
+%
+%\setlength\parindent{1cm}
+%\begin{itemize}
+%\item La boîte A contient la jetons dont 1 jeton noir ;
+%\item La boîte B contient 15\,\% de jetons noirs ;
+%\item La boîte C contient exactement $350$ jetons blancs et $50$ jetons noirs.
+%\end{itemize}
+%\setlength\parindent{0cm}
+%
+%\medskip
+%
+%Les jetons sont indiscernables au toucher. Une fois que l'élève a choisi sa boîte, le tirage se fait au hasard.
+%
+%\medskip
+
+\begin{enumerate}
+\item %Montrer que, dans la boîte C, la probabilité de tirer un jeton noir est $\dfrac{1}{8}$.
+La probabilité de tirer un jeton noir dans la boîte C est égale à $\dfrac{50}{350 + 50} = \dfrac{50}{400}= \dfrac{50 \times 1}{50 \times 8} = \dfrac{1}{8}$.
+\item %C'est le tour de Maxime. Dans quelle boîte a-t-il intérêt à tenter sa chance ? Justifier la réponse.
+La probabilité de tirer un jeton noir dans la boîte A est égale à $\dfrac{1}{10} = 0,1$ ;
+
+la probabilité de tirer un jeton noir dans la boîte B est égale à $\dfrac{15}{100} = 0,15$ et 
+
+La probabilité de tirer un jeton noir dans la boîte C est égale à $\dfrac{1}{8} = 0,125$.
+
+Comme $0,1 < 0,125 < 0,15$, Maxime a intérêt à choisir la boîte B.
+\item %La boîte B contient $18$ jetons noirs. Combien y a-t-il de jetons au total dans cette boîte  ?
+On a pour $n$ jetons en tout : $0,15 = \dfrac{15}{n}$ soit $0,15n = 18$ ou $n = \dfrac{18}{0,15} = 120$.
+
+Il y a 120 jetons dans la boîte B dont 18 noirs. 
+\item  %On ajoute $10$ jetons noirs dans la boîte C. Déterminer le nombre de jetons blancs à ajouter dans la boîte C pour que la probabilité de tirer un jeton noir reste égale à $\dfrac{1}{8}$.
+Si on ajoute $b$ jetons blancs dans la boîte C, on a donc :
+
+$\dfrac{50 + 10}{350 + 50 + 10 + b} = \dfrac{1}{8}$ ou $\dfrac{60}{410 + b} = \dfrac{1}{8}$, d'où on déduit : $8 \times 60 = 410 + b$ ou $480 = 410 + b$ et 
+
+$b = 480 - 410 = 70$. Il faut ajouter 70 jetons blancs.
+\end{enumerate}
+
+\bigskip
+

@@ -1,0 +1,49 @@
+
+\medskip
+
+On considère le programme suivant:
+
+\begin{center}
+\begin{scratch}
+\blockinit{Quand \greenflag est cliqué}
+\blockvariable{demander \ovalnum{Quelle est la valeur de x ?} et attendre}
+\blockvariable{mettre \selectmenu{x} à \ovaloperator{réponse}}
+\blockvariable{mettre \selectmenu{résultat} à \ovaloperator{\ovaloperator{\ovalvariable{x} * \ovalnum{5}} + 2}}
+\blocklook{dire \ovaloperator{regrouper \ovalnum{Le résultat est} et \ovalcontrol{résultat}} pendant \ovalnum{2} secondes}
+\end{scratch}
+\end{center}
+
+\begin{enumerate}
+\item Parmi les algorithmes suivants, choisir celui qui correspond au programme ci-dessus en nommant la réponse (A, B ou C) sur la copie. Justifier.
+
+\begin{center}
+\renewcommand\arraystretch{1.2}
+\begin{tabular}{|p{0.26\linewidth}|c|p{0.26\linewidth}|c|p{0.26\linewidth}|}
+%\centering\textbf{A} && \hfill{}\textbf{B}\hfill~ && \hfill{}\textbf{C}\hfill~ \\
+\multicolumn{1}{c}{\textbf{A}} &\multicolumn{1}{c}{} & \multicolumn{1}{c}{\textbf{B}} & \multicolumn{1}{c}{} & \multicolumn{1}{c}{\textbf{C}} \\
+\cline{1-1} \cline{3-3} \cline{5-5} 
+\small
+ Demander la valeur de $x$\newline
+La multiplier par 5 et\newline ajouter 2\newline
+Afficher le résultat
+&&
+\small
+Demander la valeur de $x$\newline
+La multiplier par 2 et\newline ajouter 5\newline
+Afficher le résultat
+&&
+\small
+Demander la valeur de $x$\newline
+La multiplier par 5 et\newline ajouter 5\newline
+Afficher le résultat\\
+\cline{1-1} \cline{3-3} \cline{5-5}
+\end{tabular}
+\end{center}
+
+\item Indiquer le temps d'affichage du résultat.
+ 
+ \item On veut faire afficher le message \og gagné \fg{}  pendant 5 secondes si le résultat de $5x+2$ est égal à 97.\\
+Indiquer pour quelle valeur de $x$, le programme afficherait \og gagné \fg{}.
+\end{enumerate}
+
+

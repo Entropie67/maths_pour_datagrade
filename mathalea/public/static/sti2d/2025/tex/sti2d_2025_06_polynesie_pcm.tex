@@ -1,0 +1,81 @@
+\begin{center}
+\textbf{Accélération d'un véhicule}
+\end{center}
+
+Un véhicule électrique se déplace sur une route horizontale et rectiligne.
+
+\begin{center}
+\begin{pspicture}(2,-0.5)(10,0.5)
+\psset{arrowsize=0.3}
+\psline[linewidth=1.2pt]{->}(10,0)(2,0)
+\uput[u](6,0){Sens du mouvement}
+\end{pspicture}
+%\includegraphics[scale=0.5]{voiture_polynesie_2025}
+
+\psset{xunit=1cm,yunit=0.9cm}
+\scalebox{0.7}{
+\begin{pspicture}(0,1)(12,5)
+%\psgrid
+\pscircle[linewidth=8pt](9,1.8){0.8}
+\pscircle[linewidth=8pt](3,1.8){0.8}
+\psline[linewidth=4pt,linecolor=white](2.2,1.8)(9.8,1.8)
+\pscircle[linewidth=1pt,fillstyle=solid,fillcolor=black](3,1.8){0.3}
+\pscircle[linewidth=1pt,fillstyle=solid,fillcolor=black](9,1.8){0.3}
+\psset{linewidth=3pt}
+\psarc(9,1.8){1}{0}{180} \psline(8,1.8)(8,1.4) \psline(10,1.8)(10,1.6)
+\psarc(3,1.8){1}{0}{180} \psline(8,1.8)(8,1.4) \psline(2,1.8)(2,1.4)
+\psline(4,1.8)(4,1.4)(8,1.4) \psline(2,1.4)(1,1.6)(1,2)(1.8,2)
+\pscurve(1,2.2)(1,2.4)(2,3)(4,3.4)(4,3.4)(6,4.4)(6,4.4)(7,4.6)(8,4.6)(10,3.8)(11,3)
+\psline(11,3)(10.4,3) \psarc(11,3){0.6}{180}{300}
+\psline(11,3)(11.4,2.2)(11.4,1.8)(10,1.6)
+\pscurve(2,3)(1.5,2.3)(1,2.2)
+\psline(4.4,1.4)(4.4,3.4)(9.6,3.4)
+\pscurve(4.4,3.4)(6,4.2)(6,4.2)(7,4.4)(8,4.4)(9,4.1)(9.6,3.7)(9.6,3.4)(9.6,3.4)
+\pscurve(7.6,3.4)(7.8,3)(7,1.4)
+\psline(8,4.4)(7.6,3.4) \psline(7,2.8)(7.4,2.8) \psline(1.6,2.2)(11,2.2)
+\end{pspicture}
+}%%% fin du scalebox
+\end{center}
+
+Le graphique du \textbf{document \no 1 } représente l'évolution de la vitesse instantanée $v(t)$ (exprimée en $\text{m}\cdot\text{s}^{-1}$ en fonction du temps $t$ (exprimé en seconde) durant 50 secondes.
+
+\textbf{1 u.a. = 1 unité d'aire.}
+
+\begin{center}
+\psset{xunit=0.2cm,yunit=0.2cm,labelFontSize=\scriptstyle,arrowsize=2pt 3}
+\begin{pspicture}(-10,-5)(57,27)
+\psgrid[unit=1cm,subgriddiv=5,gridlabels=0,gridcolor=gray,subgridcolor=lightgray](0,0)(11,5)
+\psaxes[linewidth=0.95pt,Dx=5,Dy=5,]{->}(0,0)(55,25)
+\psframe[fillstyle=hlines,hatchwidth=0.1pt=](45,15)(50,20)
+\uput[d](55,0){\footnotesize $t$ en $s$}
+\uput[l](-4,10){\rotatebox{90}{\small Vitesse en $\text{m}\cdot\text{s}^{-1}$}}
+\uput[u](47.5,16){\footnotesize 25 u.a.}
+\uput[d](25,-4){\textbf{Document \no 1 :} évolution de la vitesse instantanée}
+\psset{linewidth=1.25pt,linecolor=blue}
+\psbezier(0,0)(3,0)(2,10)(5,10) \psline(5,10)(10,10)
+\psbezier(10,10)(17,10)(23,20)(30,20) \psbezier(30,20)(37,20)(43,0)(50,0)
+\end{pspicture}
+\end{center}
+
+L'accélération instantanée est la dérivée de la vitesse par rapport au temps:
+\[a(t)=\dfrac{\mathrm{d}v}{\mathrm{d}t}(t)\]
+avec :
+\begin{itemize}[label=$\bullet$]
+\item $v(t)$ la vitesse instantanée en m$\cdot$s$^{-1}$ à l'instant $t$;
+\item $a(t)$ l'accélération instantanée en m$\cdot$s$^{-2}$ à l'instant $t$.
+\end{itemize}
+
+On s'intéresse à l'accélération instantanée du véhicule sur l'intervalle [1 ; 4], et on admet que sur cet intervalle, on a : $v(t) = 2t$.
+
+\begin{enumerate}[start=2]
+\item Déterminer la valeur de l'accélération $a(t)$ sur l'intervalle [1 ; 4].
+\end{enumerate}
+La distance totale, notée $D$ et exprimée en mètre, parcourue par le véhicule en 50 secondes est donnée par :
+\[D = \int_0^{50} v(t)\d t\]
+
+\begin{enumerate}[resume]
+\item Donner, en exploitant le graphique, une estimation de la distance totale parcourue par le véhicule.
+\item Déduire la valeur de la vitesse moyenne du véhicule, exprimée en $\text{km}\cdot\text{h}^{-1}$, dans l'intervalle de temps [0 ; 50].
+\end{enumerate}
+
+\bigskip

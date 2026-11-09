@@ -1,0 +1,82 @@
+
+\medskip
+
+Dans cet exercice, les deux parties sont indépendantes.
+
+On considère les fonctions $f$ et $g$ définies par 
+
+\begin{center} $f(x) = (x + 2)^2 - x$\quad et \quad  $g(x) = 7x + 4$.\end{center}
+
+\smallskip
+
+\textbf{Partie A}
+
+\medskip
+
+\begin{enumerate}
+\item Calculer $f(- 4)$.
+\item Déterminer un antécédent de $3$ par la fonction $g$.
+\end{enumerate}
+
+\medskip
+
+\textbf{Partie B}
+
+\medskip
+
+Trois élèves, Paul, Jane et Morgane, cherchent à résoudre l'équation $f(x) = g(x)$ par trois méthodes différentes.
+
+\medskip
+
+\begin{enumerate}
+\item Paul utilise un tableur.
+
+Il calcule ainsi les images des entiers compris entre $-3$ et $3$ par les fonctions $f$ et $g$.
+
+\begin{center}
+\begin{tabularx}{\linewidth}{|l|*{8}{>{\centering \arraybackslash}X|}}\hline
+&A &B&C&D&E &F &G &H \\ \hline
+1&{\Large $x$ }\vspace{-0.25cm}&$-3$&$ -2$& $-1$& 0 &1 &2 &3\\ \hline
+2&$f(x)$&4&2 &2&4&8&14&22\\ \hline
+3& $g(x)$& $-17$& $-10$& $-3$& 4& 11& 18& 25\\ \hline
+\end{tabularx}
+\end{center}
+
+	\begin{enumerate}
+		\item Quelle formule a-t-il saisie en cellule B3 puis étirée vers la droite pour compléter la ligne 3 du tableau ?
+		\item Avec cette méthode, quelle(s) solution(s) trouve-t-il à l'équation $f(x) = g(x)$ ?
+	\end{enumerate}
+\item Jane utilise un logiciel de programmation.
+
+Le programme suivant qu'elle a créé permet de tester l'égalité $f(x) = g(x)$ pour une valeur de $x$ choisie par l'utilisateur.
+
+\begin{scratch}[num blocks]
+\renewcommand*\numblock[1]{ligne \itshape#1}
+\blockinit{quand \greenflag est cliqué}
+\blockmove{demander \ovalnum{Choisir un nombre} et attendre}
+\blockvariable{mettre \selectmenu{image par f} à \ovaloperator{\ovaloperator{\ovalmove{réponse}+\ovalnum{2}}*\ovaloperator{\ovalmove{réponse}+\ovalnum{2}}-\ovalmove{réponse}}}
+\blockvariable{mettre \selectmenu{image par g} à \ovaloperator{\ovalnum{}*\ovalmove{réponse}}+\ovalnum{}}
+ \blockifelse{si\ovaloperator{\ovalvariable{image par f} =\ovalvariable{image par g}}  alors}
+ {\blocklook{dire \ovalnum{le nombre choisi est une solution de f(x)=g(x)} pendant \ovalnum{2} secondes}}
+ {\blocklook{dire \ovalnum{le nombre choisi n'est pas une solution de f(x)=g(x)} pendant \ovalnum{2} secondes}}
+\end{scratch}
+
+
+Elle décide de tester toutes les valeurs entières entre $-5$ et 3.
+	\begin{enumerate}
+		\item Compléter sur le programme précédent, la ligne 4 du programme de Jane afin d'obtenir l'image par la fonction $g$ du nombre choisi.
+		\item Quelle réponse donne le programme si le nombre choisi est $0$ ?
+		\item En déduire une solution de l'équation $f(x) = g(x)$.
+	\end{enumerate}
+\item Morgane décide de résoudre cette équation par le calcul.
+	\begin{enumerate}
+		\item Démontrer que l'équation $f(x) = g(x)$ peut se ramener à l'équation $x^2 - 4x = 0$. 
+		\item Factoriser l'expression $x^2 - 4x$.
+		\item En déduire les solutions de l'équation $f(x) = g(x)$.
+	\end{enumerate}
+\item Dire pour chaque élève s'il a résolu l'équation $f(x) = g(x)$.
+
+Expliquer pourquoi.
+\end{enumerate}
+
+

@@ -1,0 +1,80 @@
+\begin{enumerate}
+    \item Le point $B$ appartient à la droite $(AD)$ puisque les points $A$, $B$ et $D$ sont alignés. Comme l'angle $\widehat{ABC}$ est droit, alors le triangle $DBC$ est rectangle en $B$. \par
+       $BC =\Lg[m]{40}$ et $BD =AD-AB =FE-AB =\Lg[m]{80}-\Lg[m]{50} =\Lg[m]{30}$. \par
+       \Pythagore[Unite=m,Exact]{DBC}{30}{40}{}
+       \con{Le segment $[CD]$ mesure \Lg[m]{50}}.
+    \item Soit $\ell$ la longueur du parcours.
+       \begin{align*}
+          \ell &=AF+FE+ED+\overset{\displaystyle\frown}{DC}+CB+BA \\
+          &=\Lg[m]{30}+\Lg[m]{80}+\Lg[m]{30}+\dfrac 12\times(2\pi\times\Lg[m]{25})+\Lg[m]{40}+\Lg[m]{50} \\
+          &=\Lg[m]{230}+25\pi\,\Lg[m]{} \\
+          &\approx\Lg[m]{308,54}
+       \end{align*}
+       \con{Le parcours mesure environ \Lg[m]{309}}.
+    \item À l'échelle 1\,:\,800, on obtient les les mesures suivantes :
+       \begin{center}
+          \hautab{1.5}
+          \begin{tabular}{|c|*{5}{C{1.2}|}}
+             \hline
+             Segment & $AF,ED$ & $FE$ & $\frac12DC$ & $CB$ & $BA$ \\
+             \hline
+             Longueur en cm dans la réalité & 3 000 & 8 000 & 2 500 & 4 000 & 5 000 \\
+             \hline
+             Longueur en cm sur le plan & 3,75 & 10 & 3,125 & 5 & 6,25 \\
+             \hline
+          \end{tabular} $\downarrow \div 800$
+       \end{center}
+       Ce qui donne :
+       \begin{center}
+          \psset{unit=1.25}
+          \begin{pspicture}(-0.5,-0.5)(9,7.5)
+             \psset{linecolor=violet}
+             \pstGeonode[CurveType=polygon,PosAngle={-135,-45,-45,135,-45,135},PointSymbol=none]{F}(8,0){E}(8,3){D}(5,7){C}(5,3){B}(0,3){A}
+             \pstGeonode[PointName=none,linecolor=violet](6.5,5){O}
+             \pstGeonode(5,4.625){S}
+             \psarc(6.5,5){2.5}{-53}{127}
+             \pstLabelAB[offset=-3mm]{F}{E}{10 cm}
+             \pstLabelAB[offset=3mm]{F}{A}{3,75 cm}
+             \pstLabelAB[offset=3mm]{A}{B}{6,25 cm}
+             \pstLabelAB[offset=3mm]{B}{C}{5 cm}
+             \pstLabelAB[offset=3mm]{O}{D}{3,125 cm}
+             \pstRightAngle[fillstyle=solid,fillcolor=gray!30]{A}{B}{C}
+          \end{pspicture}
+       \end{center}
+    \item Killian a effectué $\Lg[m]{309}$ en 3 minutes, soit 180 secondes. Sa vitesse est donc de 
+       $$v =\dfrac{d}{t} =\dfrac{\Lg[m]{309}}{\Temps{;;;;;180}} \approx\Vitesse[ms]{1,7167}$$
+       On peut également dire qu'il a effectué $\Lg[km]{0,309}$ en $\dfrac{3}{60}$ heure = 0,05 heure. Sa vitesse est aussi de
+       $$v =\dfrac{d}{t} =\dfrac{\Lg[km]{0,309}}{\Temps{;;;0,05}} \approx\Vitesse[kmh]{6,18}$$
+       \con{Killian a couru a une vitesse d'environ \Vitesse[ms]{1,72}, soit \Vitesse[kmh]{6,2}}.
+    \item 
+       \begin{enumerate}
+          \item À une vitesse de \Vitesse[kmh]{7}, Sophia va parcourir en 18 minutes une distance égale à
+             $$d =v\times t =\Vitesse[kmh]{7}\times\dfrac{18}{60}\,\text{h} =\Lg[km]{2,1} =\Lg[m]{2100}$$
+             Or, $\Lg[m]{2100}\div\Lg[km]{309} \approx6,8$ donc, \par
+             \con{Sophia va effecteur six tours complets en 18 minutes}.
+          \item Sophia a parcouru presque sept tours. Calculons la distance qui la sépare du point $A$ de départ du parcours : \par
+             $7\times\Lg[m]{309} =\Lg[m]{2163}$ et $\Lg[m]{2163}-\Lg[m]{2100} =\Lg[m]{63}$. \par
+             Par conséquent, Sophia se trouve à \Lg[m]{63} de $A$. Comme $AB$ mesure \Lg[m]{50}, Sophia se trouve alors à \Lg[m]{13} de $B$, en partant vers $A$. À l'échelle 1\,:\,800, cela correspond à une mesure de $\Lg[cm]{1300}\div800 =\Lg[cm]{1,625}$.
+       \end{enumerate}
+    \item 
+       \begin{enumerate}
+          \item \Stat[Moyenne]{2/52,3/52,4/78,5/65,6/39,7/26,8/13}
+             \con{Les élèves ont effectué en moyenne 4,36 tours}.
+          \item L'étendue est égale à 8 tours $-$ 2 tours = 6 tours. \par
+             \con{L'étendue de cette série est de 6 tours}.
+          \item On commence par construire le tableau des effectifs croissants (E.C.C.) :
+             \begin{center}
+                \Stat[Tableau,ECC,Donnee=Nombre de tours,Effectif=Nombre d'élèves]{2/52,3/52,4/78,5/65,6/39,7/26,8/13}
+             \end{center}
+                Puis on détermine la médiane : l'effectif total est de 325 élèves. Or, $325\div2 =162,5$. \par
+                La médiane est donc la $163^\text{e}$ valeur. Par lecture du tableau : \par
+                \con{La valeur de la médiane est de 4 tours}.
+          \item Cette valeur signifie que \con{la moitié des élèves a fait 4 tours ou moins, et la moitié en a fait 4 ou plus}.
+          \item Premier quartile : $\dfrac14\times325 =81,25$ donc, le premier quartile correspond à la $82^\text{e}$ valeur, qui est 3. \par \smallskip
+             Troisième quartile : $\dfrac34\times325 =243,75$ donc, le troisième quartile correspond à la $244^\text{e}$ valeur, qui est 5. \par \smallskip
+             \con{Le premier quartile est 3 et le troisième quartile est 5}.
+          \item Sur les 325 élèves, 104 ont fait moins de 4 tours. \par
+             $325-104 =221$. On a donc 221 élèves sur 325 qui ont fait au moins 4 tours. \par \smallskip
+             $\dfrac{221}{325}\times100\approx 68$. Donc, \con{environ 68\,\% des élèves ont fait au moins 4 tours}.
+       \end{enumerate}
+ \end{enumerate}

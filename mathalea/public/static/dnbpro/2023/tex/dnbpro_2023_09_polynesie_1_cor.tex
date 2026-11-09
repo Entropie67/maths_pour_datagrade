@@ -1,0 +1,87 @@
+
+\vspace{0.25cm}
+
+%Cet exercice est un questionnaire à choix multiple (QCM). Pour chaque question, une seule des trois réponses proposées est exacte.
+%
+%Indiquer sur la copie pour chaque question, sans justifier, la réponse choisie : Réponse A, Réponse B ou Réponse C.
+%
+%\medskip
+
+{\renewcommand{\arraystretch}{1.5}
+\begin{tabularx}{\linewidth}{|c| m{5.5cm} | *3{>{\centering\arraybackslash}X|}}
+\hline
+\textbf{N$\degres$} & \centering\textbf{Questions} & \textbf{Réponse A} & \textbf{Réponse B} & \textbf{Réponse C}\\
+ \hline
+1. & Soient les 6 nombres suivants:\newline 18\;;\;2\;;\;14\;;\;5\;;\;8\;;\;16\newline La moyenne est: & $9,5$ & $\blue 10,5$ & $15,5$\\
+\hline
+2. & La forme développée de\newline $(x+2)(x+3)$ est: & $x^2+5$ & $\blue x^2+5x+6$ & $x^2+6$\\
+\hline
+3. & Soit le triangle ABC tel que\newline AB = 3 cm, BC = 4 cm et AC = 5 cm.\newline Ce triangle est-il rectangle? & $\text{\blue OUI}$ & NON & On ne peut pas savoir.\\
+\hline
+4. & $\qquad\qquad\dfrac{2}{5}- \dfrac{1}{5}=$\rule[-15pt]{0pt}{35pt} & 1 & 0 & $\blue\dfrac{1}{5}$\\
+\hline
+&&&&\\
+5. & La fonction $f$ est définie par: \newline{}\hspace*{1cm} $f(x)=2x+20$ \newline Sa représentation graphique est: 
+&
+\psset{unit=0.05cm,arrowsize=2pt 2}
+\parbox{2.5cm}{
+\def\xmin{-14}   \def\xmax{30} \def\ymin{-9}   \def\ymax{48}
+{\psset{linecolor=blue} 
+\begin{pspicture*}(\xmin,\ymin)(\xmax,\ymax)
+\psgrid[unit=0.5cm,subgriddiv=5, gridlabels=0, gridcolor=blue!60,subgridcolor=blue!30](-2,-1)(3,5)
+\psaxes[labelFontSize=\scriptstyle,gridlabelcolor=blue, ticksize=-0pt 0pt,Dx=10,Dy=10]{->}(0,0)(\xmin,\ymin)(\xmax,\ymax)
+\uput[ul](30,0){\scriptsize\blue $x$} \uput[dr](0,48){\scriptsize\blue $y$} %\uput{7pt}[dl](0,0){\scriptsize $0$}
+\psplot[linecolor=red]{\xmin}{\xmax}{20 2 x mul add}
+%\psplot[linecolor=blue]{\xmin}{\xmax}{20 -2 x mul add}
+%\psplot[linecolor=green]{\xmin}{\xmax}{-2 x mul}
+\end{pspicture*}}}
+&
+\psset{unit=0.05cm,arrowsize=2pt 2}
+\parbox{2.5cm}{
+\def\xmin{-14}   \def\xmax{30} \def\ymin{-9}   \def\ymax{48}
+\begin{pspicture*}(\xmin,\ymin)(\xmax,\ymax)
+\psgrid[unit=0.5cm,subgriddiv=5, gridlabels=0, gridcolor=lightgray,subgridcolor=lightgray!40](-2,-1)(3,5)
+\psaxes[labelFontSize=\scriptstyle, ticksize=-0pt 0pt,Dx=10,Dy=10]{->}(0,0)(\xmin,\ymin)(\xmax,\ymax)
+\uput[ul](30,0){\scriptsize $x$} \uput[dr](0,48){\scriptsize $y$} %\uput{7pt}[dl](0,0){\scriptsize $0$}
+%\psplot[linecolor=red]{\xmin}{\xmax}{20 2 x mul add}
+\psplot[linecolor=blue]{\xmin}{\xmax}{20 -2 x mul add}
+%\psplot[linecolor=green]{\xmin}{\xmax}{-2 x mul}
+\end{pspicture*}}
+&
+\psset{unit=0.05cm,arrowsize=2pt 2}
+\parbox{2.5cm}{
+\def\xmin{-14}   \def\xmax{30} \def\ymin{-9}   \def\ymax{48}
+\begin{pspicture*}(\xmin,\ymin)(\xmax,\ymax)
+\psgrid[unit=0.5cm,subgriddiv=5, gridlabels=0, gridcolor=lightgray,subgridcolor=lightgray!40](-2,-1)(3,5)
+\psaxes[labelFontSize=\scriptstyle, ticksize=-0pt 0pt,Dx=10,Dy=10]{->}(0,0)(\xmin,\ymin)(\xmax,\ymax)
+\uput[ul](30,0){\scriptsize $x$} \uput[dr](0,48){\scriptsize $y$}% \uput{7pt}[dl](0,0){\scriptsize $0$}
+%\psplot[linecolor=red]{\xmin}{\xmax}{20 2 x mul add}
+%\psplot[linecolor=blue]{\xmin}{\xmax}{20 -2 x mul add}
+\psplot[linecolor=green]{\xmin}{\xmax}{-2 x mul}
+\end{pspicture*}} \\
+&&&&\\
+\hline
+6. & Le volume de la boule suivante est:\newline\psset{unit=1cm}
+\begin{pspicture}(-2.5,-2)(1.7,2)
+%\psgrid
+\pscircle(0,0){1.6}
+\psellipse[linestyle=dashed](0,0)(1.6,0.7)
+\psdots(0,0)
+\psline(-1.6,0)(0,0) \uput[u](-0.6,0){\scriptsize $R = 2$}
+\end{pspicture}\newline
+Volume boule: $\dfrac{4}{3}\pi R^3$\rule[-12pt]{0pt}{0pt}
+& $\dfrac{8}{3}\pi$ & $\dfrac{24}{3}\pi$ & $\blue\dfrac{32}{3}\pi$\\
+\hline
+\end{tabularx} }
+
+\begin{center}
+\begin{tabularx}{0.8\linewidth}{|c|  *6{>{\centering\arraybackslash}X|}}
+\hline
+Questions & 1 & 2 & 3 & 4 & 5 & 6\\
+\hline
+Réponses & B & B & A & C & A & C \\
+\hline
+\end{tabularx}
+\end{center}
+
+

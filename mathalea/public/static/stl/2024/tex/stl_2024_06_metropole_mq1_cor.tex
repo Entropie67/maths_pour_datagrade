@@ -1,0 +1,19 @@
+
+\medskip
+
+D'après le graphique: $f(0)=-2$.
+
+\begin{center}
+\psset{xunit=1.5cm,yunit=1.5cm,labelFontSize=\scriptstyle,showorigin=false}
+\begin{pspicture*}(-2.5,-3.5)(2.30,1.7)
+\psgrid[subgriddiv=5,,gridlabels=0,gridcolor=gray,subgridcolor=lightgray] (-3,-4)(3,2)
+\psaxes[linewidth=1.25pt]{->}(0,0)(-2.5,-3.5)(2.30,1.7)
+\def\Func{x 2 exp x 2 mul  add 2 sub}
+\psplot[plotpoints=1000,linewidth=1.25pt,linecolor=blue]{-2}{1}{\Func}
+\uput[dl](0,0){O}
+\psdots[linecolor=red](0,-2)
+\end{pspicture*}
+\end{center}
+
+\bigskip
+

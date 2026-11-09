@@ -1,0 +1,62 @@
+
+\medskip
+\begin{enumerate}[itemsep=1em]
+\item L'aire d'un carré de côté $x$ est égale à $x^2$
+\item Les dimensions du rectangle sont $x-3$ et $x+7$ donc son aire vaut $(x-3)(x+7)$. Développons cette expression.
+
+\begin{list}{}
+    \item $(x-3)(x+7) = x^2-3x+7x-21$
+    \item $(x-3)(x+7) = x^2+4x-21$
+\end{list}
+L'aire du rectangle est donc bien égale à $x^2+4x-21$
+    \item
+     \begin{scratch}[scale=0.75,print]
+		\blockinit{quand la touche  \selectmenu{espace} est pressée}
+		\blocksensing{demander \ovalnum{Combien vaut x ?} et attendre}
+		\blockvariable{mettre \selectmenu{x} à \ovalsensing{réponse}}
+		\blockvariable{mettre \selectmenu{R} à \ovaloperator{\ovalvariable{x} * \ovalvariable{x}}}
+		\blockvariable{ajouter \ovaloperator{\ovalvariable{4} * \ovalvariable{x}} à \ovalvariable{R}}
+        \blockvariable{ajouter \ovalvariable{-21} à \ovalvariable{R}}
+        \blocklook{dire \ovaloperator{regrouper \ovalnum{L'aire du rectangle est } et \ovalvariable{R}} pendant \ovalnum{2} secondes}
+	\end{scratch}
+	\item Lorsque $x=8$, l'aire du rectangle vaut $(8-3)(8+7)=5\times15=75$. Le programme renvoie donc 75.
+	
+	On peut aussi expliquer que~:
+	\begin{itemize}
+	    \item à la ligne 3 x devient égal à 8~;
+	    \item à la ligne 4 R devient égal à $8\times8=64$~;
+	    \item à la ligne 5 on ajoute $4\times8=32$ à R et donc que R devient égal à 96~;
+	    \item à la ligne 6 on ajoute $-21$ à R qui devient $96-21=75$
+	    \item qui sera affiché à la ligne 7.
+	\end{itemize}
+	
+	\item Pour que l'aire du rectangle soit égale à celle du carré, il est nécessaire que :\par
+	
+%\begin{list}{}
+%    \item $x^2+4x-21 = x^2$
+%    \item On soustrait $x^2$ aux deux membres.
+%    \item $4x-21 = 0$
+%    \item On ajoute 21 aux deux membres.
+%    \item $4x = 21$
+%    \item On divise les deux membres par 4.
+%    \item $x = 5,25$
+%\end{list}
+
+\begin{align*}
+x^2+4x-21 & = x^2\\
+\text{On soustrait $x^2$}&\text{aux deux membres.}\\
+4x-21 & = 0\\
+\text{On ajoute 21}&\text{aux deux membres.}\\
+4x & = 21\\
+\text{On divise les deux}&\text{ membres par 4.}\\
+x &= 5,25\\
+\end{align*}
+
+
+\par\vspace{0.5cm}
+Pour que l'aire du rectangle soit égale à celle du carré, il faut donc choisir le nombre 5,25.
+\end{enumerate}
+
+\medskip
+
+\clearpage

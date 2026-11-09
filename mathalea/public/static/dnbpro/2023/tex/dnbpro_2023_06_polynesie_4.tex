@@ -1,0 +1,54 @@
+
+\medskip
+
+Un agriculteur souhaiterait louer un camion pour transporter tous ses matériaux agricoles. Il hésite entre deux entreprises.
+
+\begin{list}{\textbullet}{}
+\item Tarif de l'entreprise A : 450 F par kilomètre.
+\item Tarif de l'entreprise B : un forfait de \np{8400} F et 250 F par kilomètre.
+\end{list}
+
+\begin{enumerate}
+\item Pour l'entreprise A et l'entreprise B, \textbf{calculer} le prix qu'il devra payer pour une distance de 100 km.
+\item On appelle $x$ la distance exprimée en kilomètre.
+
+\begin{list}{\textbullet}{}
+\item La fonction $f$ représente le tarif de l'entreprise A
+\item La fonction $g$ représente le tarif de l'entreprise B
+\item Les fonctions $f$ et $g$ sont définies, pour toute valeur de $x$ sur l'intervalle $[0\,;\,150]$, par: 
+
+{}\hfill$f(x) = 450 x \text{ et } g(x) = 250 x + \np{8400}$\hfill~
+\end{list}
+
+Les fonctions $f$ et $g$ sont représentées graphiquement ci-dessous.
+
+\begin{center}
+\psset{xunit=0.1cm,yunit=0.6cm,arrowsize=3pt 2}
+\def\xmin{0}   \def\xmax{110} \def\ymin{0}   \def\ymax{16}
+\begin{pspicture}(\xmin,\ymin)(\xmax,\ymax)
+\psset{yMaxValue=\ymax,yMinValue=\ymin}
+\psgrid[xunit=1cm,yunit=0.6cm,subgriddiv=5, gridlabels=0, subgridcolor=lightgray, gridcolor=gray](0,0)(11,16)
+\multido{\i=0+1,\I=0+2000}{16}{\uput[l](0,\i){\footnotesize \np{\I}}}
+\psaxes[labelFontSize=\scriptstyle, ticksize=-0pt 0pt,Dx=10,labels=x]{->}(0,0)(\xmin,\ymin)(\xmax,\ymax)
+\psplot[linewidth=1.2pt,linecolor=red]{\xmin}{\xmax}{450 x mul 2000 div}
+\psplot[linewidth=1.2pt,linecolor=blue]{\xmin}{\xmax}{8400 250 x mul add 2000 div}
+\rput*(12,15){Prix (en F)} \rput*(90,1){Distance (en km)}  
+\rput*(45,14){\parbox{1cm}{\rule[-0.4cm]{0cm}{1cm}\centering $\ldots$}} 
+\rput*(82,12){\parbox{1cm}{\rule[-0.4cm]{0cm}{1cm}\centering $\ldots$}} 
+\end{pspicture}
+\end{center}
+
+
+\textbf{Indiquer} le nom de chaque fonction représentée dans le graphique précédent.
+
+\item À l'aide du graphique:
+\begin{enumerate}
+\item \textbf{Déterminer} le tarif pour lequel le prix payé est proportionnel à la distance exprimée en kilomètre. \textbf{Justifier} la réponse.
+\item \textbf{Déterminer} l'entreprise qui a le tarif le moins cher si la distance à parcourir est de 30 km. \textbf{Tracer} les traits de lecture sur le graphique.
+\item \textbf{Déterminer} la distance exprimée en kilomètre pour laquelle les deux tarifs sont égaux.
+\item \textbf{Indiquer} le tarif le moins cher en fonction de la distance parcourue, exprimée en kilomètre.
+\end{enumerate}
+\end{enumerate}
+
+\vspace{0.5cm} 
+ 

@@ -1,0 +1,56 @@
+
+\begin{center}
+\textbf{Le pentaoxyde de diazote}
+\end{center}
+
+Le pentaoxyde de diazote N$_2$O$_5$ est un puissant oxydant utilisé en synthèse organique.
+Il possède comme particularité d'être un (NO$_{\text{x}}$) solide à température ambiante. Sa
+manipulation requiert un soin tout particulier puisqu'à température ambiante, il peut se
+décomposer selon la transformation modélisée par la réaction d'équation :
+
+\[\text{N}_2\text{O}_5 \rightarrow 2 \text{NO}_2+\frac{1}{2}\text{O}_2\]
+
+On introduit initialement, dans un réacteur, une masse de pentaoxyde de diazote. On souhaite modéliser l'évolution de la concentration de pentaoxyde de diazote N$_2$O$_5$, dans le réacteur, par une fonction $f$ donnant la concentration, exprimée en millimoles par litre, en fonction du temps $t$, exprimé en minutes.
+
+La concentration en quantité de matière en N$_2$O$_5$ à l'instant initial dans
+le réacteur est :
+\begin{center}
+[N$_2$O$_5$]$_0$ = \np[ mmol\cdot L^{-1}]{41}.
+\end{center}
+
+On fait l'hypothèse que la réaction suit une cinétique d'ordre 1 par rapport au réactif pentaoxyde de diazote N$_2$O$_5$, c'est-à-dire que la vitesse volumique de disparition du réactif vérifie la loi $v_{\text{disp}(N_20_5)}(t) = k \times [\mathrm{N}_2\mathrm{O}_5]_t $ où $k$ est la constante de vitesse.
+
+En conséquence, on admet que la fonction $f$ est solution de l'équation différentielle du premier ordre suivante :
+
+\[y' + k \times y = 0\]
+
+\begin{enumerate}[start=3]
+\item Vérifier que la fonction $f$ définie sur l'intervalle [0; 44] par $f(t) = 41 \times \e^{-kt}$ est la solution de l'équation différentielle qui vérifie la condition initiale $f(0) = 41$.
+\item Montrer que $\ln(f(t)) = -kt + \ln( 41)$.
+\end{enumerate}
+
+On a représenté ci-dessous le logarithme népérien de la concentration de pentaoxyde de diazote obtenue dans l'expérience pour \mbox{$t = \np[min]{0}$,} $t = \np[min]{4}$, $t = \np[min]{8}$, $t = \np[min]{16}$, $t = \np[min]{28}$
+et $t = \np[min]{44}$. La droite tracée approxime les points.
+
+\psset{xunit=0.3cm,yunit=1.5cm,labelFontSize=\scriptstyle,comma=true}
+\begin{pspicture}(-8,-1)(50,4.5)
+\multido{\n=0+4}{12}{\psline[linewidth=0.75pt,linecolor=gray](\n,0)(\n,4)}
+\multido{\n=0+0.50}{9}{\psline[linewidth=0.75pt,linecolor=gray](0,\n)(44,\n)}
+\psaxes[linewidth=0.95pt,Dx=4,Dy=0.50]{-}(0,0)(44.5,4.10)
+\psdots[dotstyle=+,dotscale =1.9,dotangle=45](0,3.75)(4,3.5)(8,3.25)(16,2.75)(28,2)(44,1)
+\uput[d](20,4.5){$\ln([\mathrm{N}_2\mathrm{O}_5])$ en fonction du temps $t$}
+\uput[u](20,-1){temps $t$ en min}
+\uput[dl](-3.8,3.3){\rotatebox{90}{$\ln([\mathrm{N}_2 \mathrm{O}_5])$ en mol$\cdot\mathrm{L}^{-1}$}}
+\def\Func{x 0.0625 mul neg 3.75 add}
+\psplot[plotpoints=1000,linewidth=1.25pt,linecolor=blue]{0}{44}{\Func}
+\end{pspicture}
+
+\begin{enumerate}[start=6]
+\item Déterminer le coefficient directeur de la droite tracée.
+
+\item En déduire que la valeur de la constante de vitesse $k$ est environ égale à \np[min^{-1}]{0,063}.
+\end{enumerate}
+
+\bigskip
+
+

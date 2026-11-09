@@ -1,0 +1,45 @@
+
+\medskip
+
+On considère la fonction $f$ définie sur $\R$ par : 
+$f(x) = 5\e^{2x+1}.$
+
+Parmi les programmes suivants, écrits en langage Python, un seul affiche les images par $f$ des réels 0~;~0, 1~;~0,2~;~$\dots$~;~0,9.
+
+Indiquer sans justifier sur la copie la lettre correspondant à ce programme.
+
+\vspace{0.3cm}
+
+\textbf{a.~}~~\fbox{\begin{minipage}{4cm}
+from math import exp\\ 
+for k in range(10) :\\
+\phantom{xxxxxx} x=k/10\\
+\phantom{xxxxxx}y=5*exp(2*x+1)\\        
+\phantom{xxxxxx}print(y)   
+\end{minipage}}
+\hspace{3cm}
+\textbf{b.~}~~\fbox{
+\begin{minipage}{4cm}
+from math import exp\\
+for k in range(10) :\\
+\phantom{xxxxxx}y=5*exp(2*k+1)\\
+print(y)\\
+\end{minipage}}
+
+\textbf{c.~}~~\fbox{\begin{minipage}{4cm}
+from math import exp\\
+for k in range(0,9) :\\
+\phantom{xxxxxx}y=5*exp(2*x+1)\\
+\phantom{xxxxxx}print(y)\\
+\end{minipage}}
+\hspace{3cm}
+\textbf{d.~}~~\fbox{
+\begin{minipage}{4cm}
+from math import exp\\
+for k in range(0,9) :\\
+\phantom{xxxxxx}y=5*exp(2*x+1)\\
+print(y)\\
+\end{minipage}}
+
+\bigskip
+

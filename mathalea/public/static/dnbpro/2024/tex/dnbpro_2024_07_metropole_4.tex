@@ -1,0 +1,75 @@
+
+\medskip
+
+\begin{minipage}[t]{9cm}
+\vspace{0pt}
+Le bateau de type 470, utilisé aux JO, comporte une grande voile triangulaire appelée grand-voile.
+
+Cette grande voile est renforcée par 2 lattes parallèles.
+
+Pour pouvoir participer aux JO, un bateau 470 doit respecter les caractéristiques suivantes :
+
+\begin{center}
+\begin{tabular}{|c|c|}
+\hline
+\textbf{Aire maximale de la grand-voile} & $8,75$ m$^2$\rule{0pt}{13pt}\\
+\hline
+\textbf{Longueur minimale de la grande latte} & $1,7$ m\\
+\hline
+\end{tabular}
+\end{center}
+
+Sur un des bateaux en compétition, on étudie ces caractéristiques pour voir s'il peut participer aux JO.
+\end{minipage}
+\hfill
+\begin{minipage}[t]{6cm}
+\vspace{0pt}
+\includegraphics[width=5cm]{voilier_470}
+\end{minipage}
+
+Sa grand-voile a la forme d'un triangle ABC comme dans le dessin ci-dessous.
+
+La petite latte est représentée par le segment [DE] et la grande latte par le segment [FG].
+Les dimensions sont indiquées en mètres.
+
+\begin{minipage}[t]{6.2cm}
+\vspace{0pt}
+\psset{unit=1.2cm,radius=2pt,arrowsize=3pt 3}
+\def\xmin{-4}   \def\xmax{1} \def\ymin{-1}   \def\ymax {7}
+\begin{pspicture}(\xmin,\ymin)(\xmax,\ymax)
+\Cnode*(0,0){B} \Cnode*(0,6.2){C} \Cnode*(-2.8,0){A} 
+\Cnode*(-0.99,4.01){D} \Cnode*(0,3.53){E} \Cnode*(-1.61,2.65){F} \Cnode*(0,1.86){G} 
+\pspolygon[fillstyle=solid,fillcolor=lightgray!30](A)(B)(C)
+\psline(D)(E) \psline(F)(G) 
+\uput[dl](A){A} \uput[dr](B){B} \uput[u](C){C} \uput[ul](D){D} 
+\uput[r](E){E} \uput[l](F){F} \uput[r](G){G} 
+\psframe(0,0)(-0.3,0.3)
+{\footnotesize
+\uput[d](-1.4,0){AB = $2,8$} \uput[l](-2.2,1.3){AF = $2,9$} 
+\uput[l](-1.3,3.3){FD = $1,5$} \uput[l](-0.5,5.1){DC = $2,4$} 
+\uput*[d]{-26.1}(-0.75,3.7){\scalebox{0.8}{DE = $1,1$}} 
+}
+%\psgrid[subgriddiv=5, gridlabels=0, gridcolor=gray, subgridcolor=lightgray]
+\end{pspicture}
+\end{minipage}
+\hfill
+\begin{minipage}[t]{8cm}
+\vspace{0pt}
+\begin{enumerate}
+\item  Calculer la longueur du côté AC.\\
+
+\item Montrer que la longueur BC, arrondie au dixième, est $6,2$ m.\\
+
+\item Calculer l'aire en mètre carré (m$^2$) de la voile ABC.
+Arrondir au dixième.\\
+
+\item En déduire si l'aire de la voile respecte la caractéristique permettant de participer aux JO.\\
+
+\item Les droites (DE) et (FG) sont parallèles.\\
+Montrer que la longueur de la grande latte [FG] arrondie au dixième est 1,8 m.\\
+
+\item En déduire si ce bateau peut participer aux JO. Justifier.
+\end{enumerate}
+\end{minipage}
+
+

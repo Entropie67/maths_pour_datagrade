@@ -1,0 +1,78 @@
+
+\medskip
+
+\begin{enumerate}[start=3]
+\item
+\begin{list}{\textbullet}{}
+\item La fonction $a_x$ est nulle, donc elle a pour primitive une fonction constante.\\
+Or $v_x(0)=v_0$ donc la constante vaut $v_0$.
+
+On a donc $v_x(t)=v_0$ pour tout $t$ de $[0~;~1]$.
+\item La fonction $a_y$ vérifie $a_y(t)=-g$, donc elle a pour primitive la fonction $v_y$ vérifiant $v_y(t) = -gt +k$, où $k$ est une constante.
+
+Or $v_y(0)=0$ donc $-g\times 0 + k = 0$ donc $k=0$.
+
+On a donc $v_y(t)= -gt$ pour tout $t$ de $[0~;~1]$.
+\end{list}
+
+\item
+\begin{list}{\textbullet}{}
+\item La fonction $v_x(t)$ est définie par $v_x(t)=v_0$, donc elle a pour primitive la fonction $x$ vérifiant $x(t)=v_0 t + k$, où $k$ est une constante.
+
+Or $x(0)=0$ donc $v_0\times 0+k=0$ donc $k=0$.
+
+On a donc $x(t)= v_0 t$ pour tout $t$ de $[0~;~1]$.
+
+\item La fonction $v_y(t)$ est définie par $v_y(t)=-gt$, donc elle a pour primitive la fonction $y$ vérifiant $y(t)= -g \dfrac{t^2}{2} + k$, où $k$ est une constante.
+
+Or $y(0)=0$ donc $-g\times 0+k=0$ donc $k=0$.
+
+On a donc $y(t)= - \dfrac{1}{2} g t^2$ pour tout $t$ de $[0~;~1]$.
+\end{list}
+
+Donc les lois horaires du mouvement de la traceuse s'écrivent :
+$ \begin{cases} x(t)= v_0t\\  y(t)=-\dfrac{1}{2} gt^2  \end{cases}$
+ 
+\item Dans l'intervalle $[0~;~1]$, on résout l'équation $y(t) = -2$.
+
+$y(t) = -2
+\iff -\dfrac{1}{2} gt^2  = -2
+\iff gt^2=4
+\iff t^2 = \dfrac{4}{g}
+\iff t=\ds\sqrt{\dfrac{4}{g}}$
+
+On prend $g=9,8$ donc $t = \ds\sqrt{\dfrac{4}{9,8}} \approx 0,639$.
+
+\item
+$v_0=7,0$ donc $x(t)=7t$ donc $x(t_c)= 7\times 0,64 = 4,48$.
+\end{enumerate}
+
+\begin{enumerate}[start=9]
+\item
+Le bloc B est à 2 mètres en-dessous du point O. Il est situé à 4 mètres du point O et la traceuse sera a $4,48$ mètre de O lorsqu'elle touchera la surface du bloc B (voir point bleu sur le graphique ci-dessous). Donc la traceuse va atteindre le bloc B.
+
+\begin{center}
+\psset{arrowsize=2pt 3, unit=1cm}
+\begin{pspicture}(-4,-3)(10,1.5)
+%\psgrid[subgriddiv=5,gridlabels=0,gridcolor=gray,subgridcolor=lightgray] 
+\psframe[fillcolor=lightgray!50,fillstyle=solid](-4,-3)(0,0)
+\psframe[fillcolor=lightgray!50,fillstyle=solid](4,-3)(8,-2)
+\psline{->}(0,0)(9,0)\psline{->}(0,0)(0,1.5)
+\rput(-2,-1.5){Bloc A} \rput(6,-2.5){Bloc B}
+\psline{<->}(0,-2.5)(4,-2.5) \uput[ur](1.5,-2.5){\np[m]{4}}
+\psline{<->}(6,-2)(6,0) \uput[r](6,-1){\np[m]{2}}
+\psline[linewidth=1.25pt]{->}(0,0)(0.5,0)\psline[linewidth=1.3pt]{->}(0,0)(1.5,0)
+\psline[linewidth=1.25pt]{->}(0,0)(0,0.5)
+\uput[l](0,0.25){$\vv{\jmath}$}\uput[d](0.25,0){$\vv{\imath}$}\uput[u](0.75,0){$\vv{v_0}$}
+\psline[linewidth=1.75pt]{->}(2.5,1.5)(2.5,0.75)\uput[r](2.5,0.75){$\vv{g}$}
+\uput[dl](0,1.5){$y$}\uput[dl](9.1,0){$x$}
+\uput[dl](0,0){O}
+\psplot[linecolor=blue,linestyle=dashed]{0}{4.48}{9.8 neg x x mul mul 2 div 49 div}
+\psdots[linecolor=blue](4.48,-2)
+\end{pspicture}
+\end{center}
+\end{enumerate}
+
+\bigskip
+
+

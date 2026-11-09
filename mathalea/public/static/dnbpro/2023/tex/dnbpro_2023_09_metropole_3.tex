@@ -1,0 +1,81 @@
+
+\vspace{0.25cm}
+
+Deux fournisseurs de maillots imprimés proposent les tarifs suivants:
+
+\smallskip
+
+{\renewcommand{\arraystretch}{1.5}
+\begin{tabular}{|c| *2{>{\centering\arraybackslash} m{3.5cm}|}}
+\cline{2-3}
+\multicolumn{1}{c|}{~} & Prix d'un maillot & Frais d'impression\\
+\hline
+Entreprise A & 80 € & Gratuit\\
+\hline
+Entreprise B & 50 € & 900~€ pour l'ensemble de la commande\\
+\hline
+\end{tabular}}
+\hfill
+\parbox{4cm}{\includegraphics[width=4cm]{MetroProSept23_2}}
+
+\begin{enumerate}
+\item Calculer le prix, en euros, de 20 maillots imprimés fournis par l'entreprise A.
+\item La représentation graphique du tarif de l'entreprise B en fonction du nombre de maillots commandés est donnée dans le repère suivant.
+
+\begin{center}
+\psset{xunit=0.12cm,yunit=0.002cm,arrowsize=3pt 2}
+\def\xmin{-9}   \def\xmax{94} \def\ymin{-490}   \def\ymax{5400}
+\begin{pspicture*}(\xmin,\ymin)(\xmax,\ymax)
+\psgrid[xunit=1.2cm,yunit=1cm,subgriddiv=5,  gridlabels=0, subgridcolor=lightgray!50,gridcolor=gray!50](-1,-1)(10,11)
+\psaxes[labelFontSize=\scriptstyle,ticks=none, Dx=10,Dy=500]{->}(0,0)(\xmin,\ymin)(\xmax,\ymax) 
+\uput{9pt}[dl](0,0){\scriptsize 0}
+\psplot[linewidth=1.2pt,linecolor=blue]{0}{80}{900 50 x mul add}
+\small
+\uput[r](58,3700){\textbf{\blue{}Tarif de l'entreprise B}} 
+\uput[r](2,5200){\textbf{Prix en \euro}} \uput[d](70,-250){\textbf{Nombre de maillots}} 
+\end{pspicture*}
+\end{center}
+
+
+Déterminer graphiquement le prix de 20 maillots imprimés fournis par l'entreprise B.
+
+Laisser apparents les traits de lecture.
+\item Indiquer l'entreprise qui propose le tarif le plus avantageux pour 20 maillots.
+\item Représentation graphique du tarif de l'entreprise A.
+\begin{enumerate}
+\item  Le nombre de maillots commandés est noté $x$. Inscrire sur la copie l'expression, du tableau ci-dessous, qui correspond au tarif de l'entreprise A, en fonction de $x$.
+
+\begin{center}
+\begin{tabular}{|c|c|c|}
+\hline
+Expression 1 & Expression 2 & Expression 3\\
+\hline
+\np{3200} &  $80 + x$ &  $80 \times x$\\
+\hline
+\end{tabular}
+\end{center}
+
+\item Compléter le tableau de valeurs ci-dessous.
+
+\textbf{Tableau de valeurs du Tarif de l'entreprise A}
+
+\begin{center}
+\begin{tabular}{|*5{>{\centering\arraybackslash}m{2.2cm}|}}
+\hline
+Nombre de maillots\newline{}$x$ & 0 & 20 & 30 & 60\\
+\hline
+Prix en \euro \rule[-5pt]{0pt}{20pt} & $\ldots$ & $\ldots$ & $\ldots$ & \np{4800}\\
+\hline
+Coordonnées des points & K\,$(0\;;\; \ldots)$ & L\,$(20\;;\; \ldots)$ & M\,$(30\;;\; \ldots)$ & N\,$(60\;;\; \np{4800})$\\
+\hline
+\end{tabular}
+\end{center}
+
+\item Sur le graphique précédent, placer les points K, L, M et N et tracer la droite passant par ces quatre points. Cette droite représente le tarif de l'entreprise A en fonction du nombre de maillots commandés.
+\end{enumerate}
+
+\item Pour une commande de 35 à 50 maillots, indiquer l'entreprise qui propose le tarif le plus avantageux. Justifier la réponse.
+\end{enumerate}
+
+\vspace{0.5cm}
+

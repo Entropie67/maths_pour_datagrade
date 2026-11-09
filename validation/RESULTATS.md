@@ -52,3 +52,11 @@ La mise à jour finale de ce rapport ne modifie aucun code ; les résultats dist
 ## Conclusion technique
 
 Le code officiel complet est conservé, avec une seule adaptation de sécurité dans un helper de test, et les deux builds fonctionnent. Les 6 128 tests unitaires/source réussis, les 12 tests navigateur officiels réussis, le contrôle complémentaire et le test du helper adapté apportent une base vérifiée. Ils ne prouvent pas encore « aucune perte de fonctionnalité » pour un déploiement DataGrade entièrement autonome. La préparation de cet habillage et les travaux restants sont décrits dans `docs/INTEGRATION-DATAGRADE.md`.
+# Complément : annales locales, 9 novembre 2026
+
+Après ajout des médias, `pnpm prebuild-unit-tests` a de nouveau réussi : 6 128 tests passent et 35 sont ignorés. Le contrôle de provenance retrouve les 8 394 fichiers et le lien amont, avec la seule adaptation de sécurité déjà déclarée.
+
+`node scripts/test-annales-locales.mjs` réussit sur huit familles : DNB, BAC, CRPE, DNB professionnel, E3C, EAM, STI2D et STL. Chaque scénario charge un énoncé puis sa correction depuis le serveur local, avec les requêtes HTTP externes bloquées. Résultats détaillés : [annales-browser.json](annales-browser.json). La liste et les limites des médias livrés sont dans [le rapport des ressources](../resources/README.md).
+
+Ces contrôles ne valident pas tous les sujets, les exports des annales ou les services externes. Les résultats de compilation ci-dessous concernent la validation précédente du code ; ils ne constituent pas un résultat de compilation du nouvel ajout de médias.
+

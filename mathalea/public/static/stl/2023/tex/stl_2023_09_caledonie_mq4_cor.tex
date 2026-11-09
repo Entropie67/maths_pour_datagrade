@@ -1,0 +1,20 @@
+
+\medskip
+
+\begin{enumerate}
+\item Dans le contexte de l'exercice la valeur $-1,29$ à $10^{-2}$ près renvoyée par l'exécution de l'instruction {\ttfamily abscisse()} est l'abscisse du point A.
+
+\item En rouge et gras, les modifications du programme Python :
+
+\begin{center}
+\begin{tabular}{|>{\ttfamily}l|}\hline
+from math import exp\\
+def abscisse():\\
+\quad $x=~$\textbf{\textcolor{red}{5.5}}\\
+\quad while exp$(-x)+0.5*x-3~\textbf{\textcolor{red}{<}}~0:$\\
+\quad \quad $x = x + 0.01$\\
+\quad return $x$ \\ \hline
+\end{tabular}
+\end{center}
+\end{enumerate}
+

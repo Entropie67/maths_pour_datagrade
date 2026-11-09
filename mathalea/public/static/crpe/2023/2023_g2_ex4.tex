@@ -1,0 +1,54 @@
+Deux élèves de CM2, Jeanne et Teddy, jouent à la bataille navale. Il s’agit d’un jeu de société, appelé également << touché-coulé >>. \par
+   Les deux joueurs doivent commencer par placer quatre navires horizontalement ou verticalement (sans chevauchement) sur leur grille de 8 lignes et 8 colonnes, tenue secrète : 1 navire de deux cases, 2 navires de trois cases et 1 navire de quatre cases. \par
+   Ils doivent ensuite tenter de faire << couler >> les navires adverses en << touchant >> toutes les cases de chaque navire de l’autre joueur. Pour cela, chacun, à son tour, énonce une case de la grille, sous le format << lettre-nombre >>, par exemple C2. \par
+   Lorsqu’un joueur énonce une case, son adversaire répond : \par
+   -- << À l’eau ! >>, si la case énoncée est vide ; \par
+   -- << Touché ! >>, si la case énoncée est occupée par un morceau de navire et si les autres parties du navire n’ont pas encore toutes été touchées ; \par
+   -- << Touché-coulé ! >>, si la case énoncée est occupée par un morceau de navire et si toutes les autres parties du navire ont déjà été touchées. \par
+   Le gagnant est le joueur qui fait << couler >> chez son adversaire tous les navires (au sens de toucher toutes les cases de chacun d’eux) avant que les siens ne le soient. \par \medskip
+   Voici ci-dessous la grille de Teddy : les quatre bateaux sont schématisés par des rectangles gris. \par
+   \begin{minipage}{8.5cm}
+      On suppose qu’à chaque tir, Jeanne choisit au hasard et de manière équiprobable une case de la grille qu’elle n’a pas énoncée précédemment.
+      \begin{enumerate}
+         \item Au premier essai :
+            \begin{enumerate}
+               \setlength{\itemsep}{-1mm}
+               \item Quelle est la probabilité que Jeanne touche un bateau ?
+               \item Quelle est la probabilité que Jeanne ne touche aucun bateau ?
+               \item Un des bateaux a une chance sur seize d'être touché. De combien de cases est-il composé ?
+               \item Jeanne choisit une case de la colonne B. Quelle est la probabilité qu’elle touche un bateau ?
+            \end{enumerate}
+      \end{enumerate}
+   \end{minipage}
+   \qquad
+   \begin{minipage}{8cm}
+      \hautab{1.5}
+      \begin{tabular}{*{9}{C{0.37}|}}
+         \multicolumn1{c}{} & \multicolumn1{c}{\large A} & \multicolumn1{c}{\large B} & \multicolumn1{c}{\large C} & \multicolumn1{c}{\large D} & \multicolumn1{c}{\large E} & \multicolumn1{c}{\large F} & \multicolumn1{c}{\large G} & \multicolumn1{c}{\large H} \\
+         \cline{2-9}
+         \Large 1 & & & & & \cellcolor{gray} & \cellcolor{gray} & & \\
+         \cline{2-9}
+         \Large 2 & & & & & & & & \\
+         \cline{2-9}
+         \Large 3 & & & & & & & \cellcolor{gray} & \\
+         \cline{2-9}
+         \Large 4 & \cellcolor{gray} & \cellcolor{gray} & \cellcolor{gray} & \cellcolor{gray} & & & \cellcolor{gray} & \\
+         \cline{2-9}
+         \Large 5 & & & & & & & \cellcolor{gray} & \\
+         \cline{2-9}
+         \Large 6 & & \cellcolor{gray} & & & & & & \\
+         \cline{2-9}
+         \Large 7 & & \cellcolor{gray} & & & & & & \\
+         \cline{2-9}
+         \Large 8 & & \cellcolor{gray} & & & & & & \\
+         \cline{2-9}
+      \end{tabular}
+   \end{minipage}
+   \begin{enumerate}
+      \setcounter{enumi}{1}
+      \setlength{\itemsep}{-1mm}
+      \item Au premier essai de la partie, Jeanne désigne la case << E1 >>. Teddy annonce << Touché ! >>. \newline
+         Jeanne souhaite couler le bateau touché et choisit une case adjacente à la case << E1 >>. \newline
+         Quelle est la probabilité qu’elle coule le bateau au coup suivant ? Justifier.
+      \item Teddy annonce << À l'eau ! >> pour les deux premiers essais de Jeanne. Quelle est la probabilité de toucher un bateau pour son troisième essai ?
+   \end{enumerate}

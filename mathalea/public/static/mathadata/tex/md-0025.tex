@@ -1,0 +1,70 @@
+%source mathadata
+Vingt points associés aux images de 2 et de 7 sont représentés dans le repère ci-dessous. Les points de référence sont $R(30;70)$ pour le chiffre 2 et $S(60;40)$ pour le chiffre 7. L'algorithme estime le chiffre d'une image en fonction du point de référence le plus proche.
+
+	\begin{MADenumerate}
+
+		\item Placer les points de référence $R(30;70)$ et $S(60;40)$ dans le repère.
+
+		\item Calculer les coordonnées du milieu $M$ de $[RS]$.
+
+		\item Construire géométriquement la médiatrice du segment $[RS]$ comme la droite perpendiculaire à $[RS]$ passant par son milieu $M$.
+
+		\item En s'appuyant sur la médiatrice, compter le nombre de points mal estimés par l'algorithme ainsi que le nombre total de points.
+
+		\item Calculer le pourcentage d'erreur de l'algorithme.
+
+		\item (Bonus) Trouver des points de référence pour lesquels le pourcentage d'erreur est $5\%$. (Aide : penser d'abord à la position de la médiatrice.)
+
+	\end{MADenumerate}
+
+	\begin{center}
+		\begin{tikzpicture}[scale=0.9]
+			\begin{axis}[
+					name=plotMed2,
+					axis lines=middle,
+					ymajorgrids=true,
+					xmajorgrids=true,
+					xmin=-1.1,
+					xmax=105,
+					ymin=-1.1,
+					ymax=105,
+					xtick={0,5,...,100},
+					ytick={0,5,...,100},
+					xlabel={\Large{\color{red}$x$}},
+					xlabel style={at={(axis description cs:1.02,-0.1)}, anchor=north},
+					ylabel={\color{blue}{\Large$y$}},
+					ylabel style={at={(axis description cs:-0.12,1.02)}, anchor=west},
+					width=14cm,
+					height=14cm,
+					scatter/classes={
+							A={mark=square*,mark size=2pt,draw=blue,  fill=BleuCeladon},
+							B={mark=*,      mark size=2pt,draw=black, fill=OrangeCarotte}
+						}
+				]
+				\addplot[scatter,only marks,scatter src=explicit symbolic,opacity=0.7]
+				coordinates {
+						(20,75)[A]
+						(35,80)[A]
+						(25,60)[A]
+						(40,70)[A]
+						(15,65)[A]
+						(30,85)[A]
+						(45,75)[A]
+						(25,50)[A]
+						(40,55)[A]
+						(60,60)[A]
+						(65,35)[B]
+						(50,30)[B]
+						(70,45)[B]
+						(55,25)[B]
+						(75,40)[B]
+						(45,50)[B]
+						(60,55)[B]
+						(40,45)[B]
+						(65,55)[B]
+						(45,65)[B]
+					};
+			\end{axis}
+			\draw (0,0) node[below left]{\footnotesize $O$};
+		\end{tikzpicture}
+	\end{center}

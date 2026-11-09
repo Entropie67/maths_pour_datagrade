@@ -1,0 +1,93 @@
+
+\medskip
+
+\begin{minipage}{0.65\linewidth}
+\begin{enumerate}
+\item 
+	\begin{enumerate}
+		\item $\text{BG}=5\text{BE}=5\times 12=60$ donc $\text{BG}=60$~m.
+		
+%		Montrer que BG $= 60$ m.
+		\item $\text{CG} = \text{BC} - \text{BG} = 150-60=90$ donc $\text{CG}= 90$ m.
+	\end{enumerate}	
+\item  %Démontrer que la longueur GF est de $120$ m.
+\begin{list}{\textbullet}{Dans les triangles ABC et FGC:}
+\item (AB) et (FG) sont parallèles;
+\item B, G et C sont alignés dans cet ordre;
+\item A, F et C sont alignés dans cet ordre.
+\end{list}
+
+On peut donc appliquer le théorème de Thalès:
+
+$\dfrac{\text{GF}}{\text{BA}}=\dfrac{\text{CG}}{\text{CB}}$
+soit
+$\dfrac{\text{GF}}{200}=\dfrac{90}{150}$
+donc
+$\text{GF}=\dfrac{90}{150}\times 200=120$
+
+La longueur GF est donc de $120$ m.
+	\end{enumerate}
+
+\end{minipage}\hfill
+\begin{minipage}{0.3\linewidth}
+\scalebox{0.8}{
+\psset{unit=0.7cm}
+\begin{pspicture}(6.2,11)
+%\psgrid
+\pspolygon(0.1,0.2)(6.1,0.2)(0.1,10.3)
+\uput[dr](6.1,0.2){C}
+\psline(2.4,0.2)(2.4,6.4)
+\psline[linestyle=dashed](0.56,0.2)(0.56,9.5)
+\psline[linestyle=dashed](1.02,0.2)(1.02,8.8)
+\psline[linestyle=dashed](1.48,0.2)(1.48,8)
+\psline[linestyle=dashed](1.94,0.2)(1.94,7.2)
+\multido{\n=0.33+0.46}{5}{\rput(\n,0.2){/}}
+\uput[ul](0.1,10.3){A}\uput[dl](0.1,0.2){B}\psframe(0.1,0.2)(0.3,0.4)\psframe(2.4,0.2)(2.6,0.4)
+\uput[d](0.56,0.2){E}\uput[ur](0.56,9.5){D}
+\uput[d](2.4,0.2){G}\uput[ur](2.4,6.4){F}
+\end{pspicture}
+}%% fin du scalebox
+\end{minipage}
+
+\begin{enumerate}[start=3]
+\item
+	\begin{enumerate}
+		\item Le triangle CGF est rectangle en G donc son aire est:
+		$\dfrac{\text{GF}\times \text{CG}}{2} = \dfrac{120\times 90}{2}=\np{5400}$.
+		
+L'aire du triangle rectangle CGF est donc de \np{5400}~m$^2$.
+		\item Le quadrilatère ABGF a une surface de \np{9600} m$^2$ qui a été moissonnée en 80 minutes, et on admet que le temps de travail de la moissonneuse batteuse est proportionnel à la surface moissonnée.
+
+%Calculer le temps de travail qu'il faut pour moissonner la partie restante CGF de son champ.
+
+On établit un tableau de proportionnalité: \hfill
+{\renewcommand{\arraystretch}{1.5}
+\begin{tabular}{|c|c|c|}
+\hline
+Surface (m$^2$) & \np{9600} & \np{5400}\\
+\hline
+Temps (min) & 80 & ?\\
+\hline
+\end{tabular}
+}
+
+\begin{tabularx}{\linewidth}{@{} l @{~} X}
+$\dfrac{\np{5400} \times \np{80}}{\np{9600}}=45$ & donc  le temps de travail qu'il faut pour moissonner la partie restante CGF de son champ est de 45 minutes.
+\end{tabularx}
+
+	\end{enumerate}
+	
+\item L'année suivante, il décide de clôturer son champ ABC.
+ %Quelle longueur de clôture doit-il acheter ?
+
+La longueur de la clôture est $\text{AB} + \text{BC} + \text{AC}=200+150 + \text{AC} = 350+\text{AC}$.
+
+Le triangle ABC est rectangle en B donc, d'après le théorème de Pythagore, on a:
+
+$\text{AC}^2 = \text{AB}^2 +  \text{BC}^2 = 200^2 + 150^2=\np{62500}$; donc $\text{AC}=\ds\sqrt{\np{62500}}=250$
+
+$350+250=600$ donc il faut acheter 600 mètres de clôture.
+\end{enumerate}
+
+\vspace{0.5cm}
+

@@ -1,0 +1,60 @@
+Une directrice d’école primaire souhaite inscrire les élèves de l’école à une course solidaire d’action contre la faim afin de les sensibiliser à la sous-nutrition dans le monde. \par
+   Il s’agit pour chaque élève de faire le plus de tours possible d’un parcours prédéfini. Pour chaque tour effectué, l’élève récolte une somme d’argent fixe qui sera versée à l’association caritative. \par
+   La directrice décide de faire courir les élèves dans la cour de l’école, le long d’un parcours schématisé ci-dessous. \par \bigskip
+   \begin{minipage}{8.5cm}
+      Une partie du parcours est constituée d’un demi-cercle de diamètre $[CD]$ et les longueurs sont données en mètre. \par
+      Les points $A$, $B$, et $D$ sont alignés et le quadrilatère $AFED$ est un rectangle. \par
+      Les élèves partent du point $A$ et se déplacent dans le sens inverse des aiguilles d’une montre. \par
+      On a : $AB =\Lg[m]{50}$ ; $BC =\Lg[m]{40}$ ; $EF =\Lg[m]{80}$ et $FA =\Lg[m]{30}$.
+   \end{minipage}
+   \begin{center}
+      \begin{pspicture}(-5,-0.5)(9,4)
+         \pstGeonode[CurveType=polygon,PosAngle={-135,-45,-45,135,-45,135},PointSymbol=none]{F}(8,0){E}(8,3){D}(5,7){C}(5,3){B}(0,3){A}
+         \pstLineAB[linecolor=orange!15,linewidth=0.5mm,nodesep=0.2mm]{C}{D}
+         \psarc(6.5,5){2.5}{-53}{127}
+         \psdot(0,3)
+         \pstLabelAB[offset=-3mm]{F}{E}{80 m}
+         \pstLabelAB[offset=3mm]{F}{A}{30 m}
+         \pstLabelAB[offset=3mm]{A}{B}{50 m}
+         \pstLabelAB[offset=3mm]{B}{C}{40 m}
+         \pstRightAngle[fillstyle=solid,fillcolor=gray!25]{A}{B}{C}
+         \psline{->}(-0.5,3)(-0.5,2)
+         \rput(-1.1,2.5){\small Départ}
+      \end{pspicture}
+   \end{center}
+   \begin{enumerate}
+      \setlength{\itemsep}{-1mm}
+      \item Calculer la longueur du segment $[CD]$.
+      \item Montrer que la longueur du parcours, arrondie au mètre, est \Lg[m]{309}. \newline
+         On utilisera cette valeur dans la suite de l’exercice.
+      \item Construire un plan du parcours à l’échelle 1/800. 
+      \item Killian a effectué un tour complet en 3 minutes. \newline
+         À quelle vitesse moyenne Killian a-t-il couru ? On donnera le résultat en mètre par seconde arrondi au centième, puis en kilomètre par heure, arrondi au dixième. 
+      \item On suppose que Sophia court à une vitesse constante de \Vitesse{7}.
+         \begin{enumerate}
+            \setlength{\itemsep}{-1mm}
+            \item Combien de tours complets pourrait-elle effectuer à cette vitesse en 18 minutes ?
+            \item On désigne par $S$ le point du parcours où Sophia se trouve au bout de 18 minutes de course. \newline
+               Placer le point $S$ sur le plan réalisé à la question 3.
+         \end{enumerate}
+      \item L’école est composée de 325 élèves. Le tableau ci-dessous indique le nombre de tours complets effectués par les élèves.
+         \begin{center}
+            \hautab{1.2}
+            \begin{tabular}{|p{3cm}|*{7}{C{1}|}}
+               \hline
+               Nombre de tours & 2 & 3 & 4 & 5 & 6 & 7 & 8 \\
+               \hline
+               Nombre d'élèves & 52 & 52 & 78 & 65 & 39 & 26 & 13 \\
+               \hline
+            \end{tabular}
+         \end{center}
+         \begin{enumerate}
+            \setlength{\itemsep}{-1mm}
+            \item Quel est le nombre moyen de tours complets effectués ?
+            \item Quelle est l’étendue de cette série statistique ?
+            \item Déterminer la médiane de cette série statistique.
+            \item Interpréter le résultat de la question c.
+            \item Déterminer le premier et le troisième quartile de cette série.
+            \item Quel pourcentage d’élèves a réussi à faire au moins 4 tours ?
+         \end{enumerate}
+   \end{enumerate}

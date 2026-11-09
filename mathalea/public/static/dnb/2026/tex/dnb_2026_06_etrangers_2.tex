@@ -1,0 +1,94 @@
+\emph{Les deux parties de l'exercice sont indépendantes.}
+
+\subsection*{Partie A}
+
+Une confiserie fabrique des bonbons multicolores au goût réglisse. Ces bonbons de longueur totale 15 mm ont la forme de gélules constituées de trois parties : un cylindre et deux demi-boules identiques de rayon $R = 2{,}5$ mm comme le montre le schéma ci-dessous.
+
+\begin{minipage}{0.48\linewidth}
+%%Début Tikz
+%\begin{center}
+%\begin{tikzpicture}[scale=0.9]
+%\draw (0,0) ellipse (0.6 and 1);
+%\draw (0,1) arc (90:270:0.6 and 1);
+%\draw (5,0) circle (1);
+%\draw[dashed] (0,1) arc (90:-90:0.6 and 1);
+%\draw (0,1) -- (5,1);
+%\draw (0,-1) -- (5,-1);
+%\draw[<->] (-1.2,-1.4) -- (-1.2,1.4) node[midway, left] {$h$};
+%\draw[<->] (0,-1.6) -- (5,-1.6) node[midway, below] {15 mm};
+%\node[above] at (5,1) {2,5 mm};
+%\end{tikzpicture}
+%\end{center}
+%%Fin Tikz
+%%Début PSTricks
+\psset{unit=1cm,arrowsize=2pt 3}
+\begin{pspicture}(-2,-1.5)(2,6)
+	\psellipticarc(0,0)(1.1,0.4){180}{360}
+	\psellipticarc[linestyle=dashed](0,0)(1.1,0.4){0}{180}
+	\psarc(0,0){1.1}{180}{360}
+	\psline(1.1,0)(1.1,4.7)
+	\psline(-1.1,0)(-1.1,4.7)
+	\psellipticarc(0,4.7)(1.1,0.4){180}{360}
+	\psellipticarc[linestyle=dashed](0,4.7)(1.1,0.4){0}{180}
+	\psarc(0,4.7){1.1}{0}{180}
+	\psline[linewidth=0.8pt]{<->}(-1.5,0)(-1.5,4.7)\uput[l](-1.5,2.35){$h$}
+	\psline[linewidth=0.8pt]{<->}(1.5,-1.1)(1.5,5.8)\rput{90}(1.8,2.35){15 mm}
+	\psdots[dotstyle=+,dotangle=45](0,0)(0,4.7)
+	\psline[linestyle=dashed](0,4.7)(-1.1,4.7)\uput[u](-0.55,4.7){\footnotesize 2,5 mm}
+\end{pspicture}
+%%Fin PSTricks
+%\emph{(Gélule : cylindre de hauteur $h$ flanqué de deux demi-sphères de rayon $2,5$ mm ; longueur totale $15$ mm.)}
+\end{minipage}\hfill
+\begin{minipage}{0.48\linewidth}
+%\begin{center}
+%\fbox{
+	%\begin{minipage}{0.45\textwidth}
+	\textbf{Rappels}
+
+	\begin{itemize}[noitemsep]
+		\item Volume d'un cylindre de rayon $R$ et de hauteur $h$ :
+
+		\[ V = \pi \times R^2 \times h \]
+
+		\item Volume d'une boule de rayon $R$ :
+
+		\[ V = \frac{4}{3} \times \pi \times R^3 \]
+
+		\item $1\text{ L} = 1\text{ dm}^3$
+	\end{itemize}
+\end{minipage}
+
+%\end{center}
+
+\begin{enumerate}
+	\item Montrer que la hauteur $h$ du cylindre est égale à $10$ mm.
+	\item[2.] \begin{enumerate}[label=\alph*.]
+		\item Montrer que le volume de la partie cylindrique d'un bonbon est environ égal à $196$ mm$^3$.
+		\item Léa affirme que le volume total d'un bonbon est compris entre $260$ et $262$ mm$^3$.
+
+		A-t-elle raison ?
+	\end{enumerate}
+	\item[3.] Pour réaliser ces bonbons, la confiserie fabrique un mélange d'ingrédients qui est chauffé puis versé dans des moules en forme de gélule avant d'être refroidi.
+
+	La confiserie fabrique chaque jour $83$L de mélange.
+
+	Avec cette quantité de mélange, peut-elle produire plus de \np{300000} bonbons par jour ?
+\end{enumerate}
+
+\subsection*{Partie B}
+
+Dans un magasin, les bonbons sont vendus en deux formats possibles :
+
+\begin{center}
+	\begin{tabular}{|m{7cm}|m{7cm}|}\hline
+		\textbf{Format A} & \textbf{Format B} \\ \hline
+		Sachet de 500 g de bonbons & Sachet de 250 g de bonbons\\
+		7,90~\euro{} le sachet & 4,30~\euro{} le sachet \\
+		&\textbf{Offre promotionnelle} : pour 3 sachets
+		achetés, le quatrième est à moitié prix.\\ \hline
+	\end{tabular}
+\end{center}
+
+Léa veut acheter 1 kg de bonbons.
+
+Quel format doit-elle choisir pour payer le moins cher possible ? \textbf{Argumenter la réponse en précisant la démarche.}

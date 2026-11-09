@@ -1,0 +1,53 @@
+
+\medskip
+
+\begin{flushleft}
+\textbf{Question 1}
+\end{flushleft}
+
+Soit $g$ la fonction constante définie sur l'intervalle $[0\;;\;+\infty[$ par $g(t)=2$.
+
+$g'(t)=0$ et $-5g(t)+10=-5\times 2 +10=0$ donc $g'(t)=-5g(t)+10$.
+
+Donc $g$ est solution de l'équation différentielle $(E)$.
+
+\begin{flushleft}
+\textbf{Question 2}
+\end{flushleft}
+
+D'après le cours, les solutions de l'équation différentielle $y'=ay$ sur l'intervalle $[0\;;\;+\infty[$ sont les fonctions $f$ définies sur cet intervalle par $f(t)=k\e^{at}$,  où $k$ est un nombre réel quelconque, donc les solutions de l'équation différentielle $y'=-5y$ sur l'intervalle $[0\;;\;+\infty[$ sont les fonctions $f$ définies sur cet intervalle par $f(t)=k\e^{-5t}$,  où $k$ est un nombre réel quelconque.
+
+Une solution de l'équation différentielle $y'=-5y+10$ est la somme d'une solution de l'équation différentielle $y'=-5y$ et d'une solution constante de l'équation différentielle $y'=-5y+10$, donc les solutions de l'équation différentielle $(E)$ sur l'intervalle $[0\;;\;+\infty[$ sont les fonctions $f$ définies sur cet intervalle par $f(t)=k\e^{-5t}+2$,  où $k$ est un nombre réel quelconque.
+
+\begin{flushleft}
+\textbf{Question 3}
+\end{flushleft}
+
+On sait que $v$ est solution de $(E)$ et que $v(0)=50$; donc $k\e^{0}+2 = 50$ donc $k=48$.
+
+La fonction $v$ est donc donnée sur $[0\;;\;+\infty[$ par $v(t) = 48 \e^{-5t} + 2$.
+
+\begin{flushleft}
+\textbf{Question 4}
+\end{flushleft}
+
+La distance parcourue, en mètre, par le parachutiste pendant les 10 premières secondes après ouverture du parachute est donnée  par l'intégrale:
+$\ds\int_{0}^{10} \left ( 48 \e^{-5t} +2 \right ) \d t$.
+
+Pour calculer cette intégrale, il faut trouver une primitive de la fonction $v$.
+
+La fonction $t\longmapsto \e^{at}$ avec $a\neq 0$,  a pour primitive la fonction $t\longmapsto \dfrac{\e^{at}}{a}$, donc la fonction $v$ a pour primitive la fonction $V$ définie par $V(t) = 48 \dfrac{\e^{-5t}}{-5} + 2t$ soit $V(t) = - 9,6 \e^{-5t} +2t$.
+
+$\begin{aligned}
+\ds\int_{0}^{10} \left ( 48 \e^{-5t} +2 \right ) \d t&
+= \left [ V(t) \strut\right ]_{0}^{10}
+= V(10) - V(0)
+= \left (-9,6 \e^{-5\times 10} + 2 \times 10 \right ) - \left ( -9,6 \e^{-5\times 0} + 2 \times 0 \right )\\
+&
+= -9,6 \e^{-50} + 20+9,6  = 29,6 -9,6 \e^{-50} \approx 29,6
+\end{aligned}$
+
+
+\medskip
+
+

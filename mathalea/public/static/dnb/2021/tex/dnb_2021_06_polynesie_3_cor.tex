@@ -1,0 +1,53 @@
+
+\medskip
+
+\parbox{0.65\linewidth}{%Sur la figure ci-contre, qui n'est pas en vraie grandeur, le point C est le point d'intersection des droites (BE) et (AD).
+%
+%\medskip
+
+\begin{enumerate}
+\item %Démontrer que le triangle ABC est rectangle en C.
+On a $\text{AC}^2 + \text{CB}^2 = 8^2 + 15^2 = 64 + 225 = 289$ et $\text{AB}^2 = 17^2 = 289$.
+
+Donc $64 + 225 = 289$ ou encore $\text{AC}^2 + \text{CB}^2 = \text{AB}^2$ : d'après la réciproque du théorème de Pythagore, le triangle ABC est rectangle en C.
+\item %Calculer l'aire du triangle ABC.
+En prenant comme base [AC] et comme hauteur [BC], on a : $\mathcal{A}(\text{ACB}) = \dfrac{8 \times 15}{2} = 4 \times 15 = 60~\left(\text{cm}^2\right)$.
+\item %Calculer une valeur approchée au degré près de l'angle $\widehat{\text{BAC}}$.
+En utilisant par exemple la tangente, on a $\tan \widehat{\text{BAC}} = \dfrac{\text{BC}}{\text{AC}} = \dfrac{15}{8} = 1,875$.
+
+La calculatrice donne $\tan^{-1}(1,875) \approx 61,92$, soit $62\degres{}$ au degré près.
+
+$\widehat{\text{BAC}} \approx 62\degres{}$.
+\item %Calculer le périmètre du triangle CDE.
+Puisque $\widehat{\text{ACB}}) = 90\degres{}$, alors l'angle opposé $\widehat{\text{ECD}} = 90\degres{}$ : le triangle DCE est donc rectangle en C.
+
+D'après le théorème de Pythagore :
+
+$\text{DC}^2 + \text{CE}^2 = \text{DE}^2$, soit $\text{DC}^2  = \text{DE}^2 -  \text{CE}^2 = 13^2 - 12^2 =$
+
+$ 169 - 144 = 25 = 5^2$.
+
+On a donc DC $ = 5~(\text{cm})$.
+
+Le périmètre du triangle CDE est donc égal à :
+
+$p = \text{DC} + \text{CE} + \text{ED} = 5 + 12 + 13 = 30~(\text{cm})$.
+\item %Les droites (AB) et (DE) sont-elles parallèles ?
+On a $\tan \widehat{\text{CDE}} = \dfrac{\text{CE}}{\text{CD}} = \dfrac{12}{5} = 2,4$.
+
+Donc $\tan \widehat{\text{BAC}} \ne \tan \widehat{\text{DCE}}$ et par conséquent 
+$\widehat{\text{BAC}} \ne  \widehat{\text{DCE}}$ : les angles $\widehat{\text{BAC}}$ et $\widehat{\text{DCE}}$ ne sont pas alternes-internes, donc les droites (AB) et (DE) ne sont pas parallèles.
+\end{enumerate}}
+\hfill
+\parbox{0.32\linewidth}{
+\psset{unit=0.75cm}
+\begin{pspicture}(-3.3,-4.5)(2.5,5.8)
+\pspolygon[linewidth=1.25pt](-3,0)(0,5.3)(0,-4.2)(2.4,0)%ABED
+\uput[l](-3,0){A} \uput[u](0,5.3){B} \uput[d](0,-4.2){E} \uput[r](2.4,0){D} \uput[dl](0,0){C}
+\uput[u](-1.5,0){8 cm} \rput{90}(-0.3,-2.1){12~cm}\rput{60}(1.2,-2.6){13~cm}
+\rput{90}(0.3,2.65){15~cm}\rput{60}(-1.5,3.15){17~cm}
+\end{pspicture}
+}
+
+\bigskip
+

@@ -1,0 +1,68 @@
+\bigskip
+
+\textbf{\large Partie I}
+
+\medskip
+
+\begin{enumerate}
+\item  On a, pour tout $x\in[0~;~1]$ : $f(x)=6x^3+6x^2$.
+
+Donc :
+\begin{align*}
+\int_0^1 f(x)\mathrm{d}x &= \int_0^1\left(6x^3+6x^2\right)\mathrm{d}x \\
+&= \left[\frac32x^4+2x^3\right]_0^1 \\
+&= \left[\frac32\times1^4+2\times1^3\right] - \left[\frac32\times0^4+2\times0^3\right] \\
+&=\frac32+2 \\
+&= \frac72.
+\end{align*}
+
+\item Comme la fonction $f$ est positive sur $[0~;~1]$, l'intégrale calculée représente l'aire, en unité d'aire, du domaine situé sous la courbe $\mathcal{C}_2$ entre les droites d'équations $x=0$ et $x=1$.
+
+Dans le contexte de l'exercice, cette aire correspond au domaine grisé $\mathcal{D}_1$ et est donc égale à 3,5 unités d'aire.
+
+\item  Le rectangle OABC a pour largeur $1$ et pour hauteur $12$, donc son aire vaut $1\times 12=12$ unités d'aire.
+
+Les trois domaines $\mathcal{D}_1$, $\mathcal{D}_2$ et $\mathcal{D}_3$ forment tout le rectangle OABC. Ainsi :
+\begin{align*}
+\mathcal{A}(\mathcal{D}_3) &= 12-\mathcal{A}(\mathcal{D}_1)-\mathcal{A}(\mathcal{D}_2) \\
+&= 12-\dfrac72-\dfrac{135}{32} \\
+&= \dfrac{384}{32}-\dfrac{112}{32}-\dfrac{135}{32} \\
+&= \dfrac{137}{32} \\
+&\approx \np{4,28} \text{ unités d'aire.}
+\end{align*}
+\end{enumerate}
+
+\bigskip
+
+\textbf{\large Partie II}
+
+\medskip
+
+\begin{enumerate}
+\item  On a : $z_1=1-\i\sqrt{3}$.
+
+Son module vaut : $|z_1|=\sqrt{1^2+\left(-\sqrt{3}\right)^2}=\sqrt{1+3}=2$.
+
+On cherche un argument $\theta$ de $z_1$.
+
+On a $\cos(\theta)=\dfrac{1}{2}$ et $\sin(\theta)=\dfrac{-\sqrt{3}}{2}$, on peut donc prendre $\theta=-\dfrac{\pi}{3}$.
+
+Ainsi, la forme exponentielle de $z_1$ est : $z_1=2\e^{-\i\frac{\pi}{3}}$.
+
+\item $z_1^2=\left(2\e^{-\i\frac{\pi}{3}}\right)^2=4\e^{-\i\frac{2\pi}{3}}$ et $z_2=4\e^{\i\frac{\pi}{6}}$.
+
+Ainsi :
+\begin{align*}
+z &= z_1^2\times z_2 \\
+&= 4\e^{-\i\frac{2\pi}{3}}\times 4\e^{\i\frac{\pi}{6}} \\
+&= 16\e^{\i\left(-\frac{2\pi}{3}+\frac{\pi}{6}\right)} \\
+&= 16\e^{-\i\frac{\pi}{2}} \\
+&= 16\left(\cos\left(-\frac{\pi}{2}\right)+\i\sin\left(-\frac{\pi}{2}\right)\right) \\
+&= 16(0+\i\times(-1)) \\
+&= -16\i.
+\end{align*}
+
+Le nombre $z$ est donc bien un nombre imaginaire pur.
+\end{enumerate}
+
+\bigskip

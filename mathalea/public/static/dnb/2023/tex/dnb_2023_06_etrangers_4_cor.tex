@@ -1,0 +1,80 @@
+
+\medskip
+
+Des élèves organisent, pour leur classe, un jeu au cours duquel il est possible de gagner des lots. Pour cela, ils placent dans une urne trois boules noires numérotées de 1 à 3, et quatre boules rouges numérotées de 1 à 4, toutes indiscernables au toucher.
+
+\bigskip
+
+\textbf{Partie A : étude du jeu}
+
+\medskip
+
+\begin{enumerate}
+\item On pioche au hasard une boule dans l'urne.
+	\begin{enumerate}
+		\item %Quelle est la probabilité de tirer une boule rouge ?
+Il y a en tout 7 boules dont 4 sont rouge, la probabilité de tirer une boule rouge est donc de 
+$\dfrac47$.
+		\item %Quelle est la probabilité de tirer une boule dont le numéro est un nombre pair ?
+Les nombres pairs sont 2 et 4, ils sont présents sur 3 boules différentes donc la probabilité de tirer une boule dont le numéro est un nombre pair est de $\dfrac37$.
+	\end{enumerate}	
+\item %Le jeu consiste à piocher, dans l'urne, une première boule, la remettre dans l'urne puis en piocher une seconde.
+
+%Pour chacune des boules tirées, on note la couleur ainsi que le numéro.
+
+%Pour gagner un lot, il faut tirer la boule rouge numérotée 1 et une boule noire.
+
+%Quelle est la probabilité de gagner ?
+\item On construit un tableau à double entrée donnant toutes les issues
+\[\begin{tabular}{|m{2.8cm}|*{7}{c|}}\hline
+\diagbox{\footnotesize 1\up{er}tirage}{\footnotesize 2\up{nd} tirage}&N1&N2&N3&\red R1&\red R2&\red R3&\red R4\\ \hline
+N1&&&&$\bullet$&&&\\ \hline
+N2&&&&$\bullet$&&&\\ \hline
+N3&&&&$\bullet$&&&\\ \hline
+\red R1&$\bullet$&$\bullet$&$\bullet$&&&&\\ \hline
+\red R2&&&&&&&\\ \hline
+\red R3&&&&&&&\\ \hline
+\red R4&&&&&&&\\ \hline
+\end{tabular}\]
+
+%Il ya deux issues favorables qui consistent à :
+%\begin{itemize}
+%\item tirer la boule rouge numérotée 1 puis une boule noire
+%\item tirer une boule noire puis la boule rouge numérotée 1
+%\end{itemize}
+%
+Il y a 6 issues favorables donc la probabilité de gagner est de $\dfrac{6}{49}$.
+\end{enumerate}
+
+\bigskip
+
+\textbf{Partie B : constitution des lots}
+
+\medskip
+
+%Pour constituer les lots, on dispose de 195 figurines et 234 autocollants. 
+%
+%Chaque lot sera composé de figurines ainsi que d'autocollants. 
+%
+%Tous les lots sont identiques.
+%
+%Toutes les figurines et tous les autocollants doivent être utilisés.
+
+\medskip
+
+\begin{enumerate}
+\item %Peut-on faire 3 lots ?
+On peut faire 3 lots puisque $\dfrac{195}{3} =65$ et $\dfrac{234}{3} = 78$ donc les 3 lots seront constitués de $65$~figurines et $78$~autocollants.
+\item %Décomposer 195 en produit de facteurs premiers.
+$195 = 5 \times 39 = 5 \times 3 \times 13 = 3 \times 5 \times 13$.
+\item Sachant que la décomposition en produit de facteurs premiers de $234$ est $2 \times 3^2 \times 13$ :
+	\begin{enumerate}
+		\item %Combien de lots peut-on constituer au maximum ?
+On peut donc diviser 195 et 234 par $3 \times 13 = 39$ au maximum. On pourra donc constituer au maximum $39$ lots.
+		\item %De combien de figurines et d'autocollants sera alors composé chaque lot ?
+Chaque lot sera alors composé de $\dfrac{195}{39} = 5$~figurines et $\dfrac{234}{39} = 6$~autocollants.
+	\end{enumerate}
+\end{enumerate}
+
+\bigskip
+

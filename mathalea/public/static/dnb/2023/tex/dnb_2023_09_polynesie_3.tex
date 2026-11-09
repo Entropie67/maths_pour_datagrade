@@ -1,0 +1,154 @@
+
+\medskip
+
+\begin{minipage}{11cm}Dans cet exercice, toutes les longueurs sont exprimées en pixel.
+
+Un professeur de mathématiques souhaite élaborer un programme avec ses élèves permettant de construire la figure ci-contre composée de 10 carrés.
+
+Le côté du premier carré à tracer mesure $300$~pixels.
+
+Le côté de chaque carré construit ensuite mesure 20\,\% de moins que celui du carré précédent.
+
+La figure n'est pas en vraie grandeur.
+\medskip
+
+\end{minipage}\hfill
+\begin{minipage}{3.5cm}
+\psset{unit=1cm}
+\begin{pspicture}(-2,-2)(2,2)
+\psframe[linewidth=1pt](-1.6,-1.6)(1.6,1.6)
+\psframe[linewidth=1pt](-1.28,-1.28)(1.28,1.28)
+\psframe[linewidth=1pt](-1.024,-1.024)(1.024,1.024)
+\psframe[linewidth=1pt](-0.8192,-0.8192)(0.8192,0.8192)
+\psframe[linewidth=1pt](-0.65536,-0.65536)(0.65536,0.65536)
+\psframe[linewidth=1pt](-0.5243,-0.5243)(0.5243,0.5243)
+\psframe[linewidth=1pt](-0.4194,-0.4194)(0.4194,0.4194)
+\psframe[linewidth=1pt](-0.3355,-0.3355)(0.3355,0.3355)
+\psframe[linewidth=1pt](-0.2684,-0.2684)(0.2684,0.2684)
+\psframe[linewidth=1pt](-0.2147,-0.2147)(0.2147,0.2147)
+\end{pspicture}
+\end{minipage}
+
+\textbf{Aucune justification n'est attendue pour les questions 2., 3. a., 3. b. et 4.}
+
+\medskip
+
+\begin{enumerate}
+\item Montrer que le côté du 2\up{e} carré mesure $240$ pixels.
+\item Le professeur distribue aux élèves le bloc \og Carré \fg{}  d'instructions figurant ci-après qui permet de tracer un carré de côté donné.
+
+Pour cela, il a créé une variable \og Côté \fg{} qui correspond à la longueur du côté du carré à tracer.
+
+\begin{center}
+\begin{scratch}[num blocks]
+\initmoreblocks{définir \namemoreblocks{\ovalmoreblocks{Carré}}}
+\blockrepeat{répéter \ovalnum{} fois}
+{\blockmove{avancer de \ovalmoreblocks{Côté}}
+\blockmove{tourner \turnright{} de \ovalnum{} degrés}
+}
+\end{scratch}
+\end{center}
+
+Compléter les lignes 2 et 4 de ce bloc précédent.
+\end{enumerate}
+
+\begin{minipage}[t]{9.5cm}
+\begin{enumerate}[resume]
+\item Le script ci-contre permet de réaliser les dix carrés de la figure souhaitée.
+
+On rappelle que l'instruction \og s'orienter à 180 \fg{} signifie que le lutin est dirigé vers le bas.
+	\begin{enumerate}
+		\item Donner les coordonnées du stylo lorsqu'il commence à tracer le premier carré.
+	\end{enumerate}
+\end{enumerate}
+\end{minipage}
+\hfill
+\begin{minipage}[t]{5.5cm}
+\begin{scratch}[num blocks, scale=0.8]
+\blockinit{Quand \greenflag est cliqué}
+\blockpen{effacer tout}
+\blockmove{s'orienter à \ovalnum{180} degrés}
+\blockvariable{mettre \selectmenu{Côté} à \ovaloperator{\ovalnum{300}}}
+\blockrepeat{répéter \ovalnum{10} fois}
+{\blockpen{relever le stylo}
+\blockmove{aller à x: \ovalmoreblocks{Côté} \pmb{/} \ovalnum{2} y: \ovalmoreblocks{Côté} \pmb{/} \ovalnum{2}}
+\blockpen{stylo en position d'écriture}
+\blockmoreblocks{Carré}
+\blockvariable{mettre \selectmenu{Côté} à \ovaloperator{Côté \pmb{*} \ovalnum{0,8}}}
+}
+
+\end{scratch}
+\end{minipage}
+
+\begin{enumerate}[resume,label=]
+\item 
+	\begin{enumerate}[start=2]
+		\item Parmi les 4 propositions suivantes, quelle est celle qui correspond au tracé des deux premiers carrés ?
+
+\begin{center}
+\begin{tabularx}{\linewidth}{|*{4}{>{\centering \arraybackslash}X|}}\hline
+Proposition 1&Proposition 2&Proposition 3&Proposition 4\\ \hline
+\psset{unit=0.005cm}
+\begin{pspicture}(-200,-200)(320,330)
+\psaxes[linewidth=1.25pt,Dx=100,Dy=100,labelFontSize=\scriptscriptstyle]{->}(0,0)(-200,-200)(320,320)
+\psframe(300,300)\psframe(30,30)(270,270)
+\uput[d](310,0){\tiny $x$}\uput[l](0,310){\tiny $y$}
+\end{pspicture}&
+\psset{unit=0.005cm}
+\begin{pspicture}(-200,-200)(320,330)
+\psaxes[linewidth=1.25pt,Dx=100,Dy=100,labelFontSize=\scriptscriptstyle]{->}(0,0)(-200,-200)(320,320)
+\psframe(-150,-150)(150,150)\psframe(-100,-100)(100,100)
+\uput[d](310,0){\tiny $x$}\uput[l](0,310){\tiny $y$}
+\end{pspicture}&
+\psset{unit=0.005cm}
+\begin{pspicture}(-200,-200)(320,330)
+\psaxes[linewidth=1.25pt,Dx=100,Dy=100,labelFontSize=\scriptscriptstyle]{->}(0,0)(-200,-200)(320,320)
+\psframe(-120,-120)(120,120)\psframe(-140,-140)(140,140)
+\uput[d](310,0){\tiny $x$}\uput[l](0,310){\tiny $y$}
+\end{pspicture}&
+\psset{unit=0.005cm}
+\begin{pspicture}(-200,-200)(320,330)
+\psaxes[linewidth=1.25pt,Dx=100,Dy=100,labelFontSize=\scriptscriptstyle]{->}(0,0)(-200,-200)(320,320)
+\psframe(300,300)\psframe(100,100)(200,200)
+\uput[d](310,0){\tiny $x$}\uput[l](0,310){\tiny $y$}
+\end{pspicture}\\ \hline
+\end{tabularx}
+\end{center}
+
+		\item Quelle est la longueur du dernier carré tracé avec le script précédent? Arrondir au pixel.
+	\end{enumerate}
+\end{enumerate}
+
+\begin{enumerate}[start=4]
+\item On veut diminuer l'épaisseur des traits lorsqu'on passe de la construction d'un carré au suivant pour obtenir la figure suivante.
+
+\begin{minipage}{11cm}
+Pour cela, on souhaite utiliser les deux instructions suivantes : 
+\begin{itemize}
+\item[$\bullet$] Instruction A :
+
+\begin{scratch}\blockpen{ajouter \ovalvariable{$- 1$} à la taille su stylo} \end{scratch}
+\item[$\bullet$] Instruction B :
+
+\begin{scratch}\blockpen{mettre la taille du stylo à \ovalvariable{$11$}} \end{scratch}
+\end{itemize}
+\end{minipage}\hfill
+\begin{minipage}{3.5cm}
+\psset{unit=1cm}
+\begin{pspicture}(-2,-2)(2,2)
+\psframe[linewidth=3pt](-1.6,-1.6)(1.6,1.6)
+\psframe[linewidth=2.7pt](-1.28,-1.28)(1.28,1.28)
+\psframe[linewidth=2.4pt](-1.024,-1.024)(1.024,1.024)
+\psframe[linewidth=2.1pt](-0.8192,-0.8192)(0.8192,0.8192)
+\psframe[linewidth=1.8pt](-0.65536,-0.65536)(0.65536,0.65536)
+\psframe[linewidth=1.5pt](-0.5243,-0.5243)(0.5243,0.5243)
+\psframe[linewidth=1.2pt](-0.4194,-0.4194)(0.4194,0.4194)
+\psframe[linewidth=0.9pt](-0.3355,-0.3355)(0.3355,0.3355)
+\psframe[linewidth=0.6pt](-0.2684,-0.2684)(0.2684,0.2684)
+\end{pspicture}
+\end{minipage}
+Pour chaque instruction, indiquer les numéros des lignes du script de la question 2 entre lesquelles elle peut être insérée afin d'obtenir cette figure.
+\end{enumerate}
+
+\bigskip
+

@@ -1,0 +1,120 @@
+
+\vspace{0.25cm}
+
+Dans cet exercice, aucune justification n'est attendue.\\
+Teva travaille sur un programme. Voici des copies de son écran :
+
+\begin{center}
+\begin{tabular}{|*2 {>{\centering\arraybackslash}p{6cm}|}}
+\hline
+&\\
+\textbf{Script principal}  &  \textbf{Blocks Motifs}\\
+\begin{scratch}%[num blocks,baseline=10]
+\blockinit{quand \greenflag est cliqué}
+\blockmove{aller à x: \ovalnum{-200} y: \ovalnum{0}}
+\blockpen{stylo en position d'écriture}
+\blockpen{mettre la taille du stylo à \ovalnum{1}}
+\blockmoreblocks{Motif}
+\end{scratch}
+ & 
+\multirow{2}{5cm}{
+ %\parbox[12cm][t]{8cm}{
+ \scalebox{0.8}{
+\begin{scratch}%[num blocks]
+\initmoreblocks{définir \namemoreblocks{Motif}}
+\blockmove{s'orienter à  \ovalnum{0}}
+\blockrepeat{répéter \ovalnum{2} fois}
+{\blockmove{avancer de \ovalnum{90} pas}
+\blockmove{tourner \turnright{} de \ovalnum{90} degrés}
+}
+\blockmove{avancer de  \ovalnum{60} pas}
+\blockrepeat{répéter \ovalnum{2} fois}
+{\blockmove{tourner \turnright{} de \ovalnum{90} degrés}
+\blockmove{avancer de \ovalnum{30} pas}
+}
+\blockmove{tourner \turnleft{} de \ovalnum{90} degrés}
+\blockmove{avancer de \ovalnum{30} pas}
+\blockmove{tourner \turnleft{} de \ovalnum{90} degrés}
+\blockmove{avancer de \ovalnum{60} pas}
+\blockmove{tourner \turnleft{} de \ovalnum{90} degrés}
+\end{scratch}
+}% fin du scalebox
+}\\
+&\\
+&\\
+&\\
+\cline{1-1}
+&\\
+\textbf{Dessin obtenu}
+&\\
+&\\
+\psset{unit=0.4cm,arrowsize=3pt 2}
+\begin{pspicture}(0,0)(9,9)
+\psline[linecolor=blue](0,0)(0,9)(9,9)(9,3)(6,3)(6,6)(3,6)(3,0)
+\end{pspicture}
+& \\
+&\\
+&\\
+&\\
+\hline
+\end{tabular}
+\end{center}
+
+\begin{enumerate}
+\item  \textbf{Écrire} les coordonnées $(x\,;\,y)$ du point de départ du tracé.
+\item \textbf{Compléter} les distances, exprimées en nombre de pas, sur le dessin suivant, en vous aidant du programme.
+
+
+\begin{center}
+\psset{unit=0.4cm,arrowsize=2pt 1}
+\begin{pspicture}(0,0)(9,14)
+\psline[linecolor=blue](0,0)(0,9)(9,9)(9,3)(6,3)(6,6)(3,6)(3,0)
+\psset{linewidth=0.5pt}
+\psline{<->}(-0.5,0)(-0.5,9)  \uput[l](-0.5,4.5){$\boldmath\ldots$}
+\psline{<->}(0,9.5)(9,9.5) \uput[u](4.5,9.5){$\boldmath\ldots$}
+\psline{<->}(9.5,9)(9.5,3)  \uput[r](9.5,6){$\boldmath\ldots$}
+\psline{<->}(9,2.5)(6,2.5) \uput[d](7.5,2.5){$\boldmath\ldots$}
+\psline{<->}(5.5,3)(5.5,6) \uput[l](5.5,4.5){$\boldmath\ldots$}
+\psline{<->}(6,6.5)(3,6.5) \uput[u](4.5,6.5){$\boldmath\ldots$}
+\psline{<->}(2.5,6)(2.5,0) \uput[l](2.5,3){$\boldmath\ldots$}
+\end{pspicture}
+\end{center}
+
+\item \textbf{Calculer} la distance totale parcourue par le lutin pour tracer le motif. \textbf{Exprimer} le résultat en nombre de pas. \emph{Les calculs seront détaillés sur la copie.}
+\end{enumerate}
+
+Teva souhaite modifier son programme de façon à obtenir la frise ci-dessous.
+
+\begin{center}
+\psset{unit=0.3cm,arrowsize=3pt 2}
+\begin{pspicture}(0,-0.5)(36,9.5)
+\psline[linecolor=blue](0,0)(0,9)(9,9)(9,3)(6,3)(6,6)(3,6)(3,0)(12,0)
+\psline[linecolor=blue](12,0)(12,9)(21,9)(21,3)(18,3)(18,6)(15,6)(15,0)(24,0)
+\psline[linecolor=blue](24,0)(24,9)(33,9)(33,3)(30,3)(30,6)(27,6)(27,0)(36,0)
+\small
+\uput[ul](0,9){A} \uput[ur](9,9){B} \uput[dl](3,0){C} \uput[dr](12,0){D} 
+\end{pspicture}
+\end{center}
+
+\begin{enumerate}[resume]
+\item \textbf{Compléter} le script principal suivant, sachant que AB = CD.
+
+\begin{center}
+\begin{scratch}%[num blocks,baseline=10]
+\blockinit{quand \greenflag est cliqué}
+\blockmove{aller à x: \ovalnum{-200} y: \ovalnum{0}}
+\blockpen{stylo en position d'écriture}
+\blockpen{mettre la taille du stylo à \ovalnum{1}}
+\blockrepeat{répéter \ovalnum{\hspace*{1cm}} fois}
+{\blockmoreblocks{Motif}
+\blockmove{avancer de \ovalnum{\hspace*{1cm}} pas}}
+\end{scratch}
+\end{center}
+
+
+
+
+\end{enumerate}
+
+\vspace{0.5cm}
+

@@ -1,0 +1,111 @@
+Cet exercice est un questionnaire à choix multiples. Pour chaque question, une seule des quatre propositions de réponse est exacte. Indiquer sur la copie le numéro de la question et la lettre de la réponse choisie. Aucune justification n’est demandée. Pour chaque question, une réponse fausse, une réponse multiple ou l’absence de réponse ne rapporte ni n’enlève de point.
+
+{\renewcommand{\arraystretch}{1.5}
+\begin{tabularx}{\linewidth}{|X|*{4}{>{\centering\arraybackslash}X|}}
+	\hline
+	\multicolumn{1}{|c|}{\bfseries Question}
+	&
+	\bfseries Réponse A
+	&
+	\bfseries Réponse B
+	&
+	\bfseries Réponse C
+	&
+	\bfseries Réponse D
+	\\
+	\hline
+	\bfseries Question n°1\newline
+	~
+	\newline
+	\begin{scratch}[scale=0.6]
+ 	   \blockvariable{mettre \selectmenu{a} à \ovalnum{4}}
+ 	   \blockvariable{mettre \selectmenu{b} à \ovaloperator{\ovalvariable{a} + \ovalnum{2}}}
+ 	\end{scratch}
+ 	~\newline
+	&
+	~\newline
+	À l'issue de ces affectations :\newline
+	4 est affecté à a\newline
+	2 est affecté à b
+	&
+	~\newline
+	À l'issue de ces affectations :\newline
+	4 est affecté à a\newline
+	6 est affecté à b
+	&
+	~\newline
+	À l'issue de ces affectations :\newline
+	2 est affecté à a\newline
+	6 est affecté à b
+	&
+	~\newline
+	À l'issue de ces affectations :\newline
+	2 est affecté à a\newline
+	2 est affecté à b
+	\\
+	\hline
+	\bfseries Question n°2\newline
+	~
+	\newline
+	\begin{scratch}[scale=0.6]
+ 	   \blockvariable{mettre \selectmenu{a} à \ovalnum{2}}
+ 	   \blockrepeat{répéter \ovalnum{4} fois}
+     {
+     \blockvariable{mettre \selectmenu{a} à \ovaloperator{\ovalvariable{a} + \ovalnum{3}}}
+     } 
+ 	\end{scratch}
+ 	~\newline
+	&
+	~\newline
+	À l'issue de ces affectations :\newline
+	20 est affecté à a
+	&
+	~\newline
+	À l'issue de ces affectations :\newline
+	12 est affecté à a
+	&
+	~\newline
+	À l'issue de ces affectations :\newline
+	14 est affecté à a
+	&
+	~\newline
+	À l'issue de ces affectations :\newline
+	2 est affecté à a
+	\\
+	\hline
+	\textbf{Question n°3}\newline
+	Un pavé droit subit une réduction de rapport 0,4 donc :
+	&
+	~\newline
+	son volume est multiplié par $0,4^3$
+	&
+	~\newline
+	son volume est multiplié par $0,4^2$
+	&
+	~\newline
+	son volume est divisé par $0,4^3$
+	&
+	~\newline
+	son volume est divisé par $0,4^2$
+	\\
+	\hline
+	\textbf{Question n°4}\newline
+	Un réservoir d'eau a une forme de pavé droit de dimensions exprimées en mètre : \newline
+	$1,5\times1,5\times2$\newline
+	Son volume en litre est
+	&
+	~\newline
+	450~L
+	&
+	~\newline
+	4~500~L
+	&
+	~\newline
+	4~500~000~L
+	&
+	~\newline
+	4,5~L
+	\\
+	\hline
+\end{tabularx}
+}

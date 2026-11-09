@@ -1,0 +1,140 @@
+
+\medskip
+
+
+On considère les suites $(v_n)$ et $(w_n)$ définies pour tout entier naturel $n$
+par :
+\[ \left\{\begin{array}{l c l}
+v_0 &=& \ln (4)\\
+v_{n+1} &=& \ln \left(- 1 +2\e^{v_n}\right)
+\end{array}\right. \qquad \text{et} \qquad w_n = - 1 + \e^{v_n}.\]
+
+On admet que la suite $(v_n)$ est bien définie et strictement positive.
+
+%\medskip
+%
+%\begin{minipage}{0.6\linewidth}
+%\begin{enumerate}
+%\item Donner les valeurs exactes de $v_1$ et $w_0$.
+%\item 
+%	\begin{enumerate}
+%		\item Une partie d'une feuille de calcul où figurent les indices et
+%les termes des suites $(v_n)$ et $(w_n)$ est reproduite ci-contre.
+%		
+%Parmi les trois formules ci-dessous, choisir la formule qui,
+%saisie dans la cellule B3 puis recopiée vers le bas, permettra
+%d'obtenir les valeurs de la suite $(v_n)$ dans la colonne B.
+%
+%\begin{tabular}{|l |l|}\hline
+%Formule 1 &LN($-1 + 2$ * EXP(B2))\\ \hline
+%Formule 2 &= LN($-1 + 2$ * EXP(B2))\\ \hline
+%Formule 3 &= LN($-1 + 2$ * EXP(A2))\\ \hline
+%\end{tabular}
+%		\item Conjecturer le sens de variation de la suite $(v_n)$.
+%		\item À l'aide d'un raisonnement par récurrence, valider votre
+%conjecture concernant le sens de variation de la suite $(v_n)$.
+%	\end{enumerate}
+%\end{enumerate}
+%\end{minipage} \hfill 
+%\begin{minipage}{0.36\linewidth}
+%{\small\begin{tabular}{c |c|c|c}\hline
+%	&A &B &C\\ \hline
+%1 	&$n$&$v_n$& $w_n$\\ \hline
+%2&0 & 1,38629436 &3\\ \hline
+%3& 1& 1,94591015 &6\\ \hline
+%4& 2& 2,56494936 &12\\ \hline
+%5& 3& 3,21887582 &24\\ \hline
+%6& 4& 3,8918203 &48\\ \hline
+%7& 5& 4,57471098 &96\\ \hline
+%8& 6& 5,26269019 &192\\ \hline
+%9& 7& 5,95324333 &384\\ \hline
+%10& 8& 6,6450909 7 &768\\ \hline
+%11& 9& 7,33758774 &1536\\ \hline
+%12& 10& 8,03040956 &3072\\ \hline
+%13& 11& 8,72339402 &6144\\ \hline
+%14& 12& 9,41645983 &12288\\ \hline
+%15& 13& 10,1095663 &24576\\ \hline
+%16& 14& 10,8026932 &49152\\ \hline
+%17& 15& 11,4958302&98304\\ \hline
+%18& 16& 12,1889723&196608\\ \hline
+%19& 17&12,8821169& 393216\\ \hline
+%\end{tabular}}
+%\end{minipage}
+%
+%\begin{enumerate}[start=3]
+%\item
+%	\begin{enumerate}
+%		\item Démontrer que la suite $(w_n)$ est géométrique.
+%		\item En déduire que pour tout entier naturel $n, \: v_n = \ln \left(1 + 3 \times 2^n\right)$.
+%		\item Déterminer la limite de la suite $(v_n)$.
+%	\end{enumerate}
+%\item Justifier que l'algorithme suivant écrit en langage Python renvoie un résultat quel que soit le choix de la valeur du nombre S.
+%
+%\begin{center}
+%\begin{ttfamily}
+%\begin{tabular}{|l|}\hline
+%from math import*\\
+%def seuil(S):\\
+%\qquad V=ln(4)\\
+%\qquad n=0\\
+%\qquad while V < S :\\
+%\qquad  \quad n=n+1\\
+%\qquad  \quad V=ln(2*exp(V)-1)\\
+%\qquad return(n)\\ \hline
+%\end{tabular}
+%\end{ttfamily}
+%\end{center}
+%\end{enumerate}
+
+\begin{enumerate}
+\item $\bullet~~$$v_1 = \ln \left(- 1 + 2\e^{v_0}\right) = \ln \left(- 1 + 2\e^{\ln 4}\right) = \ln (- 1 + 2 \times 4) = \ln (- 1 + 8)  = \ln 7$ (valeur approchée ligne 4 colonne 3)
+
+$\bullet~~$$w_0 = - 1 + \e^{v_0} = - 1 + \e^{\ln 4} = - 1 + 4 = 3$ (valeur ligne 3 colonne 4)
+\item
+	\begin{enumerate}
+		\item Il faut saisir la formule 2.
+		\item On peut penser que la suite $(v_n)$ est croissante
+		\item Démonstration par récurrence :
+
+\emph{Initialisation} : on a $v_0 = \ln 4$ et $v_1 = \ln 7$ : la croissance de la fonction ln assure que $v_0 < v_1$.
+
+\emph{Hérédité} : on suppose que pour $n \in \N, \:v_n < v_{n+1}$, alors :
+
+$\e^{v_n} < \e^{v_{n+1}}$ par croissance de la fonction exponentielle
+
+$2\e^{v_n} < 2\e^{v_{n+1}}$ la multiplication par $+ 2$ respecte l'ordre
+
+$- 1 + 2\e^{v_n} < - 1 + 2\e^{v_{n+1}}$ l'addition respecte l'ordre
+
+$\ln \left(- 1 + 2\e^{v_n}\right) < \ln \left(- 1 + 2\e^{v_{n+1}}\right)$ par croissance de la fonction logarithme népérien (on a supposé que la suite $(v_n)$ est bien définie donc que tous les nombres de la forme $- 1 + 2\e^{v_n}$ sont supérieurs à zéro) ; soit finalement 
+
+$v_{n+1} < v_{n+2}$ : l'inégalité est vraie au rang $n + 1$.
+
+Conclusion : l'inégalité est vraie au rang 0 et si elle est vraie au rang $n \in \N$ elle l'est aussi au rang suivant : d'après le principe de récurrence :
+\begin{center} quel que soit $n \in \N, \quad v_n < v_{n+1}$ \end{center}
+
+La suite $(v_n)$ est croissante.
+	\end{enumerate}
+\item
+	\begin{enumerate}
+		\item Quel que soit $n \in \N$, \: $w_n = - 1 + \e^{v_n}$, donc 
+		
+$w_{n+1} = - 1 + \e^{v_{n+1}} = - 1 + \e^{\ln \left(- 1 + 2\e^{v_n}\right)} = - 1 - 1 + 2\e^{v_n} = -2 + 2\e^{v_n} = 2\left(- 1 + \e^{v_n}\right)$ : finalement 
+
+Quel que soit $n \in \N$, \quad $w_{n+1} = 2w_n$ : cette égalité montre que la suite $w_n$ est géométrique de raison 2 avec pour premier terme $w_0 = 3$.
+		\item On sait qu'alors le terme général $w_n$ est égal à :
+		
+		\begin{center} $w_n = 3 \times 2^n$ \end{center}
+		
+Or par définition $w_n = - 1 + \e^{v_n} = 3 \times 2^n \iff \e^{v_n} = 1 + 3 \times 2^n$.
+
+Par croissance de la fonction logarithme népérien : $v_n = \ln \left( 1 + 3 \times 2^n\right)$ pour tout entier naturel.
+\item On sait que $\displaystyle\lim_{n \to + \infty} 2^n = + \infty$, donc $\displaystyle\lim_{n \to + \infty} 3 \times 2^n = + \infty$, puis $\displaystyle\lim_{n \to + \infty} 1 + 3 \times 2^n = + \infty$ et enfin $\displaystyle\lim_{n \to + \infty} \ln \left(1 + 3 \times 2^n\right)= + \infty$.
+
+Conclusion : $\displaystyle\lim_{n \to + \infty} v_n = + \infty$.
+	\end{enumerate}
+\item L'algorithme permet de calculer les termes de la suite $v_n$ à partir de $v_0$. On vient de démontrer que la suite $(v_n)$ n'est pas majorée. Donc quel que soit le choix du nombre $S$, il existe un rang $p$, tel que $v_p > S$ et l'algorithme donnera ce rang $p$.
+\end{enumerate}
+
+\medskip
+

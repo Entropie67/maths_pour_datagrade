@@ -1,0 +1,50 @@
+\medskip
+
+\begin{enumerate}
+\item Remplaçons les valeurs connues dans la formule puis résolvons l'équation :
+\begin{align*}
+&85 = 10 \log \left(\dfrac{I}{10^{-12}}\right) \\
+\iff &\log \left(\dfrac{I}{10^{-12}}\right) = 8,5 \\
+\iff &\dfrac{I}{10^{-12}} = 10^{8,5} \\
+\iff &I = 10^{-12} \cdot 10^{8,5} \\
+\iff &I = 10^{-3,5}.
+\end{align*}
+Soit $I_1 \approx 3,16 \times 10^{-4}$ W.m$^2$.
+
+\item Cette équation est une équation différentielle linéaire du premier ordre, de la forme :
+
+$y' + ay = 0$ où $a = 0,262$.
+
+La solution générale de cette équation est donnée par :
+
+$y(x) = C \e^{-ax}$ où $C$ est une constante d'intégration.
+
+En remplaçant $a = 0,262$, la solution devient : $y(x) = C \e^{-0,262x}$.
+
+\item La fonction proposée est :
+$y = f(x) = 3,2 \cdot 10^{-4} \e^{-0,262x}$.
+
+Sa dérivée est :
+$y' = f'(x) = 3,2 \cdot 10^{-4} \cdot (-0,262) \e^{-0,262x}$.
+
+Soit $y' = -0,262y$, l'équation différentielle $(E)$ est donc satisfaite.
+
+Calculons $f(0)$ :
+$f(0) = 3,2 \cdot 10^{-4} \e^{-0,262 \cdot 0} = 3,2 \cdot 10^{-4} \cdot 1 = 3,2 \cdot 10^{-4}$.
+
+La condition initiale $f(0) = 3,2 \cdot 10^{-4}$ est donc satisfaite.
+
+La fonction $f(x) = 3,2 \cdot 10^{-4} \e^{-0,262x}$ est une solution particulière de $(E)$ vérifiant la condition initiale.
+
+\item
+\begin{align*}
+&\e^{-0,262x} = 0,5 \\
+\iff &-0,262x = \ln(0,5) \\
+\iff &x = \dfrac{\ln(0,5)}{-0,262} \\
+\iff &x \approx 2,64.
+\end{align*}
+La distance de propagation $d$ au bout de laquelle l'intensité acoustique est divisée par 2 est :
+$d \approx 2,6 \, \text{cm}.$
+\end{enumerate}
+
+\bigskip

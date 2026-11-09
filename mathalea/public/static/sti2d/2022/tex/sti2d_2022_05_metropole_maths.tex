@@ -1,0 +1,145 @@
+
+\medskip
+
+\textbf{Dans cet exercice, seulement 4 questions au choix parmi les 6 questions proposées sont à traiter. Toutes ces questions sont indépendantes les unes des autres.}
+
+\medskip
+
+\textbf{Question 1}
+
+\medskip
+
+\begin{enumerate}
+\item Montrer, en détaillant vos calculs, que :
+\[\ln (\np{2025}) = 4 \ln (3) + 2 \ln(5).\]
+
+\item Simplifier le nombre $A$ ci-dessous en détaillant les calculs :
+\[A = 2 \ln \left(\text{e}^4\right) - 3 \ln \left(\dfrac{1}{\text{e}}\right).\]
+\end{enumerate}
+
+\bigskip
+
+\textbf{Question 2}
+
+\medskip
+
+On désigne par i le nombre complexe de module 1 et d'argument $\dfrac{\pi}{2}$.
+
+On considère le nombre complexe suivant :
+\[z = \frac{-1 + \text{i}}{3\text{i}}.\]
+
+\begin{enumerate}
+\item Mettre $z$ sous forme algébrique. Détailler les calculs.
+\item Mettre $z$ sous forme exponentielle. Détailler les calculs.
+\end{enumerate}
+
+\bigskip
+
+\textbf{Question 3}
+
+\medskip
+
+On considère l'équation différentielle :
+\[(E) : \quad 2 y' + y = 0,\]
+
+où $y$ est une fonction de la variable $x$, définie et dérivable sur $\R$ et $y'$ la fonction dérivée de $y$.
+
+\begin{enumerate}
+\item Déterminer les solutions sur $\R$ de l'équation différentielle $(E)$.
+
+\item Le plan est muni d'un repère.
+
+Déterminer la solution $f$ de $(E)$, dont la courbe représentative $\mathcal{C}_f$ dans ce repère passe par le point A$(\ln (9)~;~ 1)$.
+\end{enumerate}
+
+\bigskip
+
+\textbf{Question 4}
+
+\medskip
+
+On considère la fonction $f$ définie sur $\R$ par $f(x) = a + b\text{e}^{x}$, où $a$ et $b$ sont deux nombres réels.
+
+On considère la fonction $g$ définie sur $\R$ par$g(x) = x^2 - 4x - 1$.
+
+On note $\mathcal{C}_f$ et $\mathcal{C}_g$ les courbes représentatives des fonctions $f$ et $g$, tracées dans le repère orthogonal ci-dessous.
+
+\begin{center}
+\psset{xunit=1cm,yunit=0.2cm}
+\begin{pspicture*}(-4,-12)(3.2,16)
+\psaxes[linewidth=1.25pt,labelFontSize=\scriptstyle,Dy=5]{->}(0,0)(-4,-12)(3.2,16)
+\psplot[plotpoints=2000,linewidth=1.25pt,linecolor=red,linestyle=dashed]{-4}{3}{x dup mul x 4 mul sub 1 sub}
+\psplot[plotpoints=2000,linewidth=1.25pt,linecolor=blue]{-4}{3}{3 2.71828 x exp 4 mul sub}
+\uput[dl](0,-1){\small A}\uput[r](-2.25,15){\small \red $\mathcal{C}_g$}
+\uput[u](-3.8,3){\small \blue $\mathcal{C}_f$}
+\psplot[plotpoints=2000,linewidth=1pt]{-4}{3}{4 x mul 1 add neg}
+\uput[d](-3.8,15){\small $T$}
+\end{pspicture*}
+\end{center}
+
+\begin{enumerate}
+\item On admet que les deux courbes $\mathcal{C}_f$ et $\mathcal{C}_g$ ont un unique point en commun, noté A d'abscisse 0.
+
+Calculer $g(0)$, puis en déduire que $a + b= - 1$.
+
+\item On admet que les deux courbes $\mathcal{C}_f$ et $\mathcal{C}_g$ ont la même tangente $T$ au point A.
+	\begin{enumerate}
+		\item Donner, pour tout réel $x$, une expression de $g'(x)$ puis calculer $g'(0)$.
+		
+		\item En déduire la valeur de $b$, puis celle de $a$.
+	\end{enumerate}
+\end{enumerate}
+
+\bigskip
+
+\textbf{Question 5}
+
+\medskip
+
+Soit $g$ la fonction définie sur l'intervalle $]0~;~+ \infty[$ par :
+\[g(x) = \dfrac12 x^2 - \ln (x).\]
+
+
+\begin{enumerate}
+\item On admet que $g$ est dérivable sur l'intervalle $]0~;~+ \infty[$ et on note $g'$ sa fonction dérivée. Montrer que pour tout réel $x$ de l'intervalle $]0~;~+ \infty[$ : 
+\[g'(x) = \dfrac{(x - 1)(x + 1)}{x}.\]
+
+\item Montrer que la fonction $g$ admet un minimum, dont on précisera la valeur exacte, sur l'intervalle $]0~;~+ \infty[$.
+\end{enumerate}
+
+\bigskip
+
+\textbf{Question 6}
+
+\medskip
+
+\begin{center}
+\fbox{
+\begin{minipage}{0.9\textwidth}
+\textbf{Rappel :} pour $a$ et $b$ deux réels, on a les formules suivantes :
+\[\bullet~~\cos(a + b) = \cos (a) \cos(b) - \sin(a) \sin(b)\]
+\[\bullet~~\cos(a - b) = \cos (a) \cos(b) + \sin(a) \sin(b)\]
+\[\bullet~~\sin(a + b) = \sin(a) \cos(b) + \cos (a) \sin(b)\]
+\[\bullet~~\sin(a - b) = \sin(a) \cos(b) - \cos (a) \sin(b)\]
+\end{minipage}}
+\end{center}
+
+La tension $u$, exprimée en volt, aux bornes d'un dipôle en fonction du temps $t$, exprimé en seconde, est donnée par :
+\[u(t) = \cos (50t) + \sqrt{3}\sin (50t).\]
+
+\begin{enumerate}
+\item Pour tout nombre réel $t$, écrire $u(t)$ sous la forme $u(t) = U_{\text{max}} \cos (\omega t + \varphi)$ où :
+
+\setlength\parindent{1cm}
+\begin{itemize}
+\item[$\bullet~~$]$U_{\text{max}}$ représente la tension maximale (exprimée en volt) ;
+\item[$\bullet~~$]$\omega$ représente la pulsation (exprimée en rad.s$^{-1}$) ;
+\item[$\bullet~~$]$\varphi$ représente le déphasage (exprimé en rad).
+\end{itemize}
+\setlength\parindent{0cm}
+\item En déduire la fréquence correspondante $f = \dfrac{\omega}{2\pi}$, exprimée en Hz. Arrondir le résultat à l'unité.
+\end{enumerate}
+
+\bigskip
+
+

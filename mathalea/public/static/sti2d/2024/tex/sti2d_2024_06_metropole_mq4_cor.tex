@@ -1,0 +1,17 @@
+
+La distance parcourue, en mètre, par le parachutiste pendant les 10 premières secondes après ouverture du parachute est donnée  par l'intégrale:
+$\ds\int_{0}^{10} \left ( 48 \e^{-5t} +2 \right ) \d t$.
+
+Pour calculer cette intégrale, il faut trouver une primitive de la fonction $v$.
+
+La fonction $t\longmapsto \e^{at}$ avec $a\neq 0$,  a pour primitive la fonction $t\longmapsto \dfrac{\e^{at}}{a}$, donc la fonction $v$ a pour primitive la fonction $V$ définie par $V(t) = 48 \dfrac{\e^{-5t}}{-5} + 2t$ soit $V(t) = - 9,6 \e^{-5t} +2t$.
+
+$\begin{aligned}
+\ds\int_{0}^{10} \left ( 48 \e^{-5t} +2 \right ) \d t&
+= \left [ V(t) \strut\right ]_{0}^{10}
+= V(10) - V(0)
+= \left (-9,6 \e^{-5\times 10} + 2 \times 10 \right ) - \left ( -9,6 \e^{-5\times 0} + 2 \times 0 \right )\\
+&
+= -9,6 \e^{-50} + 20+9,6  = 29,6 -9,6 \e^{-50} \approx 29,6
+\end{aligned}$
+

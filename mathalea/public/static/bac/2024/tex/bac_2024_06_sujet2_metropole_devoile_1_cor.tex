@@ -1,0 +1,194 @@
+
+\medskip
+
+\emph{Les parties {\rm A} et {\rm B} sont indépendantes.}
+
+\medskip
+
+\textbf{Partie A}
+
+\medskip
+
+%Une société de vente en ligne procède à une étude du niveau de fidélité de ses clients. Elle définit pour cela comme \og régulier\fg{} un client qui a fait des achats chaque année depuis trois ans.
+%
+%Elle constate que 60\,\% de ses clients sont des clients réguliers, et que parmi eux, 47\,\% ont acheté la carte de fidélité.
+%
+%Par ailleurs, parmi l'ensemble de tous les clients de la société, 38\,\% ont acheté la carte de fidélité.
+%
+%On interroge au hasard un client et on considère les évènements suivants:
+%
+%\begin{itemize}[label=$\bullet~$]
+%\item  $R$ : \og le client est un client régulier\fg{} ;
+%\item  $F$ :\og le client a acheté la carte de fidélité \fg.
+%\end{itemize}
+%
+%\smallskip
+%
+%Pour un évènement $E$ quelconque, on note $\overline{E}$ son évènement contraire et $p(E)$ sa probabilité.
+
+\medskip
+
+\begin{enumerate}
+\item ~
+
+\begin{minipage}{0.55\linewidth}
+	\begin{enumerate}
+		\item Reproduire l'arbre ci-contre et compléter les pointillés.
+		\item %Calculer la probabilité que le client interrogé soit un  client régulier et qu'il ait acheté la carte de fidélité.
+		On a $p(R \cap F) = p(R) \times p_R(F) =$
+
+$ 0,6 \times 0,47 = 0,282$.
+	\end{enumerate}
+\end{minipage}\hfill
+\begin{minipage}{0.4\linewidth}
+\begin{center}
+\pstree[treemode=R,levelsep=3cm]{\TR{}}
+{\pstree{\TR{$R~$}\taput{0,6}}
+	{
+	\TR{$F$} \taput{0,47}
+	\TR{$\overline{F}$} \tbput{0,53}
+	}
+\pstree{\TR{$\overline{R~}$}\tbput{0,4}}
+	{\TR{$F$} \taput{\ldots}
+	\TR{$\overline{F}$} \tbput{\ldots}
+	}
+}
+\end{center}
+\end{minipage}
+		\item %Déterminer la probabilité que le client ait acheté la carte de fidélité sachant que ce n'est pas un client régulier.
+
+%Cette affirmation est-elle exacte ?
+%Justifier.
+Il faut trouver $p_{\overline{R}}(F)$
+
+D'après la loi des probabilités totales, on a :
+
+$p(F) = p(F \cap R) + p\left(F \cap \overline{R}\right) = p(R \cap F) + p\left(\overline{R} \cap F\right)$, soit :
+
+$0,38 = 0,282 + p\left(\overline{R} \cap F\right)$, d'où $p\left(\overline{R} \cap F\right) = 0,38 - 0,282 = 0,098$.
+
+Puis $p_{\overline{R}}(F) = \dfrac{\overline{R} \cap F}{\overline{R}} = \dfrac{0,098}{0,4} = 0,0245$.
+		\item %Le directeur du service des ventes affirme que parmi les clients qui ont acheté la carte de fidélité, plus de 80\,\% sont des clients réguliers.
+		On a $p_F(R) = \dfrac{p(F \cap R)}{p(F)} = \dfrac{0,282}{0,38} \approx 0,74$, soit 74\,\%. L'affirmation est fausse.
+\item %On choisit un échantillon de 20 clients de la société sélectionnés de manière indépendante. On suppose que ce choix s'assimile à un tirage avec remise.
+
+%On note $X$ la variable aléatoire qui à chaque échantillon de $20$ clients associe le nombre de clients ayant acheté la carte de fidélité parmi eux. On rappelle que $p(F) = 0,38$.
+
+%Les valeurs des probabilités demandées seront arrondies à $10^{-3}$ près.
+
+	\begin{enumerate}
+		\item %Quelle loi de probabilité suit la variable aléatoire $X$ ? Justifier.
+	Le choix des 20 clients s'effectue de façon indépendante  et chaque tirage correspond à un choix de probabilité 0,38, la variable aléatoire $X$ donnant le nombre de clients ayant acheté la carte de fidélité est une loi binomiale de paramètres $n = 20, \:p = 0,38$.
+		\item %Déterminer la probabilité qu'au moins 5 clients aient acheté la carte de fidélité dans un échantillon de $20$.
+		On a $p(X \leqslant 4) \approx \np{0,0726}$, donc $p(X \geqslant 5) \approx 1 - \np{0,0726}$ soit environ \np{0,9273} soit 0,927 au millième près.
+	\end{enumerate}
+\end{enumerate}
+
+\medskip
+
+\textbf{Partie B}
+
+\medskip
+
+%La société demande à un institut de sondage de faire une enquête sur le profil de ses clients réguliers. L'institut a élaboré un questionnaire en ligne constitué d'un nombre variable de questions.
+%
+%On choisit au hasard un échantillon de \np{1000} clients réguliers, à qui le questionnaire est proposé. On considère que ces \np{1000} clients répondent.
+%
+%\begin{itemize}[label=$\bullet~$]
+%\item Pour les remercier, la société offre un bon d'achat à chacun des clients de l'échantillon. Le montant de ce bon d'achat dépend du nombre de questions posées au client.
+%\item La société souhaite récompenser particulièrement les clients de l'échantillon qui ont acheté une carte de fidélité et, en plus du bon d'achat, offre à chacun d'eux une prime d'un montant de $50$ euros versée sur la carte de fidélité.
+%\end{itemize}
+%
+%On note $Y_1$ la variable aléatoire qui, à chaque échantillon de \np{1000} clients réguliers, associe le total, en euros, des montants du bon d'achat des 1000 clients. 
+%
+%On admet que son espérance $E\left(Y_1\right)$ est égale à \np{30000} et que sa variance $V\left(Y_1\right)$ est égale à \np{100000}.
+%
+%On note $X_2$ la variable aléatoire qui, à chaque échantillon de \np{1000} clients réguliers, associe le nombre de clients ayant acheté la carte de fidélité parmi eux, et on note $Y_2$ la variable aléatoire qui, à chaque échantillon de \np{1000} clients, associe le total, en euros, des montants de la prime de fidélité versée.
+%
+%On admet que $X_2$ suit la loi binomiale de paramètres \np{1000} et 0,47 et que $Y_2 = 50X_2$.
+
+\medskip
+
+\begin{enumerate}
+\item %Calculer l'espérance $E\left(X_2\right)$ de la variable $X_2$ et interpréter le résultat dans le contexte de l'exercice.
+La variable aléatoire $X_2$ suit la loi binomiale de paramètres $n=\np{1000}$ et $p=0,47$ donc son espérance $E(X_2)$ est égale à $np=\np{1000}\times 0,47=470$.
+
+Cela signifie qu'en moyenne, sur un échantillon de \np{1000} clients réguliers, il y en aura $470$ qui ont acheté la carte de fidélité.
+\end{enumerate}
+
+On note $Y = Y_1 + Y_2$ la variable aléatoire égale au total général, en euros, des montants offerts (bon d'achat et prime de fidélité) aux \np{1000} clients. On admet que les variables aléatoires $Y_1$ et $Y_2$ sont indépendantes.
+
+On note $Z$ la variable aléatoire définie par $Z = \dfrac{Y}{\np{1000}}$.
+
+\begin{enumerate}[resume]
+\item %Préciser ce que modélise la variable $Z$ dans le contexte de l'exercice.
+La variable $Z$ représente la moyenne par client des montants offerts aux \np{1000} clients.
+
+\begin{list}{\textbullet}{}
+\item On utilise la linéarité de l'espérance.
+
+$Z=\dfrac{Y}{\np{1000}}$ donc  $E(Z)=\dfrac{E(Y)}{\np{1000}}$, et $Y=Y_1+Y_2$ donc $E(Y)=E(Y_1)+E(Y_2)$.
+
+De plus, $Y_2=50X_2$ donc $E(Y_2)=50E(X_2) = 50\times 470 = \np{23500}$
+
+On sait que $E(Y_1)=\np{30000}$.
+
+On en déduit que:
+$E(Y)=E(Y_1)+E(Y_2) = \np{30000} + \np{23500} = \np{53500}$,
+et donc que
+$E(Z)=\dfrac{E(Y)}{\np{1000}} = \dfrac{\np{53500}}{\np{1000}} = 53,5$.
+
+\item Les variables étant indépendantes, on va utiliser l'additivité de la variance.
+
+$V(Y)= V(Y_1+Y_2) = V(Y_1) + V(Y_2)$, 
+$V(Y_2) = V(50X_2) = 50^2V(X_2) = \np{2500}V(X_2)$, et
+$V(Z)= V\left (\dfrac{Y}{\np{1000}}\right ) = \dfrac{V(Y)}{\np{1000}^2}= \dfrac{V(Y)}{10^6}$
+
+La variable aléatoire $X_2$ suit la loi binomiale de paramètres $n=\np{1000}$ et $p=0,47$ donc sa variance $V(X_2)$ est égale à  $np(1-p) = \np{1000}\times 0,47 \times (1-0,47) = 249,1$.
+
+On en déduit que $V(Y_2) = \np{2500}V(X_2) = \np{2500}\times 249,1 = \np{622750}$.
+
+On sait que $V(Y_1)=\np{100000}$ donc\\
+$V(Y) = V(Y_1) + V(Y_2) = \np{100000} + \np{622750} = \np{722750}$.
+
+$V(Z)=\dfrac{V(Y)}{10^6} = \dfrac{\np{722750}}{10^6} = \np{0,72275}$
+\end{list}
+
+%Vérifier que son espérance $E(Z)$ est égale à $53,5$ et que sa variance $V(Z)$ est égale à \np{0,72275}.
+
+\item La variable aléatoire $Z$ a pour espérance $E(Z)=53,5$ et pour variance $V(Z)=\np{0,72275}$ donc, d'après l'inégalité de Bienaymé-Tchebychev, on a:
+
+pour tout $\delta\in\, \left ]0\;;\;+\infty\strut \right [$, $P\left ( \left |Z-E(Z)\strut \right | \geqslant \delta \right ) \leqslant \dfrac{V(Z)}{\delta^2}$.
+
+$\begin{aligned}
+51,7 < Z < 55,3 & \iff 53,5-1,8 < Z < 53,5+1,8 \iff -1,8 < Z - 53,5 < 1,8 \\
+ & \iff \left | Z-53,5 \strut \right | <1,8
+ \end{aligned}$
+
+En remplaçant $E(Z)$ et $V(Z)$ par leurs valeurs, et en prenant $\delta=1,8$, l'inégalité de Bienaymé-Tchebychev devient:
+$P\left ( \left |Z-53,5\strut \right | \geqslant 1,8 \right ) \leqslant \dfrac{\np{0,72275}}{1,8^2}$
+
+En considérant l'évènement contraire, on a:
+$P\left ( \left |Z-53,5\strut \right | < 1,8 \right ) > 1-  \dfrac{\np{0,72275}}{1,8^2}$.
+
+$1- \dfrac{\np{0,72275}}{1,8^2} \approx 0,777$
+
+Donc la probabilité que $Z$ soit strictement compris entre $51,7$ euros et $55,3$ euros est supérieure à $0,75$.
+\end{enumerate}
+%\begin{enumerate}
+%\item %Calculer l'espérance $E\left(X_2\right)$ de la variable $X_2$ et interpréter le résultat dans le contexte de l'exercice.
+%Puisque que $X_2$ suit une loi binomiale de paramètres $n = \np{1000}$ et $p = 0,47$, on 
+%
+%$E\left(X_2\right) = \np{1000} \times 0,47 = 470$~(\euro).
+%
+%On note $Y = Y_1 + Y_2$ la variable aléatoire égale au total général, en euros, des montants offerts (bon d'achat et prime de fidélité) aux \np{1000} clients. On admet que les variables aléatoires $Y_1$ et $Y_2$ sont indépendantes.
+%
+%On note $Z$ la variable aléatoire définie par $Z = \dfrac{Y}{\np{1000}}$.
+%\item Préciser ce que modélise la variable $Z$ dans le contexte de l'exercice.
+%
+%Vérifier que son espérance $E(Z)$ est égale à $53,5$ et que sa variance $V(Z)$ est égale à \np{0,72275}.
+%\item À l'aide de l'inégalité de Bienaymé-Tchebychev, vérifier que la probabilité que $Z$ soit strictement compris entre $51,7$ euros et $55,3$ euros est supérieure à $0,75$.
+%\end{enumerate}
+
+\bigskip
+

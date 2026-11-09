@@ -1,0 +1,96 @@
+
+\smallskip
+
+Heimana a conçu un programme constitué d'un script principal et d'un bloc motif présenté ci-dessous.
+
+\begin{tblr}{vlines,hlines,
+  colspec={Q[7cm,c] Q[7cm,c]},
+  rowspec={Q Q}}
+  \textbf{Bloc Motif}&\textbf{Script principal}\\
+\begin{scratch}[scale=0.8]
+\initmoreblocks{définir \namemoreblocks{Motif}}
+\blockmove{s'orienter à ~\ovalnum{0}}
+\blockmove{avancer de \ovalnum{120} pas}
+\blockmove{s'orienter à ~\ovalnum{90}}
+\blockmove{avancer de \ovalnum{20} pas}
+\blockmove{s'orienter à ~\ovalnum{180}}
+\blockmove{avancer de \ovalnum{40} pas}
+\blockmove{s'orienter à ~\ovalnum{90}}
+\blockrepeat{répéter \ovalnum{2} fois}
+{\blockmove{avancer de \ovalnum{30} pas}
+\blockmove{s'orienter à ~\ovalnum{180}}
+\blockmove{avancer de \ovalnum{20} pas}
+\blockmove{s'orienter à ~\ovalnum{-90}}
+\blockmove{avancer de \ovalnum{30} pas}
+\blockmove{s'orienter à ~\ovalnum{180}}
+\blockmove{avancer de \ovalnum{20} pas}
+\blockmove{s'orienter à ~\ovalnum{90}}
+}
+\end{scratch}&
+\begin{scratch}[scale=0.8]
+\blockinit{quand \greenflag est cliqué}
+\blockmove{aller à x: \ovalnum{0} y: \ovalnum{0}}
+\blockpen{effacer tout}
+\blockpen{stylo en position d'écriture}
+\blockmoreblocks{Motif}
+\end{scratch}
+
+\vspace{2cm}
+Petits rappels
+
+\begin{scratch}[scale=0.8]\blockmove{s'orienter à ~\ovalnum{90}}\end{scratch} s'orienter vers la droite 
+
+\begin{scratch}[scale=0.8]\blockmove{s'orienter à ~\ovalnum{0}}\end{scratch} s'orienter vers le haut 
+
+\begin{scratch}[scale=0.8]\blockmove{s'orienter à ~\ovalnum{-90}}\end{scratch} s'orienter vers la gauche 
+
+\begin{scratch}[scale=0.8]\blockmove{s'orienter à ~\ovalnum{-180}}\end{scratch} s'orienter vers le bas\\ 
+\end{tblr}
+
+\begin{enumerate}
+\item Voici la figure correspondant au programme de Heimana.
+
+\psset{unit=0.6cm,arrowsize=1.5pt 2}
+\begin{pspicture}(10,15)
+\psgrid[gridlabels=0pt,subgriddiv=1,gridwidth=0.4pt]
+\psdot[dotstyle=+,dotangle=45,dotscale=1.8](2,2)\uput[d](2,2){Départ}
+\psline[linewidth=1.5pt]{<->}(8,1)(9,1)\uput[d](8.5,1){\small 10 pas}
+\psline[linewidth=1.5pt](2,2)(2,14)(4,14)(4,10)(7,10)(7,8)(4,8)(4,6)(7,6)(7,4)(4,4)(4,2)
+\end{pspicture}
+
+\item Le camarade de Heimana a la figure 2 ci-dessous en tête mais n'arrive pas à faire le programme.
+
+\begin{center}
+\psset{unit=1.8cm}
+\begin{pspicture}(6,1)
+\def\Motif{\psline(0,0)(0,1)(1,1)(1,0)(2,0)}
+\multido{\n=0+2}{3}{\rput(\n,0){\Motif}}
+\end{pspicture}
+\end{center}
+
+Voici le programme pour obtenir la figure sachant que chaque segment fait 40 pas.
+
+\begin{scratch}[scale=0.9]
+\blockinit{quand \greenflag est cliqué}
+\blockmove{aller à x: \ovalnum{0} y: \ovalnum{0}}
+\blockpen{stylo en position d'écriture}
+\blockrepeat{répéter \ovalnum{3} fois}{
+\blockmove{s'orienter à ~\ovalnum{0}}
+\blockmove{avancer de \ovalnum{40} pas}
+\blockmove{s'orienter à ~\ovalnum{90}}
+\blockmove{avancer de \ovalnum{40} pas}
+\blockmove{s'orienter à ~\ovalnum{180}}
+\blockmove{avancer de \ovalnum{40} pas}
+\blockmove{s'orienter à ~\ovalnum{90}}
+\blockmove{avancer de \ovalnum{40} pas}
+}
+\end{scratch}
+
+\item %\textbf{Calculer} la longueur totale de la figure 2 sachant que 1 cm vaut $10$ pas.
+
+%\textbf{Exprimer} le résultat en cm.
+On dessine 3 fois un motif de $4 \times 4 = 16$~(cm) soit une longueur $3 \times 16 = 48$~(cm).
+\end{enumerate}
+
+\medskip
+

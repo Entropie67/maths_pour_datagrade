@@ -1,0 +1,45 @@
+\medskip
+
+\begin{enumerate}[start=10]
+\item On sait que $\ds\lim_{x \to -\infty} \e^{x} =0$ et que $\ds\lim_{t\to +\infty} -\dfrac{t}{\np{5040}} = -\infty$, donc $\ds\lim_{t\to +\infty} \e^{-\frac{t}{\np{5040}}}=0$.
+
+On en déduit que $\ds\lim_{t\to +\infty} \theta\left (t\right ) = 24,2$.
+
+Cela signifie que la température limite de la glacière sera de $24,2~\degres$C (température ambiante de la pièce).
+
+\item On résout l'inéquation $\theta(t) \geqslant 17$.
+
+$\aligned
+\theta(t) \geqslant 17
+& \iff - 10,8 \e ^{- \frac{t}{\np{5040}}} + 24,2 \geqslant 17
+\iff 24,2-17 \geqslant  10,8 \e ^{- \frac{t}{\np{5040}}}
+\iff \dfrac{7,2}{10,8} \geqslant \e ^{- \frac{t}{\np{5040}}} \\
+& \iff \ln \left ( \dfrac{7,2}{10,8}\right ) \geqslant - \dfrac{t}{\np{5040}}
+\iff -\np{5040} \, \ln \left ( \dfrac{7,2}{10,8}\right ) \leqslant t
+\endaligned$
+
+$ -\np{5040} \, \ln \left ( \dfrac{7,2}{10,8}\right ) \approx \np{2043.5}$ donc on peut considérer que la boisson dans la glacière ne sera plus fraiche au bout de \np{2044} secondes, soit environs $34$ minutes.
+
+Ce résultat semble cohérent avec le graphique.
+\end{enumerate}
+
+\begin{center}
+\psset{xunit=0.00333cm,yunit=0.3cm,arrowsize=3pt 2}
+\begin{pspicture}(-500,-6)(4000,25)
+{\psset{linecolor=gray}
+\multido{\n=0+100}{41}{\psline[linewidth=0.2pt](\n,0)(\n,25)}
+\multido{\n=0+1}{26}{\psline[linewidth=0.2pt](0,\n)(4000,\n)}
+\multido{\n=0+500}{9}{\psline[linewidth=0.6pt](\n,0)(\n,25)}
+\multido{\n=0+5}{6}{\psline[linewidth=0.6pt](0,\n)(4000,\n)}}
+\psaxes[linewidth=1.25pt,Dx=500,Dy=5,labelFontSize=\scriptstyle](0,0)(4000,25)
+\uput[d](2000,-2){Temps (s)}
+\rput{90}(-250,12.5){Température ($\degres C$)}
+\psdots*[dotstyle=B+,dotsize=0.2cm](0,13.5)(150,13.6)(300,14)(450,14.5)(600,14.8)(750,14.9)(900,15.5)(1050,15.9)(1200,15.95)(1350,16.1)(1500,16.5)(1650,16.8)(1800,17)(1950,17.05)(2100,17.2)(2250,17.1)(2400,17.7)(2550,18)(2700,18.05)(2850,18.4)(3000,18.1)(3150,18.5)(3300,18.9)(3450,19.05)(3600,19)
+\rput(2000,-5){Figure 1 – Évolution de la température de la glacière au cours du temps}
+%%%
+\psline[linecolor=blue,ArrowInside=->,ArrowInsideNo=2](0,17)(2044,17)(2044,0)
+\uput[l](0,17){\blue\scriptsize 17}
+\end{pspicture}
+\end{center}
+
+\bigskip

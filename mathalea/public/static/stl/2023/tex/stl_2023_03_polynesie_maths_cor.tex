@@ -1,0 +1,33 @@
+
+\medskip
+
+\begin{enumerate}
+\item $\ds\lim_{x\to +\infty} 0,02 x = +\infty$ et $\ds\lim_{X\to +\infty} \e^{X}=+\infty$ donc $\ds\lim_{x\to +\infty} \e^{0,02x}=+\infty$.
+
+On en déduit que: $\ds\lim_{x\to +\infty} x\e^{0,02x}=+\infty$ et donc $\ds\lim_{x\to +\infty} g(x)=+\infty$.
+
+\item $f'(x) = 1\times \e^{0,02x} + x \times 0,02 \e^{0,02x} = \left (0,02x+1\right ) \e^{0,02x}$.
+
+\item Pour tout $x$ de $[0~;~+\infty[$, $x\geqslant 0$ donc $0,02x+1>0$.
+
+Pour tout réel $X$, $\e^{X}>0$ donc $\e^{0,02x}>0$.
+
+On en déduit que, pour tout $x\geqslant 0$, on a: $f'(x)>0$ donc la fonction $f$ est strictement croissante sur $[0~;~+\infty[$.
+
+\item  
+\og Tout nombre réel $x$, compris entre 0 et \np{1000}, a une image négative par $f$. \fg{} est une affirmation fausse car, par exemple, $f(200)\approx 919,6>0$.
+
+\item Parmi les quatre fonctions, celle qui permet de déterminer la plus petite valeur entière dont l'image par $f$ est positive est la fonction \texttt{B()}.
+
+\begin{list}{\textbullet}{En effet:}
+\item la fonction \texttt{A()} renvoie \np{-10000};
+\item la fonction \texttt{C()} renvoie $f(\np{1000})$;
+\item la fonction \texttt{D()} renvoie le nombre 1.
+\end{list}
+
+Remarque: en faisant tourner ce programme, on trouve $n=197$; en effet, $f(196)\approx -121,5 <0$ et $f(197)\approx 129,5 >0$.
+\end{enumerate}
+
+\bigskip
+
+

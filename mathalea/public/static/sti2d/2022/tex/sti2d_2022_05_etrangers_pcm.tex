@@ -1,0 +1,52 @@
+\begin{center}
+\textbf{Déplacement d'un Airbus A320 sur le tarmac}
+\end{center}
+
+L'objectif du dispositif étudié est de permettre le déplacement autonome de l'A320 au sol, sans utiliser ses moteurs principaux (réacteurs) mais des moteurs électriques.\\
+Cette solution garantit une réduction des nuisances sonores et des émissions de CO$_2$.
+
+La solution étudiée consiste en une motorisation électrique des deux trains principaux de l'avion (un moteur électrique par train). Lors des phases de déplacement au sol, l'avion est propulsé par ses moteurs électriques, au lieu de ses réacteurs.
+
+Toute l'étude est réalisée lors d'un déplacement avant un décollage sur sol horizontal en charge maximale.
+
+L'avion, initialement à l'arrêt, démarre sur un sol horizontal et atteint une vitesse maximale $v_{\text{max}}$. On modélise la vitesse de l'avion, exprimée en m.s$^{-1}$, par une fonction $f$ définie sur $[0\;;\;+\infty[$ par $f(t)=A\times \left ( 1-\e^{-0,13t}\right )$ où $A$ est une constante réelle et $t$ est le temps exprimé en seconde.
+
+\begin{enumerate}
+\item Exprimer en fonction de $A$, $\ds\lim _{t\to +\infty} f(t)$.
+\end{enumerate}
+
+La représentation graphique de cette fonction est donnée sur le graphique ci-après. Elle modélise les valeurs expérimentales représentées par des croix sur ce graphique.
+
+\begin{center}
+\psset{xunit=0.3cm, yunit=1.5cm}
+\def\xmin {0}   \def\xmax {41}
+\def\ymin {-0.5}   \def\ymax {5.2}
+\begin{pspicture}(\xmin,\ymin)(\xmax,\ymax)
+\psgrid[yunit=0.15cm,subgriddiv=1,  gridlabels=0, gridcolor=lightgray](0,0)(41,52)
+%\psgrid[subgriddiv=1,  gridlabels=0, gridcolor=gray] 
+\psaxes[arrowsize=3pt 3, ticksize=-2pt 2pt,Dx=5,Dy=1]{->}(0,0)(0,0)(\xmax,\ymax) 
+\psset{dotstyle=+,dotscale=1.5}
+\psdots(1,0.5)(2,1)(3,1.4)(4,1.7)(5,2.1)
+\psdots(6,2.5)(7,2.6)(8,2.8)(9,2.95)(10,3.34)
+\psdots(11,3.2)(12,3.4)(13,3.5)(14,3.9)(15,4)
+\psdots(16,4)(17,4.1)(18,4.1)(19,3.9)(20,4)
+\psdots(21,4.3)(22,4.4)(23,4.1)(24,4.2)(25,4.3)
+\psdots(26,4.3)(27,4.5)(28,4.2)(29,4.4)(30,4.3)
+\psdots(31,4.5)(32,4.4)(33,4.3)(34,4.4)(35,4.5)
+\psdots(36,4.6)(37,4.6)(38,4.6)(39,4.5)(40,4.4)
+\def\f{4.5 1 2.7183 -0.13 x mul exp sub mul}
+\psplot[linecolor=blue,plotpoints=3000]{0}{40}{\f}
+\end{pspicture}
+\end{center}
+
+\begin{enumerate}[resume]
+\item Conjecturer la valeur de $A$ à l'aide du graphique.
+\end{enumerate}
+
+La vitesse de l'avion, exprimée en m.s$^{-1}$, est modélisée par la fonction $v$ définie sur $[0\;;\;+\infty[$ par $v(t)=4,5\times \left ( 1-\e^{-0,13t} \right )$. On admet que $v$ est dérivable sur $[0\;;\;+\infty[$ et on note $v'$ la dérivée de $v$.
+
+\begin{enumerate}[resume]
+\item  Montrer que $v'(t)=0,585 \times \e^{-0,13t}$. En déduire l'accélération initiale de l'avion.
+\end{enumerate}
+
+\bigskip

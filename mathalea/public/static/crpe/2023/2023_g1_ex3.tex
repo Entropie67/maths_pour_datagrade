@@ -1,0 +1,49 @@
+On donne le programme ci-contre qui permet de tracer des triangles de tailles différentes. Ce programme comporte une variable nommée << côté >>. Les longueurs sont données en pixels. \par \medskip
+   \hskip22mm
+   \begin{minipage}{6.5cm}
+      \hskip12mm \texttt{Script} \par \medskip
+      \begin{Scratch}[Echelle=0.9]
+         Place Drapeau;
+         Place Effacer;
+         Place ReleverStylo;
+         Place Aller("-75","0");
+         Place Orienter("90");
+         Place MettreVar("côté","100");
+         Place Repeter("5");
+            Place Bloc("Triangle");
+            Place Avancer(OvalVar("coté"));
+            Place AjouterVar("-20","côté");
+         Place FinBlocRepeter;
+      \end{Scratch}
+   \end{minipage}
+   \qquad
+   \begin{minipage}{6cm}
+      \hskip8mm \texttt{Bloc Triangle} \par \medskip
+      \begin{Scratch}[Echelle=0.9]
+         Place NouveauBloc("Triangle");
+         Place PoserStylo;
+         Place Repeter("3");
+            Place Avancer(OvalVar("coté"));
+            Place Tournerg("120");
+         Place FinBlocRepeter;
+      \end{Scratch} \par \vskip6mm
+      On rappelle que l’instruction \par \medskip
+      \begin{Scratch}[Echelle=0.9]
+         Place Orienter("90");
+      \end{Scratch} \par
+      signifie que l’on se dirige vers la droite.
+   \end{minipage}
+   \begin{enumerate}
+      \setlength{\itemsep}{-1mm}
+      \item Répondre aux questions suivantes sans justifier. L’utilisateur clique sur le drapeau.
+         \begin{enumerate}
+            \setlength{\itemsep}{-1mm}
+            \item Quelles sont les coordonnées du point de départ du tracé ?
+            \item Combien de triangles sont dessinés par le script ?
+            \item Quelle est la nature des triangles dessinés ?
+            \item Quelle est la longueur (en pas) d’un côté du deuxième triangle tracé ?
+         \end{enumerate}
+      \item Tracer le dessin obtenu par ce programme en prenant comme échelle 1 cm pour 20 pas.
+      \item Si au lieu de triangles on voulait obtenir des hexagones réguliers, que devrait-on changer
+dans les instructions du bloc triangle ?
+      \end{enumerate}

@@ -1,0 +1,75 @@
+
+%Un cinéma propose trois tarifs :
+%
+%Tarif \og Classique\fg{} : La personne paye chaque entrée $11$~\euro.
+%
+%Tarif \og Essentiel \fg{} : La personne paye un abonnement annuel de $50$~\euro{} puis chaque entrée coûte $5$~\euro.
+%
+%Tarif \og Liberté \fg : La personne paye un abonnement annuel de $240$~\euro{} avec un nombre d'entrées illimité.
+
+\begin{enumerate}
+\item %Avec le tarif \og Classique \fg, une personne souhaite acheter trois entrées au cinéma.
+
+%Combien va-t-elle payer ?
+
+On a $3 \times 11 = 33$~\euro.
+
+\item %Avec le tarif \og Essentiel \fg, une personne souhaite aller huit fois au cinéma.
+
+%Montrer qu'elle va payer $90$~\euro.
+On a $50 + 8 \times 5 = 50 + 40 = 90$~\euro.
+\item %Dans la suite, $x$ désigne le nombre d'entrées au cinéma.
+
+%On considère les trois fonctions $f, g$ et $h$ suivantes :
+
+
+\[f: x \longmapsto 50 + 5x \quad g: x \longmapsto 240 \quad h: x \longmapsto 11 x
+\]
+
+%Associer, sans justifier, chacune de ces fonctions au tarif correspondant.
+$f$ correspond au tarif \og Essentiel \fg ;
+
+$g$ correspond au tarif \og Liberté \fg ;
+
+$h$ correspond au tarif \og Classique \fg.
+
+%Le graphique ci-dessous représente le prix à payer en fonction du nombre d'entrées pour chacun de ces trois tarifs.
+
+\begin{center}
+%\includegraphics[max width=\textwidth]{2024_05_30_e3637aa9ef1bd32cf3c8g-4}
+\psset{xunit=0.25cm,yunit=0.03cm,arrowsize=2pt 3}
+\begin{pspicture*}(-5,-30)(50,290)
+\psaxes[linewidth=1.25pt,Dx=5,Dy=50]{->}(0,0)(0,0)(50,290)
+\psline(0,240)(45,240)\uput[ul](23,260){$d_1$}
+\psline(0,50)(50,300)\uput[ul](45,270){$d_2$}
+\psline(25,275)\uput[r](45,240){$d_3$}
+\uput[u](40,0){Nombre d'entrées}
+\uput[r](0,285){Prix à payer en \euro}
+\psline[linecolor=red,ArrowInside=->](0,150)(20,150)(20,0)
+\psline[linecolor=blue,ArrowInside=->](0,240)(38,240)(38,0)
+\psline[linecolor=cyan,ArrowInside=->](0,200)(30,200)(30,0)
+\end{pspicture*}
+\end{center}
+
+La droite ($d_{1}$) représente la fonction correspondant au tarif \og Classique\fg.
+
+La droite ($d_{2}$) représente la fonction correspondant au tarif \og Essentiel\fg.
+
+La droite $(d_{3})$ représente la fonction correspondant au tarif \og Liberté \fg.
+
+\item %Quel tarif propose un prix proportionnel au nombre d'entrées ?
+C'est le tarif \og Classique \fg{} qui propose un prix proportionnel au nombre d'entrées (la fonction $h$ est linéaire).
+\item Pour les questions suivantes, aucune justification n'est attendue.
+	\begin{enumerate}
+		\item %Avec $150$~\euro, combien peut-on acheter d'entrées au maximum avec le tarif \og Essentiel \fg ?
+La droite horizontale d'équation $y = 150$ coupe la droite $(d_2)$ au point d'abscisse 20. 
+On peut acheter 20 places au maximum au tarif \og Essentiel \fg.
+		\item %À partir de combien d'entrées, le tarif \og Liberté \fg{} devient-il le tarif le plus intéressant?
+La droite horizontale d'équation $y = 240$ coupe la droite $(d_2)$ au point d'abscisse 38.  .À partir de 39 places le tarif \og Liberté\fg est le moins onéreux.
+		\item %Si on décide de ne pas dépasser un budget de $200$~\euro, quel est le tarif qui permet d'acheter le plus grand nombre d'entrées ?
+		La dernière droite coupée par la droite d'équation $y = 200$ est la droite $(d_2)$.
+		
+		Pour 200~\euro{} c'est le tarif \og Essentiel \fg{} qui donne le plus grand nombre de places.
+	\end{enumerate}
+\end{enumerate}
+	

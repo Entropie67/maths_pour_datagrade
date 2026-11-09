@@ -1,0 +1,133 @@
+
+\medskip
+
+Les tableaux ci-dessous présentent trois figures et trois programmes de construction.
+
+\medskip
+
+\begin{tabularx}{\linewidth}{| *3{>{\centering\arraybackslash}X|}}
+\hline
+\textbf{Figure 1} & \textbf{Figure 2}  & \textbf{Figure 3} \\
+\hline
+\psset{unit=0.6cm}
+\def\xmin{0}   \def\xmax{3} \def\ymin{-0.5}   \def\ymax{5.5}
+\begin{pspicture}(\xmin,\ymin)(\xmax,\ymax)
+%\psgrid[subgriddiv=1, gridlabels=0, gridcolor=lightgray]
+%\psaxes[labelFontSize=\scriptstyle, ticksize=-0pt 0pt](0,0)(\xmin,\ymin)(\xmax,\ymax)
+\pspolygon(0,4.5)(2,4.5)(2,0)
+\end{pspicture}
+&
+\psset{unit=0.6cm}
+\def\xmin{0}   \def\xmax{3} \def\ymin{-0.5}   \def\ymax{5.5}
+\begin{pspicture}(\xmin,\ymin)(\xmax,\ymax)
+%\psgrid[subgriddiv=1, gridlabels=0, gridcolor=lightgray]
+%\psaxes[labelFontSize=\scriptstyle, ticksize=-0pt 0pt](0,0)(\xmin,\ymin)(\xmax,\ymax)
+\psframe(0,0)(3,5)
+\end{pspicture}
+&
+\psset{unit=0.6cm}
+\def\xmin{0}   \def\xmax{3} \def\ymin{-0.5}   \def\ymax{5.5}
+\begin{pspicture}(\xmin,\ymin)(\xmax,\ymax)
+%\psgrid[subgriddiv=1, gridlabels=0, gridcolor=lightgray]
+%\psaxes[labelFontSize=\scriptstyle, ticksize=-0pt 0pt](0,0)(\xmin,\ymin)(\xmax,\ymax)
+\psframe(0,1)(3,4)
+\end{pspicture}\\
+\hline
+\multicolumn{3}{c}{~}\\
+\hline
+\textbf{Programme 1} & \textbf{Programme 2} & \textbf{Programme 3}\\
+\hline
+~\newline
+\scalebox{0.7}{
+\begin{scratch}
+\blockinit{quand \greenflag est cliqué}
+\blockmove{s'orienter à \ovalnum{90}}
+\blockmove{aller à x: \ovalnum{0} y: \ovalnum{0}}
+\blockpen{stylo en position d'écriture}
+\blockrepeat{répéter \ovalnum{4} fois}
+{\blockmove{avancer de \ovalnum{60} pas}
+\blockmove{tourner \turnright{} de \ovalnum{90} degrés}
+}
+\end{scratch}}
+&
+~\newline
+\scalebox{0.7}{
+\begin{scratch}
+\blockinit{quand \greenflag est cliqué}
+\blockmove{s'orienter à \ovalnum{90}}
+\blockmove{aller à x: \ovalnum{0} y: \ovalnum{0}}
+\blockpen{stylo en position d'écriture}
+\blockmove{avancer de \ovalnum{50} pas}
+\blockmove{tourner \turnright{} de \ovalnum{90} degrés}
+\blockmove{avancer de \ovalnum{90} pas}
+\blockmove{aller à x: \ovalnum{0} y: \ovalnum{0}}
+\end{scratch}}
+&
+~\newline
+\scalebox{0.7}{
+\begin{scratch}
+\blockinit{quand \greenflag est cliqué}
+\blockmove{s'orienter à \ovalnum{90}}
+\blockmove{aller à x: \ovalnum{0} y: \ovalnum{0}}
+\blockpen{stylo en position d'écriture}
+\blockrepeat{répéter \ovalnum{2} fois}
+{\blockmove{avancer de \ovalnum{60} pas}
+\blockmove{tourner \turnright{} de \ovalnum{90} degrés}
+\blockmove{avancer de \ovalnum{90} pas}
+\blockmove{tourner \turnright{} de \ovalnum{90} degrés}
+}
+\end{scratch}}
+~\newline\\
+\hline
+\end{tabularx}
+
+\begin{enumerate}
+\item  On associe chacune des figures à son programme correspondant.
+
+\begin{center}
+\begin{tabularx}{0.8\linewidth}{|c|  *3{>{\centering\arraybackslash}X|}}
+\hline
+Figure 1 & Figure 2 & Figure 3 \\
+\hline
+Programme 2 & Programme 3 & Programme 1   \\
+\hline
+\end{tabularx}
+\end{center}
+
+\item On complète les lignes 2 et 5 du programme pour obtenir la figure constituée de trois carrés identiques. Le bloc « Tracer carré » permet de tracer un carré de 60 pas de côté.
+
+\begin{multicols}{2}
+\begin{center}
+\vspace*{0pt}\vfill
+
+\scalebox{0.8}{
+\psset{unit=0.8cm,arrowsize=3pt 2}
+\def\xmin{0}   \def\xmax{9} \def\ymin{-1}   \def\ymax{3}
+\begin{pspicture}(\xmin,\ymin)(\xmax,\ymax)
+\psframe(0,0)(3,3) \psframe(3,0)(6,3) \psframe(6,0)(9,3) 
+\psline{<->}(0,-0.5)(3,-0.5) \uput[d](1.5,-0.5){60 pas}
+\end{pspicture}
+}
+% fin du  scalebox
+
+\vfill
+
+\vspace*{0pt}
+
+\end{center}
+
+\columnbreak
+
+\hspace*{1cm}\scalebox{0.8}{
+\begin{scratch}[num blocks]
+\blockinit{quand \greenflag est cliqué}
+\blockrepeat{répéter \ovalnum{\red 3} fois}
+{\blocklist{Tracer carré}
+\blockpen{relever le stylo}
+\blockmove{avancer de \ovalnum{\red 60} pas}
+}
+\end{scratch}
+}% fin du scalebox
+\end{multicols}
+\end{enumerate}
+

@@ -1,0 +1,82 @@
+Voici deux programmes de calcul :
+
+\begin{center}
+	\begin{minipage}{0.48\textwidth}
+		\centering \textbf{Programme A}
+
+		\begin{center}
+			%Début Tikz
+			%\begin{tikzpicture}[node distance=0.8cm and 0.6cm, every node/.style={draw, align=center, rectangle}]
+			%  \node (start) {Choisir un nombre};
+			%  \node (add) [below left=of start] {Ajouter 6};
+			%  \node (sub) [below right=of start] {Soustraire 4};
+			%  \node (mult) [below=1.4cm of start] {Multiplier les\\deux nombres obtenus};
+			%  \draw[-{Stealth[]}] (start) -- (add);
+			%  \draw[-{Stealth[]}] (start) -- (sub);
+			%  \draw[-{Stealth[]}] (add) -- (mult);
+			%  \draw[-{Stealth[]}] (sub) -- (mult);
+			%\end{tikzpicture}
+			%Fin Tikz
+			%Début PSTricks
+			\psset{unit=1cm,arrowsize=2pt 3}
+			\begin{pspicture}(-3.5,0)(3.5,4)
+				\rput(0,3.5){\fbox{Choisir un nombre}}\psline{->}(-0.6,3.2)(-2.1,2.5)
+				\rput(-2,2.2){\fbox{Ajouter 6}}
+				\rput(2,2.2){\fbox{Soustraire 4}}\psline{->}(0.8,3.2)(2,2.5)
+				\rput(0,0.9){Multiplier les}\psline{->}(-2,1.9)(-0.8,1.1)
+				\rput(0,0.6){deux nombres obtenus}\psline{->}(2,1.9)(0.8,1.1)
+				\psframe(-2,0.4)(2,1.1)
+			\end{pspicture}
+			%Fin PSTricks
+		\end{center}
+	\end{minipage}
+	\hfill
+	\begin{minipage}{0.48\textwidth}
+		\centering \textbf{Programme B}\\[0.3em]
+		\begin{flushleft}
+			\textbullet~\ Choisir un nombre.\\
+			\textbullet~\ Calculer le carré de ce nombre.\\
+			\textbullet~\ Soustraire 9.
+		\end{flushleft}
+	\end{minipage}
+\end{center}
+
+\begin{enumerate}
+	\item On choisit 1 comme nombre de départ. Vérifier que le résultat obtenu avec le programme A est $- 21$.
+	\item On choisit 10 comme nombre de départ. Calculer le résultat obtenu avec le programme B.
+	\item Donner tous les nombres de départ possibles qui permettent d'obtenir 16 avec le programme B.
+	\item \textbf{(Question algorithmique)}
+
+	\begin{minipage}{0.38\linewidth}
+		Le programme ci-contre a été conçu avec le logiciel Scratch.
+
+		Recopier et compléter sur la copie les lignes 3, 4 et 5 pour qu'il affiche le résultat obtenu avec le programme A lorsqu'un nombre de départ est saisi.
+
+		\emph{Aucune justification n'est attendue.}
+	\end{minipage}\hfill
+	\begin{minipage}{0.58\linewidth}
+		\begin{scratch}[scale=0.8,numblocks]
+			\blockinit{Quand \greenflag est cliqué}
+			\blocksensing{demander \ovalnum{choisir un nombre} et attendre}
+			\blockvariable{mettre \selectmenu{Valeur 1} à \ovaloperator{\ovalvariable{réponse} + \ovalnum{}}}
+			\blockvariable{mettre \selectmenu{Valeur 2} à \ovaloperator{\ovalvariable{réponse} - \ovalnum{}}}
+			\blockvariable{mettre \selectmenu{Résultat} à \ovalnum{} * \ovalnum{}}
+			\blocklook{dire \ovaloperator{regrouper\ovalnum{ Le résultat du programme A est} et {\ovalvariable{Résultat}}}}
+		\end{scratch}
+	\end{minipage}
+	%\begin{tabular}{|c|l|}
+	%\hline
+	%1 & Quand [drapeau vert] est cliqué \\
+	%2 & demander \texttt{(Choisir un nombre)} et attendre \\
+	%3 & mettre \texttt{Valeur 1} à \texttt{(réponse) + ( \ \ )} \\
+	%4 & mettre \texttt{Valeur 2} à \texttt{(réponse) -- ( \ \ )} \\
+	%5 & mettre \texttt{Résultat} à \texttt{( \ \ ) * ( \ \ )} \\
+	%6 & dire \texttt{(regrouper(Le résultat du programme A est) et (Résultat))} \\
+	%\hline
+	%\end{tabular}
+	%
+	%\emph{(Lignes 3, 4 et 5 à compléter par le candidat avec les valeurs manquantes.)}
+
+	\item On choisit $x$ comme nombre de départ. Montrer que le résultat obtenu avec le programme A est $x^2 + 2x - 24$.
+	\item On cherche quel nombre de départ choisir pour que les programmes A et B donnent le même résultat. Écrire une équation permettant d'obtenir ce nombre de départ, puis la résoudre.
+\end{enumerate}

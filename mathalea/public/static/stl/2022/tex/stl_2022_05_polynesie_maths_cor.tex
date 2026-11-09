@@ -1,0 +1,112 @@
+
+\medskip
+
+\textbf{Question 1}
+
+\medskip
+
+\begin{enumerate}
+\item $\displaystyle\lim_{t \to +\infty} f(t) = \displaystyle\lim_{t \to +\infty} a \e^{-t} + b = b$ car $\displaystyle\lim_{t \to +\infty} \e^{-t} = 0$ donc $b = 0,715$
+\item 
+\begin{align*}
+f(0) &= 0 \\
+\iff a \e^{0} + 0,715 &= 0 \\
+\iff a + 0,715 &= 0 \\
+\iff a &= -0,715
+\end{align*}
+\end{enumerate}
+
+\bigskip
+
+\textbf{Question 2}
+
+\medskip
+
+Pour tout nombre réel $t \geqslant 0$ :
+\begin{align*}
+\e^{-t} &> 0 \\
+\iff -0,715 \e^{-t} &< 0 \\
+\iff -0,715 \e^{-t} + 0,715 &< 0 + 0,715
+\end{align*}                   
+soit $f(t) < 0,715$.
+
+\bigskip
+
+\textbf{Question 3}
+
+\medskip
+
+\begin{enumerate}
+\item $f'(t) = -0,715 \times (-1) \times \e^{-t} + 0 = 0,715 \e^{-t}$	
+
+\item $0,715 >0$ et $\e^{-t} > 0$ donc $f'(t) > 0$ sur $[0~;~+\infty[$.
+
+Donc $f$ est strictement croissante sur $[0~;~+\infty[$.
+\end{enumerate}
+
+\bigskip
+
+\textbf{Question 4}
+
+\medskip
+
+\begin{align*}
+f(t) &= \dfrac{0,715}{2} \\
+\iff -0,715 \e^{-t} + 0,715 &= \dfrac{0,715}{2} \\
+\iff -0,715 \e^{-t} &= \dfrac{0,715}{2} - 0,715 \\
+\iff -0,715 \e^{-t} &= -0,3575 \\
+\iff \e^{-t} &= \dfrac{-0,3575}{-0,715} \\
+\iff \e^{-t} &= 0,5 \\
+\iff -t &= \ln(0,5) \\
+\iff t &= -\ln(0,5) \\
+\iff t &\approx 0,693
+\end{align*}
+ 
+$0,693 \times 60 = 41,58 $ et $0,58 \times 60 = 34,8$ soit 41 minutes et 35 secondes.
+
+\bigskip
+
+\textbf{Question 5}
+
+\medskip
+
+On cherche $t$, au $1/60$ème d'heure près,tel que $y$ soit supérieur ou égal à $0,15 \times 0,715 = 0,10725$.
+
+A l'aide du grapheur / du mode python de la calculatrice, ou du calcul suivant :
+\begin{align*}
+y &\geqslant 0,10725 \\
+\iff -0,715 \e^{-t} + 0,715 &\geqslant 0,10725 \\
+\iff -0,715 \e^{-t} &\geqslant 0,10725 - 0,715 \\
+\iff -0,715 \e^{-t} &\geqslant -0,60775 \\
+\iff \e^{-t} &\leqslant \dfrac{-0,60775}{-0,715} \\
+\iff \e^{-t} &\leqslant 0,85 \\
+\iff -t &\leqslant \ln(0,85) \\
+\iff t &\geqslant -\ln(0,85) \\
+\iff t &\approx 0,163
+\end{align*}
+Comme $\dfrac{9}{60} < 0,163 < \dfrac{10}{60}$ alors {\ttfamily temps(0.15)} renvoie $t = \dfrac{1}{6}$ d'heure, soit 10 minutes.
+
+\medskip
+
+Au bout de 10 minutes $15\%$ de la charge est effectuée.
+
+\bigskip
+
+\textbf{Question 6}
+
+\medskip
+
+\begin{enumerate}
+\item $F'(t) = 0,715  + 0,715 \times (-1) \times \e^{-t} = f(t)$		
+	
+Donc $F$ est bien une primitive de $f$ sur $[0~;~+\infty[$.
+
+\item $F(3,5) \approx 2,524$ et $F(0) = 0,715$ d'où :
+\[m = \dfrac{1}{3,5} (2,524 -0,715) \approx 0,517,\]
+
+et $\dfrac{0,517}{0,715} \approx 0,72$ soit $72\% > 50\%$.
+\end{enumerate}
+
+\bigskip
+
+

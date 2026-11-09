@@ -1,0 +1,62 @@
+
+\begin{center}
+\textbf{Hydrolyse du saccharose}
+\end{center}
+
+L'hydrolyse du saccharose en solution aqueuse peut être modélisée par la réaction d'équation suivante :
+\[\text{C}_{12}\text{H}_{22}\text{O}_{11}(\text{aq}) + \text{H}_2\text{O}(\text{l}) \to  \text{C}_6\text{H}_{12}\text{O}_6(\text{aq}) + \text{C}_6\text{H}_{12}\text{O}_6(\text{aq})\]
+
+L'évolution de la concentration du saccharose au cours du temps suit une loi de vitesse d'ordre 1, modélisée par la relation :
+\[\ln[A] = \ln[A]_0 - kt,\]
+
+où :
+\begin{itemize}
+    \item $[A]$ est la concentration de saccharose au temps $t$ (en secondes),
+    \item $k$ est la constante de vitesse de la transformation chimique (en s$^{-1}$),
+    \item $[A]_0$ est la concentration initiale (en mol\cdot L$^{-1}$).
+\end{itemize}
+
+\medskip
+
+On considère une canette de soda de concentration initiale en quantité de matière de saccharose [A]$_0 = 0,3$ mol\cdot L$^{-1}$. Une étude expérimentale de la transformation au cours du temps du saccharose dans celle-ci a permis de tracer la représentation de l'évolution de sa concentration [A] en fonction du temps ci-dessous.
+
+\begin{center}
+\psset{xunit=4cm,yunit=2cm,labelFontSize=\scriptstyle,comma=true}
+\begin{pspicture}(-0.4,-3.2)(3.1,0.5)
+\multido{\n=0+0.10}{31}{\psline[linewidth=0.75pt,linecolor=lightgray](\n,-3)(\n,0)}
+\multido{\n=-3+0.10}{31}{\psline[linewidth=0.75pt,linecolor=lightgray](0,\n)(3,\n)}
+\multido{\n=0+0.50}{7}{\psline[linewidth=0.75pt,linecolor=gray](\n,-3)(\n,0)}
+\multido{\n=-3+0.50}{7}{\psline[linewidth=0.75pt,linecolor=gray](0,\n)(3,\n)}
+\psaxes[linewidth=0.95pt,Dx=0.50,Dy=0.50,xlabelPos=top]{-}(0,0)(3.05,-3.1)
+\psdots[dotstyle=x,dotscale=1.9, linecolor=red](0,-1.2)(0.5,-1.49)(1,-1.77)(2,-2.41)(2.5,-2.66)
+\uput[u](1.5,0.3){temps $t \left(\times 10^6 \text{ s} \right)$}
+\uput[dl](-0.3,-0.5){\rotatebox{90}{$\ln([\text{A}])$ en mol$\cdot\mathrm{L}^{-1}$}}
+% \def\Func{x -0.605 mul -1.2 add}
+% \psplot[plotpoints=1000,linewidth=1.25pt,linecolor=blue]{0}{3}{\Func}
+\end{pspicture}
+
+Évolution temporelle du logarithme de la concentration en saccharose
+\end{center}
+
+\begin{enumerate}[start=4]
+\item Déterminer, à l'aide du graphique ci-dessus, la valeur de la constante de vitesse $k$ de cette réaction.
+\end{enumerate}
+
+Par la suite, on note $f$ la fonction définie sur l'intervalle $[0~;~+\infty[$ modélisant, en fonction du temps $t$, exprimé en secondes, la concentration de saccharose $f(t)$, exprimée en mol\cdot L$^{-1}$.
+
+Pour une évolution de la concentration donnée par une relation d'ordre 1, les données physiques de l'expérience conduisent à résoudre l'équation différentielle $(E)$ :
+
+\[y' = -6 \times 10^{-7}y\]
+
+\begin{enumerate}[resume]
+\item Déterminer la fonction $f$ solution de l'équation différentielle $(E)$ telle que $f(0) = 0,3$.
+
+Par la suite, la fonction $f$ est définie sur l'intervalle $[0~;~+\infty[$ par :
+\[f(t) = 0,3 \e^{-6 \times 10^{-7}t}\]
+
+\item Calculer la concentration en quantité de matière de saccharose dans la canette de soda au bout de $60$ jours. Commenter le résultat.
+\end{enumerate}
+
+\bigskip
+
+

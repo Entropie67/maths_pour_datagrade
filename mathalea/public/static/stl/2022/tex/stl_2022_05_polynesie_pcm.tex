@@ -1,0 +1,54 @@
+
+\begin{center}
+\textbf{Séparation par électrophorèse}
+\end{center}
+
+Découverte en 1892 par S.E. Linder et H. Picton puis développée dans les années 1930 par le chimiste suédois Arne Tiselius (Prix Nobel de chimie en 1948), l'électrophorèse est, avec la chromatographie, la principale technique utilisée pour séparer ou caractériser les espèces ioniques d'intérêt biologique, comme les acides aminés.
+
+\smallskip
+
+On désire séparer deux acides aminés, l'acide aspartique et l'acide glutamique, par électrophorèse.
+
+\medskip
+
+Les acides aminés, sous forme anionique au pH imposé (ion aspartate et ion glutamate), migrent vers une électrode positive sous l'effet d'une force électrostatique.
+
+\medskip
+
+La vitesse $v$ de migration de l'anion considéré est solution de l'équation différentielle :
+
+\[\dfrac{\text{d}v}{\text{d}t} + \dfrac km \times v = \dfrac{e \times E}{m}\]
+
+\medskip
+
+Où :
+\begin{itemize}
+\item $m$ : masse de l'ion concerné ;
+\item $E$ : intensité du champ électrostatique ;
+\item $e$ : valeur absolue de la charge portée par chaque anion d'acide aspartique ou d'acide glutamique ;
+\item $k$ : coefficient caractéristique du constituant et du milieu dans lequel s'effectue la migration ;
+\item $v$ : vitesse de migration de l'ion concerné en mètre par seconde (m\cdot s$^{-1}$) ;
+\item $t$ : temps exprimé en seconde (s).
+\end{itemize}
+
+\medskip
+
+Pour l'ion d'acide aspartique, l'équation différentielle ci-dessus peut s'écrire sous la forme :
+
+\[v'= - 1,3 \times 10^{13}v + 3,9\times 10^8.\]
+
+\medskip
+
+\begin{enumerate}
+\item Déterminer la solution générale $v$ de cette équation différentielle définie sur $[0~;~+\infty[$.
+\item Sachant que $v(0) = 0$, montrer que, pour tout $t \in [0~;~+\infty[$,
+
+\[v(t) = 3 \times 10^{-5} \left(1 - \e^{-1,3 \times 10^{13}t}\right).\]
+
+\item Justifier que $\displaystyle\lim_{t \to +\infty}  v(t) = 3 \times 10^{-5}$.
+\item On note $t_{90}$ l'instant exprimé en seconde pour lequel la vitesse atteint 90\,\% de sa vitesse limite. Montrer que $t_{90} = 1,8 \times 10^{-13}$ arrondi à $10^{-14}$.
+\end{enumerate}
+
+\bigskip
+
+

@@ -1,0 +1,35 @@
+
+\medskip
+
+\begin{enumerate}
+\item Limite de $h$ en $-\infty$.
+
+$\left.
+\begin{array}{l}
+\ds\lim_{x\to -\infty} x^2 = +\infty\\
+\ds\lim_{x\to -\infty} \e^{-x}=+\infty
+\end{array}
+\right \}
+\text{ donc par produit, } \ds\lim_{x\to -\infty} h(x) = +\infty$
+
+\item $\displaystyle\lim_{x \to + \infty}  h(x) = \ds\lim_{x \to + \infty} x^2\e^{-x} = \ds\lim_{x \to + \infty} \dfrac{x^2}{\e^{x}}$
+
+D'après le cours, on sait que pour $n\geqslant 1$, on a $\ds\lim_{x \to + \infty} \dfrac{\e^{x}}{x^n}=+\infty$ donc $\ds\lim_{x \to + \infty} \dfrac{\e^{x}}{x^2}=+\infty$.
+
+On en déduit que $\ds\lim_{x \to + \infty} \dfrac{x^2}{\e^{x}}=0$ et donc que $\ds\lim_{x \to + \infty} h(x)=0$.
+
+\item Programme python complété :
+\begin{center}
+\fbox{
+\begin{tabularx}{0.4\linewidth}{X}%\hline
+from math import exp\\
+~\\
+def sol\_bal(n) \\
+\qquad x = 2\\
+\qquad while {\blue x**2*exp(-x)} > 0,5\\
+\qquad\qquad x = {\blue x+10**(-n)}\\
+\qquad return x\\ %\hline
+\end{tabularx}}
+\end{center}
+\end{enumerate}
+

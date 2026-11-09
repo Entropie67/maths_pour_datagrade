@@ -1,0 +1,75 @@
+%source mathadata
+\begin{MADenumerate}
+			\item \begin{enumerate}
+				\item Voir graphique
+				\item En remplaçant $x$ par $x_M=20$ dans l'équation de la droite $\mathcal{D}$, on obtient $y=2*20+40=80$ soit $y_M$.
+			\end{enumerate}
+			\item Pour $N(40;120)$ : $y=2*40+40=120$ soit $y_N$. On observe que le point $N$ est sur la droite $\mathcal{D}$.\\
+			Pour $P(60;80)$ : $y=2*60+40=160$ et $y_P=80$. Le point $P$ est en dessous de la droite $\mathcal{D}$.\\
+			Pour $Q(0;100)$ : $y=2\times 0+40=40$ et $y_Q=100$. Le point $Q$ est au-dessus de la droite $\mathcal{D}$.
+			\item Pour le point $R(100;230)$ : $y=2*100+40=240$ et $y_R=230$. Le point $R$ n'est pas sur la droite.
+			\item Pour le point $S(45;y_S)$ : $y_S=2*45+40=130$. Le point $S$ a pour coordonnées $(45;130)$.
+			\item On peut prendre un point sur la droite par lecture et vérifier si la condition $y=mx+p$ est vérifiée.
+			On obtient comme candidat possible $y=0,5x$, mais également $2y=x$.
+		\end{MADenumerate}
+		\begin{tikzpicture}[scale=1]
+			\begin{axis}[
+					name=plotA,
+					axis lines=middle,
+					ymajorgrids=true,
+					xmajorgrids=true,
+					xmin=-1.1,
+					xmax=180,
+					ymin=-0.1,
+					ymax=180,
+					xtick={20,40,...,180},
+					ytick={20,40,...,180},
+					xlabel={\Large {\color{red} $x$}},
+					xlabel style={at={(axis description cs:1.02,-0.1)}, anchor=north},
+					ylabel={\color{blue}{\Large $y$}},
+					ylabel style={at={(axis description cs:-0.2,1.02)}, anchor=west},
+				]
+				% Coordonnées cohérentes dans le repère (0 à 180)
+				\node (A) at (0,0){};
+				\node (B) at (180,90){};
+				\node (C) at (180,0){};
+				\node (D) at (0,0){};
+				\draw[thick,pattern=checkerboard, pattern color=BleuCeladon,opacity=0.2] (A.center) -- (B.center) -- (C.center) -- (D.center) -- cycle;
+				\draw[thick,color=black] (A.center) -- (B.center) ;
+
+				\node (A) at (0,0){};
+				\node (B) at (0,40){};
+				\node (C) at (180,400){};
+
+				\node (D) at (180,90){};
+				\draw[thick,pattern=bricks, pattern color=OrangeCarotte,opacity=0.2] (A.center) -- (B.center) -- (C.center) -- (D.center) -- cycle;
+
+				\draw[thick,color=black] (A.center) -- (B.center) ;
+
+				\node (A) at (0,40){};
+				\node (B) at (180,400){};
+				\node (C) at (0,400){};
+
+				\draw[thick,pattern=dots, pattern color=VertMenthe,opacity=0.5] (A.center) -- (B.center) -- (C.center) -- cycle;
+				% Nouvelle légende claire et alignée
+				\begin{scope}[shift={(4,6)}]
+					% Encadré autour de la légende, placé à la position (150, 100)
+					\node[draw, rounded corners, fill=white] (legend) at (150, 140) {
+						\begin{tikzpicture}[scale=0.7]
+							% Rectangle zone A (orange, motif briques)
+							\draw[thick,pattern=checkerboard, pattern color=BleuCeladon, opacity=0.2] (0,0) rectangle (20,20);
+							\node[anchor=west] at (20.2,10) {zone C};
+							% Rectangle zone B (bleu, motif damier)
+							\draw[thick,pattern=bricks, pattern color=OrangeCarotte, opacity=0.2] (0,-30) rectangle (20,-10);
+							\node[anchor=west] at (20.2,-20) {zone B};
+							% Rectangle zone C (vert, motif points)
+							\draw[thick,pattern=dots, pattern color=VertMenthe, opacity=0.5] (0,-60) rectangle (20,-40);
+							\node[anchor=west] at (20.2,-50) {zone A};
+						\end{tikzpicture}
+					};
+				\end{scope}
+			\end{axis}
+			\draw (0,0) node[below left]{\footnotesize $O$};
+			%\clip(-0.2,-0.2) rectangle (8,6);
+
+		\end{tikzpicture}

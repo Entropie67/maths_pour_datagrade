@@ -1,0 +1,37 @@
+\begin{enumerate}
+    \setlength{\itemsep}{-1mm}
+    \item L’entier 4 216 est-il un multiple de 17 ? Justifier.
+    \item Guillaume veut revoir sa leçon en prenant son petit déjeuner. Malheureusement, il a renversé son chocolat sur sa feuille. Le chiffre des unités et la justification de l’exemple du maître, sont illisibles\dots
+       \begin{center}
+          \hskip-3cm \Large{2 29 \psellipse[fillstyle=solid,fillcolor=brown,linecolor=brown](0.25,0.2)(0.4,0.6) \qquad est divisible par 3 car \pscurve*[linecolor=brown](0,-0.5)(0.3,0.9)(1,1)(2,0.6)(4,0.7)(3,-0.5)(2,-0.3)(1,-0.2)(0.5,-0.4)}
+       \end{center}
+       \begin{enumerate}
+          \setlength{\itemsep}{-1mm}
+          \item Rappeler le critère de divisibilité par 3.
+          \item Donner toutes les valeurs possibles du chiffre des unités, caché par la tâche située à gauche.
+       \end{enumerate}
+    \item On admet qu’un nombre entier n est divisible par 7 si et seulement si la différence entre son nombre de dizaines et le double de son chiffre des unités est un multiple 7, positif ou négatif. \newline 
+       Par exemple, 294 est divisible par 7 car $29-4\times2=21$, et 21 est divisible par 7.
+       \begin{enumerate}
+          \setlength{\itemsep}{-1mm}
+          \item En détaillant les étapes, vérifier que 413 est bien divisible par 7 en utilisant le critère indiqué ci-dessus.
+          \item Le nombre 5 292 est-il divisible par 7 ? Répondre en appliquant, plusieurs fois si nécessaire, le critère précédent.
+          \item Pour déterminer si 1 138 984 est divisible par 7, on utilise le critère précédent à l’aide d’un tableur. \newline
+             On rappelle que la fonction \texttt{ENT} renvoie la partie entière d’un nombre. \vspace*{-5mm}
+             \begin{center}
+                \begin{pspicture}(0,0)(11,0)
+                   \psframe[fillstyle=solid,fillcolor=white,linecolor=white](0.08,-3.82)(10.92,-0.18)
+                \end{pspicture}
+                \begin{Tableur}[LargeurUn=20mm,Largeur=20mm,Cellule=B1,Colonne=2,Ligne=1,Formule=ENT(A1/10)]
+                   {\raggedleft} 1138984 & {\raggedleft 113898} & {\raggedleft 4} & \multicolumn{1}{r}{113890} \\
+                   {\raggedleft} 113890 & {\raggedleft 11389} & {\raggedleft 0} & \multicolumn{1}{r}{11389} \\
+                   {\raggedleft} 11389 & {\raggedleft 1138} & {\raggedleft 9} & \multicolumn{1}{r}{1120} \\
+                   {\raggedleft} 1120 & {\raggedleft 112} & {\raggedleft 0} & \multicolumn{1}{r}{112} \\
+                   {\raggedleft} 112 & {\raggedleft 11} & {\raggedleft 2} & \multicolumn{1}{r}{7} \\
+                \end{Tableur}
+             \end{center}
+             Dans la cellule \texttt{B1} on a saisi la formule : << \texttt{= ENT(A1/10)} >>. \newline
+             Observer la feuille de calcul puis indiquer des formules ayant pu être saisies dans les cellules \texttt{C1} et \texttt{D1} qui, étirées vers le bas de la feuille de calcul, permettent d’obtenir directement la feuille de calcul ci-dessus.
+          \item Le nombre 1 138 984 est-il divisible par 7 ? Justifier en interprétant les résultats fournis par la feuille de calcul.
+       \end{enumerate}
+ \end{enumerate}

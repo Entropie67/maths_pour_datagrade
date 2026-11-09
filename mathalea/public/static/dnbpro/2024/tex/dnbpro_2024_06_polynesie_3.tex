@@ -1,0 +1,78 @@
+
+\medskip
+
+Sur un arbre, la plateforme de départ d'une tyrolienne (point K) est située à 8 m de
+hauteur. La plateforme d'arrivée de la tyrolienne (point L) est située à un niveau plus
+bas, accrochée à un second arbre.
+
+Les deux arbres supportant les plateformes sont perpendiculaires au sol et situés à
+40 m l'un de l'autre.
+
+Une tyrolienne va de la plateforme K et à la plateforme L sur une distance totale de
+$40,3$ m.
+
+\begin{center}
+\psset{xunit=0.8cm,yunit=0.6cm,radius=2pt,arrowsize=3pt 3}
+\def\xmin{-2}   \def\xmax{15} \def\ymin{-2}   \def\ymax {8}
+\begin{pspicture}(\xmin,\ymin)(\xmax,\ymax)
+%\psgrid[subgriddiv=1, gridlabels=0, gridcolor=gray, subgridcolor=lightgray]
+\psframe[fillstyle=solid,fillcolor=lightgray!20](0,0)(-1,8) 
+\psframe[fillstyle=solid,fillcolor=lightgray!20](14,0)(13,8) 
+\psline[linewidth=1.2pt](-3,0)(16,0) 
+\psline[linewidth=1.2pt](0,7)(13,5)% \uput[u](6.5,6){$\cdots$ m}
+\psline{<->}(0,1)(13,1) \uput[u](6.5,1){40 m} \uput[d](6.5,0){SOL}
+\psline[linestyle=dashed](0,5)(14,5)
+\uput[d](13,0){S} \uput[ur](0,7){K} \uput[dr](0,5){O} \uput[ul](13,5){L}
+\uput[d](11,-1){\emph{\textbf{Le schéma n'est pas à l'échelle}}}
+\uput[r](1,7.5){Départ} \uput[l](13,4){Arrivée}
+\psframe(0,0)(0.3,0.4) \psframe(13,0)(12.7,0.4) \psframe(0,5)(0.3,5.4) 
+%\psline{<->}(-1.5,0)(-1.5,7) \uput[l](-1.5,3.5){$\cdots$ m}
+\end{pspicture}
+\end{center}
+
+\begin{enumerate}
+\item Compléter le schéma ci-dessous  avec les données ci-dessus.
+
+\begin{center}
+\psset{xunit=0.8cm,yunit=0.6cm,radius=2pt,arrowsize=3pt 3}
+\def\xmin{-3}   \def\xmax{16} \def\ymin{-2}   \def\ymax {9}
+\begin{pspicture}(\xmin,\ymin)(\xmax,\ymax)
+%\psgrid[subgriddiv=1, gridlabels=0, gridcolor=gray, subgridcolor=lightgray]
+\psframe[fillstyle=solid,fillcolor=lightgray!20](0,0)(-1,8) 
+\psframe[fillstyle=solid,fillcolor=lightgray!20](14,0)(13,8) 
+\psline[linewidth=1.2pt](-3,0)(16,0) 
+\psline[linewidth=1.2pt](0,7)(13,5) \uput[u](6.5,6){$\cdots$ m}
+\psline{<->}(0,1)(13,1) \uput[u](6.5,1){40 m} \uput[d](6.5,0){SOL}
+\psline[linestyle=dashed](0,5)(14,5)
+\uput[d](13,0){S} \uput[ur](0,7){K} \uput[dr](0,5){O} \uput[ul](13,5){L}
+\uput[d](11,-1){\emph{\textbf{Le schéma n'est pas à l'échelle}}}
+\uput[r](1,7.5){Départ} \uput[l](13,4){Arrivée}
+\psframe(0,0)(0.3,0.4) \psframe(13,0)(12.7,0.4)  \psframe(0,5)(0.3,5.4)
+\psline{<->}(-1.5,0)(-1.5,7) \uput[l](-1.5,3.5){$\cdots$ m}
+\end{pspicture}
+\end{center}
+
+\item Calculer la hauteur KO dans le triangle KOL rectangle en O.\\
+Arrondir le résultat au dixième.
+\end{enumerate}
+
+On admet que KO = $4,9$ m.
+
+\begin{enumerate}[resume]
+\item Calculer à quelle hauteur LS se trouve la plateforme d'arrivée.
+\end{enumerate}
+
+Pour des raisons de sécurité, la pente d'une tyrolienne ne doit pas dépasser 8\,\%. Le calcul de cette pente pour la tyrolienne représentée sur le schéma ci-dessus se fait à l'aide de la formule:
+
+\[\dfrac{\text{KO}}{\text{OL}}\times 100\]
+
+\hfill{} avec $\text{KO}=4,9$ m et $\text{OL}=40$ m\hfill~
+
+\begin{enumerate}[resume]
+\item Calculer la pente de la tyrolienne.
+\item Indiquer si les normes de sécurité sont respectées pour l'utilisation de la tyrolienne.\\
+ Justifier la réponse.
+\end{enumerate}
+
+\bigskip
+

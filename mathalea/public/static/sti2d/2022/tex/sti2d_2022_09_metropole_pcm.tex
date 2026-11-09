@@ -1,0 +1,67 @@
+
+\medskip
+
+\begin{center}
+\textbf{Une horloge au jus d'orange}
+\end{center}
+
+Pour mettre en évidence le principe de fonctionnement d'une pile, il est possible d'alimenter une horloge grâce à une pile rudimentaire constituée d'une électrode de cuivre et d'une électrode en magnésium plongeant dans du jus d'orange.
+
+En réalisant l'expérience les valeurs suivantes sont relevées :
+
+\medskip
+
+\renewcommand \arraystretch {1.5}
+\begin{center}
+\begin{tabular}[]{|l|l|}
+\hline
+Durée de fonctionnement maximale& Environ \np[h]{21} \\\hline
+Tension &\np[V]{1.52} \\\hline
+Intensité du courant électrique &\np[mA]{0,3} \\\hline
+\begin{minipage}{7cm}pH du jus d'orange au début et à la fin de l'expérience\end{minipage}&\begin{tabular}{l|l}Début: 3,9 &Fin : 6,5\end{tabular}\\
+\hline
+Volume du jus d'orange & \np[mL]{140} \\\hline
+\end{tabular}
+\end{center}
+
+Le but de cet exercice est de modéliser le fonctionnement de cette pile à l'aide d'un modèle mathématique en cohérence avec les résultats expérimentaux mesurés.
+
+\medskip
+
+On note $t$ le temps, exprimé en minute, écoulé depuis la mise en fonctionnement de la pile au jus d'orange.
+
+À l'aide d'une étude expérimentale, la valeur du pH en fonction du temps peut être modélisée par la fonction $f$ définie sur $[0~;~+\infty[$ par :
+
+\begin{center}
+$\displaystyle f(t) = 6,571- 2,671 \e^{-\frac{t}{ 261}}.$
+\end{center}
+
+Une représentation graphique de $f$ est donnée ci-dessous.
+
+\begin{center}
+\psset{xunit=0.0275cm,yunit=1.8cm,labelFontSize=\scriptstyle,comma=true}
+\begin{pspicture}(-2,-1)(500,4)
+\multido{\n=0+20}{25}{\psline[linewidth=0.75pt,linecolor=lightgray](\n,0)(\n,3.5)}
+\multido{\n=0+0.1}{36}{\psline[linewidth=0.75pt,linecolor=lightgray](0,\n)(490,\n)} 
+\psaxes[linewidth=0.95pt,Dx=100,Dy=0.5,Oy=3]{->}(0,0)(0,-0.1)(490,3.5)
+\psplot[linewidth=1.5pt,linecolor=blue,plotpoints=5000]{0}{490}{2.71828 x 261 div  neg  exp 2.671 mul neg 3.571 add}
+\uput[d](250,2.4){\blue $\mathcal{C}_f$}
+\uput [d](220,-0.3){temps (min)} \uput [u](250,3.54){Évolution du pH en fonction du temps}\uput[180]{90}(-35,1.3){pH}
+\end{pspicture}
+\end{center}
+
+\begin{enumerate}
+\item  Calculer $f(0)$. Interpréter ce résultat dans le contexte de l'expérience.
+\item 
+	\begin{enumerate}
+		\item Résoudre graphiquement l'équation $f(t) = 5$.
+
+Donner le résultat en heure et minute.
+		\item Résoudre algébriquement l'équation $f(t) = 5$. Donner le résultat arrondi à la minute. Comparer ce résultat à celui obtenu à la question \textbf{2. a.}
+	\end{enumerate}
+\item Calculer $\displaystyle \lim_{t\to +\infty} f(t)$. Le résultat est-il compatible avec les valeurs relevées lors de l'expérience ?
+\end{enumerate}
+
+\bigskip
+
+

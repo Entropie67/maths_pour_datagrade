@@ -1,0 +1,65 @@
+
+Voici un programme de calcul :
+
+\begin{figure}
+\begin{center}
+\psset{unit=1cm,arrowsize=2pt 3}
+\begin{pspicture}(-7,0)(7,8.4)
+%\psgrid
+\rput(0,0){\fbox{Résultat obtenu à l'arrivée}}
+\rput(0,2){\fbox{Multiplier les deux nombres}}
+\rput(-3,4){\fbox{Multiplier par 4}}\rput(3,4){\fbox{Soustraire 3}}
+\rput(-3,6){\fbox{Ajouter 2}}\rput(3,6){\fbox{Multiplier par 5}}
+\rput(0,8){\fbox{Nombre choisi au départ}}
+\psline[linewidth=1.5pt]{->}(0,7.7)(-3,6.3)\psline[linewidth=1.5pt]{->}(0,7.7)(3,6.3)
+\psline[linewidth=1.5pt]{->}(-3,5.7)(-3,4.3)\psline[linewidth=1.5pt]{->}(3,5.7)(3,4.3)
+\psline[linewidth=1.5pt]{->}(-3,3.7)(0,2.3)\psline[linewidth=1.5pt]{->}(3,3.7)(0,2.3)
+\psline[linewidth=1.5pt]{->}(0,1.7)(0,0.3)
+\end{pspicture}
+%\includegraphics[max width=\textwidth]{2024_05_30_e3637aa9ef1bd32cf3c8g-3}
+\end{center}
+\end{figure}
+
+\begin{enumerate}
+\item %Montrer que si on choisit 2 comme nombre de départ, le résultat à l'arrivée est 112.
+
+On a à gauche $2 \to 4 \to 16$ et à droite $2 \to 10 \to 7$ et le produit final $16 \times 7 = 112$.
+\item %Quel est le résultat obtenu à l'arrivée quand on choisit $-3$ comme nombre de départ ?
+À gauche $- 3 \to - 1 \to - 4$ et à droite $-3 \to - 15 \to - 18$ et le produit final : $- 4 \times (- 18) = 72$.
+\item On choisit $x$ comme nombre de départ.
+
+À gauche $x \to x + 2 \to 4(x + 2)$, à droite $x \to 5x \to 5x - 3$, donc le produit final est  :
+
+$4(x + 2)\times (5x - 3) = (4x + 8)(5x - 3)$, soit l'expression $C$ ou l'expression D/
+.
+
+%Parmi les expressions suivantes, lesquelles permettent d'exprimer le résultat à l'arrivée de ce programme de calcul. Aucune justification n'est demandée.
+%
+%\begin{center}
+%\begin{tabular}{|c|c|c|c|}
+%\hline
+%Expression $A$ & Expression $B$ & Expression $C$ & Expression $D$ \\
+%\hline
+%$(x + 2 \times 4)(x \times 5 - 3)$ & $(4 x+ 2)(5x - 3)$ & $(4 x + 8)(5x - 3)$ & $(x + 2) \times 4 \times(5 x - 3)$ \\
+%\hline
+%\end{tabular}
+%\end{center}
+
+\item Trouver les deux nombres de départ qui permettent d'obtenir 0 à l'arrivée. Expliquer la démarche.
+
+Il faut résoudre l'équation :
+
+$(4x + 8)(5x - 3) = 0 $, soit $\left\{\begin{array}{l c l}
+4x + 8&=&0\\5x - 3&=&0
+\end{array}\right.$ ou encore $\left\{\begin{array}{l c l}
+4x &=&- 8\\5x &=&3
+\end{array}\right.$ et enfin $\left\{\begin{array}{l c l}
+x &=&- 2\\x &=&\dfrac35
+\end{array}\right.$
+
+On obtient 0 à l'arrivée en partant de $- 2$ ou de $\dfrac35 = \dfrac{6}{10} = 0,6$.
+
+\item %Développer et réduire l'expression $B$.
+On a $B = (4 x+ 2)(5x - 3) = 20x^2  - 12x + 10x  - 6 = 20x^2  - 2x - 6 $.
+\end{enumerate}
+

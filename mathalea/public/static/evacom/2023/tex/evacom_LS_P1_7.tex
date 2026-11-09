@@ -1,0 +1,55 @@
+\medskip
+
+Un solide est constitué d’un cône et d’une pyramide à base carrée de $10$ centimètres de côté. Le
+cône et la pyramide ont le même volume. Sachant que le cône a un rayon de $10$ centimètres et une
+hauteur de $8$ centimètres, calcule la hauteur de la pyramide.
+Utilise $\pi=3$.
+
+\begin{tikzpicture}
+
+    \newcommand{\radiusx}{2}
+    \newcommand{\radiusy}{.5}
+    \newcommand{\height}{4}
+    \newcommand{\base}{1.5}
+
+    
+    \coordinate (a) at (-{\radiusx*sqrt(1-(\radiusy/\height)*(\radiusy/\height))},{\radiusy*(\radiusy/\height)});
+    
+    \coordinate (b) at ({\radiusx*sqrt(1-(\radiusy/\height)*(\radiusy/\height))},{\radiusy*(\radiusy/\height)});
+
+    \coordinate (c) at ({\base},{\height+3});
+    \coordinate (d) at ({-\base},{\height+3});
+    % Adjusted coordinates for perspective "cavaliere"
+    \coordinate (e) at ({-0.3},{\height+3+0.3*\base});
+    \coordinate (f) at ({0.3},{\height+3-0.3*\base});
+    
+    \coordinate (t) at ({0},{\height});
+
+    
+    \draw[fill=gray!30] (a)--(0,\height)--(b)--cycle;
+    
+    \fill[gray!50] circle (\radiusx{} and \radiusy);
+    
+    \begin{scope}
+    \clip ([xshift=-2mm]a) rectangle ($(b)+(1mm,-2*\radiusy)$);
+    \draw circle (\radiusx{} and \radiusy);
+    \end{scope}
+    
+    \begin{scope}
+    \clip ([xshift=-2mm]a) rectangle ($(b)+(1mm,2*\radiusy)$);
+    \draw[dashed] circle (\radiusx{} and \radiusy);
+    \end{scope}
+    
+    \draw[dashed] (0,\height)|-(\radiusx,0) node[right, pos=.25]{$8$\,cm} node[above,pos=.75]{$10$\,cm};
+    
+    \draw (0,.15)-|(.15,0);
+
+    \fill[gray!50] (c)--(e) node[midway, above right,black]{$10$\,cm} --(d)--(f)--cycle;
+    \fill[gray!30] (c)--(f)--(t)--cycle;
+    \fill[gray!30] (d)--(f)--(t)--cycle;
+    \draw[dashed] (e) -- (t);
+    \draw (c)--(e)--(d)--(f)--cycle;
+    \draw (f) -- (t);
+    \draw (c) -- (t);
+    \draw (d) -- (t);
+\end{tikzpicture}

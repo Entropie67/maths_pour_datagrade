@@ -1,0 +1,97 @@
+\bigskip
+
+\textbf{Question 1}
+
+\medskip
+
+Le premier terme de $f$ est de la forme $\e^{u(x)}$ dont la dérivée est $u'(x)\times\e^{u(x)}$.
+
+La dérivee de la fonction est donc : $f'(x)=-0,016\e^{-0,016x}$.
+
+Pour tout réel $x$, on a : $\e^{-0,016x}>0$.
+
+Ainsi, $f'(x)=-0,016\e^{-0,016x}<0$.
+
+La dérivée est strictement négative sur $\R$, donc la fonction $f$ est strictement décroissante sur $\R$.
+
+La bonne réponse est \textbf{D}.
+
+\bigskip
+
+\textbf{Question 2}
+
+\medskip
+
+La fonction $f$ peut s'écrire : 
+$f(x) = \dfrac{30}{1 + 2x} = 15\times\dfrac{2}{1 + 2x}$.
+
+Elle est donc de la forme $k\times\dfrac{u'(x)}{u(x)}$ avec :
+
+\[k = 15 \quad \text{et} \quad u(t) = 1 + 2x \quad \text{et} \quad u'(x) = 2.\]
+
+D'où : $F(x) = 15\ln(1 + 2x)$.
+
+\begin{align*}
+\displaystyle\dfrac{1}{15 - 5}\int_5^{15} f(x)\,\text{d}x &= 0,1[15\ln(1 + 2x)]_5^{15} \\
+&= 0,1[15\ln(1 + 2\times15) - 15\ln(1 + 2\times5)] \\
+&= 0,1[15\ln(31)-15\ln(11)] \\
+&= 1,5\ln\left(\dfrac{31}{11}\right) \\
+&\approx 1,55.
+\end{align*}
+
+$1,55<3$, donc l'affirmation est fausse.
+
+\bigskip
+
+\textbf{Question 3}
+
+\medskip
+
+L'équation différentielle $y' = - 0,08y + 1,84$ peut s'écrire $y' + 0,08y = 1,84$.
+    
+Il s'agit d'une équation différentielle du premier ordre de la forme :
+\[y' + ay = b \text{ avec } a = 0,08 \text{ et } b = 1,84.\]
+
+La solution générale est :
+\begin{align*}
+f(t) &= k\e^{-at} + \dfrac{b}{a} \\
+&= k\e^{-0,08t} + \dfrac{1,84}{0,08} \\
+&= k\e^{-0,08t} + 23 \text{ où } k \in \mathbb{R}.
+\end{align*}
+
+Avec la condition initiale :
+\begin{align*}
+f(0) &= 83 \\
+k\e^{-0,08\times0} + 23 &= 83 \\
+k\e^0 &= 83 - 23 \\
+k &= 60.
+\end{align*}
+
+La solution est donc :
+\[f(t) = 60\e^{-0,08t} + 23.\]
+
+\bigskip
+
+\textbf{Question 4}
+
+\medskip
+
+On résout l'inéquation :
+\begin{align*}
+f(t) &\leqslant 44 \\
+60\e^{-0,08t} + 23 &\leqslant 44 \\
+60\e^{-0,08t} &\leqslant 21 \\
+\e^{-0,08t} &\leqslant \dfrac{21}{60} \\
+\e^{-0,08t} &\leqslant 0,35 \\
+-0,08t &\leqslant \ln(0,35) \\
+t &\geqslant \dfrac{\ln(0,35)}{-0,08}.
+\end{align*}
+
+Comme :
+\[\dfrac{\ln(0,35)}{-0,08} \approx 13,12,\]
+la température atteint donc $44\,^\circ\mathrm{C}$ environ $13,12$ minutes après la sortie de la machine.
+
+Comme $f(13) \approx 44,2 > 44$ et $f(14) \approx 42,60 < 44$,
+la première minute entière pour laquelle la température est inférieure ou égale à $44\,^\circ\mathrm{C}$ est la \textbf{14\up{e}} minute.
+
+\bigskip

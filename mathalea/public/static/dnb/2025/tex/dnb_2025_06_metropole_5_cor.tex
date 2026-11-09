@@ -1,0 +1,102 @@
+
+\medskip
+
+Un garage propose 2 options au client:
+
+\begin{itemize}
+\item Option \emph{Achat}  : prix d'achat de la voiture \np{22400}~\euro. Assurance obligatoire $75$~\euro par mois.
+\item Option \emph{Location} : 425 \euro par mois, assurance comprise.
+\end{itemize}
+
+\smallskip
+
+L'objectif de cet exercice est de comparer ces deux options.
+
+\textbf{Partie B}
+
+\medskip
+
+\begin{enumerate}
+\item \np{22400}~\euro pour le prix d'achat plus le coût de l'assurance pendant 12 mois soit $12 \times 75 = 900$~\euro, soit un total de
+
+\[\np{22400} + 900 = \np{23300}~\euro.\]
+
+\item De la même façon l'option \emph{Achat } reviendra à : $\np{22400} + 36 \times 75= \np{2700}$, soit un total de $\np{22400} + \np{2700} = \np{25100}$.
+
+L'option \emph{Location} reviendra à $36 \times 425 = \np{15300}$
+
+Donc sur une durée de 36 mois la location coûtera : $\np{25100} - \np{15300} = \np{9800}$ de moins que l'achat.
+\item %Afin de comparer les dépenses correspondantes à ces options le client a réalisé le tableau suivant à l'aide d'un tableur:
+
+
+Dans la cellule il faut écrire =425 *B1.
+\end{enumerate}
+
+\bigskip
+
+\textbf{Partie B}
+
+\medskip
+
+\[g(x) = 425x.\]
+
+\begin{enumerate}[resume]
+\item Au bout de $x$ mois on aura dépensé \np{22400}~(\euro{}) et $x \times 75 = 75x$~(\euro{}) pour l'assurance obligatoire, soit un total de :
+
+\[f(x) = \np{22400} + 75x.\]
+\end{enumerate}
+
+\psset{xunit=0.1cm, yunit=0.02cm, arrowsize=2pt 3}
+\begin{center}
+\begin{pspicture*}(-35,-60)(130,460)
+\psaxes[linewidth=1.25pt, Dx=10, Dy=1000, yLabels={}]{->}(0,0)(0,0)(130,460)
+
+% Grille verticale
+\multido{\n=0+2}{66}{\psline[linewidth=0.2pt](\n,0)(\n,460)}
+\multido{\n=0+10}{14}{\psline[linewidth=0.4pt](\n,0)(\n,460)}
+
+% Grille horizontale
+\multido{\n=0+20}{23}{\psline[linewidth=0.2pt](0,\n)(130,\n)}
+\multido{\n=0+100}{5}{\psline[linewidth=0.4pt](0,\n)(130,\n)}
+
+% Courbes (valeurs divisées par 100)
+\psplot[plotpoints=1000, linewidth=1.25pt, linecolor=red]{0}{130}{425 x mul 100 div}
+\psplot[plotpoints=1000, linewidth=1.25pt, linecolor=blue]{0}{130}{75 x mul 22400 add 100 div}
+
+% Légendes des courbes
+\uput[u](125,320){\blue $\mathcal{C}_f$}
+\uput[u](95,420){\red $\mathcal{C}_g$}
+
+% Point d'intersection
+\psline[linewidth=1.25pt, linestyle=dashed, ArrowInside=->](64,272)(64,0)
+\psline[linewidth=1.25pt, linestyle=dashed, ArrowInside=->](64,272)(0,272)
+\uput[d](64,0){64}
+\uput[l](0,272){$\approx \np{27000}$}
+
+% Légendes des axes
+\rput[r](-2,440){\footnotesize dépense en euro}
+\rput[t](122,-30){\footnotesize durée en mois}
+
+% Labels verticaux manuels
+\rput[r](-2,0){\scriptsize 0}
+\rput[r](-2,100){\scriptsize 10\,000}
+\rput[r](-2,200){\scriptsize 20\,000}
+\rput[r](-2,300){\scriptsize 30\,000}
+\rput[r](-2,400){\scriptsize 40\,000}
+\end{pspicture*}
+\end{center}
+
+On lit sur le graphique que les deux droites sont sécantes au point d'abscisse 64 : donc à partir de  
+65 mois il est préférable, financièrement de choisir l'option \emph{Achat}.
+
+\emph{Remarque }: on peut s'interroger sur la pertinence de cette comparaison entre achat et location :
+
+$\bullet~$ tout d'abord on laisse entendre qu'une voiture louée ne coûte rien en assurance, alors que celle-ci est obligatoire, mais que les assurances proposées par les loueurs sont souvent insuffisantes ;
+
+$\bullet~$le concepteur du sujet semble ignorer que la plupart des locations sont proposées sur 3 et plus souvent 4 ans ;
+
+$\bullet~$nulle part n'est signalé qu'à la fin de la location, le locataire n'a fait que payer et se retrouve sans rien ;
+
+$\bullet~$enfin la même chose arrive en cas de vol ou d'accident grave du véhicule.
+
+En conclusion il est très difficile de comparer location et achat.

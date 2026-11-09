@@ -1,0 +1,100 @@
+
+\medskip
+
+\begin{enumerate}
+\item Les épreuves de natation des Jeux Olympiques ont lieu dans des piscines olympiques.
+
+
+ \begin{minipage}[t]{0.5\linewidth}
+\vspace{0pt} 
+\begin{list}{\textbullet}{ La plupart des piscines olympiques sont des pavés droits avec les caractéristiques suivantes:}
+\item longueur $L$ : 50 m;
+\item largeur $\ell$: 25 m;
+\item hauteur d'eau $h$: 3 m.
+\end{list}
+\end{minipage}
+\hfill
+ \begin{minipage}[t]{8cm}
+\vspace{0pt}
+\scalebox{0.6}{
+\psset{xunit=1cm,yunit=0.4cm,radius=0pt,arrowsize=3pt 2}
+\def\xmin {-1}   \def\xmax {9} \def\ymin {-2}   \def\ymax {11}
+\begin{pspicture}(\xmin,\ymin)(\xmax,\ymax)
+%\psgrid[subgriddiv=1, gridlabels=0, gridcolor=lightgray] 
+\Cnode*(0,0){A}  \Cnode*(2,2){D}\Cnode*(6,0){B} \Cnode*(8,2){C} 
+\Cnode*(6,6){F}    \Cnode*(8,8){G} \Cnode*(0,6){E} \Cnode*(2,8){H} 
+\pspolygon[linecolor=white,fillstyle=solid,fillcolor=lightgray!30](A)(B)(C)(G)(H)(E)
+\psline(G)(C)(B)(A)(E)(F)(G)(H)(E) \psline(B)(F)
+{\psset{linestyle=dashed}
+\psline(A)(D)(C) \psline(D)(H)}
+\psline{<->}(0,-1)(6,-1)\uput[d](3,-1){$L$} 
+\psline{<->}(-0.3,0)(-0.3,6) \uput[l](-0.3,3){$h$} 
+\psline{<->}(7,0)(9,2) \uput[dr](8,1){$\ell$}
+\end{pspicture}
+}% fin du scalebox
+\end{minipage}
+
+\begin{enumerate}
+\item Le volume d'eau contenu dans une piscine olympique est, en m$^3$, de:\\
+$L \times \ell \times h = 50\times 25 \times 3 = \np{3750}$
+soit $\np{3750000}$ litres.
+
+%Donner la réponse en mètre cube (m$^3$), puis en litres. (\textbf{Rappel} : 1 m$^3$ = \np{1000} L) 
+
+\item 
+\begin{list}{\textbullet}{Les piscines municipales les plus courantes ont les dimensions suivantes:}
+\item longueur $L$ : 25 m ; 
+\item largeur $\ell$ : 12,5 m ;
+\item hauteur d'eau $h$ : 3 m.
+\end{list}
+
+%Lucas affirme que ce type de piscine contient 4 fois moins d'eau qu'une piscine olympique. 
+%Indiquer si cette affirmation est vraie. Justifier la réponse.
+
+Le volume de la piscine municipale est, en m$^3$, de: $25\times 12,5 \times 3 = 937,5 = \dfrac{\np{3750}}{4}$.
+
+L'affirmation de Lucas est vraie.
+
+\end{enumerate}
+\end{enumerate}
+
+La nage papillon est la plus spectaculaire.
+C'est aussi la deuxième plus rapide après le crawl.
+
+Aux JO de Tokyo en 2021, la canadienne Margaret MacNeil a remporté l’épreuve du 100 m papillon en 56 secondes.
+
+\begin{enumerate}[start=2]
+\item La vitesse moyenne de Margaret MacNeil sur cette épreuve est, en m/s, de;
+$\dfrac{100}{56}$ soit environ $1,79$.
+%Arrondir le résultat au centième.
+
+%\textbf{Rappel} : formule de la vitesse $v$ (en m/s) en fonction de la distance parcourue $d$ en mètre (m) et du temps de parcours $t$ en seconde (s) : $v=\frac{d}{t}$.
+
+\item On a : 1 m/s = $3,6$ km/h. \\
+La vitesse de Margaret MacNeil en km/h est donc de:
+$1,79\times 3,6 \approx 6,44$.
+
+%Arrondir au centième.
+
+\item L'australienne Emma MacKeon, médaille d'or en nage libre (crawl) a parcouru
+100 m à la vitesse de $1,92$ m/s.
+
+\begin{enumerate}
+\item  Le temps mis par Emma MacKeon sur cette épreuve est, en seconde, le nombre $t$ tel que: $1,96=\dfrac{100}{t}$.
+Donc: $t=\dfrac{100}{1,96}\approx 51,02$.
+
+%Arrondir au centième.
+
+\item On dit qu'une personne qui marche vite, à 7 km/h, est plus rapide sur 100 m qu'une personne nageant le crawl.
+
+La vitesse d'Emma MacKeon est de $1,92$ m/s soit en km/h:
+$1,92\times 3,6 = 6,912<7$.
+
+L'affirmation est donc vraie.
+
+%Justifier la réponse.
+\end{enumerate}
+\end{enumerate}
+ 
+\bigskip
+

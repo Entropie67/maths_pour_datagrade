@@ -1,0 +1,50 @@
+
+\medskip
+
+Voici un script saisi par Alice dans un logiciel d'algorithmique.
+
+\medskip
+
+\begin{center}
+\begin{tabularx}{0.8\linewidth}{X}
+	\begin{scratch}
+		\blockinit{quand \greenflag est cliqué}
+		\blocksensing{demander \ovalnum{Choisissez un nombre ?} et attendre}
+		\blockevent{envoyer à tous \ovalvariable{le nombre a été saisi}}
+		\blockvariable{mettre \selectmenu{Nombre} à \ovalmove{réponse}}
+		\blockvariable{mettre \selectmenu{Résultat 1} à \ovaloperator{\ovaloperator{2 * \ovalvariable{Nombre}} + \ovalnum{3}}}
+		\blockvariable{mettre \selectmenu{Résultat 1} à \ovaloperator{\ovalvariable{Résultat 1} * \ovalvariable{Résultat 1}}}
+		\blocklook{dire \ovaloperator{regroupe \ovalnum{le résultat 1 est} et \ovalvariable{Résultat 1}} pendant \ovalnum{2} secondes}
+		\end{scratch}\\[5pt]
+		\begin{scratch}
+		\blockinit{quand je reçois \ovalnum{le nombre a été saisi}}
+		\blockvariable{mettre \selectmenu{Résultat 2} à \ovaloperator{\ovalvariable{Nombre} * \ovalvariable{Nombre}}}
+		\blockvariable{mettre \selectmenu{Résultat 2} à \ovaloperator{\ovalvariable{Résultat 2} * \ovalnum{4}}}
+		\blockvariable{mettre \selectmenu{Résultat 2} à \ovaloperator{\ovalvariable{Résultat 2} + \ovaloperator{\ovalnum{12} * \ovalvariable{Nombre}}}}
+		\blockvariable{mettre \selectmenu{Résultat 2} à \ovaloperator{\ovalvariable{Résultat 2} + \ovalnum{9}}}
+		\blockcontrol{attendre \ovalnum{3} secondes}
+		\blocklook{dire \ovaloperator{regroupe \ovalnum{le résultat 2 est} et \ovalvariable{Résultat 2}}}
+		\end{scratch}\\
+\end{tabularx}
+\end{center}
+
+\begin{enumerate}
+\item Alice a choisi 3 comme nombre, calculer les valeurs de Résultat 1 et de Résultat 2.
+
+\emph{Justifier en faisant apparaître les calculs réalisés}.
+\item Généralisation
+	\begin{enumerate}
+		\item En appelant $x$ le nombre choisi dans l'algorithme, donner une expression littérale
+traduisant la première partie de l'algorithme correspondant à Résultat 1.
+		\item  En appelant $x$ le nombre choisi dans l'algorithme, donner une expression littérale
+traduisant la deuxième partie de l'algorithme correspondant à Résultat 2.
+\item  Trouver le ou les nombres choisis par Alice qui correspondent au résultat affiché ci-dessous.
+
+\begin{center}
+\ovallook{Résultat 2 \ovalnum{9}}
+\end{center}
+ 	\end{enumerate}
+\end{enumerate}
+
+
+

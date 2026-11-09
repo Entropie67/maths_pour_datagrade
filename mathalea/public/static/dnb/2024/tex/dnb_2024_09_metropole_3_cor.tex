@@ -1,0 +1,74 @@
+
+\medskip
+
+Une entreprise décide de faire poser sur le toit de son hangar des panneaux solaires.
+
+Pendant une semaine d'utilisation, les productions d'électricité journalières en kilowattheures (kWh) de ces panneaux ont été relevées dans le tableau ci-dessous :
+
+\begin{center}
+\begin{tabular}{|m{2cm}|*{7}{c|}}\hline
+Jour de la\newline semaine&Lundi&Mardi& Mercredi& Jeudi&Vendredi& Samedi&\small Dimanche\\ \hline
+Production d'électricité en kWh&381&363 &322& 329&393& 405& 376\\ \hline
+\end{tabular}
+\end{center}
+
+%\smallskip
+
+\begin{enumerate}
+\item
+	\begin{enumerate}
+		\item La production d'électricité a été la plus grande le samedi avec 405 kWh.
+		\item La production d'électricité a été la plus petite le mercredi avec 322 kWh.
+		
+$405-322= 83$ donc l'étendue de ces productions d'électricité est 83 kWh.
+		\item $\dfrac{381 + 363 + 322 + 329 + 393 + 405 + 376}{7} = \dfrac{\np{2569}}{7} = 367$ donc
+		
+la production moyenne d'électricité par jour sur cette période est de $367$ kWh.
+	\end{enumerate}
+
+\item L'entreprise revend 15\,\% de sa production d'électricité au tarif de 8 centimes le kWh.
+
+La production sur la semaine a été de $\np{2569}$ kWh.
+
+Les 15\,\% de cette production correspondent à $\np{2569}\times \dfrac{15}{100}= 385,35$.
+
+$ 385,35\times 8 = \np{3082,8}$
+donc elle a gagné $30,828$\,\euro{} pendant ces 7 jours.
+
+\item Afin que les panneaux solaires aient une production maximale, le toit doit avoir une pente avec l'horizontale comprise entre $30\degres$ et $35\degres$.
+
+
+%\begin{minipage}{0.42\linewidth}
+%Schéma en coupe du hangar.
+\begin{multicols}{2}
+La pente du toit avec l'horizontale correspond à l'angle $\widehat{\text{OLV}}$.
+
+Dans le triangle OLV rectangle en V, on a: $\sin \left (\widehat{\text{OLV}}\right ) = \dfrac{\text{OV}}{\text{OL}} = \dfrac{7}{13,5}$.
+
+On en déduit que $\widehat{\text{OLV}} \approx 31,2\degres$.
+
+$31,2$ est compris entre 30 et 35 donc, sur ce toit, les panneaux solaires ont une production maximale.
+%\end{minipage}\hfill
+%\begin{minipage}{0.55\linewidth}
+
+\columnbreak
+
+\scalebox{0.7}{
+\psset{unit=1cm,arrowsize=2pt 3}
+\begin{pspicture}(8.5,6.6)
+%\psgrid
+\pspolygon(2,0)(8.2,0)(8.2,3.9)(5.1,6.3)(2,3.9)
+\psline(5.1,6.3)(5.1,3.9)\psframe(5.1,3.9)(5.3,4.1)
+\psline(8.2,3.9)(2,3.9)
+\psline[linewidth=2.5pt](4.7,6)(2.4,4.2)
+\uput[d](5.1,3.9){V} \uput[r](8.2,3.9){K} \uput[u](5.1,6.3){O} \uput[l](2,3.9){L} 
+\uput[r](5.1,5.1){7 m}\rput{37}(3.56,5.4){13,5 m}
+\rput(1.8,5.8){panneaux solaires}\psline[linewidth=1.2pt]{->}(1.8,5.5)(3.2,4.9)
+\end{pspicture}
+}
+%\end{minipage}
+\end{multicols}
+\end{enumerate}
+
+\vspace{0.5cm}
+

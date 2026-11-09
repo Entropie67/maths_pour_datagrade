@@ -1,0 +1,56 @@
+
+\begin{center}
+\textbf{Décomposition de l'eau oxygénée}
+\end{center}
+
+L'eau oxygénée, utilisée comme désinfectant, est une solution de peroxyde d'hydrogène HzOz. Son efficacité diminue au cours du temps à cause de la réaction de dismutation de cette espèce. 
+L'équation de réaction associée est la suivante:
+
+\[2 \text{H}_2\text{O}_2(\text{aq}) \to  2 \text{H}_2\text{O}(\text{l}) + \text{O}_2(\text{g})\]
+
+Lors d'une activité expérimentale au lycée, les élèves étudient la cinétique de cette réaction catalysée par la présence d'ions fer (III).
+
+On fait l'hypothèse d'une cinétique d'ordre 1 par rapport au peroxyde d'hydrogène pour la réaction de dismutation étudiée. Dans ce cas, en posant $f(t) = \left(\text{H}_2\text{O}_2\right)(t)/\left[\text{H}_2\text{O}_2\right]_0$, on montre que l'équation différentielle vérifiée par la fonction $f$ est:
+
+\[\dfrac{\text{d}f}{\text{d}t} +k \times f = 0\]
+
+\begin{enumerate}[start=8]
+\item Vérifier que la fonction $f$ définie par $f(t) = \e^{-kt}$ est solution de l'équation différentielle :
+\[y' + ky = 0.\]
+\end{enumerate}
+
+On admet que $\ln f(t) = - k \times t$.
+
+\begin{enumerate}[start=9]
+\item En utilisant le graphe de la figure suivante, obtenu à partir des résultats expérimentaux, justifier que la pente de la droite est voisine de $-0,08$.
+
+En déduire une valeur approchée de $k$.
+
+\begin{center}
+\psset{xunit=0.2cm,yunit=2cm,comma=true}
+\begin{pspicture}(-5,-3.7)(45,0.2)
+\multido{\n=0+5}{10}{\psline[linewidth=0.2pt](\n,-3.7)(\n,0.2)}
+\multido{\n=-3.5+0.5}{8}{\psline[linewidth=0.2pt](0,\n)(45,\n)}
+\psaxes[linewidth=1.25pt,Dx=5,Dy=0.5](0,-3.7)(45,0.2)
+\psline[linecolor=blue](0,0)(45,-3.6)
+\psdots[dotstyle=+,dotscale=1.5,linecolor=red,dotsize=0pt 10](0,0)(5,-0.4)(10,-0.75)(15,-1.3)(20,-1.7)(25,-2)(30,-2.3)(40,-3)
+\uput[d](22.5,-4){temps $t$ en min}\rput{90}(-5,-1.75){$\ln f(t)$}
+\end{pspicture}
+
+\vspace{1.2cm}
+
+Figure - Évolution de $\ln f(t) = \ln\left(\left[\text{H}_2\text{O}_2\right](t)/\left[\text{H}_2\text{O}_2\right]_0\right)$ en fonction du temps.
+\end{center}
+\end{enumerate}
+
+L'expression de la concentration en quantité de matière de peroxyde d'hydrogène à un instant $t$ peut s'écrire: 
+\[\left[\text{H}_2\text{O}_2\right](t) = \left[\text{H}_2\text{O}_2\right]_0 \times \e^{-kt}.\]
+
+\begin{enumerate}[start=10]
+\item Montrer que le temps de demi-réaction peut s'exprimer par la relation : $t_{\frac12} = \dfrac{\ln 2}{k}$.
+\item Calculer la valeur du temps de demi-réaction.
+\end{enumerate}
+
+\bigskip
+
+

@@ -1,0 +1,72 @@
+
+\medskip
+
+\textbf{Les deux parties sont indépendantes}
+
+\medskip
+
+\textbf{Partie A : évolution du nombre de visiteurs sur un site touristique}
+
+\medskip
+
+\begin{enumerate}
+\item Le diagramme ci-dessous représente le nombre de visiteurs par an de 2010 à 2021 sur ce site.
+
+\begin{center}
+\psset{xunit=0.95cm,yunit=0.000018cm}
+\begin{pspicture}(-1.5,-70000)(12.5,450000)
+\psaxes[linewidth=0pt,Dx=50,Dy=500000,labelFontSize=\scriptstyle](0,0)(0,0)(12.5,450000)
+\psframe[fillstyle=solid,fillcolor=purple](0.7,0)(1.3,300000)\psframe[fillstyle=solid,fillcolor=purple](1.7,0)(2.3,310000)
+\psframe[fillstyle=solid,fillcolor=purple](2.7,0)(3.3,320000)\psframe[fillstyle=solid,fillcolor=purple](3.7,0)(4.3,320000)
+\psframe[fillstyle=solid,fillcolor=purple](4.7,0)(5.3,300000)\psframe[fillstyle=solid,fillcolor=purple](5.7,0)(6.3,320000)
+\psframe[fillstyle=solid,fillcolor=purple](6.7,0)(7.3,330000)\psframe[fillstyle=solid,fillcolor=purple](7.7,0)(8.3,350000)
+\psframe[fillstyle=solid,fillcolor=purple](8.7,0)(9.3,360000)\psframe[fillstyle=solid,fillcolor=purple](9.7,0)(10.3,400000)
+\psframe[fillstyle=solid,fillcolor=purple](10.7,0)(11.3,187216)\psframe[fillstyle=solid,fillcolor=purple](11.7,0)(12.3,219042)
+\uput[d](6.25,-50000){Année}\rput{90}(-1.5,225000){Nombre de visiteurs}
+\rput(6.25,475000){Nombre de visiteurs sur le site touristique par année
+}
+\multido{\n=1+1,\na=2010+1}{12}{\uput[d](\n,0){\small \na}}
+\multido{\n=0+50000}{10}{\psline[linewidth=0.6pt](0,\n)(12.5,\n)\uput[l](0,\n){\footnotesize \np{\n}}}
+\end{pspicture}
+\end{center}
+
+	\begin{enumerate}
+		\item Quel a été le nombre de visiteurs en 2010 ? Aucune justification n'est attendue.
+		\item En quelle année le nombre de visiteurs a-t-il été le plus élevé ? Aucune justification n'est attendue.
+	\end{enumerate}
+\item Le tableau ci-dessous indique le nombre de visiteurs sur le site touristique de cette ville en 2020 et en 2021 :
+\begin{center}
+\begin{tabularx}{0.75\linewidth}{|l|*{2}{>{\centering \arraybackslash}X|}}\hline
+Année 				&2020 		&2021\\ \hline
+Nombre de visiteurs &\np{187216}&\np{219042}\\ \hline
+\end{tabularx}
+\end{center}
+
+Le maire de cette ville avait pour objectif que le nombre de visiteurs progresse d'au moins 15\,\% entre 2020 et 2021.
+
+L'objectif a-t-il été atteint ?
+\end{enumerate}
+
+\medskip
+
+\textbf{Partie B :  étude des prix des hôtels de cette ville}
+
+\medskip
+
+Sur une période donnée, on relève les prix facturés pour une nuit par les hôtels de cette ville.
+
+\begin{center}
+\begin{tabularx}{\linewidth}{|m{4.5cm}|*{8}{>{\centering \arraybackslash}X|}}\hline
+Prix facturés pour une nuit (en euro)&60 &80 &85 &90 &110 &120 &350 &500\\ \hline
+Effectif &\np{1200} &\np{1350} &\np{1000} &\np{1100} &\np{1200} &\np{1300} &900 &300\\ \hline
+\end{tabularx}
+\end{center}
+
+\begin{enumerate}[resume]
+\item Déterminer l'étendue des prix facturés.
+\item Quelle est la moyenne des prix facturés pour une nuit ? Arrondir à l'euro près.
+\item L'association des hôteliers de cette ville cherche à attirer des touristes et annonce : \og Dans les hôtels de notre ville, au moins la moitié des nuits est facturée à moins de $100$~\euro{} \fg. Est-ce vrai ?
+\end{enumerate}
+
+\bigskip
+

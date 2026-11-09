@@ -1,0 +1,25 @@
+
+\medskip
+
+On cherche $t$, au $1/60$ème d'heure près,tel que $y$ soit supérieur ou égal à $0,15 \times 0,715 = 0,10725$.
+
+A l'aide du grapheur / du mode python de la calculatrice, ou du calcul suivant :
+\begin{align*}
+y &\geqslant 0,10725 \\
+\iff -0,715 \e^{-t} + 0,715 &\geqslant 0,10725 \\
+\iff -0,715 \e^{-t} &\geqslant 0,10725 - 0,715 \\
+\iff -0,715 \e^{-t} &\geqslant -0,60775 \\
+\iff \e^{-t} &\leqslant \dfrac{-0,60775}{-0,715} \\
+\iff \e^{-t} &\leqslant 0,85 \\
+\iff -t &\leqslant \ln(0,85) \\
+\iff t &\geqslant -\ln(0,85) \\
+\iff t &\approx 0,163
+\end{align*}
+Comme $\dfrac{9}{60} < 0,163 < \dfrac{10}{60}$ alors {\ttfamily temps(0.15)} renvoie $t = \dfrac{1}{6}$ d'heure, soit 10 minutes.
+
+\medskip
+
+Au bout de 10 minutes $15\%$ de la charge est effectuée.
+
+\bigskip
+

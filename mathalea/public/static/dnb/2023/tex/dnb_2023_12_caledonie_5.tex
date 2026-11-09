@@ -1,0 +1,56 @@
+
+\medskip
+
+\begin{enumerate}
+\item 
+	\begin{enumerate}
+		\item La fonction $f$, dont la représentation graphique est ci-dessous  est-elle une fonction affine ? Justifier votre réponse.
+		
+\begin{center}
+\psset{unit=0.75cm,arrowsize=2pt 3}
+\begin{pspicture*}(-5,-5.1)(6,13)
+\psgrid[gridlabels=0pt,subgriddiv=1,gridwidth=0.4pt]
+\psaxes[linewidth=1.25pt,labelFontSize=\scriptstyle]{->}(0,0)(-5,-5)(6,13)
+\psplot[plotpoints=2000,linewidth=1.25pt,linecolor=red]{-5}{5}{x 1 sub x 3 add mul}
+\uput[d](5.75,0){$x$}\uput[l](0,12.75){$y$}\uput[r](2.95,11.15){\red $\mathcal{C}_f$}
+\end{pspicture*}
+\end{center}
+
+		\item À l'aide de ce graphique ci-dessus, compléter, ci-dessous, le tableau de valeurs de la fonction $f$.
+		\begin{center}
+\begin{tabularx}{\linewidth}{|*{8}{>{\centering \arraybackslash}X|}}\hline
+	&A		&B		&C		&D		&E		&F		&G\\ \hline
+1	&$x$	&$-3$	&$-2$	&$-1$	&0		&1		&2\\ \hline
+2	& $f(x)$& 0 	& $-3$	&\ldots	&\ldots	&\ldots	&\ldots\\ \hline
+\end{tabularx}
+\end{center}
+	\end{enumerate}
+
+Parmi les trois formules suivantes, l'une correspond à l'expression de la fonction $f$.
+
+Elle a été saisie dans la cellule B2 puis étendue dans la cellule C2 du tableau ci-dessus.
+
+\begin{center}
+\begin{tabularx}{\linewidth}{|*{3}{>{\centering \arraybackslash}X|}}\hline
+=B1 + 3 &=(B1 + 3)$*$(B1 $-$ 1)& =SOMME(B1 : G1) \\ \hline
+\end{tabularx}
+\end{center}
+\begin{enumerate}[resume] 
+		\item Noter la bonne formule sur votre copie.
+	\end{enumerate}
+\item On considère la fonction affine $g$ définie par $g(x) = 2x + 1$. 
+	\begin{enumerate}
+		\item Calculer l'image de $-2$ par la fonction $g$.
+		\item Calculer $g(3)$.
+		\item Déterminer l'antécédent de $2$ par la fonction $g$.
+		\item Tracer, sur le graphique précédent, la représentation graphique de la fonction~$g$.
+	\end{enumerate}
+\item L'expression de la fonction $f$ ci-dessus est $f(x) = (x + 3)(x - 1)$.
+	\begin{enumerate}
+		\item Développer et réduire l'expression $(x + 3)(x - 1)$.
+		\item Pour quelle(s) valeur(s) de $x$, a-t-on $f(x) = g(x)$ ?
+	\end{enumerate}
+\end{enumerate}
+
+\bigskip
+

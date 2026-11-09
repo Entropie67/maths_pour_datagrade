@@ -1,0 +1,43 @@
+
+On considère les deux programmes de calcul suivants :
+
+\begin{center}
+\begin{tabularx}{\linewidth}{m{6.cm}|X}
+\textbf{Programme A}&\textbf{Programme B}\\
+\begin{itemize}[label= $\bullet~~$]
+\item Choisir un nombre
+\item Multiplier par 3
+\item Ajouter 15
+\item Diviser par 3
+\item Soustraire le nombre de départ
+\end{itemize}&\psset{unit=0.825cm,arrowsize=2pt 3}
+\vspace*{-2cm}
+\begin{pspicture}(-4,0)(4,6)
+\footnotesize
+\rput(0,5){Choisir un nombre}\psframe(-1.9,5.4)(1.9,4.6)
+\psline{->}(-1.9,5)(-2.6,5)(-2.6,4.1)
+\rput(-2.6,3.7){Soustraire 1}\psframe(-3.8,4.1)(-1.4,3.3)\psline{->}(1.9,5)(2.6,5)(2.6,4.1)
+\rput(2.6,3.7){Soustraire 6}\psframe(1.4,4.1)(3.8,3.3)
+\psline{->}(-1.4,3.7)(-0.6,3.7)(-0.6,2.3)\psline{->}(1.4,3.7)(0.6,3.7)(0.6,2.3)
+\rput(0,1.9){Multiplier les deux résultats obtenus}\psframe(-3.3,2.3)(3.3,1.5)
+\psline{->}(0,1.5)(0,0.8)
+\rput(0,0.5){Ajouter 5}\psframe(-1,0.8)(1,0.2)
+%\psframe
+\end{pspicture}
+\end{tabularx}
+\end{center}
+
+\begin{enumerate}
+\item Montrer que, lorsque le nombre choisi est 4, le résultat obtenu avec le programme A est 5.
+\item Montrer que, lorsque le nombre choisi est $- 2$, le résultat obtenu avec le programme A est 5.
+\item Justifier que l'affirmation suivante est vraie :
+
+\begin{center}\og Le programme A donne toujours le même résultat. \fg\end{center}
+
+\item Lorsque le nombre choisi est 10, quel résultat obtient-on avec le programme B ?
+\item Il existe exactement deux nombres pour lesquels les programmes A et B fournissent à chaque fois des résultats identiques.
+
+Quels sont ces deux nombres?
+\end{enumerate}
+
+

@@ -1,0 +1,90 @@
+
+\medskip
+
+\begin{minipage}{7.4cm}
+\begin{enumerate}
+\item On considère le programme A défini par le schéma
+ci-contre :
+	\begin{enumerate}
+		\item Vérifier que le résultat est $60$ si le nombre
+choisi au départ est $-8$.
+		\item On appelle $x$ le nombre de départ et on admet que le résultat obtenu avec le programme de calcul est donné par l'expression : 
+		
+		$(x + 3)(x - 4)$.
+
+Résoudre $(x + 3)(x - 4) = 0$.
+
+En déduire quels nombres de départ il faut choisir pour obtenir 0 comme résultat.
+	\end{enumerate}
+\end{enumerate}
+\end{minipage}\hfill
+\begin{minipage}{7.5cm}
+\psset{unit=1cm,arrowsize=2pt 3}
+\begin{pspicture}(-3.8,0)(3.8,7.4)
+%\psgrid
+\psframe(-0.9,5.4)(0.9,6.2)\psframe(-0.9,0)(0.9,0.8)
+\psframe(-3.8,3.1)(-2,3.9)\psframe(3.8,3.1)(2,3.9)
+\rput(-2.3,4.8){Ajouter 3}\rput(2.7,4.8){Soustraire 4}
+\rput(0,7.1){Choisir un nombre}
+\rput(0,2.7){Multiplier les deux}\rput(0,2.2){résultats}
+\psline{->}(0,6.9)(0,6.2)\psline{->}(0,5.4)(-2.9,3.9)\psline{->}(0,5.4)(2.9,3.9)
+\psline(-2.9,3.1)(0,1.4)\psline(2.9,3.1)(0,1.4)
+\psline{->}(0,1.4)(0,0.8)
+\end{pspicture}
+\end{minipage}
+
+\begin{enumerate}[resume]
+\item On rappelle que $x$ désigne le nombre de départ du programme de calcul et que le résultat obtenu avec le programme de calcul est donné par l'expression : $(x + 3)(x - 4)$.
+
+On appelle $f$ la fonction qui, à $x$, associe le résultat du programme de calcul.
+
+La représentation graphique $\mathcal{C}_f$ de la fonction $f$ est donnée ci-après.
+	\begin{enumerate}
+		\item Montrer que $f(x) = x^2 - x - 12$.
+		\item Calculer$f\left(\dfrac12\right)$.
+		\item Déterminer graphiquement les antécédents de $- 6$ par la fonction $f$.
+		
+On pourra éventuellement laisser les traits de construction sur \textbf{le graphique}.
+\begin{center}
+\psset{xunit=1cm,yunit=0.5cm,arrowsize=2pt 3}
+\begin{pspicture*}(-5,-13)(6,12)
+\psaxes[linewidth=1.25pt,labelFontSize=\scriptstyle]{->}(0,0)(-4.99,-12.99)(6,12)
+\psplot[plotpoints=2000,linewidth=1.25pt,linecolor=blue]{-5}{6}{x dup mul x sub 12 sub}
+\uput[l](-4.2,10){\blue $\mathcal{C}_f$}
+\end{pspicture*}
+\end{center}
+	\end{enumerate}
+\end{enumerate}
+\begin{minipage}{10cm}
+\begin{enumerate}[resume]
+\item On considère la fonction $g$ définie par $g(x) = 3x - 7$.
+
+On a utilisé un tableur pour réaliser un tableau de valeurs de cette fonction.
+	\begin{enumerate}
+		\item Quelle formule a-t-on écrite dans la cellule B2 avant de l'étirer vers le bas?
+		\item Tracer la représentation graphique de la fonction $g$ dans le repère sur \textbf{le graphique précédent}.
+		\item Déterminer graphiquement les nombres qui ont la même image par les fonctions $f$ et $g$. On pourra laisser apparents les traits de construction sur \textbf{le graphique}.
+	\end{enumerate}
+\end{enumerate}
+\end{minipage}\hfill
+\begin{minipage}{4cm}
+\begin{tabular}{|c|c|c|}\hline
+	&A		&B\\ \hline
+1	&$x$	&$g(x)$\\ \hline
+2	&$-5$ 	&$-22$\\ \hline
+3	&$-4$	&$-19$\\ \hline
+4	&$-3$	&$- 16$\\ \hline
+5	&$-2$	&$-13$\\ \hline
+6	&$-1$	&$-10$\\ \hline
+7	&0		&$-7$\\ \hline
+8	&1		&$-4$\\ \hline
+9	&2		&$-1$\\ \hline
+10	&3 		&2\\ \hline
+11	&4 		&5\\ \hline
+12	&5		&8\\ \hline
+13	&6 		&11\\ \hline
+\end{tabular}
+
+\end{minipage}
+
+

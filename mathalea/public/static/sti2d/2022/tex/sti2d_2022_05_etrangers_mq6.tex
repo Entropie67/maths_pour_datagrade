@@ -1,0 +1,66 @@
+\medskip
+
+\begin{center}
+\fbox{
+\begin{minipage}{0.9\textwidth}
+\textbf{Rappel :} pour $a$ et $b$ deux réels, on a les formules suivantes :
+\[\bullet~~\cos(a + b) = \cos (a) \cos(b) - \sin(a) \sin(b)\]
+\[\bullet~~\cos(a - b) = \cos (a) \cos(b) + \sin(a) \sin(b)\]
+\[\bullet~~\sin(a + b) = \sin(a) \cos(b) + \cos (a) \sin(b)\]
+\[\bullet~~\sin(a - b) = \sin(a) \cos(b) - \cos (a) \sin(b)\]
+\end{minipage}}
+\end{center}
+
+On considère un signal électrique dont l'expression en fonction du temps $t$ est donnée par:\\
+\[u(t)= \ds\sqrt{3}\;\cos \left (t\right ) - \sin \left (t\right ).\]
+
+\begin{enumerate}
+\item  Montrer que le signal $u$ peut s'écrire pour tout $t$ réel sous la forme :\\
+\[u(t) = 2\;\cos \left ( t+ \dfrac{\pi}{6} \right ).\]
+
+\item Résoudre dans $[0\;;\;\pi[$, l'équation $u(t)=1$.
+\end{enumerate}
+
+
+On pourra s'aider du demi-cercle trigonométrique ci-dessous :
+
+\begin{center}
+\psset{unit=1.5cm}
+\begin{pspicture}(-4,-1)(4,4.5)
+%\psgrid[subgriddiv=0,gridlabels=0,gridcolor=zzzzzz](0,0)(-5,-5)(5,5)
+\psset{dotstyle=*,dotsize=3pt 0,linewidth=0.8pt,arrowsize=3pt 2,arrowinset=0.25}
+%\psaxes[xAxis=true,yAxis=true,Dx=1,Dy=1,labels=none,ticksize=0,subticks=2, , arrowsize=4pt 4]{->}(0,0)(-5,-5)(5,5)
+%%%
+\psarc(0,0){4}{0}{180}
+\psdots(4;0)(4;30)(4;45)(4;60)(4;90)(4;120)(4;135)(4;150)(4;180)
+\psline(4;0)(4;180) \psline(0,0)(4;90)
+%%%%%
+\psset{linestyle=dotted,linewidth=1.3pt,dotstyle=+,dotscale=1.5}
+{\boldmath
+%%%
+\psline(2,0)(4;60)(4;120)(-2,0)
+\psdots(2,0)(0,3.464)(-2,0)
+\uput[d](2,0){$\frac{1}{2}$} 
+\uput*[l](0,3.464){$\frac{\sqrt{3}}{2}$} 
+\uput[d](-2,0){$-\frac{1}{2}$}
+\uput[60](4;60){$\frac{\pi}{3}$} \uput[120](4;120){$\frac{2\pi}{3}$} 
+%%%
+\psline(2.828,0)(4;45)(4;135)(-2.828,0)
+\psdots(2.828,0)(0,2.828)(-2.828,0)
+\uput[d](2.828,0){$\frac{ \sqrt{2}}{2}$} 
+\uput*[l](0,2.828){$\frac{\sqrt{2}}{2}$} 
+\uput[d](-2.828,0){$-\frac{ \sqrt{2}}{2}$}
+\uput[45](4;45){$\frac{\pi}{4}$} \uput[135](4;135){$\frac{3\pi}{4}$} 
+%%%
+\psline(3.464,0)(4;30)(4;150)(-3.464,0)
+\psdots(3.464,0)(0,2)(-3.464,0)
+\uput[d](3.464,0){$\frac{ \sqrt{3}}{2}$} 
+\uput*[l](0,2){$\frac{1}{2}$} 
+\uput[d](-3.464,0){$-\frac{ \sqrt{3}}{2}$}
+\uput[30](4;30){$\frac{\pi}{6}$} \uput[150](4;150){$\frac{5\pi}{6}$} 
+%%%
+\uput[r](4;0){\small $0$} \uput[u](4;90){$\frac{\pi}{2}$} 
+\uput[l](4;180){\small $\pi$}  \uput[d](0,0){\small $0$}
+}%% fin du \boldmath
+\end{pspicture}
+\end{center}

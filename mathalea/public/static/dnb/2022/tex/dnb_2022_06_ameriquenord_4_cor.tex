@@ -1,0 +1,82 @@
+
+\medskip
+
+\begin{enumerate}
+\item \begin{minipage}[t]{10 cm}
+	Le rectangle fait 60 pas horizontalement (le lutin est orienté horizontalement vers la droite au début), donc 3 cm de large et 80 pas verticalement, donc 4 cm de haut. On doit donc représenter le rectangle ci-contre.
+\end{minipage} \hfill
+\hfill\psset{unit=1cm}
+\begin{pspicture}[shift=*](3,-4)
+	\psframe(0,0)(3,-4)
+\end{pspicture}
+
+\item En analysant le bloc rectangle, on a compris qu'il faisait 60 pas de large. À la fin de l'exécution, le lutin est revenu à son point de départ (le coin en bas à gauche du rectangle), avec son orientation de départ (orienté horizontalement vers la droite), et dans le programme principal (ligne 9), on voit que le lutin avance de 100 pas avant de recommencer à tracer, soit un rectangle, soit une croix.
+
+La distance entre deux motifs est donc $d = 100 - 60 = 40$ pas.
+
+\item Le premier motif dessiné par le lutin est une croix si le nombre aléatoire entre 1 et 2 est 2.
+
+On a donc une probabilité de $ \dfrac{1}{2} =0,5 $ que cela arrive.
+
+\item On obtient les huit possibilités suivantes :
+
+\begin{center}
+\psset{unit=2mm}
+\begin{tabularx}{\linewidth}{|*{4}{>{\centering \arraybackslash}X|}} \hline
+1&2&3&4\\
+\begin{pspicture}(13,4)
+	\psframe(0,0)(3,4)
+	\psframe(5,0)(8,4)
+	\psframe(10,0)(13,4)
+\end{pspicture}&
+\begin{pspicture}(13,4)
+	\psframe(0,0)(3,4)
+	\psframe(5,0)(8,4)
+	\psline (10,0)(13,4) \psline (13,0)(10,4)
+\end{pspicture}&
+\begin{pspicture}(13,4)
+	\psframe(0,0)(3,4)
+	\psline (5,0)(8,4) \psline (8,0)(5,4)
+	\psframe(10,0)(13,4)
+\end{pspicture}&
+\begin{pspicture}(13,4)
+	\psframe(0,0)(3,4)
+	\psline (5,0)(8,4) \psline (8,0)(5,4)
+	\psline (10,0)(13,4) \psline (13,0)(10,4)
+\end{pspicture}\\ \hline
+5&6&7&8\\
+\begin{pspicture}(13,4)
+	\psline (0,0)(3,4) \psline (3,0)(0,4)
+	\psframe(5,0)(8,4)
+	\psframe(10,0)(13,4)
+\end{pspicture}&
+\begin{pspicture}(13,4)
+	\psline (0,0)(3,4) \psline (3,0)(0,4)
+	\psframe(5,0)(8,4)
+	\psline (10,0)(13,4) \psline (13,0)(10,4)
+\end{pspicture}&
+\begin{pspicture}(13,4)
+	\psline (0,0)(3,4) \psline (3,0)(0,4)
+	\psline (5,0)(8,4) \psline (8,0)(5,4)
+	\psframe(10,0)(13,4)
+\end{pspicture}&
+\begin{pspicture}(13,4)
+	\psline (0,0)(3,4) \psline (3,0)(0,4)
+	\psline (5,0)(8,4) \psline (8,0)(5,4)
+	\psline (10,0)(13,4) \psline (13,0)(10,4)
+\end{pspicture}\\	\hline
+\end{tabularx}
+\end{center}
+
+\item Si les 8 affichages ont la même probabilité d'apparaître, sachant que deux affichages correspondent à la victoire (les affichages 1 et 8), la probabilité que le joueur gagne est donc de $ \dfrac{2}{8} = \dfrac{1}{4} = 0,25 $.
+
+\item Pour qu'il y ait deux fois plus de chances d'obtenir un rectangle qu'une croix, il faut que les probabilités d'apparaître soient $ \dfrac{2}{3} $ pour le rectangle et $ \dfrac{1}{3} $ pour la croix.
+
+Pour cela, il faut modifier l'instruction dans la ligne 5 en :
+\begin{center}
+	\booloperator{\ovaloperator{nombre aléatoire entre \ovalnum{1} et \ovalnum{3}} = \ovalnum{1}}
+\end{center}
+
+\end{enumerate}
+
+

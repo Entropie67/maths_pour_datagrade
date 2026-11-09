@@ -1,0 +1,88 @@
+
+\bigskip
+
+\textbf{Question 1}
+
+\medskip
+
+\begin{enumerate}
+\item D'après le cours on sait que les solutions de l'équation différentielle $y'+ay=b$ (avec $a\neq 0$), sont les fonctions $v$ définies sur $\R$ par: $v(t)=k \e^{-at} + \dfrac{b}{a}$ où $k\in\R$.
+
+Les solutions de l'équation différentielle $y'+100y=8$ sont donc les fonctions $v$ définies par: $v(t)=k \e^{-100t} + \dfrac{8}{100}$ où $k\in\R$.
+
+$v(0)=0 \iff k \e^{0} + \dfrac{8}{100}=0 \iff k=-\dfrac{8}{100}$
+
+La solution $v$ définie sur $[0~;~ +\infty[$ de cette équation différentielle, qui vérifie la condition initiale $v(0) = 0$, est définie par $v(t)=0,08 -0,08\e^{-100t}$.
+
+\item $v(0,01) =0,08 - 0,08\e^{-1}\approx \np{0,05057}$
+
+La vitesse de la bille après $0,01$ seconde de chute est de $0,051$~m.s$^{-1}$. 
+\end{enumerate}
+
+\bigskip
+
+\textbf{Question 2}
+
+\medskip
+
+\begin{enumerate}
+\item $u(t) = \dfrac{7\sqrt{3}}{4}\cos (100t) - \dfrac{7}{4}\sin (100t)
+= \dfrac{7}{2} \times \dfrac{\sqrt{3}}{2}\cos (100t) - \dfrac{7}{2}\times \dfrac{1}{2}\sin(100t)\\
+\phantom{u(t)}
+=  \dfrac{7}{2} \left ( \cos (100t) \times \dfrac{\sqrt{3}}{2} -\sin(100t)\times \dfrac{1}{2}\right )
+$
+
+Or $\dfrac{\sqrt{3}}{2}=\cos \left (\dfrac{\pi}{6}\right )$ et $\dfrac{1}{2}= \sin \left (\dfrac{\pi}{6}\right )$.
+Donc:
+
+$u(t) = \dfrac{7}{2} \left ( \cos (100t) \cos \left (\dfrac{\pi}{6}\right ) -\sin(100t) \sin\left (\dfrac{\pi}{6}\right )\right )
+= \dfrac{7}{2} \cos \left (100t+ \dfrac{\pi}{6}\right )$.
+
+\item Le déphasage $\varphi$ de $u(t)$ est donc égal à $\dfrac{\pi}{6}$.
+\end{enumerate}
+
+\bigskip
+
+\textbf{Question 3}
+
+\medskip
+
+$f(0)=g(0)=4$ et $f(9)=g(9)=67$ et sur l'intervalle $[0~;~9]$, la courbe $\mathcal{C}_g$ est au-dessus de la courbe $\mathcal{C}_f$ ; donc la valeur  de l'aire, exprimée en unité d'aire, située entre les courbes représentatives de ces deux fonctions est :
+$\ds\int_{0}^{9} \left ( g(x)-f(x)\right ) \d x$.
+
+\[g(x)-f(x) = \left (7x+4\right ) - \left ( x^2-2	x+4\right ) = 7x+4-x^2+2x-4 = -x^2+9x.\]
+
+On cherche une fonction $H$ primitive de $g-f$: la fonction définie par $H(x)=-\dfrac{x^3}{3}+9\dfrac{x^2}{2}$ convient.
+
+\[\ds\int_{0}^{9} \left ( g(x)-f(x)\right ) \d x
+= \left [ H(x) \strut\right ]_{0}^{9}
+= H(9)-H(0)
+= \left (-\dfrac{9^3}{3}+9\dfrac{9^2}{2} \right ) - \left ( -\dfrac{0^3}{3}+9\dfrac{0^2}{2} \right )
+= \dfrac{243}{2}.\]
+
+La valeur  de l'aire située entre les courbes représentatives de ces deux fonctions est $121,5$~U.A.
+
+\bigskip
+
+\textbf{Question 4}
+
+\medskip
+
+On a $RC = 10^3 \times 2 \cdot 10^{-3} = 2$, ce qui donne : $u_c(t) = 4\left(1 - \e^{-\frac{t}{2}}\right)$.
+
+Le temps de charge $t$  nécessaire pour obtenir une tension aux bornes du condensateur égale à la moitié de sa tension maximale est tel que $u_c(t)=\dfrac{E}{2}$ c'est-à-dire $u_c(t)=2$.
+
+On résout cette équation :
+\begin{align*}
+&u_c(t) = 2 \\
+\iff &4\left(1 - \e^{-\frac{t}{2}}\right) = 2 \\
+\iff &1 - \e^{-\frac{t}{2}}=\dfrac{1}{2} \\
+\iff &\dfrac{1}{2} = \e^{-\frac{t}{2}} \\
+\iff &\ln\left (\dfrac{1}{2} \right ) = -\dfrac{t}{2} \\
+\iff &t = -2\ln \left (\dfrac{1}{2}\right),
+\end{align*}
+soit environ $1,4$ seconde.
+
+\bigskip
+
+

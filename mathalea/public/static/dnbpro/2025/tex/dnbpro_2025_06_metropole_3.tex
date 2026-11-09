@@ -1,0 +1,54 @@
+
+\medskip
+
+\begin{minipage}{0.6\linewidth}
+Lors d'une promotion, une agence de voyage propose un tirage au sort permettant de gagner une journée de vacances. 
+
+Chaque client fait tourner la roue ci-contre, partagée en 8 secteurs de même mesure.
+
+Dans cet exemple le client gagne une journée de vacances à la campagne.
+\end{minipage}\hfill
+\begin{minipage}{0.35\linewidth}
+\psset{unit=1cm,arrowsize=2pt 3}
+\begin{pspicture}(-2.7,-2.7)(2.7,2.7)
+\pscircle*(0,0){2.5}
+\pscircle[linewidth=2.5pt,linecolor=white](0,0){0.4}
+\pspolygon[linecolor=white](0.2;0)(0.2;120)(0.2;240)
+\multido{\n=20+45}{8}{\psline[linewidth=1.5pt,linecolor=white](0.4;\n)(2.5;\n)}
+\rput{-2.5}(1.7;-2.5){\white Mer}\rput{-177.5}(1.7;-177.5){\white Mer}\rput{-92.5}(1.7;-92.5){\white Mer}
+\rput{42.5}(1.6;42.5){\white Montagne}\rput{222.5}(1.6;222.5){\white Montagne}
+\rput{87.5}(1.7;87.5){\white Ville}\rput{-47.5}(1.7;-47.5){\white Ville}
+\rput{132.5}(1.6;132.5){\white Campagne}\psline[linewidth=2.5pt]{->}(3.3;132.5)(2.5;132.5)
+\end{pspicture}
+\end{minipage}
+
+\medskip
+
+L'agence présente les résultats des tirages au sort, effectués sur une semaine, dans le diagramme ci-dessous.
+
+\psset{xunit=1cm,yunit=0.1cm}
+\begin{center}
+\begin{pspicture}(-1,-10)(12,82)
+\multido{\n=0+2}{41}{\psline[linewidth=0.3pt](0,\n)(12,\n)}
+\multido{\n=0+10,\na=0+10}{9}{\psline[linewidth=0.9pt](0,\n)(12,\n)\uput[l](0,\n){\na}}
+\psframe*(1.5,0)(2.5,42)\psframe*(4.5,0)(5.5,55)\psframe*(7.5,0)(8.5,68)\psframe*(10.5,0)(11.5,35)
+\uput[d](2,0){Ville}\uput[d](5,0){Montagne}\uput[d](8,0){Mer}\uput[d](11,0){Campagne}
+\uput[u](5,55){55}\uput[u](11,35){35}\rput{90}(-0.8,40){Effectif}
+\end{pspicture}
+\end{center}
+
+\begin{enumerate}
+\item Indiquer le nombre de fois où la roue s'est arrêtée sur un secteur \og Ville \fg.
+\item Montrer que le nombre total de tirages au sort effectués cette semaine-là est 200.
+\item Calculer la fréquence d'apparition du secteur \og Montagne \fg.
+\end{enumerate}
+
+On fait tourner la roue.
+
+\begin{enumerate}[resume]
+\item À l'aide des informations sur la roue, calculer la probabilité de s'arrêter sur \og Montagne \fg.
+\item Elsa participe au tirage au sort. En examinant la roue elle pense qu'elle a plus de chance de gagner une journée à la montagne qu'à la ville. Indiquer si elle a raison ou tort. Justifier la réponse.
+\end{enumerate}
+
+\bigskip
+

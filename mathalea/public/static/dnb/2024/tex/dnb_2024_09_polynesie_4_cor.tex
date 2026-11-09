@@ -1,0 +1,195 @@
+
+%\medskip
+
+\begin{enumerate}
+\item
+\begin{multicols}{2}
+ Sur la figure ci-contre, DEFGH est un pentagone régulier et le point E appartient à la demi-droite [D$y$). \\
+\\
+On admet que tous les angles du pentagone régulier mesurent $108$ degrés.
+
+\columnbreak
+
+\begin{center}
+\psset{unit=1cm}
+\begin{pspicture}(-2,-2)(3.5,2.1)
+\pspolygon(1.7;18)(1.7;90)(1.7;162)(1.7;234)(1.7;306)%FGHDE
+\uput[dl](1.7;234){D} \uput[d](1.7;306){E} \uput[r](1.7;18){F}
+\uput[u](1.7;90){G} \uput[l](1.7;162){H} \uput[d](3.2,-1.39){$y$}
+\psline(1.7;306)(3.3,-1.39)
+\psarc(1.7;306){0.7}{0}{72}
+\end{pspicture}
+\end{center}
+\end{multicols}
+
+%\medskip
+
+$\widehat{\text{DEF}}+ \widehat{\text{FE}y}=180$;
+or $\widehat{\text{DEF}}=108$ donc $\widehat{\text{FE}y}=180-108 = 72$
+
+L'angle $\widehat{\text{FE}y}$  mesure donc $72$ degrés.
+
+\item% Dans la suite de cet exercice, aucune justification n'est attendue.
+	\begin{enumerate}
+		\item On complète les lignes 3 et 5 du bloc \og pentagone \fg{}  pour obtenir un pentagone régulier.
+		
+%La variable \og longueur \fg{} permet de modifier la longueur des côtés du pentagone.
+		
+\hfill
+\begin{scratch}[num blocks,scale=1]
+\initmoreblocks{définir \namemoreblocks{pentagone}}
+\blockpen{stylo en position d'écriture}
+\blockrepeat{répéter \ovalnum{\red\bf 5} fois}
+{\blockmove{avancer de \ovalnum{longueur} pas}
+\blockmove{tourner \turnleft{} de \ovalnum{\red\bf 72} degrés}
+}
+\blockpen{relever le stylo}
+\end{scratch}
+\hfill~
+
+		\item Camille, Lou et Zoé ont chacun codé un programme qui trace un pentagone et son image par l'une des transformations suivantes : translation, symétrie centrale, rotation.
+
+\begin{center}
+\begin{tabularx}{\linewidth}{|*{3}{X|}}
+\hline
+Programme de Camille&Programme de Lou&Programme de Zoé\\ 
+\hline
+\begin{scratch}[num blocks,scale=0.8]
+\blockinit{Quand \greenflag est cliqué}
+\blockpen{effacer tout}
+\blockmove{aller à x : \ovalnum{0} y : \ovalnum{0}}
+\blockmove{s'orienter à ~\ovalnum{90}}
+\blockvariable{mettre \selectmenu{longueur} à \ovalnum{60}}
+\blockmoreblocks{pentagone}
+\blockmove{avancer de \ovalnum{120} pas}
+\blockmoreblocks{pentagone}
+\end{scratch}
+&
+\begin{scratch}[num blocks,scale=0.8]
+\blockinit{Quand \greenflag est cliqué}
+\blockpen{effacer tout}
+\blockmove{aller à x : \ovalnum{0} y : \ovalnum{0}}
+\blockmove{s'orienter à ~\ovalnum{90}}
+\blockvariable{mettre \selectmenu{longueur} à \ovalnum{60}}
+\blockmoreblocks{pentagone}
+\blockmove{tourner \turnleft{} de \ovalnum{60} degrés}
+\blockmoreblocks{pentagone}
+\end{scratch}
+&
+\begin{scratch}[num blocks,scale=0.8]
+\blockinit{Quand \greenflag est cliqué}
+\blockpen{effacer tout}
+\blockmove{aller à x : \ovalnum{0} y : \ovalnum{0}}
+\blockmove{s'orienter à ~\ovalnum{90}}
+\blockvariable{mettre \selectmenu{longueur} à \ovalnum{60}}
+\blockmoreblocks{pentagone}
+\blockmove{tourner \turnleft{} de \ovalnum{180} degrés}
+\blockmoreblocks{pentagone}
+\end{scratch}\\ 
+\hline
+\end{tabularx}
+\end{center}
+
+%On rappelle que l'instruction \og s'orienter à 90 \fg{} signifie que l'on s'oriente vers la droite.
+
+Les trois élèves ont effectué une copie d'écran de ce qu'ils ont obtenu sans indiquer ni leur prénom ni le nom de la transformation choisie.
+
+\begin{center}
+\begin{tabularx}{\linewidth}{|*{3}{X|}}\hline
+Copie d'écran 1 &Copie d'écran 2& Copie d'écran 3\\ \hline
+\begin{center}
+\psset{unit=0.75cm}
+\begin{pspicture}(-2,-2)(2,2)
+\def\penta{\pspolygon(1.;18)(1.;90)(1.;162)(1.;234)(1.;306)}
+\rput{-12}(-0.3945,0.1045){\penta}\rput(0.6,0.){\penta}
+\end{pspicture}
+\end{center}
+&
+\begin{center}
+\psset{unit=0.75cm}
+\begin{pspicture}(-2,-2)(2,2)
+\def\penta{\pspolygon(1.;18)(1.;90)(1.;162)(1.;234)(1.;306)}
+\rput(0.6,0.6){\penta}\rput{180}(-0.6,-1){\penta}
+\end{pspicture}
+\end{center}
+&
+\begin{center}
+\psset{unit=0.75cm}
+\begin{pspicture}(-2,-2)(2,2)
+\def\penta{\pspolygon(1.;18)(1.;90)(1.;162)(1.;234)(1.;306)}
+\rput(-1.2,0){\penta}\rput(1.2,0){\penta}
+\end{pspicture}
+\end{center}\\ \hline
+\end{tabularx}
+\end{center}
+
+On complète le tableau ci-dessous, en associant le prénom de l'élève au numéro de sa copie d'écran ainsi qu'au nom de la transformation qu'il a choisie.
+
+\begin{center}
+{\renewcommand{\arraystretch}{1.5}
+\begin{tabular}[t]{|c|c|c|}
+\hline
+Nom de l'élève&Numéro de la copie d'écran&Nom de la transformation\\ 
+\hline
+Camille& \textcolor{blue}{3} & \textcolor{blue}{translation}\\ 
+\hline 
+Lou & \textcolor{blue}{1} & \textcolor{blue}{rotation}\\ 
+\hline 
+Zoé& \textcolor{blue}{2} & \textcolor{blue}{symétrie centrale}\\ 
+\hline 
+\end{tabular}}
+\end{center}
+
+\item Sofia souhaite illustrer à l'aide d'un programme l'effet d'une homothétie sur un pentagone. 
+
+%Le tableau donne, dans le désordre, toutes les instructions utiles pour écrire ce programme. L'ordre d'apparition dans le programme de deux instructions est précisé.
+
+On complète le tableau, en indiquant l'ordre d'apparition de chacune des instructions dans le programme de Sofia.
+
+\begin{center}
+%\renewcommand{\arraystretch}{2.5}
+\begin{tabular}{|l| >{\centering\arraybackslash}m{4cm}|}
+\hline
+\hfill Instruction \hfill~ &Ordre d'apparition de l'instruction dans le programme de Sofia\\ 
+\hline
+\begin{scratch}[scale=1]\blockpen{effacer tout} \end{scratch}& 2\ieme \\ 
+\hline
+\begin{scratch}[scale=1]\blockmove{s'orienter à \ovalnum{90} } \end{scratch}& 4\ieme \\ 
+\hline
+\begin{scratch}[scale=1]\blockmoreblocks{pentagone} \end{scratch}&6\ieme\\ 
+\hline
+\begin{scratch}[scale=1]\blockinit{Quand \greenflag est cliqué} \end{scratch}&\multicolumn{1}{|c|}{1\up{re}}\\ 
+\hline
+\begin{scratch}[scale=1]\blockvariable{mettre \selectmenu{longueur} à \ovalnum{60}} \end{scratch}& 5\ieme\\ 
+\hline
+\begin{scratch}[scale=1]\blockmove{aller à x : \ovalnum{0} y : \ovalnum{0}} \end{scratch}& 3\ieme\\ 
+\hline
+\begin{scratch}[scale=1]\blockmoreblocks{pentagone} \end{scratch}& 8\ieme \\ 
+\hline
+\begin{scratch}[scale=1]\blockvariable{mettre \selectmenu{longueur} à \ovaloperator{\ovalvariable{longueur} *\ovalnum{1.5}}} \end{scratch}& 7\ieme\\ 
+\hline
+\end{tabular}
+\end{center}
+
+Ce qui donne le programme suivant:
+
+\begin{center}
+\begin{scratch}[scale=1]
+\blockinit{Quand \greenflag est cliqué} 
+\blockpen{effacer tout} 
+\blockmove{aller à x : \ovalnum{0} y : \ovalnum{0}} 
+\blockmove{s'orienter à \ovalnum{90} } 
+\blockvariable{mettre \selectmenu{longueur} à \ovalnum{60}} 
+\blockmoreblocks{pentagone} 
+\blockvariable{mettre \selectmenu{longueur} à \ovaloperator{\ovalvariable{longueur} *\ovalnum{1.5}}} 
+\blockmoreblocks{pentagone} 
+\end{scratch}
+
+\end{center}
+
+	\end{enumerate}
+\end{enumerate}
+
+%\bigskip
+
+

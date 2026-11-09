@@ -1,0 +1,51 @@
+\bigskip
+
+\begin{enumerate}
+\item Calculons $\omega_c$ :
+\[\omega_c = \dfrac{1}{R C} = \dfrac{1}{10^{6} \times 10^{-6}} = 1 \, \mathrm{rad \cdot s^{-1}}.\]
+
+En remplaçant $\omega_c$ par $\dfrac{1}{R C}$ dans le calcul de $H(\omega_c)$, on obtient :
+\[H(\omega_c) = \dfrac{1}{1 + \text{i}} 
+= \dfrac{1 \times (1 - \text{i})}{(1 + \text{i})(1 - \text{i})} 
+= \dfrac{1 - \text{i}}{1^2 - \text{i}^2}
+= \dfrac{1 - \text{i}}{2}
+= \dfrac{1}{2} - \dfrac{1}{2} \text{i}.\]
+
+\item Écriture de $H(\omega_c)$ sous forme exponentielle :
+\[|H(\omega_c)| = \sqrt{0,5^2 + (-0,5)^2} = \frac{\sqrt{2}}{2}.\]
+
+L'argument $\theta$ est l'angle tel que :
+\[\cos(\theta) = \dfrac{\frac{1}{2}}{\frac{\sqrt{2}}{2}} = \dfrac{\sqrt{2}}{2} \quad \text{et} \quad \sin(\theta) = \dfrac{-\frac{1}{2}}{\frac{\sqrt{2}}{2}} = -\dfrac{\sqrt{2}}{2} \quad \text{soit} \quad \theta = -\dfrac{\pi}{4}.\]
+
+Forme exponentielle :
+\[H(\omega_c) = \dfrac{\sqrt{2}}{2} \e^{-\frac{\pi}{4}\text{i}}.\]
+
+\item La réponse en gain est donnée par :
+$G_{dB} = 20 \log |H(\omega_c)|.$
+
+En remplaçant $|H(\omega_c)| = \dfrac{\sqrt{2}}{2}$ :
+\begin{align*}
+G_{dB} &= 20 \log\left(\dfrac{\sqrt{2}}{2}\right) \\
+&= 20 \left(\log\left(2^{\frac{1}{2}}\right) - \log(2)\right) \\
+&= 20 \left(\dfrac{1}{2}\log(2) - \log(2)\right) \\
+&= 20 \left(-\frac{1}{2} \log(2)\right) \\
+&= -10 \log(2).
+\end{align*}
+
+\item Calcul du complexe :
+\begin{align*}
+H_T\left(\omega_c\right) &= H\left(w_c\right) \times H\left(\omega_c\right) \\
+&= \dfrac{1 - \text{i}}{2} \times \dfrac{1 - \text{i}}{2} \\
+&= \dfrac{1 - 2\text{i} + \text{i}^2}{4} \\
+&= \dfrac{- 2\text{i}}{4}
+= -\dfrac{1}{2}\text{i}.
+\end{align*}
+
+Module :
+$|H_T\left(\omega_c\right)| = \sqrt{\left(-\dfrac{\text{1}}{2}\right)^2} = \dfrac{1}{2}$
+
+L'argument $\theta$ est l'angle tel que :
+\[\cos(\theta) = \dfrac{0}{\frac{1}{2}} = 0 \quad \text{et} \quad \sin(\theta) = \dfrac{-\frac{1}{2}}{\frac{1}{2}} = -1 \quad \text{soit} \quad \theta = -\dfrac{\pi}{2}.\]
+\end{enumerate}
+
+\bigskip

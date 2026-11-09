@@ -1,0 +1,72 @@
+
+\medskip
+
+La piscine du camping \og le Rocher\fg{} dispose d'un bassin circulaire de forme cylindrique de rayon $R=3,60$~m et de hauteur $h=1,50$~m. En fin de saison, on utilise une pompe dont le débit est de $14,1$~m$^3$/h pour vider l'eau de la piscine.
+
+%\medskip
+
+\begin{enumerate}
+\item %Montrer que le volume du bassin, arrondi au dixième de m$^3$, est 61,1m$^3$.
+Le volume du bassin est $V=\pi R^2 h = \pi\times 3,6^2\times 1,5 \approx 61,07$.
+
+Donc  le volume du bassin, arrondi au dixième de m$^3$, est $61,1$m$^3$.
+
+\item Le bassin est plein. On met en route la pompe. %Au bout de 2 heures, quel volume d'eau en m$^3$ reste-t-il à vider ?
+
+En une heure, la pompe vide $14,1$~m$^3$, donc en 2 heures, elle vide $2\times 14,1$ soit $28,2$~m$^3$.
+
+$61,1-28,2=32,9$ donc au bout de 2 heures, il reste $32,9$~m$^3$ à vider.
+
+	\end{enumerate}
+
+On considère la fonction $V\::\: t \longmapsto  61,1 - 0,235 t$.
+
+	\begin{enumerate}[resume]
+\item 
+	\begin{enumerate}
+		\item %Montrer que l'expression $V(t)$ permet de déterminer le volume d'eau en m$^3$ qu'il reste à vider dans le bassin en fonction de la durée $t$, exprimée en minute, d'utilisation de la pompe.
+La pompe vide $14,1$~m$^3$ par heure donc $\dfrac{14,1}{60}$ soit $0,235$~m$^3$ par minute.
+
+En $t$ minutes, elle vide $0,235t$~m$^3$; il en reste donc $61,1-0,235t$ à vider.
+
+		\item Le temps nécessaire pour que le volume d'eau restant à vider soit égal à $30$ m$^3$ est le temps $t$ tel que $V(t)=30$. On résout cette équation.
+		
+$V(t)=30$ équivaut à 		
+$61,1-0,235t = 30$ équivaut à 
+$61,1-30=0,235t$ équivaut à 
+$31,1=0,235t$ équivaut à 
+$\dfrac{31,1}{0,235}=t$
+
+$\dfrac{31,1}{0,235} \approx 132,34$ donc le temps nécessaire pour que le volume d'eau restant à vider soit égal à $30$ m$^3$ est 132 minutes.
+		
+%On donnera une valeur approchée à la minute près.
+	\end{enumerate}
+	
+\item On a tracé ci-dessous une partie de la représentation graphique de la fonction $V$.
+
+\begin{center}
+\psset{unit=0.04cm,arrowsize=3pt 3}
+\begin{pspicture*}(-20,-20)(330,120)
+\psgrid[unit=2cm,subgriddiv=5,gridlabels=0,gridcolor=gray,subgridcolor=lightgray](-1,-1)(7,3)
+\psaxes[linewidth=1.25pt,Dx=50,Dy=50,labelFontSize=\scriptstyle]{->}(0,0)(-20,-20)(330,120)
+\psplot[plotpoints=2000,linewidth=1.25pt,linecolor=blue]{-20}{330}{61.1 0.235 x mul sub}
+\uput[u](305,0){$t$}\uput[r](0,105){$V(t)$}
+%%%%%%%%%%%%%
+\psset{linecolor=blue,linestyle=dashed}
+\psline[ArrowInside=->](0,40)(90,40)(90,0)
+\uput*[l](0,40){\blue\footnotesize 40} \uput*[d](90,0){\blue\footnotesize 90} 
+\psdots(260,0) \uput*[d](260,0){\blue\footnotesize 260} 
+\end{pspicture*}
+\end{center}
+
+%Répondre aux questions suivantes par une lecture graphique.
+	\begin{enumerate}
+		\item D'après le graphique, l'antécédent de 40 par la fonction $V$ est environ  90.\\
+Au bout de 90 minutes, il reste donc 40~m$^3$ à vider.
+		
+%Interpréter le résultat.
+
+		\item D'après le graphique, le temps nécessaire pour que la pompe vide complètement le bassin est d'environ 260 minutes. 
+	\end{enumerate}
+\end{enumerate}
+

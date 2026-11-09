@@ -1,0 +1,277 @@
+%\textbf{Pour cette première partie, aucune justification n'est demandée et une seule réponse est possible par question. Pour chaque question, reportez son numéro sur votre copie et indiquez votre réponse.}
+%
+%Une réponse fausse ou l'absence de réponse n'enlève aucun point.
+
+\subsection*{Question 1}
+
+
+% texte de la question 1
+Augmenter un nombre de 4~\% revient à le multiplier par \mbox{$1+\dfrac{4}{100}=\np{1.04}$}, \textbf{réponse C}.
+%
+%\medskip
+%% réponses proposées
+%\noindent
+%% par défaut 4 colonnes, à adapter (pour 2) en ajoutant \ au bon endroit
+%\begin{tblr}{colspec = {*4{X[c]}},hlines,vlines}% en option ,hlines,vlines
+%\textbf{A.}\quad  $0,04$
+%& 
+%\textbf{B.}\quad  $0,4$
+%& 
+%\textbf{C.}\quad $1,04$
+%& 
+%\textbf{D.}\quad  $1,4$
+%\\
+%\end{tblr}
+
+\subsection*{Question 2}
+
+
+%% texte de la question 2
+%25~\% de 80 est égal à :
+%
+%\medskip
+%% réponses proposées
+%\noindent
+%% par défaut 4 colonnes, à adapter (pour 2) en ajoutant \ au bon endroit
+%\begin{tblr}{colspec = {*4{X[c]}},hlines,vlines}% en option ,hlines,vlines
+%\textbf{A.}\quad $16$
+%& 
+%\textbf{B.}\quad $20$
+%& 
+%\textbf{C.}\quad $60$
+%& 
+%\textbf{D.}\quad $100$
+%\\
+%\end{tblr}
+25\% d'une quantité, c'est le quart de cette quantité. Quatre-vingt c'est quatre fois vingt, donc 25\% de 80 c'est 20, \textbf{réponse B}.
+\subsection*{Question 3}
+
+
+% texte de la question 3
+%Trois quarts d’heure correspondent à :
+%
+%\medskip
+%% réponses proposées
+%\noindent
+%% par défaut 4 colonnes, à adapter (pour 2) en ajoutant \ au bon endroit
+%\begin{tblr}{colspec = {*4{X[c]}},hlines,vlines}% en option ,hlines,vlines
+%\textbf{A.}\quad 15 minutes
+%& 
+%\textbf{B.}\quad 40 minutes
+%& 
+%\textbf{C.}\quad 45 minutes
+%& 
+%\textbf{D.}\quad 75 minutes
+%\\
+%\end{tblr}
+Dans une heure il y a soixante minutes, un quart d'heure c'est donc 15 minutes, et trois quarts d'heure 45 minutes, \textbf{réponse C}.
+\subsection*{Question 4}
+
+
+% texte de la question 4
+%Le nombre $\np{4,31E-5}$ peut s’écrire :
+%
+%\medskip
+%% réponses proposées
+%\noindent
+%% par défaut 4 colonnes, à adapter (pour 2) en ajoutant \ au bon endroit
+%\begin{tblr}{colspec = {*4{X[c]}},hlines,vlines}% en option ,hlines,vlines
+%\textbf{A.}\quad  \np{0.0000431}
+%& 
+%\textbf{B.}\quad  \np{0.000431}
+%& 
+%\textbf{C.}\quad \np{0.00431}
+%& 
+%\textbf{D.}\quad  \np{431000}
+%\\
+%\end{tblr}
+Le premier chiffre différent de $0$ est donc le chiffre des cent-millièmes. Donc ce nombre est \np{0.0000431}, \textbf{réponse A}.
+\subsection*{Question 5}
+
+
+% texte de la question 5
+%On donne $V = \pi h R^2$ avec $h = 4$, $R = 5$ et $\pi \approx 3,14$. Un calcul numérique permettant d’obtenir une valeur approchée de $V$ est :
+%
+%\medskip
+%% réponses proposées
+%\noindent
+%% par défaut 4 colonnes, à adapter (pour 2) en ajoutant \ au bon endroit
+%\begin{tblr}{colspec = {*4{X[c]}},hlines,vlines}% en option ,hlines,vlines
+%\textbf{A.}\quad $3,14 \times 4 \times 25$
+%& 
+%\textbf{B.}\quad $3,14 \times (4 \times 5)^2$
+%& 
+%\textbf{C.}\quad $(3,14 \times 4 \times 5)^2$
+%& 
+%\textbf{D.}\quad $3,14 \times 4 \times 5$
+%\\
+%\end{tblr}
+Puisque \mbox{$5^2=25$}, il faut donc calculer \mbox{$\np{3.14}\times4\times25$}, \textbf{réponse A}.
+\subsection*{Question 6}
+
+
+% texte de la question 6
+%
+%On donne les deux graphiques ci-dessous :
+%% graphique tikz
+%
+%\begin{tblr}{*2{X[c]}}
+%\begin{tikzpicture}
+%\begin{axis}[
+%  title={Graphique 1}, % Titre du graphique
+%  height = 6cm,
+%  width=8.7cm,
+%  ymin = 0,
+%  ymax = 85,
+%  ymajorgrids = true,
+%  ytick={0,10,...,80},
+%  axis x line = bottom,
+%  axis y line = left,
+%  x axis line style={-},
+%  y axis line style={-},
+%  yticklabel={\pgfmathprintnumber{\tick}\,$\%$},
+%  ybar = 12pt,
+%  bar width = 20pt,
+%  enlarge x limits={0.3},
+%  legend style={at={(0.5,-0.3)}, 
+%  anchor=north,legend columns=-1},
+%  ylabel={},
+%  symbolic x coords={Propriétaires,Locataires,Total},
+%  xtick=data,
+%  nodes near coords={\pgfmathprintnumber{\pgfplotspointmeta}\,$\%$},
+%  nodes near coords align={vertical},
+%  ]
+%\addplot[color=black, fill=gray8] coordinates {(Propriétaires,75) (Locataires,56.25) (Total,60)};
+%\addplot[color=black, fill=gray2] coordinates {(Propriétaires,25) (Locataires,43.75) (Total,40)};
+%\legend{Hommes,Femmes}
+%\end{axis}
+%\end{tikzpicture}
+%&
+%\begin{tikzpicture}
+%	\pgfkeys{/pgf/number format/.cd,
+%		fixed,fixed zerofill,
+%		precision=1
+%	}
+%\begin{axis}[
+%  height = 6cm,
+%  width=8.7cm,
+%  title={Graphique 2}, % Titre du graphique
+%  ymin = 0,
+%  ymax = 100,
+%  ymajorgrids = true,
+%  axis x line = bottom,
+%  axis y line = left,
+%  x axis line style={-},
+%  y axis line style={-},
+%  yticklabel={\pgfmathprintnumber{\tick}\,$\%$},
+%  ybar = 8pt,
+%  bar width = 20pt,
+%  enlarge x limits={0.3},
+%  legend style = {at={(0.5,-0.3)}, 
+%  anchor=north,legend columns=-1},
+%  ylabel={},
+%  symbolic x coords={Hommes,Femmes,Total},
+%  xtick=data,
+%  nodes near coords={\pgfmathprintnumber{\pgfplotspointmeta}\,$\%$},
+%  nodes near coords align={vertical},
+%]
+%\addplot[color=black, fill=gray8] coordinates {(Hommes,25.0) (Femmes,12.5) (Total,20.0)};
+%\addplot[color=black, fill=gray2] coordinates {(Hommes,75.0) (Femmes,87.5) (Total,80.0)};
+%\legend{Propriétaires,Locataires}
+%\end{axis}
+%\end{tikzpicture}
+%\end{tblr}
+%
+%La proportion d’hommes parmi les locataires est :
+%
+%
+%\medskip
+%% réponses proposées
+%\noindent
+%% par défaut 4 colonnes, à adapter (pour 2) en ajoutant \ au bon endroit
+%\begin{tblr}{colspec = {*4{X[c]}},hlines,vlines}% en option ,hlines,vlines
+%\textbf{A.}\quad 25,0~\%
+%& 
+%\textbf{B.}\quad 43,75~\%
+%& 
+%\textbf{C.}\quad 56,25~\%
+%& 
+%\textbf{D.}\quad 75,0~\%
+%\\
+%\end{tblr}
+D'après le graphique 1, la proportion d'hommes parmi les locataires est \np{56.25}\%, \textbf{réponse C}.
+
+\subsection*{Question 7}
+
+
+%% texte de la question 7
+%Sur \R, l’équation $6x − 5 = 4x + 3$ a pour solution :
+%
+%\medskip
+%% réponses proposées
+%\noindent
+%% par défaut 4 colonnes, à adapter (pour 2) en ajoutant \ au bon endroit
+%\begin{tblr}{colspec = {*4{X[c]}},hlines,vlines}% en option ,hlines,vlines
+%\textbf{A.}\quad $ x = -2 $
+%& 
+%\textbf{B.}\quad $ x = 1 $
+%& 
+%\textbf{C.}\quad $ x = 2 $
+%& 
+%\textbf{D.}\quad $ x = 4$
+%\\
+%\end{tblr}
+\mbox{$6x-5=4x+3\iff 2x-5=3\iff2x=8\iff x=4$}, \textbf{réponse D}.
+\subsection*{Question 8}
+%
+%
+%% texte de la question 8
+%La droite $(\Delta)$ est la représentation graphique d'une fonction affine $f$ définie sur \R.
+%
+%\begin{center}
+%% figure Tikz
+%\begin{tikzpicture}
+%\begin{axis}[
+%  width = 10cm,
+%  height = 8cm,
+%  xmin=-1,
+%  xmax= 4,
+%  ymin = -1,
+%  ymax = 3,
+%  xmajorgrids = true,
+%  ymajorgrids = true,
+%  axis x line = middle,
+%  axis y line = center,
+%  x axis line style={-latex},
+%  y axis line style={-latex},
+%  enlargelimits={0.05},
+%  xtick={-1,0,...,4},
+%  minor x tick num =0,
+%  ytick={-1,0,...,3},
+%  minor y tick num =0,
+%  tick label style={font=\small},
+%  ]
+%  \node[below left] at (axis cs:0,0){\small 0};
+%  \addplot[color=blue,domain=-1.5:4.5,smooth,samples=2,line width=1.2pt] {((-2/3)*x+2)} node[above right, pos=0.5] {$(\Delta)$};
+%\end{axis}
+%\end{tikzpicture}
+%\end{center}
+%
+%L'expression de $f$ est :
+%
+%\medskip
+%% réponses proposées
+%\noindent
+%% par défaut 4 colonnes, à adapter (pour 2) en ajoutant \ au bon endroit
+%\begin{tblr}{colspec = {*4{X[c]}},hlines,vlines}% en option ,hlines,vlines
+%\textbf{A.}\quad $f(x) = 2x+3 $ 
+%& 
+%\textbf{B.}\quad $f(x) = 3x+2$ 
+%& 
+%\textbf{C.}\quad $f(x) = -\dfrac{3}{2}x +2$
+%& 
+%\textbf{D.}\quad  $f(x) = -\dfrac{2}{3}x +2$
+%\\
+%\end{tblr}
+
+$f$ est décroissante, on lit que l'ordonnée à l'origine est $2$ (autrement dit \mbox{$f(0)=2$}), et \mbox{$f(3)=0$}, donc la pente de $f$ est \mbox{$\dfrac{f(3)-f(0)}{3-0}=-\dfrac23$}, l'expression de $f$ est donc \mbox{$f(x)=-\dfrac23 x +2$}, \textbf{réponse D}.

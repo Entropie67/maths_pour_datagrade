@@ -1,0 +1,92 @@
+
+\medskip
+
+Le programme suivant permet de calculer l'aire d'un trapèze.
+
+\begin{minipage}{0.6\linewidth}
+\begin{scratch}[scale=0.85]
+\blockinit{quand \greenflag est cliqué}
+\blocksensing{demander \ovalnum{Quelle est la longueur B de la grande base du trapèze ?}}
+\blockvariable{mettre \ovalvariable{B} à \ovalvariable{réponse}}
+\blocksensing{demander \ovalnum{Quelle est la longueur b de la grande base du trapèze ?}}
+\blockvariable{mettre \ovalvariable{b} à \ovalvariable{réponse}}
+\blocksensing{demander \ovalnum{Quelle est la longueur h du trapèze ?}}
+\blockvariable{mettre \ovalvariable{h} à \ovalvariable{réponse}}
+\blocklook{dire \ovalvariable{ regrouper \ovalnum{ l'aire du trapèze est égale à } et \ovalcontrol{\ovalcontrol{\ovalvariable{B} + \ovalvariable{b}} * \ovalvariable{h}} / \ovalnum{2}}}
+\end{scratch}
+\end{minipage}\hfill
+\begin{minipage}{0.37\linewidth}
+\begin{center}
+\begin{pspicture}(5,4.4)
+\psset{arrowsize=2pt 3}
+\pspolygon(0,0.6)(4.6,0.6)(3.4,3.6)(1.2,3.6)
+\psline{<->}(1.2,3.6)(1.2,0.6) \uput[r](1.2,2.1){Hauteur $h$}
+\psline{<->}(3.4,3.8)(1.2,3.8) \uput[u](2.3,3.8){Petite base $b$}
+\psline{<->}(0,0.4)(4.6,0.4) \uput[d](2.3,0.4){Grande base $B$}
+\end{pspicture}
+\end{center}
+\end{minipage}
+
+\begin{enumerate}
+\item En s'aidant de la dernière instruction du programme, inscrire sur la copie la formule de l'aire d'un trapèze:
+
+\begin{center}
+\begin{tabularx}{\linewidth}{*{3}{>{\centering \arraybackslash}X}}
+\textbf{a.~} $B + \dfrac{b\times h}{b}$& \textbf{b.~} $\dfrac{(B + b) \times h}{2}$&\textbf{c.~} $\dfrac{(B + b \times h)}{2}$
+\end{tabularx}
+\end{center}
+
+
+\item Si $B = 12,\: b = 8$ et $h = 6$, le résultat affiché par le programme est :
+
+\begin{center}
+\begin{tabularx}{\linewidth}{*{4}{>{\centering \arraybackslash}X}}
+\textbf{a.~} 13 &\textbf{b.~} 36 &\textbf{c.~} 60 &\textbf{d.~} 576 
+\end{tabularx}
+\end{center}
+
+Inscrire la bonne réponse sur la copie.
+
+\item  On souhaite compléter le programme de calcul d'aire d'un rectangle commencé ci-dessous.
+
+\begin{scratch}
+\blockinit{quand \greenflag est cliqué}
+\blocksensing{ demander \ovalnum{Quelle est la longueur  du rectangle ?} et attendre }
+\end{scratch}
+
+\medskip
+
+En choisissant \textbf{seulement} les instructions utiles au calcul de l'aire d'un rectangle, recopier dans l'ordre sur la copie, les numéros des instructions ci-dessous qui permettent de terminer le programme commencé.
+
+\begin{center}
+\renewcommand{\arraystretch}{3}
+\begin{tabularx}{\linewidth}{|c|X|}\hline
+\No& Instructions\\ \hline
+1&\begin{scratch}[scale=0.9]
+\blocklook{Dire \ovaloperator{regrouper \ovalnum{L'aire du rectangle est égale à } et \ovaloperator{\ovaloperator{\ovalcontrol{longueur} * \ovalcontrol{largeur}}/\ovalnum{2}}}}
+\end{scratch}\\
+\hline
+2&\begin{scratch}[scale=0.9]
+\blocklook{Dire \ovaloperator{regrouper \ovalnum{L'aire du rectangle est égale à} et \ovaloperator{\ovalcontrol{longueur} * \ovalcontrol{largeur}* \ovalcontrol{hauteur}}}}
+\end{scratch}\\
+\hline
+3&\begin{scratch}[scale=0.9]
+\blocklook{Dire \ovaloperator{regrouper \ovalnum{L'aire du rectangle est égale à } et \ovaloperator{\ovalcontrol{longueur} * \ovalcontrol{largeur}}}}
+\end{scratch}\\
+\hline
+4&\begin{scratch}[scale=0.9]
+\blocksensing{demander \ovalnum{Quelle est la largeur du rectangle ?} et attendre}
+\end{scratch}\\
+\hline
+5&\begin{scratch}[scale=0.9]
+\blockvariable{mettre \ovalvariable{longueur} à \ovalvariable{réponse}}
+\end{scratch}\\
+\hline
+6&\begin{scratch}[scale=0.9]
+\blockvariable{mettre \ovalvariable{largeur} à \ovalvariable{réponse}}
+\end{scratch}\\ \hline
+\end{tabularx}
+\end{center}
+
+\end{enumerate}
+

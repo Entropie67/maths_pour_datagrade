@@ -1,0 +1,62 @@
+\subsection*{Partie A}
+\begin{enumerate}
+	\item \begin{enumerate}
+		\item D'après la figure, on a : \quad $\mathrm{AB} = 3x + 1$.
+
+		Avec $x = 10$, cela donne : \quad $\mathrm{AB} = 3 \times 10 + 1 = 31$.
+
+		La longueur AB vaut donc 31.
+
+		\item De même, on a :\quad $\mathrm{AD} = x - 2 = 10 - 2 = 8$.
+
+		Comme ABCD est un rectangle, ses côtés opposés sont de même longueur, donc :
+
+		$\mathcal{P}_{\mathrm{ABCD}} = 2\big(\mathrm{AB} + \mathrm{AD}\big) = 2\times (31 + 8) = 2\times 39 = 78$.
+
+		Le périmètre de ABCD est bien de 78, pour $x=10$.
+	\end{enumerate}
+	\item En généralisant :\quad
+	$\mathcal{P}_{\mathrm{ABCD}} = 2\big(\mathrm{AB} + \mathrm{AD}\big) = 2\times (3x + 1 + x - 2) = 2\times (4x - 1) = 8x - 2$.
+
+	Le périmètre de ABCD est bien donné par l'expression \quad $8x-2$.
+\end{enumerate}
+
+\subsection*{Partie B}
+\begin{enumerate}
+	\item Si on choisit $x = 7$:
+	\begin{itemize}
+		\item le périmètre de ABCD est :\quad $8 \times 7 - 2 = 56 - 2 = 54$;
+		\item le périmètre de IJK est : \quad $6 \times 7 + 9 = 42 + 9 = 51$.
+	\end{itemize}
+	Comme les deux périmètres ne sont pas égaux, le programme va afficher \og Les deux périmètres ne sont pas égaux \fg{} pendant 2 secondes.
+
+	\item \begin{enumerate}
+		\item Dans la cellule \textsf{B2}, on veut afficher le périmètre de ABCD, donné par l'expression $8x - 2$, en utilisant la valeur $x$ qui est renseignée dans la cellule \textsf{A2}.
+
+		La formule correcte est donc :\quad \textsf{=8*A2-2}.
+
+		Pourquoi les autres propositions sont fausses :
+		\begin{itemize}
+			\item \textsf{=8*5-2} \quad renvoie la valeur correcte pour la cellule \textsf{B2}, mais renverra toujours 38 quand on l'étirera vers le bas, car le \textsf{5} ne sera pas modifié;
+			\item \textsf{=8*B2-2} \quad provoquera une erreur : c'est ce que l'on appelle une référence circulaire. La valeur de la cellule \textsf{B2} se fait à partir de la cellule \textsf{B2} : ça tourne en rond.
+			\item \textsf{=8*A1-2} \quad provoquera une erreur : dans la cellule \textsf{A1}, il y a la lettre $x$, mais du coup, ce n'est pas un nombre que le tableur peut multiplier par 8.
+		\end{itemize}
+
+		\item Nour a constaté que pour $x = 5$ le périmètre de ABCD est \textbf{inférieur} à celui de IJK, par contre, pour $x = 6$, le périmètre de ABCD est \textbf{supérieur} à celui de IJK.
+
+		Elle se dit donc que les courbes représentant les périmètres en fonction de $x$ doivent se croiser, entre l'abscisse 5 et l'abscisse 6.
+	\end{enumerate}
+	\item Résolvons l'équation :
+	\begin{align*}
+		8x - 2  & = 6x + 9        \\
+		8x - 6x & = 9 + 2         \\
+		2x      & = 11            \\
+		x       & = \dfrac{11}{2}
+	\end{align*}
+
+	L'équation a une seule solution :\quad $\dfrac{11}{2} = 5,5$.
+
+	C'est pour $x = 5,5$ que les deux figures ont le même périmètre.
+\end{enumerate}
+
+\needspace{10\baselineskip}

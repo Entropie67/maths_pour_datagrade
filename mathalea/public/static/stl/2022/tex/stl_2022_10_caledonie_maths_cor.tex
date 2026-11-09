@@ -1,0 +1,96 @@
+
+\medskip
+
+\textbf{Question 1}
+
+\medskip
+
+\begin{minipage}{0.4\linewidth}
+
+$f'(-2)$ est, par définition, égal au coefficient directeur $m$ de la droite (AB).
+
+\medskip
+
+\[m = \dfrac{y_B - y_A}{x_B - x_A} = \dfrac{3-(-1)}{0-(-2)} = 2\]
+
+\medskip
+
+D'où : $f'(-2) = 2$
+
+La bonne réponse est \textbf{b.}
+
+\end{minipage}\hfill
+\begin{minipage}{0.56\linewidth}
+\psset{unit=1cm,arrowsize=2pt 3}
+\begin{pspicture*}(-3,-3)(2,4)
+\psgrid[gridlabels=0pt,subgriddiv=1,gridwidth=0.1pt,gridcolor=orange]
+\psaxes[linewidth=1.25pt,labelFontSize=\scriptstyle]{->}(0,0)(-3,-3)(2,4)
+\uput[u](1.8,0){$x$} \uput[r](0,3.8){$y$}
+\psplot[plotpoints=2000,linewidth=1.25pt,linecolor=red]{-3}{0.5}{x 2 mul  3  add }
+\psbezier[linewidth=1.25pt,linecolor=blue](-2.5,-3)(-2.05,0)(-1.5,-0.5)(-1,-1)
+\psbezier[linewidth=1.25pt,linecolor=blue](-1,-1)(-0.43,-1.45)(-0.56,-1.75)(0,-1)
+\psbezier[linewidth=1.25pt,linecolor=blue](0,-1)(1,1)(0.83,5)(0.89,4)
+\uput[r](0.75,2.75){\blue $\mathcal{C}_f$}
+\psdots[linecolor=red](-2,-1)(0,3)
+\uput[ul](-2,-1){\red A} \uput[dr](0,3){\red B}
+\end{pspicture*}
+\end{minipage}
+
+\bigskip
+
+\textbf{Question 2}
+
+\medskip
+
+L'équation $\ln (x) = 7$ admet pour solution $\e^7$.
+
+La bonne réponse est \textbf{c.}
+
+\bigskip
+
+\textbf{Question 3}
+
+\medskip
+
+Si $f = uv$ alors $f' = u'v + uv'$, d'où :
+\[f'(x) = 1 \times \e^{2x} + x \times (2\e^{2x}) = (2x+1)\e^{2x}.\]
+
+\bigskip
+
+\textbf{Question 4}
+
+\medskip
+
+B est le projeté orthogonal de C sur (AB).
+
+Il en résulte :
+\[\vv{\text{AB}}\cdot\vv{\text{AC}}=\text{AB}\times \text{AB}= 4^2 = 16.\]
+
+\bigskip
+
+\textbf{Question 5}
+
+\medskip
+
+Les solutions de l'équation différentielle $y'+ay=b$ sur $\R$ sont les fonctions $y$ définies par :
+\[y(x) = C\e^{-ax} + \dfrac{b}{a}, \text{ où } C \text{ est une constante quelconque.}\]
+
+Ici $a =\np{4.5}\ \text{ et } b = \np{6.3}$. Par conséquent, sur $\R$ :
+\[v(x) = C \e^{-\np{4.5}x}+\dfrac{\np{6.3}}{\np{4.5}} = C \e^{-\np{4.5}x}+1,4.\]
+
+Déterminons $C$ :
+\[v(0) = C\e^{-0,45 \times 0} + 1,4 = 0 \quad \text{d'où}\quad C = -1,4.\]
+
+Au final : $v(x) = -1,4\e^{-4,5x} + 1,4.$
+
+\bigskip
+
+\textbf{Question 6}
+
+\medskip
+
+La valeur affichée lorsqu'on exécute le programme est $4$.
+
+\bigskip
+
+

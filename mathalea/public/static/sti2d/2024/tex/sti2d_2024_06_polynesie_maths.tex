@@ -1,0 +1,43 @@
+\begin{center}
+\textbf{Filtre et fonction de transfert}
+\end{center}
+
+Un filtre dans un circuit électrique permet de transmettre sélectivement certaines composantes du spectre en fréquence d'un signal.
+
+On considère le filtre, composé d'une résistance $R$ et d'un condensateur $C$.
+
+On appelle fonction de transfert de ce filtre, la fonction $H$ définie par: 
+\[H(\omega) = \dfrac{1}{1 + RC \omega \cdot \text{i}}\]
+où :
+\begin{itemize}
+\item i est le nombre complexe de module 1 et d'argument $\dfrac{\pi}{2}$ vérifiant i$^2 = -1$ ;
+\item $R$ est la résistance, exprimée en Ohm, ayant pour valeur $10^6 \Omega$ ;
+\item $C$ est la capacité du condensateur, exprimée en Farad, ayant pour valeur $10^{- 6}$ F ;
+\item $\omega$ est la pulsation du signal aux bornes du circuit, exprimée en rad.s$^{- 1}$.
+\end{itemize}
+
+\medskip
+
+La pulsation de coupure du filtre est définie par $\omega_{\text{C}} = \dfrac{1}{RC}$.
+
+\begin{enumerate}
+\item Calculer $\omega_{c}$, puis montrer que $H\left(\omega_{c}\right) = \dfrac12 - \dfrac12\text{i}$.
+\item Écrire $H\left(\omega_{c}\right)$ sous forme exponentielle.
+\end{enumerate}
+
+La réponse en gain du circuit, notée $G_{dB}$ et exprimée en décibel, vaut pour cette fréquence de coupure :
+\[G_{dB} = 20 \log \left(\left|H\left(\omega_{c}\right)\right|\right),\]
+où $\left|H\left(\omega_{c}\right)\right|$ est le module de $H\left(\omega_{c}\right)$.
+
+\begin{enumerate}[resume]
+\item Montrer que $G_{dB} = -10 \log (2)$.
+\end{enumerate}
+
+On pose en cascade un deuxième filtre identique de même pulsation de coupure qui est tel que la fonction de transfert de ces deux filtres, notée $H_T\left(\omega_c\right)$, est égale au produit des fonctions de transfert de chacun des deux filtres. Ainsi :
+\[H_T\left(\omega_c\right) = H\left(w_c\right) \times H\left(\omega_c\right).\]
+
+\begin{enumerate}[resume]
+\item Déduire de la question 2 le module et un argument de $H_T\left(\omega_c\right)$.
+\end{enumerate}
+
+\bigskip

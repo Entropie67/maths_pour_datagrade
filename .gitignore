@@ -1,2 +1,4 @@
 validation/logs/
 validation/screenshots/
+resources/annales-downloads.jsonl
+**/__pycache__/

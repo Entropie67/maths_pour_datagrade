@@ -1,0 +1,38 @@
+%source mathadata
+\begin{multicols}{2}
+		\begin{MADenumerate}
+
+			\item Voici une liste de droites et de points. Pour chaque droite, déterminer si le point est au-dessus, en dessous de la droite ou sur la droite.
+
+			\begin{enumerate}
+				\item Droite $d_1$ d'équation $y=2x+1$ et point $A(2;3)$. \label{premierequestion}
+				\item Droite $d_2$ d'équation $y=-x+4$ et point $B(2,5;2,5)$.
+				\item  Droite $d_3$ d'équation $y=\frac{2}{3}x-5$ et point $C(6;-1)$.
+
+			\end{enumerate}
+
+			\item Compléter le script Python suivant en utilisant l'équation de la droite et les coordonnées du point de la question \ref{premierequestion} pour retrouver automatiquement sa position.
+
+			\columnbreak
+
+			\begin{lstlisting}[language=Python]
+# y = mx + p
+# A(a; b) 
+  
+m = ...
+p = ...
+a = ...
+b = ...
+y = ...
+
+if ... :
+    print("Point sur la droite")
+elif ... :
+    print("Point au-dessus")
+else:
+    print("Point en dessous")
+
+\end{lstlisting}
+
+		\end{MADenumerate}
+	\end{multicols}

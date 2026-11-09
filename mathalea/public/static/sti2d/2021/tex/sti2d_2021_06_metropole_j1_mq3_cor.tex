@@ -1,0 +1,47 @@
+
+\medskip
+
+\begin{enumerate}
+\item Pour tout $x$ appartenant à $]0~;~+ \infty[$, $f'(x) = 2 -0 - \dfrac{1}{x} = \dfrac{2x-1}{x}$.
+ 
+\item 
+\begin{list}{\textbullet}{}
+\item Sur l'intervalle $]0~;~+ \infty[$, $x>0$ donc $f'(x)$ est du signe de $2x-1$ qui s'annule et change de signe pour $x=0,5$.
+
+\item $f(0,5) = 2\times 0,5 - 1 - \ln(0,5) = - \ln\left ( \frac{1}{2}\right ) = \ln(2)$
+
+\item $\ds\lim_{x\to 0} (2x-1) = -1$ et $\ds\lim_{x\to 0 \atop x>0} \ln(x)=-\infty$ donc
+$\ds\lim_{x\to 0\atop x>0} f(x)=+\infty$
+
+\item Sur l'intervalle $]0~;~+ \infty[$, $x\neq 0$ donc on a $f(x)=2x-1-\ln(x) = x\left (2-\dfrac{\ln(x)}{x}\right )-1$.
+
+$\ds\lim_{x\to +\infty} \dfrac{\ln(x)}{x}=0$ donc $\ds\lim_{x\to +\infty}\left (2- \dfrac{\ln(x)}{x}\right )=2$ et donc $\ds\lim_{x\to +\infty} f(x)=+\infty$ 
+
+On dresse le tableau de variations de la fonction $f$ sur $]0~;~+ \infty[$:
+
+\begin{center}
+{\renewcommand{\arraystretch}{1.3}
+\psset{nodesep=3pt,arrowsize=2pt 3}  % paramètres
+\def\esp{\hspace*{1.5cm}}% pour modifier la largeur du tableau
+\def\hauteur{0pt}% mettre au moins 20pt pour augmenter la hauteur
+$\begin{array}{|c| l *3{c} c|}
+\hline
+ x & 0 & \esp & 0,5 & \esp & +\infty \\
+  \hline
+2x-1 &  &  \pmb{-} & \vline\hspace{-2.7pt}0 & \pmb{+} & \\  
+\hline
+f'(x) & \vline\;\vline &  \pmb{-} & \vline\hspace{-2.7pt}0 & \pmb{+} & \\  
+\hline
+  & \vline\;\vline \Rnode{max1}{\: +\infty}  &  &  &  & \Rnode{max2}{+\infty}   \\
+f(x) &\vline\;\vline &  & & &  \rule{0pt}{\hauteur} \\
+ & \vline\;\vline & &   \Rnode{min}{\ln(2)} & & \rule{0pt}{\hauteur}
+\ncline{->}{max1}{min} \ncline{->}{min}{max2}\\
+\hline
+\end{array}$
+}
+\end{center}	
+\end{list}
+\end{enumerate}
+
+\bigskip
+

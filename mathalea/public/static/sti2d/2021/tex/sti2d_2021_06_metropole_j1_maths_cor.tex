@@ -1,0 +1,154 @@
+
+\bigskip
+
+\textbf{Question 1}
+
+\medskip
+
+\begin{enumerate}
+\item $\text B \,(1~;~1)\in \mathcal{C}_f$ donc $f(1)=1$.
+\[f(1)=1 \iff a+b-\ln(1)=1 \iff a+b=1.\]
+
+\item La courbe admet en A une tangente parallèle à l'axe des abscisses donc de coefficient directeur égal à 0; on a donc $f'(x_{\text A})=0$ c'est-à-dire $f'(0,5)=0$.
+\[f'(x)=a-\dfrac{1}{x} \text{ ; } f'(0,5)=0 \iff a-\dfrac{1}{0,5}=0 \iff a-2=0 \iff a=2.\]
+
+\item $a+b=1$ et $a=2$ donc $b=-1$; on en déduit que $f(x)=2x-1-\ln(x)$. 
+\end{enumerate}
+
+\bigskip
+
+\textbf{Question 2}
+
+\medskip
+
+La machine aura perdu la moitié de sa valeur pour $t$ tel que :
+\begin{align*}
+&f(t)=\np{150000} \\
+\iff &\np{300000}\left(1 - \e^{- 0,09 t}\right) = \np{150000} \\
+\iff &1 - \e^{- 0,09 t} = 0,5 \\
+\iff &0,5 = \e^{-0,09t} \\
+\iff &\ln(0,5)=-0,09t \\
+\iff &t=-\dfrac{\ln(0,5)}{0,09} \\
+\iff &t\approx 7,7,
+\end{align*}
+donc au bout de 8 ans, la machine aura perdu plus de la moitié de sa valeur.
+
+\bigskip
+
+\textbf{Question 3}
+
+\medskip
+
+\begin{enumerate}
+\item Pour tout $x$ appartenant à $]0~;~+ \infty[$, $f'(x) = 2 -0 - \dfrac{1}{x} = \dfrac{2x-1}{x}$.
+ 
+\item 
+\begin{list}{\textbullet}{}
+\item Sur l'intervalle $]0~;~+ \infty[$, $x>0$ donc $f'(x)$ est du signe de $2x-1$ qui s'annule et change de signe pour $x=0,5$.
+
+\item $f(0,5) = 2\times 0,5 - 1 - \ln(0,5) = - \ln\left ( \frac{1}{2}\right ) = \ln(2)$
+
+\item $\ds\lim_{x\to 0} (2x-1) = -1$ et $\ds\lim_{x\to 0 \atop x>0} \ln(x)=-\infty$ donc
+$\ds\lim_{x\to 0\atop x>0} f(x)=+\infty$
+
+\item Sur l'intervalle $]0~;~+ \infty[$, $x\neq 0$ donc on a $f(x)=2x-1-\ln(x) = x\left (2-\dfrac{\ln(x)}{x}\right )-1$.
+
+$\ds\lim_{x\to +\infty} \dfrac{\ln(x)}{x}=0$ donc $\ds\lim_{x\to +\infty}\left (2- \dfrac{\ln(x)}{x}\right )=2$ et donc $\ds\lim_{x\to +\infty} f(x)=+\infty$ 
+
+On dresse le tableau de variations de la fonction $f$ sur $]0~;~+ \infty[$:
+
+\begin{center}
+{\renewcommand{\arraystretch}{1.3}
+\psset{nodesep=3pt,arrowsize=2pt 3}  % paramètres
+\def\esp{\hspace*{1.5cm}}% pour modifier la largeur du tableau
+\def\hauteur{0pt}% mettre au moins 20pt pour augmenter la hauteur
+$\begin{array}{|c| l *3{c} c|}
+\hline
+ x & 0 & \esp & 0,5 & \esp & +\infty \\
+  \hline
+2x-1 &  &  \pmb{-} & \vline\hspace{-2.7pt}0 & \pmb{+} & \\  
+\hline
+f'(x) & \vline\;\vline &  \pmb{-} & \vline\hspace{-2.7pt}0 & \pmb{+} & \\  
+\hline
+  & \vline\;\vline \Rnode{max1}{\: +\infty}  &  &  &  & \Rnode{max2}{+\infty}   \\
+f(x) &\vline\;\vline &  & & &  \rule{0pt}{\hauteur} \\
+ & \vline\;\vline & &   \Rnode{min}{\ln(2)} & & \rule{0pt}{\hauteur}
+\ncline{->}{max1}{min} \ncline{->}{min}{max2}\\
+\hline
+\end{array}$
+}
+\end{center}	
+\end{list}
+\end{enumerate}
+
+\bigskip
+
+\textbf{Question 4}
+
+\medskip
+
+\begin{enumerate}
+\item D'après le cours, l'équation différentielle $a y' + b y = 0$ pour $a\neq 0$ a pour solutions les fonctions $f$ définies sur $\R$ par $f(x)=k\e^{-\frac{b}{a}x}$ avec $k\in\R$.
+
+Donc l'équation différentielle $(E)$ a pour solution dans $[0~;+ \infty[$ les fonctions $P$ définies par $P(x)=k \e^{-0,0434 x}$ avec $k\in\R$. 
+
+$P(0) = 6,75 \iff k\e^{0}= 6,75 \iff k=6,75$.
+
+Sur $[0~;+ \infty[$ la solution $P$ de cette équation différentielle qui vérifie la condition initiale $P(0) = 6,75$ est définie par $P(x)=6,75\e^{-0,0434x}$.
+
+\item La puissance du signal au bout de 1~km est $P(1)\approx \np{6,4633}$, donc la perte de puissance une fois que le signal a parcouru 1~km depuis l'entrée est, en mW, $P(0)-P(1) \approx \np{0,2867}$ soit environ $287~ \mu$W.
+\end{enumerate}
+
+\bigskip
+
+\textbf{Question 5}
+
+\medskip
+
+\begin{enumerate}
+\item Pour tout $x$ appartenant à $\R$,\\
+  $F'(x) = \left (2x+3\right )\times \e^{x} +  \left(x^2 + 3x + 1\right) \times \e^{x}
+  = \left (2x+3 + x^2 +3x+1\right ) \e^{x}
+  = \left (x^2+5x+4\right ) \e^{x}\\
+\phantom{F'(x)} 
+ = f(x)$.
+  
+Donc la fonction $F$ est une primitive de la fonction $f$ sur $\R$.
+  
+\item $\displaystyle\int_0^1 f(x)\d x
+= \left [ F(x)\strut\right ]_{0}^{1} 
+= F(1)-F(0)
+= \left ( (1+3+1)\e^{1}\right ) - \left ( (0+0+1)\e^{0} \right )
+= 5\e - 1$
+
+\end{enumerate}
+
+\bigskip
+
+\textbf{Question 6}
+
+\medskip
+
+\begin{enumerate}
+\item Pour tout $t$ appartenant à $[0~;~+ \infty[$,
+
+$240 \sqrt{2} \cos \left(50t + \dfrac{\pi}{4}\right)
+= 240 \sqrt{2} 
+\left (
+ \cos \left (50t\right ) \cos \left (\frac{\pi}{4}\right )
+  -
+   \sin\left (50t\right ) \sin \left (\frac{\pi}{4}\right )
+   \right )\\
+   \phantom{240 \sqrt{2} \cos \left(50t + \dfrac{\pi}{4}\right)}
+= 240 \sqrt{2} \left ( \cos \left (50t\right ) \times \dfrac{\sqrt{2}}{2}  - \sin\left (50t\right ) \times \dfrac{\sqrt{2}}{2}\right )\\
+   \phantom{240 \sqrt{2} \cos \left(50t + \dfrac{\pi}{4}\right)}
+=  240 \cos (50t) - 240 \sin (50t) = u(t)
+$
+
+\item On déduit que la pulsation  $\omega$ vaut $50$ et donc que la fréquence $f$ est égale à 
+$\dfrac{\omega}{2\pi}=\dfrac{50}{2\pi}\approx 8$~Hz.
+\end{enumerate}
+
+\bigskip
+
+

@@ -1,0 +1,42 @@
+
+\subsection*{Partie A}
+
+\begin{enumerate}
+\item Il y a 12 faces sur le dé, donc 12 issues possibles à l'expérience.
+
+Comme les 12 faces sont numérotées de 1 à 12, cela signifie que chaque numéro est présent sur une face et une seule.
+
+Donc il y a une seule face qui porte le numéro 4 : il n'y a qu'une seule issue favorable à l'événement.
+
+La probabilité est donc :\quad $\dfrac{\text{nb d'issues favorables}}{\text{nb d'issues total}} = \dfrac{1}{12}$.
+
+La probabilité est bien de $\dfrac{1}{12}$.
+
+\item Dans les nombres de 1 à 12, il y a six nombres pairs : 2; 4; 6; 8; 10 et 12.
+
+La probabilité est donc de :\quad $\dfrac{6}{12} = \dfrac{1}{2}$.
+
+\item Il y a quatre multiples de 3 :\quad 3; 6; 9 et 12.
+
+La probabilité est donc de :\quad $\dfrac{4}{12} = \dfrac{1}{3} \approx 0,33 > 0,3$.
+
+Tom a raison, la probabilité d'avoir un multiple de 3 est de $\dfrac{1}{3}$, qui est supérieure à 0,3.
+\end{enumerate}
+
+\subsection*{Partie B}
+
+\begin{enumerate}
+\item Pour simuler un lancer de dé à 12 faces, il faut un nombre aléatoire entre 1 et 12. Cela donne donc :
+
+\begin{center}
+\begin{scratch}[num blocks, num start=2,baseline=2]
+\blockvariable{mettre \selectmenu{Dé 1} à \ovaloperator{nombre aléatoire entre \ovalnum{1} et \ovalnum{12}}}
+\blockvariable{mettre \selectmenu{Dé 2} à \ovaloperator{nombre aléatoire entre \ovalnum{1} et \ovalnum{12}}}
+\blockvariable{mettre \selectmenu{Résulat} à \ovaloperator{\ovalvariable{Dé 1} + \ovalvariable{Dé 2}}}
+\end{scratch}
+\end{center}
+
+\item Si le résultat du dé \no 1 est 8 et celui du dé \no 2 est 3, alors à la fin du bloc \begin{scratch} \blockmoreblocks{Lancer} \end{scratch}, la variable \ovalvariable{Résultat} contient la valeur $8 + 3 = 11$.
+
+	Dans le programme principal, le test \ovaloperator{\ovalvariable{Résultat} > \ovalnum{6}} sera donc Vrai, puisque 11 > 6, et donc le lutin va dire \og Gagné !\fg{} pendant 2 secondes.
+\end{enumerate}

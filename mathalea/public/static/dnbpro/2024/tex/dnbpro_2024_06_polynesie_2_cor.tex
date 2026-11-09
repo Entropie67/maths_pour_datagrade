@@ -1,0 +1,74 @@
+
+\medskip
+
+Comme chaque dimanche, Maui se rend au marché de Papeete pour faire quelques achats.
+
+\begin{tabular}{@{} l !{\textbullet} l}
+Il achète& une pièce de « Pua'a roti » à \np{1760} F le morceau,\\
+& deux paquets de « Firi-firi » à 500 F le paquet,\\
+& deux poissons perroquet à \np{1200} F l'unité,\\
+& un paquet de « Taro » à 800 F le Paquet,\\
+& un tas de « Fe'i » à 400 F le tas,\\
+& une bouteille de « Miti haari » à 500 F la bouteille.
+\end{tabular}
+
+La facture incomplète des achats de Maui au marché de Papeete est réalisée sur un tableur.
+
+\begin{enumerate}
+\item  On complète la facture.
+
+\begin{center}
+\renewcommand{\arraystretch}{1.3}
+\begin{tabular}{| >{\cellcolor{lightgray}} c | *4{c|}}
+\hline
+\rowcolor{lightgray} & A & B & C & D\\
+\hline
+1 & \textbf{Aliment} & \textbf{Quantité} & \textbf{Prix unitaire en F} & \textbf{Prix en F}\\
+\hline
+2 & Pièce de Pua'a roti & 1 & $\blue \np{1760}$ & $\blue \np{1760}$ \\
+\hline
+3 & Paquet de Fri fri & $\blue 2$ & 500 & $\blue \np{1000}$ \\
+\hline
+4 & Poisson perroquet &  $\blue 2$ & \np{1200} & $\blue \np{2400}$ \\
+\hline
+5 & Paquet de Taro &  $\blue 1$ & \np{800} & $\blue \np{800}$ \\
+\hline
+6 & Tas de Fe'i & 1 & $\blue \np{400}$ & $\blue \np{400}$ \\
+\hline
+7 & Bouteille de \og Miti haari \fg{} & 1 & $\blue \np{500}$ & $\blue \np{500}$  \\
+\hline
+8 & \multicolumn{2}{c|}{~~} &  \textbf{PRIX TOTAL en F} & $\blue \np{6860}$ \\
+\hline
+\end{tabular}
+\end{center}
+
+\item La formule à insérer dans la cellule D3, parmi celles proposées ci-dessous, est celle du milieu.
+
+\begin{center}
+{\ttfamily\Large
+\begin{tabular}{| p{3cm} | c | p{3cm} | c | p{3cm} |}
+\cline{1-1} \cline{3-3} \cline{5-5} 
+= 1 * 500 & & \textcolor{blue}{= B3 * C3} & & = B3 + C3\\
+\cline{1-1} \cline{3-3} \cline{5-5}
+\end{tabular} }
+\end{center}
+\end{enumerate}
+
+On admet que le montant total de la facture s'élève à \np{6860} F{}.\\
+Une remise de 15\,\% est accordée à Maui.
+
+\begin{enumerate}[resume]
+\item  %On calcule le montant de la remise. Exprimer le résultat en F{}.
+$\np{6860}\times \dfrac{15}{100}= \np{1029}$
+
+La remise est de \np[F]{1029}.
+
+\item% Calculer le prix payé par Maui. Exprimer le résultat en F{}.
+$\np{6860} - \np{1029} = \np{5831}$
+
+Le prix payé par Maui est de \np[F]{5831}.
+
+\end{enumerate}
+
+\bigskip
+

@@ -1,0 +1,118 @@
+
+\vspace{0.25cm}
+
+Les jardins partagés d'une commune sont gérés par une association. Celle-ci compte 60 membres qui adhèrent pour des objectifs différents. Le document ci-dessous regroupe ces objectifs et les effectifs correspondants.
+
+
+\begin{figure}[t!]
+\begin{multicols}{2}
+
+\psset{xunit=0.7cm,yunit=0.2cm,arrowsize=3pt 2}
+\def\xmin{-1}   \def\xmax{10} \def\ymin{-2}   \def\ymax{36}
+\begin{pspicture}(\xmin,\ymin)(\xmax,\ymax)
+%\psset{yMaxValue=\ymax,yMinValue=\ymin}
+%\psgrid[xunit=10cm,yunit=0.4cm,subgriddiv=1, gridlabels=0, subgridcolor=lightgray, gridcolor=gray](0,0)(0.7,16)
+\psaxes[labelFontSize=\scriptstyle, ticksize=-2pt 2pt,ticks=y,labels=none](0,0)(0,0)(\xmax,32)
+\multido{\i=0+2}{17}{\psline[linecolor=gray](0,\i)(10,\i) \uput[l](0,\i){\scriptsize \i}}
+\multido{\i=1+2,\I=1+1}{5}{\uput[d](\i,0){\scriptsize Objectif \I}}
+\psaxes[labelFontSize=\scriptstyle, ticksize=-2pt 2pt,ticks=y,labels=none](0,0)(0,0)(\xmax,32)
+\listplot[plotstyle=bar,barwidth=0.6,fillstyle=solid,fillcolor=lightgray]{1 3 3 9 5 12 7 6 9 30}
+\uput[r](-1,34){Effectifs}
+\end{pspicture}
+\mbox{\textbf{Document 1 : Répartition des objectifs d'adhésion des membres du jardin partagé}}
+
+\columnbreak
+
+\begin{flushright}
+\vspace*{0.6cm}
+
+\fbox{
+\parbox{6cm}{
+\medskip
+
+~\hfill\textbf{Légende}\hfill~\\
+
+\small
+
+Objectif 1: Être autosuffisant\\
+
+Objectif 2: Profiter d'un loisir\\
+ 
+Objectif 3: Agir pour l'environnement\\
+
+Objectif 4: Partager avec les autres\\
+
+Objectif 5: Être en contact avec la nature\\
+}}
+\end{flushright}
+\end{multicols}
+\end{figure}
+
+
+\begin{enumerate}
+\item  Il y a 12 membres qui ont adhéré pour l'objectif 3.
+
+\item Il y a 30 membres qui ont adhéré pour l'objectif 5.
+Or $\dfrac{30}{60}\times 100=50$ 
+donc le pourcentage de membres ayant adhéré pour l'objectif 5 est de $50\,\%$.
+
+\item On s'intéresse à la répartition des âges des adhérents de l'association.
+\begin{enumerate}
+\item On complète la valeur manquante en cellule \texttt{B4} du tableur.
+
+\begin{center}
+\textbf{Tableau de répartition par classe d'âge}
+
+\smallskip
+
+{\renewcommand{\arraystretch}{1.1}
+\begin{tabular}{>{\cellcolor{lightgray!50}} c| >{\centering\arraybackslash}m{5cm} | >{\centering\arraybackslash}m{2cm}|}
+\hline
+\rowcolor{lightgray!50} & A & B\\
+\hline
+1 & Classe d'âge des membres & Effectifs\\
+\hline
+2 & Moins de 20 ans & 12\\
+\hline
+3 & De 20 à 60 ans inclus & 29\\
+\hline
+4 & Plus de 60 ans & $\blue 19$\\
+\hline
+5 & Total & 60\\
+\hline
+\end{tabular}}
+\end{center}
+
+\item Parmi les formules proposées, on coche  celle à saisir dans la cellule \texttt{B4} pour obtenir la valeur manquante.
+
+\begin{tabular}[t]{*3{m{0.3\linewidth}}}
+$\square$ \texttt{= B2 + B3 - B5} & $\blue\boxtimes\texttt{ = B5 - (B2 + B3)}$ & $\square$ \texttt{= B5 - B3 + B2}
+\end{tabular}
+
+\item  On complète le diagramme circulaire
+
+%\begin{center}
+\hfill{\footnotesize
+\psset{unit=0.65cm}
+\begin{pspicture}(-4,-4.1)(4,4)
+%\psgrid
+\pscircle(0,0){4}
+\pswedge[fillstyle=solid,fillcolor=lightgray!50](0,0){4}{90}{204}
+\pswedge[fillstyle=solid,fillcolor=lightgray](0,0){4}{204}{378}
+\rput(1.8,1.5){Moins de 20 ans}
+\rput*(-2,1){$\blue\text{Plus de 60 ans}$}
+\rput*(0,-2){$\blue\text{De 20 à 60 ans inclus}$}
+\end{pspicture}}
+%\end{center}
+
+\item Un adhérent affirme : \og   Plus d'un quart des membres a moins de 20 ans.  \fg{}
+
+%Cette affirmation est-elle exacte ? Justifier la réponse.
+Un quart de 60 correspond à 15 et il n'y a que 12 membres de moins de 20 ans.
+
+L'affirmation est donc fausse.
+\end{enumerate}
+\end{enumerate}
+
+%\vspace{0.5cm}
+
