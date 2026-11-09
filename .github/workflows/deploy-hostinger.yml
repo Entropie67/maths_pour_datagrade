@@ -12,6 +12,11 @@ name: Déployer sur maths.datagrade.fr
 
 on:
   workflow_dispatch:
+    inputs:
+      annales:
+        description: "Renvoyer aussi les annales (dossier static/, 1,5 Go)"
+        type: boolean
+        default: false
   push:
     branches:
       - integration/mathalea-complet
@@ -58,6 +63,33 @@ jobs:
 
       - name: Récupérer le dépôt
         uses: actions/checkout@v4
+
+      # Les annales (mathalea/public/static/, 1,5 Go et les deux tiers des fichiers)
+      # ne changent presque jamais : on ne parcourt leur dossier sur le serveur que
+      # si ce push les a modifiées, si on le demande à la main, ou si elles manquent
+      # en ligne (vérifié juste avant l'envoi). Un déploiement courant ne relit donc
+      # que l'application.
+      - name: Les annales ont-elles changé ?
+        id: annales
+        env:
+          EVENEMENT: ${{ github.event_name }}
+          FORCER: ${{ inputs.annales }}
+          AVANT: ${{ github.event.before }}
+        run: |
+          set -u
+          annales=0
+          if [ "$EVENEMENT" = "workflow_dispatch" ]; then
+            [ "$FORCER" = "true" ] && annales=1
+          elif [ -z "$AVANT" ] || [ "$AVANT" = "0000000000000000000000000000000000000000" ]; then
+            annales=1
+          elif ! git fetch --quiet --depth=1 origin "$AVANT"; then
+            echo "Commit précédent introuvable : par prudence, les annales sont revérifiées."
+            annales=1
+          elif ! git diff --quiet "$AVANT" HEAD -- mathalea/public/static; then
+            annales=1
+          fi
+          echo "valeur=$annales" >> "$GITHUB_OUTPUT"
+          if [ "$annales" = "1" ]; then echo "Annales à synchroniser."; else echo "Annales inchangées : dossier static/ ignoré."; fi
 
       - name: Vérifier que mathalea/ est bien la copie amont
         run: node scripts/verify-upstream.mjs
@@ -123,8 +155,21 @@ jobs:
           FTP_HOST: ${{ secrets.FTP_HOST }}
           FTP_USER: ${{ secrets.FTP_USER }}
           FTP_PASSWORD: ${{ secrets.FTP_PASSWORD }}
+          ANNALES: ${{ steps.annales.outputs.valeur }}
         run: |
           set -euo pipefail
+          # Annales : synchronisées si elles ont changé, ou si une annale témoin
+          # ne répond pas en ligne (premier déploiement, dossier effacé…).
+          temoin="$(cd mathalea/dist/static && find . -type f -name '*.png' -print -quit | sed 's|^\./||')"
+          if [ "$ANNALES" != "1" ] && [ -n "$temoin" ] && ! curl --fail --silent --head --max-time 30 "https://maths.datagrade.fr/alea/static/$temoin" >/dev/null; then
+            echo "Annale témoin absente en ligne ($temoin) : les annales sont synchronisées."
+            ANNALES=1
+          fi
+          if [ "$ANNALES" = "1" ]; then
+            MIROIR_ANNALES="mirror -R --ignore-time --delete --no-perms --verbose=1 mathalea/dist/static/ alea/static/"
+          else
+            MIROIR_ANNALES="# annales inchangees : dossier alea/static/ non parcouru"
+          fi
           # Hostinger coupe le canal de données en FTPS (ECONNRESET dès le premier
           # dossier, cf. exécution 42604671545). La connexion de contrôle, qui porte
           # les identifiants, reste chiffrée (AUTH TLS obligatoire) ; les données,
@@ -141,7 +186,8 @@ jobs:
           #      version (index.html, index.php, version.txt, deploiement.json,
           #      .htaccess) : la nouvelle page trouve tous ses fichiers déjà en place ;
           #   3. suppression des fichiers disparus du build (anciens scripts hachés).
-          # Cinq transferts en parallèle : 16 000 fichiers avec les annales.
+          # Le dossier static/ (annales) est exclu de ces trois temps et traité à
+          # part, seulement quand c'est nécessaire. Cinq transferts en parallèle.
           lftp <<LFTP
           set net:timeout 40
           set net:max-retries 3
@@ -164,10 +210,13 @@ jobs:
           mirror -R --ignore-time --no-perms --verbose=1 \
             --exclude '^index\.html$' --exclude '^index\.php$' --exclude '^acces-config\.php$' \
             --exclude '^version\.txt$' --exclude '^deploiement\.json$' --exclude '^\.htaccess$' \
+            --exclude '^static/' \
             mathalea/dist/ alea/
+          $MIROIR_ANNALES
           put -O alea/ mathalea/dist/index.html mathalea/dist/index.php mathalea/dist/acces-config.php mathalea/dist/version.txt mathalea/dist/deploiement.json mathalea/dist/.htaccess
           put -O . hostinger/root.htaccess -o .htaccess
           mirror -R --ignore-time --delete --no-perms --verbose=0 \
+            --exclude '^static/' \
             mathalea/dist/ alea/
           bye
           LFTP
