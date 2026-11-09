@@ -1,0 +1,79 @@
+name: Importer le code complet de MathALÉA
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+    paths:
+      - .github/workflows/import-mathalea.yml
+
+permissions:
+  contents: write
+
+jobs:
+  import-complet:
+    name: Copie intégrale depuis la Forge officielle
+    runs-on: ubuntu-latest
+    timeout-minutes: 35
+    steps:
+      - name: Récupérer le dépôt DataGrade
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          persist-credentials: true
+
+      - name: Importer sans modifier main
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          UPSTREAM="$RUNNER_TEMP/mathalea-upstream"
+          if ! git clone --depth=1 https://forge.apps.education.fr/coopmaths/mathalea.git "$UPSTREAM"; then
+            rm -rf "$UPSTREAM"
+            git clone --depth=1 https://forge.aeif.fr/coopmaths/mathalea.git "$UPSTREAM"
+          fi
+
+          # On importe bien le projet complet, et non un ancien miroir GitHub.
+          test -f "$UPSTREAM/package.json"
+          test -d "$UPSTREAM/src"
+          UPSTREAM_COMMIT="$(git -C "$UPSTREAM" rev-parse HEAD)"
+
+          # Aucune mise à jour destructive si le dépôt a déjà été personnalisé.
+          if git ls-remote --exit-code origin refs/heads/integration/mathalea-complet >/dev/null 2>&1; then
+            echo "::error::La branche integration/mathalea-complet existe déjà. Import annulé afin de préserver les modifications."
+            exit 1
+          fi
+
+          git switch -c integration/mathalea-complet
+          mkdir -p mathalea
+          rsync -a --exclude='.git' "$UPSTREAM/" mathalea/
+
+          cat > UPSTREAM.md <<EOF
+          # Origine du moteur MathALÉA
+
+          - Projet original : https://forge.apps.education.fr/coopmaths/mathalea
+          - Commit source : `$UPSTREAM_COMMIT`
+          - Code importé intégralement dans `mathalea/`, sans suppression des générateurs ni de leurs dépendances.
+          - Licence : GNU AGPL-3.0 (voir les fichiers de licence et les mentions d'origine dans `mathalea/`).
+
+          Le sous-projet doit rester utilisable indépendamment de DataGrade.
+          Toute nouvelle intégration doit préserver le catalogue et les formats de réponse.
+          EOF
+
+          git add -A mathalea UPSTREAM.md
+          COUNT="$(git ls-files mathalea | wc -l)"
+          echo "Fichiers importés : $COUNT"
+          test "$COUNT" -gt 500
+
+          if find mathalea -type f -size +95M -print -quit | grep -q .; then
+            echo "::error::Un fichier dépasse la limite prudente de 95 Mo sur GitHub. Import annulé."
+            exit 1
+          fi
+
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "Importer MathALÉA complet ($UPSTREAM_COMMIT)"
+          git push --set-upstream origin HEAD:refs/heads/integration/mathalea-complet
+
+          echo "::notice::Import terminé sur integration/mathalea-complet. Ouvrir une PR vers main après vérification."
