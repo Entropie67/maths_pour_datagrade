@@ -366,9 +366,9 @@ export function startTour(): void {
     steps: [
       {
         popover: {
-          title: 'Bienvenue sur MathALÉA',
+          title: 'Bienvenue sur AxioMaths',
           description:
-            'MathALÉA génère des exercices de mathématiques à données aléatoires, prêts à imprimer, à vidéoprojeter ou à utiliser sur mobile. On cherche, on choisit les exercices à gauche&nbsp;; ils s’affichent ensuite à droite et on peut les paramétrer.',
+            'AxioMaths, propulsé par MathALÉA, génère des exercices de mathématiques à données aléatoires, prêts à imprimer, à vidéoprojeter ou à faire en ligne par tes élèves. On cherche, on choisit les exercices à gauche&nbsp;; ils s’affichent ensuite à droite et on peut les paramétrer.',
           // Pas d'étape précédente à cette première étape : inutile d'y
           // afficher un bouton « Précédent » désactivé.
           showButtons: ['next', 'close'],

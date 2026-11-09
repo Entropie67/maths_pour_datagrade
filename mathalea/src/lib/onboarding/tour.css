@@ -2,7 +2,7 @@
   --tour-bg: #ffffff;
   --tour-fg: #1f2429;
   --tour-fg-light: #6a7c8d;
-  --tour-accent: #f15929;
+  --tour-accent: #7c3aed; /* AxioMaths (DataGrade) : violet à la place de l'orange */
   --tour-border: #e9e9e9;
 
   background-color: var(--tour-bg);
@@ -16,7 +16,7 @@
   --tour-bg: #282a36;
   --tour-fg: #dfdfdf;
   --tour-fg-light: #c8c8c8;
-  --tour-accent: #ffb86c;
+  --tour-accent: #c4b5fd; /* AxioMaths : lavande en mode sombre */
   --tour-border: #4b4f66;
 }
 
