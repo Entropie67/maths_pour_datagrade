@@ -43,11 +43,6 @@ DirectoryIndex index.html
   AddOutputFilterByType DEFLATE text/html text/plain text/css text/javascript application/javascript application/json image/svg+xml application/wasm font/ttf
 </IfModule>
 
-# Fichier d'état du déploiement FTP incrémental : jamais servi.
-<Files ".ftp-deploy-sync-state.json">
-  Require all denied
-</Files>
-
 <IfModule mod_rewrite.c>
   RewriteEngine On
   RewriteBase /alea/

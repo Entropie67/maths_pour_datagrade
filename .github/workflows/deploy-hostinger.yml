@@ -1,6 +1,6 @@
 name: Déployer sur maths.datagrade.fr
 
-# Compile l'application MathALÉA complète (mathalea/) puis la dépose par FTPS
+# Compile l'application MathALÉA complète (mathalea/) puis la dépose par FTP (lftp)
 # dans public_html/alea/ du site Hostinger maths.datagrade.fr.
 #
 # Secrets du dépôt attendus (Settings → Secrets and variables → Actions) :
@@ -30,9 +30,9 @@ concurrency:
 
 jobs:
   build-deploy:
-    name: Compiler et déposer par FTPS
+    name: Compiler et déposer par FTP
     runs-on: ubuntu-latest
-    timeout-minutes: 90
+    timeout-minutes: 300
     env:
       HUSKY: '0'
       PLAYWRIGHT_SKIP_BROWSER_DOWNLOAD: '1'
@@ -105,23 +105,46 @@ jobs:
           JSON
           echo "Fichiers à publier : $(find mathalea/dist -type f | wc -l), taille : $(du -sh mathalea/dist | cut -f1)"
 
-      - name: Déposer par FTPS dans public_html/alea/
-        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
-        with:
-          server: ${{ secrets.FTP_HOST }}
-          username: ${{ secrets.FTP_USER }}
-          password: ${{ secrets.FTP_PASSWORD }}
-          # Chiffrement explicite sur le port 21. L'hôte Hostinger est une IP,
-          # son certificat ne porte pas ce nom : la vérification stricte échouerait.
-          protocol: ftps
-          security: loose
-          local-dir: mathalea/dist/
-          server-dir: public_html/alea/
-          # Seuls les fichiers changés depuis le dernier déploiement sont renvoyés
-          # (état dans .ftp-deploy-sync-state.json, interdit à la lecture par .htaccess).
-          state-name: .ftp-deploy-sync-state.json
-          timeout: 120000
-          log-level: standard
+      - name: Installer lftp
+        run: sudo apt-get update -qq && sudo apt-get install -y -qq lftp >/dev/null
+
+      - name: Déposer par FTP dans public_html/alea/
+        env:
+          FTP_HOST: ${{ secrets.FTP_HOST }}
+          FTP_USER: ${{ secrets.FTP_USER }}
+          FTP_PASSWORD: ${{ secrets.FTP_PASSWORD }}
+        run: |
+          set -euo pipefail
+          # Hostinger coupe le canal de données en FTPS (ECONNRESET dès le premier
+          # dossier, cf. exécution 42604671545). La connexion de contrôle, qui porte
+          # les identifiants, reste chiffrée (AUTH TLS obligatoire) ; les données,
+          # publiques de toute façon, passent en clair, comme le fait FileZilla.
+          # L'hôte est une IP : son certificat ne porte pas ce nom, d'où l'absence
+          # de vérification (même réglage que « security: loose » auparavant).
+          #
+          # Reprise : les fichiers absents ou de taille différente sont envoyés
+          # (--ignore-time : la date du checkout change à chaque exécution), les
+          # fichiers disparus du build sont supprimés du serveur, puis les quelques
+          # fichiers non hachés qui changent à chaque version sont renvoyés d'office.
+          # Cinq transferts en parallèle : 16 000 fichiers avec les annales.
+          lftp <<LFTP
+          set net:timeout 40
+          set net:max-retries 3
+          set net:reconnect-interval-base 5
+          set net:reconnect-interval-max 30
+          set ftp:passive-mode true
+          set ftp:ssl-force true
+          set ftp:ssl-protect-data false
+          set ssl:verify-certificate false
+          set mirror:parallel-transfer-count 5
+          open "ftp://$FTP_HOST"
+          user "$FTP_USER" "$FTP_PASSWORD"
+          mirror -R --ignore-time --delete --no-perms --verbose=1 \
+            mathalea/dist/ public_html/alea/
+          put -O public_html/alea/ mathalea/dist/index.html mathalea/dist/version.txt mathalea/dist/deploiement.json mathalea/dist/.htaccess
+          bye
+          LFTP
+          echo "Envoi terminé."
 
       - name: Vérifier la version en ligne
         env:
