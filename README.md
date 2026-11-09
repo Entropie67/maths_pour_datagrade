@@ -53,6 +53,12 @@ Trois secrets de dépôt sont nécessaires (*Settings → Secrets and variables 
 
 Le fichier [`hostinger/alea.htaccess`](hostinger/alea.htaccess), copié en `dist/.htaccess`, reprend pour Apache les règles de `mathalea/deploy/nginx/` : cache long des fichiers hachés, `index.html` jamais mis en cache, types MIME, compression, et renvoi des scans d'annales absents (`/alea/static/`) vers coopmaths.fr comme le fait le serveur de développement amont. Seuls les fichiers absents ou de taille différente sont renvoyés (plus `index.html`, `version.txt`, `deploiement.json` et `.htaccess`, renvoyés à chaque fois), et les fichiers disparus du build sont supprimés du serveur ; le premier envoi (1,7 Go, 16 000 fichiers avec les annales) est long.
 
+## Habillage AxioMaths et portier
+
+Sur maths.datagrade.fr, MathALÉA est présenté sous le nom **AxioMaths** (les exercices de maths de DataGrade) : mascotte Liu (`mathalea/public/assets/images/axiomaths/`), palette violette (`src/app.css`), accueil et pied de page maison (`AxioMathsAccueil.svelte`, `Footer.svelte`), titres et favicons. La mention « propulsé par MathALÉA » et le lien vers CoopMaths restent partout, et `deploiement.json` donne les sources de la version déployée (AGPL-3.0). Chaque fichier amont retouché est consigné dans `upstream-overrides.json` avec `node scripts/record-overrides.mjs "raison" chemin...`, puis contrôlé par `node scripts/verify-upstream.mjs`.
+
+L'accès est réservé aux utilisateurs de DataGrade par un portier PHP, [`hostinger/acces.php`](hostinger/acces.php), déployé en `alea/index.php` et servi à la place de `index.html` : DataGrade signe chaque adresse qu'il ouvre avec un jeton `dg=<expiration>.<signature>` (HMAC-SHA256, clé partagée), le portier pose un cookie signé pour la journée, et sans l'un ni l'autre affiche une page qui renvoie vers DataGrade. Les fichiers statiques restent servis directement. La clé vient du secret de dépôt `AXIO_GATE_SECRET`, écrit à chaque déploiement dans `alea/acces-config.php` (jamais servi) ; la même clé est saisie dans DataGrade (page AxioMaths, admin). Sans secret, le site reste ouvert à tous.
+
 ## Périmètre et licence
 
 L'import inclut tous les fichiers suivis en amont et les médias d'annales récupérés depuis les sources officielles. Voir [l'inventaire, les fichiers manquants et les essais locaux](resources/README.md). Les services externes nécessitent encore une préparation pour un hébergement autonome. La compilation et les tests réussis ne constituent pas une validation exhaustive de toutes les fonctionnalités.

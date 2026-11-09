@@ -109,7 +109,7 @@
 
   const currentTitle = $derived.by(() => {
     if (showExercises) return 'Mes exercices'
-    if (path.length === 0) return 'MathALÉA'
+    if (path.length === 0) return 'AxioMaths'
     const section = mobileMenuSections.find((s) => s.id === path[0])
     if (path.length === 1) return section?.title ?? ''
     if (path.length === 2) {
@@ -213,7 +213,7 @@
       class="min-w-0 flex-1 text-center font-logo9 tracking-tighter font-black text-2xl truncate
       text-coopmaths-struct dark:text-coopmathsdark-struct"
     >
-      MathALÉA
+      AxioMaths
     </div>
     <button
       type="button"

@@ -16,7 +16,7 @@
   import LanguageStatus from '../ui/LanguageStatus.svelte'
   import NavBarSubtitle from './NavBarSubtitle.svelte'
 
-  export let title: string = 'MathALÉA'
+  export let title: string = 'AxioMaths'
   export let subtitle: string = ''
   export let subtitleType: 'export' | 'design' = 'export'
   export let locale: Language
@@ -82,22 +82,29 @@
                 text-coopmaths-action dark:text-coopmathsdark-action
                 hover:text-coopmaths-action-lightest dark:hover:text-coopmathsdark-action-lightest`}"
           >
+            <img
+              src="assets/images/axiomaths/liu-aplus.png"
+              alt=""
+              aria-hidden="true"
+              class="inline-block h-9 md:h-14 w-auto mr-1 -mt-1 align-middle"
+            />
             {title}
           </div>
+          <!-- AxioMaths (DataGrade) est propulsé par MathALÉA : mention et lien conservés (AGPL-3.0) -->
           <div
-            class="absolute ml-3 -mt-1 font-light text-sm
+            class="absolute ml-3 -mt-1 font-light text-sm whitespace-nowrap
               text-coopmaths-corpus-lightest dark:text-coopmathsdark-corpus-lightest"
           >
-            <span class="font-light font-sans tracking-normal">par</span>
+            <span class="font-light font-sans tracking-normal">propulsé par</span>
             <a
-              href="https://coopmaths.fr"
+              href="https://coopmaths.fr/alea/"
               target="_blank"
               rel="noreferrer"
               class="font-extrabold font-logo9 tracking-tighter
                 text-coopmaths-action dark:text-coopmathsdark-action
                 hover:text-coopmaths-action-lightest dark:hover:text-coopmathsdark-action-lightest"
             >
-              CoopMaths
+              MathALÉA
             </a>
           </div>
         </div>

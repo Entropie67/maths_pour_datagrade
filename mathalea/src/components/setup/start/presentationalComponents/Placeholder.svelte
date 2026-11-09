@@ -4,14 +4,14 @@
   import Footer from '../../../Footer.svelte'
   import Carousel from './carousel/Carousel.svelte'
   import QuickLinks from './QuickLinks.svelte'
-  import VitrineAsso from './VitrineAsso.svelte'
+  import AxioMathsAccueil from './AxioMathsAccueil.svelte'
 
   export let text: string
   const lang = getLang()
 
-  // PHASE-BETA-VITRINE : la vitrine de l'association (contenu externalisé
-  // sur coopmaths.fr/www) remplace les liens rapides et le carrousel. Pour
-  // l'ouvrir à tous, retirer la condition sur `beta` (et l'ancien bloc).
+  // AxioMaths (DataGrade) : l'accueil maison remplace la vitrine de
+  // l'association, qui n'existe que sur les noms coopmaths. L'ancien bloc
+  // (liens rapides + carrousel) reste disponible en repli.
   let isVitrineUnavailable = false
   $: isVitrineDisplayed = !isVitrineUnavailable
 </script>
@@ -35,7 +35,7 @@
           : 'md:h-full'} gap-3"
       >
         {#if isVitrineDisplayed}
-          <VitrineAsso onUnavailable={() => (isVitrineUnavailable = true)} />
+          <AxioMathsAccueil />
         {:else}
           <QuickLinks />
           <div class="flex-1 min-h-0">

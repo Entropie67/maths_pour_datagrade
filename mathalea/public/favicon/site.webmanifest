@@ -1,6 +1,6 @@
 {
-  "name": "",
-  "short_name": "",
+  "name": "AxioMaths",
+  "short_name": "AxioMaths",
   "icons": [
     {
       "src": "/favicon/web-app-manifest-192x192.png",
@@ -15,7 +15,7 @@
       "purpose": "maskable"
     }
   ],
-  "theme_color": "#ffffff",
+  "theme_color": "#6d28d9",
   "background_color": "#ffffff",
   "display": "standalone"
 }

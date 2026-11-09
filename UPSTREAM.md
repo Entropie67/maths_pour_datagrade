@@ -21,3 +21,7 @@ Les dépendances sont déclarées et verrouillées dans les fichiers amont ; `no
 Les commandes amont `makeJson`, `dev` et `build` régénèrent notamment `src/json/quizzBackgrounds.json`. Une différence dans ce fichier après exécution doit être examinée avant publication ; ne pas la confondre avec un fichier manquant lors de l'import.
 
 Les adaptations DataGrade sont documentées en dehors de `mathalea/`. Une future modification du moteur devra être identifiée et sa source correspondante mise à disposition avec les mentions et la licence applicables.
+
+## Habillage AxioMaths (DataGrade)
+
+Sept fichiers amont sont adaptés pour présenter l'application sous le nom AxioMaths sur maths.datagrade.fr (`index.html`, `src/app.css`, `NavBar.svelte`, `NavBarRecorder.svelte`, `MobileView.svelte`, `Placeholder.svelte`, `Footer.svelte`) et les favicons sont remplacés ; les fichiers propres à l'habillage (`AxioMathsAccueil.svelte`, `public/assets/images/axiomaths/`) sont hors manifeste. Aucun exercice, aucun correcteur ni aucun format d'échange n'est touché. Les mentions MathALÉA et CoopMaths et la licence AGPL-3.0 sont conservées, avec l'accès aux sources de la version déployée. Les empreintes sont consignées dans `upstream-overrides.json`.
