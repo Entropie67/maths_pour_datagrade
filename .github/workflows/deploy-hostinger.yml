@@ -1,0 +1,140 @@
+name: Déployer sur maths.datagrade.fr
+
+# Compile l'application MathALÉA complète (mathalea/) puis la dépose par FTPS
+# dans public_html/alea/ du site Hostinger maths.datagrade.fr.
+#
+# Secrets du dépôt attendus (Settings → Secrets and variables → Actions) :
+#   FTP_HOST      hôte FTP affiché par Hostinger (sans ftp://)
+#   FTP_USER      nom d'utilisateur FTP complet (u….maths.datagrade.fr)
+#   FTP_PASSWORD  mot de passe du compte FTP
+# Aucune de ces valeurs n'apparaît dans le dépôt ni dans les journaux.
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - integration/mathalea-complet
+      - main
+    paths:
+      - 'mathalea/**'
+      - 'hostinger/**'
+      - '.github/workflows/deploy-hostinger.yml'
+
+permissions:
+  contents: read
+
+# Un seul déploiement à la fois : deux envois FTP simultanés se marcheraient dessus.
+concurrency:
+  group: deploy-hostinger
+  cancel-in-progress: false
+
+jobs:
+  build-deploy:
+    name: Compiler et déposer par FTPS
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    env:
+      HUSKY: '0'
+      PLAYWRIGHT_SKIP_BROWSER_DOWNLOAD: '1'
+    steps:
+      - name: Vérifier la présence des secrets FTP
+        env:
+          FTP_HOST: ${{ secrets.FTP_HOST }}
+          FTP_USER: ${{ secrets.FTP_USER }}
+          FTP_PASSWORD: ${{ secrets.FTP_PASSWORD }}
+        run: |
+          manquants=""
+          [ -n "$FTP_HOST" ] || manquants="$manquants FTP_HOST"
+          [ -n "$FTP_USER" ] || manquants="$manquants FTP_USER"
+          [ -n "$FTP_PASSWORD" ] || manquants="$manquants FTP_PASSWORD"
+          if [ -n "$manquants" ]; then
+            echo "::error::Secrets absents :$manquants. Les créer dans Settings → Secrets and variables → Actions."
+            exit 1
+          fi
+          case "$FTP_HOST" in
+            *://*) echo "::error::FTP_HOST doit être un nom d'hôte ou une IP, sans ftp://"; exit 1 ;;
+          esac
+
+      - name: Récupérer le dépôt
+        uses: actions/checkout@v4
+
+      - name: Vérifier que mathalea/ est bien la copie amont
+        run: node scripts/verify-upstream.mjs
+
+      - name: Installer pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          version: 12.6.0
+
+      - name: Installer Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '24.13.0'
+          cache: pnpm
+          cache-dependency-path: mathalea/pnpm-lock.yaml
+
+      - name: Installer les dépendances verrouillées
+        working-directory: mathalea
+        run: pnpm install --frozen-lockfile
+
+      - name: Compiler l'application (base /alea/)
+        working-directory: mathalea
+        run: pnpm build
+
+      - name: Préparer le dossier à publier
+        env:
+          SHA: ${{ github.sha }}
+          REF: ${{ github.ref_name }}
+          REPO: ${{ github.server_url }}/${{ github.repository }}
+        run: |
+          set -euo pipefail
+          test -f mathalea/dist/index.html
+          cp hostinger/alea.htaccess mathalea/dist/.htaccess
+          # Fiche de version lisible en ligne (https://maths.datagrade.fr/alea/deploiement.json)
+          # et accès aux sources de la version déployée, comme le demande la licence AGPL.
+          cat > mathalea/dist/deploiement.json <<JSON
+          {
+            "application": "MathALÉA pour DataGrade",
+            "commit": "$SHA",
+            "branche": "$REF",
+            "date": "$(date -u +%Y-%m-%dT%H:%M:%SZ)",
+            "sources": "$REPO/tree/$SHA/mathalea",
+            "origine": "https://forge.apps.education.fr/coopmaths/mathalea",
+            "licence": "AGPL-3.0"
+          }
+          JSON
+          echo "Fichiers à publier : $(find mathalea/dist -type f | wc -l), taille : $(du -sh mathalea/dist | cut -f1)"
+
+      - name: Déposer par FTPS dans public_html/alea/
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+        with:
+          server: ${{ secrets.FTP_HOST }}
+          username: ${{ secrets.FTP_USER }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          # Chiffrement explicite sur le port 21. L'hôte Hostinger est une IP,
+          # son certificat ne porte pas ce nom : la vérification stricte échouerait.
+          protocol: ftps
+          security: loose
+          local-dir: mathalea/dist/
+          server-dir: public_html/alea/
+          # Seuls les fichiers changés depuis le dernier déploiement sont renvoyés
+          # (état dans .ftp-deploy-sync-state.json, interdit à la lecture par .htaccess).
+          state-name: .ftp-deploy-sync-state.json
+          timeout: 120000
+          log-level: standard
+
+      - name: Vérifier la version en ligne
+        env:
+          SHA: ${{ github.sha }}
+        run: |
+          set -u
+          for url in https://maths.datagrade.fr/alea/deploiement.json http://maths.datagrade.fr/alea/deploiement.json; do
+            if corps="$(curl --fail --silent --show-error --max-time 30 "$url")"; then
+              if printf '%s' "$corps" | grep -q "$SHA"; then
+                echo "::notice::En ligne : $url sert bien le commit $SHA."
+                exit 0
+              fi
+              echo "::warning::$url répond mais sans le commit $SHA (cache ou dépôt incomplet)."
+            fi
+          done
+          echo "::warning::Impossible de confirmer la version en ligne (SSL pas encore actif ou site injoignable). Les fichiers ont été déposés."
