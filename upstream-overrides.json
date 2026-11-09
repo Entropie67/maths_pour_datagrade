@@ -2,5 +2,17 @@
   "tests/e2e/helpers/issue.ts": {
     "sha256": "1bb46d5ba50d37f48735cc21809eb41d072cec7d160c1fe0ee76e4a22c40873c",
     "reason": "Jeton GitLab amont remplacé par MATHALEA_GITLAB_TOKEN ; aucune requête sans configuration explicite."
+  },
+  "src/lib/siteOrigin.ts": {
+    "sha256": "b9b6213c0d37fdeba21325a969f2d0030b6836029c04b07e530596deb3f5c453",
+    "reason": "Annales locales sur maths.datagrade.fr en production ; vitrine associative et autres domaines conservés."
+  },
+  "src/lib/siteOrigin.test.ts": {
+    "sha256": "2509030481b1a15ca06c63268261677cd34f9a1581d9aa63b92e145c2a64ad5c",
+    "reason": "Annales locales sur maths.datagrade.fr en production ; vitrine associative et autres domaines conservés."
+  },
+  "src/lib/components/refUtils.ts": {
+    "sha256": "fabe0e547f5c280e950d0d54f55cbbc82503c51daf3f83644989d087c8c66488",
+    "reason": "Annales locales sur maths.datagrade.fr en production ; vitrine associative et autres domaines conservés."
   }
 }

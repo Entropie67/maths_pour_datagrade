@@ -60,3 +60,11 @@ Après ajout des médias, `pnpm prebuild-unit-tests` a de nouveau réussi : 6 12
 
 Ces contrôles ne valident pas tous les sujets, les exports des annales ou les services externes. Les résultats de compilation ci-dessous concernent la validation précédente du code ; ils ne constituent pas un résultat de compilation du nouvel ajout de médias.
 
+# Complément : domaine DataGrade, 9 novembre 2026
+
+La cible est `https://maths.datagrade.fr/alea/`. Le chemin de base Vite était déjà correct. L'origine des annales reconnaît maintenant ce domaine en production, tandis que la vitrine associative conserve son origine amont. Le test couvre aussi les domaines tiers et un nom ressemblant au domaine DataGrade.
+
+Après cette adaptation : **6 129 tests passent, 35 sont ignorés**. Le contrôle complet `svelte-check --tsconfig ./tsconfig.json` retourne **0 erreur et 0 avertissement**. Sous PowerShell, `NODE_OPTIONS` a été défini séparément ; le script ciblé amont ne fonctionnait pas dans ce checkout Windows imbriqué. La provenance est vérifiée avec quatre fichiers adaptés explicitement déclarés.
+
+Le site distant n'a pas été déployé ni testé. Voir [les instructions pour la cible](../docs/DEPLOIEMENT-DATAGRADE.md). Les essais navigateur d'annales ci-dessous portent sur le serveur local avant cette adaptation, dont le mode production est couvert par les tests unitaires.
+

@@ -4,6 +4,8 @@ Copie complète du code officiel de MathALÉA, conservée dans `mathalea/`, avec
 
 Voir [l'origine et les empreintes](UPSTREAM.md), [le rapport de validation](validation/RESULTATS.md) et [la préparation DataGrade](docs/INTEGRATION-DATAGRADE.md).
 
+Cible de déploiement : **https://maths.datagrade.fr/alea/**. Voir [les chemins et réglages d'hébergement](docs/DEPLOIEMENT-DATAGRADE.md). La publication sur ce serveur reste à effectuer.
+
 ## Lancer en local
 
 Node.js 24.13.0 et pnpm 12.6.0 ont été utilisés pour cette validation.

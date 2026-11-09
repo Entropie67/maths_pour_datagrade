@@ -10,9 +10,13 @@
 
 ## Adaptation de sécurité indispensable
 
-GitHub a bloqué le premier envoi parce que `tests/e2e/helpers/issue.ts` contenait un jeton GitLab en clair. Ce seul fichier amont est adapté : le jeton est lu dans `MATHALEA_GITLAB_TOKEN`, et aucune requête de création de ticket n'est tentée sans cette configuration. Le commentaire d'exemple n'embarque plus de jeton. La fonction, ses appels et les autres fonctionnalités restent présents. L'empreinte adaptée et sa justification sont consignées dans `upstream-overrides.json`. Ne jamais contourner la protection GitHub pour republier la valeur amont.
+GitHub a bloqué le premier envoi parce que `tests/e2e/helpers/issue.ts` contenait un jeton GitLab en clair. Dans ce fichier, le jeton est lu dans `MATHALEA_GITLAB_TOKEN`, et aucune requête de création de ticket n'est tentée sans cette configuration. Le commentaire d'exemple n'embarque plus de jeton. La fonction, ses appels et les autres fonctionnalités restent présents. L'empreinte adaptée et sa justification sont consignées dans `upstream-overrides.json`. Ne jamais contourner la protection GitHub pour republier la valeur amont.
 
-Les dépendances sont déclarées et verrouillées dans les fichiers amont ; `node_modules` n'est pas versionné. Les médias et services absents du dépôt amont ne sont pas inclus par cet import. Les catalogues générés restent générés par les outils MathALÉA.
+## Adaptation du domaine DataGrade
+
+`src/lib/siteOrigin.ts`, son test et `src/lib/components/refUtils.ts` reconnaissent `maths.datagrade.fr` comme origine locale des annales en production. La vitrine associative reste sur CoopMaths. Les empreintes de ces adaptations sont également déclarées dans `upstream-overrides.json`. Voir le [déploiement DataGrade](docs/DEPLOIEMENT-DATAGRADE.md).
+
+Les dépendances sont déclarées et verrouillées dans les fichiers amont ; `node_modules` n'est pas versionné. Les médias absents du dépôt amont ont fait l'objet d'un [import complémentaire documenté](resources/README.md). Les services externes ne sont pas copiés. Les catalogues générés restent générés par les outils MathALÉA.
 
 Les commandes amont `makeJson`, `dev` et `build` régénèrent notamment `src/json/quizzBackgrounds.json`. Une différence dans ce fichier après exécution doit être examinée avant publication ; ne pas la confondre avec un fichier manquant lors de l'import.
 

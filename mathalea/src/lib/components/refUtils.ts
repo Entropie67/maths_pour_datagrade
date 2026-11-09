@@ -159,7 +159,7 @@ export function computeStaticExercicePngUrls(
   if (isStaticWithoutPngUrl(foundResource)) {
     // Les scans sont servis sur nos noms (coopmaths, mathalea, staging), pas
     // sur une copie de MathALÉA hébergée ailleurs : voir siteOrigin.
-    const staticBase = `${siteOrigin()}/alea/static`
+    const staticBase = `${siteOrigin(undefined, 'static')}/alea/static`
     const [examen] = foundResource.uuid.split('_')
     if (examen === 'eam') {
       foundResource.png = `${staticBase}/eam/${foundResource.annee}/tex/png/${foundResource.uuid}.png`

@@ -8,6 +8,15 @@ describe('siteOrigin', () => {
     vi.unstubAllEnvs()
   })
 
+  it('sert les annales DataGrade localement en production et conserve la vitrine associative', () => {
+    vi.stubEnv('DEV', false)
+    const location = at('https://maths.datagrade.fr')
+    expect(siteOrigin(location, 'static')).toBe('https://maths.datagrade.fr')
+    expect(siteOrigin(location)).toBe('https://coopmaths.fr')
+    expect(siteOrigin(at('https://maths.datagrade.fr.example.com'), 'static')).toBe('https://coopmaths.fr')
+    expect(siteOrigin(at('https://capytale2.ac-paris.fr'), 'static')).toBe('https://coopmaths.fr')
+  })
+
   it('sert depuis le site courant sur nos noms', () => {
     vi.stubEnv('DEV', false)
     for (const origin of [
