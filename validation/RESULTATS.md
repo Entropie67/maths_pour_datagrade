@@ -41,9 +41,13 @@ Le contrôle navigateur supplémentaire vérifie le démarrage réel de la CAN e
 
 ## Workflows GitHub
 
-La recherche des exécutions associées au commit initial `b615dababc1d38aab6c297b49fa8d03971fee5e0` a retourné une liste vide : aucun journal d'exécution n'était disponible pour ce commit.
+Le workflow initial du commit `b615dababc1d38aab6c297b49fa8d03971fee5e0` a bien été exécuté : [exécution 42584293657](https://github.com/Entropie67/maths_pour_datagrade/actions/runs/42584293657), terminée en échec. Ses journaux confirment trois problèmes : accents graves interprétés comme commandes dans le heredoc (`command not found`, `Is a directory`), seulement 8 393 fichiers ajoutés au lieu de 8 395 éléments suivis, puis refus de publication par la protection GitHub à cause du jeton GitLab du helper de tests. La première recherche ne listait que les exécutions liées aux PR et avait manqué cette exécution déclenchée par push ; le diagnostic a été corrigé après lecture de l'historique complet et des journaux.
 
-Le workflow d'import est corrigé pour éviter l'interprétation des accents graves Markdown par Bash, inclure les fichiers suivis mais ignorés par `.gitignore` et comparer les arbres Git avant publication. Le workflow `validate-mathalea.yml` ajoute contrôle d'intégrité, installation verrouillée, tests, deux builds et contrôle navigateur. Son exécution sur GitHub reste à constater après publication ; les résultats ci-dessus sont des résultats locaux.
+Le workflow d'import est corrigé pour éviter l'interprétation des accents graves Markdown par Bash, inclure les fichiers suivis mais ignorés par `.gitignore`, comparer les arbres Git avant adaptation de sécurité, puis externaliser le jeton avant publication.
+
+Le workflow `validate-mathalea.yml` a entièrement réussi sur GitHub/Linux pour le commit de code `b066dd4181f8cf05429b7371d34d5c08b3bcfdb9` : [exécution 42587973161](https://github.com/Entropie67/maths_pour_datagrade/actions/runs/42587973161). Ses journaux ont été lus. Le contrôle d'intégrité, l'installation verrouillée, les deux suites de tests, le test du helper, les deux builds et le contrôle navigateur sont tous réussis. Le build application a duré environ 3 min 3 s et le build moteur 1 min 24 s. Le navigateur retrouve les 4 439 entrées et 3 041 UUID du catalogue FR, et ne signale aucun `pageerror`. Les captures et le résultat du contrôle navigateur sont joints en artefact GitHub.
+
+La mise à jour finale de ce rapport ne modifie aucun code ; les résultats distants ci-dessus restent attachés au commit de code indiqué.
 
 ## Conclusion technique
 
