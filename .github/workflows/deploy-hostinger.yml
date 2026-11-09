@@ -135,7 +135,8 @@ jobs:
           # Reprise, en trois temps pour que le site reste utilisable pendant l'envoi :
           #   1. ajout des fichiers absents ou de taille différente, sans rien
           #      supprimer (--ignore-time : la date du checkout change à chaque
-          #      exécution) ; l'ancienne page d'accueil garde ses anciens scripts ;
+          #      exécution) et sans toucher aux pages : l'ancienne page d'accueil
+          #      garde ses anciens scripts jusqu'au basculement ;
           #   2. renvoi d'office des fichiers non hachés qui changent à chaque
           #      version (index.html, index.php, version.txt, deploiement.json,
           #      .htaccess) : la nouvelle page trouve tous ses fichiers déjà en place ;
@@ -161,6 +162,8 @@ jobs:
           rmdir public_html
           set cmd:fail-exit true
           mirror -R --ignore-time --no-perms --verbose=1 \
+            --exclude '^index\.html$' --exclude '^index\.php$' --exclude '^acces-config\.php$' \
+            --exclude '^version\.txt$' --exclude '^deploiement\.json$' --exclude '^\.htaccess$' \
             mathalea/dist/ alea/
           put -O alea/ mathalea/dist/index.html mathalea/dist/index.php mathalea/dist/acces-config.php mathalea/dist/version.txt mathalea/dist/deploiement.json mathalea/dist/.htaccess
           put -O . hostinger/root.htaccess -o .htaccess
