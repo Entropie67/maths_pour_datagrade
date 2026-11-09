@@ -43,6 +43,14 @@ corepack pnpm exec vite build -c vite.moteur.config.ts
 
 Le contrôle navigateur supplémentaire se lance à la racine avec `node scripts/smoke-browser.mjs`, après démarrage du serveur et installation de Chromium via `corepack pnpm exec playwright install chromium` dans `mathalea/`.
 
+## Déployer sur maths.datagrade.fr
+
+Le workflow [`deploy-hostinger.yml`](.github/workflows/deploy-hostinger.yml) compile `mathalea/` puis dépose `dist/` par FTPS dans `public_html/alea/` du site Hostinger `maths.datagrade.fr`, à chaque push sur `integration/mathalea-complet` ou `main` touchant `mathalea/`, `hostinger/` ou le workflow, et à la demande (*Run workflow*). L'application est alors servie sur `https://maths.datagrade.fr/alea/` et `https://maths.datagrade.fr/alea/deploiement.json` indique le commit déployé et le lien vers ses sources.
+
+Trois secrets de dépôt sont nécessaires (*Settings → Secrets and variables → Actions*) : `FTP_HOST` (hôte FTP Hostinger, sans `ftp://`), `FTP_USER` (nom d'utilisateur complet) et `FTP_PASSWORD`. Ils ne doivent figurer nulle part ailleurs.
+
+Le fichier [`hostinger/alea.htaccess`](hostinger/alea.htaccess), copié en `dist/.htaccess`, reprend pour Apache les règles de `mathalea/deploy/nginx/` : cache long des fichiers hachés, `index.html` jamais mis en cache, types MIME, compression, et renvoi des scans d'annales absents (`/alea/static/`) vers coopmaths.fr comme le fait le serveur de développement amont. Seuls les fichiers modifiés depuis le dernier déploiement sont renvoyés ; le premier envoi est long.
+
 ## Périmètre et licence
 
 L'import inclut tous les fichiers suivis en amont. Les médias d'annales et services externes absents du dépôt nécessitent une préparation supplémentaire pour un hébergement autonome. La compilation et les tests réussis ne constituent pas une validation exhaustive de toutes les fonctionnalités.
