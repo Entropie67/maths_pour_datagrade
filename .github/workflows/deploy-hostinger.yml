@@ -1,7 +1,8 @@
 name: Déployer sur maths.datagrade.fr
 
 # Compile l'application MathALÉA complète (mathalea/) puis la dépose par FTP (lftp)
-# dans public_html/alea/ du site Hostinger maths.datagrade.fr.
+# dans alea/ du site Hostinger maths.datagrade.fr (la racine du compte FTP est
+# déjà public_html), avec une redirection de la racine du site vers /alea/.
 #
 # Secrets du dépôt attendus (Settings → Secrets and variables → Actions) :
 #   FTP_HOST      hôte FTP affiché par Hostinger (sans ftp://)
@@ -108,7 +109,7 @@ jobs:
       - name: Installer lftp
         run: sudo apt-get update -qq && sudo apt-get install -y -qq lftp >/dev/null
 
-      - name: Déposer par FTP dans public_html/alea/
+      - name: Déposer par FTP dans alea/ (racine FTP = public_html)
         env:
           FTP_HOST: ${{ secrets.FTP_HOST }}
           FTP_USER: ${{ secrets.FTP_USER }}
@@ -139,9 +140,17 @@ jobs:
           set mirror:parallel-transfer-count 5
           open "ftp://$FTP_HOST"
           user "$FTP_USER" "$FTP_PASSWORD"
+          # La racine du compte FTP est déjà public_html : la cible est donc alea/.
+          # Le premier envoi (avant cette correction) avait créé public_html/alea/
+          # un cran trop bas : on le renomme en place si c'est encore le cas, sans
+          # rien renvoyer. Ces deux commandes peuvent échouer sans conséquence.
+          mv public_html/alea alea
+          rmdir public_html
+          set cmd:fail-exit true
           mirror -R --ignore-time --delete --no-perms --verbose=1 \
-            mathalea/dist/ public_html/alea/
-          put -O public_html/alea/ mathalea/dist/index.html mathalea/dist/version.txt mathalea/dist/deploiement.json mathalea/dist/.htaccess
+            mathalea/dist/ alea/
+          put -O alea/ mathalea/dist/index.html mathalea/dist/version.txt mathalea/dist/deploiement.json mathalea/dist/.htaccess
+          put -O . hostinger/root.htaccess -o .htaccess
           bye
           LFTP
           echo "Envoi terminé."
@@ -151,13 +160,13 @@ jobs:
           SHA: ${{ github.sha }}
         run: |
           set -u
-          for url in https://maths.datagrade.fr/alea/deploiement.json http://maths.datagrade.fr/alea/deploiement.json; do
-            if corps="$(curl --fail --silent --show-error --max-time 30 "$url")"; then
-              if printf '%s' "$corps" | grep -q "$SHA"; then
-                echo "::notice::En ligne : $url sert bien le commit $SHA."
-                exit 0
-              fi
-              echo "::warning::$url répond mais sans le commit $SHA (cache ou dépôt incomplet)."
+          url=https://maths.datagrade.fr/alea/deploiement.json
+          for essai in 1 2 3; do
+            if corps="$(curl --fail --silent --show-error --max-time 30 "$url")" && printf '%s' "$corps" | grep -q "$SHA"; then
+              echo "::notice::En ligne : $url sert bien le commit $SHA."
+              exit 0
             fi
+            sleep 10
           done
-          echo "::warning::Impossible de confirmer la version en ligne (SSL pas encore actif ou site injoignable). Les fichiers ont été déposés."
+          echo "::error::$url ne sert pas le commit $SHA (réponse : ${corps:-aucune}). Les fichiers ont été déposés mais le site ne les sert pas : vérifier le dossier cible et le SSL."
+          exit 1
