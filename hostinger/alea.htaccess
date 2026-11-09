@@ -7,7 +7,15 @@
 # pas d'en-tête anti-iframe (MathALÉA s'affiche dans DataGrade, Moodle, Capytale).
 
 Options -Indexes
-DirectoryIndex index.html
+# Le portier index.php (hostinger/acces.php) sert index.html après contrôle
+# d'accès ; index.html et la configuration du portier ne sont jamais servis seuls.
+DirectoryIndex index.php index.html
+<Files "index.html">
+  Require all denied
+</Files>
+<Files "acces-config.php">
+  Require all denied
+</Files>
 
 <IfModule mod_mime.c>
   AddType application/wasm .wasm

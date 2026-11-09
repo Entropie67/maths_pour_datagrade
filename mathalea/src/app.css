@@ -88,7 +88,7 @@
   --color-coopmaths-title: #342a34;
   --color-coopmaths-titlemenu: #f15929;
   --color-coopmaths-titlelight: #f5f1f3;
-  --color-coopmaths-titleexercise: #f15929;
+  --color-coopmaths-titleexercise: #7c3aed;
   --color-coopmaths-darkmode: #2e2e2b;
   --color-coopmaths-darkmodelight: #363633;
 
@@ -105,21 +105,21 @@
   --color-coopmaths-corpus-dark: #191d21;
   --color-coopmaths-corpus-darkest: #131619;
 
-  /* coopmaths action colors */
-  --color-coopmaths-action: #f15929;
-  --color-coopmaths-action-light: #f47a54;
-  --color-coopmaths-action-lightest: #f79b7f;
-  --color-coopmaths-action-dark: #d43d0e;
-  --color-coopmaths-action-darkest: #9f2e0a;
-  --color-coopmaths-action-100: #feeeea;
-  --color-coopmaths-action-200: #fcded4;
-  --color-coopmaths-action-300: #fbcdbf;
-  --color-coopmaths-action-400: #f9bda9;
-  --color-coopmaths-action-500: #f8ac94;
-  --color-coopmaths-action-600: #f79b7f;
-  --color-coopmaths-action-700: #f58b69;
-  --color-coopmaths-action-800: #f47a54;
-  --color-coopmaths-action-900: #f26a3e;
+  /* coopmaths action colors — AxioMaths (DataGrade) : violet à la place de l'orange */
+  --color-coopmaths-action: #7c3aed;
+  --color-coopmaths-action-light: #9a6cf2;
+  --color-coopmaths-action-lightest: #b99af6;
+  --color-coopmaths-action-dark: #6d28d9;
+  --color-coopmaths-action-darkest: #4c1d95;
+  --color-coopmaths-action-100: #f3eefe;
+  --color-coopmaths-action-200: #e7dcfc;
+  --color-coopmaths-action-300: #dbcbfa;
+  --color-coopmaths-action-400: #cfbaf9;
+  --color-coopmaths-action-500: #c3a9f7;
+  --color-coopmaths-action-600: #b99af6;
+  --color-coopmaths-action-700: #ab86f4;
+  --color-coopmaths-action-800: #9a6cf2;
+  --color-coopmaths-action-900: #8b53f0;
 
   /* coopmaths warn colors */
   --color-coopmaths-warn: #80d925;
@@ -140,12 +140,12 @@
   --color-coopmaths-warn-1000: #5da119;
   --color-coopmaths-warn-1100: #4d8613;
 
-  /* coopmaths struct colors */
-  --color-coopmaths-struct: #216d9a;
-  --color-coopmaths-struct-light: #2c93cf;
-  --color-coopmaths-struct-lightest: #5faedd;
-  --color-coopmaths-struct-dark: #1a577b;
-  --color-coopmaths-struct-darkest: #14415c;
+  /* coopmaths struct colors — AxioMaths : violet profond à la place du bleu */
+  --color-coopmaths-struct: #4c1d95;
+  --color-coopmaths-struct-light: #5b21b6;
+  --color-coopmaths-struct-lightest: #7c3aed;
+  --color-coopmaths-struct-dark: #3b1676;
+  --color-coopmaths-struct-darkest: #2e1065;
 
   /* coopmathsdark colors - dark mode */
   --color-coopmathsdark: #f15929;
@@ -180,12 +180,12 @@
   --color-coopmathsdark-corpus-dark: #7b7b7b;
   --color-coopmathsdark-corpus-darkest: #464646;
 
-  /* coopmathsdark action colors */
-  --color-coopmathsdark-action: #ffb86c;
-  --color-coopmathsdark-action-light: #ffc689;
-  --color-coopmathsdark-action-lightest: #ffd4a7;
-  --color-coopmathsdark-action-dark: #ff9523;
-  --color-coopmathsdark-action-darkest: #da7100;
+  /* coopmathsdark action colors — AxioMaths : lavande à la place de l'orange */
+  --color-coopmathsdark-action: #c4b5fd;
+  --color-coopmathsdark-action-light: #d2c6fe;
+  --color-coopmathsdark-action-lightest: #e0d8fe;
+  --color-coopmathsdark-action-dark: #a78bfa;
+  --color-coopmathsdark-action-darkest: #8b5cf6;
 
   /* coopmathsdark warn colors */
   --color-coopmathsdark-warn: #ff79c6;

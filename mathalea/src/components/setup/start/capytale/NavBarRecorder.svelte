@@ -72,22 +72,29 @@
       text-5xl md:text-4xl
       text-coopmaths-struct dark:text-coopmathsdark-struct"
     >
-      MathALÉA
+      <img
+        src="assets/images/axiomaths/liu-compas.png"
+        alt=""
+        aria-hidden="true"
+        class="inline-block h-10 w-auto mr-1 -mt-1 align-middle"
+      />
+      AxioMaths
     </div>
+    <!-- AxioMaths (DataGrade) est propulsé par MathALÉA : mention et lien conservés (AGPL-3.0) -->
     <div
       class="flex flex-row font-light text-sm
       text-coopmaths-corpus-lightest dark:text-coopmathsdark-corpus-lightest"
     >
-      <span class="font-light font-sans mr-1 tracking-normal"> par </span>
+      <span class="font-light font-sans mr-1 tracking-normal"> propulsé par </span>
       <a
-        href="https://coopmaths.fr"
+        href="https://coopmaths.fr/alea/"
         target="_blank"
         rel="noreferrer"
         class="font-extrabold font-logo9 tracking-tighter
           text-coopmaths-action dark:text-coopmathsdark-action
           hover:text-coopmaths-action-lightest dark:hover:text-coopmathsdark-action-lightest"
       >
-        CoopMaths
+        MathALÉA
       </a>
     </div>
   </div>

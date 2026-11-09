@@ -87,10 +87,19 @@ jobs:
           SHA: ${{ github.sha }}
           REF: ${{ github.ref_name }}
           REPO: ${{ github.server_url }}/${{ github.repository }}
+          AXIO_GATE_SECRET: ${{ secrets.AXIO_GATE_SECRET }}
         run: |
           set -euo pipefail
           test -f mathalea/dist/index.html
           cp hostinger/alea.htaccess mathalea/dist/.htaccess
+          # Portier : index.php sert index.html aux visiteurs venus de DataGrade
+          # (jeton signé ou cookie). La clé partagée vient du secret AXIO_GATE_SECRET ;
+          # absente, le portier laisse passer tout le monde.
+          cp hostinger/acces.php mathalea/dist/index.php
+          php -l mathalea/dist/index.php
+          umask 077
+          printf '<?php\nreturn ["secret" => %s];\n' "$(php -r 'echo var_export((string) getenv("AXIO_GATE_SECRET"), true);')" > mathalea/dist/acces-config.php
+          if [ -n "${AXIO_GATE_SECRET:-}" ]; then echo "Portier actif : clé partagée configurée."; else echo "::warning::AXIO_GATE_SECRET absent : le site reste ouvert à tous."; fi
           # Fiche de version lisible en ligne (https://maths.datagrade.fr/alea/deploiement.json)
           # et accès aux sources de la version déployée, comme le demande la licence AGPL.
           cat > mathalea/dist/deploiement.json <<JSON
