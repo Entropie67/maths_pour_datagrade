@@ -16,8 +16,8 @@
     "reason": "Annales locales sur maths.datagrade.fr en production ; vitrine associative et autres domaines conservés."
   },
   "index.html": {
-    "sha256": "7dec43bc53545cba6aff6cd835f84a570c80f121a1271f4f5ef5535b2253eb47",
-    "reason": "Habillage AxioMaths (DataGrade) : nom, mascotte Liu, palette violette, accueil et pied de page maison, mention MathALÉA/CoopMaths conservée."
+    "sha256": "aa25f0742d8f822a6183c1d318529f68643ed53c122b65e3451379c2506bb817",
+    "reason": "Habillage AxioMaths (DataGrade) : nom, mascotte Liu, palette violette, accueil et pied de page maison, triangle de Penrose au chargement, mention MathALÉA/CoopMaths conservée."
   },
   "src/app.css": {
     "sha256": "c1ecd1a8adf1102b5c4b83569de73bdded60994f9191dfe1080a68428efda16c",

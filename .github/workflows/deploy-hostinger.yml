@@ -132,10 +132,14 @@ jobs:
           # L'hôte est une IP : son certificat ne porte pas ce nom, d'où l'absence
           # de vérification (même réglage que « security: loose » auparavant).
           #
-          # Reprise : les fichiers absents ou de taille différente sont envoyés
-          # (--ignore-time : la date du checkout change à chaque exécution), les
-          # fichiers disparus du build sont supprimés du serveur, puis les quelques
-          # fichiers non hachés qui changent à chaque version sont renvoyés d'office.
+          # Reprise, en trois temps pour que le site reste utilisable pendant l'envoi :
+          #   1. ajout des fichiers absents ou de taille différente, sans rien
+          #      supprimer (--ignore-time : la date du checkout change à chaque
+          #      exécution) ; l'ancienne page d'accueil garde ses anciens scripts ;
+          #   2. renvoi d'office des fichiers non hachés qui changent à chaque
+          #      version (index.html, index.php, version.txt, deploiement.json,
+          #      .htaccess) : la nouvelle page trouve tous ses fichiers déjà en place ;
+          #   3. suppression des fichiers disparus du build (anciens scripts hachés).
           # Cinq transferts en parallèle : 16 000 fichiers avec les annales.
           lftp <<LFTP
           set net:timeout 40
@@ -156,10 +160,12 @@ jobs:
           mv public_html/alea alea
           rmdir public_html
           set cmd:fail-exit true
-          mirror -R --ignore-time --delete --no-perms --verbose=1 \
+          mirror -R --ignore-time --no-perms --verbose=1 \
             mathalea/dist/ alea/
-          put -O alea/ mathalea/dist/index.html mathalea/dist/version.txt mathalea/dist/deploiement.json mathalea/dist/.htaccess
+          put -O alea/ mathalea/dist/index.html mathalea/dist/index.php mathalea/dist/acces-config.php mathalea/dist/version.txt mathalea/dist/deploiement.json mathalea/dist/.htaccess
           put -O . hostinger/root.htaccess -o .htaccess
+          mirror -R --ignore-time --delete --no-perms --verbose=0 \
+            mathalea/dist/ alea/
           bye
           LFTP
           echo "Envoi terminé."
