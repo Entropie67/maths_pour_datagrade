@@ -1,0 +1,313 @@
+{
+  "questions": [
+     {"themes": "Trigonométrie (valeurs remarquables cosinus et sinus)",
+          "level": "1",
+          "id": "trig1",
+          "title": "Valeur de $\\sin(\\pi)$",
+          "question": "Compléter : $\\sin(\\pi)=\\ldots$",
+          "answer": "0",
+          "keys": ["\\pi", "\\sqrt{#1}" ],
+          "correction": "La valeur de $\\sin(\\pi)$ est $0$. "
+        },
+        { "themes": "Trigonométrie (valeurs remarquables cosinus et sinus)",
+          "level": "1",
+          "id": "trig2",
+          "title": "Valeur de $\\cos(\\pi)$",
+          "question": "Compléter : $\\cos(\\pi)=\\ldots$",
+          "answer": "-1",
+          "keys": ["\\pi", "\\sqrt{#1}"],
+          "correction": "La valeur de $\\cos(\\pi)$ est $-1$."
+        },
+        {
+          "themes": "Trigonométrie (valeurs remarquables cosinus et sinus)",
+          "level": "1",
+          "id": "trig3",
+          "title": "Valeur de $\\sin\\left(\\frac{\\pi}{6}\\right)$",
+          "question": "Compléter : $\\sin\\left(\\frac{\\pi}{6}\\right)=\\ldots$",
+          "answer": "\\frac{1}{2}",
+          "keys": ["\\pi", "\\sqrt{#1}"],
+          "correction": "La valeur de $\\sin\\left(\\frac{\\pi}{6}\\right)$ est $\\frac{1}{2}$."
+        },
+        {
+          "themes": "Trigonométrie (valeurs remarquables cosinus et sinus)",
+          "level": "1",
+          "id": "trig4",
+          "title": "Valeur de $\\cos\\left(\\frac{\\pi}{6}\\right)$",
+          "question": "Compléter : $\\cos\\left(\\frac{\\pi}{6}\\right)=\\ldots$",
+          "answer": "\\frac{\\sqrt{3}}{2}",
+          "keys": ["\\pi", "\\sqrt{#1}"],
+          "correction": "La valeur de $\\cos\\left(\\frac{\\pi}{6}\\right)$ est $\\frac{\\sqrt{3}}{2}$."
+        },
+        {
+          "themes": "Trigonométrie (valeurs remarquables cosinus et sinus)",
+          "level": "1",
+          "id": "trig5",
+          "title": "Valeur de $\\sin\\left(\\frac{\\pi}{4}\\right)$",
+          "question": "Compléter : $\\sin\\left(\\frac{\\pi}{4}\\right)=\\ldots$",
+          "answer": "\\frac{\\sqrt{2}}{2}",
+          "keys": ["\\pi", "\\sqrt{#1}"],
+          "correction": "La valeur de $\\sin\\left(\\frac{\\pi}{4}\\right)$ est $\\frac{\\sqrt{2}}{2}$."
+        },
+        {
+          "themes": "Trigonométrie (valeurs remarquables cosinus et sinus)",
+          "level": "1",
+          "id": "trig6",
+          "title": "Valeur de $\\cos\\left(\\frac{\\pi}{4}\\right)$",
+          "question": "Compléter : $\\cos\\left(\\frac{\\pi}{4}\\right)=\\ldots$",
+          "answer": "\\frac{\\sqrt{2}}{2}",
+          "keys": ["\\pi", "\\sqrt{#1}"],
+          "correction": "La valeur de $\\cos\\left(\\frac{\\pi}{4}\\right)$ est $\\frac{\\sqrt{2}}{2}$."
+        },
+        {
+          "themes": "Trigonométrie (valeurs remarquables cosinus et sinus)",
+          "level": "1",
+          "id": "trig7",
+          "title": "Valeur de $\\sin\\left(\\frac{\\pi}{3}\\right)$",
+          "question": "Compléter : $\\sin\\left(\\frac{\\pi}{3}\\right)=\\ldots$",
+          "answer": "\\frac{\\sqrt{3}}{2}",
+          "keys": ["\\pi", "\\sqrt{#1}"],
+          "correction": "La valeur de $\\sin\\left(\\frac{\\pi}{3}\\right)$ est $\\frac{\\sqrt{3}}{2}$."
+        },
+        {
+          "themes": "Trigonométrie (valeurs remarquables cosinus et sinus)",
+          "level": "1",
+          "id": "trig8",
+          "title": "Valeur de $\\cos\\left(\\frac{\\pi}{3}\\right)$",
+          "question": "Compléter : $\\cos\\left(\\frac{\\pi}{3}\\right)=\\ldots$",
+          "answer": "\\frac{1}{2}",
+          "keys": ["\\pi", "\\sqrt{#1}"],
+          "correction": "La valeur de $\\cos\\left(\\frac{\\pi}{3}\\right)$ est $\\frac{1}{2}$."
+        },
+        {
+          "themes": "Trigonométrie (valeurs remarquables cosinus et sinus)",
+          "level": "1",
+          "id": "trig9",
+          "title": "Valeur de $\\sin\\left(\\frac{\\pi}{2}\\right)$",
+          "question": "Compléter : $\\sin\\left(\\frac{\\pi}{2}\\right)=\\ldots$",
+          "answer": "1",
+          "keys": ["\\pi", "\\sqrt{#1}"],
+          "correction": "La valeur de $\\sin\\left(\\frac{\\pi}{2}\\right)$ est $1$."
+        },
+        {
+          "themes": "Trigonométrie (valeurs remarquables cosinus et sinus)",
+          "level": "1",
+          "id": "trig10",
+          "title": "Valeur de $\\cos\\left(\\frac{\\pi}{2}\\right)$",
+          "question": "Compléter : $\\cos\\left(\\frac{\\pi}{2}\\right)=\\ldots$",
+          "answer": "0",
+          "keys": ["\\pi", "\\sqrt{#1}"],
+          "correction": "La valeur de $\\cos\\left(\\frac{\\pi}{2}\\right)$ est $0$."
+        },
+        {
+          "themes": "Trigonométrie (valeurs remarquables cosinus et sinus)",
+          "level": "1",
+          "id": "trig11",
+          "title": "Valeur de $\\cos\\left(\\frac{3\\pi}{2}\\right)$",
+          "question": "Compléter : $\\cos\\left(\\frac{3\\pi}{2}\\right)=\\ldots$",
+          "answer": "0",
+          "keys": ["\\pi", "\\sqrt{#1}"],
+          "correction": "La valeur de $\\cos\\left(\\frac{3\\pi}{2}\\right)$ est $0$."
+        },
+        {
+          "themes": "Trigonométrie (valeurs remarquables cosinus et sinus)",
+          "level": "1",
+          "id": "trig12",
+          "title": "Valeur de $\\sin\\left(\\frac{3\\pi}{2}\\right)$",
+          "question": "Compléter : $\\sin\\left(\\frac{3\\pi}{2}\\right)=\\ldots$",
+          "answer": "-1",
+          "keys": ["\\pi", "\\sqrt{#1}"],
+          "correction": "La valeur de $\\sin\\left(\\frac{3\\pi}{2}\\right)$ est $-1$."
+        },
+        {
+          "themes": "Trigonométrie (valeurs remarquables cosinus et sinus)",
+          "level": "1",
+          "id": "trig13",
+          "title": "Valeur de $\\sin\\left(\\frac{3\\pi}{4}\\right)$",
+          "question": "Compléter : $\\sin\\left(\\frac{3\\pi}{4}\\right)=\\ldots$",
+          "answer": "\\frac{\\sqrt{2}}{2}",
+          "keys": ["\\pi", "\\sqrt{#1}"],
+          "correction": "La valeur de $\\sin\\left(\\frac{3\\pi}{4}\\right)$ est $\\frac{\\sqrt{2}}{2}$."
+        },
+        {
+          "themes": "Trigonométrie (valeurs remarquables cosinus et sinus)",
+          "level": "1",
+          "id": "trig14",
+          "title": "Valeur de $\\cos\\left(\\frac{3\\pi}{4}\\right)$",
+          "question": "Compléter : $\\cos\\left(\\frac{3\\pi}{4}\\right)=\\ldots$",
+          "answer": "-\\frac{\\sqrt{2}}{2}",
+          "keys": ["\\pi", "\\sqrt{#1}"],
+          "correction": "La valeur de $\\cos\\left(\\frac{3\\pi}{4}\\right)$ est $-\\frac{\\sqrt{2}}{2}$."
+        },
+        {
+          "themes": "Trigonométrie (valeurs remarquables cosinus et sinus)",
+          "level": "1",
+          "id": "trig15",
+          "title": "Valeur de $\\sin\\left(-\\frac{3\\pi}{4}\\right)$",
+          "question": "Compléter : $\\sin\\left(-\\frac{3\\pi}{4}\\right)=\\ldots$",
+          "answer": "-\\frac{\\sqrt{2}}{2}",
+          "keys": ["\\pi", "\\sqrt{#1}"],
+          "correction": "La valeur de $\\sin\\left(-\\frac{3\\pi}{4}\\right)$ est $-\\frac{\\sqrt{2}}{2}$."
+        },
+        {
+          "themes": "Trigonométrie (valeurs remarquables cosinus et sinus)",
+          "level": "1",
+          "id": "trig16",
+          "title": "Valeur de $\\cos\\left(-\\frac{3\\pi}{4}\\right)$",
+          "question": "Compléter : $\\cos\\left(-\\frac{3\\pi}{4}\\right)=\\ldots$",
+          "answer": "-\\frac{\\sqrt{2}}{2}",
+          "keys": ["\\pi", "\\sqrt{#1}"],
+          "correction": "La valeur de $\\cos\\left(-\\frac{3\\pi}{4}\\right)$ est $-\\frac{\\sqrt{2}}{2}$."
+        },
+        {
+          "themes": "Trigonométrie (valeurs remarquables cosinus et sinus)",
+          "level": "1",
+          "id": "trig17",
+          "title": "Valeur de $\\sin\\left(\\frac{5\\pi}{6}\\right)$",
+          "question": "Compléter : $\\sin\\left(\\frac{5\\pi}{6}\\right)=\\ldots$",
+          "answer": "\\frac{1}{2}",
+          "keys": ["\\pi", "\\sqrt{#1}"],
+          "correction": "La valeur de $\\sin\\left(\\frac{5\\pi}{6}\\right)$ est $\\frac{1}{2}$."
+        },
+        {
+          "themes": "Trigonométrie (valeurs remarquables cosinus et sinus)",
+          "level": "1",
+          "id": "trig18",
+          "title": "Valeur de $\\cos\\left(\\frac{5\\pi}{6}\\right)$",
+          "question": "Compléter : $\\cos\\left(\\frac{5\\pi}{6}\\right)=\\ldots$",
+          "answer": "-\\frac{\\sqrt{3}}{2}",
+          "keys": ["\\pi", "\\sqrt{#1}"],
+          "correction": "La valeur de $\\cos\\left(\\frac{5\\pi}{6}\\right)$ est $-\\frac{\\sqrt{3}}{2}$."
+        },
+        {
+          "themes": "Trigonométrie (valeurs remarquables cosinus et sinus)",
+          "level": "1",
+          "id": "trig19",
+          "title": "Valeur de $\\sin\\left(-\\frac{5\\pi}{6}\\right)$",
+          "question": "Compléter : $\\sin\\left(-\\frac{5\\pi}{6}\\right)=\\ldots$",
+          "answer": "-\\frac{1}{2}",
+          "keys": ["\\pi", "\\sqrt{#1}"],
+          "correction": "La valeur de $\\sin\\left(-\\frac{5\\pi}{6}\\right)$ est $-\\frac{1}{2}$."
+        },
+        {
+          "themes": "Trigonométrie (valeurs remarquables cosinus et sinus)",
+          "level": "1",
+          "id": "trig20",
+          "title": "Valeur de $\\cos\\left(-\\frac{5\\pi}{6}\\right)$",
+          "question": "Compléter : $\\cos\\left(-\\frac{5\\pi}{6}\\right)=\\ldots$",
+          "answer": "-\\frac{\\sqrt{3}}{2}",
+          "keys": ["\\pi", "\\sqrt{#1}"],
+          "correction": "La valeur de $\\cos\\left(-\\frac{5\\pi}{6}\\right)$ est $-\\frac{\\sqrt{3}}{2}$."
+        },
+        {
+          "themes": "Trigonométrie (valeurs remarquables cosinus et sinus)",
+          "level": "1",
+          "id": "trig21",
+          "type": "qcm",
+          "title": "Formule de $\\sin(\\pi + x)$",
+          "question": "Soit $x$ un réel. Compléter : $\\sin(\\pi + x)=\\ldots$",
+          "answer": "$-\\sin(x)$",
+         "badPropositions": ["$\\sin(x)$", "$\\cos(x)$", "$-\\cos(x)$"],
+          "correction": "Pour tout réel $x$, on a la formule $\\sin(\\pi + x) = -\\sin(x)$. Cette relation découle des propriétés des fonctions trigonométriques et de la symétrie du cercle trigonométrique."
+        },
+        {
+          "themes": "Trigonométrie (valeurs remarquables cosinus et sinus)",
+          "level": "1",
+          "id": "trig22",
+          "type": "qcm",
+          "title": "Formule de $\\cos(\\pi + x)$",
+          "question": "Soit $x$ un réel.  Compléter : $\\cos(\\pi + x)=\\ldots$",
+          "answer": "$-\\cos(x)$",
+          "badPropositions": ["$\\sin(x)$", "$-\\sin(x)$", "$\\cos(x)$"],
+          "correction": "Pour tout réel $x$, on a la formule $\\cos(\\pi + x) = -\\cos(x)$. Cette relation découle des propriétés des fonctions trigonométriques et de la symétrie du cercle trigonométrique."
+        },
+        {
+          "themes": "Trigonométrie (valeurs remarquables cosinus et sinus)",
+          "level": "1",
+          "id": "trig23",
+          "type": "qcm",
+          "title": "Formule de $\\sin(\\pi - x)$",
+          "question": "Soit $x$ un réel.  Compléter : $\\sin(\\pi - x)=\\ldots$",
+          "answer": "$\\sin(x)$",
+          "badPropositions": ["$-\\sin(x)$", "$\\cos(x)$", "$-\\cos(x)$"],
+          "correction": "Pour tout réel $x$, on a la formule $\\sin(\\pi - x) = \\sin(x)$. "
+        },
+        {
+          "themes": "Trigonométrie (valeurs remarquables cosinus et sinus)",
+          "level": "1",
+          "id": "trig24",
+          "type": "qcm",
+          "title": "Formule de $\\cos(\\pi - x)$",
+          "question": "Soit $x$ un réel.  Compléter : $\\cos(\\pi - x)=\\ldots$",
+          "answer": "$-\\cos(x)$",
+         "badPropositions": ["$\\sin(x)$", "$-\\sin(x)$", "$\\cos(x)$"],
+          "correction": "Pour tout réel $x$, on a la formule $\\cos(\\pi - x) = -\\cos(x)$. "
+        },
+        {
+          "themes": "Trigonométrie (valeurs remarquables cosinus et sinus)",
+          "level": "1",
+          "id": "trig25",
+          "type": "qcm",
+          "title": "Formule de $\\sin(-x)$",
+          "question": "Soit $x$ un réel.  Compléter : $\\sin(-x)=\\ldots$",
+          "answer": "$-\\sin(x)$",
+         "badPropositions": ["$\\sin(x)$", "$\\cos(x)$", "$-\\cos(x)$"],
+          "correction": "Pour tout réel $x$, on a la formule $\\sin(-x) = -\\sin(x)$. Cette relation découle de la parité de la fonction sinus, qui est impaire."
+        },
+        {
+          "themes": "Trigonométrie (valeurs remarquables cosinus et sinus)",
+          "level": "1",
+          "id": "trig26",
+          "type": "qcm",
+          "title": "Formule de $\\cos(-x)$",
+          "question": "Soit $x$ un réel.  Compléter : $\\cos(-x)=\\ldots$",
+          "answer": "$\\cos(x)$",
+          "badPropositions": ["$\\sin(x)$", "$-\\sin(x)$", "$-\\cos(x)$"],
+          "correction": "Pour tout réel $x$, on a la formule $\\cos(-x) = \\cos(x)$. Cette relation découle de la parité de la fonction cosinus, qui est paire."
+        },
+        {
+          "themes": "Trigonométrie (valeurs remarquables cosinus et sinus)",
+          "level": "1",
+          "id": "trig27",
+          "type": "qcm",
+          "title": "Formule de $\\sin\\left(\\frac{\\pi}{2} + x\\right)$",
+          "question": "Soit $x$ un réel. Compléter : $\\sin\\left(\\frac{\\pi}{2} + x\\right) = \\ldots$",
+          "answer": "$\\cos(x)$",
+          "badPropositions": ["$\\sin(x)$", "$-\\sin(x)$", "$-\\cos(x)$"],
+          "correction": "Pour tout réel $x$, on a la formule $\\sin\\left(\\frac{\\pi}{2} + x\\right) = \\cos(x)$. Cette relation découle des propriétés des fonctions trigonométriques et de la symétrie du cercle trigonométrique."
+        },
+        {
+          "themes": "Trigonométrie (valeurs remarquables cosinus et sinus)",
+          "level": "1",
+          "id": "trig28",
+          "type": "qcm",
+          "title": "Formule de $\\cos\\left(\\frac{\\pi}{2} + x\\right)$",
+          "question": "Soit $x$ un réel. Compléter : $\\cos\\left(\\frac{\\pi}{2} + x\\right) = \\ldots$",
+          "answer": "$-\\sin(x)$",
+          "badPropositions": ["$\\sin(x)$", "$\\cos(x)$", "$-\\cos(x)$"],
+          "correction": "Pour tout réel $x$, on a la formule $\\cos\\left(\\frac{\\pi}{2} + x\\right) = -\\sin(x)$. Cette relation découle des propriétés des fonctions trigonométriques et de la symétrie du cercle trigonométrique."
+        },
+        {
+          "themes": "Trigonométrie (valeurs remarquables cosinus et sinus)",
+          "level": "1",
+          "id": "trig29",
+          "type": "qcm",
+          "title": "Formule de $\\sin\\left(\\frac{\\pi}{2} - x\\right)$",
+          "question": "Soit $x$ un réel. Compléter : $\\sin\\left(\\frac{\\pi}{2} - x\\right) = \\ldots$",
+          "answer": "$\\cos(x)$",
+          "badPropositions": ["$\\sin(x)$", "$-\\sin(x)$", "$-\\cos(x)$"],
+          "correction": "Pour tout réel $x$, on a la formule $\\sin\\left(\\frac{\\pi}{2} - x\\right) = \\cos(x)$. Cette relation découle des propriétés des fonctions trigonométriques et de la symétrie du cercle trigonométrique."
+        },
+        {
+          "themes": "Trigonométrie (valeurs remarquables cosinus et sinus)",
+          "level": "1",
+          "id": "trig30",
+          "type": "qcm",
+          "title": "Formule de $\\cos\\left(\\frac{\\pi}{2} - x\\right)$",
+          "question": "Soit $x$ un réel. Compléter : $\\cos\\left(\\frac{\\pi}{2} - x\\right) = \\ldots$",
+          "answer": "$\\sin(x)$",
+          "badPropositions": ["$-\\sin(x)$", "$\\cos(x)$", "$-\\cos(x)$"],
+          "correction": "Pour tout réel $x$, on a la formule $\\cos\\left(\\frac{\\pi}{2} - x\\right) = \\sin(x)$. Cette relation découle des propriétés des fonctions trigonométriques et de la symétrie du cercle trigonométrique."
+        }
+        
+  ]
+}

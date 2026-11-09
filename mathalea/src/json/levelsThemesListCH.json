@@ -1,0 +1,2996 @@
+{
+  "1mQCM": {
+    "titre": "QCM 1re"
+  },
+  "2mQCM": {
+    "titre": "QCM 2e"
+  },
+  "3mQCM": {
+    "titre": "QCM 3e"
+  },
+  "1mCL1": {
+    "titre": "Calcul littéral - Généralités"
+  },
+  "1mCL2": {
+    "titre": "Factorisation"
+  },
+  "1mCL3": {
+    "titre": "Équations du premier degré"
+  },
+  "1mCL4": {
+    "titre": "Equations du second degré"
+  },
+  "1mCL5": {
+    "titre": "Systèmes d'équations"
+  },
+  "1mEI": {
+    "titre": "Ensembles et intervalles"
+  },
+  "1mSE": {
+    "titre": "Systèmes d'équations"
+  },
+  "1mCN": {
+    "titre": "Rappels de calcul numérique"
+  },
+  "1mF1": {
+    "titre": "Fonctions, généralités"
+  },
+  "1mF2": {
+    "titre": "Fonctions affines et droites"
+  },
+  "1mF3": {
+    "titre": "Fonctions quadratiques et paraboles"
+  },
+  "1mF4": {
+    "titre": "Fonctions racine, inverse, cubique"
+  },
+  "1mF5": {
+    "titre": "Géométrie analytique"
+  },
+  "1mG1": {
+    "titre": "Les angles"
+  },
+  "1mG2": {
+    "titre": "Théorème de Pythagore"
+  },
+  "1mG3": {
+    "titre": "Théorème de Thalès"
+  },
+  "1mG4": {
+    "titre": "Cercle"
+  },
+  "1mT": {
+    "titre": "Trigonométrie dans le triangle rectangle"
+  },
+  "2mEqCar": {
+    "titre": "Équations cartésiennes"
+  },
+  "2mFctPoly": {
+    "titre": "Fonctions polynomiales"
+  },
+  "2mFctRat": {
+    "titre": "Fonctions rationnelles"
+  },
+  "2mIneq": {
+    "titre": "Inéquations"
+  },
+  "2mLogExp": {
+    "titre": "Logarithmes et exponentielles"
+  },
+  "2mRecComp": {
+    "titre": "Fonctions réciproques et composées"
+  },
+  "2mTrigo": {
+    "titre": "Trigonométrie"
+  },
+  "2mTrigoTri": {
+    "titre": "Trigonométrie dans le triangle quelconque"
+  },
+  "2mTrigoFct": {
+    "titre": "Fonctions trigonométriques"
+  },
+  "3mA1": {
+    "titre": "Limites"
+  },
+  "3mLimCont": {
+    "titre": "Calcul de limites et continuité"
+  },
+  "3mA2": {
+    "titre": "Dérivation"
+  },
+  "3mA3": {
+    "titre": "Étude de fonctions"
+  },
+  "3mComb": {
+    "titre": "Combinatoire"
+  },
+  "3mGeomVect": {
+    "titre": "Géométrie vectorielle"
+  },
+  "3G90": {
+    "titre": "Repérage"
+  },
+  "3G91": {
+    "titre": "Définitions et représentation"
+  },
+  "3G92": {
+    "titre": "Combinaisons linéaires"
+  },
+  "3G93": {
+    "titre": "Colinéarité"
+  },
+  "3G94": {
+    "titre": "Norme"
+  },
+  "3G95": {
+    "titre": "Produit scalaire"
+  },
+  "3G96": {
+    "titre": "Projection orthogonale"
+  },
+  "3G97": {
+    "titre": "Droite dans le plan"
+  },
+  "3G98": {
+    "titre": "Droite dans ℝ³"
+  },
+  "3G99": {
+    "titre": "Plan dans ℝ³"
+  },
+  "3mNC": {
+    "titre": "Nombres complexes"
+  },
+  "3mAlgLin": {
+    "titre": "Algèbre linéaire"
+  },
+  "4mAna": {
+    "titre": "Analyse"
+  },
+  "4mDer": {
+    "titre": "Dérivation"
+  },
+  "4mEqDif": {
+    "titre": "Équations différentielles"
+  },
+  "4mAlgLin": {
+    "titre": "Algèbre linéaire"
+  },
+  "4mExpLog": {
+    "titre": "Exponentielles et logarithmes"
+  },
+  "4mInt": {
+    "titre": "Intégration"
+  },
+  "4mProbStat": {
+    "titre": "Probabilités et statistiques"
+  },
+  "4mQCM": {
+    "titre": "QCM 4e"
+  },
+  "divers": {
+    "titre": "Exercices divers"
+  },
+  "autres": {
+    "titre": "Autres exercices"
+  },
+  "PR": {
+    "titre": "Exercices divers"
+  },
+  "9R1NO": {
+    "titre": "Nombres et opérations"
+  },
+  "9R1NO4": {
+    "titre": "Fractions"
+  },
+  "9R1NO4A": {
+    "titre": "Représentation géométrique d'une fraction"
+  },
+  "9R1NO4B": {
+    "titre": "Représentation sur une droite graduée dans ℚ+"
+  },
+  "9R1NO4C": {
+    "titre": "Fraction et quotient"
+  },
+  "9R1NO4D": {
+    "titre": "Simplification, amplification dans ℚ+"
+  },
+  "9R1NO4E": {
+    "titre": "Fractions décimales et écriture décimale"
+  },
+  "9R1NO4F": {
+    "titre": "Conversion d'une fraction en nombre décimal ou périodique"
+  },
+  "9R1NO4G": {
+    "titre": "Différentes écritures d'un même nombre (fraction, décimal, pourcentage)"
+  },
+  "9R1NO4H": {
+    "titre": "Comparaison, approximation, encadrement dans ℚ+"
+  },
+  "9R1NO4I": {
+    "titre": "Fraction d'une quantité"
+  },
+  "9R2NO": {
+    "titre": "Nombres et opérations"
+  },
+  "9R2NO4": {
+    "titre": "Fractions"
+  },
+  "9R2NO4A": {
+    "titre": "Représentation géométrique d'une fraction"
+  },
+  "9R2NO4B": {
+    "titre": "Représentation sur une droite graduée dans ℚ+"
+  },
+  "9R2NO4C": {
+    "titre": "Fraction et quotient"
+  },
+  "9R2NO4D": {
+    "titre": "Simplification, amplification dans ℚ+"
+  },
+  "9R2NO4E": {
+    "titre": "Fractions décimales et écriture décimale"
+  },
+  "9R2NO4F": {
+    "titre": "Conversion d'une fraction en nombre décimal ou périodique"
+  },
+  "9R2NO4G": {
+    "titre": "Différentes écritures d'un même nombre (fraction, décimal, pourcentage)"
+  },
+  "9R2NO4H": {
+    "titre": "Comparaison, approximation, encadrement dans ℚ+"
+  },
+  "9R2NO4I": {
+    "titre": "Fraction d'une quantité"
+  },
+  "9R3NO": {
+    "titre": "Nombres et opérations"
+  },
+  "9R3NO4": {
+    "titre": "Fractions"
+  },
+  "9R3NO4A": {
+    "titre": "Représentation géométrique d'une fraction"
+  },
+  "9R3NO4B": {
+    "titre": "Représentation sur une droite graduée dans ℚ+"
+  },
+  "9R3NO4C": {
+    "titre": "Fraction et quotient"
+  },
+  "9R3NO4D": {
+    "titre": "Simplification, amplification dans ℚ+"
+  },
+  "9R3NO4E": {
+    "titre": "Fractions décimales et écriture décimale"
+  },
+  "9R3NO4F": {
+    "titre": "Conversion d'une fraction en nombre décimal ou périodique"
+  },
+  "9R3NO4G": {
+    "titre": "Différentes écritures d'un même nombre (fraction, décimal, pourcentage)"
+  },
+  "9R3NO4H": {
+    "titre": "Comparaison, approximation, encadrement dans ℚ+"
+  },
+  "9R3NO4I": {
+    "titre": "Fraction d'une quantité"
+  },
+  "9R3NO4J": {
+    "titre": "Addition et soustraction dans ℚ+"
+  },
+  "9R3NO4K": {
+    "titre": "Résoudre des problèmes additifs avec des fractions"
+  },
+  "9R1NO1": {
+    "titre": "Multiples, diviseurs et nombres premiers"
+  },
+  "9R1NO1A": {
+    "titre": "Multiples et diviseurs"
+  },
+  "9R1NO1B": {
+    "titre": "Multiples et diviseurs : les lister"
+  },
+  "9R1NO1C": {
+    "titre": "Critères de divisibilité"
+  },
+  "9R1NO1D": {
+    "titre": "Critères de divisibilité : labyrinthes"
+  },
+  "9R1NO1E": {
+    "titre": "Division euclidienne"
+  },
+  "9R1NO2": {
+    "titre": "Numération, écritures et comparaison"
+  },
+  "9R1NO2A": {
+    "titre": "Numération : valeur des chiffres, décomposer, recomposer"
+  },
+  "9R1NO2B": {
+    "titre": "Écrire et reconnaître les nombres décimaux"
+  },
+  "9R1NO2C": {
+    "titre": "Représentation sur une droite graduée"
+  },
+  "9R1NO2D": {
+    "titre": "Encadrement, arrondi, approximation, comparaison"
+  },
+  "9R1NO3": {
+    "titre": "Nombres relatifs"
+  },
+  "9R1NO3A": {
+    "titre": "Représentation sur une droite graduée"
+  },
+  "9R1NO3B": {
+    "titre": "Sensibilisation et classement"
+  },
+  "9R1NO6": {
+    "titre": "Calcul mental et réfléchi"
+  },
+  "9R1NO6A": {
+    "titre": "Livrets"
+  },
+  "9R1NO6B": {
+    "titre": "Calcul réfléchi : addition et soustraction"
+  },
+  "9R1NO6C": {
+    "titre": "Calcul réfléchi : multiplication et division"
+  },
+  "9R1NO6D": {
+    "titre": "Calcul réfléchi : distributivité"
+  },
+  "9R1NO6E": {
+    "titre": "Multiplier par 10, 100, 1 000"
+  },
+  "9R1NO6F": {
+    "titre": "Diviser par 10, 100, 1 000"
+  },
+  "9R1NO6G": {
+    "titre": "Multiplier et diviser par 0,1 ; 0,01 ; 0,001"
+  },
+  "9R1NO6H": {
+    "titre": "Jeux de calcul"
+  },
+  "9R1NO7": {
+    "titre": "Opérations et priorités"
+  },
+  "9R1NO7A": {
+    "titre": "Algorithme de l'addition et de la soustraction"
+  },
+  "9R1NO7B": {
+    "titre": "Algorithme de la multiplication"
+  },
+  "9R1NO7C": {
+    "titre": "Algorithme de la division"
+  },
+  "9R1NO7D": {
+    "titre": "Ordre de grandeur et vérification d'un résultat"
+  },
+  "9R1NO7E": {
+    "titre": "Résolution de problèmes numériques"
+  },
+  "9R1NO7F": {
+    "titre": "Résolution de problèmes : démarches"
+  },
+  "9R2NO1": {
+    "titre": "Multiples, diviseurs et nombres premiers"
+  },
+  "9R2NO1A": {
+    "titre": "Multiples et diviseurs"
+  },
+  "9R2NO1B": {
+    "titre": "Multiples et diviseurs : les lister"
+  },
+  "9R2NO1C": {
+    "titre": "Critères de divisibilité"
+  },
+  "9R2NO1D": {
+    "titre": "Critères de divisibilité : labyrinthes"
+  },
+  "9R2NO1E": {
+    "titre": "Division euclidienne"
+  },
+  "9R2NO1F": {
+    "titre": "Nombres premiers"
+  },
+  "9R2NO1G": {
+    "titre": "Décomposition en facteurs premiers"
+  },
+  "9R2NO1H": {
+    "titre": "PPMC et PGDC"
+  },
+  "9R2NO2": {
+    "titre": "Numération, écritures et comparaison"
+  },
+  "9R2NO2A": {
+    "titre": "Numération : valeur des chiffres, décomposer, recomposer"
+  },
+  "9R2NO2B": {
+    "titre": "Écrire et reconnaître les nombres décimaux"
+  },
+  "9R2NO2C": {
+    "titre": "Représentation sur une droite graduée"
+  },
+  "9R2NO2D": {
+    "titre": "Encadrement, arrondi, approximation, comparaison"
+  },
+  "9R2NO3": {
+    "titre": "Nombres relatifs"
+  },
+  "9R2NO3A": {
+    "titre": "Représentation sur une droite graduée"
+  },
+  "9R2NO3B": {
+    "titre": "Sensibilisation et classement"
+  },
+  "9R2NO3C": {
+    "titre": "Addition dans ℤ"
+  },
+  "9R2NO3D": {
+    "titre": "Soustraction dans ℤ et sommes algébriques"
+  },
+  "9R2NO6": {
+    "titre": "Calcul mental et réfléchi"
+  },
+  "9R2NO6A": {
+    "titre": "Livrets"
+  },
+  "9R2NO6B": {
+    "titre": "Calcul réfléchi : addition et soustraction"
+  },
+  "9R2NO6C": {
+    "titre": "Calcul réfléchi : multiplication et division"
+  },
+  "9R2NO6D": {
+    "titre": "Calcul réfléchi : distributivité"
+  },
+  "9R2NO6E": {
+    "titre": "Multiplier par 10, 100, 1 000"
+  },
+  "9R2NO6F": {
+    "titre": "Diviser par 10, 100, 1 000"
+  },
+  "9R2NO6G": {
+    "titre": "Multiplier et diviser par 0,1 ; 0,01 ; 0,001"
+  },
+  "9R2NO6H": {
+    "titre": "Jeux de calcul"
+  },
+  "9R2NO7": {
+    "titre": "Opérations et priorités"
+  },
+  "9R2NO7A": {
+    "titre": "Algorithme de l'addition et de la soustraction"
+  },
+  "9R2NO7B": {
+    "titre": "Algorithme de la multiplication"
+  },
+  "9R2NO7C": {
+    "titre": "Algorithme de la division"
+  },
+  "9R2NO7D": {
+    "titre": "Ordre de grandeur et vérification d'un résultat"
+  },
+  "9R2NO7E": {
+    "titre": "Résolution de problèmes numériques"
+  },
+  "9R2NO7F": {
+    "titre": "Résolution de problèmes : démarches"
+  },
+  "9R3NO1": {
+    "titre": "Multiples, diviseurs et nombres premiers"
+  },
+  "9R3NO1A": {
+    "titre": "Multiples et diviseurs"
+  },
+  "9R3NO1B": {
+    "titre": "Multiples et diviseurs : les lister"
+  },
+  "9R3NO1C": {
+    "titre": "Critères de divisibilité"
+  },
+  "9R3NO1D": {
+    "titre": "Critères de divisibilité : labyrinthes"
+  },
+  "9R3NO1E": {
+    "titre": "Division euclidienne"
+  },
+  "9R3NO1F": {
+    "titre": "Nombres premiers"
+  },
+  "9R3NO1G": {
+    "titre": "Décomposition en facteurs premiers"
+  },
+  "9R3NO1H": {
+    "titre": "PPMC et PGDC"
+  },
+  "9R3NO2": {
+    "titre": "Numération, écritures et comparaison"
+  },
+  "9R3NO2A": {
+    "titre": "Numération : valeur des chiffres, décomposer, recomposer"
+  },
+  "9R3NO2B": {
+    "titre": "Écrire et reconnaître les nombres décimaux"
+  },
+  "9R3NO2C": {
+    "titre": "Représentation sur une droite graduée"
+  },
+  "9R3NO2D": {
+    "titre": "Encadrement, arrondi, approximation, comparaison"
+  },
+  "9R3NO3": {
+    "titre": "Nombres relatifs"
+  },
+  "9R3NO3A": {
+    "titre": "Représentation sur une droite graduée"
+  },
+  "9R3NO3B": {
+    "titre": "Sensibilisation et classement"
+  },
+  "9R3NO3C": {
+    "titre": "Addition dans ℤ"
+  },
+  "9R3NO3D": {
+    "titre": "Soustraction dans ℤ et sommes algébriques"
+  },
+  "9R3NO6": {
+    "titre": "Calcul mental et réfléchi"
+  },
+  "9R3NO6A": {
+    "titre": "Livrets"
+  },
+  "9R3NO6B": {
+    "titre": "Calcul réfléchi : addition et soustraction"
+  },
+  "9R3NO6C": {
+    "titre": "Calcul réfléchi : multiplication et division"
+  },
+  "9R3NO6D": {
+    "titre": "Calcul réfléchi : distributivité"
+  },
+  "9R3NO6E": {
+    "titre": "Multiplier par 10, 100, 1 000"
+  },
+  "9R3NO6F": {
+    "titre": "Diviser par 10, 100, 1 000"
+  },
+  "9R3NO6G": {
+    "titre": "Multiplier et diviser par 0,1 ; 0,01 ; 0,001"
+  },
+  "9R3NO6H": {
+    "titre": "Jeux de calcul"
+  },
+  "9R3NO7": {
+    "titre": "Opérations et priorités"
+  },
+  "9R3NO7A": {
+    "titre": "Algorithme de l'addition et de la soustraction"
+  },
+  "9R3NO7B": {
+    "titre": "Algorithme de la multiplication"
+  },
+  "9R3NO7C": {
+    "titre": "Algorithme de la division"
+  },
+  "9R3NO7D": {
+    "titre": "Ordre de grandeur et vérification d'un résultat"
+  },
+  "9R3NO7E": {
+    "titre": "Résolution de problèmes numériques"
+  },
+  "9R3NO7F": {
+    "titre": "Résolution de problèmes : démarches"
+  },
+  "9R1NO5": {
+    "titre": "Puissances"
+  },
+  "9R1NO5A": {
+    "titre": "Puissance ayant pour base un nombre décimal positif"
+  },
+  "9R1NO5B": {
+    "titre": "Carrés et cubes"
+  },
+  "9R1NO8A": {
+    "titre": "Vocabulaire des opérations : traduire phrases et calculs"
+  },
+  "9R1NO8B": {
+    "titre": "Priorité des opérations (y compris parenthèses)"
+  },
+  "9R1NO8C": {
+    "titre": "Écrire un enchaînement de calculs en une expression"
+  },
+  "9R2NO5": {
+    "titre": "Puissances"
+  },
+  "9R2NO5A": {
+    "titre": "Puissance ayant pour base un nombre décimal positif"
+  },
+  "9R2NO5B": {
+    "titre": "Carrés et cubes"
+  },
+  "9R2NO8A": {
+    "titre": "Vocabulaire des opérations : traduire phrases et calculs"
+  },
+  "9R2NO8B": {
+    "titre": "Priorité des opérations (y compris parenthèses)"
+  },
+  "9R2NO8C": {
+    "titre": "Écrire un enchaînement de calculs en une expression"
+  },
+  "9R3NO5": {
+    "titre": "Puissances"
+  },
+  "9R3NO5A": {
+    "titre": "Puissance ayant pour base un nombre décimal positif"
+  },
+  "9R3NO5B": {
+    "titre": "Carrés et cubes"
+  },
+  "9R3NO8A": {
+    "titre": "Vocabulaire des opérations : traduire phrases et calculs"
+  },
+  "9R3NO8B": {
+    "titre": "Priorité des opérations (y compris parenthèses)"
+  },
+  "9R3NO8C": {
+    "titre": "Écrire un enchaînement de calculs en une expression"
+  },
+  "9R1ES": {
+    "titre": "Espace"
+  },
+  "9R1ES1": {
+    "titre": "Vocabulaire et constructions de base"
+  },
+  "9R1ES1A": {
+    "titre": "Segment, longueur, droite, demi-droite"
+  },
+  "9R1ES1B": {
+    "titre": "Droites parallèles, droites perpendiculaires"
+  },
+  "9R1ES1C": {
+    "titre": "Reconnaissance et dénomination des angles"
+  },
+  "9R1ES2": {
+    "titre": "Triangles"
+  },
+  "9R1ES2A": {
+    "titre": "Triangle et somme de ses angles"
+  },
+  "9R1ES2B": {
+    "titre": "Construction de triangles"
+  },
+  "9R1ES2C": {
+    "titre": "Triangles constructibles et inégalité triangulaire"
+  },
+  "9R1ES2D": {
+    "titre": "Médiatrice, bissectrice"
+  },
+  "9R1ES2E": {
+    "titre": "Hauteur et droites remarquables"
+  },
+  "9R1ES2H": {
+    "titre": "Quadrilatères : reconnaissance et propriétés"
+  },
+  "9R1ES2I": {
+    "titre": "Construction de quadrilatères"
+  },
+  "9R1ES3": {
+    "titre": "Solides"
+  },
+  "9R1ES3A": {
+    "titre": "Cube, parallélépipède rectangle, prisme droit : reconnaissance et description"
+  },
+  "9R1ES3B": {
+    "titre": "Développements (patrons) et perspective"
+  },
+  "9R1ES3C": {
+    "titre": "Voir dans l'espace"
+  },
+  "9R1ES4": {
+    "titre": "Transformations"
+  },
+  "9R1ES4A": {
+    "titre": "Translation"
+  },
+  "9R1ES4B": {
+    "titre": "Symétrie axiale : construction de l'image"
+  },
+  "9R1ES4C": {
+    "titre": "Symétrie axiale : frises, pavages, propriétés"
+  },
+  "9R1ES4D": {
+    "titre": "Symétrie centrale : construction de l'image"
+  },
+  "9R1ES4E": {
+    "titre": "Symétrie centrale : frises, pavages, propriétés"
+  },
+  "9R1ES4F": {
+    "titre": "Anticipation de la position d'une figure après une ou plusieurs isométries"
+  },
+  "9R1ES5": {
+    "titre": "Repérage"
+  },
+  "9R1ES5A": {
+    "titre": "Repère d'axes en 2D"
+  },
+  "9R2ES": {
+    "titre": "Espace"
+  },
+  "9R2ES1": {
+    "titre": "Vocabulaire et constructions de base"
+  },
+  "9R2ES1A": {
+    "titre": "Segment, longueur, droite, demi-droite"
+  },
+  "9R2ES1B": {
+    "titre": "Droites parallèles, droites perpendiculaires"
+  },
+  "9R2ES1C": {
+    "titre": "Reconnaissance et dénomination des angles"
+  },
+  "9R2ES2": {
+    "titre": "Triangles"
+  },
+  "9R2ES2A": {
+    "titre": "Triangle et somme de ses angles"
+  },
+  "9R2ES2B": {
+    "titre": "Construction de triangles"
+  },
+  "9R2ES2C": {
+    "titre": "Triangles constructibles et inégalité triangulaire"
+  },
+  "9R2ES2D": {
+    "titre": "Médiatrice, bissectrice"
+  },
+  "9R2ES2E": {
+    "titre": "Hauteur et droites remarquables"
+  },
+  "9R2ES2F": {
+    "titre": "Médiane, centre de gravité"
+  },
+  "9R2ES2H": {
+    "titre": "Quadrilatères : reconnaissance et propriétés"
+  },
+  "9R2ES2I": {
+    "titre": "Construction de quadrilatères"
+  },
+  "9R2ES3": {
+    "titre": "Solides"
+  },
+  "9R2ES3A": {
+    "titre": "Cube, parallélépipède rectangle, prisme droit : reconnaissance et description"
+  },
+  "9R2ES3B": {
+    "titre": "Développements (patrons) et perspective"
+  },
+  "9R2ES3C": {
+    "titre": "Voir dans l'espace"
+  },
+  "9R2ES4": {
+    "titre": "Transformations"
+  },
+  "9R2ES4A": {
+    "titre": "Translation"
+  },
+  "9R2ES4B": {
+    "titre": "Symétrie axiale : construction de l'image"
+  },
+  "9R2ES4C": {
+    "titre": "Symétrie axiale : frises, pavages, propriétés"
+  },
+  "9R2ES4D": {
+    "titre": "Symétrie centrale : construction de l'image"
+  },
+  "9R2ES4E": {
+    "titre": "Symétrie centrale : frises, pavages, propriétés"
+  },
+  "9R2ES4F": {
+    "titre": "Anticipation de la position d'une figure après une ou plusieurs isométries"
+  },
+  "9R2ES5": {
+    "titre": "Repérage"
+  },
+  "9R2ES5A": {
+    "titre": "Repère d'axes en 2D"
+  },
+  "9R3ES": {
+    "titre": "Espace"
+  },
+  "9R3ES1": {
+    "titre": "Vocabulaire et constructions de base"
+  },
+  "9R3ES1A": {
+    "titre": "Segment, longueur, droite, demi-droite"
+  },
+  "9R3ES1B": {
+    "titre": "Droites parallèles, droites perpendiculaires"
+  },
+  "9R3ES1C": {
+    "titre": "Reconnaissance et dénomination des angles"
+  },
+  "9R3ES2": {
+    "titre": "Triangles"
+  },
+  "9R3ES2A": {
+    "titre": "Triangle et somme de ses angles"
+  },
+  "9R3ES2B": {
+    "titre": "Construction de triangles"
+  },
+  "9R3ES2C": {
+    "titre": "Triangles constructibles et inégalité triangulaire"
+  },
+  "9R3ES2D": {
+    "titre": "Médiatrice, bissectrice"
+  },
+  "9R3ES2E": {
+    "titre": "Hauteur et droites remarquables"
+  },
+  "9R3ES2F": {
+    "titre": "Médiane, centre de gravité"
+  },
+  "9R3ES2H": {
+    "titre": "Quadrilatères : reconnaissance et propriétés"
+  },
+  "9R3ES2I": {
+    "titre": "Construction de quadrilatères"
+  },
+  "9R3ES3": {
+    "titre": "Solides"
+  },
+  "9R3ES3A": {
+    "titre": "Cube, parallélépipède rectangle, prisme droit : reconnaissance et description"
+  },
+  "9R3ES3B": {
+    "titre": "Développements (patrons) et perspective"
+  },
+  "9R3ES3C": {
+    "titre": "Voir dans l'espace"
+  },
+  "9R3ES4": {
+    "titre": "Transformations"
+  },
+  "9R3ES4A": {
+    "titre": "Translation"
+  },
+  "9R3ES4B": {
+    "titre": "Symétrie axiale : construction de l'image"
+  },
+  "9R3ES4C": {
+    "titre": "Symétrie axiale : frises, pavages, propriétés"
+  },
+  "9R3ES4D": {
+    "titre": "Symétrie centrale : construction de l'image"
+  },
+  "9R3ES4E": {
+    "titre": "Symétrie centrale : frises, pavages, propriétés"
+  },
+  "9R3ES4F": {
+    "titre": "Anticipation de la position d'une figure après une ou plusieurs isométries"
+  },
+  "9R3ES5": {
+    "titre": "Repérage"
+  },
+  "9R3ES5A": {
+    "titre": "Repère d'axes en 2D"
+  },
+  "9R1FA": {
+    "titre": "Fonctions et algèbre"
+  },
+  "9R1FA1": {
+    "titre": "Proportionnalité (quantité/quantité, agrandissement et réduction)"
+  },
+  "9R1FA1A": {
+    "titre": "Reconnaître une situation de proportionnalité"
+  },
+  "9R1FA1B": {
+    "titre": "Tableaux de proportionnalité"
+  },
+  "9R1FA1C": {
+    "titre": "Résolution de problèmes de proportionnalité"
+  },
+  "9R1FA1D": {
+    "titre": "Proportionnalité en calcul mental"
+  },
+  "9R1FA1E": {
+    "titre": "Agrandissement et réduction"
+  },
+  "9R1FA2": {
+    "titre": "Diagrammes"
+  },
+  "9R1FA2A": {
+    "titre": "Lecture de données"
+  },
+  "9R1FA2B": {
+    "titre": "Interprétation de diagrammes"
+  },
+  "9R1FA2C": {
+    "titre": "Réalisation de diagrammes"
+  },
+  "9R1NO7G": {
+    "titre": "Problèmes quantité/quantité (prix, poids)"
+  },
+  "9R1QCM": {
+    "titre": "QCM"
+  },
+  "9R2FA": {
+    "titre": "Fonctions et algèbre"
+  },
+  "9R2FA1": {
+    "titre": "Proportionnalité (quantité/quantité, agrandissement et réduction)"
+  },
+  "9R2FA1A": {
+    "titre": "Reconnaître une situation de proportionnalité"
+  },
+  "9R2FA1B": {
+    "titre": "Tableaux de proportionnalité"
+  },
+  "9R2FA1C": {
+    "titre": "Résolution de problèmes de proportionnalité"
+  },
+  "9R2FA1D": {
+    "titre": "Proportionnalité en calcul mental"
+  },
+  "9R2FA1E": {
+    "titre": "Agrandissement et réduction"
+  },
+  "9R2FA2": {
+    "titre": "Diagrammes"
+  },
+  "9R2FA2A": {
+    "titre": "Lecture de données"
+  },
+  "9R2FA2B": {
+    "titre": "Interprétation de diagrammes"
+  },
+  "9R2FA2C": {
+    "titre": "Réalisation de diagrammes"
+  },
+  "9R2FA3": {
+    "titre": "Calcul littéral"
+  },
+  "9R2FA3A": {
+    "titre": "Substitution"
+  },
+  "9R2NO7G": {
+    "titre": "Problèmes quantité/quantité (prix, poids)"
+  },
+  "9R2QCM": {
+    "titre": "QCM"
+  },
+  "9R3FA": {
+    "titre": "Fonctions et algèbre"
+  },
+  "9R3FA1": {
+    "titre": "Proportionnalité (quantité/quantité, agrandissement et réduction)"
+  },
+  "9R3FA1A": {
+    "titre": "Reconnaître une situation de proportionnalité"
+  },
+  "9R3FA1B": {
+    "titre": "Tableaux de proportionnalité"
+  },
+  "9R3FA1C": {
+    "titre": "Résolution de problèmes de proportionnalité"
+  },
+  "9R3FA1D": {
+    "titre": "Proportionnalité en calcul mental"
+  },
+  "9R3FA1E": {
+    "titre": "Agrandissement et réduction"
+  },
+  "9R3FA2": {
+    "titre": "Diagrammes"
+  },
+  "9R3FA2A": {
+    "titre": "Lecture de données"
+  },
+  "9R3FA2B": {
+    "titre": "Interprétation de diagrammes"
+  },
+  "9R3FA2C": {
+    "titre": "Réalisation de diagrammes"
+  },
+  "9R3FA3": {
+    "titre": "Calcul littéral"
+  },
+  "9R3FA3A": {
+    "titre": "Substitution"
+  },
+  "9R3NO7G": {
+    "titre": "Problèmes quantité/quantité (prix, poids)"
+  },
+  "9R3QCM": {
+    "titre": "QCM"
+  },
+  "9R1GM": {
+    "titre": "Grandeurs et mesures"
+  },
+  "9R1GM1": {
+    "titre": "Périmètres des polygones"
+  },
+  "9R1GM1A": {
+    "titre": "Périmètre d'un polygone"
+  },
+  "9R1GM2": {
+    "titre": "Aires (polygones)"
+  },
+  "9R1GM2A": {
+    "titre": "Unités d'aire et comparaison d'aires"
+  },
+  "9R1GM2B": {
+    "titre": "Aire du carré, du rectangle et du triangle"
+  },
+  "9R1GM2C": {
+    "titre": "Aire du parallélogramme et du losange"
+  },
+  "9R1GM2D": {
+    "titre": "Problèmes de mesurage : périmètre et aire"
+  },
+  "9R1GM2E": {
+    "titre": "Aire d'un polygone par décomposition"
+  },
+  "9R1GM3": {
+    "titre": "Volumes et aires"
+  },
+  "9R1GM3A": {
+    "titre": "Unités de volume et dénombrement"
+  },
+  "9R1GM3B": {
+    "titre": "Volume et aire du cube et du parallélépipède rectangle"
+  },
+  "9R1GM4": {
+    "titre": "Unités et mesures"
+  },
+  "9R1GM4A": {
+    "titre": "Préfixes et choix d'une unité adéquate"
+  },
+  "9R1GM4B": {
+    "titre": "Unités décimales de longueur et de masse"
+  },
+  "9R1GM4C": {
+    "titre": "Unités d'aire"
+  },
+  "9R2GM": {
+    "titre": "Grandeurs et mesures"
+  },
+  "9R2GM1": {
+    "titre": "Périmètres des polygones"
+  },
+  "9R2GM1A": {
+    "titre": "Périmètre d'un polygone"
+  },
+  "9R2GM2": {
+    "titre": "Aires (polygones)"
+  },
+  "9R2GM2A": {
+    "titre": "Unités d'aire et comparaison d'aires"
+  },
+  "9R2GM2B": {
+    "titre": "Aire du carré, du rectangle et du triangle"
+  },
+  "9R2GM2C": {
+    "titre": "Aire du parallélogramme et du losange"
+  },
+  "9R2GM2D": {
+    "titre": "Problèmes de mesurage : périmètre et aire"
+  },
+  "9R2GM2E": {
+    "titre": "Aire d'un polygone par décomposition"
+  },
+  "9R2GM3": {
+    "titre": "Volumes et aires"
+  },
+  "9R2GM3A": {
+    "titre": "Unités de volume et dénombrement"
+  },
+  "9R2GM3B": {
+    "titre": "Volume et aire du cube et du parallélépipède rectangle"
+  },
+  "9R2GM4": {
+    "titre": "Unités et mesures"
+  },
+  "9R2GM4A": {
+    "titre": "Préfixes et choix d'une unité adéquate"
+  },
+  "9R2GM4B": {
+    "titre": "Unités décimales de longueur et de masse"
+  },
+  "9R2GM4C": {
+    "titre": "Unités d'aire"
+  },
+  "9R3GM": {
+    "titre": "Grandeurs et mesures"
+  },
+  "9R3GM1": {
+    "titre": "Périmètres des polygones"
+  },
+  "9R3GM1A": {
+    "titre": "Périmètre d'un polygone"
+  },
+  "9R3GM2": {
+    "titre": "Aires (polygones)"
+  },
+  "9R3GM2A": {
+    "titre": "Unités d'aire et comparaison d'aires"
+  },
+  "9R3GM2B": {
+    "titre": "Aire du carré, du rectangle et du triangle"
+  },
+  "9R3GM2C": {
+    "titre": "Aire du parallélogramme et du losange"
+  },
+  "9R3GM2D": {
+    "titre": "Problèmes de mesurage : périmètre et aire"
+  },
+  "9R3GM2E": {
+    "titre": "Aire d'un polygone par décomposition"
+  },
+  "9R3GM3": {
+    "titre": "Volumes et aires"
+  },
+  "9R3GM3A": {
+    "titre": "Unités de volume et dénombrement"
+  },
+  "9R3GM3B": {
+    "titre": "Volume et aire du cube et du parallélépipède rectangle"
+  },
+  "9R3GM4": {
+    "titre": "Unités et mesures"
+  },
+  "9R3GM4A": {
+    "titre": "Préfixes et choix d'une unité adéquate"
+  },
+  "9R3GM4B": {
+    "titre": "Unités décimales de longueur et de masse"
+  },
+  "9R3GM4C": {
+    "titre": "Unités d'aire"
+  },
+  "9R1GM4D": {
+    "titre": "Unités de temps (sensibilisation)"
+  },
+  "9R2GM4D": {
+    "titre": "Unités de temps (sensibilisation)"
+  },
+  "9R3GM4D": {
+    "titre": "Unités de temps (sensibilisation)"
+  },
+  "9R1GM4E": {
+    "titre": "Unités de volume (sensibilisation)"
+  },
+  "9R2GM4E": {
+    "titre": "Unités de volume (sensibilisation)"
+  },
+  "9R3GM4E": {
+    "titre": "Unités de volume (sensibilisation)"
+  },
+  "9R2FA3B": {
+    "titre": "Règles et conventions d'écriture (sensibilisation)"
+  },
+  "9R3FA3B": {
+    "titre": "Règles et conventions d'écriture (sensibilisation)"
+  },
+  "9R2FA3C": {
+    "titre": "Élaboration d'expressions littérales (sensibilisation)"
+  },
+  "9R3FA3C": {
+    "titre": "Élaboration d'expressions littérales (sensibilisation)"
+  },
+  "10CTES": {
+    "titre": "Espace"
+  },
+  "10CTES1": {
+    "titre": "Solides"
+  },
+  "10CTES1A": {
+    "titre": "Propriétés des solides (cylindre, pyramide, prisme droit)"
+  },
+  "10LCES": {
+    "titre": "Espace"
+  },
+  "10LCES1": {
+    "titre": "Solides"
+  },
+  "10LCES1A": {
+    "titre": "Propriétés des solides (cylindre, pyramide, prisme droit)"
+  },
+  "10LSES": {
+    "titre": "Espace"
+  },
+  "10LSES1": {
+    "titre": "Solides"
+  },
+  "10LSES1A": {
+    "titre": "Propriétés des solides (cylindre, pyramide, prisme droit)"
+  },
+  "10CTES1B": {
+    "titre": "Représentation de solides : perspective et patrons"
+  },
+  "10LCES1B": {
+    "titre": "Représentation de solides : perspective et patrons"
+  },
+  "10LSES1B": {
+    "titre": "Représentation de solides : perspective et patrons"
+  },
+  "10CTES2": {
+    "titre": "Transformations"
+  },
+  "10CTES2A": {
+    "titre": "Rotation"
+  },
+  "10LCES2": {
+    "titre": "Transformations"
+  },
+  "10LCES2A": {
+    "titre": "Rotation"
+  },
+  "10LSES2": {
+    "titre": "Transformations"
+  },
+  "10LSES2A": {
+    "titre": "Rotation"
+  },
+  "10CTES2B": {
+    "titre": "Reconnaître et enchaîner des isométries"
+  },
+  "10LCES2B": {
+    "titre": "Reconnaître et enchaîner des isométries"
+  },
+  "10LSES2B": {
+    "titre": "Reconnaître et enchaîner des isométries"
+  },
+  "10CTES2C": {
+    "titre": "Propriétés de conservation"
+  },
+  "10LCES2C": {
+    "titre": "Propriétés de conservation"
+  },
+  "10LSES2C": {
+    "titre": "Propriétés de conservation"
+  },
+  "10CTNO": {
+    "titre": "Nombres et opérations"
+  },
+  "10CTNO1": {
+    "titre": "Multiples, diviseurs et nombres premiers"
+  },
+  "10CTNO1A": {
+    "titre": "Nombres premiers et décomposition"
+  },
+  "10CTNO1B": {
+    "titre": "PPMC et PGDC"
+  },
+  "10CTNO2": {
+    "titre": "Opérations sur les nombres relatifs"
+  },
+  "10CTNO2A": {
+    "titre": "Addition dans ℤ"
+  },
+  "10LCNO": {
+    "titre": "Nombres et opérations"
+  },
+  "10LCNO2": {
+    "titre": "Opérations sur les nombres relatifs"
+  },
+  "10LCNO2B": {
+    "titre": "4 opérations dans ℤ : règle des signes"
+  },
+  "10LSNO": {
+    "titre": "Nombres et opérations"
+  },
+  "10LSNO2": {
+    "titre": "Opérations sur les nombres relatifs"
+  },
+  "10LSNO2B": {
+    "titre": "4 opérations dans ℤ : règle des signes"
+  },
+  "10LCNO2C": {
+    "titre": "4 opérations dans ℤ : multiplication et division"
+  },
+  "10LSNO2C": {
+    "titre": "4 opérations dans ℤ : multiplication et division"
+  },
+  "10LCNO2D": {
+    "titre": "4 opérations dans ℤ : priorité des opérations"
+  },
+  "10LSNO2D": {
+    "titre": "4 opérations dans ℤ : priorité des opérations"
+  },
+  "10CTNO3": {
+    "titre": "Fractions"
+  },
+  "10CTNO3A": {
+    "titre": "Addition et soustraction de fractions"
+  },
+  "10LCNO3": {
+    "titre": "Fractions"
+  },
+  "10LCNO3A": {
+    "titre": "Addition et soustraction de fractions"
+  },
+  "10LSNO3": {
+    "titre": "Fractions"
+  },
+  "10LSNO3A": {
+    "titre": "Addition et soustraction de fractions"
+  },
+  "10LSNO3B": {
+    "titre": "Multiplication et division de fractions"
+  },
+  "10LSNO3C": {
+    "titre": "4 opérations dans ℚ : priorité des opérations"
+  },
+  "10CTNO3D": {
+    "titre": "Problèmes avec des fractions"
+  },
+  "10LCNO3D": {
+    "titre": "Problèmes avec des fractions"
+  },
+  "10LSNO3D": {
+    "titre": "Problèmes avec des fractions"
+  },
+  "10LCNO4": {
+    "titre": "Puissances et propriétés"
+  },
+  "10LCNO4A": {
+    "titre": "Forme de puissance (base dans ℚ, exposant dans ℕ)"
+  },
+  "10LSNO4": {
+    "titre": "Puissances et propriétés"
+  },
+  "10LSNO4A": {
+    "titre": "Forme de puissance (base dans ℚ, exposant dans ℕ)"
+  },
+  "10LCNO4B": {
+    "titre": "Propriétés des puissances"
+  },
+  "10LSNO4B": {
+    "titre": "Propriétés des puissances"
+  },
+  "10LCNO4C": {
+    "titre": "Puissances de 10"
+  },
+  "10LSNO4C": {
+    "titre": "Puissances de 10"
+  },
+  "10CTNO5": {
+    "titre": "Notation scientifique (sensibilisation)"
+  },
+  "10CTNO5A": {
+    "titre": "Écriture scientifique avec exposants entiers positifs"
+  },
+  "10LCNO5": {
+    "titre": "Notation scientifique"
+  },
+  "10LCNO5A": {
+    "titre": "Écriture scientifique"
+  },
+  "10LSNO5": {
+    "titre": "Notation scientifique"
+  },
+  "10LSNO5A": {
+    "titre": "Écriture scientifique"
+  },
+  "10LCNO5B": {
+    "titre": "Conversions, comparaison et problèmes"
+  },
+  "10LSNO5B": {
+    "titre": "Conversions, comparaison et problèmes"
+  },
+  "10CTNO6": {
+    "titre": "Racines"
+  },
+  "10CTNO6A": {
+    "titre": "Carrés parfaits pour en extraire la racine"
+  },
+  "10LCNO6": {
+    "titre": "Racines"
+  },
+  "10LCNO6A": {
+    "titre": "Carrés parfaits pour en extraire la racine"
+  },
+  "10LSNO6": {
+    "titre": "Racines"
+  },
+  "10LSNO6A": {
+    "titre": "Carrés parfaits pour en extraire la racine"
+  },
+  "10CTNO6B": {
+    "titre": "Calcul de racine carrée : encadrer, arrondir"
+  },
+  "10LCNO6B": {
+    "titre": "Calcul de racine carrée : encadrer, arrondir"
+  },
+  "10LSNO6B": {
+    "titre": "Calcul de racine carrée : encadrer, arrondir"
+  },
+  "10CTFA": {
+    "titre": "Fonctions et algèbre"
+  },
+  "10CTFA1": {
+    "titre": "Proportionnalité (échelle, pourcentage et pente)"
+  },
+  "10CTFA1A": {
+    "titre": "Agrandissement et réduction"
+  },
+  "10LCFA": {
+    "titre": "Fonctions et algèbre"
+  },
+  "10LCFA1": {
+    "titre": "Proportionnalité (échelle, pourcentage et pente)"
+  },
+  "10LCFA1A": {
+    "titre": "Agrandissement et réduction"
+  },
+  "10LSFA": {
+    "titre": "Fonctions et algèbre"
+  },
+  "10LSFA1": {
+    "titre": "Proportionnalité (échelle, pourcentage et pente)"
+  },
+  "10LSFA1A": {
+    "titre": "Agrandissement et réduction"
+  },
+  "10CTFA1B": {
+    "titre": "Ratios et quatrième proportionnelle"
+  },
+  "10LCFA1B": {
+    "titre": "Ratios et quatrième proportionnelle"
+  },
+  "10LSFA1B": {
+    "titre": "Ratios et quatrième proportionnelle"
+  },
+  "10CTFA1C": {
+    "titre": "Pourcentage d'une quantité"
+  },
+  "10LCFA1C": {
+    "titre": "Pourcentage d'une quantité"
+  },
+  "10LSFA1C": {
+    "titre": "Pourcentage d'une quantité"
+  },
+  "10CTFA1D": {
+    "titre": "Proportion et pourcentage"
+  },
+  "10LCFA1D": {
+    "titre": "Proportion et pourcentage"
+  },
+  "10LSFA1D": {
+    "titre": "Proportion et pourcentage"
+  },
+  "10CTFA1E": {
+    "titre": "Augmentation et diminution en pourcentage"
+  },
+  "10LCFA1E": {
+    "titre": "Augmentation et diminution en pourcentage"
+  },
+  "10LSFA1E": {
+    "titre": "Augmentation et diminution en pourcentage"
+  },
+  "10CTFA1F": {
+    "titre": "Échelle"
+  },
+  "10LCFA1F": {
+    "titre": "Échelle"
+  },
+  "10LSFA1F": {
+    "titre": "Échelle"
+  },
+  "10CTFA2": {
+    "titre": "Diagrammes"
+  },
+  "10CTFA2A": {
+    "titre": "Lecture de données et interprétation de diagrammes"
+  },
+  "10LCFA2": {
+    "titre": "Diagrammes"
+  },
+  "10LCFA2A": {
+    "titre": "Lecture de données et interprétation de diagrammes"
+  },
+  "10LSFA2": {
+    "titre": "Diagrammes"
+  },
+  "10LSFA2A": {
+    "titre": "Lecture de données et interprétation de diagrammes"
+  },
+  "10CTFA2B": {
+    "titre": "Réalisation de diagrammes circulaires et en barre (sensibilisation)"
+  },
+  "10LCFA2B": {
+    "titre": "Réalisation de diagrammes circulaires et en barre"
+  },
+  "10LSFA2B": {
+    "titre": "Réalisation de diagrammes circulaires et en barre"
+  },
+  "10LCFA3": {
+    "titre": "Fonctions"
+  },
+  "10LCFA3A": {
+    "titre": "Reconnaissance de situations modélisées par des fonctions"
+  },
+  "10LSFA3": {
+    "titre": "Fonctions"
+  },
+  "10LSFA3A": {
+    "titre": "Reconnaissance de situations modélisées par des fonctions"
+  },
+  "10LCFA3B": {
+    "titre": "Lecture de tableaux de valeurs et de représentations graphiques"
+  },
+  "10LSFA3B": {
+    "titre": "Lecture de tableaux de valeurs et de représentations graphiques"
+  },
+  "10LCFA3C": {
+    "titre": "Vocabulaire et calcul d'images"
+  },
+  "10LSFA3C": {
+    "titre": "Vocabulaire et calcul d'images"
+  },
+  "10LCFA3D": {
+    "titre": "Tracé à l'aide de tableaux de valeurs"
+  },
+  "10LSFA3D": {
+    "titre": "Tracé à l'aide de tableaux de valeurs"
+  },
+  "10CTFA4": {
+    "titre": "Calcul littéral"
+  },
+  "10CTFA4A": {
+    "titre": "Règles et conventions d'écriture (sensibilisation)"
+  },
+  "10LCFA4": {
+    "titre": "Calcul littéral"
+  },
+  "10LCFA4A": {
+    "titre": "Règles et conventions d'écriture"
+  },
+  "10LSFA4": {
+    "titre": "Calcul littéral"
+  },
+  "10LSFA4A": {
+    "titre": "Règles et conventions d'écriture"
+  },
+  "10CTFA4B": {
+    "titre": "Substitution"
+  },
+  "10LCFA4B": {
+    "titre": "Substitution"
+  },
+  "10LSFA4B": {
+    "titre": "Substitution"
+  },
+  "10LCFA4C": {
+    "titre": "Élaboration d'expressions littérales"
+  },
+  "10LSFA4C": {
+    "titre": "Élaboration d'expressions littérales"
+  },
+  "10LCFA4D": {
+    "titre": "Monômes : écriture réduite et opérations"
+  },
+  "10LSFA4D": {
+    "titre": "Monômes : écriture réduite et opérations"
+  },
+  "10LCFA4E": {
+    "titre": "Distributivité simple"
+  },
+  "10LSFA4E": {
+    "titre": "Distributivité simple"
+  },
+  "10LCFA4F": {
+    "titre": "Addition et soustraction monôme-polynôme"
+  },
+  "10LSFA4F": {
+    "titre": "Addition et soustraction monôme-polynôme"
+  },
+  "10LCFA5": {
+    "titre": "Équations du premier degré"
+  },
+  "10LCFA5A": {
+    "titre": "Mise en équation"
+  },
+  "10LSFA5": {
+    "titre": "Équations du premier degré"
+  },
+  "10LSFA5A": {
+    "titre": "Mise en équation"
+  },
+  "10LCFA5B": {
+    "titre": "Tester si un nombre est solution"
+  },
+  "10LSFA5B": {
+    "titre": "Tester si un nombre est solution"
+  },
+  "10LCFA5C": {
+    "titre": "Résolution d'équations du premier degré"
+  },
+  "10LSFA5C": {
+    "titre": "Résolution d'équations du premier degré"
+  },
+  "10LCFA5D": {
+    "titre": "Résolution de problèmes à l'aide d'équations"
+  },
+  "10LSFA5D": {
+    "titre": "Résolution de problèmes à l'aide d'équations"
+  },
+  "10CTGM": {
+    "titre": "Grandeurs et mesures"
+  },
+  "10CTGM1": {
+    "titre": "Périmètres et aires"
+  },
+  "10CTGM1A": {
+    "titre": "Cercles et disques"
+  },
+  "10LCGM": {
+    "titre": "Grandeurs et mesures"
+  },
+  "10LCGM1": {
+    "titre": "Périmètres et aires"
+  },
+  "10LCGM1A": {
+    "titre": "Cercles et disques"
+  },
+  "10LSGM": {
+    "titre": "Grandeurs et mesures"
+  },
+  "10LSGM1": {
+    "titre": "Périmètres et aires"
+  },
+  "10LSGM1A": {
+    "titre": "Cercles et disques"
+  },
+  "10LCGM1B": {
+    "titre": "Arcs de cercle et secteurs circulaires"
+  },
+  "10LSGM1B": {
+    "titre": "Arcs de cercle et secteurs circulaires"
+  },
+  "10CTGM1C": {
+    "titre": "Figures planes par décomposition"
+  },
+  "10LCGM1C": {
+    "titre": "Figures planes par décomposition"
+  },
+  "10LSGM1C": {
+    "titre": "Figures planes par décomposition"
+  },
+  "10CTGM1D": {
+    "titre": "Calcul d'une grandeur manquante"
+  },
+  "10LCGM1D": {
+    "titre": "Calcul d'une grandeur manquante"
+  },
+  "10LSGM1D": {
+    "titre": "Calcul d'une grandeur manquante"
+  },
+  "10CTGM2": {
+    "titre": "Volumes et aires"
+  },
+  "10CTGM2A": {
+    "titre": "Volume et aire de prismes droits"
+  },
+  "10LCGM2": {
+    "titre": "Volumes et aires"
+  },
+  "10LCGM2A": {
+    "titre": "Volume et aire de prismes droits"
+  },
+  "10LSGM2": {
+    "titre": "Volumes et aires"
+  },
+  "10LSGM2A": {
+    "titre": "Volume et aire de prismes droits"
+  },
+  "10LCGM2B": {
+    "titre": "Volume et aire du cylindre"
+  },
+  "10LSGM2B": {
+    "titre": "Volume et aire du cylindre"
+  },
+  "10CTGM2C": {
+    "titre": "Volume d'un solide par décomposition"
+  },
+  "10LCGM2C": {
+    "titre": "Volume d'un solide par décomposition"
+  },
+  "10LSGM2C": {
+    "titre": "Volume d'un solide par décomposition"
+  },
+  "10LCGM3": {
+    "titre": "Théorème de Pythagore"
+  },
+  "10LCGM3A": {
+    "titre": "Théorème de Pythagore dans le plan"
+  },
+  "10LSGM3": {
+    "titre": "Théorème de Pythagore"
+  },
+  "10LSGM3A": {
+    "titre": "Théorème de Pythagore dans le plan"
+  },
+  "10LSGM3B": {
+    "titre": "Théorème de Pythagore dans l'espace"
+  },
+  "10CTGM4": {
+    "titre": "Unités et mesures"
+  },
+  "10CTGM4A": {
+    "titre": "Unités de volume, conversions capacité / volume"
+  },
+  "10LCGM4": {
+    "titre": "Unités et mesures"
+  },
+  "10LCGM4A": {
+    "titre": "Unités de volume, conversions capacité / volume"
+  },
+  "10LSGM4": {
+    "titre": "Unités et mesures"
+  },
+  "10LSGM4A": {
+    "titre": "Unités de volume, conversions capacité / volume"
+  },
+  "10CTGM4B": {
+    "titre": "Unités de temps"
+  },
+  "10LCGM4B": {
+    "titre": "Unités de temps"
+  },
+  "10LSGM4B": {
+    "titre": "Unités de temps"
+  },
+  "10CTQCM": {
+    "titre": "QCM"
+  },
+  "10LCQCM": {
+    "titre": "QCM"
+  },
+  "10LSQCM": {
+    "titre": "QCM"
+  },
+  "11LCES": {
+    "titre": "Espace"
+  },
+  "11LCES1": {
+    "titre": "Géométrie du plan (sensibilisation)"
+  },
+  "11LCES1A": {
+    "titre": "Angles alternes-internes, adjacents, opposés par le sommet"
+  },
+  "11LSES": {
+    "titre": "Espace"
+  },
+  "11LSES1": {
+    "titre": "Géométrie du plan"
+  },
+  "11LSES1A": {
+    "titre": "Angles alternes-internes, adjacents, opposés par le sommet"
+  },
+  "11CTES": {
+    "titre": "Espace"
+  },
+  "11CTES2": {
+    "titre": "Solides"
+  },
+  "11CTES2A": {
+    "titre": "Propriétés des solides (cône, sphère)"
+  },
+  "11LCES2": {
+    "titre": "Solides"
+  },
+  "11LCES2A": {
+    "titre": "Propriétés des solides (cône, sphère)"
+  },
+  "11LSES2": {
+    "titre": "Solides"
+  },
+  "11LSES2A": {
+    "titre": "Propriétés des solides (cône, sphère)"
+  },
+  "11CTES2B": {
+    "titre": "Développements (patrons) et représentation du cylindre (sensibilisation)"
+  },
+  "11LCES2B": {
+    "titre": "Développements (patrons) et représentation du cylindre"
+  },
+  "11LSES2B": {
+    "titre": "Développements (patrons) et représentation du cylindre"
+  },
+  "11LCES3": {
+    "titre": "Transformations"
+  },
+  "11LCES3A": {
+    "titre": "Homothétie"
+  },
+  "11LSES3": {
+    "titre": "Transformations"
+  },
+  "11LSES3A": {
+    "titre": "Homothétie"
+  },
+  "11CTNO": {
+    "titre": "Nombres et opérations"
+  },
+  "11CTNO1": {
+    "titre": "Opérations sur les nombres relatifs"
+  },
+  "11CTNO1A": {
+    "titre": "4 opérations dans ℤ : règle des signes"
+  },
+  "11CTNO1B": {
+    "titre": "4 opérations dans ℤ : multiplication et division"
+  },
+  "11CTNO1C": {
+    "titre": "4 opérations dans ℤ : priorité des opérations"
+  },
+  "11CTNO2": {
+    "titre": "Opérations avec les fractions"
+  },
+  "11CTNO2A": {
+    "titre": "Multiplication et division de fractions"
+  },
+  "11LCNO": {
+    "titre": "Nombres et opérations"
+  },
+  "11LCNO2": {
+    "titre": "Opérations avec les fractions"
+  },
+  "11LCNO2A": {
+    "titre": "Multiplication et division de fractions"
+  },
+  "11CTNO2B": {
+    "titre": "4 opérations dans ℚ : priorité des opérations"
+  },
+  "11LCNO2B": {
+    "titre": "4 opérations dans ℚ : priorité des opérations"
+  },
+  "11CTNO3": {
+    "titre": "Puissances et racines"
+  },
+  "11CTNO3A": {
+    "titre": "Écriture scientifique avec exposants entiers positifs"
+  },
+  "11LCNO3": {
+    "titre": "Puissances et racines"
+  },
+  "11LCNO3B": {
+    "titre": "Propriétés des puissances"
+  },
+  "11LSNO": {
+    "titre": "Nombres et opérations"
+  },
+  "11LSNO3": {
+    "titre": "Puissances et racines"
+  },
+  "11LSNO3A": {
+    "titre": "Opérations avec la notation scientifique"
+  },
+  "11LSNO3B": {
+    "titre": "Propriétés des puissances"
+  },
+  "11LSNO3C": {
+    "titre": "Propriétés des racines"
+  },
+  "11CTNO4": {
+    "titre": "Probabilités"
+  },
+  "11CTNO4A": {
+    "titre": "Exploration d'ensembles de possibilités et organisation de dénombrement"
+  },
+  "11LCNO4": {
+    "titre": "Probabilités"
+  },
+  "11LCNO4A": {
+    "titre": "Exploration d'ensembles de possibilités et organisation de dénombrement"
+  },
+  "11LSNO4": {
+    "titre": "Probabilités"
+  },
+  "11LSNO4A": {
+    "titre": "Exploration d'ensembles de possibilités et organisation de dénombrement"
+  },
+  "11LCNO4B": {
+    "titre": "Traitement de situations aléatoires à l'aide de notions de probabilités"
+  },
+  "11LSNO4B": {
+    "titre": "Traitement de situations aléatoires à l'aide de notions de probabilités"
+  },
+  "11LSNO4C": {
+    "titre": "Raisonnement probabiliste : cas favorables et cas possibles"
+  },
+  "11LCNO5": {
+    "titre": "Utilisation de différentes écritures d'un même nombre"
+  },
+  "11LCNO5A": {
+    "titre": "Ensembles de nombres"
+  },
+  "11LSNO5": {
+    "titre": "Utilisation de différentes écritures d'un même nombre"
+  },
+  "11LSNO5A": {
+    "titre": "Ensembles de nombres"
+  },
+  "11CTFA": {
+    "titre": "Fonctions et algèbre"
+  },
+  "11CTFA1": {
+    "titre": "Proportionnalité (vitesse, masse volumique et débit)"
+  },
+  "11CTFA1A": {
+    "titre": "Vitesse moyenne"
+  },
+  "11LCFA": {
+    "titre": "Fonctions et algèbre"
+  },
+  "11LCFA1": {
+    "titre": "Proportionnalité (vitesse, masse volumique et débit)"
+  },
+  "11LCFA1A": {
+    "titre": "Vitesse moyenne"
+  },
+  "11LSFA": {
+    "titre": "Fonctions et algèbre"
+  },
+  "11LSFA1": {
+    "titre": "Proportionnalité (vitesse, masse volumique et débit)"
+  },
+  "11LSFA1A": {
+    "titre": "Vitesse moyenne"
+  },
+  "11LSFA1C": {
+    "titre": "Débit"
+  },
+  "11CTFA2": {
+    "titre": "Fonctions"
+  },
+  "11CTFA2A": {
+    "titre": "Lecture de tableaux de valeurs et de représentations graphiques"
+  },
+  "11CTFA2B": {
+    "titre": "Vocabulaire et calcul d'images"
+  },
+  "11CTFA2C": {
+    "titre": "Tracé de droites et de courbes à l'aide de points et de tableaux de valeurs"
+  },
+  "11LCFA2": {
+    "titre": "Fonctions"
+  },
+  "11LCFA2C": {
+    "titre": "Tracé de droites et de courbes à l'aide de points et de tableaux de valeurs"
+  },
+  "11LSFA2": {
+    "titre": "Fonctions"
+  },
+  "11LSFA2C": {
+    "titre": "Tracé de droites et de courbes à l'aide de points et de tableaux de valeurs"
+  },
+  "11CTFA2D": {
+    "titre": "Fonctions linéaires et affines"
+  },
+  "11LCFA2D": {
+    "titre": "Fonctions linéaires et affines"
+  },
+  "11LSFA2D": {
+    "titre": "Fonctions linéaires et affines"
+  },
+  "11LCFA2E": {
+    "titre": "Passage de la représentation graphique à l'expression fonctionnelle"
+  },
+  "11LSFA2E": {
+    "titre": "Passage de la représentation graphique à l'expression fonctionnelle"
+  },
+  "11LCFA2F": {
+    "titre": "Fonctions inverses, carrés, cubiques"
+  },
+  "11LSFA2F": {
+    "titre": "Fonctions inverses, carrés, cubiques"
+  },
+  "11LSFA2G": {
+    "titre": "Fonctions quadratiques (sensibilisation)"
+  },
+  "11CTFA2H": {
+    "titre": "Reconnaissance et modélisation de situations par des fonctions"
+  },
+  "11LCFA2H": {
+    "titre": "Reconnaissance et modélisation de situations par des fonctions"
+  },
+  "11LSFA2H": {
+    "titre": "Reconnaissance et modélisation de situations par des fonctions"
+  },
+  "11CTFA3": {
+    "titre": "Calcul littéral"
+  },
+  "11CTFA3A": {
+    "titre": "Règles et conventions d'écriture"
+  },
+  "11CTFA3B": {
+    "titre": "Substitution"
+  },
+  "11LCFA3": {
+    "titre": "Calcul littéral"
+  },
+  "11LCFA3B": {
+    "titre": "Substitution"
+  },
+  "11LSFA3": {
+    "titre": "Calcul littéral"
+  },
+  "11LSFA3B": {
+    "titre": "Substitution"
+  },
+  "11CTFA3C": {
+    "titre": "Élaboration d'expressions littérales (sensibilisation)"
+  },
+  "11LCFA3C": {
+    "titre": "Élaboration d'expressions littérales"
+  },
+  "11LSFA3C": {
+    "titre": "Élaboration d'expressions littérales"
+  },
+  "11CTFA3D": {
+    "titre": "Interprétation d'expressions littérales équivalentes (sensibilisation)"
+  },
+  "11LCFA3D": {
+    "titre": "Interprétation d'expressions littérales équivalentes"
+  },
+  "11LSFA3D": {
+    "titre": "Interprétation d'expressions littérales équivalentes"
+  },
+  "11CTFA3E": {
+    "titre": "Addition et réduction de polynômes du premier degré"
+  },
+  "11LCFA3E": {
+    "titre": "Écriture réduite et ordonnée de polynômes"
+  },
+  "11LSFA3E": {
+    "titre": "Écriture réduite et ordonnée de polynômes"
+  },
+  "11LCFA3F": {
+    "titre": "Multiplication de polynômes (distributivité double)"
+  },
+  "11LSFA3F": {
+    "titre": "Multiplication de polynômes (distributivité double)"
+  },
+  "11LSFA3G": {
+    "titre": "Identités remarquables"
+  },
+  "11LSFA3H": {
+    "titre": "Décomposition en produits de facteurs : mise en évidence"
+  },
+  "11LSFA3I": {
+    "titre": "Décomposition en produits de facteurs : identités remarquables"
+  },
+  "11LSFA3J": {
+    "titre": "Calcul littéral comme outil de preuve"
+  },
+  "11CTFA4": {
+    "titre": "Équations"
+  },
+  "11CTFA4A": {
+    "titre": "Mise en équation à partir de problèmes (1er degré)"
+  },
+  "11LCFA4": {
+    "titre": "Équations"
+  },
+  "11LCFA4A": {
+    "titre": "Mise en équation à partir de problèmes (1er degré)"
+  },
+  "11LSFA4": {
+    "titre": "Équations"
+  },
+  "11LSFA4A": {
+    "titre": "Mise en équation à partir de problèmes (1er degré)"
+  },
+  "11CTFA4B": {
+    "titre": "Tester si un nombre est solution"
+  },
+  "11CTFA4C": {
+    "titre": "Résolution d'équations du premier degré"
+  },
+  "11LCFA4C": {
+    "titre": "Résolution d'équations du premier degré"
+  },
+  "11LSFA4C": {
+    "titre": "Résolution d'équations du premier degré"
+  },
+  "11LCFA4D": {
+    "titre": "Transformations de formules"
+  },
+  "11LSFA4D": {
+    "titre": "Transformations de formules"
+  },
+  "11LSFA4E": {
+    "titre": "Équations du second degré : résolution par factorisation"
+  },
+  "11LSFA4F": {
+    "titre": "Équations du second degré : formule de Viète"
+  },
+  "11LSFA4G": {
+    "titre": "Systèmes d'équations"
+  },
+  "11CTGM": {
+    "titre": "Grandeurs et mesures"
+  },
+  "11CTGM1": {
+    "titre": "Volumes et aires"
+  },
+  "11CTGM1A": {
+    "titre": "Volume du cylindre"
+  },
+  "11LCGM": {
+    "titre": "Grandeurs et mesures"
+  },
+  "11LCGM1": {
+    "titre": "Volumes et aires"
+  },
+  "11LCGM1B": {
+    "titre": "Volume et aire d'une pyramide"
+  },
+  "11LSGM": {
+    "titre": "Grandeurs et mesures"
+  },
+  "11LSGM1": {
+    "titre": "Volumes et aires"
+  },
+  "11LSGM1B": {
+    "titre": "Volume et aire d'une pyramide"
+  },
+  "11LCGM1C": {
+    "titre": "Volume d'un cône"
+  },
+  "11LSGM1C": {
+    "titre": "Volume d'un cône"
+  },
+  "11LSGM1D": {
+    "titre": "Volume et aire d'une sphère"
+  },
+  "11CTGM1E": {
+    "titre": "Volume d'un solide par décomposition"
+  },
+  "11LCGM1E": {
+    "titre": "Volume d'un solide par décomposition"
+  },
+  "11LSGM1E": {
+    "titre": "Volume d'un solide par décomposition"
+  },
+  "11CTGM1F": {
+    "titre": "Calcul d'une grandeur manquante"
+  },
+  "11LCGM1F": {
+    "titre": "Calcul d'une grandeur manquante"
+  },
+  "11LSGM1F": {
+    "titre": "Calcul d'une grandeur manquante"
+  },
+  "11CTGM2": {
+    "titre": "Théorème de Pythagore"
+  },
+  "11CTGM2A": {
+    "titre": "Théorème de Pythagore dans le plan (application directe)"
+  },
+  "11LCGM2": {
+    "titre": "Théorème de Pythagore"
+  },
+  "11LCGM2B": {
+    "titre": "Théorème de Pythagore (réciproque et contraposée)"
+  },
+  "11LSGM2": {
+    "titre": "Théorème de Pythagore"
+  },
+  "11LSGM2B": {
+    "titre": "Théorème de Pythagore (réciproque et contraposée)"
+  },
+  "11LCGM3": {
+    "titre": "Théorème de Thalès"
+  },
+  "11LCGM3A": {
+    "titre": "Proportionnalité de figures semblables"
+  },
+  "11LSGM3": {
+    "titre": "Théorème de Thalès"
+  },
+  "11LSGM3A": {
+    "titre": "Proportionnalité de figures semblables"
+  },
+  "11LCGM3B": {
+    "titre": "Théorème de Thalès (application directe)"
+  },
+  "11LSGM3B": {
+    "titre": "Théorème de Thalès (application directe)"
+  },
+  "11LCGM3C": {
+    "titre": "Théorème de Thalès (réciproque et contraposée)"
+  },
+  "11LSGM3C": {
+    "titre": "Théorème de Thalès (réciproque et contraposée)"
+  },
+  "11CTGM4": {
+    "titre": "Unités et mesures"
+  },
+  "11CTGM4A": {
+    "titre": "Conversion d'unités composées (vitesse)"
+  },
+  "11LCGM4": {
+    "titre": "Unités et mesures"
+  },
+  "11LCGM4A": {
+    "titre": "Conversion d'unités composées (vitesse)"
+  },
+  "11LSGM4": {
+    "titre": "Unités et mesures"
+  },
+  "11LSGM4A": {
+    "titre": "Conversion d'unités composées (vitesse)"
+  },
+  "11CTQCM": {
+    "titre": "QCM"
+  },
+  "11LCQCM": {
+    "titre": "QCM"
+  },
+  "11LSQCM": {
+    "titre": "QCM"
+  },
+  "11LCNO2C": {
+    "titre": "Calcul réfléchi ou mental : 4 opérations dans ℚ+"
+  },
+  "PRQST": {
+    "titre": "Structurer son raisonnement"
+  },
+  "PRQST01": {
+    "titre": "Repérer et organiser les informations"
+  },
+  "PRQST01A": {
+    "titre": "N1 · Repérer dans un support unique (texte, tableau ou schéma) les informations utiles et les classer"
+  },
+  "PRQST01B": {
+    "titre": "N2 · Croiser des informations provenant de deux supports et les organiser dans une représentation adaptée"
+  },
+  "PRQST02": {
+    "titre": "Traduire une situation en calcul"
+  },
+  "PRQST02A": {
+    "titre": "N1 · Identifier l'opération sous-jacente à un énoncé"
+  },
+  "PRQST02B": {
+    "titre": "N2 · Traduire un problème simple en une expression numérique, effectuer le calcul et donner une réponse avec l'unité"
+  },
+  "PRQST02C": {
+    "titre": "N3 · Construire une chaîne d'opérations correspondant à une situation complexe"
+  },
+  "PRQST03": {
+    "titre": "Estimer, vérifier, valider"
+  },
+  "PRQST03A": {
+    "titre": "N1 · Estimer l'ordre de grandeur d'un résultat"
+  },
+  "PRQST03B": {
+    "titre": "N1 · Vérifier un résultat, valider ou réfuter un résultat"
+  },
+  "PRQST04": {
+    "titre": "Essais successifs et hypothèses"
+  },
+  "PRQST04A": {
+    "titre": "N1 · Ajuster des essais successifs (tâtonnement)"
+  },
+  "PRQNO": {
+    "titre": "Nombres et opérations"
+  },
+  "PRQNO01": {
+    "titre": "Lecture et écriture des nombres"
+  },
+  "PRQNO01A": {
+    "titre": "N1 · Lire et écrire des nombres décimaux en utilisant le vocabulaire adéquat"
+  },
+  "PRQNO02": {
+    "titre": "Numération"
+  },
+  "PRQNO02A": {
+    "titre": "N1 · Reconnaître le nombre de milliers, de centaines, de dizaines, d'unités et de dixièmes"
+  },
+  "PRQNO02B": {
+    "titre": "N2 · Reconnaître le nombre de milliards, de millions… de centièmes et de millièmes"
+  },
+  "PRQNO03": {
+    "titre": "Symboles"
+  },
+  "PRQNO03A": {
+    "titre": "N1 · Reconnaître et utiliser, en contexte (2 décimales), les symboles +, −, ×, ÷, =, >, <, ≥, ≤, %"
+  },
+  "PRQNO03B": {
+    "titre": "N2 · Reconnaître et utiliser, en contexte, les symboles des puissances et des racines"
+  },
+  "PRQNO04": {
+    "titre": "Droite graduée"
+  },
+  "PRQNO04A": {
+    "titre": "N1 · Lire et placer des nombres décimaux positifs (2 décimales) et entiers relatifs sur une droite graduée"
+  },
+  "PRQNO04B": {
+    "titre": "N2 · Lire et placer des nombres décimaux et fractionnaires sur une droite graduée"
+  },
+  "PRQNO05": {
+    "titre": "Comparer, ordonner, encadrer"
+  },
+  "PRQNO05A": {
+    "titre": "N1 · Comparer, ordonner, encadrer et intercaler des nombres décimaux positifs (2 décimales) et entiers relatifs"
+  },
+  "PRQNO05B": {
+    "titre": "N2 · Comparer, ordonner, encadrer et intercaler des nombres décimaux et fractionnaires"
+  },
+  "PRQNO06": {
+    "titre": "Opérations"
+  },
+  "PRQNO06A": {
+    "titre": "N1 · Opérer avec des nombres décimaux positifs (+, −, ×, ÷) en utilisant les algorithmes (2 décimales)"
+  },
+  "PRQNO06B": {
+    "titre": "N2 · Calculer avec des nombres entiers relatifs (+, −, ×, ÷)"
+  },
+  "PRQNO07": {
+    "titre": "Puissances, racines et notation scientifique"
+  },
+  "PRQNO07A": {
+    "titre": "N1 · Calculer des puissances de nombres entiers naturels"
+  },
+  "PRQNO07B": {
+    "titre": "N2 · Calculer des puissances de nombres décimaux et des racines de carrés parfaits"
+  },
+  "PRQNO07C": {
+    "titre": "N3 · Passer d'une notation scientifique à l'écriture décimale et vice-versa"
+  },
+  "PRQNO08": {
+    "titre": "Critères de divisibilité"
+  },
+  "PRQNO08A": {
+    "titre": "N1 · Connaître et utiliser les critères de divisibilité par 2, 3, 5, 10, 25 et 100"
+  },
+  "PRQNO08B": {
+    "titre": "N2 · Connaître et utiliser les critères de divisibilité par 4 et 6"
+  },
+  "PRQNO09": {
+    "titre": "Multiples, diviseurs, PPMC et PGDC"
+  },
+  "PRQNO09A": {
+    "titre": "N1 · Déterminer le PPMC et le PGDC de deux nombres (sans décomposition en facteurs premiers)"
+  },
+  "PRQNO09B": {
+    "titre": "N2 · Décomposer un nombre < 100 en produit de facteurs premiers"
+  },
+  "PRQNO09C": {
+    "titre": "N3 · Décomposer un nombre > 100 en produit de facteurs premiers, puis déterminer le PPMC et le PGDC à l'aide de la décomposition"
+  },
+  "PRQNO10": {
+    "titre": "Écriture fractionnaire"
+  },
+  "PRQNO10A": {
+    "titre": "N1 · Lire et écrire des nombres en écriture fractionnaire, passer d'une représentation géométrique à une fraction et vice-versa"
+  },
+  "PRQNO10B": {
+    "titre": "N2 · Amplifier, simplifier et rendre irréductible une fraction"
+  },
+  "PRQNO11": {
+    "titre": "Fraction, décimal et pourcentage"
+  },
+  "PRQNO11A": {
+    "titre": "N1 · Passer de l'écriture d'une fraction simple à son écriture décimale et vice-versa"
+  },
+  "PRQNO11B": {
+    "titre": "N2 · Passer de l'écriture fractionnaire (y compris %) à l'écriture décimale et vice-versa"
+  },
+  "PRQNO12": {
+    "titre": "Opérations avec les fractions"
+  },
+  "PRQNO12A": {
+    "titre": "N1 · Opérer avec des nombres en écriture fractionnaire (+, −)"
+  },
+  "PRQNO12B": {
+    "titre": "N2 · Opérer avec des nombres en écriture fractionnaire (×, ÷)"
+  },
+  "PRQNO12C": {
+    "titre": "N3 · Opérer avec des nombres en écriture fractionnaire (puissance, racine)"
+  },
+  "PRQNO13": {
+    "titre": "Priorités des opérations"
+  },
+  "PRQNO13A": {
+    "titre": "N1 · Appliquer les priorités des opérations (+, −, ×, ÷)"
+  },
+  "PRQNO13B": {
+    "titre": "N2 · Respecter les priorités des opérations (puissance, racine, diverses parenthèses) en contrôlant les signes"
+  },
+  "PRQNO13C": {
+    "titre": "N3 · Respecter la priorité des opérations dans un calcul complexe en écriture fractionnaire"
+  },
+  "PRQNO14": {
+    "titre": "Suites de nombres"
+  },
+  "PRQNO14A": {
+    "titre": "N1 · Compléter une suite de nombres entiers et exprimer sa loi de formation (4 opérations)"
+  },
+  "PRQNO15": {
+    "titre": "Résolution de problèmes numériques"
+  },
+  "PRQNO15A": {
+    "titre": "N1 · Résoudre des problèmes de la vie courante (fraction, décimal, %, ordre des opérations, divisibilité)"
+  },
+  "PRQNO15B": {
+    "titre": "N2 · Modéliser et planifier avec PGDC / PPMC, calculer avec des fractions et des relatifs en expliquant les étapes"
+  },
+  "PRQNO15C": {
+    "titre": "N3 · Intégrer décomposition, puissances, racines et notation scientifique pour résoudre des situations complexes"
+  },
+  "PRQAL": {
+    "titre": "Algèbre"
+  },
+  "PRQAL01": {
+    "titre": "Conventions d'écriture, variables et constantes"
+  },
+  "PRQAL01A": {
+    "titre": "N1 · Connaître et utiliser les conventions usuelles d'écriture algébrique"
+  },
+  "PRQAL01B": {
+    "titre": "N1 · Différencier variable et constante"
+  },
+  "PRQAL02": {
+    "titre": "Substitution"
+  },
+  "PRQAL02A": {
+    "titre": "N1 · Déterminer la valeur numérique d'une expression littérale simple en substituant des nombres aux lettres"
+  },
+  "PRQAL02B": {
+    "titre": "N2 · Calculer la valeur d'une expression littérale en respectant l'ordre des opérations"
+  },
+  "PRQAL03": {
+    "titre": "Monômes, développement et factorisation"
+  },
+  "PRQAL03A": {
+    "titre": "N1 · Opérer avec des monômes (+, −)"
+  },
+  "PRQAL03B": {
+    "titre": "N2 · Opérer avec des monômes (×, ÷, puissance)"
+  },
+  "PRQAL03C": {
+    "titre": "N2 · Développer et réduire une expression algébrique (distributivité simple)"
+  },
+  "PRQAL03D": {
+    "titre": "N3 · Développer et réduire une expression algébrique (double distributivité)"
+  },
+  "PRQAL03E": {
+    "titre": "N3 · Factoriser une expression algébrique à l'aide de la mise en évidence"
+  },
+  "PRQAL04": {
+    "titre": "Équations : formuler et vérifier"
+  },
+  "PRQAL04A": {
+    "titre": "N1 · Identifier une équation par la mise en égalité de deux expressions"
+  },
+  "PRQAL04B": {
+    "titre": "N1 · Vérifier si un nombre est solution d'une équation (degré 1, 1 inconnue)"
+  },
+  "PRQAL04C": {
+    "titre": "N2 · Formuler une équation simple à partir d'une situation concrète"
+  },
+  "PRQAL04D": {
+    "titre": "N2 · Identifier l'inconnue et traduire un énoncé simple sous forme d'équation (1er degré)"
+  },
+  "PRQAL04E": {
+    "titre": "N3 · Identifier l'inconnue et traduire un énoncé complexe sous forme d'équation (1er degré)"
+  },
+  "PRQAL05": {
+    "titre": "Résolution d'équations"
+  },
+  "PRQAL05A": {
+    "titre": "N1 · Résoudre un problème par tâtonnement"
+  },
+  "PRQAL05B": {
+    "titre": "N2 · Résoudre une équation du premier degré à une inconnue (coefficients entiers) et vérifier la solution"
+  },
+  "PRQAL05C": {
+    "titre": "N3 · Résoudre une équation du premier degré à une inconnue (coefficients rationnels)"
+  },
+  "PRQAL06": {
+    "titre": "Formules"
+  },
+  "PRQAL06A": {
+    "titre": "N3 · Exprimer chacune des variables d'une formule usuelle en fonction des autres"
+  },
+  "PRQES": {
+    "titre": "Espace et formes"
+  },
+  "PRQES01": {
+    "titre": "Droites et angles"
+  },
+  "PRQES01A": {
+    "titre": "N1 · Reconnaître, nommer et décrire les propriétés des droites parallèles et perpendiculaires"
+  },
+  "PRQES01B": {
+    "titre": "N1 · Reconnaître, nommer et décrire les hauteurs et les angles"
+  },
+  "PRQES01C": {
+    "titre": "N1 · Connaître et utiliser la somme des angles d'un triangle"
+  },
+  "PRQES02": {
+    "titre": "Figures planes"
+  },
+  "PRQES02A": {
+    "titre": "N1 · Reconnaître, nommer et décrire les propriétés des triangles"
+  },
+  "PRQES02B": {
+    "titre": "N1 · Reconnaître, nommer et décrire les propriétés des quadrilatères"
+  },
+  "PRQES02C": {
+    "titre": "N1 · Reconnaître, nommer et décrire les propriétés des cercles"
+  },
+  "PRQES02D": {
+    "titre": "N2 · Reconnaître les axes et les centres de symétrie des figures planes"
+  },
+  "PRQES03": {
+    "titre": "Isométries"
+  },
+  "PRQES03A": {
+    "titre": "N3 · Reconnaître et nommer une isométrie (translation, symétrie axiale, rotation, symétrie centrale)"
+  },
+  "PRQES04": {
+    "titre": "Constructions"
+  },
+  "PRQES04A": {
+    "titre": "N1 · Construire des droites parallèles et perpendiculaires à l'aide de l'équerre et de la règle"
+  },
+  "PRQES04B": {
+    "titre": "N2 · Construire des droites parallèles et perpendiculaires, hauteurs, angles et figures planes (règle, équerre, compas, rapporteur)"
+  },
+  "PRQES05": {
+    "titre": "Figures semblables"
+  },
+  "PRQES05A": {
+    "titre": "N3 · Reconnaître des figures semblables, construire un agrandissement ou une réduction de figures planes"
+  },
+  "PRQES06": {
+    "titre": "Croquis et représentations"
+  },
+  "PRQES06B": {
+    "titre": "N2 · Réaliser le croquis d'un solide en perspective (cube, parallélépipède rectangle, prisme droit)"
+  },
+  "PRQES06C": {
+    "titre": "N2 · Savoir reconnaître les différents points de vue (devant, dessus, etc.)"
+  },
+  "PRQES07": {
+    "titre": "Solides et développements"
+  },
+  "PRQES07A": {
+    "titre": "N1 · Reconnaître, nommer et décrire les propriétés des pavés droits"
+  },
+  "PRQES07B": {
+    "titre": "N1 · Reconnaître les développements d'un pavé droit"
+  },
+  "PRQES07C": {
+    "titre": "N2 · Reconnaître, nommer et décrire les solides (prisme droit, pyramide, cylindre droit, sphère et cône)"
+  },
+  "PRQES07D": {
+    "titre": "N2 · Reconnaître et construire les développements d'un solide (prisme droit, cylindre)"
+  },
+  "PRQMG": {
+    "titre": "Mesures et grandeurs"
+  },
+  "PRQMG01": {
+    "titre": "Périmètres et aires"
+  },
+  "PRQMG01A": {
+    "titre": "N1 · Identifier et mesurer les dimensions utiles"
+  },
+  "PRQMG01B": {
+    "titre": "N1 · Calculer un périmètre et une aire (triangles, quadrilatères)"
+  },
+  "PRQMG01C": {
+    "titre": "N2 · Calculer le périmètre et l'aire de figures composées et de disques"
+  },
+  "PRQMG01D": {
+    "titre": "N2 · Calculer l'aire des faces d'un pavé droit"
+  },
+  "PRQMG02": {
+    "titre": "Volumes"
+  },
+  "PRQMG02A": {
+    "titre": "N1 · Calculer le volume d'un pavé droit"
+  },
+  "PRQMG02B": {
+    "titre": "N2 · Calculer le volume de prismes droits et de cylindres"
+  },
+  "PRQMG02C": {
+    "titre": "N3 · Calculer un volume à partir d'une formule donnée (sphère, cône, pyramide)"
+  },
+  "PRQMG02D": {
+    "titre": "N3 · Calculer le volume d'un solide composé"
+  },
+  "PRQMG03": {
+    "titre": "Pythagore et Thalès"
+  },
+  "PRQMG03A": {
+    "titre": "N1 · Appliquer le théorème de Pythagore de manière directe"
+  },
+  "PRQMG03B": {
+    "titre": "N2 · Appliquer le théorème de Pythagore à la résolution de problèmes, ainsi que sa réciproque"
+  },
+  "PRQMG03C": {
+    "titre": "N3 · Utiliser la proportionnalité des figures semblables et le théorème de Thalès"
+  },
+  "PRQMG04": {
+    "titre": "Grandeurs et unités"
+  },
+  "PRQMG04A": {
+    "titre": "N1 · Identifier les grandeurs en jeu dans une situation donnée et déterminer l'unité adéquate"
+  },
+  "PRQMG04B": {
+    "titre": "N1 · Résoudre des problèmes de mesures et exprimer une même grandeur dans différentes unités (m, m², g, l)"
+  },
+  "PRQMG04C": {
+    "titre": "N2 · Convertir les unités de volume en unités de capacité et vice-versa"
+  },
+  "PRQMG04D": {
+    "titre": "N2 · Transformer des unités de temps simples"
+  },
+  "PRQMG04E": {
+    "titre": "N3 · Convertir les unités de temps et les unités composées (km/h, m³/s…)"
+  },
+  "PRQMG05": {
+    "titre": "Mesurer"
+  },
+  "PRQMG05A": {
+    "titre": "N1 · Mesurer à l'aide d'un instrument adapté une longueur, un angle, un temps, une masse, une capacité"
+  },
+  "PRQMG05B": {
+    "titre": "N2 · Mesurer la distance entre un point et une droite ou entre deux droites parallèles"
+  },
+  "PRQPF": {
+    "titre": "Proportionnalité, fonctions et analyse de données"
+  },
+  "PRQPF01": {
+    "titre": "Données, tableaux et graphiques"
+  },
+  "PRQPF01A": {
+    "titre": "N1 · Extraire les données pertinentes de textes, tableaux, diagrammes et représentations graphiques"
+  },
+  "PRQPF01B": {
+    "titre": "N2 · Compléter un tableau de valeurs, représenter graphiquement la situation, passer d'un registre à l'autre"
+  },
+  "PRQPF01C": {
+    "titre": "N3 · Représenter graphiquement une fonction affine à partir de son expression algébrique et vice versa"
+  },
+  "PRQPF02": {
+    "titre": "Repérage et pente"
+  },
+  "PRQPF02A": {
+    "titre": "N1 · Représenter et repérer un point dans un système d'axes"
+  },
+  "PRQPF02B": {
+    "titre": "N2 · Identifier la pente d'une droite"
+  },
+  "PRQPF02C": {
+    "titre": "N3 · Déterminer la pente, l'ordonnée à l'origine et les coordonnées de points"
+  },
+  "PRQPF03": {
+    "titre": "Proportionnalité"
+  },
+  "PRQPF03A": {
+    "titre": "N1 · Résoudre un problème de proportionnalité directe en élaborant un tableau de proportionnalité"
+  },
+  "PRQPF03B": {
+    "titre": "N2 · Résoudre un problème de proportionnalité directe (facteur rationnel) : échelle, pourcentage, pente"
+  },
+  "PRQPF03C": {
+    "titre": "N3 · Résoudre un problème de proportionnalité directe et inverse avec grandeurs composées (taux d'intérêt, débit, vitesse, masse volumique)"
+  },
+  "PRQPF04": {
+    "titre": "Grandeurs en jeu et plans"
+  },
+  "PRQPF04A": {
+    "titre": "N1 · Identifier les grandeurs en jeu et leurs unités : quantité / quantité, agrandissement et réduction"
+  },
+  "PRQPF04B": {
+    "titre": "N2 · Lire un plan"
+  },
+  "PRQPF04C": {
+    "titre": "N3 · Identifier les grandeurs en jeu et leurs unités"
+  },
+  "PRQPF05": {
+    "titre": "Pourcentages"
+  },
+  "PRQPF05A": {
+    "titre": "N1 · Calculer un pourcentage simple (100 %, 50 %, 10 %, 1 %)"
+  },
+  "PRQPF05B": {
+    "titre": "N2 · Calculer un pourcentage et retrouver une grandeur en connaissant un pourcentage"
+  },
+  "9R1NO9": {
+    "titre": "Résolution de problèmes"
+  },
+  "9R1NO0": {
+    "titre": "Nombres décimaux et calcul"
+  },
+  "9R1ES1D": {
+    "titre": "Vocabulaire et codage des polygones"
+  },
+  "9R1ES6": {
+    "titre": "Quadrilatères"
+  },
+  "9R1ES7A": {
+    "titre": "Vocabulaire, cercle et disque"
+  },
+  "9R1ES7B": {
+    "titre": "Distances et constructions au compas"
+  },
+  "9R1ES7C": {
+    "titre": "Cercles inscrit et circonscrit (sensibilisation)"
+  },
+  "9R1ES7": {
+    "titre": "Cercles"
+  },
+  "9R1ES0": {
+    "titre": "Géométrie du plan"
+  },
+  "9R1GM0": {
+    "titre": "Périmètres et aires"
+  },
+  "9R2NO9": {
+    "titre": "Résolution de problèmes"
+  },
+  "9R2NO0": {
+    "titre": "Nombres décimaux et calcul"
+  },
+  "9R2ES1D": {
+    "titre": "Vocabulaire et codage des polygones"
+  },
+  "9R2ES6": {
+    "titre": "Quadrilatères"
+  },
+  "9R2ES7A": {
+    "titre": "Vocabulaire, cercle et disque"
+  },
+  "9R2ES7B": {
+    "titre": "Distances et constructions au compas"
+  },
+  "9R2ES7C": {
+    "titre": "Cercles inscrit et circonscrit"
+  },
+  "9R2ES7": {
+    "titre": "Cercles"
+  },
+  "9R2ES0": {
+    "titre": "Géométrie du plan"
+  },
+  "9R2GM0": {
+    "titre": "Périmètres et aires"
+  },
+  "9R3NO9": {
+    "titre": "Résolution de problèmes"
+  },
+  "9R3NO0": {
+    "titre": "Nombres décimaux et calcul"
+  },
+  "9R3ES1D": {
+    "titre": "Vocabulaire et codage des polygones"
+  },
+  "9R3ES6": {
+    "titre": "Quadrilatères"
+  },
+  "9R3ES7A": {
+    "titre": "Vocabulaire, cercle et disque"
+  },
+  "9R3ES7B": {
+    "titre": "Distances et constructions au compas"
+  },
+  "9R3ES7C": {
+    "titre": "Cercles inscrit et circonscrit"
+  },
+  "9R3ES7": {
+    "titre": "Cercles"
+  },
+  "9R3ES0": {
+    "titre": "Géométrie du plan"
+  },
+  "9R3GM0": {
+    "titre": "Périmètres et aires"
+  },
+  "10CTNO0": {
+    "titre": "Puissances et racines"
+  },
+  "10LCNO0": {
+    "titre": "Puissances et racines"
+  },
+  "10LSNO0": {
+    "titre": "Puissances et racines"
+  },
+  "9R1QCMNO": {
+    "titre": "Nombres et opérations"
+  },
+  "9R1QCMFA": {
+    "titre": "Fonctions et algèbre"
+  },
+  "9R1QCMES": {
+    "titre": "Espace"
+  },
+  "9R1QCMGM": {
+    "titre": "Grandeurs et mesures"
+  },
+  "9R2QCMNO": {
+    "titre": "Nombres et opérations"
+  },
+  "9R2QCMFA": {
+    "titre": "Fonctions et algèbre"
+  },
+  "9R2QCMES": {
+    "titre": "Espace"
+  },
+  "9R2QCMGM": {
+    "titre": "Grandeurs et mesures"
+  },
+  "9R3QCMNO": {
+    "titre": "Nombres et opérations"
+  },
+  "9R3QCMFA": {
+    "titre": "Fonctions et algèbre"
+  },
+  "9R3QCMES": {
+    "titre": "Espace"
+  },
+  "9R3QCMGM": {
+    "titre": "Grandeurs et mesures"
+  },
+  "10CTQCMNO": {
+    "titre": "Nombres et opérations"
+  },
+  "10CTQCMFA1": {
+    "titre": "Proportionnalité"
+  },
+  "10CTQCMFA3": {
+    "titre": "Diagrammes"
+  },
+  "10CTQCMFA4": {
+    "titre": "Calcul littéral"
+  },
+  "10CTQCMFA": {
+    "titre": "Fonctions et algèbre"
+  },
+  "10CTQCMGM": {
+    "titre": "Grandeurs et mesures"
+  },
+  "10LCQCMNO": {
+    "titre": "Nombres et opérations"
+  },
+  "10LCQCMFA1": {
+    "titre": "Proportionnalité"
+  },
+  "10LCQCMFA2": {
+    "titre": "Fonctions"
+  },
+  "10LCQCMFA3": {
+    "titre": "Diagrammes"
+  },
+  "10LCQCMFA4": {
+    "titre": "Calcul littéral"
+  },
+  "10LCQCMFA5": {
+    "titre": "Équations"
+  },
+  "10LCQCMFA": {
+    "titre": "Fonctions et algèbre"
+  },
+  "10LCQCMGM": {
+    "titre": "Grandeurs et mesures"
+  },
+  "10LSQCMNO": {
+    "titre": "Nombres et opérations"
+  },
+  "10LSQCMFA1": {
+    "titre": "Proportionnalité"
+  },
+  "10LSQCMFA2": {
+    "titre": "Fonctions"
+  },
+  "10LSQCMFA3": {
+    "titre": "Diagrammes"
+  },
+  "10LSQCMFA4": {
+    "titre": "Calcul littéral"
+  },
+  "10LSQCMFA5": {
+    "titre": "Équations"
+  },
+  "10LSQCMFA": {
+    "titre": "Fonctions et algèbre"
+  },
+  "10LSQCMGM": {
+    "titre": "Grandeurs et mesures"
+  },
+  "11CTQCMNO": {
+    "titre": "Nombres et opérations"
+  },
+  "11CTQCMFA1": {
+    "titre": "Proportionnalité"
+  },
+  "11CTQCMFA2": {
+    "titre": "Fonctions"
+  },
+  "11CTQCMFA4": {
+    "titre": "Calcul littéral"
+  },
+  "11CTQCMFA5": {
+    "titre": "Équations"
+  },
+  "11CTQCMFA": {
+    "titre": "Fonctions et algèbre"
+  },
+  "11LCQCMNO": {
+    "titre": "Nombres et opérations"
+  },
+  "11LCQCMFA1": {
+    "titre": "Proportionnalité"
+  },
+  "11LCQCMFA2A": {
+    "titre": "Images, antécédents et coordonnées"
+  },
+  "11LCQCMFA2B": {
+    "titre": "Reconnaître une fonction et sa représentation"
+  },
+  "11LCQCMFA2C": {
+    "titre": "Déterminer une expression fonctionnelle"
+  },
+  "11LCQCMFA2": {
+    "titre": "Fonctions"
+  },
+  "11LCQCMFA4": {
+    "titre": "Calcul littéral"
+  },
+  "11LCQCMFA5": {
+    "titre": "Équations"
+  },
+  "11LCQCMFA": {
+    "titre": "Fonctions et algèbre"
+  },
+  "11LSQCMNO": {
+    "titre": "Nombres et opérations"
+  },
+  "11LSQCMFA1": {
+    "titre": "Proportionnalité"
+  },
+  "11LSQCMFA2A": {
+    "titre": "Images, antécédents et coordonnées"
+  },
+  "11LSQCMFA2B": {
+    "titre": "Reconnaître une fonction et sa représentation"
+  },
+  "11LSQCMFA2C": {
+    "titre": "Déterminer une expression fonctionnelle"
+  },
+  "11LSQCMFA2": {
+    "titre": "Fonctions"
+  },
+  "11LSQCMFA4": {
+    "titre": "Calcul littéral"
+  },
+  "11LSQCMFA5": {
+    "titre": "Équations"
+  },
+  "11LSQCMFA": {
+    "titre": "Fonctions et algèbre"
+  },
+  "11LSQCMFA2D": {
+    "titre": "Fonctions quadratiques (sensibilisation)"
+  },
+  "10LCFA5E": {
+    "titre": "Équations de la forme $ax^2=b$"
+  },
+  "10LSFA5E": {
+    "titre": "Équations de la forme $ax^2=b$"
+  },
+  "11CTFA4H": {
+    "titre": "Équations de la forme $ax^2=b$"
+  },
+  "11LCFA4H": {
+    "titre": "Équations de la forme $ax^2=b$"
+  }
+}

@@ -1,0 +1,326 @@
+<!doctype html>
+<html lang="fr" class="notranslate">
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      rel="icon"
+      type="image/png"
+      href="/favicon/favicon-96x96.png"
+      sizes="96x96"
+    />
+    <meta http-equiv="Content-Language" content="fr" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <title>MathALÉA – Exercices de maths interactifs, automatismes et annales</title>
+    <meta
+      name="description"
+      content="Des milliers d'exercices corrigés à données aléatoires pour tout le collège et le lycée, des annales de brevet et de baccalauréat, du calcul mental et des automatismes. Logiciel libre et gratuit développé par des enseignants."
+    />
+    <meta
+      name="keywords"
+      content="exercices maths, automatismes maths, calcul mental, brevet des collèges, baccalauréat, annales maths, collège, lycée, mathématiques, exercices corrigés, données aléatoires, logiciel libre, enseignants"
+    />
+    <meta name="author" content="CoopMaths" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://coopmaths.fr/mathalea" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://coopmaths.fr/mathalea" />
+    <meta property="og:title" content="MathALÉA – Exercices de mathématiques interactifs, automatismes et annales" />
+    <meta
+      property="og:description"
+      content="Des milliers d'exercices corrigés à données aléatoires pour tout le collège et le lycée, des annales de brevet et de baccalauréat, du calcul mental et des automatismes. Logiciel libre et gratuit développé par des enseignants."
+    />
+    <meta property="og:image" content="https://coopmaths.fr/mathalea/assets/images/social-preview.png" />
+    <meta property="og:locale" content="fr_FR" />
+    <meta property="og:site_name" content="MathALÉA" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="MathALÉA – Exercices de maths interactifs, automatismes et annales" />
+    <meta
+      name="twitter:description"
+      content="Des milliers d'exercices corrigés à données aléatoires pour tout le collège et le lycée. Logiciel libre et gratuit développé par des enseignants."
+    />
+    <meta name="twitter:image" content="https://coopmaths.fr/mathalea/assets/images/social-preview.png" />
+
+    <!-- Données structurées JSON-LD -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      "name": "MathALÉA",
+      "url": "https://coopmaths.fr/mathalea",
+      "description": "Des milliers d'exercices corrigés à données aléatoires pour tout le collège et le lycée, des annales de brevet et de baccalauréat, du calcul mental et des automatismes.",
+      "applicationCategory": "EducationalApplication",
+      "operatingSystem": "All",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "EUR"
+      },
+      "author": {
+        "@type": "Organization",
+        "name": "CoopMaths",
+        "url": "https://coopmaths.fr"
+      },
+      "audience": {
+        "@type": "EducationalAudience",
+        "educationalRole": "student",
+        "educationalLevel": "collège, lycée"
+      },
+      "inLanguage": "fr",
+      "isAccessibleForFree": true,
+      "license": "https://www.gnu.org/licenses/agpl-3.0.html"
+    }
+    </script>
+  </head>
+
+  <body class="flex-col min-h-full w-full font-sans touch-manipulation">
+    <div id="appMathalea">
+      <div id="loading" class="hidden">
+        <!-- <div class="loader">
+        <svg class="circular-loader" viewBox="25 25 50 50">
+          <circle class="loader-path" cx="50" cy="50" r="20" fill="none" stroke="#70c542" stroke-width="2" />
+        </svg>
+      </div> -->
+        <section class="cube-container">
+          <div id="cube">
+            <div class="face one">
+              <img
+                src="/assets/svg/face_coop.svg"
+                class="w-full h-full"
+                alt="face coop"
+              />
+            </div>
+            <div class="face two">
+              <img
+                src="/assets/svg/face_math.svg"
+                class="w-full h-full"
+                alt="face math"
+              />
+            </div>
+            <div class="face three">
+              <img
+                src="/assets/svg/face_coop.svg"
+                class="w-full h-full"
+                alt="face coop"
+              />
+            </div>
+            <div class="face four">
+              <img
+                src="/assets/svg/face_math.svg"
+                class="w-full h-full"
+                alt="face math"
+              />
+            </div>
+            <div class="face five">
+              <img
+                src="/assets/svg/face_alea.svg"
+                class="w-full h-full"
+                alt="face alea"
+              />
+            </div>
+            <div class="face six">
+              <img
+                src="/assets/svg/face_alea.svg"
+                class="w-full h-full"
+                alt="face alea"
+              />
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+    <script type="module" src="/src/bootstrap"></script>
+  </body>
+
+  <style>
+    #loading {
+      left: 50% !important;
+      margin-left: -100px;
+      position: fixed !important;
+      top: 50% !important;
+      margin-top: -100px;
+      width: 45px;
+      z-index: 9000 !important;
+    }
+
+    h1 {
+      font-family: Arial, Helvetica, sans-serif;
+      text-align: center;
+    }
+
+    /* Dé en 3D animé
+Inspiré de : https://codepen.io/SteveJRobertson/pen/zxEwrK
+et https://jsfiddle.net/nph3k39p/1/
+*/
+    :root {
+      --vect: calc((100vw / 10) * 0.57);
+    }
+
+    .cube-container {
+      width: 100px;
+      height: 100px;
+      position: relative;
+      margin: 0 auto 40px;
+      border: 1px solid #fff;
+
+      perspective: 1000px;
+      /* perspective-origin: 50% 100%; */
+    }
+
+    #cube {
+      position: relative;
+      margin: 100px auto;
+      height: calc(100vw / 10);
+      width: calc(100vw / 10);
+      animation: 4s rotateforever infinite linear;
+      transform-style: preserve-3d;
+    }
+
+    .face {
+      position: absolute;
+      background: hsla(14, 80%, 55%, 0.8);
+      height: calc(100vw / 10);
+      width: calc(100vw / 10);
+      padding: 10px;
+      border: white 5px solid;
+      /* border-radius: 2rem; */
+    }
+
+    .one {
+      transform: rotateX(-54.7356deg) rotateY(45deg) translateZ(var(--vect));
+    }
+
+    .two {
+      transform: rotateX(-54.7356deg) rotateY(135deg) translateZ(var(--vect));
+    }
+
+    .three {
+      transform: rotateX(-54.7356deg) rotateY(225deg) translateZ(var(--vect));
+    }
+
+    .four {
+      transform: rotateX(-54.7356deg) rotateY(315deg) translateZ(var(--vect));
+    }
+
+    .five {
+      transform: rotateX(35.2644deg) rotateZ(-45deg) translateZ(var(--vect));
+    }
+
+    .six {
+      transform: rotateX(35.2644deg) rotateY(180deg) rotateZ(-45deg)
+        translateZ(var(--vect));
+    }
+
+    @keyframes rotateforever {
+      to {
+        transform: rotateY(360deg);
+      }
+    }
+
+    /* #cube .front {
+  transform: rotateX(-54.7356deg) rotateY(45deg) translateZ(100px);
+}
+
+#cube .back {
+  transform: rotateX(-54.7356deg) rotateY(225deg) translateZ(100px);
+}
+
+#cube .right {
+  transform: rotateX(-54.7356deg) rotateY(135deg) translateZ(100px);
+}
+
+#cube .left {
+  transform: rotateX(-54.7356deg) rotateY(315deg) translateZ(100px);
+}
+
+#cube .top {
+  transform: rotateX(35.2644deg) rotateZ(-45deg) translateZ(100px);
+}
+
+#cube .bottom {
+  transform: rotateX(35.2644deg) rotateY(180deg) rotateZ(-45deg) translateZ(100px);
+}
+
+.cube-container {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  margin: 0 auto 40px;
+  border: 1px solid #FFF;
+  
+  perspective: 1000px;
+  perspective-origin: 50% 100%;
+}
+
+@keyframes rotation {
+  to {
+    transform: rotateY(360deg);
+  }
+}
+
+#cube {
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  position: absolute;
+  background-color: aquamarine;
+  
+  transform-style: preserve-3d;
+  animation: rotation 5s infinite linear;
+}
+
+#cube div {
+  background: hsla(14, 80%, 55%, 0.8);
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border: 2px solid #fff;
+  border-radius: 2rem;
+  
+  margin: 0 auto;  
+  
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 500%;
+  text-align: center;
+  padding: 10% 0;
+}
+
+.dot {
+  display: block;
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background: #fff;
+  border-radius: 15px;  
+}
+
+.front .dot1 { top: 85px; left: 85px; }
+.bottom .dot1 { top: 45px; left: 45px; }
+.bottom .dot2 { top: 125px; left: 125px; }
+.right .dot1 { top: 45px; left: 45px; }
+.right .dot2 { top: 85px; left: 85px; }
+.right .dot3 { top: 125px; left: 125px; }
+.left .dot1 { top: 45px; left: 45px; }
+.left .dot2 { top: 45px; left: 125px; }
+.left .dot3 { top: 125px; left: 45px; }
+.left .dot4 { top: 125px; left: 125px; }
+.top .dot1 { top: 45px; left: 45px; }
+.top .dot2 { top: 45px; left: 125px; }
+.top .dot3 { top: 85px; left: 85px; }
+.top .dot4 { top: 125px; left: 45px; }
+.top .dot5 { top: 125px; left: 125px; }
+.back .dot1 { top: 45px; left: 45px; }
+.back .dot2 { top: 45px; left: 85px; }
+.back .dot3 { top: 45px; left: 125px; }
+.back .dot4 { top: 125px; left: 45px; }
+.back .dot5 { top: 125px; left: 85px; }
+.back .dot6 { top: 125px; left: 125px; } */
+  </style>
+</html>

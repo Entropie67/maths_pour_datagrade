@@ -1,0 +1,27 @@
+{
+  "slides": [
+    {
+      "title": "Webinaires spécial lycée",
+      "message": "Retrouvons-nous mercredi 16 septembre à 18h pour échanger sur le travail des automatismes au lycée.",
+      "link": "https://coopmaths.fr/visio/",
+      "buttonTitle": "coopmaths.fr/visio",
+      "mobileVisible": false
+    },
+    {
+      "title": "Cahiers d'automatismes",
+      "message": "Nous proposons des cahiers libres et gratuits pour les élèves de 2nde et 1re générale et technologique afin des les aider à travailler tous les automatismes au programme.",
+      "image": "automatismes1re.png",
+      "link": "https://coopmaths.fr/www/automatismes/",
+      "buttonTitle": "Voir le cahier",
+      "mobileVisible": true
+    },
+    {
+      "background": "carousel04.jpg",
+      "title": "Capytale",
+      "message": "Les enseignants peuvent sélectionner des exercices, les donner à leurs élèves et récupérer tous les scores sur Capytale.",
+      "image": "capytale.png",
+      "link": "https://capytale2.ac-paris.fr/",
+      "mobileVisible": false
+    }
+  ]
+}

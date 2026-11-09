@@ -1,0 +1,29 @@
+/*
+  Author: Guillaume Valmont
+  Date : November 15, 2023
+  Licence: CC-BY-SA 4.0
+  https://forge.apps.education.fr/anki-templates/mathalea
+*/
+
+.card {
+  font-family: Helvetica;
+  font-size: 16px;
+  text-align: center;
+  color: black;
+  background-color: white;
+ }
+
+iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+iframe.desktop {
+  width: 100vw;
+  height: 100vh;
+}
+iframe.web {
+  max-width: 1140px;
+  width: 100vw;
+  height: 68vh;
+}

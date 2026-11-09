@@ -1,0 +1,103 @@
+{
+  "questions": [
+    {
+      "themes": "Primitives",
+      "level": "T",
+      "id": "pri1",
+      "title": "Primitive de $x^n$ ($n\\neq -1$)",
+      "question": "Quelle est une primitive de $x^n$ pour $n\\neq -1$ ?",
+      "answer": ["\\dfrac{x^{n+1}}{n+1}"],
+      "keys": ["x", "n", "POW"]
+    },
+    {
+      "themes": "Primitives",
+      "level": "T",
+      "id": "pri2",
+      "title": "Primitive de $\\dfrac{1}{x}$",
+      "question": "Quelle est une primitive de $\\dfrac{1}{x}$ sur $\\mathbb{R}_+^*$ ?",
+      "answer": ["\\ln(x)"],
+      "keys": ["x", "\\ln"]
+    },
+    {
+      "themes": "Primitives",
+      "level": "T",
+      "id": "pri3",
+      "title": "Primitive de $\\mathrm{e}^x$",
+      "question": "Quelle est une primitive de $\\mathrm{e}^x$ ?",
+      "answer": ["\\mathrm{e}^x"],
+      "keys": ["x", "\\mathrm{e}", "POW"]
+    },
+    {
+      "themes": "Primitives",
+      "level": "T",
+      "id": "pri4",
+      "title": "Primitive de $\\cos x$",
+      "question": "Quelle est une primitive de $\\cos x$ ?",
+      "answer": ["\\sin x"],
+      "keys": ["x", "\\sin", "\\cos"]
+    },
+    {
+      "themes": "Primitives",
+      "level": "T",
+      "id": "pri5",
+      "title": "Primitive de $\\sin x$",
+      "question": "Quelle est une primitive de $\\sin x$ ?",
+      "answer": ["-\\cos x"],
+      "keys": ["x", "\\sin", "\\cos"]
+    },
+    {
+      "themes": "Primitives",
+      "level": "T",
+      "id": "pri6",
+      "title": "Primitive de $u'/u$",
+      "question": "Quelle est une primitive de $\\dfrac{u'}{u}$ où $u$ est une fonction dérivable et $u(x)> 0$ ?",
+      "answer": ["\\ln(u)"],
+      "keys": ["u", "u'", "\\ln", "POW"]
+    },
+    {
+      "themes": "Primitives",
+      "level": "T",
+      "id": "pri7",
+      "title": "Primitive de $u \\cdot u'$",
+      "question": "Quelle est une primitive de $u(x) u'(x)$ ?",
+      "answer": ["\\dfrac{u^2}{2}", "\\dfrac{1}{2}u^2"],
+      "keys": ["u", "u'", "POW"]
+    },
+    {
+      "themes": "Primitives",
+      "level": "T",
+      "id": "pri8",
+      "title": "Primitive de $\\dfrac{u'}{u^2}$",
+      "question": "Quelle est une primitive de $\\dfrac{u'}{u^2}$ où $u$ est une fonction dérivable et $u(x)\\neq 0$ ?",
+      "answer": ["-\\dfrac{1}{u}", "\\dfrac{-1}{u}"],
+      "keys": ["u", "u'"]
+    },
+    {
+      "themes": "Primitives",
+      "level": "T",
+      "id": "pri9",
+      "title": "Primitive de $u'\\mathrm{e}^{u}$",
+      "question": "Quelle est une primitive de $u'(x)\\mathrm{e}^{u(x)}$ ?",
+      "answer": ["\\mathrm{e}^{u}"],
+      "keys": ["u", "u'", "\\mathrm{e}", "POW"]
+    },
+    {
+      "themes": "Primitives",
+      "level": "T",
+      "id": "pri10",
+      "title": "Primitive de $u'\\cos(u)$",
+      "question": "Quelle est une primitive de $u'(x)\\cos(u(x))$ ?",
+      "answer": ["\\sin(u)"],
+      "keys": ["u", "u'", "\\sin", "\\cos"]
+    },
+    {
+      "themes": "Primitives",
+      "level": "T",
+      "id": "pri11",
+      "title": "Primitive de $u'\\sin(u)$",
+      "question": "Quelle est une primitive de $u'(x)\\sin(u(x))$ ?",
+      "answer": ["-\\cos(u)"],
+      "keys": ["u", "u'", "\\sin", "\\cos"]
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "questions": [
+    {
+      "themes": "Fonctions",
+      "level": "2",
+      "id": "fon1",
+      "type": "qcm",
+      "title": "Fonction paire",
+      "question": "Si une fonction $f$ est paire, alors $f(-x)=$ ?",
+      "answer": "f(x)",
+      "badPropositions": ["-f(x)", "f(-x)", "-f(-x)"]
+    },
+    {
+      "themes": "Fonctions",
+      "level": "2",
+      "id": "fon2",
+      "type": "text",
+      "title": "Fonction paire",
+      "question": "Si une fonction $f$ est paire, alors $f(-x)=$ ?",
+      "answer": "f(x)",
+      "keys": ["f", "x", "(", ")", "="]
+    },
+     {
+      "themes": "Fonctions",
+      "level": "2",
+      "id": "fon3",
+      "type": "qcm",
+      "title": "Fonction impaire",
+      "question": "Si une fonction $f$ est impaire, alors $f(-x)=$ ?",
+      "answer": "-f(x)",
+      "badPropositions": ["f(x)", "f(-x)", "-f(-x)"]
+    },
+    {
+      "themes": "Fonctions",
+      "level": "2",
+      "id": "fon4",
+      "type": "text",
+      "title": "Fonction impaire",
+      "question": "Si une fonction $f$ est impaire, alors $f(-x)=$ ?",
+      "answer": "-f(x)",
+      "keys": ["f", "x", "(", ")", "="]
+    },
+    {
+      "themes": "Fonctions",
+      "level": "2",
+      "id": "fon5",
+      "title": "Fonction croissante",
+      "question": "Soit une fonction $f$ croissante sur un intervalle $I$, avec $a < b$ et $a, b \\in I$. Comparer $f(a)$ et $f(b)$.",
+      "answer": ["f(a) \\lt f(b)", "f(b) \\gt f(a)"],
+      "keys": ["f", "a", "b", "(", ")", "<", ">", "="]
+    },
+    {
+      "themes": "Fonctions",
+      "level": "2",
+      "id": "fon6",
+      "title": "Fonction décroissante",
+      "question": "Soit une fonction $f$ décroissante sur un intervalle $I$, avec $a < b$ et $a, b \\in I$. Comparer $f(a)$ et $f(b)$.",
+      "answer": ["f(a)>f(b)", "f(b)<f(a)"],
+      "keys": ["f", "a", "b", "(", ")", "<", ">", "="]
+    },
+    {
+      "themes": "Fonctions",
+      "level": "2",
+      "id": "fon7",
+      "title": "Fonction constante",
+      "question": "Soit une fonction $f$ constante sur un intervalle $I$, avec $a < b$ et $a, b \\in I$. Comparer $f(a)$ et $f(b)$.",
+      "answer": ["f(a)=f(b)", "f(b)=f(a)"],
+      "keys": ["f", "a", "b", "(", ")", "<", ">", "="]
+    }
+  ]
+}

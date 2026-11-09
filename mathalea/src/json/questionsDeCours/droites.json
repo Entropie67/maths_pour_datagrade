@@ -1,0 +1,111 @@
+{
+  "questions": [
+    {
+      "themes": "Droites",
+      "level": "2",
+      "id": "dro1",
+      "title": "Equation réduite d'une droite",
+      "question": "Quelle est l'équation réduite d'une droite ?",
+      "answer": ["y=ax+b","y=mx+p"],
+      "keys": ["a", "b","m", "p", "x", "y", "="]
+         },
+    {
+      "themes": "Droites",
+      "level": "2",
+      "id": "dro2",
+      "title": "Coefficient directeur d'une droite à partir de deux points.",
+      "question": "On donne $A(x_A;y_A)$ et $B(x_B;y_B)$, avec $x_A\\neq x_B$. Quel est le coefficient directeur de la droite $(AB)$?",
+      "answer": ["\\dfrac{y_B-y_A}{x_B-x_A}"],
+      "keys": ["x_A", "x_B","y_A", "y_B"]
+         },
+          {
+      "themes": "Droites",
+      "level": "2",
+      "id": "dro3",
+      "title": "Coefficient directeur d'une droite à partir de deux points.",
+      "question": "Combien vaut le coefficient directeur d'une droite d'équation $y=mx+p$ ?",
+      "answer": ["m"],
+      "keys": ["m", "p","x", "y"]
+         },
+          {
+      "themes": "Droites",
+      "level": "2",
+      "id": "dro4",
+      "title": "Ordonnée à l'origine d'une droite à partir de deux points.",
+      "question": "Combien vaut l'ordonnée à l'origine d'une droite d'équation $y=mx+p$ ?",
+      "answer": ["p"],
+      "keys": ["m", "p","x", "y"]
+         }
+  ,
+   {
+      "themes": "Droites",
+      "level": "2",
+      "id": "dro5",
+      "title": "Equation réduite d'une droite",
+      "question": "Quelle est la forme générale de l'équation réduite d'une droite ?",
+      "answer": ["y = mx + p"],
+      "keys": ["m", "p", "x", "y"]
+         },
+    {
+      "themes": "Droites",
+      "level": "2",
+      "id": "dro6",
+      "title": "Equation cartésienne d'une droite",
+      "question": "Quelle est la forme générale de l'équation cartésienne d'une droite ?",
+      "answer": ["ax + by + c = 0"],
+      "keys": ["a", "b", "c", "x", "y"]
+         },
+    {
+      "themes": "Droites",
+      "level": "2",
+      "id": "dro7",
+      "title": "Vecteur directeur d'une droite",
+      "question": "Quel est la composante manquante du vecteur directeur $\\vec u\\begin{pmatrix}1\\\\\\ldots\\end{pmatrix}$ d'une droite d'équation $y = mx + p$ ?",
+      "answer": ["m"],
+      "keys": ["p", "m"]      
+    },
+    {
+      "themes": "Droites",
+      "level": "2",
+      "id": "dro8",
+       "type": "qcm",
+      "title": "Coefficient directeur (QCM)",
+      "question": "Comment appelle-t-on le coefficient $m$ dans l'équation réduite d'une droite d'équation $y = mx + p$ ?",
+      "answer": ["coefficient directeur"],
+      "badPropositions": ["vecteur directeur", "ordonnée à l'origine"]
+    },
+     {
+      "themes": "Droites",
+      "level": "2",
+      "id": "dro9",
+       "type": "text",
+      "title": "Coefficient directeur",
+      "question": "Comment appelle-t-on le coefficient $m$ dans l'équation réduite d'une droite d'équation $y = mx + p$ ?",
+      "answer": ["coefficient directeur"],
+      "badPropositions": ["vecteur directeur", "ordonnée à l'origine"]
+    },
+    {
+      "themes": "Droites",
+      "level": "2",
+      "id": "dro10",
+      "type": "qcm",
+      "title": "Ordonnée à l'origine (QCM)",
+      "question": "Comment appelle-t-on le coefficient $p$ dans l'équation réduite d'une droite d'équation $y = mx + p$ ?",
+      "answer": ["ordonnée à l'origine"],
+      "keys": ["p"],
+ "badPropositions": ["coefficient directeur", "vecteur directeur"]
+    },
+    {
+      "themes": "Droites",
+      "level": "2",
+      "id": "dro11",
+      "type": "text",
+      "title": "Ordonnée à l'origine",
+      "question": "Comment appelle-t-on le coefficient $p$ dans l'équation réduite d'une droite d'équation $y = mx + p$ ?",
+      "answer": ["ordonnée à l'origine"],
+      "keys": ["p"],
+       "badPropositions": ["ordonnée", "origine"]
+    }
+]
+
+}

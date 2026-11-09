@@ -1,0 +1,1050 @@
+# You can override the included template(s) by including variable overrides
+# SAST customization: https://docs.gitlab.com/ee/user/application_security/sast/#customizing-the-sast-settings
+# Secret Detection customization: https://docs.gitlab.com/ee/user/application_security/secret_detection/#customizing-settings
+# Dependency Scanning customization: https://docs.gitlab.com/ee/user/application_security/dependency_scanning/#customizing-the-dependency-scanning-settings
+# Container Scanning customization: https://docs.gitlab.com/ee/user/application_security/container_scanning/#customizing-the-container-scanning-settings
+# Note that environment variables can be set in several places
+# See https://docs.gitlab.com/ee/ci/variables/#cicd-variable-precedence
+# You can override the included template(s) by including variable overrides
+# SAST customization: https://docs.gitlab.com/ee/user/application_security/sast/#customizing-the-sast-settings
+# Secret Detection customization: https://docs.gitlab.com/ee/user/application_security/secret_detection/#customizing-settings
+# Dependency Scanning customization: https://docs.gitlab.com/ee/user/application_security/dependency_scanning/#customizing-the-dependency-scanning-settings
+# Container Scanning customization: https://docs.gitlab.com/ee/user/application_security/container_scanning/#customizing-the-container-scanning-settings
+# Note that environment variables can be set in several places
+# See https://docs.gitlab.com/ee/ci/variables/#cicd-variable-precedence
+
+stages:
+  - setup
+  - planified
+  - test
+  - playwright-test
+  - build-projet
+  - compile-pdf
+  - playwright
+  - playwright-pdfDNB
+  - playwright-pdfBAC
+  - build_ci_pdf
+  - build
+  - release
+  - deploy
+  - monitor
+
+variables:
+  SAST_EXCLUDED_PATHS: 'node_modules,.pnpm-store,dist,build,coverage,logs,.cache,.git,tests/e2e,playwright-report'
+  SAST_EXCLUDED_ANALYZERS: 'bandit,gosec,flawfinder,brakeman'
+  FF_USE_POD_ACTIVE_DEADLINE_SECONDS: 'false'
+  DOCKER_HOST: tcp://docker:2375
+  DOCKER_TLS_CERTDIR: ''
+  DOCKER_IMAGE: '$CI_REGISTRY_IMAGE/ci/tex-node:node22-texlive-2026-06'
+  DOCKERFILE: docker/ci-pdf/Dockerfile
+  PNPM_STORE_DIR: .pnpm-store
+  PNPM_CONFIG_CACHE_DIR: .pnpm-store
+  KUBERNETES_MEMORY_REQUEST: '6Gi'
+  KUBERNETES_MEMORY_LIMIT: '10Gi'
+
+cache:
+  key:
+    files:
+      - pnpm-lock.yaml
+      - node_modules
+  paths:
+    - .pnpm-store/
+
+semgrep-sast:
+  rules:
+    - if: $CI_COMMIT_BRANCH == "main"
+      when: never
+    - when: never
+
+sast:
+  rules:
+    - when: never
+
+include:
+  - template: Security/SAST.gitlab-ci.yml
+  # Hébergement Scaleway (image du site, staging, production) : deploy/README.md
+  - local: deploy/gitlab-ci.yml
+
+# Un pipeline lancé avec DEPLOY_STAGING=true (le scheduled pipeline de
+# déploiement du staging, ou "Run pipeline" à la main) ne fait que déployer :
+# les jobs de test et de construction du dépôt s'effacent, seuls ceux de
+# deploy/gitlab-ci.yml tournent.
+# De même, A11Y_REPORT=true ne lance que le job a11y-report.
+.hors_deploiement:
+  rules:
+    - if: $DEPLOY_STAGING == "true"
+      when: never
+    - if: $A11Y_REPORT == "true"
+      when: never
+
+default:
+  interruptible: true # Annule le job si un nouveau pipeline démarre
+  image: node:23.9.0
+
+.pnpm_setup:
+  before_script:
+    - npm install -g pnpm@12.6.0
+
+setup:
+  stage: setup
+  image: node:23.9.0
+  extends: .pnpm_setup
+  cache:
+    key:
+      files:
+        - pnpm-lock.yaml
+        - node_modules
+    paths:
+      - .pnpm-store/
+    policy: pull-push
+  script:
+    - pnpm install --frozen-lockfile --prefer-offline --silent
+  rules:
+    - !reference [.hors_deploiement, rules]
+    # Se lance uniquement si le pipeline est déclenché par une Merge Request
+    - if: $CI_PIPELINE_SOURCE == "merge_request_event"
+      when: always
+    - if: $CI_COMMIT_BRANCH == "main"
+      when: always
+    - if: $CI_COMMIT_BRANCH == "guironne-jobs"
+      when: always
+    - if: $CI_PIPELINE_SOURCE == "schedule"
+      when: always
+    - if: $CI_COMMIT_BRANCH == "pipeline"
+      when: always
+    - when: never
+  artifacts:
+    untracked: false
+    when: on_success
+    expire_in: 1 day
+
+build_ci_pdf:
+  stage: build-projet
+  image: gcr.io/kaniko-project/executor:v1.23.2-debug
+  variables:
+    DEST_IMAGE: '$CI_REGISTRY_IMAGE/ci/tex-node:node22-texlive-2026-06'
+    CACHE_REPO: '$CI_REGISTRY_IMAGE/cache/kaniko'
+  script:
+    - mkdir -p /kaniko/.docker
+    - echo "{\"auths\":{\"$CI_REGISTRY\":{\"username\":\"gitlab-ci-token\",\"password\":\"$CI_JOB_TOKEN\"}}}" > /kaniko/.docker/config.json
+    - /kaniko/executor --destination="$DEST_IMAGE" --cache=true --cache-repo="$CACHE_REPO" --dockerfile="$DOCKERFILE"
+  rules:
+    - !reference [.hors_deploiement, rules]
+    - if: $CI_COMMIT_BRANCH == "pipeline"
+      when: manual
+    - if: $CI_COMMIT_BRANCH == "guironne-jobs"
+      when: manual
+    - when: never
+# ================================================ #
+#             Templates
+# ================================================ #
+.testCIPDF:
+  image: $DOCKER_IMAGE
+  stage: compile-pdf
+  allow_failure: false
+  timeout: 5h
+  script:
+    - npm install -g pnpm@12.6.0
+  rules:
+    - !reference [.hors_deploiement, rules]
+    - if: $CI_COMMIT_BRANCH == "guironne-jobs"
+      when: always
+    - if: $CI_COMMIT_BRANCH == "mathalea-jobs"
+      when: always
+    - if: $CI_PIPELINE_SOURCE == "schedule" && $CI_TEST_MA == "PDF"
+      when: always
+    - if: $CI_PIPELINE_SOURCE == "schedule"
+      when: always
+    - if: $CI_COMMIT_BRANCH == "pipeline"
+      when: manual
+    - when: never
+  retry:
+    max: 2
+    when:
+      - runner_system_failure
+      - api_failure
+      - unknown_failure
+  artifacts:
+    when: always
+    expire_in: 2 day
+    # exclude:
+    #  - updatefile/output/*.*
+  cache:
+    key:
+      files:
+        - pnpm-lock.yaml
+        - node_modules
+    paths:
+      - .pnpm-store/
+    policy: pull
+
+.testCI:
+  image: mcr.microsoft.com/playwright:v1.64.1-noble
+  stage: playwright-test
+  allow_failure: true
+  timeout: 5h
+  rules:
+    - !reference [.hors_deploiement, rules]
+    - if: $CI_COMMIT_BRANCH == "main" && $CI_PIPELINE_SOURCE == "merge_request_event"
+      when: always
+    - if: $CI_COMMIT_BRANCH == "guironne-jobs"
+      when: always
+    - if: $CI_PIPELINE_SOURCE == "schedule"
+      when: always
+    - if: $CI_COMMIT_BRANCH == "pipeline"
+      when: manual
+    - when: never
+  retry:
+    max: 2
+    when:
+      - runner_system_failure
+      - api_failure
+      - unknown_failure
+  artifacts:
+    when: on_failure
+    expire_in: 2 day
+  cache:
+    key:
+      files:
+        - pnpm-lock.yaml
+        - node_modules
+    paths:
+      - .pnpm-store/
+    policy: pull
+
+.install_dependenciesPDFDNB:
+  extends: .testCIPDF
+  before_script:
+    - git clone https://forge.apps.education.fr/coopmaths/dnb.git ./public/static/dnb
+    - mv ./public/static/dnb/sujets_decoupes/* ./public/static/dnb/
+  script:
+    - pnpm run makeJson
+
+.install_dependenciesPDFBAC:
+  extends: .testCIPDF
+  before_script:
+    - git clone https://forge.apps.education.fr/coopmaths/bac.git ./public/static/bac
+  script:
+    - pnpm run makeJson
+
+.testExosModifiedConsolidated:
+  image: mcr.microsoft.com/playwright:v1.64.1-noble
+  stage: build-projet
+  allow_failure: false
+  timeout: 5h
+  retry:
+    max: 2
+    when:
+      - runner_system_failure
+      - api_failure
+      - unknown_failure
+      - script_failure
+  artifacts:
+    when: on_failure
+    expire_in: 2 day
+  cache:
+    key:
+      files:
+        - pnpm-lock.yaml
+        - node_modules
+    paths:
+      - .pnpm-store/
+    policy: pull
+
+# ======================================= #
+# Tests effectués la nuit sur branche Guironne-Jobs #
+# ========================================#
+playwright-console-consolidated:
+  extends: .testCI
+  stage: playwright-test
+  timeout: 5h
+  allow_failure: true
+  # Un job par niveau : chaque niveau prend 25 à 35 min et les runners de la
+  # Forge coupent tout job au bout de 2 h, quel que soit `timeout`.
+  parallel:
+    matrix:
+      - NIV:
+          - '6e/6'
+          - '5e/5'
+          - '4e/4'
+          - '3e/3'
+          - '2e/2'
+          - '1e/1'
+          - 'TEx^TSpe^techno'
+          - 'QCM'
+          - 'can/6e^can/5e'
+          - 'can/4e^can/3e'
+          - 'can/2e^can/1e'
+          - 'can/Ex^can/TSpe'
+  script:
+    - npm install -g pnpm@12.6.0
+    - nohup pnpm start 2>&1 >/dev/null &
+    - sleep 50
+    - until $(curl --output /dev/null --head --fail http://localhost:80/alea/); do printf '.'; sleep 20; done
+    - echo "🧪 console_errors NIV=$NIV"
+    - pnpm test:e2e:console_errors
+  artifacts:
+    when: on_failure
+    paths:
+      - updatefile/output/can*
+      - updatefile/output/6e*
+      - updatefile/output/5e*
+      - updatefile/output/4e*
+      - updatefile/output/3e*
+
+playwright-pdf-consolidated:
+  extends: .testCIPDF
+  stage: compile-pdf
+  timeout: 5h
+  allow_failure: false
+  script:
+    - npm install -g pnpm@12.6.0
+    - nohup pnpm start 2>&1 >/dev/null &
+    - sleep 30
+    - until $(curl --output /dev/null --head --fail http://localhost:80/alea/); do printf '.'; sleep 20; done
+    - |
+      FAIL=0
+
+      run_pdf () {
+        NIV_LABEL="$1"
+        STATUS_VAR="$2"
+        echo "🧪 pdfexports NIV=$NIV_LABEL"
+        if NIV="$NIV_LABEL" STYLES="Coopmaths" pnpm test:e2e:pdfexports; then
+          eval "$STATUS_VAR=ok"
+        else
+          eval "$STATUS_VAR=ko"
+          FAIL=1
+        fi
+      }
+
+      run_pdf "can/2e" STATUS_CAN_2E
+      run_pdf "can/1e" STATUS_CAN_1E
+      run_pdf "can/6e" STATUS_CAN_6E
+      run_pdf "can/5e" STATUS_CAN_5E
+      run_pdf "can/4e" STATUS_CAN_4E
+      run_pdf "can/3e" STATUS_CAN_3E
+      run_pdf "6e" STATUS_6E
+      run_pdf "5e" STATUS_5E
+      run_pdf "4e/4A^4e/4F^4e/4I^4e/4P^4e/4S" STATUS_4E_A_F_I_P_S
+      run_pdf "4e/4C" STATUS_4E_C
+      run_pdf "4e/4G^4e/4L" STATUS_4E_G_L
+      run_pdf "3e" STATUS_3E
+
+      echo ""
+      echo "═══════════════════════════════════════════"
+      echo "📊 Résumé pdf consolidated"
+      echo "═══════════════════════════════════════════"
+      [ "$STATUS_CAN_2E" = "ok" ] && echo "✅ can/2e" || echo "❌ can/2e"
+      [ "$STATUS_CAN_1E" = "ok" ] && echo "✅ can/1e" || echo "❌ can/1e"
+      [ "$STATUS_CAN_6E" = "ok" ] && echo "✅ can/6e" || echo "❌ can/6e"
+      [ "$STATUS_CAN_5E" = "ok" ] && echo "✅ can/5e" || echo "❌ can/5e"
+      [ "$STATUS_CAN_4E" = "ok" ] && echo "✅ can/4e" || echo "❌ can/4e"
+      [ "$STATUS_CAN_3E" = "ok" ] && echo "✅ can/3e" || echo "❌ can/3e"
+      [ "$STATUS_6E" = "ok" ] && echo "✅ 6e" || echo "❌ 6e"
+      [ "$STATUS_5E" = "ok" ] && echo "✅ 5e" || echo "❌ 5e"
+      [ "$STATUS_4E_A_F_I_P_S" = "ok" ] && echo "✅ 4e/4A^4e/4F^4e/4I^4e/4P^4e/4S" || echo "❌ 4e/4A^4e/4F^4e/4I^4e/4P^4e/4S"
+      [ "$STATUS_4E_C" = "ok" ] && echo "✅ 4e/4C" || echo "❌ 4e/4C"
+      [ "$STATUS_4E_G_L" = "ok" ] && echo "✅ 4e/4G^4e/4L" || echo "❌ 4e/4G^4e/4L"
+      [ "$STATUS_3E" = "ok" ] && echo "✅ 3e" || echo "❌ 3e"
+      exit $FAIL
+  artifacts:
+    when: on_failure
+    paths:
+      - updatefile/output/can*
+      - updatefile/output/6e*
+      - updatefile/output/5e*
+      - updatefile/output/4e*
+      - updatefile/output/3e*
+
+playwright-pdf-dnb-consolidated:
+  extends:
+    - .install_dependenciesPDFDNB
+  stage: playwright-pdfDNB
+  timeout: 5h
+  allow_failure: true
+  script:
+    - npm install -g pnpm@12.6.0
+    - nohup pnpm start 2>&1 >/dev/null &
+    - sleep 50
+    - until $(curl --output /dev/null --head --fail http://localhost:80/alea/); do printf '.'; sleep 20; done
+    - |
+      FAIL=0
+      run_pdf () {
+      NIV_LABEL="$1"
+      STATUS_VAR="$2"
+      echo "🧪 pdfexports NIV=$NIV_LABEL"
+      if NIV="$NIV_LABEL" pnpm test:e2e:pdfexports; then
+      eval "$STATUS_VAR=ok"
+      else
+      eval "$STATUS_VAR=ko"
+      FAIL=1
+      fi
+      }
+
+      run_pdf "dnb_2013^dnb_2014^dnb_2015" STATUS_DNB_2013_2015
+      run_pdf "dnb_2016^dnb_2017^dnb_2018^dnb_2019" STATUS_DNB_2016_2019
+      run_pdf "dnb_2020^dnb_2021^dnb_2022^dnb_2023^dnb_2024" STATUS_DNB_2020_2024
+
+      echo ""
+      echo "═══════════════════════════════════════════"
+      echo "📊 Résumé pdf dnb consolidated"
+      echo "═══════════════════════════════════════════"
+      [ "$STATUS_DNB_2013_2015" = "ok" ] && echo "✅ dnb_2013^dnb_2014^dnb_2015" || echo "❌ dnb_2013^dnb_2014^dnb_2015"
+      [ "$STATUS_DNB_2016_2019" = "ok" ] && echo "✅ dnb_2016^dnb_2017^dnb_2018^dnb_2019" || echo "❌ dnb_2016^dnb_2017^dnb_2018^dnb_2019"
+      [ "$STATUS_DNB_2020_2024" = "ok" ] && echo "✅ dnb_2020^dnb_2021^dnb_2022^dnb_2023^dnb_2024" || echo "❌ dnb_2020^dnb_2021^dnb_2022^dnb_2023^dnb_2024"
+      echo "═══════════════════════════════════════════"
+
+      exit "$FAIL"
+  artifacts:
+    when: on_failure
+    paths:
+      - updatefile/output/dnb*
+
+playwright-pdf-bac-consolidated:
+  extends:
+    - .install_dependenciesPDFBAC
+  stage: playwright-pdfBAC
+  timeout: 5h
+  allow_failure: true
+  script:
+    - npm install -g pnpm@12.6.0
+    - nohup pnpm start 2>&1 >/dev/null &
+    - sleep 50
+    - until $(curl --output /dev/null --head --fail http://localhost:80/alea/); do printf '.'; sleep 20; done
+    - |
+      FAIL=0
+
+      run_pdf () {
+        NIV_LABEL="$1"
+        STATUS_VAR="$2"
+        echo "🧪 pdfexports NIV=$NIV_LABEL"
+        if NIV="$NIV_LABEL" pnpm test:e2e:pdfexports; then
+          eval "$STATUS_VAR=ok"
+        else
+          eval "$STATUS_VAR=ko"
+          FAIL=1
+        fi
+      }
+
+      run_pdf "e3c_2024^e3c_2023^e3c_2022^e3c_2021" STATUS_E3C
+      run_pdf "bac_2024^bac_2023^bac_2022^bac_2021" STATUS_BAC
+
+      echo ""
+      echo "═══════════════════════════════════════════"
+      echo "📊 Résumé pdf bac consolidated"
+      echo "═══════════════════════════════════════════"
+      [ "$STATUS_E3C" = "ok" ] && echo "✅ e3c_2024^e3c_2023^e3c_2022^e3c_2021" || echo "❌ e3c_2024^e3c_2023^e3c_2022^e3c_2021"
+      [ "$STATUS_BAC" = "ok" ] && echo "✅ bac_2024^bac_2023^bac_2022^bac_2021" || echo "❌ bac_2024^bac_2023^bac_2022^bac_2021"
+      echo "═══════════════════════════════════════════"
+
+      exit "$FAIL"
+  artifacts:
+    when: on_failure
+    paths:
+      - updatefile/output/e3c*
+      - updatefile/output/bac*
+    expire_in: 2 days
+
+# =============================================== #
+# Tests effectués la nuit sur main
+# =============================================== #
+
+jsdom-all-exercises:
+  image: node:23.9.0
+  cache:
+    key:
+      files:
+        - pnpm-lock.yaml
+        - node_modules
+    paths:
+      - .pnpm-store/
+    policy: pull
+  stage: planified
+  timeout: 1h
+  script:
+    - npm install -g pnpm@12.6.0
+    - NODE_OPTIONS=--max-old-space-size=4096
+    - pnpm run makeJson >/dev/null
+    - sleep 50
+    - |
+      FAIL=0
+      run_all () {
+        NIV_LABEL="$1"
+        STATUS_VAR="$2"
+        echo "🧪 test all_exercises NIV=$NIV_LABEL"
+        if NIV="$NIV_LABEL" NB_EXOS_PAR_LOT=1000 pnpm test:e2e:all_exercises; then
+          eval "$STATUS_VAR=ok"
+        else
+          eval "$STATUS_VAR=ko"
+          FAIL=1
+        fi
+      }
+
+      run_all "can/2e^can/1e" STATUS_CAN_2E_1E
+      run_all "can/6e^can/5e" STATUS_CAN_6E_5E
+      run_all "can/4e^can/3e" STATUS_CAN_4E_3E
+      run_all "6e/6" STATUS_6E
+      run_all "5e/5" STATUS_5E
+      run_all "4e/4" STATUS_4E
+      run_all "3e/3" STATUS_3E
+
+      echo ""
+      echo "═══════════════════════════════════════════"
+      echo "📊 Résumé all_exercises"
+      echo "═══════════════════════════════════════════"
+      [ "$STATUS_CAN_2E_1E" = "ok" ] && echo "✅ can/2e^can/1e" || echo "❌ can/2e^can/1e"
+      [ "$STATUS_CAN_6E_5E" = "ok" ] && echo "✅ can/6e^can/5e" || echo "❌ can/6e^can/5e"
+      [ "$STATUS_CAN_4E_3E" = "ok" ] && echo "✅ can/4e^can/3e" || echo "❌ can/4e^can/3e"
+      [ "$STATUS_6E" = "ok" ] && echo "✅ 6e/6" || echo "❌ 6e/6"
+      [ "$STATUS_5E" = "ok" ] && echo "✅ 5e/5" || echo "❌ 5e/5"
+      [ "$STATUS_4E" = "ok" ] && echo "✅ 4e/4" || echo "❌ 4e/4"
+      [ "$STATUS_3E" = "ok" ] && echo "✅ 3e/3" || echo "❌ 3e/3"
+      echo "═══════════════════════════════════════════"
+
+      exit "$FAIL"
+
+  artifacts:
+    when: on_failure
+    expire_in: 2 days
+  retry:
+    max: 2
+    when:
+      - runner_system_failure
+      - api_failure
+      - unknown_failure
+      - script_failure
+  rules:
+    - !reference [.hors_deploiement, rules]
+    - if: $CI_PIPELINE_SOURCE == "schedule"
+      when: always
+    - if: $CI_COMMIT_BRANCH == "pipeline"
+      when: manual
+    - when: never
+
+playwright-caneleve:
+  image: mcr.microsoft.com/playwright:v1.64.1-noble
+  cache:
+    key:
+      files:
+        - pnpm-lock.yaml
+        - node_modules
+    paths:
+      - .pnpm-store/
+    policy: pull
+  stage: playwright
+  allow_failure: true
+  timeout: 5h
+  script:
+    - npm install -g pnpm@12.6.0
+    - NODE_OPTIONS=--max-old-space-size=4096
+    - nohup pnpm start 2>&1 >/dev/null &
+    - sleep 50
+    - until $(curl --output /dev/null --head --fail http://localhost:80/alea/); do printf '.'; sleep 20; done
+    - |
+      FAIL=0
+
+      echo "🧪 test:e2e:views"
+      if pnpm test:e2e:views; then
+        STATUS_VIEWS=ok
+      else
+        STATUS_VIEWS=ko
+        FAIL=1
+      fi
+
+      echo "═══════════════════════════════════════════"
+      [ "$STATUS_VIEWS" = "ok" ] && echo "✅ test:e2e:views" || echo "❌ test:e2e:views"
+      echo "═══════════════════════════════════════════"
+
+      exit "$FAIL"
+  artifacts:
+    when: on_failure
+    expire_in: 2 days
+  retry:
+    max: 2
+    when:
+      - runner_system_failure
+      - api_failure
+      - unknown_failure
+      - script_failure
+  rules:
+    - !reference [.hors_deploiement, rules]
+    - if: $CI_PIPELINE_SOURCE == "schedule"
+      when: always
+    - if: $CI_COMMIT_BRANCH == "pipeline"
+      when: manual
+    - when: never
+
+playwright-consistency:
+  image: mcr.microsoft.com/playwright:v1.64.1-noble
+  cache:
+    key:
+      files:
+        - pnpm-lock.yaml
+        - node_modules
+    paths:
+      - .pnpm-store/
+    policy: pull
+  stage: playwright
+  allow_failure: true
+  timeout: 5h
+  script:
+    - npm install -g pnpm@12.6.0
+    - NODE_OPTIONS=--max-old-space-size=4096
+    - nohup pnpm start 2>&1 >/dev/null &
+    - sleep 50
+    - until $(curl --output /dev/null --head --fail http://localhost:80/alea/); do printf '.'; sleep 20; done
+    - |
+      FAIL=0
+      echo "🧪 test:e2e:consistency"
+      if pnpm test:e2e:consistency; then
+      STATUS_CONSISTENCY=ok
+      else
+      STATUS_CONSISTENCY=ko
+      FAIL=1
+      fi
+
+      echo "═══════════════════════════════════════════"
+      echo "📊 Résumé consistency"
+      [ "$STATUS_CONSISTENCY" = "ok" ] && echo "✅ test:e2e:consistency" || echo "❌ test:e2e:consistency"
+      echo "═══════════════════════════════════════════"
+      exit "$FAIL"
+  artifacts:
+    when: on_failure
+    expire_in: 2 days
+  retry:
+    max: 2
+    when:
+      - runner_system_failure
+      - api_failure
+      - unknown_failure
+      - script_failure
+  rules:
+    - !reference [.hors_deploiement, rules]
+    - if: $CI_PIPELINE_SOURCE == "schedule"
+      when: always
+    - if: $CI_COMMIT_BRANCH == "pipeline"
+      when: manual
+    - when: never
+
+playwright-interactivity:
+  image: mcr.microsoft.com/playwright:v1.64.1-noble
+  stage: playwright
+  cache:
+    key:
+      files:
+        - pnpm-lock.yaml
+        - node_modules
+    paths:
+      - .pnpm-store/
+    policy: pull
+  allow_failure: false
+  timeout: 5h
+  script:
+    - npm install -g pnpm@12.6.0
+    - NODE_OPTIONS=--max-old-space-size=4096
+    - nohup pnpm start 2>&1 >/dev/null &
+    - sleep 50
+    - until $(curl --output /dev/null --head --fail http://localhost:80/alea/); do printf '.'; sleep 20; done
+    - |
+      FAIL=0
+      echo "🧪 test:e2e:interactivity"
+      if pnpm test:e2e:interactivity; then
+      STATUS_INTERACTIVITY=ok
+      else
+      STATUS_INTERACTIVITY=ko
+      FAIL=1
+      fi
+
+      echo ""
+      echo "═══════════════════════════════════════════"
+      [ "$STATUS_INTERACTIVITY" = "ok" ] && echo "✅ test:e2e:interactivity" || echo "❌ test:e2e:interactivity"
+      echo "═══════════════════════════════════════════"
+
+      exit "$FAIL"
+  artifacts:
+    when: on_failure
+    expire_in: 2 days
+  retry:
+    max: 2
+    when:
+      - runner_system_failure
+      - api_failure
+      - unknown_failure
+      - script_failure
+  rules:
+    - !reference [.hors_deploiement, rules]
+    - if: $CI_PIPELINE_SOURCE == "schedule"
+      when: always
+    - if: $CI_COMMIT_BRANCH == "pipeline"
+      when: manual
+    - when: never
+
+# Rapport d'accessibilité : informatif, il ne doit jamais faire échouer un pipeline.
+# Il a son propre pipeline planifié (variable A11Y_REPORT=true), car les planifications
+# existantes tournent plusieurs fois par jour.
+# Cf documentation/tests/rapport-accessibilite.md
+a11y-report:
+  image: mcr.microsoft.com/playwright:v1.64.1-noble
+  stage: playwright
+  needs: []
+  # Un push sur main ne doit pas faire perdre le passage de la semaine
+  interruptible: false
+  cache:
+    key:
+      files:
+        - pnpm-lock.yaml
+        - node_modules
+    paths:
+      - .pnpm-store/
+    policy: pull
+  allow_failure: true
+  timeout: 1h
+  script:
+    - npm install -g pnpm@12.6.0
+    - pnpm install --frozen-lockfile --prefer-offline --silent
+    # Comparer au dernier passage du job, sinon au fichier versionné dans reports/
+    - |
+      if curl --silent --fail --location --header "JOB-TOKEN: $CI_JOB_TOKEN" --output a11y-precedent.json "$CI_API_V4_URL/projects/$CI_PROJECT_ID/jobs/artifacts/$CI_COMMIT_REF_NAME/raw/reports/a11y-status.json?job=a11y-report"; then
+        export A11Y_PREVIOUS=a11y-precedent.json
+      else
+        echo "Pas de passage précédent en CI : comparaison à reports/a11y-status.json"
+      fi
+    - bash tasks/ci-with-dev-server.sh pnpm a11y:report || echo "⚠️ Rapport d'accessibilité non produit, voir artifacts/ci-vite.log"
+  artifacts:
+    when: always
+    expire_in: 1 year
+    paths:
+      - reports/a11y-report.md
+      - reports/a11y-status.json
+      - artifacts/ci-vite.log
+  retry:
+    max: 2
+    when:
+      - runner_system_failure
+      - api_failure
+      - unknown_failure
+  rules:
+    - if: $A11Y_REPORT == "true"
+      when: always
+    - if: $CI_COMMIT_BRANCH == "pipeline"
+      when: manual
+    - when: never
+
+audit-dependances:
+  stage: planified
+  needs: []
+  allow_failure: false
+  script:
+    # Ne nécessite pas d'installation : pnpm audit lit uniquement pnpm-lock.yaml.
+    - npm install -g pnpm@12.6.0
+    - pnpm audit
+  rules:
+    - !reference [.hors_deploiement, rules]
+    - if: $CI_PIPELINE_SOURCE == "schedule"
+      when: always
+    - when: never
+
+tests-unitaires:
+  stage: planified
+  extends: .pnpm_setup
+  allow_failure: true
+  cache:
+    key:
+      files:
+        - pnpm-lock.yaml
+        - node_modules
+    paths:
+      - .pnpm-store/
+    policy: pull
+  script:
+    - pnpm run makeJson
+    - sleep 50
+    - NODE_OPTIONS=--max-old-space-size=4096 pnpm test:unit
+  rules:
+    - !reference [.hors_deploiement, rules]
+    # Se lance uniquement si le pipeline est déclenché par une Merge Request
+    # - if: $CI_PIPELINE_SOURCE == "merge_request_event"
+    #  when: always
+    - if: $CI_COMMIT_BRANCH == "main"
+      when: always
+    - if: $CI_COMMIT_BRANCH == "guironne-jobs"
+      when: always
+    - if: $CI_PIPELINE_SOURCE == "schedule"
+      when: always
+    - if: $CI_COMMIT_BRANCH == "pipeline"
+      when: manual
+    - when: never
+  artifacts:
+    when: on_failure
+    expire_in: 2 day
+
+tests-src:
+  stage: planified
+  extends: .pnpm_setup
+  allow_failure: true
+  cache:
+    key:
+      files:
+        - pnpm-lock.yaml
+        - node_modules
+    paths:
+      - .pnpm-store/
+    policy: pull
+  script:
+    - pnpm run makeJson
+    - sleep 30
+    - NODE_OPTIONS=--max-old-space-size=4096 pnpm test:src
+  rules:
+    - !reference [.hors_deploiement, rules]
+    # Se lance uniquement si le pipeline est déclenché par une Merge Request
+    # - if: $CI_PIPELINE_SOURCE == "merge_request_event"
+    #  when: always
+    - if: $CI_COMMIT_BRANCH == "main"
+      when: always
+    - if: $CI_COMMIT_BRANCH == "guironne-jobs"
+      when: always
+    - if: $CI_PIPELINE_SOURCE == "schedule"
+      when: always
+    - if: $CI_COMMIT_BRANCH == "pipeline"
+      when: manual
+    - when: never
+  artifacts:
+    when: on_failure
+    expire_in: 2 day
+
+# ======================================================================================= #
+# Tests effectués à chaque demande de fusion avec les exercices modifiés sur 5 commmits.  #
+# ======================================================================================= #
+
+# Job consolidé : exécute les tests des exercices modifiés en séquence
+# Cela remplace 4 jobs précédents :
+# - testExosModifiedWithoutPlayWright
+# - testExosModified
+# - testExosModifiedInteractif
+# - testExosModifiedAmcnum
+# Économies : 1 seul runner, 1 seule installation de dépendances, 1 seul démarrage du serveur
+
+testExosModifiedConsolidated:
+  extends: .testExosModifiedConsolidated
+  cache:
+    key:
+      files:
+        - pnpm-lock.yaml
+        - node_modules
+    paths:
+      - .pnpm-store/
+    policy: pull
+  script:
+    - npm install -g pnpm@12.6.0
+    - NODE_OPTIONS=--max-old-space-size=4096
+    # Récupérer les fichiers modifiés par le dernier commit
+    # (le commit du pipeline, pas la pointe actuelle de la branche)
+    - git fetch origin "$CI_COMMIT_SHA" --depth=10
+    - git checkout FETCH_HEAD
+    - |
+      # ============================================================
+      # PHASE 1: Récupérer les fichiers modifiés
+      # ============================================================
+      COMMIT_COUNT=$(git rev-list --count HEAD)
+      MAX_COMMITS=1
+
+      if [ "$COMMIT_COUNT" -lt "$MAX_COMMITS" ]; then
+        DIFF_BASE="HEAD~$((COMMIT_COUNT - 1))"
+      else
+        DIFF_BASE="HEAD~$MAX_COMMITS"
+      fi
+      echo "Comparing from $DIFF_BASE to HEAD"
+
+      if [ "$CI_PIPELINE_SOURCE" = "merge_request_event" ] && git rev-parse --verify --quiet HEAD^2 >/dev/null; then
+        # Fusion de main dans la branche (git pull) : HEAD~1..HEAD contiendrait tout
+        # ce que main apporte. Seuls les fichiers qui diffèrent de chaque parent sont testés.
+        echo "Commit de fusion : fichiers modifiés par rapport à chacun des parents"
+        # git met entre guillemets les chemins non ASCII (modèlesExos) : `-f` ne les trouve
+        # pas. Ils restent dans la liste, comme sans fusion ; seul le contrôle d'accessibilité les lit.
+        CHANGED_FILES=$(git diff-tree -r --cc --name-only --no-commit-id HEAD | while read -r f; do { [ -f "$f" ] || [ "${f#\"}" != "$f" ]; } && echo "$f"; done)
+      elif git rev-parse --verify "$DIFF_BASE" >/dev/null 2>&1; then
+        echo "Comparing from $DIFF_BASE to HEAD"
+        CHANGED_FILES=$(git diff --name-only --diff-filter=ACMRT "$DIFF_BASE"..HEAD)
+      else
+        echo "⚠️ Le commit $DIFF_BASE n'est pas disponible (clone trop peu profond ?)"
+        CHANGED_FILES=$(git diff --name-only --diff-filter=ACMRT $CI_COMMIT_BEFORE_SHA $CI_COMMIT_SHA)
+      fi
+
+      echo ""
+      echo "📋 Fichiers modifiés:"
+      echo "$CHANGED_FILES"
+      echo ""
+
+      # ============================================================
+      # PHASE 2: Tests unitaires et e2e
+      # ============================================================
+
+      # Test 1/7 : Console errors (Playwright)
+      echo "🧪 Test 1/7: Console errors..."
+      if CHANGED_FILES="$CHANGED_FILES" bash tasks/ci-with-dev-server.sh pnpm test:e2e:console_errors; then
+        STATUS_CONSOLE=ok
+      else
+        STATUS_CONSOLE=ko
+      fi
+
+      # Test 2/7 : All exercises vitest (sans Playwright)
+      echo "🧪 Test 2/7: All exercises vitest..."
+      if CHANGED_FILES="$CHANGED_FILES" pnpm vitest --config tests/e2e/vitest.config.all_exercises.js --run; then
+        STATUS_VITEST=ok
+      else
+        STATUS_VITEST=ko
+      fi
+
+      # Test 3/7 : Integration interactivity
+      echo "🧪 Test 3/7: Integration interactivity..."
+      if INTERACTIF_REPORT=1 CHANGED_FILES="$CHANGED_FILES" pnpm vitest tests/integration/interactivity_all.test.ts --run; then
+        STATUS_INTERACTIF=ok
+      else
+        STATUS_INTERACTIF=ko
+      fi
+
+      # Test 4/7 : AMCnum report
+      echo "🧪 Test 4/7: AMCnum report..."
+      if AMCNUM_REPORT=1 CHANGED_FILES="$CHANGED_FILES" pnpm vitest src/lib/amc/report-amcnum.test.ts --run; then
+        STATUS_AMCNUM=ok
+      else
+        STATUS_AMCNUM=ko
+      fi
+
+      # Test 5/7 : Stabilité des tirages
+      # cf documentation/tests/stabilite-exercices.md
+      echo "🧪 Test 5/7: Stabilité des tirages..."
+      # Uuids disparus : comparer au départ de la branche, pas à la pointe de main (#9937)
+      if [ -n "$CI_MERGE_REQUEST_DIFF_BASE_SHA" ]; then
+        export BASE_REF="$CI_MERGE_REQUEST_DIFF_BASE_SHA"
+        git fetch origin "$BASE_REF" --depth=1 || echo "⚠️ Départ de la branche $BASE_REF introuvable"
+      fi
+      if CHANGED_FILES="$CHANGED_FILES" pnpm stability:check; then
+        STATUS_STABILITE=ok
+      else
+        STATUS_STABILITE=ko
+      fi
+
+
+
+
+
+      # Réponses courtes : corpus #9651 et exercices modifiés.
+      echo "🧪 Test 6/7: Corrections minimales..."
+      if CHANGED_FILES="$CHANGED_FILES" pnpm corrections:check; then
+        STATUS_CORRECTIONS=ok
+      else
+        STATUS_CORRECTIONS=ko
+      fi
+
+      # Informatif : hors du décompte, ne fait jamais échouer le job.
+      # cf documentation/tests/controle-accessibilite.md
+      echo "🧪 Test 7/7: Accessibilité (informatif)..."
+      if CHANGED_FILES="$CHANGED_FILES" pnpm a11y:check; then
+        STATUS_A11Y=ok
+      else
+        STATUS_A11Y=ko
+      fi
+
+      # ============================================================
+      # PHASE 3: Résumé final
+      # ============================================================
+      echo ""
+      echo "═══════════════════════════════════════════"
+      echo "📊 Résumé des tests consolidés"
+      echo "═══════════════════════════════════════════"
+      [ "$STATUS_CONSOLE" = "ok" ] && echo "✅ Console errors" || echo "❌ Console errors"
+      [ "$STATUS_VITEST" = "ok" ] && echo "✅ All exercises vitest" || echo "❌ All exercises vitest"
+      [ "$STATUS_INTERACTIF" = "ok" ] && echo "✅ Interactivity report" || echo "❌ Interactivity report"
+      [ "$STATUS_AMCNUM" = "ok" ] && echo "✅ AMCnum report" || echo "❌ AMCnum report"
+      [ "$STATUS_STABILITE" = "ok" ] && echo "✅ Stabilité des tirages" || echo "❌ Stabilité des tirages"
+      [ "$STATUS_CORRECTIONS" = "ok" ] && echo "✅ Corrections minimales" || echo "❌ Corrections minimales"
+      [ "$STATUS_A11Y" = "ok" ] && echo "ℹ️  Accessibilité : informatif, voir le rapport ci-dessus" || echo "⚠️  Accessibilité : rapport non produit (informatif, sans effet sur le résultat)"
+
+      OK_COUNT=0
+      [ "$STATUS_CONSOLE" = "ok" ] && OK_COUNT=$((OK_COUNT + 1))
+      [ "$STATUS_VITEST" = "ok" ] && OK_COUNT=$((OK_COUNT + 1))
+      [ "$STATUS_INTERACTIF" = "ok" ] && OK_COUNT=$((OK_COUNT + 1))
+      [ "$STATUS_AMCNUM" = "ok" ] && OK_COUNT=$((OK_COUNT + 1))
+      [ "$STATUS_STABILITE" = "ok" ] && OK_COUNT=$((OK_COUNT + 1))
+      [ "$STATUS_CORRECTIONS" = "ok" ] && OK_COUNT=$((OK_COUNT + 1))
+      echo ""
+      echo "Résultat global: $OK_COUNT/6 sous-tests bloquants OK"
+      echo "═══════════════════════════════════════════"
+
+      # Fail si au moins un test a échoué
+      if [ "$OK_COUNT" -lt 6 ]; then
+        exit 1
+      fi
+  rules:
+    - !reference [.hors_deploiement, rules]
+    # Se lance uniquement si le pipeline est déclenché par une Merge Request
+    - if: $CI_PIPELINE_SOURCE == "merge_request_event"
+      when: always
+    - if: $CI_COMMIT_BRANCH == "main"
+      when: always
+    - if: $CI_COMMIT_BRANCH == "guironne-jobs"
+      when: manual
+    - when: never
+  artifacts:
+    when: on_failure
+    expire_in: 2 day
+    paths:
+      - artifacts/ci-vite.log
+
+# Job LaTeX séparé (nécessite une image Docker spéciale)
+# Reste séparé car image PDF/TeX spécifique (variable PDF_CI_IMAGE)
+testExosModifiedLatex:
+  extends: .testCIPDF
+  cache:
+    key:
+      files:
+        - pnpm-lock.yaml
+        - node_modules
+    paths:
+      - .pnpm-store/
+    policy: pull
+  timeout: 5h
+  script:
+    - git fetch origin "$CI_COMMIT_SHA" --depth=10
+    - git checkout FETCH_HEAD
+    - |
+      COMMIT_COUNT=$(git rev-list --count HEAD)
+      MAX_COMMITS=1
+
+      if [ "$COMMIT_COUNT" -lt "$MAX_COMMITS" ]; then
+        DIFF_BASE="HEAD~$((COMMIT_COUNT - 1))"
+      else
+        DIFF_BASE="HEAD~$MAX_COMMITS"
+      fi
+      echo "Comparing from $DIFF_BASE to HEAD"
+
+      if [ "$CI_PIPELINE_SOURCE" = "merge_request_event" ] && git rev-parse --verify --quiet HEAD^2 >/dev/null; then
+        # Fusion de main dans la branche : voir testExosModifiedConsolidated
+        echo "Commit de fusion : fichiers modifiés par rapport à chacun des parents"
+        CHANGED_FILES=$(git diff-tree -r --cc --name-only --no-commit-id HEAD | while read -r f; do [ -f "$f" ] && echo "$f"; done)
+      elif git rev-parse --verify "$DIFF_BASE" >/dev/null 2>&1; then
+        echo "Comparing from $DIFF_BASE to HEAD"
+        CHANGED_FILES=$(git diff --name-only --diff-filter=ACMRT "$DIFF_BASE"..HEAD)
+      else
+        echo "⚠️ Le commit $DIFF_BASE n'est pas disponible (clone trop peu profond ?)"
+        CHANGED_FILES=$(git diff --name-only --diff-filter=ACMRT $CI_COMMIT_BEFORE_SHA $CI_COMMIT_SHA)
+      fi
+
+    - npm install -g pnpm@12.6.0
+    - pnpm run makeJson >/dev/null
+    - sleep 50
+    - echo "$CHANGED_FILES"
+    - CHANGED_FILES="$CHANGED_FILES" pnpm test:e2e:pdfexports
+  rules:
+    - !reference [.hors_deploiement, rules]
+    - if: $CI_PIPELINE_SOURCE == "merge_request_event"
+      when: always
+    - if: $CI_COMMIT_BRANCH == "main"
+      when: always
+    - if: $CI_COMMIT_BRANCH == "guironne-jobs"
+      when: manual
+    - when: never
+  artifacts:
+    when: on_failure
+    expire_in: 2 day

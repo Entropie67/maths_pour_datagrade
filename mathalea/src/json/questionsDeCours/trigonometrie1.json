@@ -1,0 +1,141 @@
+{
+  "questions": [
+    {"themes": "Trigonométrie (généralités)",
+      "level": "2",
+    "id": "tri1",
+      "title": "Définision cosinus",
+      "question": "Quelle est l'expression $\\cos(\\widehat{B})$ dans le triangle $ABC$ rectangle en $A$ ?",
+      "answer": "\\frac{AC}{BC}",
+      "keys": ["A", "B" , "C"],
+      "correction": "Dans le triangle $ABC$ rectangle en $A$, le cosinus de l'angle $\\widehat{B}$ est défini comme le rapport entre la longueur du côté adjacent à l'angle $B$ (c'est-à-dire $AC$) et la longueur de l'hypoténuse (c'est-à-dire $BC$)."
+        }
+           
+        ,
+        {
+      "themes": "Trigonométrie (généralités)",
+      "level": "2",
+    "id": "tri2",
+      "title": "Définision sinus",
+      "question": "Quelle est l'expression $\\sin(\\widehat{B})$ dans le triangle $ABC$ rectangle en $A$ ?",
+      "answer": "\\frac{AB}{BC}",
+      "keys": ["A", "B" , "C"],
+      "correction": "Dans le triangle $ABC$ rectangle en $A$, le sinus de l'angle $\\widehat{B}$ est défini comme le rapport entre la longueur du côté opposé à l'angle $B$ (c'est-à-dire $AB$) et la longueur de l'hypoténuse (c'est-à-dire $BC$)."
+        },
+        {
+      "themes": "Trigonométrie (généralités)",
+      "level": "2",
+    "id": "tri3",
+      "title": "Relation fondamentale",
+      "question": "Soit $x\\in\\mathbb{R}$,  écrire la relation fondamentale qui lie $\\cos(s)$ et $\\sin(x)$ : ?",
+      "answer": ["\\cos^2(x)+\\sin^2(x)=1","(\\cos(x))^2+(\\sin^2(x))^2=1","\\cos(x)^2+\\sin(x)^2=1"],
+      "keys": ["COS", "SIN","="],
+      "correction": "La relation fondamentale de la trigonométrie est $\\cos^2(x) + \\sin^2(x) = 1$ pour tout réel $x$. Cette relation exprime le fait que la somme des carrés du cosinus et du sinus d'un angle est toujours égale à $1$."
+        },
+      {
+      "themes": "Trigonométrie (généralités)",
+      "level": "1",
+      "id": "tri4",
+      "title": "Cercle trigonométrique",
+      "question": "Quel est le rayon du cercle trigonométrique?",
+      "answer": ["1"],
+      "correction": "Le rayon du cercle trigonométrique est toujours égal à $1$. "
+      }
+        ,
+         {
+      "themes": "Trigonométrie (généralités)",
+      "level": "1",
+      "id": "tri5",
+      "title": "Cercle trigonométrique",
+      "question": "À quelle mesure d'angle en degrés correspond $2\\pi$ radians ?",
+      "answer": ["360", "360^\\circ"],
+     
+      "correction": "Un angle de $2\\pi$ radians correspond à $360$ degrés. En effet, la conversion entre radians et degrés est donnée par la relation $180^\\circ = \\pi$ radians, donc $2\\pi$ radians équivaut à $2 \\times 180^\\circ = 360^\\circ$."
+        },
+         {
+      "themes": "Trigonométrie (généralités)",
+      "level": "1",
+      "id": "tri6",
+      "type":"qcm",
+      "title": "Parité des fonctions trigonométriques",
+      "question": "Quelle est la parité de la fonction $\\sin(x)$ ?",
+      "answer": "impaire",
+      "badPropositions": ["paire", "ni paire ni impaire"],
+      "correction": "La fonction $\\sin(x)$ est une fonction impaire, ce qui signifie que $\\sin(-x) = -\\sin(x)$ pour tout réel $x$. "
+          }, {
+      "themes": "Trigonométrie (généralités)",
+      "level": "1",
+      "id": "tri7",
+       "type":"qcm",
+      "title": "Parité des fonctions trigonométriques",
+      "question": "Quelle est la parité de la fonction $\\cos(x)$ ?",
+      "badPropositions": ["impaire", "ni paire ni impaire"],
+        "answer": "paire",
+     
+      "correction": "La fonction $\\cos(x)$ est une fonction paire, ce qui signifie que $\\cos(-x) = \\cos(x)$ pour tout réel $x$. "
+        },
+         {
+      "themes": "Trigonométrie (généralités)",
+      "level": "1",
+      "id": "tri8",
+       "type":"qcm",
+      "title": "Cercle trigonométrique",
+      "question": "Sur le cercle trogonométrique, on lit le $\\cos(x)$ sur l'axe des...",
+      "badPropositions": ["ordonnées", "côtes"],
+        "answer": "abscisses",
+     
+      "correction": "Sur le cercle trigonométrique, le cosinus d'un angle $x$ est représenté par la coordonnée sur l'axe des abscisses (l'axe horizontal), tandis que le sinus est représenté par la coordonnée sur l'axe des ordonnées (l'axe vertical)."
+        },
+         {
+      "themes": "Trigonométrie (généralités)",
+      "level": "1",
+      "id": "tri9",
+      "title": "Cercle trigonométrique",
+       "type":"qcm",
+      "question": "Sur le cercle trigonométrique, on lit le $\\sin(x)$ sur l'axe des...",
+      "badPropositions": ["abscisses", "côtes"],
+        "answer": "ordonnées",
+     
+      "correction": "Sur le cercle trigonométrique, le sinus d'un angle $x$ est représenté par la coordonnée sur l'axe des ordonnées (l'axe vertical), tandis que le cosinus est représenté par la coordonnée sur l'axe des abscisses (l'axe horizontal)."
+        },
+         {
+      "themes": "Trigonométrie (généralités)",
+      "level": "1",
+      "id": "tri10",
+      "title": "Encadrement de $\\sin(x)$",
+      "question": "Pour tout $x$ réel, on a $|\\sin(x)|\\leqslant \\ldots$ ",
+      "answer": "1",
+     
+      "correction": "Pour tout réel $x$, la valeur absolue du sinus est toujours inférieure ou égale à $1$, c'est-à-dire $|\\sin(x)| \\leq 1$. Cela découle de la définition du cercle trigonométrique, où le rayon est $1$."
+        },
+         {
+      "themes": "Trigonométrie (généralités)",
+      "level": "1",
+      "id": "tri11",
+      "title": "Encadrement de $\\sin(x)$",
+      "question": "Pour tout $x$ réel, on a $|\\cos(x)|\\leqslant \\ldots$ ",
+      "answer": "1",
+      "correction": "Pour tout réel $x$, la valeur absolue du cosinus est toujours inférieure ou égale à $1$, c'est-à-dire $|\\cos(x)| \\leq 1$. Cela découle de la définition du cercle trigonométrique, où le rayon est $1$."
+        },
+         {
+      "themes": "Trigonométrie (généralités)",
+      "level": "1",
+      "id": "tri12",
+      "type":"qcm",
+      "title": "Périodicité de $\\sin(x)$",
+      "question": "Quelle est la période en radian de la fonction sinus ? ",
+      "answer": "$2\\pi$",
+      "badPropositions": ["$\\pi$", "$4\\pi$", "$1$", "$\\dfrac{\\pi}{2}$"],
+      "correction": "La fonction sinus est périodique avec une période de $2\\pi$ radians. Cela signifie que pour tout réel $x$, on a $\\sin(x + 2\\pi) = \\sin(x)$. "
+        }
+         ,{"themes": "Trigonométrie (généralités)",
+      "level": "1",
+      "id": "tri13",
+      "title": "Périodicité de $\\cos(x)$",
+      "type":"qcm",
+      "question": "Quelle est la période en radian de la fonction sinus ? ",
+      "answer": "$2\\pi$",
+      "badPropositions": ["$\\pi$", "$4\\pi$", "$1$", "$\\dfrac{\\pi}{2}$"],
+      "correction": "La fonction cosinus est périodique avec une période de $2\\pi$ radians. Cela signifie que pour tout réel $x$, on a $\\cos(x + 2\\pi) = \\cos(x)$."
+        }
+  ]
+}

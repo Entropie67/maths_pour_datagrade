@@ -1,0 +1,12 @@
+{
+  "extends": "./tsconfig.json",
+  "include": [
+    "src/**/*.d.ts",
+    "src/lib/**/*.ts",
+    "src/modules/**/*.ts",
+    "src/exercices/Exercice.ts",
+    "src/global.d.ts",
+    "src/vite-env.d.ts"
+  ],
+  "exclude": ["./built/**/*", "tests/**/*", "src/**/*.svelte"]
+}

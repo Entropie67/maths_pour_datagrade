@@ -1,0 +1,195 @@
+# Configuration nginx du site. Les ${VARIABLES} sont remplacées au démarrage
+# du conteneur par l'image nginx officielle (dossier /etc/nginx/templates) :
+#   BUCKET_HOST : hôte du bucket qui porte les scans d'annales et la vitrine
+#   APP_VERSION : version annoncée par /health (SHA court du commit déployé)
+
+# Durée de cache des fichiers de la vitrine selon leur chemin.
+map $uri $cache_vitrine {
+    default        off;
+    ~^/www/_astro/ 1y;
+}
+
+# Les noms "mathalea" (staging.mathalea.fr, staging.mathalea.education-nationale.eu,
+# demain mathalea.fr et www.mathalea.fr) servent l'application à la racine, sans
+# /alea/ dans l'adresse. Les autres noms (coopmaths) affichent la vitrine, avec
+# MathALÉA en /alea/ comme aujourd'hui : les liens partagés continuent de marcher.
+map $host $racine_vers_alea {
+    default 0;
+    ~mathalea\.(fr|education-nationale\.eu)$ 1;
+}
+
+# Le lien MathALÉA de la vitrine, construite avec https://coopmaths.fr/alea : sur
+# un nom coopmaths il mène au nom mathalea jumeau (staging.coopmaths.fr vers
+# https://staging.mathalea.fr, coopmaths.fr vers https://mathalea.fr). Sans
+# "coopmaths" dans le nom (adresse technique scw.cloud), il reste en /alea.
+map $host $lien_alea {
+    default "/alea";
+    ~^(?<avant>.*)coopmaths(?<apres>.*)$ "https://${avant}mathalea${apres}";
+}
+
+# Les adresses de test (staging.*) et l'adresse technique donnée par Scaleway
+# au conteneur (*.scw.cloud) ne doivent pas se retrouver dans Google à côté de
+# mathalea.fr : elles portent l'en-tête X-Robots-Tag noindex (voir entetes.conf).
+map $host $robots {
+    default "";
+    ~^staging\. "noindex, nofollow";
+    ~\.scw\.cloud$ "noindex, nofollow";
+}
+
+# Adresse demandée en /www/... : la vitrine vit à la racine, l'ancienne adresse
+# (favoris, liens) est renvoyée sans le /www. $request_uri est l'adresse
+# demandée par le navigateur, pas celle réécrite en interne, donc le relais
+# /www/ vers le bucket n'est pas touché. La requête (?...) est remise derrière.
+map $request_uri $sans_www {
+    ~^/www(/[^?]*) $1;
+}
+
+# Copie locale des fichiers relayés depuis le bucket : un fichier demandé une
+# fois est resservi sans aller-retour. Le dossier est vidé à chaque démarrage.
+proxy_cache_path /tmp/cache-bucket levels=1:2 keys_zone=bucket:10m max_size=200m inactive=7d use_temp_path=off;
+
+server {
+    listen 8080;
+    server_name _;
+    server_tokens off;
+    root /usr/share/nginx/html;
+    # Le conteneur écoute sur 8080 derrière la plateforme : les redirections
+    # restent relatives pour ne pas annoncer ce port.
+    absolute_redirect off;
+
+    # Les fichiers de l'image ont leur version .gz faite à la construction
+    # (gzip_static) ; le reste (vitrine, relais) est compressé à la volée.
+    gzip on;
+    gzip_static on;
+    gzip_proxied any;
+    gzip_min_length 1024;
+    gzip_types text/plain text/css text/javascript application/javascript application/json image/svg+xml application/wasm font/ttf;
+
+    # En-têtes communs, dans un fichier à part : un add_header écrit dans un
+    # location annule ceux du server, le fichier est donc repris dans les
+    # locations qui ont leur propre add_header.
+    include /etc/nginx/entetes.conf;
+
+    # La racine : la vitrine sans changer l'adresse (réécriture interne, pas de
+    # redirection) sur les noms coopmaths, l'application sur les noms mathalea.
+    location = / {
+        if ($racine_vers_alea) {
+            rewrite ^ /alea/index.html last;
+        }
+        rewrite ^ /www/ last;
+    }
+    # Le reste de ce qui n'est ni /alea ni /www. Sur un nom mathalea, c'est un
+    # fichier de l'application demandé depuis la racine : son code charge des
+    # images par un chemin relatif (assets/svg/..., styles/...), qui depuis la
+    # racine donne /assets/svg/..., lu dans /alea/. Sur les autres noms, c'est
+    # la vitrine : ses pages sont à la racine (/6e/ est www/6e/ dans le bucket)
+    # et ses scripts chargent aussi des images par un chemin relatif.
+    location / {
+        if ($racine_vers_alea) {
+            rewrite ^(.*)$ /alea$1 last;
+        }
+        rewrite ^(.*)$ /www$1 last;
+    }
+    location = /www {
+        return 301 /;
+    }
+    location = /alea {
+        return 301 /alea/;
+    }
+
+    location = /health {
+        default_type application/json;
+        return 200 '{"status":"ok","version":"${APP_VERSION}"}';
+    }
+
+    # Scans d'annales et vitrine : relayés vers le bucket, même chemin.
+    # L'hôte du bucket est résolu une fois au démarrage de nginx. Une instance
+    # serverless vit peu de temps, c'est suffisant.
+    location ^~ /alea/static/ {
+        proxy_pass https://${BUCKET_HOST};
+        proxy_set_header Host ${BUCKET_HOST};
+        proxy_ssl_server_name on;
+        proxy_redirect https://${BUCKET_HOST}/ /;
+        # Les scans ne changent pas.
+        expires 30d;
+        proxy_cache bucket;
+        proxy_cache_valid 200 1d;
+        proxy_cache_lock on;
+        add_header X-Cache $upstream_cache_status;
+        include /etc/nginx/entetes.conf;
+        # Un objet absent du bucket répond 403 (pas de droit de lister) : renvoyé
+        # en 404 avec la page d'erreur de la vitrine.
+        proxy_intercept_errors on;
+        error_page 403 404 =404 /www/404.html;
+    }
+    location /www/ {
+        # Ancienne adresse en /www/ : renvoi définitif vers la même page à la racine.
+        if ($sans_www) {
+            return 301 $sans_www$is_args$args;
+        }
+        proxy_pass https://${BUCKET_HOST};
+        proxy_set_header Host ${BUCKET_HOST};
+        proxy_ssl_server_name on;
+        proxy_redirect https://${BUCKET_HOST}/ /;
+        # Un objet absent du bucket répond 403 (pas de droit de lister) : renvoyé
+        # en 404 avec la page d'erreur de la vitrine.
+        proxy_intercept_errors on;
+        error_page 403 404 =404 /www/404.html;
+        # La vitrine est construite avec le lien complet https://coopmaths.fr/alea.
+        # Réécrit au passage vers le nom mathalea jumeau du nom demandé (map
+        # $lien_alea) : sur le staging, le lien mène à https://staging.mathalea.fr.
+        proxy_set_header Accept-Encoding "";
+        sub_filter_types text/javascript application/javascript;
+        sub_filter_once off;
+        sub_filter 'https://coopmaths.fr/alea' $lien_alea;
+        # Sans ces deux lignes, un navigateur qui demande "a-t-il changé ?" reçoit
+        # "non" du bucket et garde sa copie d'avant la réécriture.
+        proxy_set_header If-Modified-Since "";
+        proxy_set_header If-None-Match "";
+        # Copie locale 10 min : une vitrine redéployée apparaît dans les 10 min.
+        proxy_cache bucket;
+        proxy_cache_valid 200 10m;
+        proxy_cache_lock on;
+        add_header X-Cache $upstream_cache_status;
+        include /etc/nginx/entetes.conf;
+        # Le fragment de la vitrine (/www/vitrine/fragment/) est lu par
+        # l'application depuis le nom mathalea jumeau (staging.mathalea.fr lit
+        # staging.coopmaths.fr) : le navigateur exige cet en-tête, y compris
+        # sur la redirection 301 vers la racine. Comme coopmaths.fr aujourd'hui.
+        # Un seul en-tête : celui de l'amont, s'il en envoie un, est masqué
+        # (deux valeurs font refuser la lecture par le navigateur).
+        proxy_hide_header Access-Control-Allow-Origin;
+        add_header Access-Control-Allow-Origin * always;
+        # Les fichiers de /www/_astro/ portent une empreinte dans leur nom :
+        # ils peuvent rester en cache un an, le reste de la vitrine non.
+        expires $cache_vitrine;
+    }
+    # Comme Apache aujourd'hui : une page de la vitrine demandée sans barre
+    # finale est redirigée vers sa forme avec barre (le bucket range chaque
+    # page en dossier/index.html), à la racine.
+    location ~ ^/www(/(.*/)?[^./]+)$ {
+        return 301 $1/$is_args$args;
+    }
+
+    # L'application (tout passe par des paramètres d'URL, pas de sous-chemin à
+    # réécrire). Les fichiers de assets/ portent un nom haché par Vite : cache
+    # long. index.html n'est jamais mis en cache, chaque visite voit la dernière
+    # version déployée.
+    location ^~ /alea/assets/ {
+        expires 1y;
+    }
+    location = /alea/index.html {
+        expires -1;
+    }
+    # Sur un nom mathalea, l'application est à la racine : /alea/ (ancienne
+    # adresse, liens partagés) y renvoie en gardant les paramètres de l'URL.
+    location = /alea/ {
+        if ($racine_vers_alea) {
+            return 301 /$is_args$args;
+        }
+        rewrite ^ /alea/index.html last;
+    }
+    location /alea/ {
+        try_files $uri $uri/ =404;
+    }
+}

@@ -1,0 +1,6 @@
+{
+  "tests/e2e/helpers/issue.ts": {
+    "sha256": "1bb46d5ba50d37f48735cc21809eb41d072cec7d160c1fe0ee76e4a22c40873c",
+    "reason": "Jeton GitLab amont remplacé par MATHALEA_GITLAB_TOKEN ; aucune requête sans configuration explicite."
+  }
+}

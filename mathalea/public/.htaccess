@@ -1,0 +1,109 @@
+# --- Force le https ---
+
+RewriteEngine On
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+# --- Cache public LiteSpeed (si disponible sur l'hébergeur) ---
+<IfModule LiteSpeed>
+  # Indique à LiteSpeed de mettre en cache le contenu public.
+  # LSCache respectera les en-têtes Cache-Control définis ci-dessous.
+  CacheEnable public /
+  # Désactive le cache pour l’index (évite le HTML obsolète)
+  CacheDisable public /index.html
+  CacheDisable public /index.htm
+  # Désactive LSCache pour /alea/static/ et tous ses sous-répertoires
+  CacheDisable public /alea/static/
+  CacheDisable public /static/
+</IfModule>
+
+# --- Type MIME (Apache n'a pas .wasm ni .mjs dans ses mime.types par défaut) ---
+<IfModule mod_mime.c>
+  AddType application/wasm .wasm
+  # Sans type, avec nosniff, le navigateur refuse de charger en module le
+  # worker de pdf.js (pdf.worker-*.mjs) : le chargement d'un PDF ne finit jamais.
+  AddType application/javascript .mjs
+</IfModule>
+
+# --- Compression (gzip / brotli si le serveur le permet) ---
+<IfModule mod_deflate.c>
+  # Compresse les types de fichiers spécifiés pour réduire le temps de chargement.
+  AddOutputFilterByType DEFLATE text/html text/plain text/xml text/css application/javascript application/json application/xml application/wasm
+</IfModule>
+
+# --- ETag / Last-Modified (laisser activés ou désactiver ETag si besoin) ---
+# FileETag MTime Size
+
+# --- Expiration et Cache-Control : 0s pour le HTML, 1 an pour les assets statiques hashés ---
+<IfModule mod_expires.c>
+  ExpiresActive On
+
+  # Par défaut : 1 an pour la plupart des assets statiques (images, CSS, JS, etc.)
+  ExpiresByType text/css "access plus 1 year"
+  ExpiresByType text/javascript "access plus 1 year"
+  ExpiresByType application/javascript "access plus 1 year"
+  ExpiresByType application/x-javascript "access plus 1 year"
+
+  # Exception : scripts Moodle sans hash => pas de cache long
+  <FilesMatch "^moodle(\.scorm|-bookmarklet)?\.js$">
+    ExpiresDefault "access plus 0 seconds"
+  </FilesMatch>
+  ExpiresByType image/svg+xml "access plus 1 year"
+  ExpiresByType image/x-icon "access plus 1 year"
+  ExpiresByType image/png "access plus 1 year"
+  ExpiresByType image/gif "access plus 1 year"
+  ExpiresByType image/jpeg "access plus 1 year"
+  ExpiresByType image/webp "access plus 1 year"
+  ExpiresByType font/woff "access plus 1 year"
+  ExpiresByType font/woff2 "access plus 1 year"
+  ExpiresByType application/font-woff "access plus 1 year"
+  ExpiresByType application/octet-stream "access plus 1 year"
+  ExpiresByType application/wasm "access plus 1 year"
+  ExpiresByType application/pdf "access plus 1 year"
+  ExpiresByType application/manifest+json "access plus 1 year"
+
+  # HTML : 0 seconde pour que le navigateur vérifie toujours les nouvelles versions du HTML.
+  ExpiresByType text/html "access plus 0 seconds"
+
+</IfModule>
+
+# Directives d'en-tête plus explicites (Cache-Control)
+<IfModule mod_headers.c>
+  # Pour les fichiers HTML : ne pas mettre en cache le HTML
+  <FilesMatch "\.(html|htm)$">
+    Header set Cache-Control "no-cache, no-store, must-revalidate, max-age=0"
+  </FilesMatch>
+
+  # Pour version.txt : ne pas mettre en cache
+  <FilesMatch "^version\.txt$">
+    Header set Cache-Control "no-cache, no-store, must-revalidate, max-age=0"
+  </FilesMatch>
+
+  # SPECIAL: ne pas mettre en cache les scripts moodle
+  # "always" garantit que l'en-tête est envoyé même si Apache a déjà fixé une valeur
+  <FilesMatch "^moodle(\.scorm|-bookmarklet)?\.js$">
+    Header always set Cache-Control "no-cache, no-store, must-revalidate, max-age=0"
+    Header always unset Expires
+    Header always unset Pragma
+    Header always set Pragma "no-cache"
+  </FilesMatch>
+
+  # Assets AVEC hash (-[A-Za-z0-9]{8,}) => long cache immutable
+  # On exclut explicitement les scripts Moodle de cette règle
+  Header set Cache-Control "public, max-age=31536000, immutable" "expr=%{REQUEST_URI} =~ m#\.(?:css|js|jpg|jpeg|png|gif|svg|ico|webp|woff|woff2|ttf|eot|otf|map|tex|wasm)$#i && %{REQUEST_URI} =~ m#-[A-Za-z0-9]{8,}# && %{REQUEST_URI} !~ m#moodle(\.scorm|-bookmarklet)?\.js$#i"
+
+  # PNG et TEX SANS hash => revalidation systématique (toujours la dernière version)
+  Header unset Cache-Control "expr=%{REQUEST_URI} =~ m#\.(?:png|tex)$#i && %{REQUEST_URI} !~ m#-[A-Za-z0-9]{8,}#"
+  Header unset Expires "expr=%{REQUEST_URI} =~ m#\.(?:png|tex)$#i && %{REQUEST_URI} !~ m#-[A-Za-z0-9]{8,}#"
+  Header set Cache-Control "no-cache, must-revalidate, max-age=0" "expr=%{REQUEST_URI} =~ m#\.(?:png|tex)$#i && %{REQUEST_URI} !~ m#-[A-Za-z0-9]{8,}#"
+</IfModule>
+
+# --- En-têtes de sécurité / bonnes pratiques ---
+<IfModule mod_headers.c>
+  # Empêche le sniffing MIME des navigateurs.
+  Header always set X-Content-Type-Options "nosniff"
+  # Contrôle la quantité d'informations de référencement envoyées.
+  Header always set Referrer-Policy "strict-origin-when-cross-origin"
+  # Protection contre les attaques XSS (Cross-Site Scripting).
+  #Header always set X-XSS-Protection "1; mode=block"
+</IfModule>

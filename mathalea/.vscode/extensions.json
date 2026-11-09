@@ -1,0 +1,12 @@
+{
+  "recommendations": [
+    "dbaeumer.vscode-eslint",
+    "GitLab.gitlab-workflow",
+    "mhutchie.git-graph",
+    "svelte.svelte-vscode",
+    "eamodio.gitlens",
+    "MS-CEINTL.vscode-language-pack-fr",
+    "bradlc.vscode-tailwindcss",
+    "esbenp.prettier-vscode"
+  ]
+}

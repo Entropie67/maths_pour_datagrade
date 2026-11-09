@@ -1,0 +1,359 @@
+{
+  "sections": [
+    {
+      "id": "college",
+      "title": "Collège",
+      "subtitle": "6e · 5e · 4e · 3e · Brevet",
+      "icon": "bx-backpack",
+      "locales": ["fr-FR"],
+      "entries": [
+        {
+          "id": "6e",
+          "title": "6e",
+          "referentiel": "aleatoires",
+          "path": ["6e"]
+        },
+        {
+          "id": "5e",
+          "title": "5e",
+          "referentiel": "aleatoires",
+          "path": ["5e"]
+        },
+        {
+          "id": "4e",
+          "title": "4e",
+          "referentiel": "aleatoires",
+          "path": ["4e"]
+        },
+        {
+          "id": "3e",
+          "title": "3e",
+          "referentiel": "aleatoires",
+          "path": ["3e"]
+        },
+        {
+          "id": "dnb-themes",
+          "title": "Annales de DNB par thèmes",
+          "referentiel": "examens",
+          "path": ["BrevetTags"]
+        }
+      ]
+    },
+    {
+      "id": "lycee",
+      "title": "Lycée Général",
+      "subtitle": "2de · 1re · Tle · Bac",
+      "icon": "bx-graduation",
+      "locales": ["fr-FR"],
+      "entries": [
+        {
+          "id": "2e",
+          "title": "Seconde",
+          "referentiel": "aleatoires",
+          "path": ["2e"],
+          "externalLinks": [
+            {
+              "title": "Cahiers d'automatismes",
+              "url": "https://coopmaths.fr/www/automatismes/2nde/",
+              "icon": "bx-book"
+            }
+          ]
+        },
+        {
+          "id": "1e",
+          "title": "Première",
+          "referentiel": "aleatoires",
+          "path": ["1e"],
+          "externalLinks": [
+            {
+              "title": "Cahiers d'automatismes",
+              "url": "https://coopmaths.fr/www/automatismes/1re/",
+              "icon": "bx-book"
+            }
+          ]
+        },
+        {
+          "id": "terminale",
+          "title": "Terminale",
+          "referentiel": "aleatoires",
+          "path": ["Terminale"]
+        },
+        {
+          "id": "premiere-annales-themes",
+          "title": "Annales épreuves de première par thème",
+          "referentiel": "examens",
+          "path": ["40_Épreuves de Première - Par thème"]
+        },
+        {
+          "id": "bac-themes",
+          "title": "Baccalauréat par thème",
+          "referentiel": "examens",
+          "path": ["60_Baccalauréat - Par thème"]
+        }
+      ]
+    },
+    {
+      "id": "lyceePro",
+      "title": "Lycée Professionnel",
+      "subtitle": "2de · 1re",
+      "icon": "bx-graduation",
+      "locales": ["fr-FR"],
+      "entries": [
+        {
+          "id": "bp2",
+          "title": "Bac Pro seconde",
+          "referentiel": "aleatoires",
+          "path": ["BP2"]
+        },
+        {
+          "id": "bp1",
+          "title": "Bac Pro première",
+          "referentiel": "aleatoires",
+          "path": ["BP1"]
+        }
+      ]
+    },
+    {
+      "id": "primaire",
+      "title": "Primaire",
+      "subtitle": "Automatismes",
+      "icon": "bx-child",
+      "locales": ["fr-CH"],
+      "entries": [
+        {
+          "id": "primaire",
+          "title": "Primaire",
+          "referentiel": "aleatoires",
+          "path": ["Primaire", "PR"]
+        }
+      ]
+    },
+    {
+      "id": "ecoleObligatoire",
+      "title": "Cycle d'orientation",
+      "subtitle": "9e · 10e · 11e",
+      "icon": "bx-backpack",
+      "locales": ["fr-CH"],
+      "entries": [
+        {
+          "id": "9R3",
+          "title": "9R3",
+          "referentiel": "aleatoires",
+          "path": ["Cycle d'orientation", "9R3"]
+        },
+        {
+          "id": "9R2",
+          "title": "9R2",
+          "referentiel": "aleatoires",
+          "path": ["Cycle d'orientation", "9R2"]
+        },
+        {
+          "id": "9R1",
+          "title": "9R1",
+          "referentiel": "aleatoires",
+          "path": ["Cycle d'orientation", "9R1"]
+        },
+        {
+          "id": "10LS",
+          "title": "10LS",
+          "referentiel": "aleatoires",
+          "path": ["Cycle d'orientation", "10LS"]
+        },
+        {
+          "id": "10LC",
+          "title": "10LC",
+          "referentiel": "aleatoires",
+          "path": ["Cycle d'orientation", "10LC"]
+        },
+        {
+          "id": "10CT",
+          "title": "10CT",
+          "referentiel": "aleatoires",
+          "path": ["Cycle d'orientation", "10CT"]
+        },
+        {
+          "id": "11LS",
+          "title": "11LS",
+          "referentiel": "aleatoires",
+          "path": ["Cycle d'orientation", "11LS"]
+        },
+        {
+          "id": "11LC",
+          "title": "11LC",
+          "referentiel": "aleatoires",
+          "path": ["Cycle d'orientation", "11LC"]
+        },
+        {
+          "id": "11CT",
+          "title": "11CT",
+          "referentiel": "aleatoires",
+          "path": ["Cycle d'orientation", "11CT"]
+        }
+      ]
+    },
+    {
+      "id": "secondaireII",
+      "title": "Collège",
+      "subtitle": "1re · 2e · 3e · 4e",
+      "icon": "bx-graduation",
+      "locales": ["fr-CH"],
+      "entries": [
+        {
+          "id": "1e-college",
+          "title": "1re",
+          "referentiel": "aleatoires",
+          "path": ["Collège", "1re année"]
+        },
+        {
+          "id": "2e-college",
+          "title": "2e",
+          "referentiel": "aleatoires",
+          "path": ["Collège", "2e année"]
+        },
+        {
+          "id": "3e-college",
+          "title": "3e",
+          "referentiel": "aleatoires",
+          "path": ["Collège", "3e année"]
+        },
+        {
+          "id": "4e-college",
+          "title": "4e",
+          "referentiel": "aleatoires",
+          "path": ["Collège", "4e année"]
+        }
+      ]
+    },
+    {
+      "id": "prequalifiant",
+      "title": "Préqualifiant",
+      "subtitle": "N1 · N2 · N3",
+      "icon": "bx-briefcase",
+      "locales": ["fr-CH"],
+      "entries": [
+        {
+          "id": "PRQST",
+          "title": "Raisonnement",
+          "referentiel": "aleatoires",
+          "path": ["Préqualifiant", "PRQST"]
+        },
+        {
+          "id": "PRQNO",
+          "title": "Nombres et opérations",
+          "referentiel": "aleatoires",
+          "path": ["Préqualifiant", "PRQNO"]
+        },
+        {
+          "id": "PRQAL",
+          "title": "Algèbre",
+          "referentiel": "aleatoires",
+          "path": ["Préqualifiant", "PRQAL"]
+        },
+        {
+          "id": "PRQES",
+          "title": "Espace et formes",
+          "referentiel": "aleatoires",
+          "path": ["Préqualifiant", "PRQES"]
+        },
+        {
+          "id": "PRQMG",
+          "title": "Mesures et grandeurs",
+          "referentiel": "aleatoires",
+          "path": ["Préqualifiant", "PRQMG"]
+        },
+        {
+          "id": "PRQPF",
+          "title": "Proportionnalité, fonctions et données",
+          "referentiel": "aleatoires",
+          "path": ["Préqualifiant", "PRQPF"]
+        }
+      ]
+    },
+    {
+      "id": "can",
+      "title": "Course aux nombres",
+      "subtitle": "CE · CM · 6e … Terminale",
+      "icon": "bx-timer",
+      "views": ["typst", "mobile"],
+      "locales": ["fr-FR"],
+      "entries": [
+        {
+          "id": "can-ce",
+          "title": "CE1 · CE2",
+          "referentiel": "aleatoires",
+          "path": ["CAN", "canCE"]
+        },
+        {
+          "id": "can-cm",
+          "title": "CM1 · CM2",
+          "referentiel": "aleatoires",
+          "path": ["CAN", "CM1/CM2"]
+        },
+        {
+          "id": "can-6e",
+          "title": "6e",
+          "referentiel": "aleatoires",
+          "path": ["CAN", "6e"]
+        },
+        {
+          "id": "can-5e",
+          "title": "5e",
+          "referentiel": "aleatoires",
+          "path": ["CAN", "5e"]
+        },
+        {
+          "id": "can-4e",
+          "title": "4e",
+          "referentiel": "aleatoires",
+          "path": ["CAN", "4e"]
+        },
+        {
+          "id": "can-3e",
+          "title": "3e",
+          "referentiel": "aleatoires",
+          "path": ["CAN", "3e"]
+        },
+        {
+          "id": "can-2e",
+          "title": "Seconde",
+          "referentiel": "aleatoires",
+          "path": ["CAN", "2e"]
+        },
+        {
+          "id": "can-1e",
+          "title": "Première",
+          "referentiel": "aleatoires",
+          "path": ["CAN", "1e"]
+        },
+        {
+          "id": "can-terminale",
+          "title": "Terminale",
+          "referentiel": "aleatoires",
+          "path": ["CAN", "Terminale"]
+        }
+      ]
+    },
+    {
+      "id": "complements",
+      "title": "Ressources complémentaires",
+      "subtitle": "Annales d'examens · Ressources partenaires",
+      "icon": "bx-library",
+      "views": ["typst"],
+      "locales": ["fr-FR"],
+      "entries": [
+        {
+          "id": "annales",
+          "title": "Annales d'examens",
+          "referentiel": "examens",
+          "path": []
+        },
+        {
+          "id": "partenaires",
+          "title": "Ressources partenaires",
+          "referentiel": "partenaires",
+          "path": []
+        }
+      ]
+    }
+  ]
+}

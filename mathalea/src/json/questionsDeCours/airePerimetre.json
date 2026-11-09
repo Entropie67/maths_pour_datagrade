@@ -1,0 +1,76 @@
+{
+  "questions": [
+    {
+      "id": "ap1",
+      "themes": "Aires et périmètres",
+      "level": "6",
+      "title": "Périmètre d'un cercle",
+      "question": "Quel est le périmètre d'un cercle de rayon $r$ ?",
+      "answer": "2\\pi r",
+      "keys": ["r"]
+    },
+    {
+      "id": "ap2",
+      "themes": "Aires et périmètres",
+      "level": "6",
+      "title": "Aire d'un disque",
+      "question": "Quelle est l'aire d'un disque de rayon $r$ ?",
+      "answer": "\\pi r^2",
+      "keys": ["r"]
+    },
+    {
+      "id": "ap3",
+      "themes": "Aires et périmètres",
+      "level": "6",
+      "title": "Aire d'un triangle",
+      "question": "Quelle est l'aire d'un triangle de base $b$ et de hauteur $h$ ?",
+      "answer": "\\dfrac{b \\times h}{2}",
+      "keys": ["b", "h"]
+    },
+    {
+      "id": "ap4",
+      "themes": "Aires et périmètres",
+      "level": "6",
+      "title": "Aire d'un rectangle",
+      "question": "Quelle est l'aire d'un rectangle de longueur $l$ et de largeur $L$ ?",
+      "answer": "l \\times L",
+      "keys": ["l", "L"]
+    },
+    {
+      "id": "ap5",
+      "themes": "Aires et périmètres",
+      "level": "6",
+      "title": "Aire d'un carré",
+      "question": "Quelle est l'aire d'un carré de côté $c$ ?",
+      "answer": "c^2",
+      "keys": ["c"]
+    },
+    {
+      "id": "ap6",
+      "themes": "Aires et périmètres",
+      "level": "5",
+      "title": "Aire d'un parallélogramme",
+      "question": "Quelle est l'aire d'un parallélogramme de base $b$ et de hauteur $h$ ?",
+      "answer": "b \\times h",
+      "keys": ["b", "h"]
+    },
+    {
+      "id": "ap7",
+      "themes": "Aires et périmètres",
+      "level": "5",
+      "title": "Aire d'un trapèze",
+      "question": "Quelle est l'aire d'un trapèze de bases $b$ et $B$ et de hauteur $h$ ?",
+      "answer": "\\dfrac{(b + B) \\times h}{2}",
+      "keys": ["b", "B", "h"]
+    },
+    {
+      "id": "ap8",
+      "themes": "Aires et périmètres",
+      "level": "5",
+      "title": "Aire d'un losange",
+      "question": "Quelle est l'aire d'un losange de diagonales $d_1$ et $d_2$ ?",
+      "answer": "\\dfrac{d_1 \\times d_2}{2}",
+      "keys": ["d_1", "d_2"]
+    }
+  ]
+}

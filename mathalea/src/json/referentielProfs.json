@@ -1,0 +1,205 @@
+{
+  "Droites graduées": {
+    "P003": {
+      "id": "P003",
+      "uuid": "ad5f5",
+      "url": "profs/P003.js",
+      "titre": "Tracer des droites graduées",
+      "typeExercice": "outil",
+      "tags": {}
+    },
+    "P004": {
+      "id": "P004",
+      "uuid": "ad5f6",
+      "url": "profs/P004.js",
+      "titre": "Droites graduées avec zoom",
+      "typeExercice": "outil",
+      "tags": {}
+    }
+  },
+  "Interpolations": {
+    "P013": {
+      "id": "P013",
+      "uuid": "5b767",
+      "url": "profs/P013.js",
+      "titre": "Interpolation cosinusoïdale",
+      "typeExercice": "outil",
+      "tags": {}
+    },
+    "P021": {
+      "id": "P021",
+      "uuid": "4c7ca",
+      "url": "profs/P021.js",
+      "titre": "Interpollation par splines avec tangentes",
+      "typeExercice": "outil",
+      "tags": {}
+    },
+    "P022": {
+      "id": "P022",
+      "uuid": "spline",
+      "titre": "Interpollation par splines (avec formulaires)",
+      "typeExercice": "outil",
+      "url": "OutilSpline.svelte"
+    }
+  },
+  "Générateurs": {
+    "P007": {
+      "id": "P007",
+      "uuid": "ad5f8",
+      "url": "profs/P007.js",
+      "titre": "Générateur de pavages",
+      "typeExercice": "outil",
+      "tags": {}
+    },
+    "P005": {
+      "id": "P005",
+      "uuid": "ad5f7",
+      "url": "profs/P005.js",
+      "titre": "Grilles décimales",
+      "typeExercice": "outil",
+      "tags": {}
+    },
+    "P012": {
+      "id": "P012",
+      "uuid": "62f5e",
+      "url": "profs/P012.js",
+      "titre": "Générareur de camemberts pour travailler les fractions",
+      "typeExercice": "outil",
+      "tags": {}
+    },
+    "P018": {
+      "id": "P018",
+      "uuid": "75f89",
+      "url": "profs/P018.js",
+      "titre": "Générateur de pyramides",
+      "typeExercice": "outil",
+      "tags": {}
+    },
+    "P019": {
+      "id": "P019",
+      "uuid": "6fb13",
+      "url": "profs/P019.js",
+      "titre": "Générateur de Shikaku",
+      "typeExercice": "outil",
+      "tags": {}
+    },
+    "P020": {
+      "id": "P020",
+      "uuid": "de353",
+      "url": "profs/P020.js",
+      "titre": "Encodeur de texte",
+      "typeExercice": "outil",
+      "tags": {}
+    },
+    "P023": {
+      "id": "P023",
+      "uuid": "a1e38",
+      "url": "profs/listePatterns.ts",
+      "titre": "Catalogue de Patterns",
+      "typeExercice": "outil",
+      "tags": {}
+    },
+    "P026": {
+      "id": "P026",
+      "uuid": "a9f71",
+      "url": "profs/P026.js",
+      "titre": "Créateur de diagramme",
+      "typeExercice": "outil",
+      "tags": {}
+    },
+    "P029": {
+      "id": "P029",
+      "uuid": "a9f82",
+      "url": "profs/P029.js",
+      "titre": "Illustrer le crible d'Ératosthène",
+      "typeExercice": "outil",
+      "tags": {}
+    },
+    "P030": {
+      "id": "P030",
+      "uuid": "a9f83",
+      "url": "profs/P030.js",
+      "titre": "Créer un schéma en barre",
+      "typeExercice": "outil",
+      "tags": {}
+    }
+  },
+  "Géométrie animée": {
+    "P011": {
+      "id": "P011",
+      "uuid": "697a7",
+      "url": "profs/P011.js",
+      "titre": "Construction animée d'un triangle",
+      "typeExercice": "outil",
+      "tags": {}
+    },
+    "P015": {
+      "id": "P015",
+      "uuid": "085ed",
+      "url": "profs/P015.js",
+      "titre": "Puzzles géométriques avec animation",
+      "typeExercice": "outil",
+      "datePublication": "14/03/2022",
+      "tags": {}
+    },
+    "P017": {
+      "id": "P017",
+      "uuid": "0ff0f",
+      "url": "profs/P017.js",
+      "titre": "Encadrer l'aire d'un disque",
+      "typeExercice": "outil",
+      "tags": {}
+    },
+    "P025": {
+      "id": "P025",
+      "uuid": "a9f31",
+      "url": "profs/P025.js",
+      "titre": "Créer une animation de construction aux instruments",
+      "typeExercice": "outil",
+      "tags": {}
+    }
+  },
+  "Simulateurs": {
+    "P008": {
+      "id": "P008",
+      "uuid": "691a6",
+      "url": "profs/P008.js",
+      "titre": "Opérations posées",
+      "typeExercice": "outil",
+      "tags": {}
+    },
+    "P016": {
+      "id": "P016",
+      "uuid": "bc372",
+      "url": "profs/P016.js",
+      "titre": "Simulateur de lancers de dés",
+      "datePublication": "06/04/2022",
+      "typeExercice": "outil",
+      "tags": {}
+    },
+    "P009": {
+      "id": "P009",
+      "uuid": "691a7",
+      "url": "profs/P009.js",
+      "titre": "Simulation d'expériences aléatoires",
+      "typeExercice": "outil",
+      "tags": {}
+    }
+  },
+  "Scratch": {
+    "P023": {
+      "titre": "Convertisseur Scratch -> Latex",
+      "typeExercice": "tierce",
+      "uuid": "scratch2Latex",
+      "id": "scratch2latex",
+      "url": "scratch2Latex.ts"
+    },
+    "P024": {
+      "id": "P024",
+      "uuid": "outilScratch",
+      "titre": "Outil Scratch : sb3 vers LaTeX (avec simulateur)",
+      "typeExercice": "outil",
+      "url": "OutilScratch.svelte"
+    }
+  }
+}

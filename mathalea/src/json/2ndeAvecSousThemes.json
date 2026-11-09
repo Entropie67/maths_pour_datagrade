@@ -1,0 +1,132 @@
+{
+  "2N1": {
+    "titre": "Manipuler les nombres réels",
+    "sousThemes": {
+      "2N10": "Associer à chaque point de la droite graduée un unique nombre réel et réciproquement",
+      "2N11": "Représenter un intervalle de la droite numérique. Déterminer si un nombre réel appartient à un intervalle donné",
+      "2N12": "Donner un encadrement, d’amplitude donnée, d’un nombre réel par des décimaux",
+      "2N13": "Dans le cadre de la résolution de problèmes, arrondir en donnant le nombre de chiffres significatifs adapté à la situation étudiée",
+      "2N14": "Connaître Les ensembles de nombres",
+      "2N15": "Connaître et utiliser la notation |a|"
+    }
+  },
+  "2N2": {
+    "titre": "Utiliser les notions de multiple, diviseur et de nombre premier",
+    "sousThemes": {
+      "2N20": "Modéliser et résoudre des problèmes mobilisant les notions de multiple, de diviseur, de nombre pair, de nombre impair, de nombre premier"
+    }
+  },
+  "2N3": {
+    "titre": "Utiliser les fractions, les puissances et les racines carrées",
+    "sousThemes": {
+      "2N30": "Effectuer des calculs numériques mettant en jeu des écritures fractionnaires",
+      "2N31": "Effectuer des calculs numériques mettant en jeu des puissances",
+      "2N32": "Effectuer des calculs numériques mettant en jeu des racines carrées"
+    }
+  },
+  "2N4": {
+    "titre": "Utiliser le calcul littéral",
+    "sousThemes": {
+      "2N40": "Les bases du calcul littéral",
+      "2N41": "Factoriser, développer avec, ou sans, les identités remarquables",
+      "2N42": "Utiliser le calcul littéral "
+    }
+  },
+  "2N5": {
+    "titre": "Équations",
+    "sousThemes": {
+      "2N50": "Modéliser un problème par une équation",
+      "2N51": "Résoudre une équation du premier degré",
+      "2N52": "Résoudre une équation avec un produit nul"
+    }
+  },
+  "2N6": {
+    "titre": "Inéquations",
+    "sousThemes": {
+      "2N60": "Résoudre une inéquation du premier degré",
+      "2N61": "Résoudre une inéquation produit"
+    }
+  },
+  "2G1": {
+    "titre": "Les bases en géométrie",
+    "sousThemes": {
+      "2G10": "Connaître les définitions et propriétés de bases en géométrie plane",
+      "2G12": "Calculer la distance entre deux points. Calculer les coordonnées du milieu d’un segment",
+      "2G13": "Traiter des problèmes d’optimisation"
+    }
+  },
+  "2G2": {
+    "titre": "Les vecteurs",
+    "sousThemes": {
+      "2G20": "Représenter géométriquement des vecteurs",
+      "2G21": "Construire géométriquement la somme de deux vecteurs",
+      "2G22": "Représenter un vecteur dont on connaît les coordonnées. Lire les coordonnées d’un vecteur",
+      "2G23": "Utiliser et connaître les translations définies par des vecteurs",
+      "2G24": "Calculer les coordonnées d’une somme de vecteurs, d’un produit d’un vecteur par un nombre réel",
+      "2G25": "Caractériser alignement et parallélisme par la colinéarité de vecteurs",
+      "2G26": "Résoudre des problèmes en utilisant la représentation la plus adaptée des vecteurs"
+    }
+  },
+  "2G3": {
+    "titre": "Représenter et caractériser les droites du plan",
+    "sousThemes": {
+      "2G30": "Déterminer une équation de droite à partir de deux points, un point et un vecteur directeur ou un point et la pente",
+      "2G31": "Déterminer la pente ou un vecteur directeur d’une droite donnée par une équation ou une représentation graphique",
+      "2G32": "Tracer une droite connaissant son équation cartésienne ou réduite",
+      "2G33": "Établir alignement et parallélisme",
+      "2G34": "Résoudre un système de deux équations linéaires à deux inconnues, déterminer le point d’intersection de deux droites sécantes"
+    }
+  },
+  "2F1": {
+    "titre": "Se constituer un répertoire de fonctions de référence",
+    "sousThemes": {
+      "2F10": "Connaître les  fonctions affines",
+      "2F11": "Comparer et calculer des images en utilisant les fonctions de référence"
+    }
+  },
+  "2F2": {
+    "titre": "Représenter algébriquement et graphiquement les fonctions",
+    "sousThemes": {
+      "2F20": "Exploiter l'équation y=f(x) d'une courbe : appartenance, calcul de coordonnées",
+      "2F21": "Modéliser par des fonctions des situations issues des mathématiques, des autres disciplines",
+      "2F22": "Résoudre f(x)=k ou f(x)<k en choisissant une méthode adaptée",
+      "2F23": "Résoudre une équation, une inéquation produit ou quotient, à l'aide d'un tableau de signes",
+      "2F24": "Résoudre graphiquement ou avec un outil numérique, f(x)=g(x) ou f(x)<g(x)",
+      "2F25": "Etudier la parité d'une fonction"
+    }
+  },
+  "2F3": {
+    "titre": "Étudier les variations et les extremums d'une fonction",
+    "sousThemes": {
+      "2F30": "Relier représentation graphique et tableau de variations",
+      "2F31": "Utiliser les variations d'une fonction",
+      "2F32": "Déterminer les extremums d'une fonction"
+    }
+  },
+  "2S1": {
+    "titre": "Utiliser l'information chiffrée",
+    "sousThemes": {
+      "2S10": "Exploiter la relation entre effectifs, proportions et pourcentages. Pourcentage de pourcentage",
+      "2S11": "Exploiter la relation entre deux valeurs successives et leur taux d'évolution",
+      "2S12": "Calculer le taux d'évolution global à partir des taux d'évolution successifs. Calculer un taux d'évolution réciproque"
+    }
+  },
+  "2S2": {
+    "titre": "Statistique descriptive",
+    "sousThemes": {
+      "2S21": "Décrire les différences entre deux séries statistiques",
+      "2S22": "Lire et comprendre une fonction écrite en Python renvoyant la moyenne (m), l'écart type (s) et la proportion d'éléments dans [m-2s;m+2s]"
+    }
+  },
+  "2S3": {
+    "titre": "Modéliser le hasard, calculer des probabiltés",
+    "sousThemes": {
+      "2S30": "Calculer des probabilités dans des cas simples",
+      "2S31": "Utiliser des modèles théoriques de référence"
+    }
+  },
+  "2S4": {
+    "titre": "Echantillonnage",
+    "sousThemes": {}
+  }
+}

@@ -1,0 +1,35 @@
+{
+  // Configuration de l'éditeur
+  "format_on_save": "on",
+  "formatter": "prettier",
+  "c_spell.words": ["defaut", "reponse"],
+
+  // Actions à effectuer lors de la sauvegarde
+  "code_actions_on_save": {
+    "source.fix_all": true,
+    "organize_imports": true
+  },
+
+  // Configuration spécifique à ESLint
+  "eslint": {
+    "languages": [
+      "javascript",
+      "javascriptreact",
+      "typescript",
+      "typescriptreact",
+      "svelte"
+    ]
+  },
+
+  // Configuration spécifique aux langages
+  "languages": {
+    "JavaScript": {
+      "import_module_specifier": "relative",
+      "import_module_specifier_ending": "minimal"
+    },
+    "TypeScript": {
+      "import_module_specifier": "relative",
+      "import_module_specifier_ending": "minimal"
+    }
+  }
+}

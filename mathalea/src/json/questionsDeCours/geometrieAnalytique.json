@@ -1,0 +1,130 @@
+{
+  "questions": [
+    {
+      "id": "ga1",
+      "level": "2",
+      "themes": "Géométrie analytique",
+      "title": "Distance entre deux points",
+      "question": "Exprimer la distance $AB$ entre deux points, avec $A(x_A;y_A)$ et $B(x_B;y_B)$, en fonction des coordonnées des points.",
+      "answer": "\\sqrt{(x_B - x_A)^2 + (y_B - y_A)^2}",
+      "keys": ["x_A", "y_A", "x_B", "y_B"]
+    },
+    {
+      "id": "ga2",
+      "level": "2",
+      "themes": "Géométrie analytique",
+      "title": "Milieu d'un segment",
+      "question": "Exprimer les coordonnées du point $M$ milieu de $[AB]$, avec $A(x_A;y_A)$ et $B(x_B;y_B)$ en fonction des coordonnées des points.",
+      "answer": [
+        "M(\\dfrac{x_A+x_B}{2} ; \\dfrac{y_A+y_B}{2})",
+        "(\\dfrac{x_A+x_B}{2} ; \\dfrac{y_A+y_B}{2})"
+      ],
+      "keys": [";", "x_A", "y_A", "x_B", "y_B"]
+    },
+    {
+      "id": "ga3",
+      "themes": "Géométrie analytique",
+      "level": "2",
+      "title": "Norme d'un vecteur",
+      "question": "Exprimer la norme d'un vecteur $v$ de coordonnées $(x\\;;\\;y)$ en fonction de ses coordonnées.",
+      "answer": "\\sqrt{x^2+y^2}",
+      "keys": ["x", "y"]
+    },
+    {
+      "id": "ga4",
+      "themes": "Géométrie analytique",
+      "level": "2",
+      "title": "Norme d'un vecteur à partir des coordonnées des points",
+      "question": "Exprimer la norme d'un vecteur $\\overrightarrow{AB}$ avec $A(x_A;y_A)$ et $B(x_B;y_B)$ en fonction des coordonnées des points.",
+      "answer": "\\sqrt{(x_B - x_A)^2 + (y_B - y_A)^2}",
+      "keys": ["x_A", "y_A", "x_B", "y_B"]
+    },
+    {
+      "id": "ga5",
+      "themes": "Géométrie analytique",
+      "level": "2",
+      "title": "Addition de vecteurs",
+      "question": "Quelles sont les coordonnées du vecteur $u + v$ avec $u(x_1;y_1)$ et $v(x_2;y_2)$.",
+      "answer": "(x_1 + x_2; y_1 + y_2)",
+      "keys": [";", "x_1", "y_1", "x_2", "y_2"]
+    },
+    {
+      "id": "ga6",
+      "level": "2",
+      "themes": "Géométrie analytique",
+      "title": "Coordonnées d'un vecteur",
+      "question": "Exprimer les coordonnées d'un vecteur $\\overrightarrow{AB}$, avec $A(x_A;y_A)$ et $B(x_B;y_B)$, en fonction des coordonnées des points.",
+      "answer": [
+        "\\overrightarrow{AB} = \\begin{pmatrix}x_B-x_A\\\\y_B-y_A \\end{pmatrix}",
+        "\\begin{pmatrix}x_B-x_A\\\\y_B-y_A \\end{pmatrix}"
+      ],
+      "keys": ["PMATRIX11", "x_A", "y_A", "x_B", "y_B"]
+    },
+    {
+      "id": "ga7",
+      "level": "2",
+      "themes": "Géométrie analytique",
+      "title": "Vecteurs et parallélogramme",
+      "question": "Exprimer une égalité de vecteurs sachant que $ABCD$ est un parallélogramme.",
+      "answer": [
+        "\\overrightarrow{AB} =\\overrightarrow{DC}",
+        "\\overrightarrow{BA} =\\overrightarrow{CD}",
+        "\\overrightarrow{AD} =\\overrightarrow{BC}",
+        "\\overrightarrow{DA} =\\overrightarrow{CB}",
+        "\\overrightarrow{DC} =\\overrightarrow{AB}",
+        "\\overrightarrow{CD} =\\overrightarrow{BA}",
+        "\\overrightarrow{BC} =\\overrightarrow{AD}",
+        "\\overrightarrow{CB} =\\overrightarrow{DA}"
+      ],
+      "keys": ["VECT", "=", "A", "B", "C", "D"]
+    },
+    {
+      "id": "ga9",
+      "level": "2",
+      "themes": "Géométrie analytique",
+      "title": "Équation cartésienne",
+      "question": "Exprimer un vecteur directeur de la droite d'équation cartésienne $ax+by+c=0$.",
+      "answer": "\\begin{pmatrix}-b\\\\a\\end{pmatrix}",
+      "keys": ["PMATRIX11", "a", "b"]
+    },
+    {
+      "id": "ga10",
+      "level": "1",
+      "themes": "Géométrie analytique",
+      "title": "Produit scalaire à partir de deux normes et un angle",
+      "question": "Exprimer la formule du produit scalaire $\\overrightarrow{AB}\\cdot\\overrightarrow{AC}$ en fonction de deux normes et d'un angle.",
+      "answer": [
+        "\\lVert \\overrightarrow{AB} \\rVert \\times \\lVert \\overrightarrow{AC} \\rVert \\times \\cos(\\overrightarrow{AB},\\overrightarrow{AC})",
+        "\\lVert \\overrightarrow{AB} \\rVert \\lVert \\overrightarrow{AC} \\rVert \\cos(\\overrightarrow{AB},\\overrightarrow{AC})"
+      ],
+      "keys": [
+        "NORM",
+        "\\overrightarrow{AB}",
+        "\\overrightarrow{AC}",
+        "COSVIRGULE",
+        "x_1",
+        "x_2",
+        "y_1",
+        "y_2"
+      ]
+    },
+    {
+      "id": "ga11",
+      "level": "1",
+      "themes": "Géométrie analytique",
+      "title": "Produit scalaire à partir des coordonnées",
+      "question": "Exprimer la formule du produit scalaire $\\overrightarrow{AB}\\cdot\\overrightarrow{AC}$ en fonction des coordonnées des vecteurs $\\overrightarrow{AB}\\begin{pmatrix}x_1\\\\y_1\\end{pmatrix}$ et $\\overrightarrow{AC}\\begin{pmatrix}x_2\\\\y_2\\end{pmatrix}$.",
+      "answer": "x_1 \\times x_2 + y_1 \\times y_2",
+      "keys": ["VECT", "NORM", "\\cos", "x_1", "x_2", "y_1", "y_2"]
+    },
+    {
+      "id": "ga12",
+      "level": "1",
+      "themes": "Géométrie analytique",
+      "title": "Produit scalaire à partir de trois longueurs",
+      "question": "Exprimer la formule du produit scalaire $\\overrightarrow{AB}\\cdot\\overrightarrow{AC}$ en fonction des trois longueurs $AB$, $AC$ et $BC$.",
+      "answer": "\\dfrac{1}{2}(AB^2+AC^2-BC^2)",
+      "keys": ["VECT", "NORM", "\\cos", "AB", "AC", "BC"]
+    }
+  ]
+}

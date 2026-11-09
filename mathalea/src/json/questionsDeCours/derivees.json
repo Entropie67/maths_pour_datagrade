@@ -1,0 +1,275 @@
+{
+  "questions": [
+    {
+      "themes": "Dérivées",
+      "level": "1",
+      "id": "der25",
+      "title": "Taux d'accroissement",
+      "question": "Donner le taux d'accroissement d'une fonction $f$ aux alentours d'une valeur $a$ de son domaine de définition, pour un réel $h$ non nul :",
+      "answer": ["\\dfrac{f(a+h)-f(a)}{h}"],
+      "correction":"Le taux d'accroissement d'une fonction $f$ aux alentours d'une valeur $a$ de son domaine de définition, pour un réel $h \\neq 0$, est donné par $\\dfrac{f(a+h)-f(a)}{h}$.",
+      "keys": ["f(#0)", "a", "h", "x"]
+    }, {
+      "themes": "Dérivées",
+      "level": "1",
+      "id": "der26",
+      "title": "Taux d'accroissement",
+      "question": "Donner le taux d'accroissement d'une fonction $f$ aux alentours d'une valeur $a$ de son domaine de définition, pour un réel $x$ distinct de $a$ :",
+      "answer": ["\\dfrac{f(x)-f(a)}{x-a}"],
+      "correction":"Le taux d'accroissement d'une fonction $f$ aux alentours d'une valeur $a$ de son domaine de définition, pour un réel $x \\neq a$, est donné par $\\dfrac{f(x)-f(a)}{x-a}$.",
+      "keys": ["f(#0)", "a", "h", "x"]
+    }, {
+      "themes": "Dérivées",
+      "level": "1",
+      "id": "der27",
+      "type":"qcm",
+      "title": "Non-dérivabilité",
+      "question": "Donner une fonction qui n'est pas dérivable sur son domaine de définition.",
+      "answer": ["racine carrée"],
+      "correction":"La fonction racine carrée n'est pas dérivable en $0$.",
+      "badPropositions": ["inverse", "carré", "cube"],
+      "keys": []
+    },
+   {
+      "themes": "Dérivées",
+      "level": "1",
+      "id": "der28",
+      "title": "Définition nombre dérivé",
+      "question": "Soit $f$ une fonction dérivable en $a$. On a alors $f'(a)=\\ldots$",
+      "answer": ["\\lim_{h\\to 0}\\dfrac{f(a+h)-f(a)}{h}"],
+      "keys": ["f(#0)","f'(#0)", "a", "h", "x", "\\lim_{#0\\to #1}"],
+      "correction": "La définition du nombre dérivé est $f'(a)=\\lim_{h\\to 0}\\dfrac{f(a+h)-f(a)}{h}$."
+          },
+     {
+      "themes": "Dérivées",
+      "level": "1",
+      "id": "der29",
+      "title": "Définition nombre dérivé",
+      "type":"qcm",
+      "question": "Soit $f$ une fonction dérivable en $a$. On a alors $f'(a)=\\ldots$",
+      "answer": ["$\\lim_{h\\to 0}\\dfrac{f(a+h)-f(a)}{h}$"],
+      "badPropositions": ["$\\lim_{h\\to 0}\\dfrac{f(a+h)-f(h)}{h}$", "$\\lim_{h\\to a}\\dfrac{f(a+h)-f(a)}{h}$", "$\\lim_{h\\to 0}\\dfrac{f(a+h)-f(a)}{a+h}$"],
+     "correction" :"La définition du nombre dérivé est $f'(a)=\\lim_{h\\to 0}\\dfrac{f(a+h)-f(a)}{h}$.",
+     "keys": []    },{
+      "themes": "Dérivées",
+      "level": "1",
+      "id": "der30",
+      "title": "Définition nombre dérivé",
+      "question": "Soit $f$ une fonction dérivable en $a$. On a alors $f'(a)=\\ldots$",
+      "answer": ["\\lim_{h\\to 0}\\dfrac{f(a+h)-f(a)}{h}"],
+      "correction" :"La définition du nombre dérivé est $f'(a)=\\lim_{h\\to 0}\\dfrac{f(a+h)-f(a)}{h}$.",
+      "keys": ["f(#0)","f'(#0)", "a", "h", "x", "\\lim_{#0\\to #1}"]
+    },
+     {
+      "themes": "Dérivées",
+      "level": "1",
+      "id": "der1",
+      "title": "Équation de la tangente à une courbe en un point",
+      "question": "Donner l'équation de la tangente à la courbe représentative de la fonction $f$ en un point $A(x_A;y_A)$.",
+      "correction" :"L'équation de la tangente à la courbe représentative de la fonction $f$ en un point $A(x_A;y_A)$ est donnée par $y = f'(x_A)(x - x_A) + f(x_A)$.",
+      "answer": ["T:y = f'(x_A)(x - x_A) + f(x_A)"],
+      "keys": ["f(#0)", "f'(#0)", "x_A", "y_A", "x"]
+    },
+    {
+      "themes": "Dérivées",
+      "level": "1",
+      "id": "der2",
+      "title": "Application de la dérivation",
+      "question": "Les variations d'une fonction dérivable $f$ dépendent du signe de : ",
+      "answer": ["f'(x)", "f'"],
+      "keys": ["f(x)", "f'(x)", "x", "'"],
+"correction" :"La fonction $f$ est croissante lorsque $f'(x) > 0$, décroissante lorsque $f'(x) < 0$ et constante lorsque $f'(x) = 0$. Les variations de la fonction dépendent donc du signe de sa dérivée $f'(x)$."
+    },
+    {
+      "themes": "Dérivées",
+      "level": "1",
+      "id": "der3",
+      "title": "Dérivée d'un polynôme du second degré",
+      "question": "Quelle est la dérivée d'un polynôme du second degré $ax^2 + bx + c$ ?",
+      "answer": ["f'(x) = 2ax + b", "2ax + b"],
+      "keys": ["f'(x)=", "x", "a", "b"],
+      "correction" :"La dérivée d'un polynôme du second degré $ax^2 + bx + c$ est donnée par $f'(x) = 2ax + b$. Cette formule est obtenue en appliquant la règle de dérivation des puissances."
+    },
+    {
+      "themes": "Dérivées",
+      "level": "1",
+      "id": "der4",
+      "title": "Formule de la dérivée d'un polynôme du premier degré",
+      "question": "Quelle est la dérivée d'un polynôme du premier degré $ax + b$ ?",
+      "answer": ["f'(x) = a", "a"],
+      "keys": ["f'(x)=", "x", "a", "b"],
+      "correction" :"La dérivée d'un polynôme du premier degré $ax + b$ est constante et égale à $a$. Cette formule est obtenue en appliquant la règle de dérivation des puissances."
+    },
+    {
+      "themes": "Dérivées",
+      "level": "1",
+      "id": "der5",
+      "title": "Formule de la dérivée d'une fonction exponentielle",
+      "question": "Quelle est la dérivée d'une fonction exponentielle $f(x) = e^x$ ?",
+      "answer": ["f'(x) = e^x", "e^x"],
+      "keys": ["f'(x)=", "x", "EXP"],
+      "correction" :"La dérivée d'une fonction exponentielle $f(x) = e^x$ est égale à $f'(x) = e^x$."
+    },
+    {
+      "themes": "Dérivées",
+      "level": "T",
+      "id": "der6",
+      "title": "Formule de la dérivée d'une fonction logarithmique",
+      "question": "Quelle est la dérivée de la fonction $f(x) = \\ln(x)$ ?",
+      "answer": ["f'(x) = \\dfrac{1}{x}", "\\dfrac{1}{x}"],
+      "keys": ["f'(x)=", "x", "EXP", "LN"],
+      "correction" :"La dérivée de la fonction logarithmique définie sur $\\mathbb{R}_{+}^{*}$ est donnée par $f'(x) = \\dfrac{1}{x}$."
+      },
+      {"themes": "Dérivées",
+      "level": "T",
+      "id": "der7",
+      "title": "Dérivée de $\\mathrm{e}^u$",
+      "question": "Quelle est la dérivée de $\\mathrm{e}^{u}$ où $u$ est une fonction dérivable ?",
+      "answer": ["u'\\mathrm{e}^u"],
+      "keys": ["u", "u'", "\\mathrm{e}", "POW"],
+      "correction" :"La dérivée de $\\mathrm{e}^{u}$ est donnée par $u'\\mathrm{e}^u$. "
+    },
+    {
+      "themes": "Dérivées",
+      "level": "T",
+      "id": "der8",
+      "title": "Dérivée de $\\ln(u)$",
+      "question": "Quelle est la dérivée de $\\ln(u)$ où $u$ est une fonction dérivable et $u>0$ ?",
+      "answer": ["\\dfrac{u'}{u}"],
+      "keys": ["u", "u'", "\\ln"],
+      "correction" :"La dérivée de $\\ln(u)$ est donnée par $\\dfrac{u'}{u}$, où $u'$ est la dérivée de la fonction $u$. Cette règle est une application directe de la règle de dérivation des fonctions composées."
+    },
+    {
+      "themes": "Dérivées",
+      "level": "T",
+      "id": "der9",
+      "title": "Dérivée de $\\cos(ax+b)$",
+      "question": "Quelle est la dérivée de $\\cos(ax+b)$ ?",
+      "answer": ["-a\\sin(ax+b)"],
+      "keys": ["a", "x", "b", "\\sin", "\\cos"],
+      "correction" :"La dérivée de $\\cos(ax+b)$ est donnée par $-a\\sin(ax+b)$, où $a$ est un coefficient multiplicateur et $b$ un décalage. Cette règle est une application directe de la règle de dérivation des fonctions trigonométriques."
+    },
+    {
+      "themes": "Dérivées",
+      "level": "T",
+      "id": "der10",
+      "title": "Dérivée de $\\sin(ax+b)$",
+      "question": "Quelle est la dérivée de $\\sin(ax+b)$ ?",
+      "answer": ["a\\cos(ax+b)"],
+      "keys": ["a", "x", "b", "\\sin", "\\cos"],
+      "correction" :"La dérivée de $\\sin(ax+b)$ est donnée par $a\\cos(ax+b)$, où $a$ est un coefficient multiplicateur et $b$ un décalage. Cette règle est une application directe de la règle de dérivation des fonctions trigonométriques."
+    },
+    {
+      "themes": "Dérivées",
+      "level": "T",
+      "id": "der11",
+      "title": "Dérivée de $\\cos x$",
+      "question": "Quelle est la dérivée de $\\cos x$ ?",
+      "answer": ["-\\sin x"],
+      "keys": ["x", "\\sin", "\\cos"],
+      "correction" :"La dérivée de $\\cos x$ est donnée par $-\\sin x$. Cette règle est une application directe de la règle de dérivation des fonctions trigonométriques."
+    },
+    {
+      "themes": "Dérivées",
+      "level": "T",
+      "id": "der12",
+      "title": "Dérivée de $\\sin x$",
+      "question": "Quelle est la dérivée de $\\sin x$ ?",
+      "answer": ["\\cos x"],
+      "keys": ["x", "\\sin", "\\cos"],
+      "correction" :"La dérivée de $\\sin x$ est donnée par $\\cos x$. Cette règle est une application directe de la règle de dérivation des fonctions trigonométriques."
+    },
+    {
+      "themes": "Dérivées",
+      "level": "T",
+      "id": "der13",
+      "title": "Dérivée de $\\ln(x)$",
+      "question": "Quelle est la dérivée de $\\ln(x)$ pour $x>0$ ?",
+      "answer": ["\\dfrac{1}{x}"],
+      "keys": ["x"],
+      "correction" :"La dérivée de $\\ln(x)$ pour $x>0$ est donnée par $\\dfrac{1}{x}$. Cette règle est une application directe de la règle de dérivation des fonctions logarithmiques."
+    },
+    {
+      "themes": "Dérivées",
+      "level": "1",
+      "id": "der14",
+      "title": "Dérivée de $x^n$",
+      "question": "Quelle est la dérivée de $x^n$ où $n$ est un réel ?",
+      "answer": ["nx^{n-1}"],
+      "keys": ["x", "n", "POW"],
+      "correction" :"La dérivée de $x^n$ où $n$ est un réel est donnée par $nx^{n-1}$. Cette règle est une application directe de la règle de dérivation des puissances."
+    },
+    {
+      "themes": "Dérivées",
+      "level": "1",
+      "id": "der15",
+      "title": "Dérivée de $k$ (constante)",
+      "question": "Quelle est la dérivée d'une constante $k$ ?",
+      "answer": ["0"],
+      "keys": ["k"],
+      "correction" :"La dérivée d'une constante $k$ est toujours égale à $0$. Cette règle est une application directe de la règle de dérivation des constantes."
+    },
+    {
+      "themes": "Dérivées",
+      "level": "1",
+      "id": "der16",
+      "title": "Dérivée de $u+v$",
+      "question": "Quelle est la dérivée de la somme $u+v$ ?",
+      "answer": ["u'+v'"],
+      "keys": ["u", "v", "u'", "v'"],
+      "correction" :"La dérivée de la somme $u+v$ est donnée par $u'+v'$, où $u'$ et $v'$ sont les dérivées respectives des fonctions $u$ et $v$. Cette règle est une application directe de la règle de dérivation des sommes."
+    },
+    {
+      "themes": "Dérivées",
+      "level": "1",
+      "id": "der17",
+      "title": "Dérivée de $ku$",
+      "question": "Quelle est la dérivée de $k u$ où $k$ est une constante ?",
+      "answer": ["k u'"],
+      "keys": ["k", "u", "u'"],
+      "correction" :"La dérivée de $k u$ où $k$ est une constante est donnée par $k u'$, où $u'$ est la dérivée de la fonction $u$. Cette règle est une application directe de la règle de dérivation des constantes multipliées par une fonction."
+    },
+    {
+      "themes": "Dérivées",
+      "level": "1",
+      "id": "der18",
+      "title": "Dérivée de $uv$",
+      "question": "Quelle est la dérivée du produit $uv$ ?",
+      "answer": ["u'v + uv'"],
+      "keys": ["u", "v", "u'", "v'"],
+      "correction" :"La dérivée du produit $uv$ est donnée par $u'v + uv'$, où $u'$ et $v'$ sont les dérivées respectives des fonctions $u$ et $v$. Cette règle est connue sous le nom de règle du produit en dérivation."
+    },
+    {
+      "themes": "Dérivées",
+      "level": "1",
+      "id": "der19",
+      "title": "Dérivée de $\\dfrac{u}{v}$",
+      "question": "Quelle est la dérivée du quotient $\\dfrac{u}{v}$ ?",
+      "answer": ["\\dfrac{u'v - uv'}{v^2}"],
+      "keys": ["u", "v", "u'", "v'", "POW"],
+      "correction" :"La dérivée du quotient $\\dfrac{u}{v}$ est donnée par $\\dfrac{u'v - uv'}{v^2}$, où $u'$ et $v'$ sont les dérivées respectives des fonctions $u$ et $v$. Cette règle est connue sous le nom de règle du quotient en dérivation."
+    },
+    {
+      "themes": "Dérivées",
+      "level": "1",
+      "id": "der20",
+      "title": "Dérivée de $\\sqrt{x}$",
+      "question": "Quelle est la dérivée de $\\sqrt{x}$ pour $x>0$ ?",
+      "answer": ["\\dfrac{1}{2\\sqrt{x}}"],
+      "keys": ["x", "SQRT"],
+      "correction" :"La dérivée de $\\sqrt{x}$ pour $x>0$ est donnée par $\\dfrac{1}{2\\sqrt{x}}$. Cette règle est une application directe de la règle de dérivation des puissances."
+    },
+    {
+      "themes": "Dérivées",
+      "level": "1",
+      "id": "der21",
+      "title": "Dérivée de $u^n$",
+      "question": "Quelle est la dérivée de $u^n$ où $u$ est une fonction dérivable et $n$ un réel ?",
+      "answer": ["n u^{n-1} u'"],
+      "keys": ["u", "n", "u'", "POW"],
+      "correction" :"La dérivée de $u^n$ où $u$ est une fonction dérivable et $n$ un réel est donnée par $n u^{n-1} u'$, où $u'$ est la dérivée de la fonction $u$. Cette règle est une application directe de la règle de dérivation des puissances."
+    }
+     
+          
+  ]
+}

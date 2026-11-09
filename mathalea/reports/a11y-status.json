@@ -1,0 +1,1357 @@
+{
+  "version": 1,
+  "generatedAt": "2026-11-07T15:14:18.501Z",
+  "commit": "999bfaa7b4+modifs",
+  "environment": "local",
+  "baseUrl": "http://localhost:5186/alea/",
+  "config": {
+    "axeVersion": "4.14.0",
+    "tags": [
+      "wcag2a",
+      "wcag2aa",
+      "wcag21a",
+      "wcag21aa",
+      "best-practice"
+    ],
+    "excluded": [
+      ".vitrine-alea"
+    ],
+    "browser": "Chromium 156.0.8078.4",
+    "viewport": {
+      "width": 1280,
+      "height": 800
+    },
+    "seed": "rgaa"
+  },
+  "rules": {
+    "aria-prohibited-attr": {
+      "help": "Elements must only use permitted ARIA attributes",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/aria-prohibited-attr?application=axeAPI&lang=fr",
+      "category": "wcag",
+      "impact": "serious"
+    },
+    "aria-required-children": {
+      "help": "Certains rôles ARIA doivent comporter des descendants directs spécifiques",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/aria-required-children?application=axeAPI&lang=fr",
+      "category": "wcag",
+      "impact": "critical"
+    },
+    "aria-valid-attr-value": {
+      "help": "Les attributs ARIA doivent comporter des valeurs valides",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/aria-valid-attr-value?application=axeAPI&lang=fr",
+      "category": "wcag",
+      "impact": "critical"
+    },
+    "color-contrast": {
+      "help": "Les éléments doivent avoir un contraste de couleurs suffisant",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/color-contrast?application=axeAPI&lang=fr",
+      "category": "wcag",
+      "impact": "serious"
+    },
+    "heading-order": {
+      "help": "Les niveaux de titre doivent s’incrémenter d’un seul niveau à la fois",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/heading-order?application=axeAPI&lang=fr",
+      "category": "best-practice",
+      "impact": "moderate"
+    },
+    "label": {
+      "help": "Chaque élément de formulaire doit avoir une étiquette",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/label?application=axeAPI&lang=fr",
+      "category": "wcag",
+      "impact": "critical"
+    },
+    "label-content-name-mismatch": {
+      "help": "Le contenu textuel des éléments doit aussi se retrouver dans leur intitulé accessible",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/label-content-name-mismatch?application=axeAPI&lang=fr",
+      "category": "wcag",
+      "impact": "serious"
+    },
+    "landmark-one-main": {
+      "help": "La page doit contenir une région main",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/landmark-one-main?application=axeAPI&lang=fr",
+      "category": "best-practice",
+      "impact": "moderate"
+    },
+    "landmark-unique": {
+      "help": "Vérifier que chaque landmark est unique",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/landmark-unique?application=axeAPI&lang=fr",
+      "category": "best-practice",
+      "impact": "moderate"
+    },
+    "list": {
+      "help": "<ul> et <ol> ne doivent contenir directement que des éléments <li>, <script> ou <template>",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/list?application=axeAPI&lang=fr",
+      "category": "wcag",
+      "impact": "serious"
+    },
+    "listitem": {
+      "help": "Les éléments <li> doivent être contenus dans un élément <ul> ou <ol>",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/listitem?application=axeAPI&lang=fr",
+      "category": "wcag",
+      "impact": "serious"
+    },
+    "meta-viewport": {
+      "help": "Le zoom et l’agrandissement ne doivent pas être désactivés",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/meta-viewport?application=axeAPI&lang=fr",
+      "category": "wcag",
+      "impact": "moderate"
+    },
+    "page-has-heading-one": {
+      "help": "La page doit contenir un titre de niveau 1",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/page-has-heading-one?application=axeAPI&lang=fr",
+      "category": "best-practice",
+      "impact": "moderate"
+    },
+    "region": {
+      "help": "Le contenu doit être localisé dans une région",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/region?application=axeAPI&lang=fr",
+      "category": "best-practice",
+      "impact": "moderate"
+    },
+    "scrollable-region-focusable": {
+      "help": "Vérifier que les régions défilantes sont accessibles au clavier",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/scrollable-region-focusable?application=axeAPI&lang=fr",
+      "category": "wcag",
+      "impact": "serious"
+    }
+  },
+  "views": {
+    "accueil": {
+      "status": "ok",
+      "query": "",
+      "durationMs": 7556,
+      "notes": [
+        "vitrine de coopmaths.fr exclue de la mesure"
+      ],
+      "markers": {
+        "mathFields": 0,
+        "vitrine": true,
+        "degraded": null
+      },
+      "violations": {
+        "color-contrast": {
+          "count": 19,
+          "examples": [
+            {
+              "target": ".tracking-normal",
+              "html": "<span class=\"font-light font-sans tracking-normal\">par</span>"
+            },
+            {
+              "target": ".font-extrabold",
+              "html": "<a href=\"https://coopmaths.fr\" target=\"_blank\" rel=\"noreferrer\" class=\"font-extrabold font-logo9 tracking-tighter text-coopmaths-action dark:text-coopmathsdark-…"
+            },
+            {
+              "target": ".hover\\:dark\\:text-coopmathsdark-action-lightest",
+              "html": "<button type=\"button\" class=\"absolute right-2 -bottom-6 text-sm text-coopmaths-action dark:text-coopmathsdark-action hover:text-coopmaths-action-lightest hover:…"
+            }
+          ]
+        },
+        "landmark-unique": {
+          "count": 1,
+          "examples": [
+            {
+              "target": ".md\\:h-\\[120px\\]",
+              "html": "<nav class=\"p-4 md:h-[120px] bg-coopmaths-canvas dark:bg-coopmathsdark-canvas\">"
+            }
+          ]
+        },
+        "meta-viewport": {
+          "count": 1,
+          "examples": [
+            {
+              "target": "meta[name=\"viewport\"]",
+              "html": "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no\">"
+            }
+          ]
+        },
+        "page-has-heading-one": {
+          "count": 1,
+          "examples": [
+            {
+              "target": "html",
+              "html": "<html lang=\"fr\" class=\"notranslate\">"
+            }
+          ]
+        }
+      },
+      "incomplete": {
+        "aria-valid-attr-value": 1
+      }
+    },
+    "accueil-exercice": {
+      "status": "ok",
+      "query": "?uuid=a4d87&id=6M2B-1&alea=rgaa&v=&z=1",
+      "durationMs": 4160,
+      "notes": [],
+      "markers": {
+        "mathFields": 0,
+        "vitrine": false,
+        "degraded": null
+      },
+      "violations": {
+        "color-contrast": {
+          "count": 24,
+          "examples": [
+            {
+              "target": ".tracking-normal",
+              "html": "<span class=\"font-light font-sans tracking-normal\">par</span>"
+            },
+            {
+              "target": ".font-extrabold",
+              "html": "<a href=\"https://coopmaths.fr\" target=\"_blank\" rel=\"noreferrer\" class=\"font-extrabold font-logo9 tracking-tighter text-coopmaths-action dark:text-coopmathsdark-…"
+            },
+            {
+              "target": ".right-2.-bottom-6.hover\\:dark\\:text-coopmathsdark-action-lightest",
+              "html": "<button type=\"button\" class=\"absolute right-2 -bottom-6 text-sm text-coopmaths-action dark:text-coopmathsdark-action hover:text-coopmaths-action-lightest hover:…"
+            }
+          ]
+        },
+        "heading-order": {
+          "count": 1,
+          "examples": [
+            {
+              "target": ".gap-x-2.flex-row.items-center > h3",
+              "html": "<h3 class=\"text-coopmaths-struct dark:text-coopmathsdark-struct font-bold\">Paramètres</h3>"
+            }
+          ]
+        },
+        "landmark-unique": {
+          "count": 1,
+          "examples": [
+            {
+              "target": ".md\\:h-\\[120px\\]",
+              "html": "<nav class=\"p-4 md:h-[120px] bg-coopmaths-canvas dark:bg-coopmathsdark-canvas\">"
+            }
+          ]
+        },
+        "list": {
+          "count": 1,
+          "examples": [
+            {
+              "target": ".numbered-list",
+              "html": "<ul class=\"numbered-list w-full max-w-none list-inside mb-2 mx-0 marker:text-coopmaths-struct dark:marker:text-coopmathsdark-struct marker:font-bold s-DYyfvilwb…"
+            }
+          ]
+        },
+        "listitem": {
+          "count": 4,
+          "examples": [
+            {
+              "target": "#exercice0Q0",
+              "html": "<li class=\"s-DYyfvilwbjf_\" id=\"exercice0Q0\" style=\"line-height: 2;\">"
+            },
+            {
+              "target": "#exercice0Q1",
+              "html": "<li class=\"s-DYyfvilwbjf_\" id=\"exercice0Q1\" style=\"line-height: 2;\">"
+            },
+            {
+              "target": "#exercice0Q2",
+              "html": "<li class=\"s-DYyfvilwbjf_\" id=\"exercice0Q2\" style=\"line-height: 2;\">"
+            }
+          ]
+        },
+        "meta-viewport": {
+          "count": 1,
+          "examples": [
+            {
+              "target": "meta[name=\"viewport\"]",
+              "html": "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no\">"
+            }
+          ]
+        }
+      },
+      "incomplete": {
+        "aria-valid-attr-value": 2,
+        "color-contrast": 8,
+        "label-content-name-mismatch": 8
+      }
+    },
+    "accueil-exercice-interactif": {
+      "status": "ok",
+      "query": "?uuid=a4d87&id=6M2B-1&alea=rgaa&i=1",
+      "durationMs": 4264,
+      "notes": [
+        "4 champ(s) math-field : nom et focus à contrôler à la main"
+      ],
+      "markers": {
+        "mathFields": 4,
+        "vitrine": false,
+        "degraded": null
+      },
+      "violations": {
+        "color-contrast": {
+          "count": 24,
+          "examples": [
+            {
+              "target": ".tracking-normal",
+              "html": "<span class=\"font-light font-sans tracking-normal\">par</span>"
+            },
+            {
+              "target": ".font-extrabold",
+              "html": "<a href=\"https://coopmaths.fr\" target=\"_blank\" rel=\"noreferrer\" class=\"font-extrabold font-logo9 tracking-tighter text-coopmaths-action dark:text-coopmathsdark-…"
+            },
+            {
+              "target": ".right-2.-bottom-6.hover\\:dark\\:text-coopmathsdark-action-lightest",
+              "html": "<button type=\"button\" class=\"absolute right-2 -bottom-6 text-sm text-coopmaths-action dark:text-coopmathsdark-action hover:text-coopmaths-action-lightest hover:…"
+            }
+          ]
+        },
+        "heading-order": {
+          "count": 1,
+          "examples": [
+            {
+              "target": ".gap-x-2.flex-row.items-center > h3",
+              "html": "<h3 class=\"text-coopmaths-struct dark:text-coopmathsdark-struct font-bold\">Paramètres</h3>"
+            }
+          ]
+        },
+        "landmark-unique": {
+          "count": 1,
+          "examples": [
+            {
+              "target": ".md\\:h-\\[120px\\]",
+              "html": "<nav class=\"p-4 md:h-[120px] bg-coopmaths-canvas dark:bg-coopmathsdark-canvas\">"
+            }
+          ]
+        },
+        "list": {
+          "count": 1,
+          "examples": [
+            {
+              "target": ".numbered-list",
+              "html": "<ul class=\"numbered-list w-full max-w-none list-inside mb-2 mx-0 marker:text-coopmaths-struct dark:marker:text-coopmathsdark-struct marker:font-bold s-DYyfvilwb…"
+            }
+          ]
+        },
+        "listitem": {
+          "count": 4,
+          "examples": [
+            {
+              "target": "#exercice0Q0",
+              "html": "<li class=\"s-DYyfvilwbjf_\" id=\"exercice0Q0\" style=\"line-height: 2;\">"
+            },
+            {
+              "target": "#exercice0Q1",
+              "html": "<li class=\"s-DYyfvilwbjf_\" id=\"exercice0Q1\" style=\"line-height: 2;\">"
+            },
+            {
+              "target": "#exercice0Q2",
+              "html": "<li class=\"s-DYyfvilwbjf_\" id=\"exercice0Q2\" style=\"line-height: 2;\">"
+            }
+          ]
+        },
+        "meta-viewport": {
+          "count": 1,
+          "examples": [
+            {
+              "target": "meta[name=\"viewport\"]",
+              "html": "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no\">"
+            }
+          ]
+        }
+      },
+      "incomplete": {
+        "aria-valid-attr-value": 2,
+        "color-contrast": 14,
+        "label-content-name-mismatch": 8
+      }
+    },
+    "eleve": {
+      "status": "ok",
+      "query": "?uuid=a4d87&id=6M2B-1&alea=rgaa&i=1&v=eleve&es=0111001",
+      "durationMs": 3852,
+      "notes": [
+        "4 champ(s) math-field : nom et focus à contrôler à la main"
+      ],
+      "markers": {
+        "mathFields": 4,
+        "vitrine": false,
+        "degraded": null
+      },
+      "violations": {
+        "color-contrast": {
+          "count": 3,
+          "examples": [
+            {
+              "target": ".flex:nth-child(1) > .py-\\[2px\\].text-\\[0\\.7rem\\].hover\\:bg-coopmaths-action",
+              "html": "<button type=\"button\" class=\"py-[2px] px-2 text-[...\">"
+            },
+            {
+              "target": ".ml-2.flex:nth-child(3) > .py-\\[2px\\].text-\\[0\\.7rem\\].hover\\:bg-coopmaths-action",
+              "html": "<button type=\"button\" class=\"py-[2px] px-2 text-[...\">"
+            },
+            {
+              "target": "#buttonScoreEx0",
+              "html": "<button type=\"submit\" id=\"buttonScoreEx0\" class=\"inline-block px-6 py...\">"
+            }
+          ]
+        },
+        "landmark-one-main": {
+          "count": 1,
+          "examples": [
+            {
+              "target": "html",
+              "html": "<html lang=\"fr\" class=\"notranslate\">"
+            }
+          ]
+        },
+        "list": {
+          "count": 1,
+          "examples": [
+            {
+              "target": "ul",
+              "html": "<ul class=\"list-decimal list-inside mx-2 lg:mx-6 marker:text-coopmaths-struct dark:marker:text-coopmathsdark-struct marker:font-bold\">"
+            }
+          ]
+        },
+        "listitem": {
+          "count": 4,
+          "examples": [
+            {
+              "target": "#exercice0Q0",
+              "html": "<li class=\"s-YNE3JbAY2wgF\" id=\"exercice0Q0\" style=\"line-height: 2;\">"
+            },
+            {
+              "target": "#exercice0Q1",
+              "html": "<li class=\"s-YNE3JbAY2wgF\" id=\"exercice0Q1\" style=\"line-height: 2;\">"
+            },
+            {
+              "target": "#exercice0Q2",
+              "html": "<li class=\"s-YNE3JbAY2wgF\" id=\"exercice0Q2\" style=\"line-height: 2;\">"
+            }
+          ]
+        },
+        "meta-viewport": {
+          "count": 1,
+          "examples": [
+            {
+              "target": "meta[name=\"viewport\"]",
+              "html": "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no\">"
+            }
+          ]
+        },
+        "region": {
+          "count": 7,
+          "examples": [
+            {
+              "target": ".font-light.ml-2",
+              "html": "<div class=\"font-light ml-2\" style=\"font-size: 1.125rem; line-height: 1.3;\">6M2B-1 - Calculer l’aire d’un carré, d’un rectangle, ou d’un triangle <span class=\"t…"
+            },
+            {
+              "target": ".lg\\:mt-0",
+              "html": "<div class=\"flex flex-col w-full mt-2 lg:mt-0 mb-2\"><!----><div><p class=\"mt-2 mb-2 ml-2 lg:mx-6 text-coopmaths-corpus dark:text-coopmathsdark-corpus\">Dans chaq…"
+            },
+            {
+              "target": "div[data-top=\"140\"]",
+              "html": "<div class=\"divLatex\" style=\"position: absolute; top: 140px; left: 170px; transform: translate(-50%,-50%); opacity: 1; display: inline-flex; align-items: center…"
+            }
+          ]
+        }
+      },
+      "incomplete": {
+        "color-contrast": 39
+      }
+    },
+    "can": {
+      "status": "ok",
+      "query": "?uuid=a4d87&id=6M2B-1&alea=rgaa&i=1&v=can",
+      "durationMs": 3072,
+      "notes": [
+        "1 animation(s) sans fin en cours : un contraste peut varier d'un passage à l'autre"
+      ],
+      "markers": {
+        "mathFields": 0,
+        "vitrine": false,
+        "degraded": null
+      },
+      "violations": {
+        "color-contrast": {
+          "count": 1,
+          "examples": [
+            {
+              "target": ".py-3",
+              "html": "<button type=\"button\" class=\"py-3 px-6 text-3xl r...\">"
+            }
+          ]
+        },
+        "landmark-one-main": {
+          "count": 1,
+          "examples": [
+            {
+              "target": "html",
+              "html": "<html lang=\"fr\" class=\"notranslate\">"
+            }
+          ]
+        },
+        "meta-viewport": {
+          "count": 1,
+          "examples": [
+            {
+              "target": "meta[name=\"viewport\"]",
+              "html": "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no\">"
+            }
+          ]
+        },
+        "page-has-heading-one": {
+          "count": 1,
+          "examples": [
+            {
+              "target": "html",
+              "html": "<html lang=\"fr\" class=\"notranslate\">"
+            }
+          ]
+        },
+        "region": {
+          "count": 1,
+          "examples": [
+            {
+              "target": ".font-black",
+              "html": "<div class=\"font-black text-center uppercase text-6xl md:text-[130px]\">Course aux Nombres</div>"
+            }
+          ]
+        }
+      },
+      "incomplete": {}
+    },
+    "diaporama": {
+      "status": "ok",
+      "query": "?uuid=a4d87&id=6M2B-1&alea=rgaa&v=diaporama",
+      "durationMs": 3025,
+      "notes": [
+        "1 animation(s) sans fin en cours : un contraste peut varier d'un passage à l'autre"
+      ],
+      "markers": {
+        "mathFields": 0,
+        "vitrine": false,
+        "degraded": null
+      },
+      "violations": {
+        "color-contrast": {
+          "count": 1,
+          "examples": [
+            {
+              "target": ".flex-row-reverse",
+              "html": "<button type=\"button\" class=\"py-3 px-6 text-3xl r...\">"
+            }
+          ]
+        },
+        "landmark-one-main": {
+          "count": 1,
+          "examples": [
+            {
+              "target": "html",
+              "html": "<html lang=\"fr\" class=\"notranslate\">"
+            }
+          ]
+        },
+        "meta-viewport": {
+          "count": 1,
+          "examples": [
+            {
+              "target": "meta[name=\"viewport\"]",
+              "html": "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no\">"
+            }
+          ]
+        },
+        "page-has-heading-one": {
+          "count": 1,
+          "examples": [
+            {
+              "target": "html",
+              "html": "<html lang=\"fr\" class=\"notranslate\">"
+            }
+          ]
+        },
+        "region": {
+          "count": 1,
+          "examples": [
+            {
+              "target": ".font-black",
+              "html": "<div class=\"font-black text-center uppercase text-6xl md:text-[130px]\">Diaporama</div>"
+            }
+          ]
+        }
+      },
+      "incomplete": {}
+    },
+    "latex": {
+      "status": "ok",
+      "query": "?uuid=a4d87&id=6M2B-1&alea=rgaa&v=latex",
+      "durationMs": 3089,
+      "notes": [],
+      "markers": {
+        "mathFields": 0,
+        "vitrine": false,
+        "degraded": null
+      },
+      "violations": {
+        "color-contrast": {
+          "count": 16,
+          "examples": [
+            {
+              "target": ".tracking-normal",
+              "html": "<span class=\"font-light font-sans tracking-normal\">par</span>"
+            },
+            {
+              "target": ".font-extrabold",
+              "html": "<a href=\"https://coopmaths.fr\" target=\"_blank\" rel=\"noreferrer\" class=\"font-extrabold font-logo9 tracking-tighter text-coopmaths-action dark:text-coopmathsdark-…"
+            },
+            {
+              "target": "h6:nth-child(2)",
+              "html": "<h6 class=\"mb-2 text-lg font-black leading-tight text-coopmaths-struct-light dark:text-coopmathsdark-struct-light\">Modèle</h6>"
+            }
+          ]
+        },
+        "heading-order": {
+          "count": 2,
+          "examples": [
+            {
+              "target": ".py-4 > h5",
+              "html": "<h5 class=\"mb-2 text-3xl font-black leading-tight text-coopmaths-struct-light dark:text-coopmathsdark-struct-light\">Mise en page</h5>"
+            },
+            {
+              "target": ".mr-4.shadow-\\[0_2px_15px_-3px_rgba\\(0\\,0\\,0\\,0\\.07\\)\\,0_10px_20px_-2px_rgba\\(0\\,0\\,0\\,0\\.04\\)\\].bg-coopmaths-canvas-dark:nth-child(1) > .py-6.px-6.md\\:px-16 > h5",
+              "html": "<h5 class=\"mb-2 text-3xl font-black leading-tight text-coopmaths-struct-light dark:text-coopmathsdark-struct-light\">Compiler le code pour avoir un fichier PDF</…"
+            }
+          ]
+        },
+        "label": {
+          "count": 2,
+          "examples": [
+            {
+              "target": "#export-latex-taille-input",
+              "html": "<input type=\"number\" id=\"export-latex-taille-...\" min=\"8\" max=\"20\" step=\"1\" class=\" w-full h-10 pr-0 ...\">"
+            },
+            {
+              "target": "#export-latex-nb-versions-input",
+              "html": "<input type=\"number\" id=\"export-latex-nb-vers...\" min=\"1\" max=\"50\" step=\"1\" class=\" w-full h-10 pr-0 ...\">"
+            }
+          ]
+        },
+        "meta-viewport": {
+          "count": 1,
+          "examples": [
+            {
+              "target": "meta[name=\"viewport\"]",
+              "html": "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no\">"
+            }
+          ]
+        }
+      },
+      "incomplete": {
+        "color-contrast": 5
+      }
+    },
+    "typst": {
+      "status": "ok",
+      "query": "?uuid=a4d87&id=6M2B-1&alea=rgaa&v=typst",
+      "durationMs": 6229,
+      "notes": [],
+      "markers": {
+        "mathFields": 0,
+        "vitrine": false,
+        "degraded": null
+      },
+      "violations": {
+        "color-contrast": {
+          "count": 16,
+          "examples": [
+            {
+              "target": ".tracking-normal",
+              "html": "<span class=\"font-light font-sans tracking-normal\">par</span>"
+            },
+            {
+              "target": ".font-extrabold",
+              "html": "<a href=\"https://coopmaths.fr\" target=\"_blank\" rel=\"noreferrer\" class=\"font-extrabold font-logo9 tracking-tighter text-coopmaths-action dark:text-coopmathsdark-…"
+            },
+            {
+              "target": ".px-3.hover\\:bg-coopmaths-canvas-dark.dark\\:hover\\:bg-coopmathsdark-canvas-dark:nth-child(1)",
+              "html": "<button type=\"button\" class=\"flex items-center gap-1 px-3 py-1 text-sm text-coopmaths-action dark:text-coopmathsdark-action hover:bg-coopmaths-canvas-dark dark:…"
+            }
+          ]
+        },
+        "meta-viewport": {
+          "count": 1,
+          "examples": [
+            {
+              "target": "meta[name=\"viewport\"]",
+              "html": "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no\">"
+            }
+          ]
+        },
+        "page-has-heading-one": {
+          "count": 1,
+          "examples": [
+            {
+              "target": "html",
+              "html": "<html lang=\"fr\" class=\"notranslate\">"
+            }
+          ]
+        }
+      },
+      "incomplete": {
+        "aria-valid-attr-value": 1,
+        "color-contrast": 23
+      }
+    },
+    "amc": {
+      "status": "ok",
+      "query": "?uuid=a4d87&id=6M2B-1&alea=rgaa&v=amc",
+      "durationMs": 4471,
+      "notes": [],
+      "markers": {
+        "mathFields": 0,
+        "vitrine": false,
+        "degraded": null
+      },
+      "violations": {
+        "color-contrast": {
+          "count": 5,
+          "examples": [
+            {
+              "target": "#settings-nb-questions-0",
+              "html": "<input type=\"number\" id=\"settings-nb-question...\" min=\"1\" max=\"100\" step=\"1\" aria-label=\"Nombre de questions\" class=\" w-full h-10 pr-0 ...\">"
+            },
+            {
+              "target": "#settings-formAlea-0",
+              "html": "<input type=\"text\" id=\"settings-formAlea-0\" name=\"settings-formAlea-0\" placeholder=\"\" autocomplete=\"off\" autocorrect=\"off\" autocapitalize=\"off\" spellcheck=\"fals…"
+            },
+            {
+              "target": ".dark\\:text-coopmathsdark-struct-light > span[aria-hidden=\"true\"]",
+              "html": "<span aria-hidden=\"true\">4/4</span>"
+            }
+          ]
+        },
+        "meta-viewport": {
+          "count": 1,
+          "examples": [
+            {
+              "target": "meta[name=\"viewport\"]",
+              "html": "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no\">"
+            }
+          ]
+        }
+      },
+      "incomplete": {
+        "label-content-name-mismatch": 8
+      }
+    },
+    "moodle": {
+      "status": "ok",
+      "query": "?uuid=a4d87&id=6M2B-1&alea=rgaa&v=moodle",
+      "durationMs": 2804,
+      "notes": [],
+      "markers": {
+        "mathFields": 0,
+        "vitrine": false,
+        "degraded": null
+      },
+      "violations": {
+        "color-contrast": {
+          "count": 9,
+          "examples": [
+            {
+              "target": ".tracking-normal",
+              "html": "<span class=\"font-light font-sans tracking-normal\">par</span>"
+            },
+            {
+              "target": "a[href$=\"coopmaths.fr\"]",
+              "html": "<a href=\"https://coopmaths.fr\" target=\"_blank\" rel=\"noreferrer\" class=\"font-extrabold font-logo9 tracking-tighter text-coopmaths-action dark:text-coopmathsdark-…"
+            },
+            {
+              "target": "#scorm-btn",
+              "html": "<button type=\"button\" role=\"tab\" id=\"scorm-btn\" class=\"relative block w-ful...\" aria-controls=\"tabs-scorm\" aria-selected=\"false\">"
+            }
+          ]
+        },
+        "meta-viewport": {
+          "count": 1,
+          "examples": [
+            {
+              "target": "meta[name=\"viewport\"]",
+              "html": "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no\">"
+            }
+          ]
+        },
+        "scrollable-region-focusable": {
+          "count": 1,
+          "examples": [
+            {
+              "target": "#tabs-gift > .px-6.text-coopmaths-corpus-light.dark\\:text-coopmathsdark-corpus-light > .py-0 > pre",
+              "html": "<pre class=\"my-10 shadow-md bg-coopmaths-canvas-dark dark:bg-coopmathsdark-canvas-dark text-coopmaths-corpus dark:text-coopmathsdark-corpus p-4 w-full overflow-…"
+            }
+          ]
+        }
+      },
+      "incomplete": {
+        "aria-valid-attr-value": 1
+      }
+    },
+    "anki": {
+      "status": "ok",
+      "query": "?uuid=a4d87&id=6M2B-1&alea=rgaa&v=anki",
+      "durationMs": 2617,
+      "notes": [],
+      "markers": {
+        "mathFields": 0,
+        "vitrine": false,
+        "degraded": null
+      },
+      "violations": {
+        "color-contrast": {
+          "count": 6,
+          "examples": [
+            {
+              "target": ".tracking-normal",
+              "html": "<span class=\"font-light font-sans tracking-normal\">par</span>"
+            },
+            {
+              "target": ".font-extrabold",
+              "html": "<a href=\"https://coopmaths.fr\" target=\"_blank\" rel=\"noreferrer\" class=\"font-extrabold font-logo9 tracking-tighter text-coopmaths-action dark:text-coopmathsdark-…"
+            },
+            {
+              "target": "a[href$=\"apps.ankiweb.net/\"]",
+              "html": "<a href=\"https://apps.ankiweb.net/\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"text-coopmaths-action dark:text-coopmathsdark-action s-yzdK0Uxtoey6\">Anki</…"
+            }
+          ]
+        },
+        "meta-viewport": {
+          "count": 1,
+          "examples": [
+            {
+              "target": "meta[name=\"viewport\"]",
+              "html": "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no\">"
+            }
+          ]
+        }
+      },
+      "incomplete": {}
+    },
+    "alacarte": {
+      "status": "ok",
+      "query": "?uuid=a4d87&id=6M2B-1&alea=rgaa&v=alacarte",
+      "durationMs": 3129,
+      "notes": [],
+      "markers": {
+        "mathFields": 0,
+        "vitrine": false,
+        "degraded": null
+      },
+      "violations": {
+        "color-contrast": {
+          "count": 8,
+          "examples": [
+            {
+              "target": ".tracking-normal",
+              "html": "<span class=\"font-light font-sans tracking-normal\">par</span>"
+            },
+            {
+              "target": ".font-extrabold",
+              "html": "<a href=\"https://coopmaths.fr\" target=\"_blank\" rel=\"noreferrer\" class=\"font-extrabold font-logo9 tracking-tighter text-coopmaths-action dark:text-coopmathsdark-…"
+            },
+            {
+              "target": ".s-RcHVl5LvvpA9:nth-child(1) > .items-baseline.gap-3.mb-4 > .text-xs.text-coopmaths-corpus-lightest.dark\\:text-coopmathsdark-corpus-lightest",
+              "html": "<span class=\"text-xs text-coopmaths-corpus-lightest dark:text-coopmathsdark-corpus-lightest s-RcHVl5LvvpA9\">nom + URL MathALÉA</span>"
+            }
+          ]
+        },
+        "meta-viewport": {
+          "count": 1,
+          "examples": [
+            {
+              "target": "meta[name=\"viewport\"]",
+              "html": "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no\">"
+            }
+          ]
+        },
+        "page-has-heading-one": {
+          "count": 1,
+          "examples": [
+            {
+              "target": "html",
+              "html": "<html lang=\"fr\" class=\"notranslate\">"
+            }
+          ]
+        }
+      },
+      "incomplete": {
+        "aria-valid-attr-value": 1
+      }
+    },
+    "confeleve": {
+      "status": "ok",
+      "query": "?uuid=a4d87&id=6M2B-1&alea=rgaa&v=confeleve",
+      "durationMs": 2654,
+      "notes": [],
+      "markers": {
+        "mathFields": 0,
+        "vitrine": false,
+        "degraded": null
+      },
+      "violations": {
+        "color-contrast": {
+          "count": 17,
+          "examples": [
+            {
+              "target": ".tracking-normal",
+              "html": "<span class=\"font-light font-sans tracking-normal\">par</span>"
+            },
+            {
+              "target": "a[href$=\"coopmaths.fr\"]",
+              "html": "<a href=\"https://coopmaths.fr\" target=\"_blank\" rel=\"noreferrer\" class=\"font-extrabold font-logo9 tracking-tighter text-coopmaths-action dark:text-coopmathsdark-…"
+            },
+            {
+              "target": "#can-btn",
+              "html": "<button type=\"button\" role=\"tab\" id=\"can-btn\" class=\"relative block w-ful...\" aria-controls=\"tabs-pres-can\" aria-selected=\"false\">"
+            }
+          ]
+        },
+        "label": {
+          "count": 1,
+          "examples": [
+            {
+              "target": "#config-eleve-titre-input",
+              "html": "<input type=\"text\" id=\"config-eleve-titre-i...\" name=\"config-eleve-titre-i...\" placeholder=\"\" autocomplete=\"off\" autocorrect=\"off\" autocapitalize=\"off\" spellche…"
+            }
+          ]
+        },
+        "meta-viewport": {
+          "count": 1,
+          "examples": [
+            {
+              "target": "meta[name=\"viewport\"]",
+              "html": "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no\">"
+            }
+          ]
+        },
+        "page-has-heading-one": {
+          "count": 1,
+          "examples": [
+            {
+              "target": "html",
+              "html": "<html lang=\"fr\" class=\"notranslate\">"
+            }
+          ]
+        }
+      },
+      "incomplete": {
+        "aria-valid-attr-value": 1
+      }
+    },
+    "flashcards": {
+      "status": "ok",
+      "query": "?uuid=a4d87&id=6M2B-1&alea=rgaa&v=flashcards",
+      "durationMs": 4424,
+      "notes": [],
+      "markers": {
+        "mathFields": 0,
+        "vitrine": false,
+        "degraded": null
+      },
+      "violations": {
+        "color-contrast": {
+          "count": 13,
+          "examples": [
+            {
+              "target": ".tracking-normal",
+              "html": "<span class=\"font-light font-sans tracking-normal\">par</span>"
+            },
+            {
+              "target": ".font-extrabold",
+              "html": "<a href=\"https://coopmaths.fr\" target=\"_blank\" rel=\"noreferrer\" class=\"font-extrabold font-logo9 tracking-tighter text-coopmaths-action dark:text-coopmathsdark-…"
+            },
+            {
+              "target": ".px-3.bg-coopmaths-action.text-coopmaths-canvas",
+              "html": "<button type=\"button\" class=\"flex items-center gap-1 px-3 py-1 text-sm bg-coopmaths-action text-coopmaths-canvas dark:bg-coopmathsdark-action dark:text-coopmath…"
+            }
+          ]
+        },
+        "meta-viewport": {
+          "count": 1,
+          "examples": [
+            {
+              "target": "meta[name=\"viewport\"]",
+              "html": "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no\">"
+            }
+          ]
+        },
+        "page-has-heading-one": {
+          "count": 1,
+          "examples": [
+            {
+              "target": "html",
+              "html": "<html lang=\"fr\" class=\"notranslate\">"
+            }
+          ]
+        }
+      },
+      "incomplete": {
+        "aria-valid-attr-value": 1,
+        "color-contrast": 58
+      }
+    },
+    "i-have-who-has": {
+      "status": "ok",
+      "query": "?uuid=a4d87&id=6M2B-1&alea=rgaa&v=i-have-who-has",
+      "durationMs": 4310,
+      "notes": [
+        "aperçu Typst non compilé : /main.typ:153:42: error: unknown variable: txt",
+        "1 animation(s) sans fin en cours : un contraste peut varier d'un passage à l'autre"
+      ],
+      "markers": {
+        "mathFields": 0,
+        "vitrine": false,
+        "degraded": "aperçu Typst non compilé : /main.typ:153:42: error: unknown variable: txt"
+      },
+      "violations": {
+        "color-contrast": {
+          "count": 11,
+          "examples": [
+            {
+              "target": ".tracking-normal",
+              "html": "<span class=\"font-light font-sans tracking-normal\">par</span>"
+            },
+            {
+              "target": ".font-extrabold",
+              "html": "<a href=\"https://coopmaths.fr\" target=\"_blank\" rel=\"noreferrer\" class=\"font-extrabold font-logo9 tracking-tighter text-coopmaths-action dark:text-coopmathsdark-…"
+            },
+            {
+              "target": ".text-white",
+              "html": "<button type=\"button\" class=\"flex items-center gap-1 px-3 py-1 text-sm bg-coopmaths-action text-white s-jERy6SQ02nBY\"><i class=\"bx bx-file-pdf text-lg s-jERy6SQ…"
+            }
+          ]
+        },
+        "meta-viewport": {
+          "count": 1,
+          "examples": [
+            {
+              "target": "meta[name=\"viewport\"]",
+              "html": "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no\">"
+            }
+          ]
+        },
+        "page-has-heading-one": {
+          "count": 1,
+          "examples": [
+            {
+              "target": "html",
+              "html": "<html lang=\"fr\" class=\"notranslate\">"
+            }
+          ]
+        }
+      },
+      "incomplete": {
+        "aria-valid-attr-value": 1,
+        "color-contrast": 4
+      }
+    },
+    "slides": {
+      "status": "ok",
+      "query": "?uuid=a4d87&id=6M2B-1&alea=rgaa&v=slides",
+      "durationMs": 4876,
+      "notes": [],
+      "markers": {
+        "mathFields": 0,
+        "vitrine": false,
+        "degraded": null
+      },
+      "violations": {
+        "color-contrast": {
+          "count": 12,
+          "examples": [
+            {
+              "target": ".tracking-normal",
+              "html": "<span class=\"font-light font-sans tracking-normal\">par</span>"
+            },
+            {
+              "target": ".font-extrabold",
+              "html": "<a href=\"https://coopmaths.fr\" target=\"_blank\" rel=\"noreferrer\" class=\"font-extrabold font-logo9 tracking-tighter text-coopmaths-action dark:text-coopmathsdark-…"
+            },
+            {
+              "target": ".px-3.bg-coopmaths-action.text-coopmaths-canvas",
+              "html": "<button type=\"button\" class=\"flex items-center gap-1 px-3 py-1 text-sm bg-coopmaths-action text-coopmaths-canvas dark:bg-coopmathsdark-action dark:text-coopmath…"
+            }
+          ]
+        },
+        "meta-viewport": {
+          "count": 1,
+          "examples": [
+            {
+              "target": "meta[name=\"viewport\"]",
+              "html": "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no\">"
+            }
+          ]
+        },
+        "page-has-heading-one": {
+          "count": 1,
+          "examples": [
+            {
+              "target": "html",
+              "html": "<html lang=\"fr\" class=\"notranslate\">"
+            }
+          ]
+        }
+      },
+      "incomplete": {
+        "aria-valid-attr-value": 1,
+        "color-contrast": 10
+      }
+    },
+    "tbi": {
+      "status": "ok",
+      "query": "?uuid=a4d87&id=6M2B-1&alea=rgaa&v=tbi",
+      "durationMs": 7613,
+      "notes": [],
+      "markers": {
+        "mathFields": 0,
+        "vitrine": false,
+        "degraded": null
+      },
+      "violations": {
+        "aria-required-children": {
+          "count": 1,
+          "examples": [
+            {
+              "target": "div[role=\"tablist\"]",
+              "html": "<div class=\"flex flex-row items-center gap-1 min-w-0 overflow-x-auto s--j7qZRaqKKrd\" role=\"tablist\" aria-label=\"Onglets de la séance\">"
+            }
+          ]
+        },
+        "list": {
+          "count": 1,
+          "examples": [
+            {
+              "target": "ul",
+              "html": "<ul class=\"numbered-list w-full list-inside marker:text-coopmaths-struct dark:marker:text-coopmathsdark-struct marker:font-bold s-x13mqbemEu5l\" style=\"columns: …"
+            }
+          ]
+        },
+        "listitem": {
+          "count": 4,
+          "examples": [
+            {
+              "target": "#exercice0Q0",
+              "html": "<li class=\"overflow-x-auto overflow-y-hidden py-2 -my-2 s-x13mqbemEu5l\" id=\"exercice0Q0\" style=\"line-height: 2;\">"
+            },
+            {
+              "target": "#exercice0Q1",
+              "html": "<li class=\"overflow-x-auto overflow-y-hidden py-2 -my-2 s-x13mqbemEu5l\" id=\"exercice0Q1\" style=\"line-height: 2;\">"
+            },
+            {
+              "target": "#exercice0Q2",
+              "html": "<li class=\"overflow-x-auto overflow-y-hidden py-2 -my-2 s-x13mqbemEu5l\" id=\"exercice0Q2\" style=\"line-height: 2;\">"
+            }
+          ]
+        },
+        "meta-viewport": {
+          "count": 1,
+          "examples": [
+            {
+              "target": "meta[name=\"viewport\"]",
+              "html": "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no\">"
+            }
+          ]
+        },
+        "page-has-heading-one": {
+          "count": 1,
+          "examples": [
+            {
+              "target": "html",
+              "html": "<html lang=\"fr\" class=\"notranslate\">"
+            }
+          ]
+        }
+      },
+      "incomplete": {
+        "aria-prohibited-attr": 1,
+        "color-contrast": 27
+      }
+    },
+    "parcours": {
+      "status": "ok",
+      "query": "?v=parcours",
+      "durationMs": 2990,
+      "notes": [],
+      "markers": {
+        "mathFields": 0,
+        "vitrine": false,
+        "degraded": null
+      },
+      "violations": {
+        "color-contrast": {
+          "count": 5,
+          "examples": [
+            {
+              "target": ".tracking-normal",
+              "html": "<span class=\"font-light font-sans tracking-normal\">par</span>"
+            },
+            {
+              "target": ".font-extrabold",
+              "html": "<a href=\"https://coopmaths.fr\" target=\"_blank\" rel=\"noreferrer\" class=\"font-extrabold font-logo9 tracking-tighter text-coopmaths-action dark:text-coopmathsdark-…"
+            },
+            {
+              "target": "label",
+              "html": "<label title=\"Fichier parcours-mat...\" class=\"inline-flex items-ce...\">"
+            }
+          ]
+        },
+        "meta-viewport": {
+          "count": 1,
+          "examples": [
+            {
+              "target": "meta[name=\"viewport\"]",
+              "html": "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no\">"
+            }
+          ]
+        },
+        "page-has-heading-one": {
+          "count": 1,
+          "examples": [
+            {
+              "target": "html",
+              "html": "<html lang=\"fr\" class=\"notranslate\">"
+            }
+          ]
+        },
+        "region": {
+          "count": 2,
+          "examples": [
+            {
+              "target": ".gap-1",
+              "html": "<div class=\"flex flex-row gap-1 rounded-lg p-1 bg-coopmaths-canvas-dark dark:bg-coopmathsdark-canvas-dark\" role=\"tablist\" aria-label=\"Vue\">"
+            },
+            {
+              "target": "label",
+              "html": "<label title=\"Fichier parcours-mat...\" class=\"inline-flex items-ce...\">"
+            }
+          ]
+        }
+      },
+      "incomplete": {
+        "aria-valid-attr-value": 1
+      }
+    },
+    "mes-sauvegardes": {
+      "status": "ok",
+      "query": "?v=mes-sauvegardes",
+      "durationMs": 2623,
+      "notes": [],
+      "markers": {
+        "mathFields": 0,
+        "vitrine": false,
+        "degraded": null
+      },
+      "violations": {
+        "color-contrast": {
+          "count": 7,
+          "examples": [
+            {
+              "target": ".tracking-normal",
+              "html": "<span class=\"font-light font-sans tracking-normal\">par</span>"
+            },
+            {
+              "target": ".font-extrabold",
+              "html": "<a href=\"https://coopmaths.fr\" target=\"_blank\" rel=\"noreferrer\" class=\"font-extrabold font-logo9 tracking-tighter text-coopmaths-action dark:text-coopmathsdark-…"
+            },
+            {
+              "target": ".border-coopmaths-action.dark\\:border-coopmathsdark-action.hover\\:bg-coopmaths-action:nth-child(3)",
+              "html": "<button type=\"button\" title=\"Où sont enregistrées...\" class=\"inline-flex items-ce...\">"
+            }
+          ]
+        },
+        "meta-viewport": {
+          "count": 1,
+          "examples": [
+            {
+              "target": "meta[name=\"viewport\"]",
+              "html": "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no\">"
+            }
+          ]
+        },
+        "page-has-heading-one": {
+          "count": 1,
+          "examples": [
+            {
+              "target": "html",
+              "html": "<html lang=\"fr\" class=\"notranslate\">"
+            }
+          ]
+        },
+        "region": {
+          "count": 2,
+          "examples": [
+            {
+              "target": ".px-3",
+              "html": "<input type=\"search\" aria-label=\"Rechercher dans mes ...\" class=\"w-full rounded-lg bo...\" placeholder=\"Rechercher une feuil...\">"
+            },
+            {
+              "target": "label:nth-child(6)",
+              "html": "<label class=\"inline-flex items-ce...\" title=\"Reprendre des sauveg...\">"
+            }
+          ]
+        }
+      },
+      "incomplete": {
+        "color-contrast": 8
+      }
+    },
+    "tools": {
+      "status": "ok",
+      "query": "?v=tools",
+      "durationMs": 2753,
+      "notes": [
+        "1 animation(s) sans fin en cours : un contraste peut varier d'un passage à l'autre"
+      ],
+      "markers": {
+        "mathFields": 0,
+        "vitrine": false,
+        "degraded": null
+      },
+      "violations": {
+        "color-contrast": {
+          "count": 2,
+          "examples": [
+            {
+              "target": ".tracking-normal",
+              "html": "<span class=\"font-light font-sans tracking-normal\">par</span>"
+            },
+            {
+              "target": ".font-extrabold",
+              "html": "<a href=\"https://coopmaths.fr\" target=\"_blank\" rel=\"noreferrer\" class=\"font-extrabold font-logo9 tracking-tighter text-coopmaths-action dark:text-coopmathsdark-…"
+            }
+          ]
+        },
+        "landmark-unique": {
+          "count": 1,
+          "examples": [
+            {
+              "target": ".p-4",
+              "html": "<nav class=\"p-4 md:h-[120px] bg-coopmaths-canvas dark:bg-coopmathsdark-canvas\">"
+            }
+          ]
+        },
+        "meta-viewport": {
+          "count": 1,
+          "examples": [
+            {
+              "target": "meta[name=\"viewport\"]",
+              "html": "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no\">"
+            }
+          ]
+        },
+        "page-has-heading-one": {
+          "count": 1,
+          "examples": [
+            {
+              "target": "html",
+              "html": "<html lang=\"fr\" class=\"notranslate\">"
+            }
+          ]
+        }
+      },
+      "incomplete": {
+        "aria-valid-attr-value": 1
+      }
+    }
+  }
+}

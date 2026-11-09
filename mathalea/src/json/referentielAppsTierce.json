@@ -1,0 +1,89 @@
+{
+  "groupe01": {
+    "rubrique": "Applications d'Arnaud Durand",
+    "liste": [
+      {
+        "title": "Permis Littéral",
+        "typeExercice": "tierce",
+        "presentation": "L’idée de ce programme est de proposer une étape certificatrice et formatrice dans le processus d’apprentissage sur le calcul littéral en 5e notamment sur la réduction.",
+        "imgPath": "images/apps/app_permis_litteral.png",
+        "uuid": "permisLitteral"
+      },
+      {
+        "title": "Permis Équerre",
+        "typeExercice": "tierce",
+        "presentation": "Exerciseur certifiant qui permet d’apprendre puis certifier l’usage de l’équerre.",
+        "imgPath": "images/apps/app_permis_equerre.png",
+        "uuid": "permisEquerre"
+      }
+    ]
+  },
+  "groupe02": {
+    "rubrique": "Applications Coopmaths",
+    "liste": [
+      {
+        "title": "Glisse-nombre",
+        "typeExercice": "tierce",
+        "presentation": "Pour illuster les multiplications ou divisions par 10n, 100, 1000...",
+        "imgPath": "images/apps/app_glisse_nombre.png",
+        "uuid": "glisseNombre"
+      },
+      {
+        "title": "Challenge Tables",
+        "typeExercice": "tierce",
+        "presentation": "Tables de multiplications en temps limité.",
+        "imgPath": "images/apps/app_challenge_tables.png",
+        "uuid": "challengeTables"
+      },
+      {
+        "title": "Challenge Relatifs",
+        "typeExercice": "tierce",
+        "presentation": "Calculs avec des nombres relatifs en temps limité.",
+        "imgPath": "images/apps/app_challenge_relatifs.png",
+        "uuid": "challengeRelatif"
+      },
+      {
+        "title": "Parcours tables",
+        "typeExercice": "tierce",
+        "presentation": "Parcours personnalisé sur les tables de multiplications qui s'adapte aux erreurs pour reproposer les tables où l'élève fait des erreurs.",
+        "imgPath": "images/apps/app_challenge_tables.png",
+        "uuid": "parcoursTables"
+      },
+      {
+        "title": "Challenge Calcul littéral",
+        "typeExercice": "tierce",
+        "presentation": "Développer et réduire en temps limité.",
+        "imgPath": "images/apps/app_challenge_litteral.png",
+        "uuid": "challengeLitteral"
+      },
+      {
+        "title": "Équations",
+        "typeExercice": "tierce",
+        "presentation": "Déterminer l'opération à effectuer sur les deux membres d'une équation pour la résoudre. Les calculs sont automatiquement réalisés.",
+        "imgPath": "images/apps/app_equations.png",
+        "uuid": "equations"
+      },
+      {
+        "title": "Parallélogramme",
+        "typeExercice": "tierce",
+        "presentation": "Utiliser les propriétés pour faire une démonstration. 10 questions, non aléatoires, avec la possibilité de modifier ses réponses jusqu'à la validation.",
+        "imgPath": "images/apps/app_parallelogramme.png",
+        "uuid": "parallelogramme"
+      },
+      {
+        "title": "Questions de cours",
+        "typeExercice": "tierce",
+        "presentation": "Choisir des questions au hasard parmi une grande collection.",
+        "imgPath": "images/apps/app_questions_de_cours.png",
+        "uuid": "afd39"
+      },
+      {
+        "title": "Série aléatoire",
+        "typeExercice": "tierce",
+        "presentation": "Composer un lien vers une série d'exercices tirés au sort parmi les niveaux, thèmes ou exercices choisis.",
+        "imgPath": "images/apps/app_serie_aleatoire.svg",
+        "uuid": "6b74b"
+      }
+    ]
+  }
+}

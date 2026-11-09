@@ -1,0 +1,50 @@
+{
+  "questions": [
+    {
+      "themes": "Produit scalaire",
+      "level": "1",
+      "id": "prod1",
+    "title": "Produit scalaire avec les normes",
+    "question": "Exprimer en fonction de leurs normes et de l'angle $\\theta$ qu'ils forment entre eux : $\\vec{u}\\cdot \\vec{v}=\\ldots$ ",
+    "answer": ["\\lVert\\vec{u}\\rVert \\times \\lVert\\vec{v}\\rVert \\times \\cos(\\theta)"],
+    "keys": ["u", "v", "\\lVert#0\\rVert", "\\cos(#0)","\\sin(#0)", "\\theta","\\overrightarrow{#0}","\\cdot"]
+    }
+    ,
+    {
+        "themes": "Produit scalaire",
+        "level": "1",
+        "id": "prod2",
+        "title": "Produit scalaire avec les coordonnées",
+        "question": "Exprimer le produit scalaire de $\\vec{u}\\begin{pmatrix}a\\\\ b\\end{pmatrix}$ et $\\vec{v}\\begin{pmatrix}c\\\\ d\\end{pmatrix}$ :",
+        "answer": ["ac + bd"],
+        "keys": ["a", "b", "c", "d"]
+    },
+    {
+        "themes": "Produit scalaire",
+        "level": "1",
+        "id": "prod3",
+        "title": "Produit scalaire projeté",
+        "question": "$H$ est le projeté orthogonal de $C$ sur $(AB)$. Sachant que $\\widehat{BAC}$ est un angle aîgu,  $\\overrightarrow{AB}\\cdot \\overrightarrow{AC}=\\ldots$  :",
+        "answer": ["AB\\times AH"],
+        "keys": ["A", "B", "C", "H"]
+    }
+    ,
+    {
+        "themes": "Produit scalaire",
+        "level": "1",
+        "id": "prod4",
+        "title": "Produit scalaire projeté",
+        "question": "$H$ est le projeté orthogonal de $C$ sur $(AB)$. Sachant que $\\widehat{ABC}$ est un angle obtus,  $\\overrightarrow{AB}\\cdot \\overrightarrow{AC}=\\ldots$  :",
+        "answer": ["-AB\\times AH"],
+        "keys": ["A", "B", "C", "H"]
+    },  {
+      "themes": "Produit scalaire",
+      "level": "1",
+      "id": "prod5",
+    "title": "Produit scalaire et orthogonalité",
+    "question": "$\\vec{u}$ et $\\vec{v} $ sont orthogonaux. $\\vec{u}\\cdot \\vec{v}=\\ldots$ ",
+    "answer": ["0"]
+    }
+
+    ]
+}

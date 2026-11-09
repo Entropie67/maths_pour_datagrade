@@ -1,0 +1,160 @@
+{
+  "questions": [
+    {
+      "themes": "Second degré",
+      "level": "1",
+      "id": "SD1",
+      "title": "Discriminant d'un polynôme du second degré",
+      "question": "Donner l'expression du discriminant d'un polynôme du second degré $ax^2 + bx + c$.",
+      "answer": ["\\Delta = b^2 - 4ac", "b^2-4ac"],
+      "keys": ["a", "b", "c", "\\Delta"],
+      "correction": "Le discriminant d'un polynôme du second degré $ax^2 + bx + c$ est $\\Delta = b^2 - 4ac$."
+    },
+    {
+      "themes": "Second degré",
+      "level": "1",
+      "id": "SD2",
+      "title": "Racine d'un polynôme du second degré (discriminant positif)",
+      "question": "Donner l'expression d'une racine d'un polynôme du second degré $ax^2 + bx + c$ avec $\\Delta > 0$.",
+      "answer": [
+        "\\dfrac{-b - \\sqrt{\\Delta}}{2a}",
+        "\\dfrac{-b + \\sqrt{\\Delta}}{2a}"
+      ],
+      "correction": "Les deux racines sont $\\dfrac{-b - \\sqrt{\\Delta}}{2a}$ et $\\dfrac{-b + \\sqrt{\\Delta}}{2a}$.",
+      "keys": ["a", "b", "\\Delta"]
+    },
+    {
+      "themes": "Second degré",
+      "level": "1",
+      "id": "SD3",
+      "title": "Racine d'un polynôme du second degré (discriminant nul)",
+      "question": "Donner l'expression de la racine d'un polynôme du second degré $ax^2 + bx + c$ avec $\\Delta = 0$.",
+      "answer": "\\dfrac{-b}{2a}",
+      "keys": ["a", "b", "c"]
+    },
+    {
+      "themes": "Second degré",
+      "level": "1",
+      "id": "SD4",
+      "title": "Abscisse du sommet d'une parabole définie par le polynôme $ax^2 + bx + c$",
+      "question": "Quelle est l'abscisse du sommet d'une parabole définie par le polynôme $ax^2 + bx + c$ ?",
+      "answer": "\\dfrac{-b}{2a}",
+      "keys": ["a", "b", "c"]
+    },
+
+    {
+      "themes": "Second degré",
+      "level": "1",
+      "id": "SD5",
+      "title": "Forme canonique : définition",
+      "question": "Quelle est la forme canonique d'un polynôme de degré $2$ ?",
+      "answer": "a(x-\\alpha)^2 + \\beta",
+      "correction": "La forme canonique d'un polynôme de degré $2$ est $a(x-\\alpha)^2 + \\beta$ où $\\alpha$ est l'abscisse du sommet et $\\beta$ la valeur du sommet.",
+      "keys": ["a", "b", "c", "\\alpha", "\\beta", "\\Delta", "x"]
+    }, {
+      "themes": "Second degré",
+      "level": "1",
+      "id": "SD6",
+      "title": "Factorisation",
+      "question": "Quelle est la forme factorisée d'un polynôme de degré $ax^2+bx+c$ ayant deux racines $x_1$ et $x_2$  ?",
+      "answer": "a(x-x_1)(x-x_2)",
+      "correction": "La forme factorisée est $a(x-x_1)(x-x_2)$.",
+      "keys": ["a", "b", "c", "\\alpha", "\\beta", "\\Delta", "x","x_1","x_2"]
+    }, {
+      "themes": "Second degré",
+      "level": "1",
+      "id": "SD7",
+      "title": "Factorisation",
+      "question": "Quelle est la forme factorisée d'un polynôme de degré $ax^2+bx+c$ ayant une seule racines $x_1$  ?",
+      "answer": ["a(x-x_1)^2","a(x-x_1)(x-x_1)"],
+      "correction": "La forme factorisée est $a(x-x_1)^2$.",
+      "keys": ["a", "b", "c", "\\alpha", "\\beta", "\\Delta", "x","x_1"]
+      }, {
+      "themes": "Second degré",
+      "level": "1",
+      "id": "SD8",
+      "title": "Somme et produit de racines",
+      "question": "Quelle est, en fonction de la somme $S$ et du produit $P$ de ses deux racines, l'écriture d'un polynôme de degré $2$ ?",
+      "answer": ["x^2-Sx+P"],
+      "correction": "La forme demandée est $x^2-Sx+P$.",
+      "keys": ["a", "b", "c", "\\alpha", "\\beta", "\\Delta", "x","S","P"]
+    }, {
+      "themes": "Second degré",
+      "level": "1",
+      "id": "SD9",
+      "type" :"qcm",
+      "title": "Signe",
+      "question": "Quel est le signe d'un polynôme de degré $2$ qui a $2$ racines distinctes ?",
+      "answer": ["Du signe de $a$ à l'extérieur des racines."],
+      "correction": "Du signe de $a$ à l'extérieur des racines.",
+      "badPropositions": ["Du signe de $a$ à l'intérieur des racines.", "positif sur $\\mathbb R$", "négatif sur $\\mathbb R$"]
+    }, {
+      "themes": "Second degré",
+      "level": "1",
+      "id": "SD10",
+      "title": "Forme canonique et racines",
+      "question": "Soit $P$ un polynôme qui s'écrit $P(x)=a(x-\\alpha)^2+\\beta$. Si $\\beta>0$ et $a>0$, combien a-t-il de racines ?",
+      "answer": ["0"],
+      "correction": "Le minimum est strictement positif, il n'y a pas de racines."
+       },
+       {
+      "themes": "Second degré",
+      "level": "1",
+      "id": "SD11",
+      "title": "Forme canonique et racines",
+      "question": "Soit $P$ un polynôme qui s'écrit $P(x)=a(x-\\alpha)^2+\\beta$. Si $\\beta<0$ et $a<0$, combien a-t-il de racines ?",
+      "answer": ["0"],
+      "correction": "Le maximum est strictement négatif, il n'y a pas de racines.."
+       }
+       ,
+       {
+      "themes": "Second degré",
+      "level": "1",
+      "id": "SD12",
+      "title": "Forme canonique et racines",
+      "question": "Soit $P$ un polynôme qui s'écrit $P(x)=a(x-\\alpha)^2+\\beta$. Si $\\beta>0$ et $a<0$, combien a-t-il de racines ?",
+      "answer": ["2"],
+      "correction": "Le maximum est strictement positif et la parabole orientée vers le bas. Il y a $2$ racines."
+       },
+       {
+      "themes": "Second degré",
+      "level": "1",
+      "id": "SD13",
+      "title": "Forme canonique et racines",
+      "question": "Soit $P$ un polynôme qui s'écrit $P(x)=a(x-\\alpha)^2+\\beta$. Si $\\beta<0$ et $a>0$, combien a-t-il de racines ?",
+      "answer": ["2"],
+      "correction": "Le minimum est strictement négatif et la parabole orientée vers le haut. Il y a $2$ racines."
+       },
+
+    {
+      "themes": "Second degré",
+      "level": "1",
+      "id": "SD14",
+      "title": "Forme canonique et sommet",
+      "question": "Quel sont les coordonnées du sommet de la parabole d'un polynôme de degré $2$ sous forme canonique ?",
+      "answer": "(\\alpha; \\beta)",
+      "correction": "La parabole admet comme sommet  $S(\\alpha;\\beta)$ .",
+      "keys": ["a", "b", "c", "\\alpha", "\\beta", "\\Delta", "x","(",")"]
+    },
+    {
+      "themes": "Second degré",
+      "level": "1",
+      "id": "SD15",
+      "title": "Forme canonique et axe de symétrie",
+      "question": "Quel l'axe de symétrie de la parabole d'un polynôme de degré $2$ sous forme canonique ?",
+      "answer": "x=\\alpha",
+      "correction": "La parabole admet comme axe de symétrie  $x=\\alpha$ .",
+      "keys": ["a", "b", "c", "\\alpha", "\\beta", "\\Delta", "x","(",")","="]
+    },
+       {
+      "themes": "Second degré",
+      "level": "1",
+      "id": "SD16",
+       "title": "Forme canonique et variations",
+      "question": "Le polynôme $P$, qui s'écrit $P(x)=a(x-\\alpha)^2+\\beta$, avec $a<0$ est croissant sur $\\ldots$",
+      "answer": ["]-\\infty; \\alpha["],
+      "correction": "Le polynôme est croissant sur $]-\\infty; \\alpha[$.",
+      "keys": ["a", "b", "c", "\\alpha", "\\beta", "\\Delta", "x","[","]","\\infty",";"]
+       }
+  ]
+}

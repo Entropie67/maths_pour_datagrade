@@ -1,0 +1,2173 @@
+/* Tailwind CSS v4 imports */
+@import 'tailwindcss';
+
+/* Dark mode: use class strategy instead of media query */
+@custom-variant dark (&:where(.dark, .dark *));
+
+/* Plugins */
+@plugin "daisyui";
+@plugin "daisyui/theme" {
+  name: 'mytheme';
+  default: true;
+  --color-base-100: #ffff;
+  --color-base-200: #f2f2f2;
+  --color-base-300: #e5e5e5;
+  --color-base-content: #1f2937;
+  --color-primary: #f15929;
+  --color-primary-content: #ffffff;
+  --color-secondary: #216d9a;
+  --color-secondary-content: #ffffff;
+  --color-accent: #d84010;
+  --color-accent-content: #ffffff;
+  --color-neutral: #e1e1e6;
+  --color-neutral-content: #1f2937;
+  --color-info: #bd93f9;
+  --color-info-content: #000000;
+  --color-success: #36d399;
+  --color-success-content: #000000;
+  --color-warning: #fbbd23;
+  --color-warning-content: #000000;
+  --color-error: #f87272;
+  --color-error-content: #000000;
+}
+@plugin "@tailwindcss/forms";
+
+/* Custom theme extending Tailwind */
+@theme {
+  /* Custom grid columns */
+  --grid-template-columns-13: repeat(13, minmax(0, 1fr));
+  --grid-template-columns-14: repeat(14, minmax(0, 1fr));
+  --grid-template-columns-15: repeat(15, minmax(0, 1fr));
+  --grid-template-columns-16: repeat(16, minmax(0, 1fr));
+  --grid-template-columns-17: repeat(17, minmax(0, 1fr));
+  --grid-template-columns-18: repeat(18, minmax(0, 1fr));
+  --grid-template-columns-19: repeat(19, minmax(0, 1fr));
+  --grid-template-columns-20: repeat(20, minmax(0, 1fr));
+  --grid-template-columns-21: repeat(21, minmax(0, 1fr));
+  --grid-template-columns-22: repeat(22, minmax(0, 1fr));
+  --grid-template-columns-23: repeat(23, minmax(0, 1fr));
+  --grid-template-columns-24: repeat(24, minmax(0, 1fr));
+  --grid-template-columns-25: repeat(25, minmax(0, 1fr));
+  --grid-template-columns-26: repeat(26, minmax(0, 1fr));
+  --grid-template-columns-27: repeat(27, minmax(0, 1fr));
+  --grid-template-columns-28: repeat(28, minmax(0, 1fr));
+  --grid-template-columns-29: repeat(29, minmax(0, 1fr));
+  --grid-template-columns-30: repeat(30, minmax(0, 1fr));
+
+  /* Custom scale */
+  --scale-175: 1.75;
+  --scale-200: 2;
+
+  /* Quizz answer colors (palette daltonienne Okabe-Ito, reprise de Razzia) */
+  --color-quizz-1: #e69f00;
+  --color-quizz-2: #56b4e9;
+  --color-quizz-3: #3dbfa0;
+  --color-quizz-4: #cc79a7;
+
+  /* Fonts */
+  --font-sans:
+    'Source Sans Pro', ui-sans-serif, system-ui, sans-serif,
+    'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  --font-mono:
+    'Source Code Pro', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
+    'Liberation Mono', 'Courier New', monospace;
+  --font-logo9: 'jelleebold';
+
+  /* coopmaths colors - light mode */
+  --color-coopmaths: #f15929;
+  --color-coopmaths-lightest: #f87f5c;
+  --color-coopmaths-light: #f56d45;
+  --color-coopmaths-dark: #f45e27;
+  --color-coopmaths-darkest: #e64a10;
+  --color-coopmaths-back: #f5f1f3;
+  --color-coopmaths-backdark: #dadbdf;
+  --color-coopmaths-backdarker: #cecfd4;
+  --color-coopmaths-backcorrection: #e0a588;
+  --color-coopmaths-backnav: #f15929;
+  --color-coopmaths-backnavlight: #f56d45;
+  --color-coopmaths-title: #342a34;
+  --color-coopmaths-titlemenu: #f15929;
+  --color-coopmaths-titlelight: #f5f1f3;
+  --color-coopmaths-titleexercise: #f15929;
+  --color-coopmaths-darkmode: #2e2e2b;
+  --color-coopmaths-darkmodelight: #363633;
+
+  /* coopmaths canvas colors */
+  --color-coopmaths-canvas: #ffffff;
+  --color-coopmaths-canvas-dark: #f6f6f6;
+  --color-coopmaths-canvas-darkest: #e9e9e9;
+  --color-coopmaths-canvas-moredark: #c8c8c8;
+
+  /* coopmaths corpus colors */
+  --color-coopmaths-corpus: #1f2429;
+  --color-coopmaths-corpus-light: #45505b;
+  --color-coopmaths-corpus-lightest: #6a7c8d;
+  --color-coopmaths-corpus-dark: #191d21;
+  --color-coopmaths-corpus-darkest: #131619;
+
+  /* coopmaths action colors */
+  --color-coopmaths-action: #f15929;
+  --color-coopmaths-action-light: #f47a54;
+  --color-coopmaths-action-lightest: #f79b7f;
+  --color-coopmaths-action-dark: #d43d0e;
+  --color-coopmaths-action-darkest: #9f2e0a;
+  --color-coopmaths-action-100: #feeeea;
+  --color-coopmaths-action-200: #fcded4;
+  --color-coopmaths-action-300: #fbcdbf;
+  --color-coopmaths-action-400: #f9bda9;
+  --color-coopmaths-action-500: #f8ac94;
+  --color-coopmaths-action-600: #f79b7f;
+  --color-coopmaths-action-700: #f58b69;
+  --color-coopmaths-action-800: #f47a54;
+  --color-coopmaths-action-900: #f26a3e;
+
+  /* coopmaths warn colors */
+  --color-coopmaths-warn: #80d925;
+  --color-coopmaths-warn-light: #99e150;
+  --color-coopmaths-warn-lightest: #b3e97c;
+  --color-coopmaths-warn-dark: #66ae1e;
+  --color-coopmaths-warn-darkest: #4d8216;
+  --color-coopmaths-warn-50: #f3fced;
+  --color-coopmaths-warn-100: #e6f9db;
+  --color-coopmaths-warn-200: #daf5c9;
+  --color-coopmaths-warn-300: #cdf2b7;
+  --color-coopmaths-warn-400: #c1eea4;
+  --color-coopmaths-warn-500: #b4ea90;
+  --color-coopmaths-warn-600: #a8e67c;
+  --color-coopmaths-warn-700: #9be265;
+  --color-coopmaths-warn-800: #8edd4b;
+  --color-coopmaths-warn-900: #6ebc1f;
+  --color-coopmaths-warn-1000: #5da119;
+  --color-coopmaths-warn-1100: #4d8613;
+
+  /* coopmaths struct colors */
+  --color-coopmaths-struct: #216d9a;
+  --color-coopmaths-struct-light: #2c93cf;
+  --color-coopmaths-struct-lightest: #5faedd;
+  --color-coopmaths-struct-dark: #1a577b;
+  --color-coopmaths-struct-darkest: #14415c;
+
+  /* coopmathsdark colors - dark mode */
+  --color-coopmathsdark: #f15929;
+  --color-coopmathsdark-lightest: #f87f5c;
+  --color-coopmathsdark-light: #f56d45;
+  --color-coopmathsdark-dark: #f45e27;
+  --color-coopmathsdark-darkest: #e64a10;
+  --color-coopmathsdark-back: #2e2e2b;
+  --color-coopmathsdark-backdark: #dadbdf;
+  --color-coopmathsdark-backdarker: #cecfd4;
+  --color-coopmathsdark-backcorrection: #e0a588;
+  --color-coopmathsdark-backnav: #f15929;
+  --color-coopmathsdark-backnavlight: #f56d45;
+  --color-coopmathsdark-title: #342a34;
+  --color-coopmathsdark-titlemenu: #f15929;
+  --color-coopmathsdark-titlelight: #f5f1f3;
+  --color-coopmathsdark-titleexercise: #f15929;
+  --color-coopmathsdark-darkmode: #2e2e2b;
+  --color-coopmathsdark-darkmodelight: #363633;
+
+  /* coopmathsdark canvas colors */
+  --color-coopmathsdark-canvas: #282a36;
+  --color-coopmathsdark-canvas-dark: #3a3d4e;
+  --color-coopmathsdark-canvas-darkest: #4b4f66;
+  --color-coopmathsdark-canvas-moredark: #68688c;
+  --color-coopmathsdark-canvas-light: #9fa3b8;
+
+  /* coopmathsdark corpus colors */
+  --color-coopmathsdark-corpus: #b0b0b0;
+  --color-coopmathsdark-corpus-light: #c8c8c8;
+  --color-coopmathsdark-corpus-lightest: #dfdfdf;
+  --color-coopmathsdark-corpus-dark: #7b7b7b;
+  --color-coopmathsdark-corpus-darkest: #464646;
+
+  /* coopmathsdark action colors */
+  --color-coopmathsdark-action: #ffb86c;
+  --color-coopmathsdark-action-light: #ffc689;
+  --color-coopmathsdark-action-lightest: #ffd4a7;
+  --color-coopmathsdark-action-dark: #ff9523;
+  --color-coopmathsdark-action-darkest: #da7100;
+
+  /* coopmathsdark warn colors */
+  --color-coopmathsdark-warn: #ff79c6;
+  --color-coopmathsdark-warn-light: #ff94d1;
+  --color-coopmathsdark-warn-lightest: #ffafdd;
+  --color-coopmathsdark-warn-dark: #ff2ea6;
+  --color-coopmathsdark-warn-darkest: #e20082;
+
+  /* coopmathsdark struct colors */
+  --color-coopmathsdark-struct: #bd93f9;
+  --color-coopmathsdark-struct-light: #c49efa;
+  --color-coopmathsdark-struct-lightest: #caa9fa;
+  --color-coopmathsdark-struct-dark: #a66df7;
+  --color-coopmathsdark-struct-darkest: #8f48f5;
+}
+
+/* Restore cursor-pointer on interactive elements (removed in Tailwind v4 Preflight) */
+@layer base {
+  button,
+  [role='button'],
+  [type='button'],
+  [type='submit'],
+  [type='reset'],
+  select,
+  summary {
+    cursor: pointer;
+  }
+}
+
+/* Text selection highlight - consistent in light and dark modes */
+::selection {
+  background-color: hsl(212, 70%, 85%);
+  color: #000;
+}
+.dark ::selection {
+  background-color: hsl(212, 65%, 55%);
+  color: #fff;
+}
+
+/* scratchblocks-overrides:start */
+/* Scratchblocks overrides */
+/* Modifie le style des sb3-comment-label */
+text.sb3-comment-label {
+  fill: #000 !important;
+}
+
+/* Garde-fou: arguments de blocs personnalisés Scratch en rose (évite le noir en cas de surcharge CSS) */
+svg.scratchblocks-style-scratch3 .sb3-custom-arg {
+  fill: #ff6680 !important;
+  stroke: #ff3355 !important;
+}
+
+svg.scratchblocks-style-scratch3-high-contrast .sb3-custom-arg {
+  fill: #ff99aa !important;
+  stroke: #e64d00 !important;
+}
+/* scratchblocks-overrides:end */
+
+/* scratch-simulator-only:start */
+/* Fallback modal Scratch simulator (quand les styles DaisyUI de modal ne sont pas appliqués) */
+/* Ciblage via #code-display pour ne pas impacter les autres dialogs */
+dialog.modal.modal-top:has(#code-display) {
+  border: none;
+  padding: 0;
+}
+
+dialog.modal.modal-top:has(#code-display)::backdrop {
+  background: rgb(0 0 0 / 45%);
+}
+
+dialog.modal.modal-top:has(#code-display) > .modal-box {
+  @apply bg-base-100 text-base-content shadow-xl;
+}
+/* scratch-simulator-only:end */
+
+@media print {
+  body {
+    font-size: 10pt !important;
+  }
+  nav,
+  aside,
+  footer,
+  .print-hidden {
+    display: none !important;
+  }
+
+  div {
+    margin-top: 0pt !important;
+    margin-bottom: 0pt !important;
+  }
+}
+
+/* Hors des couches Tailwind pour conserver un repère clavier même lorsque
+   les boutons utilisent focus:outline-none. Le décalage sépare le contour
+   du fond du bouton, notamment pour les actions « Vérifier ». */
+button:focus-visible {
+  outline: 3px solid var(--color-coopmaths-struct);
+  outline-offset: 3px;
+}
+
+.dark button:focus-visible {
+  outline-color: var(--color-coopmathsdark-struct);
+}
+
+/* Séparer le focus clavier du contour qui indique la sélection d'une figure. */
+[data-clique-figure]:focus-visible {
+  box-shadow:
+    0 0 0 2px white,
+    0 0 0 5px var(--color-coopmaths-struct);
+}
+
+.dark [data-clique-figure]:focus-visible {
+  box-shadow:
+    0 0 0 2px black,
+    0 0 0 5px var(--color-coopmathsdark-struct);
+}
+
+@media (forced-colors: active) {
+  [data-clique-figure]:focus-visible {
+    outline: 3px solid Highlight !important;
+    outline-offset: 3px !important;
+  }
+
+  button:focus-visible,
+  .dark button:focus-visible {
+    outline-color: Highlight;
+  }
+}
+
+@page {
+  size: A4;
+  margin: 30pt;
+}
+
+@layer components {
+  .checkbox-primary {
+    @apply appearance-none ml-2 h-4 w-4 border-2 border-gray-400 bg-gray-100 rounded-sm checked:bg-coopmaths-lightest checked:border-coopmaths focus:outline-none transition duration-500 cursor-pointer;
+  }
+}
+/* Retiré de ce fichier et positionné dans Start.svelte pour avoir accès à un ascenseur dans la page principale.
+ ::-webkit-scrollbar {
+  display:none;
+}
+:root{ scrollbar-width: none } */
+/*
+ .d8888b.                                                               
+d88P  Y88b                                                              
+888    888                                                              
+888        888  888 888d888 .d8888b   .d88b.  888  888 888d888 .d8888b  
+888        888  888 888P"   88K      d8P  Y8b 888  888 888P"   88K      
+888    888 888  888 888     "Y8888b. 88888888 888  888 888     "Y8888b. 
+Y88b  d88P Y88b 888 888          X88 Y8b.     Y88b 888 888          X88 
+ "Y8888P"   "Y88888 888      88888P'  "Y8888   "Y88888 888      88888P' 
+*/
+/* Définition des thèmes pour les curseurs */
+/* source : https://brennaobrien.com/blog/2014/05/style-input-type-range-in-every-browser.html */
+
+/* Firefox */
+input[type='range'] {
+  /* fix for FF unable to apply focus style bug  */
+  border: 1px solid white;
+
+  /*required for proper track sizing in FF*/
+  /* width: 300px; */
+}
+input[type='range']::-moz-range-track {
+  /* width: 300px; */
+  height: 10px;
+  background: #ddd;
+  border: none;
+}
+
+input[type='range']::-moz-range-thumb {
+  border: none;
+  border-radius: 0px;
+  height: 10px;
+  width: 16px;
+  background: #ff8c5c;
+}
+
+/*hide the outline behind the border*/
+input[type='range']:-moz-focusring {
+  outline: 1px solid white;
+  outline-offset: -1px;
+}
+
+input[type='range']:focus::-moz-range-track {
+  background: #ccc;
+}
+
+/*Chrome*/
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  input[type='range'] {
+    -webkit-appearance: none;
+    appearance: none;
+  }
+
+  /* piste */
+  input[type='range']::-webkit-slider-runnable-track {
+    /* width: 300px; */
+    height: 10px;
+    background: #ddd;
+    border: none;
+    /* border-radius: 3px; */
+  }
+
+  /*curseur lui-même */
+  input[type='range']::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    border: none;
+    height: 10px;
+    width: 16px;
+    /* border-radius: 50%; */
+    background: #ff8c5c;
+    /* margin-top: -4px; */
+  }
+
+  input[type='range']:focus {
+    outline: none;
+  }
+
+  input[type='range']:focus::-webkit-slider-runnable-track {
+    background: #ccc;
+  }
+}
+
+/* Internet Explorer */
+input[type='range']::-ms-track {
+  /* width: 300px; */
+  height: 10px;
+
+  /*remove bg colour from the track, we'll use ms-fill-lower and ms-fill-upper instead */
+  background: transparent;
+
+  /*leave room for the larger thumb to overflow with a transparent border */
+  border-color: transparent;
+  border-width: 6px 0;
+
+  /*remove default tick marks*/
+  color: transparent;
+}
+input[type='range']::-ms-fill-lower {
+  background: #777;
+  border-radius: 0px;
+}
+input[type='range']::-ms-fill-upper {
+  background: #ddd;
+  border-radius: 0px;
+}
+input[type='range']::-ms-thumb {
+  border: none;
+  height: 10px;
+  width: 16px;
+  border-radius: 0%;
+  background: #ff8c5c;
+}
+input[type='range']:focus::-ms-fill-lower {
+  background: #888;
+}
+input[type='range']:focus::-ms-fill-upper {
+  background: #ccc;
+}
+
+input[type='radio']:checked {
+  background-color: #f15929;
+}
+
+input[type='radio']:disabled {
+  @apply opacity-30;
+}
+
+/* Certains navigateurs (Safari notamment) perdent le rendu ":checked" d'un input
+   radio à l'appearance personnalisée une fois qu'il est verrouillé après correction.
+   Cette classe, posée par verifQuestionQcm, force le même rendu indépendamment de
+   :checked et de tout état natif désactivé. */
+input[type='radio'].qcm-locked-checked {
+  background-color: #f15929 !important;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 16 16' fill='white' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='8' cy='8' r='3'/%3E%3C/svg%3E") !important;
+  background-size: 100% 100% !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  border-color: transparent !important;
+}
+
+input[type='radio']:focus {
+  @apply ring-transparent outline-none;
+}
+
+/*
+8888888888                   888                      
+888                          888                      
+888                          888                      
+8888888     .d88b.  88888b.  888888  .d88b.  .d8888b  
+888        d88""88b 888 "88b 888    d8P  Y8b 88K      
+888        888  888 888  888 888    88888888 "Y8888b. 
+888        Y88..88P 888  888 Y88b.  Y8b.          X88 
+888         "Y88P"  888  888  "Y888  "Y8888   88888P'
+*/
+
+/* source-sans-pro-200 - latin */
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 200;
+  src:
+    local(''),
+    url('/fonts/source-sans-pro-v21-latin-200.woff2') format('woff2'),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url('/fonts/source-sans-pro-v21-latin-200.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* source-sans-pro-200italic - latin */
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: italic;
+  font-weight: 200;
+  src:
+    local(''),
+    url('/fonts/source-sans-pro-v21-latin-200italic.woff2') format('woff2'),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url('/fonts/source-sans-pro-v21-latin-200italic.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* source-sans-pro-300 - latin */
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 300;
+  src:
+    local(''),
+    url('/fonts/source-sans-pro-v21-latin-300.woff2') format('woff2'),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url('/fonts/source-sans-pro-v21-latin-300.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* source-sans-pro-300italic - latin */
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: italic;
+  font-weight: 300;
+  src:
+    local(''),
+    url('/fonts/source-sans-pro-v21-latin-300italic.woff2') format('woff2'),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url('/fonts/source-sans-pro-v21-latin-300italic.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* source-sans-pro-regular - latin */
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 400;
+  src:
+    local(''),
+    url('/fonts/source-sans-pro-v21-latin-regular.woff2') format('woff2'),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url('/fonts/source-sans-pro-v21-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* source-sans-pro-italic - latin */
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: italic;
+  font-weight: 400;
+  src:
+    local(''),
+    url('/fonts/source-sans-pro-v21-latin-italic.woff2') format('woff2'),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url('/fonts/source-sans-pro-v21-latin-italic.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* source-sans-pro-600 - latin */
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 600;
+  src:
+    local(''),
+    url('/fonts/source-sans-pro-v21-latin-600.woff2') format('woff2'),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url('/fonts/source-sans-pro-v21-latin-600.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* source-sans-pro-600italic - latin */
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: italic;
+  font-weight: 600;
+  src:
+    local(''),
+    url('/fonts/source-sans-pro-v21-latin-600italic.woff2') format('woff2'),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url('/fonts/source-sans-pro-v21-latin-600italic.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* source-sans-pro-700 - latin */
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 700;
+  src:
+    local(''),
+    url('/fonts/source-sans-pro-v21-latin-700.woff2') format('woff2'),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url('/fonts/source-sans-pro-v21-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* source-sans-pro-700italic - latin */
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: italic;
+  font-weight: 700;
+  src:
+    local(''),
+    url('/fonts/source-sans-pro-v21-latin-700italic.woff2') format('woff2'),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url('/fonts/source-sans-pro-v21-latin-700italic.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* source-sans-pro-900 - latin */
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 900;
+  src:
+    local(''),
+    url('/fonts/source-sans-pro-v21-latin-900.woff2') format('woff2'),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url('/fonts/source-sans-pro-v21-latin-900.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* source-sans-pro-900italic - latin */
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: italic;
+  font-weight: 900;
+  src:
+    local(''),
+    url('/fonts/source-sans-pro-v21-latin-900italic.woff2') format('woff2'),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url('/fonts/source-sans-pro-v21-latin-900italic.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* jelleebold - latin */
+@font-face {
+  font-family: 'jelleebold';
+  src:
+    local(''),
+    url('/fonts/jellee-roman-webfont.woff2') format('woff2'),
+    url('/fonts/jellee-roman-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+/* source-code-pro-200 - latin */
+@font-face {
+  font-family: 'Source Code Pro';
+  font-style: normal;
+  font-weight: 200;
+  src:
+    local(''),
+    url('/fonts/source-code-pro-200.woff2') format('woff2'),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url('/fonts/source-code-pro-200.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* source-code-pro-200-italic - latin */
+@font-face {
+  font-family: 'Source Code Pro';
+  font-style: italic;
+  font-weight: 200;
+  src:
+    local(''),
+    url('/fonts/source-code-pro-200-italic.woff2') format('woff2'),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url('/fonts/source-code-pro-200-italic.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* source-code-pro-300 - latin */
+@font-face {
+  font-family: 'Source Code Pro';
+  font-style: normal;
+  font-weight: 300;
+  src:
+    local(''),
+    url('/fonts/source-code-pro-300.woff2') format('woff2'),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url('/fonts/source-code-pro-300.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* source-code-pro-300-italic - latin */
+@font-face {
+  font-family: 'Source Code Pro';
+  font-style: italic;
+  font-weight: 300;
+  src:
+    local(''),
+    url('/fonts/source-code-pro-300-italic.woff2') format('woff2'),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url('/fonts/source-code-pro-300-italic.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* source-code-pro-400 - latin */
+@font-face {
+  font-family: 'Source Code Pro';
+  font-style: normal;
+  font-weight: 400;
+  src:
+    local(''),
+    url('/fonts/source-code-pro-400.woff2') format('woff2'),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url('/fonts/source-code-pro-400.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* source-code-pro-400-italic - latin */
+@font-face {
+  font-family: 'Source Code Pro';
+  font-style: italic;
+  font-weight: 400;
+  src:
+    local(''),
+    url('/fonts/source-code-pro-400-italic.woff2') format('woff2'),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url('/fonts/source-code-pro-400-italic.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* source-code-pro-500 - latin */
+@font-face {
+  font-family: 'Source Code Pro';
+  font-style: normal;
+  font-weight: 500;
+  src:
+    local(''),
+    url('/fonts/source-code-pro-500.woff2') format('woff2'),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url('/fonts/source-code-pro-500.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* source-code-pro-500-italic - latin */
+@font-face {
+  font-family: 'Source Code Pro';
+  font-style: italic;
+  font-weight: 500;
+  src:
+    local(''),
+    url('/fonts/source-code-pro-500-italic.woff2') format('woff2'),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url('/fonts/source-code-pro-500-italic.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* source-code-pro-600 - latin */
+@font-face {
+  font-family: 'Source Code Pro';
+  font-style: normal;
+  font-weight: 600;
+  src:
+    local(''),
+    url('/fonts/source-code-pro-600.woff2') format('woff2'),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url('/fonts/source-code-pro-600.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* source-code-pro-600-italic - latin */
+@font-face {
+  font-family: 'Source Code Pro';
+  font-style: italic;
+  font-weight: 600;
+  src:
+    local(''),
+    url('/fonts/source-code-pro-600-italic.woff2') format('woff2'),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url('/fonts/source-code-pro-600-italic.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* source-code-pro-700 - latin */
+@font-face {
+  font-family: 'Source Code Pro';
+  font-style: normal;
+  font-weight: 700;
+  src:
+    local(''),
+    url('/fonts/source-code-pro-700.woff2') format('woff2'),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url('/fonts/source-code-pro-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* source-code-pro-700-italic - latin */
+@font-face {
+  font-family: 'Source Code Pro';
+  font-style: italic;
+  font-weight: 700;
+  src:
+    local(''),
+    url('/fonts/source-code-pro-700-italic.woff2') format('woff2'),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url('/fonts/source-code-pro-700-italic.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* source-code-pro-900 - latin */
+@font-face {
+  font-family: 'Source Code Pro';
+  font-style: normal;
+  font-weight: 900;
+  src:
+    local(''),
+    url('/fonts/source-code-pro-900.woff2') format('woff2'),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url('/fonts/source-code-pro-900.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* source-code-pro-900-italic - latin */
+@font-face {
+  font-family: 'Source Code Pro';
+  font-style: italic;
+  font-weight: 900;
+  src:
+    local(''),
+    url('/fonts/source-code-pro-900-italic.woff2') format('woff2'),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url('/fonts/source-code-pro-900-italic.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* 
+888b     d888                                                                
+8888b   d8888                                                                
+88888b.d88888                                                                
+888Y88888P888  .d88b.  .d8888b  .d8888b   8888b.   .d88b.   .d88b.  .d8888b  
+888 Y888P 888 d8P  Y8b 88K      88K          "88b d88P"88b d8P  Y8b 88K      
+888  Y8P  888 88888888 "Y8888b. "Y8888b. .d888888 888  888 88888888 "Y8888b. 
+888   "   888 Y8b.          X88      X88 888  888 Y88b 888 Y8b.          X88 
+888       888  "Y8888   88888P'  88888P' "Y888888  "Y88888  "Y8888   88888P' 
+                                                       888                   
+                                                  Y8b d88P                   
+                                                   "Y88P"                     */
+/* info message */
+div[id^='infoMessage'] {
+  @apply bg-coopmaths-canvas dark:bg-coopmathsdark-canvas px-4 py-2 my-2 border-l-4 border-l-coopmaths-warn-dark dark:border-l-coopmathsdark-warn-dark  font-light relative w-2/3;
+}
+div[id^='infoMessage']:before {
+  content: 'ℹ';
+  float: left;
+  @apply mr-3 text-xl text-coopmaths-canvas dark:text-coopmathsdark-canvas font-black bg-coopmaths-warn-dark dark:bg-coopmathsdark-warn-dark rounded-full h-6 w-6 inline-flex items-center justify-center;
+}
+div[id^='title-infoMessage'] {
+  @apply font-bold pb-2 text-coopmaths-warn-dark dark:text-coopmathsdark-warn-dark;
+}
+/* lampe message */
+div[id^='lampeMessage'] {
+  @apply bg-coopmaths-canvas dark:bg-coopmathsdark-canvas px-4 py-2 my-2 border-l-4 border-l-coopmaths-warn-dark dark:border-l-coopmathsdark-warn-dark font-light relative w-2/3 mb-4;
+}
+div[id^='lampeMessage']:before {
+  content: '📚';
+  float: left;
+  @apply mr-3 text-xl text-coopmaths-warn-dark dark:text-coopmathsdark-warn-dark inline-block;
+}
+div[id^='title-lampeMessage'] {
+  @apply font-bold pb-2 text-coopmaths-warn-dark dark:text-coopmathsdark-warn-dark;
+}
+
+/* feedback de fin de question QCM (verifQuestionQcm) */
+.qcm-feedback-face {
+  @apply flex items-center h-6 leading-none;
+}
+.qcm-feedback-msg {
+  @apply bg-coopmaths-canvas dark:bg-coopmathsdark-canvas border-l-4 pl-4 pr-2 py-2 mt-2 font-light;
+}
+.qcm-feedback-msg--error {
+  @apply border-l-coopmaths-action-dark dark:border-l-coopmathsdark-action-dark;
+}
+.qcm-feedback-msg--positive {
+  @apply border-l-coopmaths-warn-dark dark:border-l-coopmathsdark-warn-dark;
+}
+.qcm-feedback-detail {
+  @apply text-coopmaths-corpus dark:text-coopmathsdark-corpus;
+}
+.qcm-feedback-chips {
+  @apply flex flex-wrap gap-2 mt-2 pt-2 border-t border-t-coopmaths-backdark dark:border-t-coopmathsdark-canvas-darkest;
+}
+.qcm-feedback-chips-standalone {
+  @apply flex flex-wrap gap-2 mt-2;
+}
+.qcm-feedback-chip {
+  @apply inline-flex items-center rounded-full px-3 py-0.5 text-sm font-medium;
+}
+.qcm-feedback-chip--error {
+  @apply bg-coopmaths-action-200 text-coopmaths-action-darkest dark:bg-coopmathsdark-action dark:text-coopmathsdark-canvas;
+}
+.qcm-feedback-chip--positive {
+  @apply bg-coopmaths-warn-100 text-coopmaths-warn-darkest dark:bg-coopmathsdark-warn dark:text-coopmathsdark-canvas;
+}
+
+.katex {
+  font-size: 1em !important;
+}
+
+/* Le texte (\text{}) rendu par KaTeX utilise la police de la page, comme dans les champs MathLive */
+.katex .text {
+  font-family: var(--font-sans);
+}
+
+/* Laisser les clics traverser les légendes superposées aux figures à sélectionner. */
+[id^='M2D']:has(> svg[data-clique-figure]) > .divLatex {
+  pointer-events: none;
+}
+
+/* Mode sombre : figure inversée (traits clairs sur le fond sombre de la page),
+   au lieu d'un fond gris sur lequel un champ de réponse posé sur la figure
+   était illisible. Seuls le tracé et ses étiquettes sont inversés
+   (hue-rotate garde les teintes) ; champs de réponse et smileys gardent les
+   couleurs du mode sombre. */
+.dark .mathalea2d {
+  filter: invert(1) hue-rotate(180deg);
+}
+.dark
+  .svgContainer
+  .divLatex:not(:has(math-field, input, select, [id^='resultatCheck'])) {
+  filter: invert(1) hue-rotate(180deg);
+}
+.dark .svgContainer .divLatex:has(math-field) {
+  opacity: 1;
+}
+
+input[type='checkbox'][id^='checkEx'] {
+  @apply cursor-pointer border-coopmaths-action text-coopmaths-action dark:border-coopmathsdark-action dark:text-coopmathsdark-action focus:ring-coopmaths-action dark:focus:ring-coopmathsdark-action h-4 w-4 rounded;
+}
+
+input[type='radio'][id^='checkEx'] {
+  @apply cursor-pointer border-coopmaths-action text-coopmaths-action dark:border-coopmathsdark-action dark:text-coopmathsdark-action focus:ring-coopmaths-action dark:focus:ring-coopmathsdark-action h-4 w-4 rounded-full;
+}
+
+iframe[id^='iframe-video-'] {
+  @apply my-10;
+}
+
+button[id^='html-insert-button-'] {
+  @apply text-coopmaths-canvas dark:text-coopmathsdark-canvas bg-coopmaths-action dark:bg-coopmathsdark-action hover:bg-coopmaths-action-lightest dark:hover:bg-coopmathsdark-action-lightest px-2 py-1 rounded-sm mx-2;
+}
+
+input[id^='html-insert-text-input-'] {
+  @apply text-sm bg-coopmaths-canvas dark:bg-coopmathsdark-canvas text-coopmaths-corpus dark:text-coopmathsdark-corpus border border-coopmaths-action dark:border-coopmathsdark-action font-light focus:border focus:border-coopmaths-action dark:focus:border-coopmathsdark-action focus:outline-0 focus:ring-0 px-2 py-1 w-3/5 lg:w-2/5;
+}
+
+input[id^='champTexteEx'] {
+  @apply text-coopmaths-corpus dark:text-coopmathsdark-corpus border border-coopmaths-corpus dark:border-coopmathsdark-corpus;
+  /* Override MathLive highlight colors to match our class-based dark mode (not prefers-color-scheme) */
+  display: inline-block;
+  flex: 1;
+  border-radius: 4px;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  font-size: 1em;
+  line-height: 1em;
+  min-width: 50px;
+  width: auto;
+  padding: 4px;
+  white-space: normal;
+  background-color: transparent;
+  overflow-x: visible;
+}
+
+i[id^='html-insert-info-'] {
+  @apply flex px-2  hover:text-coopmaths-action-lightest text-coopmaths-action dark:text-coopmathsdark-action dark:hover:text-coopmathsdark-action-lightest;
+}
+
+span.code {
+  @apply font-mono bg-coopmaths-canvas-dark dark:bg-coopmathsdark-canvas-dark;
+}
+
+/* 
+888      d8b          888                      
+888      Y8P          888                      
+888                   888                      
+888      888 .d8888b  888888  .d88b.  .d8888b  
+888      888 88K      888    d8P  Y8b 88K      
+888      888 "Y8888b. 888    88888888 "Y8888b. 
+888      888      X88 Y88b.  Y8b.          X88 
+88888888 888  88888P'  "Y888  "Y8888   88888P' 
+ */
+
+ul.none {
+  @apply list-none list-outside;
+}
+ul.none > li {
+  margin-top: 0.5em;
+}
+ul.puces {
+  @apply list-["\1F784\00A0"] list-outside ml-4 marker:text-coopmaths-struct;
+}
+ul.puces > li {
+  margin-top: 0.5em;
+}
+ul.carres {
+  @apply list-["\25AA\00A0"] list-outside ml-4 marker:text-coopmaths-struct;
+}
+ul.carres > li {
+  margin-top: 0.5em;
+}
+ul.qcm {
+  @apply list-["\25A1\00A0"] list-outside ml-4 marker:text-coopmaths-struct;
+}
+ul.qcm > li {
+  margin-top: 0.5em;
+}
+ul.fleches {
+  @apply list-["\25B8\00A0"] list-outside ml-4 marker:text-coopmaths-struct;
+}
+ul.fleches > li {
+  margin-top: 0.5em;
+}
+ol.nombres {
+  @apply list-decimal list-outside ml-4 marker:text-coopmaths-struct;
+}
+ol.nombres > li {
+  margin-top: 0.5em;
+}
+ol.alpha {
+  @apply list-[lower-alpha] list-outside ml-4  marker:text-coopmaths-struct;
+  margin-left: 1.5rem;
+}
+ol.alpha > li {
+  margin-top: 0.5em;
+}
+/* Même repère que numAlpha() et la sortie Typst : « a) » en gras. */
+ol.alpha > li::marker {
+  content: counter(list-item, lower-alpha) ') ';
+  font-weight: bold;
+}
+ol.Alpha {
+  @apply list-[upper-alpha] list-outside ml-4  marker:text-coopmaths-struct;
+}
+ol.Alpha > li {
+  margin-top: 0.5em;
+}
+ol.roman {
+  @apply list-[lower-roman] list-outside ml-6  marker:text-coopmaths-struct;
+}
+ol.roman > li {
+  margin-top: 0.5em;
+}
+ol.Roman {
+  @apply list-[upper-roman] list-outside ml-6  marker:text-coopmaths-struct;
+}
+ol.Roman > li {
+  margin-top: 0.5em;
+}
+
+.numbered-list > div > li {
+  list-style: none; /* Retire les puces par défaut */
+  position: relative;
+}
+
+.numbered-list > div > li::before {
+  counter-increment: item;
+  display: inline-block; /* Aligne avec le texte */
+  margin-right: 0.5em; /* Espace entre le numéro et le texte */
+  font-weight: bold;
+  color: #216d9a;
+}
+
+.numbered-list > div > li::before {
+  content: counter(item) ') ';
+  margin-right: 0.5em;
+}
+
+.numbered-list {
+  counter-reset: item; /* Initialise le compteur */
+}
+
+@keyframes shake {
+  0% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+  25% {
+    transform: translate(5px, 5px) rotate(5deg);
+  }
+  50% {
+    transform: translate(0, 0) rotate(0eg);
+  }
+  75% {
+    transform: translate(-5px, 5px) rotate(-5deg);
+  }
+  100% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+}
+
+/*
+d888888b d8b   db d888888b d88888b d8888b.  .d8b.   .o88b. d888888b d888888b db    db d888888b d888888b db    db 
+  `88'   888o  88 `~~88~~' 88'     88  `8D d8' `8b d8P  Y8 `~~88~~'   `88'   88    88   `88'   `~~88~~' `8b  d8' 
+   88    88V8o 88    88    88ooooo 88oobY' 88ooo88 8P         88       88    Y8    8P    88       88     `8bd8'  
+   88    88 V8o88    88    88~~~~~ 88`8b   88~~~88 8b         88       88    `8b  d8'    88       88       88 
+  .88.   88  V888    88    88.     88 `88. 88   88 Y8b  d8    88      .88.    `8bd8'    .88.      88       88    
+Y888888P VP   V8P    YP    Y88888P 88   YD YP   YP  `Y88P'    YP    Y888888P    YP    Y888888P    YP       YP    
+*/
+
+table.tableauMathlive {
+  tbody {
+    tr {
+      td {
+        @apply border border-coopmaths-corpus dark:border-coopmathsdark-corpus p-2 text-center;
+        min-width: 50px;
+        math-field {
+          min-width: 30px;
+          margin-top: 2px;
+        }
+        math-field.tableauMathlive::part(container) {
+          justify-content: center !important;
+          min-width: 30px;
+          border-radius: 4px;
+          border: 1px solid rgba(0, 0, 0, 0.3);
+          background-color: transparent;
+        }
+      }
+    }
+    th {
+      @apply border border-coopmaths-corpus dark:border-coopmathsdark-corpus bg-coopmaths-struct/40 dark:bg-coopmathsdark-struct/40 text-coopmaths-corpus dark:text-coopmathsdark-corpus p-2 text-center min-w-18.75 m-0.75;
+    }
+    @apply border border-coopmaths-corpus dark:border-coopmathsdark-corpus p-2 m-0.75 text-center;
+  }
+  @apply mt-2 border-collapse text-center border-2 border-coopmaths-corpus dark:border-coopmathsdark-corpus;
+}
+
+/* Cache le menu toggle de MathLive */
+math-field {
+  @apply text-coopmaths-corpus dark:text-coopmathsdark-corpus border border-coopmaths-corpus dark:border-coopmathsdark-corpus;
+  /* Override MathLive highlight colors to match our class-based dark mode (not prefers-color-scheme) */
+  --caret-color: hsl(212, 40%, 49%);
+  --selection-color: #000;
+  --selection-background-color: hsl(212, 70%, 85%);
+  --contains-highlight-color: hsl(212, 40%, 49%);
+  --contains-highlight-background-color: hsl(212, 40%, 95%);
+  --highlight-text: transparent;
+  /* Nom utilisé par MathLive quand l'appareil est en mode sombre : les mots fixes d'un champ à trous (\text{}) ne sont pas surlignés, en clair comme en sombre */
+  --text-highlight-background-color: transparent;
+  /* Le texte (\text{}) des champs MathLive utilise la police du reste de la page (par défaut : system-ui) */
+  --text-font-family: var(--font-sans);
+  line-height: 1;
+  border-radius: 4px;
+  border: none;
+  background-color: transparent;
+}
+
+math-field:not(.metaInteractif2d):not(.fillInTheBlanks):not(
+    .tableauMathlive
+  )::part(container) {
+  border-radius: 4px;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  min-width: 50px;
+}
+
+.dark
+  math-field:not(.metaInteractif2d):not(.fillInTheBlanks):not(
+    .tableauMathlive
+  )::part(container) {
+  border-radius: 4px;
+  border: 1px solid rgba(213, 206, 206, 0.917);
+  min-width: 50px;
+}
+
+.dark
+  table.tableauMathlive
+  tbody
+  tr
+  td
+  math-field.tableauMathlive::part(container) {
+  border: 1px solid rgba(213, 206, 206, 0.917);
+}
+math-field::part(content) {
+  /* La zone de contenu est en overflow: hidden : sans marge verticale, le haut
+     d'un numérateur (ex. 2/21) peut être rogné. Le padding agrandit la zone
+     visible, la marge négative compense pour ne pas changer la hauteur du champ. */
+  padding: 2px 0;
+  margin: -2px 0;
+}
+
+.dark math-field {
+  --caret-color: hsl(212, 65%, 55%);
+  --selection-color: #fff;
+  --selection-background-color: hsl(212, 65%, 55%);
+  --contains-highlight-color: hsl(212, 85%, 75%);
+  --contains-highlight-background-color: hsl(212, 30%, 40%);
+  --highlight-text: transparent;
+  --text-highlight-background-color: transparent;
+}
+math-field::part(menu-toggle) {
+  display: none;
+}
+math-field::part(virtual-keyboard-toggle) {
+  display: none;
+}
+
+math-field:not(.fillInTheBlanks):not(.metaInteractif2d):not(.tableauMathlive) {
+  font-size: 1em;
+  margin-left: 5px;
+  display: inline-block;
+  vertical-align: middle;
+  min-width: 50px;
+}
+math-field:not(.fillInTheBlanks):not(.metaInteractif2d):not(
+    .tableauMathlive
+  ):focus-within {
+  outline: solid;
+  outline-width: 2px;
+  outline-color: var(--color-coopmaths-struct);
+  border: none;
+}
+math-field:not(.fillInTheBlanks):not(.metaInteractif2d):not(
+    .tableauMathlive
+  ):focus-within::part(container) {
+  outline: none;
+  border: none;
+}
+math-field:not(.fillInTheBlanks):not(.metaInteractif2d):not(
+    .tableauMathlive
+  )::part(container) {
+  display: inline-block;
+  justify-content: center;
+}
+math-field:not(.fillInTheBlanks):not(.metaInteractif2d)::part(content) {
+  justify-content: center;
+}
+math-field.fillInTheBlanks,
+math-field.metaInteractif2d {
+  /* @apply bg-coopmaths-canvas dark:bg-coopmathsdark-canvas text-coopmaths-corpus dark:text-coopmathsdark-corpus; */
+  box-shadow: none;
+  font-size: 1em;
+  margin-top: 1px;
+  background-color: transparent;
+  outline: none;
+  vertical-align: middle;
+}
+math-field.metaInteractif2d::part(container) {
+  border: 1px solid var(--color-coopmathsdark-corpus-light);
+  border-radius: 2px;
+  padding: 2px 4px;
+}
+math-field.metaInteractif2d:focus-within::part(container) {
+  border: 2px solid #3b82f6;
+}
+math-field.metaInteractif2d.correct {
+  outline: 2px solid #16a34a;
+  outline-offset: 2px;
+}
+math-field.metaInteractif2d.incorrect {
+  outline: 2px solid #dc2626;
+  outline-offset: 2px;
+}
+math-field.metaInteractif2d::part(prompt) {
+  font-size: 1em;
+  line-height: 1;
+  min-width: 1.5em;
+  border: none;
+  outline: none;
+}
+math-field.metaInteractif2d::part(prompt correct),
+math-field.metaInteractif2d::part(prompt incorrect),
+math-field.metaInteractif2d.corrected::part(prompt) {
+  background: transparent;
+}
+math-field.fillInTheBlanks::part(prompt) {
+  font-size: 1em;
+  line-height: 1;
+  min-width: 0px;
+  border: none;
+  outline: solid;
+  outline-width: thin;
+  outline-color: var(--color-coopmathsdark-corpus-light);
+}
+
+math-field.fillInTheBlanks::part(container) {
+  border: none;
+  border-radius: 4px;
+}
+math-field.ml-1:not(.fillInTheBlanks):focus-within::part(container) {
+  outline: solid;
+  outline-width: 2px;
+  outline-color: var(--color-coopmaths-struct);
+}
+math-field.fillInTheBlanks:not(:focus-within)::part(container) {
+  border: none;
+}
+
+math-field.schemaEnBoite {
+  margin: 0;
+  display: inline-block;
+  vertical-align: middle;
+  padding: 0px 0px;
+  /* border-radius: 4px;
+  border: 1px solid rgba(0, 0, 0, 0.3); */
+  outline: solid;
+  outline-width: thin;
+  outline-color: var(--color-coopmathsdark-corpus-light);
+  min-width: 30px;
+}
+
+span.feedback-smiley {
+  padding-right: 1em;
+}
+
+@media (prefers-color-scheme: dark) {
+  /* custom css */
+  table.tableauMathlive {
+    border: 2px solid rgb(100, 100, 100);
+  }
+}
+
+div.rectangleDND {
+  min-width: 40px;
+  min-height: 40px;
+  border: 1px dashed #ccc;
+  border-radius: 10px;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  zoom: 1;
+  flex: 1;
+  flex-wrap: wrap;
+  padding: 6px 0px 6px 0px;
+}
+
+.rectangleDND.hovered {
+  border: 2px dashed green; /* Indique la zone de drop */
+  zoom: 1;
+}
+
+div.rectangles {
+  display: flex;
+  gap: 5px; /* Pour espacer du texte devant et derrière les différents divs */
+  min-width: 30px;
+  min-height: 30px;
+  align-items: center;
+  font-size: 18px;
+}
+
+div.etiquette {
+  position: relative;
+  flex: 0 1 auto;
+  box-sizing: content-box;
+  padding: 4px 16px 4px 6px;
+  margin: 0px 2px 0px 2px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  min-height: 25px;
+  align-content: center;
+  font-size: 18px;
+  z-index: 3;
+}
+div.etiquette:active {
+  cursor: grabbing;
+}
+div.etiquette > span {
+  touch-action: none;
+}
+
+.dragOk {
+  cursor: grab;
+}
+.noDrag {
+  cursor: not-allowed;
+  background-color: '#FFFFFF';
+}
+
+div.etiquettes {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-around;
+  align-items: center;
+  justify-items: flex-start;
+  gap: 5px;
+  width: 100%;
+  min-height: 60px;
+  margin-bottom: 5px;
+}
+
+/* Alternative au glisser (dragAndDropAccessible.ts) : contrastes d'au moins 3:1
+   avec le fond de page et avec le gris des étiquettes, en clair comme en sombre. */
+.etiquette[role='button']:focus-visible,
+.retirerDND:focus-visible,
+.rectangleDND:has(> .zoneDepotDND:focus-visible) {
+  outline: 3px solid #1d4ed8;
+  outline-offset: 3px;
+}
+.dark .etiquette[role='button']:focus-visible,
+.dark .retirerDND:focus-visible,
+.dark .rectangleDND:has(> .zoneDepotDND:focus-visible) {
+  outline-color: #93c5fd;
+}
+.etiquette[aria-pressed='true'] {
+  box-shadow: 0 0 0 3px #9a3412;
+}
+.dark .etiquette[aria-pressed='true'] {
+  box-shadow: 0 0 0 3px #fdba74;
+}
+.selectionDND .rectangleDND {
+  border: 2px dashed #15803d;
+}
+.dark .selectionDND .rectangleDND {
+  border-color: #4ade80;
+}
+/* Bouton transparent : le pointeur et le glisser continuent de viser la zone. */
+.zoneDepotDND {
+  flex: 1 1 0;
+  order: 999;
+  align-self: stretch;
+  min-width: 0;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  pointer-events: none;
+  outline: none;
+}
+.retirerDND:not([hidden]) {
+  display: inline-block;
+  margin-bottom: 5px;
+  padding: 2px 8px;
+  border: 1px solid currentColor;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.875rem;
+}
+.aideDND {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+.aideDND.aideVisibleDND {
+  position: static;
+  width: auto;
+  height: auto;
+  overflow: visible;
+  clip-path: none;
+  white-space: normal;
+  margin-bottom: 5px;
+  font-size: 0.875rem;
+  font-style: italic;
+}
+
+.delete-btn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: red;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  width: 10px;
+  height: 10px;
+  text-align: center;
+  font-size: 10px;
+}
+
+.oblique-strike {
+  position: relative;
+  display: inline-block;
+}
+
+.oblique-strike::after {
+  content: '';
+  position: absolute;
+  top: 50%; /* Positionnement vertical */
+  left: -15%;
+  width: 130%;
+  height: 2px; /* Épaisseur de la ligne */
+  background-color: black; /* Couleur de la ligne */
+  transform: rotate(-15deg); /* Angle de la ligne */
+}
+
+/* Fixes issue where Blockly toolbox scrollbar doesn't hide - https://github.com/google/blockly/issues/5840*/
+.blocklyScrollbarVertical svg[display='none'],
+.blocklyScrollbarHorizontal svg[display='none'] {
+  display: none;
+}
+
+/* Ripple animation for button effects */
+@keyframes ripple-animation {
+  to {
+    transform: translate(-50%, -50%) scale(4);
+    opacity: 0;
+  }
+}
+
+/* Vue quizz : typographie fluide par container queries.
+   Le <main> de la vue est le conteneur (classe .quizz-container) ; les
+   tailles en cqw s'adaptent à sa largeur pour rester lisibles aussi bien
+   sur un écran d'élève que projetées au fond de la classe. */
+.quizz-container {
+  container-type: inline-size;
+}
+.quizz-text-title {
+  font-size: clamp(2rem, 7cqw, 5.5rem);
+  line-height: 1.1;
+}
+.quizz-text-question {
+  font-size: clamp(1.3rem, 3.8cqw, 3.2rem);
+  line-height: 1.25;
+}
+.quizz-text-answer {
+  font-size: clamp(1.1rem, 2.6cqw, 2.2rem);
+  line-height: 1.3;
+}
+.quizz-text-result {
+  font-size: clamp(1.5rem, 4.2cqw, 3.4rem);
+  line-height: 1.2;
+}
+.quizz-text-correction {
+  font-size: clamp(1.05rem, 2.2cqw, 1.9rem);
+  line-height: 1.4;
+}
+
+/* Vue quizz : les figures (SVG mathalea2d) sont centrées sous le texte. */
+.quizz-container .svgContainer {
+  margin-inline: auto;
+}
+
+/* Custom element « Relier les étiquettes » (relier-etiquettes) */
+relier-etiquettes {
+  display: block;
+  margin: 0.75rem 0 0.25rem;
+}
+
+.relier-etiquettes {
+  --relier-fond: var(--color-coopmaths-canvas);
+  --relier-bordure: var(--color-coopmaths-canvas-moredark);
+  --relier-texte: var(--color-coopmaths-corpus);
+  --relier-accent: var(--color-coopmaths-struct);
+  /* Étiquettes 16/9 : plus lisibles pour les textes longs. */
+  --relier-largeur: clamp(7rem, 32vw, 11rem);
+  /* Couloir vide entre les deux colonnes, où se tracent les traits. */
+  --relier-couloir: clamp(2.25rem, 12vw, 5rem);
+  max-width: 100%;
+}
+
+.dark .relier-etiquettes {
+  --relier-fond: var(--color-coopmathsdark-canvas);
+  --relier-bordure: var(--color-coopmathsdark-canvas-moredark);
+  --relier-texte: var(--color-coopmathsdark-corpus);
+  --relier-accent: var(--color-coopmathsdark-struct);
+}
+
+.relier-etiquettes__board {
+  position: relative;
+  display: grid;
+  grid-template-columns: var(--relier-largeur) var(--relier-largeur);
+  column-gap: var(--relier-couloir);
+  justify-content: center;
+}
+
+.relier-etiquettes__colonne {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.relier-etiquettes__etiquette {
+  position: relative;
+  width: var(--relier-largeur);
+  aspect-ratio: 16 / 9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.4rem;
+  border: 2px solid var(--relier-bordure);
+  border-radius: 0.75rem;
+  background-color: var(--relier-fond);
+  color: var(--relier-texte);
+  font-size: clamp(0.7rem, 2.6vw, 0.95rem);
+  line-height: 1.25;
+  text-align: center;
+  overflow-wrap: anywhere;
+  cursor: pointer;
+  user-select: none;
+  -webkit-user-select: none;
+  /* Le glisser horizontal sert à relier, le défilement vertical reste possible. */
+  touch-action: pan-y;
+  transition:
+    border-color 150ms ease,
+    background-color 150ms ease,
+    transform 150ms ease;
+}
+
+.relier-etiquettes__etiquette:disabled {
+  color: var(--relier-texte);
+  cursor: default;
+}
+
+.relier-etiquettes__etiquette:not(:disabled):hover {
+  border-color: var(--relier-accent);
+  transform: translateY(-1px);
+}
+
+.relier-etiquettes__etiquette:focus-visible {
+  outline: 2px solid var(--relier-accent);
+  outline-offset: 3px;
+}
+
+.relier-etiquettes__etiquette.is-selected {
+  border-color: var(--relier-accent);
+  background-color: color-mix(
+    in srgb,
+    var(--relier-accent) 14%,
+    var(--relier-fond)
+  );
+}
+
+.relier-etiquettes__etiquette.is-cible:not(:disabled):not(.is-selected) {
+  border-style: dashed;
+  border-color: var(--relier-accent);
+  animation: relier-pulse 1.6s ease-in-out infinite;
+}
+
+.relier-etiquettes__etiquette.is-survolee {
+  border-style: solid;
+  transform: scale(1.04);
+  background-color: color-mix(
+    in srgb,
+    var(--relier-accent) 18%,
+    var(--relier-fond)
+  );
+}
+
+.relier-etiquettes__etiquette.is-flash {
+  animation: relier-flash 600ms ease-out;
+}
+
+.relier-etiquettes__contenu {
+  display: block;
+}
+
+.relier-etiquettes__prise {
+  position: absolute;
+  top: 50%;
+  width: 0.625rem;
+  height: 0.625rem;
+  border-radius: 9999px;
+  background-color: var(--relier-bordure);
+  transform: translateY(-50%);
+  transition:
+    background-color 150ms ease,
+    transform 150ms ease;
+}
+
+.relier-etiquettes__colonne--gauche .relier-etiquettes__prise {
+  right: -0.3125rem;
+}
+
+.relier-etiquettes__colonne--droite .relier-etiquettes__prise {
+  left: -0.3125rem;
+}
+
+.relier-etiquettes__etiquette.is-selected .relier-etiquettes__prise,
+.relier-etiquettes__etiquette.is-reliee .relier-etiquettes__prise {
+  background-color: var(--relier-accent);
+  transform: translateY(-50%) scale(1.3);
+}
+
+.relier-etiquettes__traits {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+  pointer-events: none;
+}
+
+.relier-etiquettes__trait {
+  fill: none;
+  stroke-width: 3;
+  stroke-linecap: round;
+}
+
+.relier-etiquettes__trait--provisoire {
+  stroke: var(--relier-accent);
+  stroke-dasharray: 6 7;
+  opacity: 0.85;
+}
+
+.relier-etiquettes__trait.is-nouveau {
+  stroke-dasharray: var(--relier-longueur);
+  stroke-dashoffset: var(--relier-longueur);
+  animation: relier-trace 320ms ease-out forwards;
+}
+
+.relier-etiquettes__trait.is-manquant {
+  stroke-dasharray: 7 6;
+  opacity: 0.8;
+}
+
+.relier-etiquettes__zone-trait {
+  stroke: transparent;
+  stroke-width: 18;
+  stroke-linecap: round;
+  pointer-events: stroke;
+  cursor: pointer;
+}
+
+.relier-etiquettes__actions {
+  display: flex;
+  justify-content: center;
+  margin-top: 0.75rem;
+}
+
+.relier-etiquettes__effacer {
+  padding: 0.15rem 0.75rem;
+  border: 1px solid currentColor;
+  border-radius: 9999px;
+  background-color: transparent;
+  color: var(--color-coopmaths-struct);
+  font-size: 0.8rem;
+  cursor: pointer;
+}
+
+.dark .relier-etiquettes__effacer {
+  color: var(--color-coopmathsdark-struct);
+}
+
+.relier-etiquettes__effacer[hidden] {
+  display: none;
+}
+
+@keyframes relier-trace {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes relier-pulse {
+  0%,
+  100% {
+    border-color: color-mix(
+      in srgb,
+      var(--relier-accent) 40%,
+      var(--relier-bordure)
+    );
+  }
+  50% {
+    border-color: var(--relier-accent);
+  }
+}
+
+@keyframes relier-flash {
+  from {
+    box-shadow: 0 0 0 0
+      color-mix(in srgb, var(--relier-accent) 55%, transparent);
+  }
+  to {
+    box-shadow: 0 0 0 16px
+      color-mix(in srgb, var(--relier-accent) 0%, transparent);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .relier-etiquettes__etiquette,
+  .relier-etiquettes__prise {
+    transition: none;
+  }
+  .relier-etiquettes__trait.is-nouveau,
+  .relier-etiquettes__etiquette.is-flash,
+  .relier-etiquettes__etiquette.is-cible {
+    animation: none;
+  }
+}
+
+/* Vue quizz : typographie fluide par container queries.
+   Le <main> de la vue est le conteneur (classe .quizz-container) ; les
+   tailles en cqw s'adaptent à sa largeur pour rester lisibles aussi bien
+   sur un écran d'élève que projetées au fond de la classe. */
+.quizz-container {
+  container-type: inline-size;
+}
+.quizz-text-title {
+  font-size: clamp(2rem, 7cqw, 5.5rem);
+  line-height: 1.1;
+}
+.quizz-text-question {
+  font-size: clamp(1.3rem, 3.8cqw, 3.2rem);
+  line-height: 1.25;
+}
+.quizz-text-answer {
+  font-size: clamp(1.1rem, 2.6cqw, 2.2rem);
+  line-height: 1.3;
+}
+.quizz-text-result {
+  font-size: clamp(1.5rem, 4.2cqw, 3.4rem);
+  line-height: 1.2;
+}
+.quizz-text-correction {
+  font-size: clamp(1.05rem, 2.2cqw, 1.9rem);
+  line-height: 1.4;
+}
+
+/* Custom element « Schéma en barre » (schema-en-barre) */
+schema-en-barre,
+.schema-en-barre--fige {
+  display: block;
+  margin: 0.75rem 0 0.25rem;
+}
+
+.schema-en-barre {
+  --sb-a: var(--color-coopmaths-struct);
+  --sb-b: var(--color-coopmaths-struct-lightest);
+  --sb-texte: var(--color-coopmaths-corpus);
+  --sb-fond: var(--color-coopmaths-canvas);
+  --sb-bordure: var(--color-coopmaths-canvas-moredark);
+  --sb-faux: var(--color-coopmaths-action);
+  color: var(--sb-texte);
+  max-width: 100%;
+}
+
+.dark .schema-en-barre {
+  --sb-a: var(--color-coopmathsdark-struct);
+  --sb-b: var(--color-coopmathsdark-struct-lightest);
+  --sb-texte: var(--color-coopmathsdark-corpus);
+  --sb-fond: var(--color-coopmathsdark-canvas);
+  --sb-bordure: var(--color-coopmathsdark-canvas-moredark);
+  --sb-faux: var(--color-coopmathsdark-action);
+}
+
+/* Choix entre les six types de schéma, en vignettes réduites par le font-size :
+   une colonne additive et une multiplicative, avec sur chaque ligne le même
+   modèle (parties-tout, comparaison, comparaison avec total). */
+.schema-en-barre__choix {
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-rows: repeat(3, auto);
+  grid-template-columns: repeat(2, max-content);
+  gap: 0.6em;
+  margin-bottom: 0.75em;
+}
+
+@media (max-width: 30rem) {
+  .schema-en-barre__choix {
+    grid-auto-flow: row;
+    grid-template-rows: none;
+    grid-template-columns: 1fr;
+  }
+}
+
+.schema-en-barre__vignette {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.4em;
+  padding: 0.6em 0.8em;
+  border: 2px solid var(--sb-bordure);
+  border-radius: 0.5em;
+  background: var(--sb-fond);
+  cursor: pointer;
+  transition: border-color 150ms ease;
+}
+
+.schema-en-barre__vignette:hover,
+.schema-en-barre__vignette:focus-visible {
+  border-color: var(--sb-b);
+  outline: none;
+}
+
+.schema-en-barre__vignette.is-choisi {
+  border-color: var(--sb-a);
+  background-color: color-mix(in srgb, var(--sb-a) 10%, var(--sb-fond));
+}
+
+.schema-en-barre__vignette.is-faux {
+  border-color: var(--sb-faux);
+}
+
+/* En em : les vignettes suivent le zoom de l'énoncé (font-size de l'article). */
+.schema-en-barre__vignette-schema {
+  font-size: 0.6em;
+  pointer-events: none;
+}
+
+.schema-en-barre__vignette-titre {
+  font-size: 0.9em;
+  color: var(--sb-a);
+}
+
+.schema-en-barre__zone {
+  overflow-x: auto;
+  padding: 0.25rem 0;
+}
+
+.schema-en-barre__changer {
+  margin-top: 0.5em;
+  margin-right: 0.5em;
+  padding: 0.2em 0.6em;
+  border: 1px solid var(--sb-bordure);
+  border-radius: 0.35em;
+  background: var(--sb-fond);
+  color: var(--sb-texte);
+  font-size: 0.9em;
+  cursor: pointer;
+}
+
+.schema-en-barre__changer:hover {
+  border-color: var(--sb-a);
+}
+
+/* Le schéma lui-même : toutes les dimensions sont en em. */
+.schema-en-barre__schema {
+  display: inline-block;
+  padding: 0.5em 0.25em;
+  color: var(--sb-a);
+  line-height: 1.2;
+}
+
+/* Sur téléphone, un schéma à champs de saisie tient dans la largeur de la page. */
+@media (max-width: 30rem) {
+  .schema-en-barre--fige .schema-en-barre__schema {
+    font-size: 0.8em;
+  }
+}
+
+.schema-en-barre__colonne {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.15em;
+}
+
+.schema-en-barre__colonne--gauche {
+  align-items: flex-start;
+}
+
+/* Pas d'espace entre colonnes : dans la comparaison additive, la grande
+   partie couvre exactement la petite partie et la colonne de la différence. */
+.schema-en-barre__grille {
+  display: grid;
+  align-items: center;
+  column-gap: 0;
+  row-gap: 0.4em;
+}
+
+/* Les rectangles d'une rangée gardent la même hauteur quand un texte passe à la ligne. */
+.schema-en-barre__grille--etiree {
+  align-items: stretch;
+}
+
+.schema-en-barre__ligne {
+  display: flex;
+  align-items: center;
+  gap: 0;
+}
+
+.schema-en-barre__ligne--parts {
+  gap: 0.25em;
+}
+
+.schema-en-barre__ligne--etiree {
+  align-items: stretch;
+}
+
+.schema-en-barre__ligne--seconde {
+  margin-top: 0.4em;
+}
+
+.schema-en-barre__rect {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: none;
+  box-sizing: border-box;
+  /* min-height : un texte sur deux lignes (« Roses », « 6 fleurs ») agrandit le rectangle. */
+  min-height: 2.2em;
+  padding: 0.15em 0.3em;
+  border: 0.1em solid currentColor;
+  background: transparent;
+  color: var(--sb-a);
+  font-weight: 700;
+  text-align: center;
+}
+
+.schema-en-barre__pointilles {
+  display: inline-block;
+  flex: none;
+  /* Le SVG reste dans la largeur réservée, indépendamment de la police. */
+  height: 0.25em;
+  align-self: center;
+}
+
+/* Pointillés d'une rangée trop longue : ils occupent la place des parts non dessinées. */
+.schema-en-barre__pointilles-reste {
+  flex: none;
+  align-self: center;
+  box-sizing: border-box;
+  height: 0;
+  border-top: 0.2em dotted currentColor;
+}
+
+.schema-en-barre__champ,
+.schema-en-barre__texte {
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  min-width: 0;
+  padding: 0.1em 0.2em;
+  border: 0;
+  border-radius: 0.2em;
+  background: transparent;
+  color: inherit;
+  font: inherit;
+  font-weight: inherit;
+  text-align: center;
+  overflow-wrap: anywhere;
+}
+
+.schema-en-barre__champ {
+  border-bottom: 0.1em dashed color-mix(in srgb, currentColor 50%, transparent);
+  line-height: 1.2;
+  resize: none;
+  overflow: hidden;
+  white-space: pre-wrap;
+}
+
+.schema-en-barre__champ::placeholder {
+  color: inherit;
+  opacity: 0.55;
+}
+
+.schema-en-barre__champ:focus {
+  outline: 0.15em solid var(--sb-b);
+  outline-offset: 0.05em;
+  background-color: color-mix(in srgb, white 12%, transparent);
+}
+
+.schema-en-barre__champ.is-faux,
+.schema-en-barre__texte.is-faux {
+  outline: 0.2em solid var(--sb-faux);
+  outline-offset: 0.1em;
+}
+
+/* Étiquettes hors des rectangles (au-dessus d'une accolade, sous une flèche...). */
+.schema-en-barre__etiquette {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 6em;
+  color: var(--sb-a);
+}
+
+.schema-en-barre__etiquette--rangee {
+  min-width: 1.5em;
+  margin-right: 0.4em;
+  justify-content: flex-end;
+  font-weight: 700;
+}
+
+.schema-en-barre__etiquette--rangee .schema-en-barre__champ,
+.schema-en-barre__etiquette--rangee .schema-en-barre__texte {
+  width: 5em;
+  text-align: right;
+}
+
+.schema-en-barre__etiquette--cote {
+  min-width: 3em;
+  margin-left: 0.3em;
+  justify-content: flex-start;
+}
+
+.schema-en-barre__etiquette--sous {
+  margin-top: -0.2em;
+}
+
+/* Sous le schéma avec reste : le nombre de parts, puis le texte du reste à droite. */
+.schema-en-barre__textes-bas {
+  display: flex;
+  align-items: flex-start;
+}
+
+.schema-en-barre__etiquette--reste {
+  order: 2;
+  flex: none;
+  min-width: 0;
+  margin-left: auto;
+}
+
+.schema-en-barre__etiquette--reste .schema-en-barre__texte {
+  text-align: right;
+  white-space: nowrap;
+}
+
+/* Accolades : SVG étiré sur la largeur (ou la hauteur) disponible. */
+.schema-en-barre__accolade {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: none;
+}
+
+.schema-en-barre__accolade--haut .schema-en-barre__etiquette {
+  margin-bottom: 0.3em;
+}
+
+.schema-en-barre__accolade--haut .schema-en-barre__svg {
+  width: 100%;
+  height: 0.75em;
+}
+
+.schema-en-barre__accolade--droite {
+  align-self: stretch;
+  width: 0.75em;
+  margin-left: 0.4em;
+}
+
+.schema-en-barre__accolade--droite .schema-en-barre__svg {
+  width: 100%;
+  height: 100%;
+}
+
+/* Flèche double horizontale, dessinée en CSS pour garder des pointes nettes. */
+/* Le trait s'arrête sous les pointes (1 em de moins que la largeur) pour ne
+   pas dépasser de leur extrémité. */
+.schema-en-barre__fleche {
+  position: relative;
+  flex: none;
+  height: 0.7em;
+  margin: 0.2em 0;
+  background: linear-gradient(currentColor, currentColor) center /
+    calc(100% - 1em) 0.15em no-repeat;
+}
+
+.schema-en-barre__fleche::before,
+.schema-en-barre__fleche::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  width: 0;
+  height: 0;
+  border-top: 0.35em solid transparent;
+  border-bottom: 0.35em solid transparent;
+}
+
+.schema-en-barre__fleche::before {
+  left: 0;
+  border-right: 0.6em solid currentColor;
+}
+
+.schema-en-barre__fleche::after {
+  right: 0;
+  border-left: 0.6em solid currentColor;
+}
+
+/* Comparaison additive : flèche de la différence, avec le pointillé qui
+   prolonge le bord droit de la grande partie. */
+/* Le pointillé prolonge le bord de la grande partie ; la flèche s'arrête juste avant. */
+.schema-en-barre__difference {
+  position: relative;
+  align-self: stretch;
+  display: flex;
+  align-items: center;
+  padding: 0 0.3em 0 0.15em;
+}
+
+.schema-en-barre__difference::before {
+  content: '';
+  position: absolute;
+  top: -0.5em;
+  bottom: 0;
+  right: 0.1em;
+  border-right: 0.12em dashed currentColor;
+}
+
+.schema-en-barre__difference .schema-en-barre__fleche {
+  width: 100%;
+  margin: 0;
+}
+
+/* Choix du nombre de rectangles d'un schéma multiplicatif. */
+.schema-en-barre__nb-rectangles {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.35em;
+  margin-top: 0.5em;
+  font-size: 0.9em;
+}
+
+.schema-en-barre__nb-rectangles button {
+  min-width: 2em;
+  padding: 0.2em 0.5em;
+  border: 1px solid var(--sb-bordure);
+  border-radius: 0.35rem;
+  background: var(--sb-fond);
+  color: var(--sb-texte);
+  cursor: pointer;
+}
+
+.schema-en-barre__nb-rectangles button.is-actif {
+  border-color: var(--sb-a);
+  background-color: var(--sb-a);
+  color: white;
+}
+
+/* Mise en page des énoncés et corrections produits par deuxColonnesResp. */
+.cols-responsive {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  gap: 1rem;
+}
+
+@media (min-width: 900px) {
+  .cols-responsive {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

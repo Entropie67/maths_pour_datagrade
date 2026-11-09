@@ -1,0 +1,117 @@
+import Exercice from '../Exercice'
+import { combinaisonListes } from '../../lib/outils/arrayOutils'
+import { listeQuestionsToContenu, randint } from '../../modules/outils'
+import { texNombre } from '../../lib/outils/texNombre'
+import { ecritureParentheseSiNegatif } from '../../lib/outils/ecritures'
+import { lettreDepuisChiffre } from '../../lib/outils/outilString'
+import { ajouteChampTexteMathLive } from '../../lib/interactif/questionMathLive'
+import { KeyboardType } from '../../lib/interactif/claviers/keyboard'
+import { handleAnswers } from '../../lib/interactif/gestionInteractif'
+import { miseEnEvidence } from '../../lib/outils/embellissements'
+import { randBetween } from 'big-integer'
+
+export const titre = 'Résolution d\'inéquations du type a^x<b'
+export const dateDePublication = '4/5/2024'
+export const uuid = 'a1b6c'
+export const interactifReady = true
+
+
+/**
+ * 
+ * @author Claire Rousset
+
+*/
+export default class ExerciceCalculsDeLog extends Exercice {
+  constructor () {
+    super()
+    this.consigne = 'Résoudre les inéquations suivantes. Les solutions devront être écrites sous la forme d\' un intervalle.'
+    this.nbQuestions = 5
+    this.spacingCorr = 2
+  }
+
+  nouvelleVersion () {
+    const typeQuestionsDisponibles = ['>=','>','<=','<']
+
+    const listeTypeQuestions = combinaisonListes(typeQuestionsDisponibles, this.nbQuestions)
+    for (let i = 0, cpt = 0; i < this.nbQuestions && cpt < 50;) {
+      let texte = ''
+      let texteCorr = ''
+      const a = randBetween(0, 100)
+      const b = randint(0, 100)
+      let answer = ''
+      switch (listeTypeQuestions[i]) {
+        case '>=':
+          texte = `$${a}^x \\geqslant ${b}$`
+          if (Math.log(a) > 0) {
+            texteCorr = `$\\log{${a}^x} \\geqslant \\log{(${b})}$`
+            texteCorr += `<br>$x\\log{(${a})} \\geqslant \\log{(${b})}$`
+            texteCorr += `<br>$x \\geqslant \\frac{\\log(${b})}{\\log(${a})}$  car $\\log(${a}) >0$`
+            texteCorr += `<br>$S=[\\frac{\\log(${b})}{\\log(${a})};+\\infty[$`
+            
+          } else {
+            texteCorr = `$\\log{${a}^x} \\geqslant \\log{${a}}(${b})$`
+            texteCorr += `<br>$x\\log{(${a})} \\geqslant \\log{(${b})}$`
+            texteCorr += `<br>$x \\leqslant \\frac{\\log(${b})}{\\log(${a})}$ car $\\log(${a}) <0$`
+            texteCorr += `<br>$S=]-\\infty;\\frac{\\log(${b})}{\\log(${a})}]$`
+          }
+          break
+        case '>':
+          texte = `$${a}^x > ${b}$`
+          if (Math.log(a) > 0) {
+            texteCorr = `$\\log{(${a}^x)} \\geqslant \\log{(${b})}$`
+            texteCorr += `<br>$x\\log{(${a})} \\geqslant \\log{(${b})}$`
+            texteCorr += `<br>$x \\geqslant \\frac{\\log(${b})}{\\log(${a})}$ $\\log(${a}) >0$`
+            texteCorr += `<br>$S=]\\frac{\\log(${b})}{\\log(${a})};+\\infty[$`
+          } else {
+            texteCorr = `$\\log{${a}^x} \\geqslant \\log{${a}}(${b})$`
+            texteCorr += `<br>$x\\log{(${a})} \\geqslant \\log{(${b})}$`
+            texteCorr += `<br>$x \\leqslant \\frac{\\log(${b})}{\\log(${a})}$ car $\\log(${a}) <0$`
+            texteCorr += `<br>$S=]-\\infty;\\frac{\\log(${b})}{\\log(${a})}[$`
+          }
+          break
+          case '<=':
+          texte = `$${a}^x \\geqslant ${b}$`
+          if (Math.log(a) > 0) {
+            texteCorr = `$\\log{${a}^x} \\leqslant \\log{(${b})}$`
+            texteCorr += `<br>$x\\log{(${a})} \\leqslant \\log{(${b})}$`
+            texteCorr += `<br>$x \\leqslant \\frac{\\log(${b})}{\\log(${a})}$  car $\\log(${a}) >0$`
+            texteCorr += `<br>$S=]-\\infty;\\frac{\\log(${b})}{\\log(${a})}]$`
+          } else {
+            texteCorr = `$\\log{${a}^x} \\leqslant \\log{${a}}(${b})$`
+            texteCorr += `<br>$x\\log{(${a})} \\leqslant \\log{(${b})}$`
+            texteCorr += `<br>$x \\geqslant \\frac{\\log(${b})}{\\log(${a})}$ car $\\log(${a}) <0$`
+            texteCorr += `<br>$S=[\\frac{\\log(${b})}{\\log(${a})};+\\infty[$`
+          }
+          break
+        case '<':
+          texte = `$${a}^x < ${b}$`
+          if (Math.log(a) > 0) {
+            texteCorr = `$\\log{(${a}^x)} \\leqslant \\log{(${b})}$`
+            texteCorr += `<br>$x\\log{(${a})} \\leqslant \\log{(${b})}$`
+            texteCorr += `<br>$x \\leqslant \\frac{\\log(${b})}{\\log(${a})}$ car $\\log(${a}) >0$`
+            texteCorr += `<br>$S=]-\\infty;\\frac{\\log(${b})}{\\log(${a})}[$`
+          } else {
+            texteCorr = `$\\log{${a}^x} \\leqslant \\log{${a}}(${b})$`
+            texteCorr += `<br>$x\\log{(${a})} \\leqslant \\log{(${b})}$`
+            texteCorr += `<br>$x \\geqslant \\frac{\\log(${b})}{\\log(${a})}$ $\\log(${a}) <0$`
+            texteCorr += `<br>$S=]\\frac{\\log(${b})}{\\log(${a})};+\\infty[$`
+          }
+          break
+      }
+
+      if (this.interactif) {
+        // @ts-expect-error problème typage
+        handleAnswers(this, i, { reponse: { value: answer } })
+        texte += `<br>$${lettreDepuisChiffre(i + 1)} = $`
+        texte += ajouteChampTexteMathLive(this, i, KeyboardType.clavierDeBase)
+      }
+      if (this.questionJamaisPosee(i, a, b)) {
+        this.listeQuestions[i] = texte
+        this.listeCorrections[i] = texteCorr
+        i++
+      }
+      cpt++
+    }
+    listeQuestionsToContenu(this)
+  }
+}

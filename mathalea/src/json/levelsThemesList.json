@@ -1,0 +1,4581 @@
+{
+  "canc3a": {
+    "titre": "Annales aléatoires"
+  },
+  "can6a": {
+    "titre": "Sujets (annales/créations)"
+  },
+  "can5a": {
+    "titre": "Annales aléatoires"
+  },
+  "can4a": {
+    "titre": "Annales aléatoires"
+  },
+  "can3a": {
+    "titre": "Annales aléatoires"
+  },
+  "can2a": {
+    "titre": "Annales aléatoires"
+  },
+  "can1a": {
+    "titre": "Annales aléatoires"
+  },
+  "Annales": {
+    "titre": "Annales aléatoires"
+  },
+  "canc3C": {
+    "titre": "Calculs"
+  },
+  "canc3D": {
+    "titre": "Durées"
+  },
+  "canc3M": {
+    "titre": "Mesure"
+  },
+  "canc3N": {
+    "titre": "Numération"
+  },
+  "can6C": {
+    "titre": "Calculs"
+  },
+  "can6C1": {
+    "titre": "Tables, doubles, moitiés, compléments"
+  },
+  "can6C2": {
+    "titre": "Calcul astucieux"
+  },
+  "can6C3": {
+    "titre": "Nombres décimaux"
+  },
+  "can6C4": {
+    "titre": "Division euclidienne"
+  },
+  "can6C5": {
+    "titre": "Fractions"
+  },
+  "can6C51": {
+    "titre": "Écritures"
+  },
+  "can6C52": {
+    "titre": "Comparer"
+  },
+  "can6C53": {
+    "titre": "Calculer"
+  },
+  "can6C6": {
+    "titre": "Problèmes"
+  },
+  "can6C7": {
+    "titre": "Pyramides, énigmes, ordres de grandeur"
+  },
+  "can6D": {
+    "titre": "Durées"
+  },
+  "can6D1": {
+    "titre": "Unités, conversions"
+  },
+  "can6D2": {
+    "titre": "Calculer des durées"
+  },
+  "can6D3": {
+    "titre": "Heures décimales, fractions d'heure"
+  },
+  "can6G": {
+    "titre": "Géométrie"
+  },
+  "can6G1": {
+    "titre": "Symétrie"
+  },
+  "can6G2": {
+    "titre": "Solides"
+  },
+  "can6G3": {
+    "titre": "Longueurs"
+  },
+  "can6I": {
+    "titre": "Algorithmique"
+  },
+  "can6M": {
+    "titre": "Mesure"
+  },
+  "can6M1": {
+    "titre": "Longueurs, périmètres"
+  },
+  "can6M2": {
+    "titre": "Aires"
+  },
+  "can6M3": {
+    "titre": "Volumes"
+  },
+  "can6M4": {
+    "titre": "Unités, conversions"
+  },
+  "can6N": {
+    "titre": "Numération"
+  },
+  "can6N1": {
+    "titre": "Nombres entiers"
+  },
+  "can6N2": {
+    "titre": "Décimaux, fractions décimales"
+  },
+  "can6N21": {
+    "titre": "Fractions décimales"
+  },
+  "can6N22": {
+    "titre": "Écriture décimale, arrondis"
+  },
+  "can6N3": {
+    "titre": "Droites graduées"
+  },
+  "can6P": {
+    "titre": "Proportionnalité, pourcentages"
+  },
+  "can6P1": {
+    "titre": "Proportionnalité"
+  },
+  "can6P2": {
+    "titre": "Pourcentages"
+  },
+  "can6S": {
+    "titre": "Statistiques"
+  },
+  "can5A": {
+    "titre": "Algorithmes"
+  },
+  "can5C": {
+    "titre": "Calculs"
+  },
+  "can5C1": {
+    "titre": "Nombres entiers"
+  },
+  "can5C2": {
+    "titre": "Calcul astucieux"
+  },
+  "can5C3": {
+    "titre": "Nombres décimaux"
+  },
+  "can5C4": {
+    "titre": "Fractions"
+  },
+  "can5C5": {
+    "titre": "Nombres relatifs"
+  },
+  "can5C6": {
+    "titre": "Priorités, arithmétique"
+  },
+  "can5D": {
+    "titre": "Durées"
+  },
+  "can5G": {
+    "titre": "Géométrie"
+  },
+  "can5P": {
+    "titre": "Proportionnalité, pourcentages"
+  },
+  "can5P1": {
+    "titre": "Proportionnalité"
+  },
+  "can5P2": {
+    "titre": "Pourcentages"
+  },
+  "can5L": {
+    "titre": "Calcul littéral"
+  },
+  "can5N": {
+    "titre": "Numération"
+  },
+  "can4A": {
+    "titre": "Algorithmes"
+  },
+  "can4C": {
+    "titre": "Calculs"
+  },
+  "can4C1": {
+    "titre": "Nombres relatifs"
+  },
+  "can4C2": {
+    "titre": "Fractions"
+  },
+  "can4C21": {
+    "titre": "Écritures, comparaisons"
+  },
+  "can4C22": {
+    "titre": "Calculs avec des fractions"
+  },
+  "can4C3": {
+    "titre": "Puissances"
+  },
+  "can4C4": {
+    "titre": "Calculs numériques"
+  },
+  "can4G": {
+    "titre": "Géométrie"
+  },
+  "can4G1": {
+    "titre": "Théorème de Pythagore"
+  },
+  "can4G2": {
+    "titre": "Thalès, agrandissements, transformations"
+  },
+  "can4G3": {
+    "titre": "Périmètres, aires, angles"
+  },
+  "can4P": {
+    "titre": "Proportionnalité, pourcentages"
+  },
+  "can4P1": {
+    "titre": "Proportionnalité"
+  },
+  "can4P2": {
+    "titre": "Pourcentages"
+  },
+  "can4L": {
+    "titre": "Calcul littéral"
+  },
+  "can4L1": {
+    "titre": "Équations"
+  },
+  "can4L2": {
+    "titre": "Expressions littérales"
+  },
+  "can3C": {
+    "titre": "Calculs"
+  },
+  "can3C1": {
+    "titre": "Fractions"
+  },
+  "can3C2": {
+    "titre": "Puissances, écriture scientifique"
+  },
+  "can3C3": {
+    "titre": "Racines carrées"
+  },
+  "can3C4": {
+    "titre": "Calculs numériques"
+  },
+  "can3G": {
+    "titre": "Géométrie"
+  },
+  "can3G1": {
+    "titre": "Transformations"
+  },
+  "can3G2": {
+    "titre": "Théorèmes et trigonométrie"
+  },
+  "can3P": {
+    "titre": "Proportionnalité"
+  },
+  "can3L": {
+    "titre": "Calcul littéral"
+  },
+  "can3L1": {
+    "titre": "Équations, inéquations"
+  },
+  "can3L2": {
+    "titre": "Expressions"
+  },
+  "can3M": {
+    "titre": "Mesure"
+  },
+  "can3F": {
+    "titre": "Fonctions"
+  },
+  "can3F1": {
+    "titre": "Vocabulaire, lectures graphiques"
+  },
+  "can3F2": {
+    "titre": "Calculs d'images et d'antécédents"
+  },
+  "can3F3": {
+    "titre": "Fonctions affines"
+  },
+  "can3S": {
+    "titre": "Statistiques et probabilités"
+  },
+  "can3S1": {
+    "titre": "Statistiques"
+  },
+  "can3S2": {
+    "titre": "Probabilités"
+  },
+  "can2F": {
+    "titre": "Fonctions"
+  },
+  "can2F1": {
+    "titre": "Généralités sur les fonctions"
+  },
+  "can2F10": {
+    "titre": "Lectures graphiques"
+  },
+  "can2F11": {
+    "titre": "Images/Antécédents"
+  },
+  "can2F12": {
+    "titre": "Généralités"
+  },
+  "can2F2": {
+    "titre": "Se constituer un répertoire de fonctions de référence"
+  },
+  "can2F20": {
+    "titre": "Connaître les fonctions affines"
+  },
+  "can2F21": {
+    "titre": "Variations et signes d'une fonction affine"
+  },
+  "can2F22": {
+    "titre": "Calculer des images avec des fonctions de référence"
+  },
+  "can2F23": {
+    "titre": "Comparer des images avec des fonctions de référence"
+  },
+  "can2F24": {
+    "titre": "Déterminer des antécédents avec une fonction de référence"
+  },
+  "can2F25": {
+    "titre": "Résoudre des équations avec une fonction de référence"
+  },
+  "can2F3": {
+    "titre": "Représenter algébriquement et graphiquement les fonctions"
+  },
+  "can2F4": {
+    "titre": "Étudier les variations et les extremums d'une fonction"
+  },
+  "can2G": {
+    "titre": "Géométrie"
+  },
+  "can2G1": {
+    "titre": "Les bases en géométrie"
+  },
+  "can2G2": {
+    "titre": "Les vecteurs"
+  },
+  "can2G20": {
+    "titre": "Sans coordonnées"
+  },
+  "can2G21": {
+    "titre": "Avec coordonnées"
+  },
+  "can2G3": {
+    "titre": "Les droites du plan"
+  },
+  "can2G30": {
+    "titre": "Équations réduites"
+  },
+  "can2G31": {
+    "titre": "Équations cartésiennes"
+  },
+  "can2N": {
+    "titre": "Calcul numérique"
+  },
+  "can2L": {
+    "titre": "Calcul littéral"
+  },
+  "can2N1": {
+    "titre": "Nombres réels"
+  },
+  "can2N10": {
+    "titre": "Intervalles, ensembles de nombres"
+  },
+  "can2N11": {
+    "titre": "Changement d'écriture"
+  },
+  "can2N2": {
+    "titre": "Arithmétique"
+  },
+  "can2N3": {
+    "titre": "Fractions"
+  },
+  "can2N4": {
+    "titre": "Puissances"
+  },
+  "can2N5": {
+    "titre": "Racines carrées"
+  },
+  "can2L1": {
+    "titre": "Utiliser le calcul littéral"
+  },
+  "can2L10": {
+    "titre": "Calcul littéral élémentaire"
+  },
+  "can2L11": {
+    "titre": "Égalités remarquables"
+  },
+  "can2L12": {
+    "titre": "Exprimer en fonction de"
+  },
+  "can2L2": {
+    "titre": "Équations"
+  },
+  "can2L3": {
+    "titre": "Inéquations"
+  },
+  "can2I": {
+    "titre": "Informations chiffrées"
+  },
+  "can2I1": {
+    "titre": "Proportions"
+  },
+  "can2I2": {
+    "titre": "Évolutions"
+  },
+  "can2P": {
+    "titre": "Probabilités"
+  },
+  "can2P1": {
+    "titre": "Probabilités simples"
+  },
+  "can2P2": {
+    "titre": "Probabilités conditionnelles"
+  },
+  "can1SD": {
+    "titre": "Second degré"
+  },
+  "can1SD1": {
+    "titre": "Paraboles"
+  },
+  "can1SD11": {
+    "titre": "Lectures graphiques"
+  },
+  "can1SD12": {
+    "titre": "Sommet et axe de symétrie"
+  },
+  "can1SD2": {
+    "titre": "Équations, inéquations, variations"
+  },
+  "can1SD21": {
+    "titre": "Discriminant, équations"
+  },
+  "can1SD22": {
+    "titre": "Inéquations, tableaux de signes"
+  },
+  "can1SD23": {
+    "titre": "Variations"
+  },
+  "can1SD3": {
+    "titre": "Différentes écritures"
+  },
+  "can1D": {
+    "titre": "Dérivation"
+  },
+  "can1D1": {
+    "titre": "Tangentes - Nombre dérivé"
+  },
+  "can1D2": {
+    "titre": "Dérivées de polynômes"
+  },
+  "can1D3": {
+    "titre": "Dérivées"
+  },
+  "can1E": {
+    "titre": "Exponentielle"
+  },
+  "can1E1": {
+    "titre": "Propriétés"
+  },
+  "can1F": {
+    "titre": "Fonctions"
+  },
+  "can1F1": {
+    "titre": "Généralités avec les fonctions"
+  },
+  "can1F2": {
+    "titre": "Fonctions de références"
+  },
+  "can1G": {
+    "titre": "Géométrie"
+  },
+  "can1G1": {
+    "titre": "Produit scalaire"
+  },
+  "can1G2": {
+    "titre": "Trigonométrie"
+  },
+  "can1L": {
+    "titre": "Calcul littéral"
+  },
+  "can1P": {
+    "titre": "Probabilités"
+  },
+  "can1P1": {
+    "titre": "Probabilités conditionnelles"
+  },
+  "can1P11": {
+    "titre": "Arbres pondérés"
+  },
+  "can1P12": {
+    "titre": "Tableaux et calculs"
+  },
+  "can1P13": {
+    "titre": "Événements indépendants"
+  },
+  "can1P2": {
+    "titre": "Variable aléatoire"
+  },
+  "can1S": {
+    "titre": "Suites"
+  },
+  "can1S1": {
+    "titre": "Généralités avec les suites"
+  },
+  "can1S2": {
+    "titre": "Suites arithmétiques et géométriques"
+  },
+  "can1S21": {
+    "titre": "Nature d'une suite"
+  },
+  "can1S22": {
+    "titre": "Calculs, expression"
+  },
+  "canTEC1": {
+    "titre": "Nombres complexes algèbre"
+  },
+  "canTEC2": {
+    "titre": "Nombres complexes géométrie"
+  },
+  "canTEC3": {
+    "titre": "Nombres complexes trigonométrie"
+  },
+  "canTEM1": {
+    "titre": "Matrices"
+  },
+  "canTEM2": {
+    "titre": "Graphes"
+  },
+  "canTEA1": {
+    "titre": "Divisibilité dans $\\mathbb Z$"
+  },
+  "canTEA2": {
+    "titre": "Congruence"
+  },
+  "canTEA3": {
+    "titre": "Bezout et Gauss"
+  },
+  "canTEA4": {
+    "titre": "Nombres premiers"
+  },
+  "canTSpea": {
+    "titre": "Sujets (annales/créations)"
+  },
+  "canTSpeAN": {
+    "titre": "Analyse"
+  },
+  "canTSpeAN1": {
+    "titre": "Logarithme"
+  },
+  "canTSpeAN2": {
+    "titre": "Trigonométrie"
+  },
+  "canTSpeAN3": {
+    "titre": "Calcul intégral et primitives"
+  },
+  "canTSpeS": {
+    "titre": "Suites"
+  },
+  "canTSpeE": {
+    "titre": "Espace"
+  },
+  "canTSpeP": {
+    "titre": "Probabilités"
+  },
+  "canExa": {
+    "titre": "Sujets (annales/créations)"
+  },
+  "CPCA": {
+    "titre": "Sommes d'entiers"
+  },
+  "CPNA": {
+    "titre": "Numération des entiers"
+  },
+  "CM1N1": {
+    "titre": "Nombres entiers"
+  },
+  "CM1N1A": {
+    "titre": "Comparer et dénombrer des collections en les organisant"
+  },
+  "CM1N1B": {
+    "titre": "Construire des collections de cardinal donné"
+  },
+  "CM1N1C": {
+    "titre": "Connaître et utiliser les relations entre les unités de numération"
+  },
+  "CM1N1D": {
+    "titre": "Connaître la suite écrite et la suite orale des nombres jusqu'à 999 999"
+  },
+  "CM1N1E": {
+    "titre": "Connaître la valeur des chiffres en fonction de leur position dans un nombre"
+  },
+  "CM1N1F": {
+    "titre": "Connaître et utiliser diverses représentations d'un nombre et passer de l'une à l'autre"
+  },
+  "CM1N1G": {
+    "titre": "Comprendre et savoir utiliser les expressions « égal à », « supérieur à », « inférieur à », « compris entre … et … »"
+  },
+  "CM1N1H": {
+    "titre": "Comparer, encadrer, intercaler des nombres entiers en utilisant les symboles =, < et >"
+  },
+  "CM1N1I": {
+    "titre": "Ordonner des nombres dans l'ordre croissant ou décroissant"
+  },
+  "CM1N1J": {
+    "titre": "Savoir placer des nombres et repérer des points sur une demi-droite graduée"
+  },
+  "CM1N1K": {
+    "titre": "Savoir reconnaître les multiples de 2, de 5 et de 10 à partir de leur écriture chiffrée"
+  },
+  "CM1N1L": {
+    "titre": "Savoir déterminer si un nombre entier donné est un multiple d'un nombre entier inférieur ou égal à 10"
+  },
+  "CM1N1M": {
+    "titre": "Savoir déterminer si un nombre entier inférieur ou égal à 10 est un diviseur d'un nombre entier donné"
+  },
+  "CM1N2": {
+    "titre": "Fractions"
+  },
+  "CM1N2A": {
+    "titre": "Savoir interpréter, représenter, écrire et lire des fractions"
+  },
+  "CM1N2B": {
+    "titre": "Savoir écrire une fraction supérieure à 1 comme la somme d'un entier et d'une fraction inférieure à 1"
+  },
+  "CM1N2C": {
+    "titre": "Savoir écrire la somme d'un entier et d'une fraction inférieure à 1 comme une unique fraction"
+  },
+  "CM1N2D": {
+    "titre": "Savoir encadrer une fraction par deux nombres entiers consécutifs"
+  },
+  "CM1N2E": {
+    "titre": "Savoir placer une fraction ou la somme d'un nombre entier et d'une fraction inférieure à un sur une demi-droite graduée"
+  },
+  "CM1N2F": {
+    "titre": "Savoir repérer un point d'une demi-droite graduée par une fraction ou par la somme d'un nombre entier et d'une fraction"
+  },
+  "CM1N2G": {
+    "titre": "Comparer des fractions"
+  },
+  "CM1N2H": {
+    "titre": "Additionner et soustraire des fractions"
+  },
+  "CM1N2I": {
+    "titre": "Déterminer une fraction d'une quantité ou d'une grandeur"
+  },
+  "CM1N3": {
+    "titre": "Nombres décimaux"
+  },
+  "CM1N3A": {
+    "titre": "Interpréter, représenter, écrire et lire des fractions décimales"
+  },
+  "CM1N3B": {
+    "titre": "Connaître et utiliser les relations entre unités simples, dixièmes et centièmes"
+  },
+  "CM1N3C": {
+    "titre": "Placer une fraction décimale sur une demi-droite graduée et repérer un point d'une demi-droite graduée par une fraction décimale"
+  },
+  "CM1N3D": {
+    "titre": "Écrire une fraction décimale supérieure à 1 comme la somme d'un nombre entier et d'une fraction décimale inférieure à 1"
+  },
+  "CM1N3E": {
+    "titre": "Écrire une fraction décimale supérieure à 1 comme la somme d'un nombre entier et de fractions décimales ayant un numérateur inférieur à 10"
+  },
+  "CM1N3F": {
+    "titre": "Comparer, encadrer, intercaler des fractions décimales en utilisant les symboles =, < et >"
+  },
+  "CM1N3G": {
+    "titre": "Ordonner des fractions décimales dans l'ordre croissant ou décroissant"
+  },
+  "CM1N3H": {
+    "titre": "Passer d'une écriture sous forme d'une fraction décimale ou d'une somme de fractions décimales à une écriture à virgule et réciproquement"
+  },
+  "CM1N3I": {
+    "titre": "Interpréter, représenter, écrire et lire des nombres décimaux (écriture à virgule)"
+  },
+  "CM1N3J": {
+    "titre": "Placer un nombre décimal en écriture à virgule sur une demi-droite graduée et repérer un point d'une demi-droite graduée par un nombre décimal"
+  },
+  "CM1N3K": {
+    "titre": "Savoir donner la partie entière et l'arrondi à l'entier d'un nombre décimal"
+  },
+  "CM1N3L": {
+    "titre": "Comparer, encadrer, intercaler, ordonner, par ordre croissant ou décroissant, des nombres décimaux donnés par leur écriture à virgule en utilisant les symboles =, < et >"
+  },
+  "CM1N4": {
+    "titre": "Calcul mental"
+  },
+  "CM1N4A": {
+    "titre": "Connaître des faits numériques usuels relatifs aux nombres entiers"
+  },
+  "CM1N4B": {
+    "titre": "Connaître quelques relations entre des fractions usuelles"
+  },
+  "CM1N4C": {
+    "titre": "Connaître l'écriture décimale de fractions usuelles"
+  },
+  "CM1N4D": {
+    "titre": "Ajouter ou soustraire un nombre entier inférieur à 10, d'unités, de dizaines, de centaines, de dixièmes ou de centièmes à un nombre décimal, lorsqu'il n'y a pas de retenue"
+  },
+  "CM1N4E": {
+    "titre": "Multiplier un nombre entier par 10, 100 ou 1 000"
+  },
+  "CM1N4F": {
+    "titre": "Multiplier un nombre décimal par 10"
+  },
+  "CM1N4G": {
+    "titre": "Diviser un nombre décimal par 10"
+  },
+  "CM1N4H": {
+    "titre": "Ajouter ou soustraire 8, 9, 18, 19, 28, 29, 38 ou 39, à un nombre"
+  },
+  "CM1N4I": {
+    "titre": "Multiplier un nombre entier inférieur à 10 par un nombre entier de dizaines ou de centaines"
+  },
+  "CM1N4J": {
+    "titre": "Multiplier un nombre entier par 4 ou par 8"
+  },
+  "CM1N4K": {
+    "titre": "Multiplier un nombre entier par 5"
+  },
+  "CM1N4L": {
+    "titre": "Utiliser la distributivité de la multiplication par rapport à l'addition dans des cas simples"
+  },
+  "CM1N5": {
+    "titre": "Addition, soustraction, multiplication, division"
+  },
+  "CM1N5A": {
+    "titre": "Estimer le résultat d'une opération"
+  },
+  "CM1N5B": {
+    "titre": "Savoir effectuer un calcul contenant des parenthèses"
+  },
+  "CM1N5C": {
+    "titre": "Poser en colonnes et effectuer des additions et des soustractions de nombres décimaux"
+  },
+  "CM1N5D": {
+    "titre": "Poser et effectuer des multiplications de deux nombres entiers"
+  },
+  "CM1N5E": {
+    "titre": "Poser et effectuer des multiplications d'un nombre décimal par un nombre entier inférieur à 10"
+  },
+  "CM1N5F": {
+    "titre": "Poser et effectuer des divisions euclidiennes avec un diviseur à un chiffre"
+  },
+  "CM1N6": {
+    "titre": "Résolution de problèmes"
+  },
+  "CM1N6A": {
+    "titre": "Résoudre des problèmes additifs en une étape des types « parties-tout » et « comparaison »"
+  },
+  "CM1N6B": {
+    "titre": "Résoudre des problèmes additifs en deux ou trois étapes"
+  },
+  "CM1N6C": {
+    "titre": "Résoudre des problèmes multiplicatifs de type « parties-tout » en une étape"
+  },
+  "CM1N6D": {
+    "titre": "Résoudre des problèmes de comparaison multiplicative"
+  },
+  "CM1N6E": {
+    "titre": "Résoudre des problèmes mixtes en deux ou trois étapes"
+  },
+  "CM1N6F": {
+    "titre": "Résoudre des problèmes de dénombrement"
+  },
+  "CM1N6G": {
+    "titre": "Résoudre des problèmes d'optimisation"
+  },
+  "CM1N7": {
+    "titre": "Algèbre"
+  },
+  "CM1N7A": {
+    "titre": "Trouver le nombre manquant dans une égalité à trous"
+  },
+  "CM1N7B": {
+    "titre": "Déterminer la valeur d'un nombre inconnu en utilisant un symbole ou une lettre pour le représenter"
+  },
+  "CM1N7C": {
+    "titre": "Résoudre des problèmes algébriques"
+  },
+  "CM1N7D": {
+    "titre": "Exécuter un programme de calcul"
+  },
+  "CM1N7E": {
+    "titre": "Identifier et formuler une règle de calcul pour poursuivre une suite de nombres"
+  },
+  "CM1N7F": {
+    "titre": "Identifier des régularités et poursuivre une suite de motifs évolutive"
+  },
+  "CM1M1": {
+    "titre": "Longueurs"
+  },
+  "CM1M1A": {
+    "titre": "Connaître et utiliser les unités de longueur du millimètre au kilomètre et les symboles associés"
+  },
+  "CM1M1B": {
+    "titre": "Connaître les relations entre les unités de longueur"
+  },
+  "CM1M1C": {
+    "titre": "Choisir une unité adaptée pour exprimer une longueur"
+  },
+  "CM1M1D": {
+    "titre": "Comparer des longueurs"
+  },
+  "CM1M1E": {
+    "titre": "Disposer de quelques longueurs de référence"
+  },
+  "CM1M1F": {
+    "titre": "Estimer la longueur d'un objet ou d'une distance"
+  },
+  "CM1M1G": {
+    "titre": "Savoir ce qu'est le périmètre d'une figure plane"
+  },
+  "CM1M1H": {
+    "titre": "Déterminer le périmètre d'un polygone en utilisant une règle graduée"
+  },
+  "CM1M1I": {
+    "titre": "Résoudre des problèmes mettant en jeu les longueurs des côtés d'un polygone et son périmètre"
+  },
+  "CM1M2": {
+    "titre": "Masses"
+  },
+  "CM1M2A": {
+    "titre": "Connaître et utiliser les unités de masse du milligramme au kilogramme et la tonne, et les symboles associés"
+  },
+  "CM1M2B": {
+    "titre": "Connaître les relations entre les unités de masse"
+  },
+  "CM1M2C": {
+    "titre": "Choisir une unité adaptée pour exprimer une masse"
+  },
+  "CM1M2D": {
+    "titre": "Comparer des masses"
+  },
+  "CM1M2E": {
+    "titre": "Disposer de quelques masses de référence"
+  },
+  "CM1M2F": {
+    "titre": "Estimer la masse d'un objet"
+  },
+  "CM1M3": {
+    "titre": "Contenances"
+  },
+  "CM1M3A": {
+    "titre": "Connaître et utiliser les unités de contenance du millilitre à l'hectolitre et les symboles associés"
+  },
+  "CM1M3B": {
+    "titre": "Connaître les relations entre les unités de contenance"
+  },
+  "CM1M3C": {
+    "titre": "Choisir une unité adaptée pour exprimer une contenance"
+  },
+  "CM1M3D": {
+    "titre": "Comparer des contenances"
+  },
+  "CM1M4A": {
+    "titre": "Comparer les aires de différentes figures planes"
+  },
+  "CM1M4": {
+    "titre": "Aires"
+  },
+  "CM1M4B": {
+    "titre": "Déterminer des aires"
+  },
+  "CM1M4C": {
+    "titre": "Connaître et utiliser les centimètres carrés pour exprimer des aires"
+  },
+  "CM1M5A": {
+    "titre": "Utiliser le lexique spécifique associé aux angles"
+  },
+  "CM1M5": {
+    "titre": "Angles"
+  },
+  "CM1M5B": {
+    "titre": "Comprendre et utiliser les notations des angles"
+  },
+  "CM1M5C": {
+    "titre": "Comparer des angles"
+  },
+  "CM1M6A": {
+    "titre": "Lire l'heure sur une horloge à aiguilles"
+  },
+  "CM1M6": {
+    "titre": "Durées"
+  },
+  "CM1M6B": {
+    "titre": "Positionner les aiguilles d'une horloge correspondant à une heure donnée en heure et minute"
+  },
+  "CM1M6C": {
+    "titre": "Comparer et mesurer des durées écoulées entre deux instants affichés sur une horloge (instants et durées sont exprimés en heure et minute)"
+  },
+  "CM1M6D": {
+    "titre": "Résoudre des problèmes à une ou deux étapes impliquant des durées"
+  },
+  "CM1G1": {
+    "titre": "Vocabulaire et outils pour la géométrie"
+  },
+  "CM1G1A": {
+    "titre": "Utiliser le vocabulaire géométrique approprié dans le contexte d'apprentissage des notions correspondantes"
+  },
+  "CM1G1B": {
+    "titre": "Utiliser les outils géométriques usuels : règle, règle graduée, équerre et compas"
+  },
+  "CM1G1C": {
+    "titre": "Connaître les codes usuels utilisés en géométrie"
+  },
+  "CM1G1D": {
+    "titre": "Décrire et reconnaître un cercle et un disque comme un ensemble de points caractérisés par leur distance à un point donné"
+  },
+  "CM1G2": {
+    "titre": "Parallèles et perpendiculaires"
+  },
+  "CM1G2A": {
+    "titre": "Reconnaître et utiliser la notion de perpendicularité"
+  },
+  "CM1G2B": {
+    "titre": "Reconnaître et utiliser la notion de parallélisme"
+  },
+  "CM1G3": {
+    "titre": "Polygones"
+  },
+  "CM1G3A": {
+    "titre": "Reconnaître et nommer les figures suivantes en faisant référence à leur définition : triangle, triangle rectangle, triangle isocèle, triangle équilatéral, quadrilatère, carré, rectangle et losange"
+  },
+  "CM1G3B": {
+    "titre": "Connaître les propriétés de parallélisme des côtés opposés, des égalités de longueurs et d'angles pour les figures usuelles : triangle rectangle, triangle isocèle, triangle équilatéral, carré, rectangle et losange"
+  },
+  "CM1G3C": {
+    "titre": "Reproduire ou construire un carré, un rectangle, un triangle, un triangle rectangle ou un cercle ou des assemblages de ces figures sur tout support (papier quadrillé, pointé ou uni), avec une règle graduée, une équerre ou un compas"
+  },
+  "CM1G3D": {
+    "titre": "Construire une figure géométrique composée de segments, de droites, de polygones usuels et de cercles"
+  },
+  "CM1G4": {
+    "titre": "Symétrie axiale"
+  },
+  "CM1G4A": {
+    "titre": "Reconnaître si une figure possède un ou plusieurs axes de symétrie"
+  },
+  "CM1G4B": {
+    "titre": "Compléter une figure pour la rendre symétrique par rapport à une droite donnée, horizontale ou verticale"
+  },
+  "CM1G4C": {
+    "titre": "Construire, sur papier quadrillé, la figure symétrique d'une figure donnée par rapport à une droite horizontale ou verticale"
+  },
+  "CM1G5": {
+    "titre": "Solides"
+  },
+  "CM1G5A": {
+    "titre": "Nommer un cube, une boule, un pavé, un cône, une pyramide, un cylindre et un prisme droit"
+  },
+  "CM1G5B": {
+    "titre": "Décrire un cube, un pavé, une pyramide et un prisme droit en faisant référence à des propriétés et en utilisant le vocabulaire approprié"
+  },
+  "CM1G5C": {
+    "titre": "Connaître le nombre et la nature des faces d'un cube ou d'un pavé"
+  },
+  "CM1G5D": {
+    "titre": "Connaître la nature des faces d'une pyramide"
+  },
+  "CM1G5E": {
+    "titre": "Connaître la nature des faces d'un prisme droit"
+  },
+  "CM1G5F": {
+    "titre": "Construire un cube, un pavé, une pyramide ou un prisme droit"
+  },
+  "CM1G5G": {
+    "titre": "Reconnaître un patron d'un cube"
+  },
+  "CM1G5H": {
+    "titre": "Construire un patron d'un cube"
+  },
+  "CM1G6": {
+    "titre": "Déplacements"
+  },
+  "CM1G6A": {
+    "titre": "Connaître et utiliser le vocabulaire lié aux déplacements"
+  },
+  "CM1G6B": {
+    "titre": "Comprendre, utiliser et produire une suite d'instructions qui décrivent un déplacement en utilisant un vocabulaire spatial précis"
+  },
+  "CM1G6C": {
+    "titre": "Résoudre des problèmes portant sur des assemblages de cubes"
+  },
+  "CM1P1": {
+    "titre": "Organisation et gestion de données"
+  },
+  "CM1P1A": {
+    "titre": "Recueillir des données et produire un tableau, un diagramme en barres ou un ensemble de points dans un repère pour les présenter"
+  },
+  "CM1P1B": {
+    "titre": "Lire et interpréter les données d'un tableau à simple ou double entrée, d'un diagramme en barres ou d'une courbe"
+  },
+  "CM1P1C": {
+    "titre": "Résoudre des problèmes en une ou plusieurs étapes en utilisant les données d'un tableau à simple ou double entrée, d'un diagramme en barres ou d'une courbe"
+  },
+  "CM1P2": {
+    "titre": "Probabilités"
+  },
+  "CM1P2A": {
+    "titre": "Identifier des expériences aléatoires"
+  },
+  "CM1P2B": {
+    "titre": "Identifier toutes les issues possibles lors d'une expérience aléatoire simple"
+  },
+  "CM1P2C": {
+    "titre": "Comprendre et utiliser le vocabulaire approprié : « impossible », « possible », « certain », « probable », « peu probable », « une chance sur deux »"
+  },
+  "CM1P2D": {
+    "titre": "Comparer des issues d'expériences aléatoires ou des événements selon leur probabilité de réalisation"
+  },
+  "CM1P2E": {
+    "titre": "Comprendre que ce n'est pas parce qu'il y a deux issues possibles que chacune a une chance sur deux de se réaliser"
+  },
+  "CM1P2F": {
+    "titre": "Reconnaître des situations d'équiprobabilité"
+  },
+  "CM1P3": {
+    "titre": "Proportionnalité"
+  },
+  "CM1P3A": {
+    "titre": "Identifier une situation de proportionnalité"
+  },
+  "CM1P3B": {
+    "titre": "Savoir résoudre un problème de proportionnalité"
+  },
+  "CM1I1": {
+    "titre": "Pensée informatique"
+  },
+  "CM1I1A": {
+    "titre": "Utiliser et produire des codages de déplacements"
+  },
+  "CM1I1B": {
+    "titre": "Travailler sur des suites évolutives"
+  },
+  "CM1I1C": {
+    "titre": "Exécuter des programmes de calcul"
+  },
+  "CM1I1D": {
+    "titre": "Réaliser des figures géométriques s'appuyant sur des programmes de construction"
+  },
+  "CM2N1": {
+    "titre": "Nombres entiers"
+  },
+  "CM2N1A": {
+    "titre": "Connaître et utiliser les relations entre les unités de numération"
+  },
+  "CM2N1B": {
+    "titre": "Connaître la suite écrite et la suite orale des nombres jusqu'à 999 999 999"
+  },
+  "CM2N1C": {
+    "titre": "Connaître et utiliser diverses représentations d'un nombre et passer de l'une à l'autre"
+  },
+  "CM2N1D": {
+    "titre": "Connaître la valeur des chiffres en fonction de leur position dans un nombre"
+  },
+  "CM2N1E": {
+    "titre": "Comparer, encadrer, intercaler des nombres entiers en utilisant les symboles =, < et >"
+  },
+  "CM2N1F": {
+    "titre": "Ordonner des nombres dans l'ordre croissant ou décroissant"
+  },
+  "CM2N1G": {
+    "titre": "Placer des nombres et repérer des points sur une demi-droite graduée"
+  },
+  "CM2N1H": {
+    "titre": "Déterminer si un nombre entier inférieur ou égal à 10 est un diviseur d'un nombre entier donné ou si un nombre entier donné est un multiple d'un nombre entier inférieur ou égal à 10"
+  },
+  "CM2N1I": {
+    "titre": "Déterminer des diviseurs d'un nombre entier inférieur ou égal à 100"
+  },
+  "CM2N1J": {
+    "titre": "Déterminer tous les diviseurs d'un nombre entier inférieur ou égal à 30"
+  },
+  "CM2N1K": {
+    "titre": "Déterminer les diviseurs communs à deux nombres entiers inférieurs ou égaux à 30"
+  },
+  "CM2N1L": {
+    "titre": "Déterminer des multiples communs à deux nombres entiers inférieurs à 15"
+  },
+  "CM2N2": {
+    "titre": "Fractions"
+  },
+  "CM2N2A": {
+    "titre": "Interpréter, représenter, écrire et lire des fractions"
+  },
+  "CM2N2B": {
+    "titre": "Écrire une fraction supérieure à 1 comme la somme d'un entier et d'une fraction inférieure à 1"
+  },
+  "CM2N2C": {
+    "titre": "Écrire la somme d'un entier et d'une fraction inférieure à 1 comme une unique fraction"
+  },
+  "CM2N2D": {
+    "titre": "Encadrer une fraction entre deux nombres entiers consécutifs"
+  },
+  "CM2N2E": {
+    "titre": "Placer une fraction ou la somme d'un nombre entier et d'une fraction inférieure à un sur une demi-droite graduée"
+  },
+  "CM2N2F": {
+    "titre": "Repérer un point d'une demi-droite graduée par une fraction ou par la somme d'un nombre entier et d'une fraction"
+  },
+  "CM2N2G": {
+    "titre": "Comparer des fractions"
+  },
+  "CM2N2H": {
+    "titre": "Additionner et soustraire des fractions"
+  },
+  "CM2N2I": {
+    "titre": "Calculer le produit d'un entier et d'une fraction"
+  },
+  "CM2N2J": {
+    "titre": "Déterminer une fraction d'une quantité ou d'une grandeur"
+  },
+  "CM2N3": {
+    "titre": "Nombres décimaux"
+  },
+  "CM2N3A": {
+    "titre": "Interpréter, représenter, écrire et lire des fractions décimales"
+  },
+  "CM2N3B": {
+    "titre": "Connaître et utiliser les relations entre unités simples, dixièmes, centièmes et millièmes"
+  },
+  "CM2N3C": {
+    "titre": "Placer une fraction décimale sur une demi-droite graduée et repérer un point d'une demi-droite graduée par une fraction décimale"
+  },
+  "CM2N3D": {
+    "titre": "Écrire une fraction décimale supérieure à 1 comme la somme d'un nombre entier et d'une fraction décimale inférieure à 1"
+  },
+  "CM2N3E": {
+    "titre": "Écrire une fraction décimale supérieure à 1 comme la somme d'un nombre entier et de fractions décimales ayant un numérateur inférieur à 10"
+  },
+  "CM2N3F": {
+    "titre": "Comparer, encadrer, intercaler des fractions décimales en utilisant les symboles =, < et >"
+  },
+  "CM2N3G": {
+    "titre": "Ordonner des fractions décimales dans l'ordre croissant ou décroissant"
+  },
+  "CM2N3H": {
+    "titre": "Passer d'une écriture sous forme d'une fraction décimale ou de la somme de fractions décimales à une écriture à virgule et réciproquement"
+  },
+  "CM2N3I": {
+    "titre": "Interpréter, représenter, écrire et lire des nombres décimaux (écriture à virgule)"
+  },
+  "CM2N3J": {
+    "titre": "Placer un nombre décimal en écriture à virgule sur une demi-droite graduée et repérer un point d'une demi-droite graduée par un nombre en écriture à virgule"
+  },
+  "CM2N3K": {
+    "titre": "Savoir donner la partie entière et l'arrondi à l'entier d'un nombre décimal"
+  },
+  "CM2N3L": {
+    "titre": "Comparer, encadrer, intercaler, ordonner par ordre croissant ou décroissant des nombres décimaux donnés par leur écriture à virgule en utilisant les symboles =, < et >"
+  },
+  "CM2N4": {
+    "titre": "Calcul mental"
+  },
+  "CM2N4A": {
+    "titre": "Connaître des faits numériques usuels avec des entiers"
+  },
+  "CM2N4B": {
+    "titre": "Connaître la moitié des nombres impairs jusqu'à 15"
+  },
+  "CM2N4C": {
+    "titre": "Connaître quelques relations entre des fractions usuelles"
+  },
+  "CM2N4D": {
+    "titre": "Connaître l'écriture décimale de fractions usuelles"
+  },
+  "CM2N4E": {
+    "titre": "Ajouter ou soustraire un nombre entier à un nombre décimal lorsqu'il n'y a pas de retenue"
+  },
+  "CM2N4F": {
+    "titre": "Ajouter un nombre entier à un nombre décimal lorsqu'il y a une retenue"
+  },
+  "CM2N4G": {
+    "titre": "Multiplier un nombre décimal par 10, 100 ou 1 000"
+  },
+  "CM2N4H": {
+    "titre": "Diviser un nombre décimal par 10, 100 ou 1 000"
+  },
+  "CM2N4I": {
+    "titre": "Ajouter deux nombres décimaux inférieurs à 10, s'écrivant avec au plus un chiffre après la virgule"
+  },
+  "CM2N4J": {
+    "titre": "Ajouter ou soustraire 8, 9, 18, 19, 28, 29, ..., 98 ou 99 à un nombre"
+  },
+  "CM2N4K": {
+    "titre": "Multiplier un nombre entier, inférieur à 10, de dizaines, de centaines ou de milliers par un nombre entier, inférieur à 10, de dizaines, de centaines ou de milliers"
+  },
+  "CM2N4L": {
+    "titre": "Utiliser la distributivité de la multiplication par rapport à l'addition dans des cas simples"
+  },
+  "CM2N4M": {
+    "titre": "Calculer le double d'un nombre décimal dans des cas simples"
+  },
+  "CM2N4N": {
+    "titre": "Calculer la moitié d'un nombre décimal dans des cas simples"
+  },
+  "CM2N4O": {
+    "titre": "Diviser un nombre entier par 4 ou par 8"
+  },
+  "CM2N4P": {
+    "titre": "Multiplier un nombre décimal par 5"
+  },
+  "CM2N4Q": {
+    "titre": "Multiplier un nombre décimal par 50"
+  },
+  "CM2N5": {
+    "titre": "Addition, soustraction, multiplication, division"
+  },
+  "CM2N5A": {
+    "titre": "Estimer le résultat d'une opération"
+  },
+  "CM2N5B": {
+    "titre": "Savoir réaliser un calcul contenant une ou deux paires de parenthèses"
+  },
+  "CM2N5C": {
+    "titre": "Poser et effectuer la multiplication d'un nombre décimal par un nombre entier"
+  },
+  "CM2N5D": {
+    "titre": "Poser et effectuer des divisions décimales avec un dividende entier et un diviseur à un chiffre"
+  },
+  "CM2N5E": {
+    "titre": "Poser et effectuer des divisions décimales avec un dividende décimal et un diviseur à un chiffre"
+  },
+  "CM2N5F": {
+    "titre": "Poser et effectuer des additions, des soustractions et des multiplications de nombres entiers"
+  },
+  "CM2N5G": {
+    "titre": "Poser et effectuer des divisions euclidiennes"
+  },
+  "CM2N5H": {
+    "titre": "Jouer au « compte est bon »"
+  },
+  "CM2N6": {
+    "titre": "Résolution de problèmes"
+  },
+  "CM2N6A": {
+    "titre": "Résoudre des problèmes additifs en une ou plusieurs étapes"
+  },
+  "CM2N6B": {
+    "titre": "Résoudre des problèmes multiplicatifs de type « parties-tout » en une étape"
+  },
+  "CM2N6C": {
+    "titre": "Résoudre des problèmes mixtes en plusieurs étapes"
+  },
+  "CM2N6D": {
+    "titre": "Résoudre des problèmes de comparaison multiplicative"
+  },
+  "CM2N6E": {
+    "titre": "Résoudre des problèmes de dénombrement"
+  },
+  "CM2N6F": {
+    "titre": "Résoudre des problèmes d'optimisation"
+  },
+  "CM2N6G": {
+    "titre": "Résoudre des problèmes préparant à l'utilisation d'algorithmes"
+  },
+  "CM2N7": {
+    "titre": "Algèbre"
+  },
+  "CM2N7A": {
+    "titre": "Trouver le nombre manquant dans une égalité à trous"
+  },
+  "CM2N7B": {
+    "titre": "Résoudre des problèmes algébriques"
+  },
+  "CM2N7C": {
+    "titre": "Exécuter ou produire un programme de calcul"
+  },
+  "CM2N7D": {
+    "titre": "Identifier et formuler une règle de calcul pour poursuivre une suite de nombres"
+  },
+  "CM2N7E": {
+    "titre": "Identifier des régularités et poursuivre une suite de motifs évolutive"
+  },
+  "CM2N7F": {
+    "titre": "Trouver le nombre d'éléments pour une étape donnée dans une suite de motifs évolutive"
+  },
+  "CM2M1": {
+    "titre": "Aires"
+  },
+  "CM2M1A": {
+    "titre": "Comparer les aires de différentes figures planes"
+  },
+  "CM2M1B": {
+    "titre": "Déterminer des aires"
+  },
+  "CM2M1C": {
+    "titre": "Connaître et utiliser les unités centimètre carré, décimètre carré et mètre carré pour exprimer des aires"
+  },
+  "CM2M1D": {
+    "titre": "Convertir des aires entre différentes unités"
+  },
+  "CM2M1E": {
+    "titre": "Déterminer l'aire d'un carré ou d'un rectangle"
+  },
+  "CM2M2": {
+    "titre": "Angles"
+  },
+  "CM2M2A": {
+    "titre": "Utiliser le lexique spécifique associé aux angles"
+  },
+  "CM2M2B": {
+    "titre": "Comprendre et utiliser les notations des angles"
+  },
+  "CM2M2C": {
+    "titre": "Comparer des angles"
+  },
+  "CM2M2D": {
+    "titre": "Construire un angle égal à la somme de deux angles donnés ou un angle multiple d'un angle donné"
+  },
+  "CM2M2E": {
+    "titre": "Construire par pliage la moitié d'un angle donné"
+  },
+  "CM2M2F": {
+    "titre": "Savoir qu'un angle droit mesure 90°"
+  },
+  "CM2M3": {
+    "titre": "Durées"
+  },
+  "CM2M3A": {
+    "titre": "Lire l'heure sur une horloge à aiguilles"
+  },
+  "CM2M3B": {
+    "titre": "Positionner les aiguilles d'une horloge correspondant à une heure donnée en heure, minute et seconde"
+  },
+  "CM2M3C": {
+    "titre": "Comparer et mesurer des durées écoulées entre deux instants affichés sur une horloge (instants et durées sont exprimés en heure, minute et seconde)"
+  },
+  "CM2M3D": {
+    "titre": "Résoudre des problèmes à une ou plusieurs étapes impliquant des durées"
+  },
+  "CM2G1": {
+    "titre": "Vocabulaire et outils pour la géométrie"
+  },
+  "CM2G1A": {
+    "titre": "Utiliser le vocabulaire géométrique approprié dans le contexte d'apprentissage des notions correspondantes"
+  },
+  "CM2G1B": {
+    "titre": "Utiliser les outils géométriques usuels : règle, règle graduée, équerre et compas"
+  },
+  "CM2G1C": {
+    "titre": "Connaître les notations et les codes usuels utilisés en géométrie"
+  },
+  "CM2G2": {
+    "titre": "Parallèles et perpendiculaires"
+  },
+  "CM2G2A": {
+    "titre": "Reconnaître et utiliser la notion de perpendicularité"
+  },
+  "CM2G2B": {
+    "titre": "Reconnaître et utiliser la notion de parallélisme"
+  },
+  "CM2G3": {
+    "titre": "Figures géométriques"
+  },
+  "CM2G3A": {
+    "titre": "Décrire et reconnaître un cercle et un disque comme un ensemble de points caractérisés par leur distance à un point donné"
+  },
+  "CM2G3B": {
+    "titre": "Reconnaître et nommer les figures suivantes en s'appuyant sur leur définition : triangle, triangle rectangle, triangle isocèle, triangle équilatéral, quadrilatère, carré, rectangle, losange, trapèze, trapèze rectangle, pentagone et hexagone"
+  },
+  "CM2G3C": {
+    "titre": "Connaître les propriétés de parallélisme des côtés opposés, des égalités de longueurs et d'angles pour les figures usuelles : triangle rectangle, triangle isocèle, triangle équilatéral, carré, rectangle, losange, trapèze et trapèze rectangle"
+  },
+  "CM2G3D": {
+    "titre": "Reproduire ou construire un carré, un rectangle, un triangle, un triangle rectangle ou un cercle ou des assemblages de ces figures sur tout support (papier quadrillé, pointé ou uni), avec une règle graduée, une équerre ou un compas"
+  },
+  "CM2G3E": {
+    "titre": "Construire une figure géométrique composée de segments, de droites, de polygones usuels et de cercles"
+  },
+  "CM2G3F": {
+    "titre": "Élaborer un programme de construction"
+  },
+  "CM2G4": {
+    "titre": "Symétrie axiale"
+  },
+  "CM2G4A": {
+    "titre": "Construire, sur papier quadrillé, la figure symétrique d'une figure donnée par rapport à une droite verticale, horizontale ou une diagonale du quadrillage"
+  },
+  "CM2G5": {
+    "titre": "Solides"
+  },
+  "CM2G5A": {
+    "titre": "Nommer un cube, une boule, un pavé, un cône, une pyramide, un cylindre ou un prisme droit"
+  },
+  "CM2G5B": {
+    "titre": "Décrire un cube, un pavé, une pyramide ou un prisme droit en faisant référence à des propriétés et en utilisant le vocabulaire approprié"
+  },
+  "CM2G5C": {
+    "titre": "Reconnaître un patron d'un cube"
+  },
+  "CM2G5D": {
+    "titre": "Construire un patron d'un cube"
+  },
+  "CM2G5E": {
+    "titre": "Reconnaître un patron d'un pavé"
+  },
+  "CM2G6": {
+    "titre": "Déplacements dans l'espace"
+  },
+  "CM2G6A": {
+    "titre": "Connaître et utiliser le vocabulaire lié aux déplacements"
+  },
+  "CM2G6B": {
+    "titre": "Comprendre, utiliser et produire une suite d'instructions qui décrivent un déplacement en utilisant un vocabulaire spatial précis"
+  },
+  "CM2G6C": {
+    "titre": "Résoudre des problèmes portant sur des assemblages de cubes"
+  },
+  "CM2P1": {
+    "titre": "Organisation et gestion de données"
+  },
+  "CM2P1A": {
+    "titre": "Recueillir des données et produire un tableau, un diagramme en barres ou un ensemble de points dans un repère pour présenter des données recueillies"
+  },
+  "CM2P1B": {
+    "titre": "Lire et interpréter les données d'un tableau, d'un diagramme en barres, d'un diagramme circulaire ou d'une courbe"
+  },
+  "CM2P1C": {
+    "titre": "Résoudre des problèmes en une ou deux étapes en utilisant les données d'un tableau, d'un diagramme en barres, d'un diagramme circulaire ou d'une courbe"
+  },
+  "CM2P2": {
+    "titre": "Probabilités"
+  },
+  "CM2P2A": {
+    "titre": "Identifier toutes les issues possibles lors d'une expérience aléatoire simple"
+  },
+  "CM2P2B": {
+    "titre": "Identifier toutes les issues réalisant un événement dans une expérience aléatoire simple"
+  },
+  "CM2P2C": {
+    "titre": "Dans une situation d'équiprobabilité, lors d'une expérience aléatoire simple, exprimer la probabilité d'un événement sous la forme « a chances sur b »"
+  },
+  "CM2P2D": {
+    "titre": "Comparer des probabilités dans des cas simples"
+  },
+  "CM2P2E": {
+    "titre": "Comprendre la notion d'indépendance lors de la répétition de la même expérience aléatoire"
+  },
+  "CM2P2F": {
+    "titre": "Dans des situations d'équiprobabilité, recenser toutes les issues possibles d'une expérience aléatoire en deux étapes dans un tableau ou dans un arbre afin de déterminer des probabilités"
+  },
+  "CM2P3": {
+    "titre": "Proportionnalité"
+  },
+  "CM2P3A": {
+    "titre": "Identifier une situation de proportionnalité"
+  },
+  "CM2P3B": {
+    "titre": "Savoir résoudre un problème de proportionnalité"
+  },
+  "CM2I1": {
+    "titre": "Pensée informatique"
+  },
+  "CM2I1A": {
+    "titre": "Utiliser et produire des codages de déplacements"
+  },
+  "CM2I1B": {
+    "titre": "Travailler sur des suites évolutives"
+  },
+  "CM2I1C": {
+    "titre": "Exécuter des programmes de calcul"
+  },
+  "CM2I1D": {
+    "titre": "Réaliser des figures géométriques s'appuyant sur des programmes de construction"
+  },
+  "6Auto": {
+    "titre": "Automatismes"
+  },
+  "6AutoA": {
+    "titre": "Aires"
+  },
+  "6AutoA1": {
+    "titre": "Comparer ou déterminer des aires sans recours à une unité"
+  },
+  "6AutoA2": {
+    "titre": "Connaître les unités d'aires et leur relations"
+  },
+  "6AutoE": {
+    "titre": "Espace"
+  },
+  "6AutoE1": {
+    "titre": "Identifier les solides"
+  },
+  "6AutoF": {
+    "titre": "Fractions"
+  },
+  "6AutoF1": {
+    "titre": "Connaître et utiliser les fractions"
+  },
+  "6AutoF2": {
+    "titre": "Passer de l'écriture fractionnaire à l'écriture décimale"
+  },
+  "6AutoF3": {
+    "titre": "Calculer avec des fractions"
+  },
+  "6AutoG": {
+    "titre": "Configurations planes"
+  },
+  "6AutoG1": {
+    "titre": "Connaître le lexique et les codages de base en géométrie"
+  },
+  "6AutoG2": {
+    "titre": "Reconnaître un carré, un rectangle, un triangle"
+  },
+  "6AutoG3": {
+    "titre": "Reconnaître des axes de symétrie"
+  },
+  "6AutoG4": {
+    "titre": "Savoir coder/construire une figure"
+  },
+  "6AutoH": {
+    "titre": "Probabilités"
+  },
+  "6AutoH1": {
+    "titre": "???"
+  },
+  "6AutoL": {
+    "titre": "Longueurs"
+  },
+  "6AutoL1": {
+    "titre": "Connaître les préfixes et leur lien avec les unités de numération décimale"
+  },
+  "6AutoL2": {
+    "titre": "Convertir des longueurs dans une autre unité"
+  },
+  "6AutoL3": {
+    "titre": "Calculer des périmètres"
+  },
+  "6AutoN": {
+    "titre": "Nombres et calcul"
+  },
+  "6AutoN1": {
+    "titre": "Connaître les liens entre les fractions décimales"
+  },
+  "6AutoN2": {
+    "titre": "Passer de la fraction décimale à l'écriture décimale et inversement"
+  },
+  "6AutoN3": {
+    "titre": "Connaître et utiliser différentes écritures des nombres"
+  },
+  "6AutoN4": {
+    "titre": "Multiplier ou diviser par 10, 100, 1000"
+  },
+  "6AutoP": {
+    "titre": "Proportionnalité"
+  },
+  "6AutoP1": {
+    "titre": "Repérer les relations multiplicatives simples"
+  },
+  "6AutoP2": {
+    "titre": "Associer Fois plus ou Fois moins à une multiplication ou à une division"
+  },
+  "6AutoS": {
+    "titre": "Gestion de données"
+  },
+  "6AutoS1": {
+    "titre": "Lire un tableau, un diagramme (lecture immédiate)"
+  },
+  "6AutoT": {
+    "titre": "Temps et durée"
+  },
+  "6AutoT1": {
+    "titre": "Se repérer dans le temps et les durées"
+  },
+  "6N0": {
+    "titre": "Nombres entiers"
+  },
+  "6N0A": {
+    "titre": "Connaître des faits numériques usuels avec des entiers"
+  },
+  "6N0B": {
+    "titre": "Verbaliser"
+  },
+  "6N1": {
+    "titre": "Nombres entiers et décimaux"
+  },
+  "6N1A": {
+    "titre": "Connaître et utiliser la valeur des chiffres selon leur rang dans l'écriture d'un nombre"
+  },
+  "6N1B": {
+    "titre": "Connaître les liens entre les unités de numération : unité, dizaine, centaine, millier, dixième, centième, millième"
+  },
+  "6N1C": {
+    "titre": "Connaître des grands nombres entiers"
+  },
+  "6N1D": {
+    "titre": "Reconnaître un nombre décimal"
+  },
+  "6N1E": {
+    "titre": "Connaître la définition d'un pourcentage"
+  },
+  "6N1F": {
+    "titre": "Associer et utiliser différentes écritures d'un nombre décimal : écriture à virgule, fraction, nombre mixte, pourcentage"
+  },
+  "6N1G": {
+    "titre": "Placer sur une demi-droite graduée un point dont l'abscisse est un nombre décimal"
+  },
+  "6N1H": {
+    "titre": "Repérer un nombre décimal sur une demi-droite graduée"
+  },
+  "6N1I": {
+    "titre": "Comparer deux nombres décimaux"
+  },
+  "6N1J": {
+    "titre": "Ordonner une liste de nombres décimaux"
+  },
+  "6N1K": {
+    "titre": "Donner la valeur arrondie à l'unité, au dixième ou au centième, d'un nombre décimal"
+  },
+  "6N1L": {
+    "titre": "Déterminer ou connaître la valeur arrondie de certains nombres non décimaux"
+  },
+  "6N1M": {
+    "titre": "Encadrer un nombre décimal par deux nombres décimaux, intercaler un nombre décimal entre deux nombres décimaux"
+  },
+  "6N2": {
+    "titre": "Nombres décimaux"
+  },
+  "6N2A": {
+    "titre": "Additionner et soustraire des nombres décimaux"
+  },
+  "6N2B": {
+    "titre": "Multiplier un nombre entier ou un nombre décimal par 0,1, par 0,01, et par 0,001"
+  },
+  "6N2C": {
+    "titre": "Connaître le lien avec la division par 10, 100 et par 1 000"
+  },
+  "6N2D": {
+    "titre": "Comprendre le sens de la multiplication de deux nombres décimaux"
+  },
+  "6N2E": {
+    "titre": "Calculer le produit de deux nombres décimaux"
+  },
+  "6N2F": {
+    "titre": "Contrôler les résultats à l'aide d'ordres de grandeur"
+  },
+  "6N2G": {
+    "titre": "Résoudre des problèmes mettant en jeu des multiplications entre des nombres décimaux"
+  },
+  "6N2H": {
+    "titre": "Diviser un nombre décimal par un nombre entier non nul inférieur à 10"
+  },
+  "6N2I": {
+    "titre": "Résoudre des problèmes mettant en jeu des divisions décimales"
+  },
+  "6N2J": {
+    "titre": "Effectuer la division euclidienne d'un nombre entier par un nombre entier inférieur à 100"
+  },
+  "6N2K": {
+    "titre": "Résoudre des problèmes mettant en jeu des divisions euclidiennes"
+  },
+  "6N2autoA": {
+    "titre": "L'élève restitue de manière automatique des résultats relatifs aux relations entre 1/1000, 1/100, 1/10 et 1"
+  },
+  "6N2autoB": {
+    "titre": "L'élève passe de manière automatique d'une écriture sous forme de fraction décimale ou de somme de fractions décimales à une écriture décimale, et inversement"
+  },
+  "6N2autoC": {
+    "titre": "L'élève applique de manière automatique la procédure de multiplication d'un nombre décimal par 1, 10, 100 ou 1 000, en lien avec la numération"
+  },
+  "6N2autoD": {
+    "titre": "L'élève applique de manière automatique la procédure de division d'un nombre décimal par 1, 10, 100 ou 1 000"
+  },
+  "6N2autoE": {
+    "titre": "Jusqu'à l'automatisation, la manipulation d'un outil du type «glisse-nombres» peut compléter la verbalisation en termes d'unités de numération"
+  },
+  "6N3": {
+    "titre": "Fractions"
+  },
+  "6N3A": {
+    "titre": "Relier une fraction au résultat exact de la division de son numérateur par son dénominateur"
+  },
+  "6N3B": {
+    "titre": "Comprendre et connaître la définition du quotient d'un entier a par un entier b non nul"
+  },
+  "6N3C": {
+    "titre": "Compléter des égalités à trous multiplicatives"
+  },
+  "6N3D": {
+    "titre": "Placer une fraction sur une demi-droite graduée dans des cas simples (Exemple de mise en oeuvre : 7/3 comme 7 partagé en 3 et non comme 7 fois 1/3)"
+  },
+  "6N3E": {
+    "titre": "Graduer un segment de longueur donnée a. (Exemple de mise en oeuvre : Plier en 2, 4, 8... ou bien avec un guide-âne)"
+  },
+  "6N3F": {
+    "titre": "Savoir que la fraction a/b peut représenter un nombre entier, un nombre décimal non entier ou un nombre non décimal"
+  },
+  "6N3G": {
+    "titre": "Utiliser une multiplication pour appliquer une fraction à un nombre entier"
+  },
+  "6N3H": {
+    "titre": "Établir des égalités de fractions"
+  },
+  "6N3I": {
+    "titre": "Comparer et encadrer des fractions"
+  },
+  "6N3J": {
+    "titre": "Ordonner une liste de nombres écrits sous forme de fractions ou de nombres mixtes"
+  },
+  "6N3K": {
+    "titre": "Additionner et soustraire des fractions"
+  },
+  "6N3L": {
+    "titre": "Multiplier une fraction par un nombre entier"
+  },
+  "6N3M": {
+    "titre": "Résoudre des problèmes mettant en jeu des fractions"
+  },
+  "6N3N": {
+    "titre": "Inventer des problèmes mettant en jeu des fractions"
+  },
+  "6N3O": {
+    "titre": "Comprendre le sens d'un pourcentage"
+  },
+  "6N3P": {
+    "titre": "Calculer une proportion (rapport entre une partie et le tout) et l'exprimer sous forme de pourcentage dans des cas simples"
+  },
+  "6N3Q": {
+    "titre": "Appliquer un pourcentage à une grandeur ou à un nombre"
+  },
+  "6N3autoA": {
+    "titre": "L'élève sait reconnaître une fraction sur des représentations variées (figures diverses : carré, disque, rectangle coupé en triangles, barre rectangulaire)"
+  },
+  "6N3autoB": {
+    "titre": "L'élève connaît des relations entre 1/4, 1/2, 3/4 et 1, et complète de manière automatique des « égalités à trous »"
+  },
+  "6N3autoC": {
+    "titre": "L'élève sait passer de manière automatique d'une écriture fractionnaire à une écriture décimale, et inversement"
+  },
+  "6N3autoD": {
+    "titre": "Les notions de diviseur et de multiple et les tables de multiplication sont réactivées en vue de leur utilisation dans le calcul sur les fractions (simplification, addition et soustraction)"
+  },
+  "6N3autoE": {
+    "titre": "L'élève sait calculer 2/3 de 12 œufs, 3/4 de 10 m"
+  },
+  "6N4": {
+    "titre": "Algèbre"
+  },
+  "6N4A": {
+    "titre": "Utiliser des modèles pré-algébriques pour résoudre des problèmes algébriques"
+  },
+  "6N4B": {
+    "titre": "Identifier la structure d'un motif évolutif en repérant une régularité et en identifiant une structure"
+  },
+  "6N5": {
+    "titre": "Résolution de problèmes"
+  },
+  "6M1": {
+    "titre": "Longueurs"
+  },
+  "6M1A": {
+    "titre": "Savoir que le périmètre du disque est proportionnel à son diamètre"
+  },
+  "6M1B": {
+    "titre": "Connaître la formule du périmètre d'un disque"
+  },
+  "6M1C": {
+    "titre": "Calculer le périmètre d'un disque"
+  },
+  "6M1D": {
+    "titre": "Calculer des périmètres de figures composées"
+  },
+  "6M1E": {
+    "titre": "Résoudre des problèmes impliquant des longueurs"
+  },
+  "6M1autoA": {
+    "titre": "L'élève connaît les significations des préfixes allant du kilo- au milli-, ainsi que les relations entre le mètre, ses multiples et ses sous-multiples, et fait le lien avec les unités de numération du système décimal"
+  },
+  "6M1autoB": {
+    "titre": "L'élève connaît les relations entre deux unités successives du système décimal"
+  },
+  "6M1autoC": {
+    "titre": "L'élève sait convertir en mètre une longueur donnée dans une autre unité, multiple ou sous-multiple du mètre. Inversement, l'élève sait convertir dans une unité donnée une longueur exprimée en mètre"
+  },
+  "6M1autoD": {
+    "titre": "L'élève sait utiliser le compas comme outil de report de longueurs"
+  },
+  "6M1autoE": {
+    "titre": "L'élève sait que le périmètre d'une figure plane est la longueur de son contour. L'élève sait calculer le périmètre d'un carré et d'un rectangle"
+  },
+  "6M2": {
+    "titre": "Aires"
+  },
+  "6M2A": {
+    "titre": "Effectuer des conversions d'aire"
+  },
+  "6M2B": {
+    "titre": "Connaître la formule de l'aire d'un carré ou d'un rectangle"
+  },
+  "6M2C": {
+    "titre": "Calculer l'aire d'un carré ou d'un rectangle"
+  },
+  "6M2autoA": {
+    "titre": "L'élève sait comparer des aires sans avoir recours à la mesure, par superposition ou par découpage et recollement de surfaces"
+  },
+  "6M2autoB": {
+    "titre": "L'élève sait que 1 cm² est l'aire d'un carré de 1 cm de côté, que 1 m² est l'aire d'un carré de 1 m de côté, que 1 dm² est l'aire d'un carré de 1 dm de côté"
+  },
+  "6M2autoC": {
+    "titre": "Dans des cas simples, l'élève sait déterminer l'aire d'une surface en s'appuyant sur un quadrillage composé de carreaux dont les côtés mesurent 1 cm"
+  },
+  "6M2autoD": {
+    "titre": "L'élève connait le lien entre m² et dm², entre dm² et cm²"
+  },
+  "6M2autoE": {
+    "titre": "L'élève mémorise le lien entre 1 cm² et 1 dm², entre 1 dm² et 1 m²"
+  },
+  "6M3": {
+    "titre": "Volumes"
+  },
+  "6M3A": {
+    "titre": "Connaître l'unité centimètre cube"
+  },
+  "6M3B": {
+    "titre": "Comparer des volumes"
+  },
+  "6M3C": {
+    "titre": "Déterminer un volume"
+  },
+  "6M4": {
+    "titre": "Durées"
+  },
+  "6M4A": {
+    "titre": "Effectuer des calculs sur des horaires et des durées"
+  },
+  "6M4B": {
+    "titre": "Résoudre des problèmes impliquant des horaires et des durées"
+  },
+  "6M4C": {
+    "titre": "Convertir des durées"
+  },
+  "6M4autoA": {
+    "titre": "L'élève lit l'heure sur un cadran à aiguilles ou sur un affichage digital (heures, minutes et secondes)"
+  },
+  "6M4autoB": {
+    "titre": "L'élève place les aiguilles pour qu'une horloge indique une heure donnée"
+  },
+  "6M4autoC": {
+    "titre": "L'élève connaît les unités de mesure de durées jour, heure, minute et seconde et les relations qui les lient"
+  },
+  "6M4autoD": {
+    "titre": "L'élève sait combien de jours il y a dans une année (bissextile ou non), combien d'années il y a dans un siècle, et dans un millénaire"
+  },
+  "6M4autoE": {
+    "titre": "L'élève sait qu'une demi-heure c'est 30 minutes, qu'un quart d'heure c'est 15 minutes, que trois quarts d'heure c'est 45 minutes"
+  },
+  "6G0": {
+    "titre": "Géométrie de base"
+  },
+  "6G1": {
+    "titre": "Distances"
+  },
+  "6G1A": {
+    "titre": "Connaître et utiliser la définition de la distance entre deux points"
+  },
+  "6G1B": {
+    "titre": "Connaître et utiliser la définition du milieu d'un segment"
+  },
+  "6G1autoA": {
+    "titre": "L'élève connaît le lexique et le codage des objets de base de la géométrie plane : angle droit, égalité de longueurs, égalité d'angles"
+  },
+  "6G1autoB": {
+    "titre": "L'élève reconnaît un carré, un rectangle, un triangle"
+  },
+  "6G1autoC": {
+    "titre": "L'élève reconnaît si une figure possède un ou plusieurs axes de symétrie"
+  },
+  "6G1autoD": {
+    "titre": "L'élève sait coder des angles droits et des longueurs égales"
+  },
+  "6G2": {
+    "titre": "Cercles et disques"
+  },
+  "6G2A": {
+    "titre": "Connaître les définitions d'un cercle, d'un disque, d'un rayon, d'un diamètre, d'une corde"
+  },
+  "6G2B": {
+    "titre": "Comprendre la définition d'un cercle et celle d'un disque sous la forme d'ensembles de points"
+  },
+  "6G2C": {
+    "titre": "Résoudre des problèmes mettant en jeu des distances à un point"
+  },
+  "6G3": {
+    "titre": "Médiatrices"
+  },
+  "6G3A": {
+    "titre": "Connaître la définition de la médiatrice d'un segment"
+  },
+  "6G3B": {
+    "titre": "Comprendre et utiliser la propriété caractéristique de la médiatrice d'un segment"
+  },
+  "6G3C": {
+    "titre": "Résoudre des problèmes en s'appuyant sur la propriété caractéristique de la médiatrice"
+  },
+  "6G4": {
+    "titre": "Angles"
+  },
+  "6G4A": {
+    "titre": "Connaître et utiliser les angles ainsi que le lexique et les notations qui s'y rapportent : angle droit, angle plat, angle plein, angle nul, angle aigu, angle obtus, angles opposés par le sommet, angles adjacents, angles supplémentaires"
+  },
+  "6G4B": {
+    "titre": "Mesurer un angle"
+  },
+  "6G4C": {
+    "titre": "Construire un angle de mesure donnée"
+  },
+  "6G5": {
+    "titre": "Bissectrices"
+  },
+  "6G5A": {
+    "titre": "Connaître la définition de la bissectrice d'un angle saillant"
+  },
+  "6G5B": {
+    "titre": "Utiliser la définition de la bissectrice d'un angle pour effectuer des constructions et résoudre des problèmes"
+  },
+  "6G6": {
+    "titre": "Triangles"
+  },
+  "6G6A": {
+    "titre": "Construire des triangles"
+  },
+  "6G6B": {
+    "titre": "Connaître et utiliser les propriétés angulaires des triangles particuliers : triangle rectangle, triangle isocèle, triangle équilatéral"
+  },
+  "6G6C": {
+    "titre": "Connaître la valeur de la somme des mesures des angles d'un triangle"
+  },
+  "6G6D": {
+    "titre": "L'utiliser pour calculer des angles, effectuer des constructions et résoudre des problèmes"
+  },
+  "6G6E": {
+    "titre": "Savoir que les médiatrices d'un triangle sont concourantes"
+  },
+  "6G6F": {
+    "titre": "Connaître et construire le cercle circonscrit à un triangle"
+  },
+  "6G7": {
+    "titre": "Symétrie axiale"
+  },
+  "6G7A": {
+    "titre": "Connaître la définition du symétrique d'un point par rapport à une droite"
+  },
+  "6G7B": {
+    "titre": "Connaître et utiliser les propriétés de la symétrie axiale pour effectuer des constructions"
+  },
+  "6G8": {
+    "titre": "Espace"
+  },
+  "6G8A": {
+    "titre": "Voir dans l'espace des assemblages de cubes"
+  },
+  "6G8autoA": {
+    "titre": "L'élève identifie dans un ensemble de solides lesquels sont des pyramides, des boules, des cubes, des cylindres, des pavés, des cônes ou des prismes droits"
+  },
+  "6P1": {
+    "titre": "Organisation et gestion de données"
+  },
+  "6P1A": {
+    "titre": "Planifier une enquête et recueillir des données"
+  },
+  "6P1B": {
+    "titre": "Réaliser des mesures et les consigner dans un tableau"
+  },
+  "6P1C": {
+    "titre": "Construire un tableau simple pour présenter des données (observations, caractères)"
+  },
+  "6P1D": {
+    "titre": "Faire un choix en filtrant les données d'un tableau selon un critère"
+  },
+  "6P1autoA": {
+    "titre": "L'élève sait lire un tableau, un diagramme en barres, un diagramme circulaire ou une courbe dans des cas adaptés à une lecture immédiate"
+  },
+  "6P2": {
+    "titre": "Probabilités"
+  },
+  "6P2A": {
+    "titre": "Savoir que la probabilité d'un événement est un nombre compris entre 0 et 1"
+  },
+  "6P2B": {
+    "titre": "Calculer des probabilités dans des situations simples d'équiprobabilité"
+  },
+  "6P2C": {
+    "titre": "Comparer des résultats d'une expérience aléatoire répétée à une probabilité calculée"
+  },
+  "6P3": {
+    "titre": "Proportionnalité"
+  },
+  "6P3A": {
+    "titre": "Connaître la définition de la proportionnalité entre deux grandeurs et la mettre en lien avec des expressions de la vie courante"
+  },
+  "6P3B": {
+    "titre": "Identifier si une situation relève du « modèle » de la proportionnalité"
+  },
+  "6P3C": {
+    "titre": "Résoudre un problème de proportionnalité en choisissant une procédure adaptée : propriété de linéarité pour la multiplication ou l'addition, retour à l'unité"
+  },
+  "6P3D": {
+    "titre": "Représenter une situation de proportionnalité à l'aide d'un tableau ou de notations symboliques"
+  },
+  "6P3E": {
+    "titre": "S'initier à la résolution de problèmes d'échelles"
+  },
+  "6P3autoA": {
+    "titre": "L'élève sait repérer des relations multiplicatives simples entre des nombres (double, quadruple, moitié, tiers, quart)"
+  },
+  "6P3autoB": {
+    "titre": "L'élève associe de manière automatique les expressions du type : « 4 fois plus grand, 4 fois plus petit, 5 fois plus, 5 fois moins » à une multiplication ou à une division"
+  },
+  "6I1": {
+    "titre": "Pensée informatique"
+  },
+  "6I1A": {
+    "titre": "Identifier une instruction ou une séquence d'instructions"
+  },
+  "6I1B": {
+    "titre": "Produire et exécuter une séquence d'instructions"
+  },
+  "6I1C": {
+    "titre": "Répéter à la main une séquence d'instructions pour accomplir une tâche imposée"
+  },
+  "6I1D": {
+    "titre": "Programmer la construction d'un chemin simple"
+  },
+  "4A1": {
+    "titre": "Arithmétique"
+  },
+  "4A10": {
+    "titre": "Décomposer un nombre entier en produit de facteurs premiers (à la main, à l'aide d'un tableur ou d'un logiciel de programmation)"
+  },
+  "4A11": {
+    "titre": "Simplifier une fraction pour la rendre irréductible"
+  },
+  "4A12": {
+    "titre": "Modéliser et résoudre des problèmes mettant en jeu la divisibilité (engrenages, conjonction de phénomènes...)"
+  },
+  "4C1": {
+    "titre": "Relatifs"
+  },
+  "4C10": {
+    "titre": "Effectuer des produits ou des quotients avec des nombres relatifs"
+  },
+  "4C11": {
+    "titre": "Calculer avec des nombres relatifs"
+  },
+  "4C2": {
+    "titre": "Fractions"
+  },
+  "4C20": {
+    "titre": "Comparer, ranger et encadrer des nombres rationnels (positifs ou négatifs)"
+  },
+  "4C21": {
+    "titre": "Additionner ou soustraire des nombres relatifs en écriture fractionnaire"
+  },
+  "4C22": {
+    "titre": "Multiplier ou diviser des nombres relatifs en écriture fractionnaire"
+  },
+  "4C23": {
+    "titre": "Effectuer un calcul avec des nombres relatifs et fractionnaires"
+  },
+  "4C24": {
+    "titre": "Utiliser les nombres premiers pour reconnaître et produire des fractions égales ; pour simplifier des fractions"
+  },
+  "4C25": {
+    "titre": "Résoudre des problèmes avec des nombres rationnels"
+  },
+  "4C2Q": {
+    "titre": "QCM"
+  },
+  "4C3": {
+    "titre": "Puissances"
+  },
+  "4C30": {
+    "titre": "Utiliser les puissances de 10 d'exposants positifs ou négatifs"
+  },
+  "4C31": {
+    "titre": "Utiliser les préfixes de nano à giga"
+  },
+  "4C32": {
+    "titre": "Associer, dans le cas des nombres décimaux, écriture décimale, écriture fractionnaire et notation scientifique"
+  },
+  "4C33": {
+    "titre": "Utiliser les puissances d'exposants strictement positifs d'un nombre pour simplifier l'écriture des produits"
+  },
+  "4C34": {
+    "titre": "Calculer en utilisant les priorités opératoires et les puissances"
+  },
+  "4C35": {
+    "titre": "Transformer une écriture de puissance en écriture décimale ou fractionnaire"
+  },
+  "4C36": {
+    "titre": "Utiliser les ordres de grandeur pour vérifier ses résultats"
+  },
+  "4C37": {
+    "titre": "Déterminer le signe d'une puissance"
+  },
+  "4L1": {
+    "titre": "Calcul littéral"
+  },
+  "4L10": {
+    "titre": "Utiliser la propriété de distributivité simple pour développer un produit ou réduire une expression littérale"
+  },
+  "4L11": {
+    "titre": "Utiliser la propriété de distributivité simple pour factoriser une somme"
+  },
+  "4L12": {
+    "titre": "Démontrer l'équivalence de deux programmes de calcul"
+  },
+  "4L13": {
+    "titre": "Introduire une lettre pour désigner une valeur inconnue et mettre un problème en équation"
+  },
+  "4L14": {
+    "titre": "Tester si un nombre est solution d'une équation"
+  },
+  "4L15": {
+    "titre": "Résoudre algébriquement une équation du premier degré"
+  },
+  "4L16": {
+    "titre": "Déterminer si une expression littérale est une somme, une différence, un produit ou un quotient"
+  },
+  "4L2": {
+    "titre": "Calcul littéral (partie 2)"
+  },
+  "4S1": {
+    "titre": "Statistiques"
+  },
+  "4S10": {
+    "titre": "Lire, interpréter et représenter des données sous forme de diagrammes circulaires"
+  },
+  "4S11": {
+    "titre": "Calculer et interpréter la médiane d'une série de données de petit effectif total"
+  },
+  "4S2": {
+    "titre": "Probabilités"
+  },
+  "4S20": {
+    "titre": "Utiliser le vocabulaire des probabilités : expérience aléatoire, issues, événement, probabilité, événement certain, événement impossible, événement contraire"
+  },
+  "4S21": {
+    "titre": "Reconnaître des événements contraires et s'en servir pour calculer des probabilités"
+  },
+  "4S22": {
+    "titre": "Calcule des probabilités"
+  },
+  "4S23": {
+    "titre": "Exprimer des probabilités sous diverses formes (nombre compris entre 0 et 1, pourcentage, fraction)"
+  },
+  "4P1": {
+    "titre": "Proportionnalité"
+  },
+  "4P1Q": {
+    "titre": "QCM"
+  },
+  "4P10": {
+    "titre": "Reconnaître sur un graphique une situation de proportionnalité ou de non proportionnalité"
+  },
+  "4P11": {
+    "titre": "Calculer une quatrième proportionnelle par la procédure de son choix"
+  },
+  "4P12": {
+    "titre": "Utiliser une formule liant deux grandeurs dans une situation de proportionnalité"
+  },
+  "4P13": {
+    "titre": "Résoudre des problèmes en utilisant la proportionnalité dans le cadre de la géométrie"
+  },
+  "4P14": {
+    "titre": "Construire un agrandissement ou une réduction d'une figure donnée"
+  },
+  "4P15": {
+    "titre": "Utiliser un rapport d'agrandissement ou de réduction pour calculer, des longueurs, des aires, des volumes"
+  },
+  "4P16": {
+    "titre": "Convertir des grandeurs composées, notamment des vitesses"
+  },
+  "4F1": {
+    "titre": "Notion de fonction"
+  },
+  "4F10": {
+    "titre": "Produire une formule littérale représentant la dépendance de deux grandeurs"
+  },
+  "4F11": {
+    "titre": "Représenter la dépendance de deux grandeurs par un graphique"
+  },
+  "4F12": {
+    "titre": "Utiliser un graphique représentant la dépendance de deux grandeurs pour lire et interpréter différentes valeurs sur l'axe des abscisses ou l'axe des ordonnées"
+  },
+  "4G1": {
+    "titre": "Translation et rotation"
+  },
+  "4G10": {
+    "titre": "Transformer une figure par translation"
+  },
+  "4G11": {
+    "titre": "Identifier des translations dans des frises et des pavages"
+  },
+  "4G12": {
+    "titre": "Comprendre et utiliser l'effet d'une translation : conservation du parallélisme, des longueurs, des aires et des angles"
+  },
+  "4G13": {
+    "titre": "Mener des raisonnements en utilisant des propriétés des figures, des configurations et de la translation"
+  },
+  "4G15": {
+    "titre": "Effectuer des transformations de triangles"
+  },
+  "4G1Q": {
+    "titre": "QCM"
+  },
+  "4G2": {
+    "titre": "Théorème de Pythagore"
+  },
+  "4G20": {
+    "titre": "Calculer une longueur avec le théorème de Pythagore"
+  },
+  "4G21": {
+    "titre": "Démontrer qu'un triangle est rectangle ou non"
+  },
+  "4G22": {
+    "titre": "Résoudre un problème géométrique en ayant recours au théorème de Pythagore"
+  },
+  "4G3": {
+    "titre": "Théorème de Thalès"
+  },
+  "4G30": {
+    "titre": "Calculer une longueur avec le théorème de Thalès"
+  },
+  "4G31": {
+    "titre": "Démontrer que des droites sont parallèles avec le théorème de Thalès"
+  },
+  "4G32": {
+    "titre": "Résoudre un problème géométrique en ayant recours aux théorèmes de Thalès et de Pythagore"
+  },
+  "4G4": {
+    "titre": "Cosinus d'un angle"
+  },
+  "4G40": {
+    "titre": "Calculer une longueur avec le cosinus d'un angle"
+  },
+  "4G41": {
+    "titre": "Calculer la mesure d'un angle à partir de son cosinus"
+  },
+  "4G42": {
+    "titre": "Résoudre un problème géométrique"
+  },
+  "4G2Q": {
+    "titre": "QCM"
+  },
+  "4G5": {
+    "titre": "Espace"
+  },
+  "4G50": {
+    "titre": "Construire et mettre en relation une représentation en perspective cavalière et un patron d'une pyramide"
+  },
+  "4G51": {
+    "titre": "Construire et mettre en relation une représentation en perspective cavalière et un patron d'un d'un cône de révolution"
+  },
+  "4G52": {
+    "titre": "Se repérer dans un pavé droit et utiliser le vocabulaire du repérage : abscisse, ordonnée, altitude"
+  },
+  "4G53": {
+    "titre": "Calculer le volume d'une pyramide, d'un cône"
+  },
+  "4I1": {
+    "titre": "Algorithmique"
+  },
+  "3L1": {
+    "titre": "Calcul littéral"
+  },
+  "3L10": {
+    "titre": "Déterminer l'opposé d'une expression littérale"
+  },
+  "3L11": {
+    "titre": "Développer (par simple et double distributivités), factoriser, réduire des expressions algébriques simples"
+  },
+  "3L12": {
+    "titre": "Factoriser une expression du type $a^2-b^2$ et développer des expressions du type $(a+b)(a-b)$"
+  },
+  "3L13": {
+    "titre": "Résoudre algébriquement une équation du premier degré"
+  },
+  "3L14": {
+    "titre": "Résoudre algébriquement une équation produit"
+  },
+  "3L15": {
+    "titre": "Résoudre algébriquement une équation de la forme $x^2=a$ sur des exemples simples"
+  },
+  "3L16": {
+    "titre": "Résoudre des problèmes se ramenant à une équation, qui peuvent être internes aux mathématiques ou en lien avec d'autres disciplines"
+  },
+  "3L1Q": {
+    "titre": "QCM"
+  },
+  "3Auto": {
+    "titre": "Automatismes"
+  },
+  "3AutoF": {
+    "titre": "Fonctions"
+  },
+  "3AutoF01": {
+    "titre": "Calculer des images et des antécédents"
+  },
+  "3AutoF02": {
+    "titre": "Trouver graphiquement des images et des antécédents"
+  },
+  "3AutoG": {
+    "titre": "Espace et géométrie"
+  },
+  "3AutoG01": {
+    "titre": "Dans le plan muni d'un repère orthogonal, lire les coordonnées d'un point, placer un point de coordonnées données"
+  },
+  "3AutoG02": {
+    "titre": "Exploiter le codage d'une figure pour identifier des triangles, des quadrilatères particuliers, une médiatrice"
+  },
+  "3AutoG03": {
+    "titre": "Reconnaître et citer des angles sur une configuration géométrique"
+  },
+  "3AutoG04": {
+    "titre": "Savoir qu’un angle droit mesure 90° et un angle plat 180°"
+  },
+  "3AutoG05": {
+    "titre": "Connaître la somme des mesures des angles d'un triangle, calculer la mesure du troisième angle"
+  },
+  "3AutoG06": {
+    "titre": "Connaître les procédures de conversion d'unités"
+  },
+  "3AutoG07": {
+    "titre": "Reconnaître des solides (cube, pavé droit, prisme droit, cylindre, pyramide, cône)"
+  },
+  "3AutoG08": {
+    "titre": "Déterminer le périmètre d'un polygone, d'un disque"
+  },
+  "3AutoG09": {
+    "titre": "Connaître et utiliser les formules d'aire d'un triangle, d'un rectangle, d'un disque"
+  },
+  "3AutoG10": {
+    "titre": "Connaître et utiliser les formules du volume d'un cube, d'un pavé droit, d'un prisme droit, d'un cylindre"
+  },
+  "3AutoG11": {
+    "titre": "Reconnaître une situation d'application du théorème de Pythagore"
+  },
+  "3AutoG12": {
+    "titre": "Reconnaître une situation d'application du théorème de Thalès"
+  },
+  "3AutoG13": {
+    "titre": "Reconnaître une situation d'application de la ligne trigonométrique cosinus"
+  },
+  "3AutoG14": {
+    "titre": "Mobiliser les propriétés de la symétrie axiale, de la symétrie centrale, de la translation"
+  },
+  "3AutoL": {
+    "titre": "Calcul littéral"
+  },
+  "3AutoL01": {
+    "titre": "Simplifier, réduire des expressions littérales"
+  },
+  "3AutoL02": {
+    "titre": "Calculer la valeur d'une expression algébrique y compris avec des puissances"
+  },
+  "3AutoL03": {
+    "titre": "Développer et factoriser une expression simple"
+  },
+  "3AutoL04": {
+    "titre": "Résoudre des équations du type $ax=c$, $a+b=c$, $ax+b=c$"
+  },
+  "3AutoM": {
+    "titre": "Mesures"
+  },
+  "3AutoM01": {
+    "titre": "Conversions d'unités de durées"
+  },
+  "3AutoM02": {
+    "titre": "Conversions d'unités de longueurs"
+  },
+  "3AutoM03": {
+    "titre": "Conversions d'unités d'aires"
+  },
+  "3AutoM04": {
+    "titre": "Conversions d'unités de volumes"
+  },
+  "3AutoM05": {
+    "titre": "Calculer des périmètres"
+  },
+  "3AutoM06": {
+    "titre": "Calculer des aires de surfaces de référence"
+  },
+  "3AutoM07": {
+    "titre": "Calculer des volumes de solides de référence"
+  },
+  "3AutoN": {
+    "titre": "Nombres et calcul"
+  },
+  "3AutoN01": {
+    "titre": "Entretenir l'écriture décimale des fractions simples"
+  },
+  "3AutoN02": {
+    "titre": "Comparer des nombres décimaux et calculer avec des nombres décimaux (y compris négatifs)"
+  },
+  "3AutoN03": {
+    "titre": "Simplifier, comparer des fractions, calculer avec des fractions"
+  },
+  "3AutoN04": {
+    "titre": "Prendre une fraction simple d'un nombre"
+  },
+  "3AutoN05": {
+    "titre": "Déterminer a % de c quand a vaut 100, 50, 25, 10, 1"
+  },
+  "3AutoN06": {
+    "titre": "Écrire un même nombre sous de multiples formes"
+  },
+  "3AutoN07": {
+    "titre": "Passer d'une écriture décimale à la notation scientifique"
+  },
+  "3AutoN08": {
+    "titre": "Connaître les carrés des nombres entiers compris entre 1 et 12"
+  },
+  "3AutoN09": {
+    "titre": "Appliquer les critères de divisibilité par 2, 3, 5, 9"
+  },
+  "3AutoN10": {
+    "titre": "Pour un nombre entier n, exprimer son double, son triple, sa moitié, son prédécesseur, son successeur, son carré"
+  },
+  "3AutoN11": {
+    "titre": "Simplifier des expressions littérales"
+  },
+  "3AutoN12": {
+    "titre": "Calculer la valeur d'une expression algébrique y compris avec des puissances"
+  },
+  "3AutoN13": {
+    "titre": "Développer et factoriser une expression simple"
+  },
+  "3AutoN14": {
+    "titre": "Résoudre des équations du type $ax=c$, $a+b=c$, $ax+b=c$"
+  },
+  "3AutoN15": {
+    "titre": "Sur une droite graduée, lire l'abscisse d'un point et placer un point d'abscisse donnée"
+  },
+  "3AutoP": {
+    "titre": "Proportionnalité et fonctions"
+  },
+  "3AutoP01": {
+    "titre": "Reconnaître si une situation donnée entre dans le cadre de la proportionnalité ou non"
+  },
+  "3AutoP02": {
+    "titre": "Mobiliser une procédure adaptée pour résoudre un problème lié à la proportionnalité"
+  },
+  "3AutoP03": {
+    "titre": "Appliquer une augmentation ou une diminution exprimée en pourcentage"
+  },
+  "3AutoP04": {
+    "titre": "Exploiter un graphique représentant la dépendance de deux grandeurs"
+  },
+  "3AutoS": {
+    "titre": "Statistiques et probabilités"
+  },
+  "3AutoS01": {
+    "titre": "Calculer des probabilités"
+  },
+  "3AutoS02": {
+    "titre": "Calculer des fréquences, des médianes, des moyennes"
+  },
+  "3AutoS03": {
+    "titre": "Exploiter les représentations graphiques"
+  },
+  "3AutoI": {
+    "titre": "Algorithmique et programmation"
+  },
+  "3AutoI01": {
+    "titre": "Interpréter une suite d'instructions : programme de calcul, déplacement, construction géométrique"
+  },
+  "3A1": {
+    "titre": "Arithmétique"
+  },
+  "3A10": {
+    "titre": "Décomposer un nombre entier en produit de facteurs premiers (à la main, à l'aide d'un tableur ou d'un logiciel de programmation)"
+  },
+  "3A11": {
+    "titre": "Simplifier une fraction pour la rendre irréductible"
+  },
+  "3A12": {
+    "titre": "Modéliser et résoudre des problèmes mettant en jeu la divisibilité (engrenages, conjonction de phénomènes...)"
+  },
+  "3A13": {
+    "titre": "Poser une division euclidienne, en connaître le vocabulaire et faire le lien avec les multiples d'un nombre"
+  },
+  "3A14": {
+    "titre": "Se préparer au DNB : arithmétique et volumes"
+  },
+  "3A1Q": {
+    "titre": "QCM"
+  },
+  "3AutoDNB2026": {
+    "titre": "2026"
+  },
+  "3AutoDNB": {
+    "titre": "Annales de DNB"
+  },
+  "3C1": {
+    "titre": "Puissances"
+  },
+  "3N1": {
+    "titre": "Nombres et calcul"
+  },
+  "3N10": {
+    "titre": "Utiliser les puissances d'exposants positifs ou négatifs pour simplifier l'écriture des produits"
+  },
+  "3N11": {
+    "titre": "Calcule avec les nombres rationnels, notamment dans le cadre de résolution de problèmes"
+  },
+  "3N12": {
+    "titre": "Résoudre des problèmes mettant en jeu des racines carrées"
+  },
+  "3N13": {
+    "titre": "Résoudre des problèmes avec des puissances, notamment en utilisant la notation scientifique"
+  },
+  "3N1Q": {
+    "titre": "QCM"
+  },
+  "3F1": {
+    "titre": "Généralités sur les fonctions"
+  },
+  "3F10": {
+    "titre": "Utiliser les notations et le vocabulaire fonctionnels"
+  },
+  "3F11": {
+    "titre": "Passer d'un mode de représentation d'une fonction à un autre"
+  },
+  "3F12": {
+    "titre": "Déterminer, à partir de tous les modes de représentation, l'image d'un nombre"
+  },
+  "3F13": {
+    "titre": "Déterminer un antécédent à partir d'une représentation graphique ou d'un tableau de valeurs d'une fonction"
+  },
+  "3F14": {
+    "titre": "Modéliser un phénomène continu par une fonction"
+  },
+  "3F15": {
+    "titre": "Résoudre des problèmes modélisés par des fonctions en utilisant un ou plusieurs modes de représentation"
+  },
+  "3F1Q": {
+    "titre": "QCM"
+  },
+  "3F2": {
+    "titre": "Fonctions affines et linéaires"
+  },
+  "3F20": {
+    "titre": "Représenter graphiquement une fonction linéaire, une fonction affine"
+  },
+  "3F21": {
+    "titre": "Interpréter les paramètres d'une fonction affine suivant l'allure de sa courbe représentative"
+  },
+  "3F22": {
+    "titre": "Modéliser une situation de proportionnalité à l'aide d'une fonction linéaire"
+  },
+  "3F23": {
+    "titre": "Déterminer de manière algébrique l'antécédent par une fonction, dans des cas se ramenant à la résolution d'une équation du premier degré"
+  },
+  "3F24": {
+    "titre": "Se préparer au DNB : fonctions, fonction affine, tableur et équation produit-nul"
+  },
+  "3F2Q": {
+    "titre": "QCM"
+  },
+  "3P1": {
+    "titre": "Proportionnalité"
+  },
+  "3P1Q": {
+    "titre": "QCM"
+  },
+  "3P10": {
+    "titre": "Utiliser le lien entre pourcentage d'évolution et coefficient multiplicateur"
+  },
+  "3P11": {
+    "titre": "Mener des calculs sur des grandeurs mesurables, notamment des grandeurs composées, et exprimer les résultats dans les unités adaptées"
+  },
+  "3P12": {
+    "titre": "Résoudre des problèmes utilisant les conversions d'unités sur des grandeurs composées"
+  },
+  "3P13": {
+    "titre": "Vérifier la cohérence des résultats du point de vue des unités pour les calculs de grandeurs simples ou composées"
+  },
+  "3P14": {
+    "titre": "Résoudre des problèmes en utilisant la proportionnalité dans le cadre de la géométrie"
+  },
+  "3S1": {
+    "titre": "Statistiques"
+  },
+  "3S1Q": {
+    "titre": "QCM"
+  },
+  "3S10": {
+    "titre": "Lire, interpréter et représenter des données sous forme d'histogrammes pour des classes de même amplitude"
+  },
+  "3S11": {
+    "titre": "Calculer et interpréter l'étendue d'une série présentée sous forme de données brutes, d'un tableau, d'un diagramme en bâtons, d'un diagramme circulaire ou d'un histogramme"
+  },
+  "3S12": {
+    "titre": "Calculer des effectifs et des fréquences"
+  },
+  "3S14": {
+    "titre": "Calculer les caractéristiques d'une série (médiane, moyenne, étendue)"
+  },
+  "3S2": {
+    "titre": "Probabilités"
+  },
+  "3S20": {
+    "titre": "À partir de dénombrements, calculer des probabilités pour des expériences aléatoires simples à une ou deux épreuves"
+  },
+  "3S21": {
+    "titre": "Faire le lien entre stabilisation des fréquences et probabilités"
+  },
+  "3S2Q": {
+    "titre": "QCM"
+  },
+  "3G1": {
+    "titre": "Homothétie et rotation"
+  },
+  "3G10": {
+    "titre": "Transformer une figure par rotation et comprendre l'effet d'une rotation"
+  },
+  "3G11": {
+    "titre": "Transformer une figure par homothétie et comprendre l'effet d'une homothétie"
+  },
+  "3G12": {
+    "titre": "Identifier des rotations et des homothéties dans des frises, des pavages et des rosaces"
+  },
+  "3G13": {
+    "titre": "Mobiliser les connaissances des figures, des configurations, de la rotation et de l'homothétie pour déterminer des grandeurs géométriques"
+  },
+  "3G14": {
+    "titre": "Calculer des grandeurs géométriques (longueurs, aires et volumes) en utilisant les transformations (symétries, rotations, translations, homothétie)"
+  },
+  "3G1Q": {
+    "titre": "QCM"
+  },
+  "3G2": {
+    "titre": "Théorème de Thalès"
+  },
+  "3G20": {
+    "titre": "Calculer une longueur avec le théorème de Thalès"
+  },
+  "3G21": {
+    "titre": "Démontrer que des droites sont parallèles avec le théorème de Thalès"
+  },
+  "3G22": {
+    "titre": "Connaître et utiliser une définition et une propriété caractéristique des triangles semblables"
+  },
+  "3G23": {
+    "titre": "Reconnaitre des triangles égaux dans différentes configurations"
+  },
+  "3G24": {
+    "titre": "Utiliser les propriétés des triangles semblables pour calculer des longueurs"
+  },
+  "3G2Q": {
+    "titre": "QCM"
+  },
+  "3G3": {
+    "titre": "Trigonométrie"
+  },
+  "3G30": {
+    "titre": "Calculer une longueur dans un triangle rectangle"
+  },
+  "3G31": {
+    "titre": "Calculer la mesure d'un angle dans un triangle rectangle"
+  },
+  "3G32": {
+    "titre": "Résoudre un problème géométrique"
+  },
+  "3G3Q": {
+    "titre": "QCM"
+  },
+  "3G4": {
+    "titre": "Espace"
+  },
+  "3G40": {
+    "titre": "Se repérer sur une sphère (latitude, longitude)"
+  },
+  "3G41": {
+    "titre": "Construire et mettre en relation différentes représentations des solides étudiés au cours du cycle (représentations en perspective cavalière, vues de face, de dessus, en coupe, patrons) et leurs sections planes"
+  },
+  "3G42": {
+    "titre": "Calculer le volume d'une boule"
+  },
+  "3G43": {
+    "titre": "Calculer les volumes d'assemblages de solides étudiés au cours du cycle"
+  },
+  "3G44": {
+    "titre": "Déterminer des longueurs dans la géométrie dans l'espace"
+  },
+  "3G4Q": {
+    "titre": "QCM"
+  },
+  "3I1": {
+    "titre": "Algorithmique"
+  },
+  "3Z1": {
+    "titre": "Exercices de synthèse"
+  },
+  "200": {
+    "titre": "Automatismes"
+  },
+  "2A": {
+    "titre": "Automatismes"
+  },
+  "2A-A": {
+    "titre": "Annales"
+  },
+  "2A-A01": {
+    "titre": "Extraits des sujets années 2026"
+  },
+  "2A-N": {
+    "titre": "Calcul numérique"
+  },
+  "2A-N1": {
+    "titre": "Comparer deux nombres directement ou par calcul"
+  },
+  "2A-N2": {
+    "titre": "Effectuer des opérations et des comparaisons entre des fractions simples"
+  },
+  "2A-N3": {
+    "titre": "Effectuer des opérations sur les puissances"
+  },
+  "2A-N4": {
+    "titre": "Passer d’une écriture d’un nombre à une autre"
+  },
+  "2A-N5": {
+    "titre": "Estimer un ordre de grandeur"
+  },
+  "2A-N6": {
+    "titre": "S’assurer de la vraisemblance et de la cohérence d’un résultat"
+  },
+  "2A-N7": {
+    "titre": "Effectuer des conversions d’unités"
+  },
+  "2A-C": {
+    "titre": "Calcul algébrique"
+  },
+  "2A-C1": {
+    "titre": "Effectuer un calcul littéral élémentaire"
+  },
+  "2A-C2": {
+    "titre": "Développer, factoriser, réduire une expression algébrique simple"
+  },
+  "2A-C3": {
+    "titre": "Résoudre une équation du type : $x^2=a$, $ax+b=cx+d$ ou $\\frac{a}{x}=b$, ou une inéquation du premier degré"
+  },
+  "2A-C4": {
+    "titre": "Isoler une variable dans une égalité qui en comporte plusieurs"
+  },
+  "2A-C5": {
+    "titre": "Effectuer une application numérique d’une formule"
+  },
+  "2A-E": {
+    "titre": "Évolutions et variations"
+  },
+  "2A-E1": {
+    "titre": "Passer d’une formulation additive à une formulation multiplicative"
+  },
+  "2A-E2": {
+    "titre": "Appliquer un taux d’évolution pour calculer une valeur finale ou initiale"
+  },
+  "2A-E3": {
+    "titre": "Calculer un taux d’évolution, l’exprimer en pourcentage"
+  },
+  "2A-F": {
+    "titre": "Fonctions"
+  },
+  "2A-F1": {
+    "titre": "Déterminer graphiquement des images et des antécédents"
+  },
+  "2A-F2": {
+    "titre": "Exploiter une équation de courbe : appartenance d’un point, calcul de coordonnées"
+  },
+  "2A-F3": {
+    "titre": "Reconnaitre l’expression d’une fonction linéaire ou d’une fonction affine"
+  },
+  "2A-G": {
+    "titre": "Géométrie"
+  },
+  "2A-G1": {
+    "titre": "Repérer ou placer un point sur une droite graduée"
+  },
+  "2A-G2": {
+    "titre": "Dans le plan muni d’un repère orthogonal, lire les coordonnées d’un point donné, placer un point de coordonnées données"
+  },
+  "2A-G3": {
+    "titre": "Calculer des périmètres, des aires et des volumes"
+  },
+  "2A-G4": {
+    "titre": "Faire une application simple du théorème de Pythagore et du théorème de Thalès"
+  },
+  "2A-G5": {
+    "titre": "Connaitre et utiliser cosinus, sinus, tangente"
+  },
+  "2A-S": {
+    "titre": "Statistiques"
+  },
+  "2A-S1": {
+    "titre": "Lire et commenter des graphiques usuels"
+  },
+  "2A-S2": {
+    "titre": "Calculer et interpréter des indicateurs statistiques : moyenne, médiane, quartiles"
+  },
+  "2A-S3": {
+    "titre": "Comparer des distributions à l’aide de boites à moustaches"
+  },
+  "2A-S4": {
+    "titre": "Passer du graphique aux données et vice-versa"
+  },
+  "2A-P": {
+    "titre": "Probabilités"
+  },
+  "2A-P1": {
+    "titre": "Savoir qu’une probabilité est un nombre entre 0 et 1"
+  },
+  "2A-P2": {
+    "titre": "Savoir calculer la probabilité de l’évènement contraire"
+  },
+  "2A-P3": {
+    "titre": "Calculer la probabilité d’un évènement comme somme des probabilités des issues qui le composent"
+  },
+  "2A-P4": {
+    "titre": "Utiliser la relation $P(A)=\\frac{\\text{Card}(A)}{\\text{Card}(\\Omega)}$ dans le cas de l’équiprobabilité"
+  },
+  "2A-R": {
+    "titre": "Proportion-Pourcentage"
+  },
+  "2A-R1": {
+    "titre": "Calculer, appliquer, exprimer une proportion sous différentes formes"
+  },
+  "2A-R2": {
+    "titre": "Utiliser une proportion pour calculer une partie connaissant le tout, ou le tout connaissant une partie"
+  },
+  "2N": {
+    "titre": "Calcul numérique"
+  },
+  "2L": {
+    "titre": "Calcul littéral"
+  },
+  "2N1": {
+    "titre": "Nombres réels"
+  },
+  "2N10": {
+    "titre": "Ensembles de nombres"
+  },
+  "2N11": {
+    "titre": "La droite des réels"
+  },
+  "2N12": {
+    "titre": "Intervalles de $\\mathbb{R}$"
+  },
+  "2N13": {
+    "titre": "Valeur absolue"
+  },
+  "2N14": {
+    "titre": "Comparer et arrondir des nombres réels"
+  },
+  "2N2": {
+    "titre": "Arithmétique"
+  },
+  "2N20": {
+    "titre": "Définitions de multiple et de diviseur"
+  },
+  "2N21": {
+    "titre": "Nombres pairs et impairs"
+  },
+  "2N3": {
+    "titre": "Fractions"
+  },
+  "2N30": {
+    "titre": "Simplifier, décomposer, comparer ou encadrer une fraction"
+  },
+  "2N31": {
+    "titre": "Effectuer les quatre opérations élémentaires avec des fractions"
+  },
+  "2N32": {
+    "titre": "Effectuer des calculs avec des fractions"
+  },
+  "2N33": {
+    "titre": "Résoudre des problèmes avec des fractions"
+  },
+  "2N4": {
+    "titre": "Puissances"
+  },
+  "2N40": {
+    "titre": "Définition et notation"
+  },
+  "2N41": {
+    "titre": "Puissances de 10"
+  },
+  "2N42": {
+    "titre": "Notation scientifique"
+  },
+  "2N43": {
+    "titre": "Calculer avec les puissances"
+  },
+  "2N44": {
+    "titre": "Comparer et classer"
+  },
+  "2N5": {
+    "titre": "Racines carrées"
+  },
+  "2N50": {
+    "titre": "Définition, existence et encadrement"
+  },
+  "2N51": {
+    "titre": "Effectuer des calculs numériques avec les racines carrées"
+  },
+  "2L1": {
+    "titre": "Utiliser le calcul littéral"
+  },
+  "2L10": {
+    "titre": "Les bases du calcul littéral"
+  },
+  "2L11": {
+    "titre": "Développer et factoriser des expressions algébriques simples"
+  },
+  "2L12": {
+    "titre": "Développer et factoriser avec les identités remarquables"
+  },
+  "2L13": {
+    "titre": "Effectuer des calculs complexes sur des expressions algébriques"
+  },
+  "2L14": {
+    "titre": "Utiliser le calcul littéral"
+  },
+  "2L2": {
+    "titre": "Équations"
+  },
+  "2L20": {
+    "titre": "Modéliser un problème par une équation"
+  },
+  "2L21": {
+    "titre": "Résoudre une équation du premier degré"
+  },
+  "2L22": {
+    "titre": "Résoudre une équation avec un produit nul ou un carré"
+  },
+  "2L3": {
+    "titre": "Inéquations"
+  },
+  "2L30": {
+    "titre": "Résoudre une inéquation du premier degré"
+  },
+  "2L31": {
+    "titre": "Résoudre une inéquation produit ou quotient"
+  },
+  "2G": {
+    "titre": "Géométrie"
+  },
+  "2G1": {
+    "titre": "Les bases en géométrie"
+  },
+  "2G10": {
+    "titre": "Définitions et propriétés de base en géométrie plane"
+  },
+  "2G11": {
+    "titre": "Longueurs, angles, aires et volumes"
+  },
+  "2G12": {
+    "titre": "Distance entre deux points. Coordonnées du milieu d'un segment"
+  },
+  "2G13": {
+    "titre": "Traiter des problèmes d'optimisation"
+  },
+  "2G2": {
+    "titre": "Les vecteurs"
+  },
+  "2G20": {
+    "titre": "Définition - Translation - Relation de Chasles (année de transition)"
+  },
+  "2G21": {
+    "titre": "Égalité et colinéarité de deux vecteurs. Notation $\\vec{u}$. Vecteur nul"
+  },
+  "2G22": {
+    "titre": "Représentants d’un vecteur"
+  },
+  "2G23": {
+    "titre": "Somme de vecteurs et produit d’un vecteur par un nombre réel"
+  },
+  "2G24": {
+    "titre": "Représentation d’un vecteur comme combinaison de deux vecteurs non colinéaires"
+  },
+  "2G25": {
+    "titre": "Base orthonormée. Coordonnées d’un vecteur. Norme d’un vecteur"
+  },
+  "2G26": {
+    "titre": "Coordonnées d’une somme de vecteurs et d’un produit d’un vecteur par un nombre réel"
+  },
+  "2G27": {
+    "titre": "Déterminant de deux vecteurs. Colinéarité et parallélisme"
+  },
+  "2G28": {
+    "titre": "Caractérisation vectorielle du milieu d’un segment"
+  },
+  "2G3": {
+    "titre": "Les droites du plan"
+  },
+  "2G31": {
+    "titre": "Équations réduites de droite"
+  },
+  "2G32": {
+    "titre": "Équations cartésiennes de droite"
+  },
+  "2G33": {
+    "titre": "Établir alignement et parallélisme"
+  },
+  "2G34": {
+    "titre": "Résoudre un système de deux équations linéaires à deux inconnues, déterminer le point d'intersection de deux droites sécantes"
+  },
+  "2F": {
+    "titre": "Fonctions"
+  },
+  "2F1": {
+    "titre": "Généralités sur les fonctions"
+  },
+  "2F10": {
+    "titre": "Utiliser les notations et le vocabulaire fonctionnels"
+  },
+  "2F11": {
+    "titre": "Déterminer une image ou un antécédent par une fonction définie par un tableau de valeurs"
+  },
+  "2F12": {
+    "titre": "Déterminer une image ou un antécédent par une fonction définie par une représentation graphique"
+  },
+  "2F13": {
+    "titre": "Déterminer une image ou un antécédent par une fonction définie par une expression algébrique"
+  },
+  "2F14": {
+    "titre": "Passer d'un mode de représentation d'une fonction à un autre"
+  },
+  "2F15": {
+    "titre": "Recherche du domaine de définition"
+  },
+  "2F16": {
+    "titre": "Modéliser un phénomène continu par une fonction"
+  },
+  "2F17": {
+    "titre": "Résoudre des problèmes modélisés par des fonctions en utilisant un ou plusieurs modes de représentation"
+  },
+  "2F1Q": {
+    "titre": "QCM"
+  },
+  "2F2": {
+    "titre": "Se constituer un répertoire de fonctions de référence"
+  },
+  "2F21": {
+    "titre": "Connaître les fonctions affines"
+  },
+  "2F22": {
+    "titre": "Comparer et calculer des images en utilisant les fonctions de référence"
+  },
+  "2F23": {
+    "titre": "Résoudre algébriquement ou graphiquement $f(x)=k$, $f(x)<k$ ou $f(x)>k$ avec $f$ fonction de référence"
+  },
+  "2F3": {
+    "titre": "Représenter algébriquement et graphiquement les fonctions"
+  },
+  "2F30": {
+    "titre": "Exploiter une équation $y=f(x)$  : appartenance à la courbe, calcul de coordonnées"
+  },
+  "2F31": {
+    "titre": "Modéliser par des fonctions des situations issues des mathématiques, des autres disciplines"
+  },
+  "2F32": {
+    "titre": "Résoudre graphiquement $f(x)=k$, $f(x)=g(x)$, $f(x)<k$, $f(x)<g(x)$"
+  },
+  "2F33": {
+    "titre": "Résoudre une équation, une inéquation produit ou quotient, à l'aide d'un tableau de signes"
+  },
+  "2F34": {
+    "titre": "Résoudre graphiquement ou avec un outil numérique, $f(x)=g(x)$ ou $f(x)<g(x)$"
+  },
+  "2F4": {
+    "titre": "Étudier les variations et les extremums d'une fonction"
+  },
+  "2F40": {
+    "titre": "Relier représentation graphique et tableau de variations"
+  },
+  "2F41": {
+    "titre": "Utiliser les variations d'une fonction"
+  },
+  "2F42": {
+    "titre": "Déterminer les extremums d'une fonction"
+  },
+  "2I": {
+    "titre": "Informations chiffrées"
+  },
+  "2I1": {
+    "titre": "Proportions"
+  },
+  "2I10": {
+    "titre": "Différentes écritures d'une proportion"
+  },
+  "2I11": {
+    "titre": "Appliquer un pourcentage. Calculer avec une proportion."
+  },
+  "2I12": {
+    "titre": "Pourcentages de pourcentages."
+  },
+  "2I2": {
+    "titre": "Évolutions"
+  },
+  "2I20": {
+    "titre": "Exploiter la relation entre deux valeurs successives et leur taux d'évolution"
+  },
+  "2I21": {
+    "titre": "Calculer le taux d'évolution global à partir des taux d'évolution successifs. Calculer un taux d'évolution réciproque"
+  },
+  "2S": {
+    "titre": "Statistiques et tableaux"
+  },
+  "2S1": {
+    "titre": "Croisement de deux variables qualitatives"
+  },
+  "2S10": {
+    "titre": "Tableau croisé d’effectifs"
+  },
+  "2S11": {
+    "titre": "Fréquence conditionnelle, fréquence marginale"
+  },
+  "2S2": {
+    "titre": "Statistique descriptive"
+  },
+  "2S20": {
+    "titre": "Les indicateurs statistiques"
+  },
+  "2S21": {
+    "titre": "Décrire les différences entre deux séries statistiques"
+  },
+  "2S22": {
+    "titre": "Lire et comprendre une fonction écrite en Python renvoyant la moyenne $m$, l'écart type $s$ et la proportion d'éléments dans $[m-2s;m+2s]$"
+  },
+  "2S4": {
+    "titre": "Echantillonnage"
+  },
+  "2P": {
+    "titre": "Probabilités"
+  },
+  "2P1": {
+    "titre": "Généralités sur les probabilités"
+  },
+  "2P10": {
+    "titre": "Calculer des probabilités dans des cas simples"
+  },
+  "2P11": {
+    "titre": "Utiliser des modèles théoriques de référence"
+  },
+  "2P2": {
+    "titre": "Probabilités conditionnelles"
+  },
+  "2P20": {
+    "titre": "Calculer avec une probabilité conditionnelle"
+  },
+  "2ZA": {
+    "titre": "Automatismes - arithmétique",
+    "sousThemes": {}
+  },
+  "2ZF": {
+    "titre": "Automatismes - fonctions",
+    "sousThemes": {}
+  },
+  "1A-A": {
+    "titre": "Annales"
+  },
+  "1A-A01": {
+    "titre": "Sujets 2026"
+  },
+  "1A-C": {
+    "titre": "Calcul numérique et algébrique"
+  },
+  "1A-C01": {
+    "titre": "Comparer deux nombres directement ou par calcul"
+  },
+  "1A-C02": {
+    "titre": "Effectuer des opérations et des comparaisons entre des fractions simples"
+  },
+  "1A-C03": {
+    "titre": "Effectuer des opérations sur les puissances"
+  },
+  "1A-C04": {
+    "titre": "Passer d’une écriture d’un nombre à une autre (décimale, fractionnaire, pourcentage)"
+  },
+  "1A-C05": {
+    "titre": "Estimer un ordre de grandeur"
+  },
+  "1A-C06": {
+    "titre": "S’assurer de la vraisemblance, de la cohérence d’un résultat"
+  },
+  "1A-C07": {
+    "titre": "Effectuer des conversions d’unités"
+  },
+  "1A-C08": {
+    "titre": "Effectuer un calcul littéral élémentaire"
+  },
+  "1A-C09": {
+    "titre": "Développer, factoriser, réduire une expression algébrique simple"
+  },
+  "1A-C10": {
+    "titre": "Résoudre une équation du type : $x^2 = a$, $ax + b = cx + d$ ou $\\frac{a}{x} = b$ ou une inéquation du premier degré"
+  },
+  "1A-C11": {
+    "titre": "Isoler une variable dans une égalité qui en comporte plusieurs"
+  },
+  "1A-C12": {
+    "titre": "Effectuer une application numérique d’une formule"
+  },
+  "1A-C13": {
+    "titre": "Déterminer les solutions d’une équation produit nul"
+  },
+  "1A-C14": {
+    "titre": "Déterminer le signe d’une expression du premier degré, d’une expression factorisée du second degré"
+  },
+  "1A-C15": {
+    "titre": "Résoudre un problème simple"
+  },
+  "1A-R": {
+    "titre": "Proportions et pourcentages"
+  },
+  "1A-R01": {
+    "titre": "Calculer, appliquer, exprimer une proportion sous différentes formes (décimale, fractionnaire, pourcentage)"
+  },
+  "1A-R02": {
+    "titre": "Utiliser une proportion pour calculer une partie connaissant le tout, ou le tout connaissant une partie"
+  },
+  "1A-R03": {
+    "titre": "Calculer une proportion de proportion"
+  },
+  "1A-E": {
+    "titre": "Évolutions et variations"
+  },
+  "1A-E01": {
+    "titre": "Passer d’une formulation additive à une formulation multiplicative"
+  },
+  "1A-E02": {
+    "titre": "Appliquer un taux d’évolution pour calculer une valeur finale ou initiale"
+  },
+  "1A-E03": {
+    "titre": "Calculer un taux d’évolution, l’exprimer en pourcentage"
+  },
+  "1A-E04": {
+    "titre": "Calculer le taux d’évolution équivalent à plusieurs évolutions successives"
+  },
+  "1A-E05": {
+    "titre": "Calculer un taux d’évolution réciproque"
+  },
+  "1A-F": {
+    "titre": "Fonctions et représentations"
+  },
+  "1A-F01": {
+    "titre": "Déterminer graphiquement des images et des antécédents"
+  },
+  "1A-F02": {
+    "titre": "Exploiter une équation de courbe (appartenance d’un point, calcul de coordonnées)"
+  },
+  "1A-F03": {
+    "titre": "Reconnaître l’expression d’une fonction linéaire, d’une fonction affine, savoir que leur représentation graphique est une droite"
+  },
+  "1A-F04": {
+    "titre": "Résoudre graphiquement une équation, une inéquation du type : $f(x) = k$, $f(x) < k$, etc"
+  },
+  "1A-F05": {
+    "titre": "Déterminer graphiquement le signe d’une fonction ou son tableau de variations"
+  },
+  "1A-F06": {
+    "titre": "Tracer une droite donnée par son équation réduite ou par un point et son coefficient directeur"
+  },
+  "1A-F07": {
+    "titre": "Lire graphiquement l’équation réduite d’une droite"
+  },
+  "1A-F08": {
+    "titre": "Déterminer le coefficient directeur d’une droite à partir des coordonnées de deux de ses points"
+  },
+  "1A-G": {
+    "titre": "Géométrie"
+  },
+  "1A-G01": {
+    "titre": "Se repérer sur une droite et dans un plan"
+  },
+  "1A-G02": {
+    "titre": "Calculer des périmètres, des aires et des volumes"
+  },
+  "1A-G03": {
+    "titre": "Utiliser le théorème de Pythagore, le théorème de Thalès et la trigonométrie dans le triangle rectangle"
+  },
+  "1A-S": {
+    "titre": "Statistiques"
+  },
+  "1A-S01": {
+    "titre": "Lire et commenter des graphiques usuels"
+  },
+  "1A-S02": {
+    "titre": "Calculer et interpréter des indicateurs statistiques pour une série statistique"
+  },
+  "1A-S03": {
+    "titre": "Comparer des distributions à l’aide de boîtes à moustaches"
+  },
+  "1A-S04": {
+    "titre": "Passer du graphique aux données et vice-versa"
+  },
+  "1A-P": {
+    "titre": "Probabilités"
+  },
+  "1A-P01": {
+    "titre": "Savoir qu’une probabilité est un nombre entre 0 et 1"
+  },
+  "1A-P02": {
+    "titre": "Savoir calculer la probabilité de l’événement contraire"
+  },
+  "1A-P03": {
+    "titre": "Calculer la probabilité d’un événement comme somme des probabilités des issues qui le composent"
+  },
+  "1A-P04": {
+    "titre": "Utiliser la relation $P(A) = \\frac{\\text{Card}(A)}{\\text{Card}(\\Omega)}$ dans le cas de l’équiprobabilité"
+  },
+  "1A-P05": {
+    "titre": "Calculer des probabilités conditionnelles lorsque les événements sont présentés sous forme de tableau croisé d’effectifs ou d’arbres pondérés"
+  },
+  "1A-P06": {
+    "titre": "Distinguer $P(A \\cap B)$, $P_A(B)$, $P_B(A)$"
+  },
+  "1AL1": {
+    "titre": "Suites numériques"
+  },
+  "1AL10": {
+    "titre": "Généralités sur les suites"
+  },
+  "1AL11": {
+    "titre": "Suites arithmétiques et géométriques"
+  },
+  "1AL12": {
+    "titre": "Variations des suites"
+  },
+  "1AL13": {
+    "titre": "Synthèse"
+  },
+  "1AL2": {
+    "titre": "Fonctions polynomiales de degré 2"
+  },
+  "1AL20": {
+    "titre": "Forme canonique et expressions d'un trinôme"
+  },
+  "1AL21": {
+    "titre": "Résoudre une équation du second degré"
+  },
+  "1AL22": {
+    "titre": "Factoriser un polynôme du second degré"
+  },
+  "1AL23": {
+    "titre": "Signe d'un polynôme et inéquations"
+  },
+  "1AL24": {
+    "titre": "Variations, représentation graphique et synthèses"
+  },
+  "1AN1": {
+    "titre": "Dérivation"
+  },
+  "1AN2": {
+    "titre": "Variations"
+  },
+  "1AN3": {
+    "titre": "Fonction exponentielle"
+  },
+  "1AN4": {
+    "titre": "Fonctions trigonométriques"
+  },
+  "1G1": {
+    "titre": "Produit scalaire"
+  },
+  "1G2": {
+    "titre": "Géométrie repérée"
+  },
+  "1P1": {
+    "titre": "Probabilités conditionnelles"
+  },
+  "1P2": {
+    "titre": "Variables aléatoires réelles"
+  },
+  "1Gen-A1": {
+    "titre": "Suites numériques"
+  },
+  "1Gen-A10": {
+    "titre": "Généralités sur les suites"
+  },
+  "1Gen-A20": {
+    "titre": "Suites arithmétiques et géométriques"
+  },
+  "1Tec-F": {
+    "titre": "Fonctions de la variable réelle"
+  },
+  "1Tec-F1": {
+    "titre": "Généralités sur les fonctions"
+  },
+  "1Tec-F2": {
+    "titre": "Fonctions polynômes de degré 2"
+  },
+  "1Tec-F3": {
+    "titre": "Fonctions polynômes de degré 3"
+  },
+  "1Tec-P": {
+    "titre": "Statistiques et probabilités"
+  },
+  "1Tec-P1": {
+    "titre": "Statistiques à deux variables"
+  },
+  "1Tec-P2": {
+    "titre": "Probabilités conditionnelles"
+  },
+  "1Tec-P3": {
+    "titre": "Modèle associé à une expérience aléatoire à plusieurs épreuves indépendantes"
+  },
+  "1Tec-P4": {
+    "titre": "Variables aléatoires"
+  },
+  "1Tec-S": {
+    "titre": "Suites numériques"
+  },
+  "1Tec-S1": {
+    "titre": "Généralités sur les suites"
+  },
+  "1Tec-S2": {
+    "titre": "Suites arithmétiques et géométriques"
+  },
+  "1Tec-D": {
+    "titre": "Dérivation"
+  },
+  "1Tec-D1": {
+    "titre": "Point de vue local"
+  },
+  "1Tec-D2": {
+    "titre": "Point de vue global"
+  },
+  "PEA1": {
+    "titre": "Arithmétique"
+  },
+  "PEG2": {
+    "titre": "À la règle et au compas"
+  },
+  "PEN1": {
+    "titre": "Ensemble de nombres"
+  },
+  "PEN2": {
+    "titre": "Numération et bases"
+  },
+  "PET1": {
+    "titre": "Tableur"
+  },
+  "TSA1": {
+    "titre": "Les suites numériques"
+  },
+  "TSA1-1": {
+    "titre": "Raisonnement par récurrence"
+  },
+  "TSA1-2": {
+    "titre": "Limites de suites"
+  },
+  "TSA1-3": {
+    "titre": "Suites arithmético-géométriques"
+  },
+  "TSA1-4": {
+    "titre": "Synthèse"
+  },
+  "TSA2": {
+    "titre": "Limites de fonctions"
+  },
+  "TSA2-1": {
+    "titre": "Limites finies, infinies. Asymptotes"
+  },
+  "TSA2-2": {
+    "titre": "Limites de fonctions de référence"
+  },
+  "TSA2-3": {
+    "titre": "Opérations sur les limites"
+  },
+  "TSA2-4": {
+    "titre": "Limites et comparaisons"
+  },
+  "TSA2-5": {
+    "titre": "Synthèse"
+  },
+  "TSA3": {
+    "titre": "Complément sur la dérivation"
+  },
+  "TSA3-1": {
+    "titre": "Dérivation"
+  },
+  "TSA3-2": {
+    "titre": "Exponentielle"
+  },
+  "TSA3-3": {
+    "titre": "Composée de deux fonctions, dérivée d'une composée"
+  },
+  "TSA3-4": {
+    "titre": "Convexité"
+  },
+  "TSA3-5": {
+    "titre": "Synthèse"
+  },
+  "TSA4": {
+    "titre": "Continuité des fonctions"
+  },
+  "TSA4-1": {
+    "titre": "Définition de la continuité"
+  },
+  "TSA4-2": {
+    "titre": "Image d'une suite convergente par une fonction continue"
+  },
+  "TSA4-3": {
+    "titre": "Théorème des valeurs intermédiaires"
+  },
+  "TSA4-4": {
+    "titre": "Synthèse"
+  },
+  "TSA5": {
+    "titre": "Fonction logarithme népérien"
+  },
+  "TSA5-1": {
+    "titre": "Utiliser les propriétés algébriques du logarithme népérien"
+  },
+  "TSA5-2": {
+    "titre": "Résoudre des équations ou inéquations faisant intervenir le logarithme népérien"
+  },
+  "TSA5-3": {
+    "titre": "Etudier la fonction logarithme népérien"
+  },
+  "TSA5-4": {
+    "titre": "Synthèse"
+  },
+  "TSA6": {
+    "titre": "Fonction sinus et cosinus"
+  },
+  "TSA6-1": {
+    "titre": "Equations et inéquations trigonométriques"
+  },
+  "TSA6-2": {
+    "titre": "Etude de la fonction sinus et cosinus"
+  },
+  "TSA7": {
+    "titre": "Primitives et équations différentielles"
+  },
+  "TSA7-1": {
+    "titre": "Primitives d'une fonction"
+  },
+  "TSA7-2": {
+    "titre": "Équations différentielles"
+  },
+  "TSA7-3": {
+    "titre": "Synthèse"
+  },
+  "TSA8": {
+    "titre": "Intégration"
+  },
+  "TSA8-1": {
+    "titre": "Définition - Notations"
+  },
+  "TSA8-2": {
+    "titre": "Calcul intégral et primitives"
+  },
+  "TSA8-3": {
+    "titre": "Propriétés des intégrales, inégalités, Chasles et moyenne"
+  },
+  "TSA8-4": {
+    "titre": "Intégration par parties"
+  },
+  "TSA8-5": {
+    "titre": "Synthèse"
+  },
+  "TSP1": {
+    "titre": "Probabilités conditionnelles"
+  },
+  "TSP2": {
+    "titre": "Loi binomiale"
+  },
+  "TSP2-1": {
+    "titre": "Applications directes"
+  },
+  "TSP2-2": {
+    "titre": "Synthèse"
+  },
+  "TSP3": {
+    "titre": "Variables aléatoires"
+  },
+  "TSP3-1": {
+    "titre": "Variables aléatoires (définition, loi de probabilité, espérance, variance)"
+  },
+  "TSP3-2": {
+    "titre": "Somme de variables aléatoires"
+  },
+  "TSP4": {
+    "titre": "Concentration"
+  },
+  "TSP4-1": {
+    "titre": "Inégalité de Bienaymé-Tchebychev"
+  },
+  "TSP4-2": {
+    "titre": "Inégalité de Concentration"
+  },
+  "TSP4-3": {
+    "titre": "Synthèse"
+  },
+  "TSG1": {
+    "titre": "Combinatoire et dénombrement"
+  },
+  "TSG2": {
+    "titre": "Géométrie dans l'espace"
+  },
+  "TSG2-1": {
+    "titre": "Manipuler vecteurs et repères de l'espace"
+  },
+  "TSG2-2": {
+    "titre": "Orthogonalité et distance dans l'espace"
+  },
+  "TSG2-3": {
+    "titre": "Représentation paramétrique de droite dans l'espace"
+  },
+  "TSG2-4": {
+    "titre": "Equation cartesienne de plan dans l'espace"
+  },
+  "TSG2-5": {
+    "titre": "Synthèse"
+  },
+  "TEC1": {
+    "titre": "Nombres complexes : algèbre",
+    "sousThemes": {}
+  },
+  "TEC1-1": {
+    "titre": "Définition, somme et produit",
+    "sousThemes": {}
+  },
+  "TEC1-2": {
+    "titre": "Conjugué",
+    "sousThemes": {}
+  },
+  "TEC1-3": {
+    "titre": "Binôme de Newton",
+    "sousThemes": {}
+  },
+  "TEC1-4": {
+    "titre": "Résolution d'équation dans $\\mathbb C$",
+    "sousThemes": {}
+  },
+  "TEC1-5": {
+    "titre": "Problèmes de synthèse",
+    "sousThemes": {}
+  },
+  "TEC2": {
+    "titre": "Nombres complexes : géométrie",
+    "sousThemes": {}
+  },
+  "TEC2-1": {
+    "titre": "Image d’un nombre complexe et affixe",
+    "sousThemes": {}
+  },
+  "TEC2-2": {
+    "titre": "Module d'un nombre complexe",
+    "sousThemes": {}
+  },
+  "TEC2-3": {
+    "titre": "Argument d'un nombre complexe",
+    "sousThemes": {}
+  },
+  "TEC2-4": {
+    "titre": "Forme trigonométrique",
+    "sousThemes": {}
+  },
+  "TEC3": {
+    "titre": "Nombres Complexes : trigonométrie",
+    "sousThemes": {}
+  },
+  "TEC3-1": {
+    "titre": "Formules trigonométriques",
+    "sousThemes": {}
+  },
+  "TEC3-2": {
+    "titre": "Écriture exponentielle",
+    "sousThemes": {}
+  },
+  "TEC3-3": {
+    "titre": "Formules d'Euler et de Moivre",
+    "sousThemes": {}
+  },
+  "TEC3-4": {
+    "titre": "Synthèse",
+    "sousThemes": {}
+  },
+  "TEC4": {
+    "titre": "Nombres Complexes : polynômes$",
+    "sousThemes": {}
+  },
+  "TEM1": {
+    "titre": "Les Matrices",
+    "sousThemes": {}
+  },
+  "TEM1-1": {
+    "titre": "Calcul matriciel",
+    "sousThemes": {}
+  },
+  "TEM1-2": {
+    "titre": "Matrice inverse et systèmes linéaires",
+    "sousThemes": {}
+  },
+  "TEM1-3": {
+    "titre": "Suites de matrices",
+    "sousThemes": {}
+  },
+  "TEG1": {
+    "titre": "Les graphes",
+    "sousThemes": {}
+  },
+  "TEG1-1": {
+    "titre": "Vocabulaire des graphes",
+    "sousThemes": {}
+  },
+  "TEG1-2": {
+    "titre": "Matrice d'adjacence et chemins",
+    "sousThemes": {}
+  },
+  "TEG1-3": {
+    "titre": "Chaînes de Markov",
+    "sousThemes": {}
+  },
+  "TEA1": {
+    "titre": "Arithmétique : Divisibilité dans $\\mathbb Z$",
+    "sousThemes": {}
+  },
+  "TEA1-1": {
+    "titre": "Divisibilité",
+    "sousThemes": {}
+  },
+  "TEA1-2": {
+    "titre": "Division euclidienne",
+    "sousThemes": {}
+  },
+  "TEA1-3": {
+    "titre": "Congruence",
+    "sousThemes": {}
+  },
+  "TEA2": {
+    "titre": "Arithmétique : PGCD, théorèmes de Bézout et de Gauss",
+    "sousThemes": {}
+  },
+  "TEA3": {
+    "titre": "Nombres premiers",
+    "sousThemes": {}
+  },
+  "TCA1": {
+    "titre": "Suites numériques",
+    "sousThemes": {}
+  },
+  "TCA1-1": {
+    "titre": "Limites de suites",
+    "sousThemes": {}
+  },
+  "TCA1-2": {
+    "titre": "Suites arithmético-géométriques",
+    "sousThemes": {}
+  },
+  "TCA1-3": {
+    "titre": "Synthèse",
+    "sousThemes": {}
+  },
+  "TCA2": {
+    "titre": "Limites de fonctions",
+    "sousThemes": {}
+  },
+  "TCA2-1": {
+    "titre": "Limites finies, infinies, asymptotes",
+    "sousThemes": {}
+  },
+  "TCA2-2": {
+    "titre": "Limites de fonctions de référence",
+    "sousThemes": {}
+  },
+  "TCA2-3": {
+    "titre": "Limites de fonctions de référence",
+    "sousThemes": {}
+  },
+  "TCA2-4": {
+    "titre": "Opérations sur les limites",
+    "sousThemes": {}
+  },
+  "TCA2-5": {
+    "titre": "Limites et comparaisons",
+    "sousThemes": {}
+  },
+  "TCA3": {
+    "titre": "Continuité et TVI",
+    "sousThemes": {}
+  },
+  "TCA3-1": {
+    "titre": "Continuité"
+  },
+  "TCA4": {
+    "titre": "Fonction logarithme népérien",
+    "sousThemes": {}
+  },
+  "TCA4-1": {
+    "titre": "Propriétés algébriques"
+  },
+  "TCA4-2": {
+    "titre": "Équations et inéquations"
+  },
+  "TCA4-3": {
+    "titre": "Étude de la fonction logarithme"
+  },
+  "TCA5": {
+    "titre": "Primitives et équations différentielles",
+    "sousThemes": {}
+  },
+  "TCA5-1": {
+    "titre": "Primitives"
+  },
+  "TCA5-2": {
+    "titre": "Équations différentielles"
+  },
+  "TCA6": {
+    "titre": "Intégration",
+    "sousThemes": {}
+  },
+  "TCA6-1": {
+    "titre": "Calcul d'intégrales"
+  },
+  "TCA7": {
+    "titre": "Compléments sur la dérivation",
+    "sousThemes": {}
+  },
+  "TCA7-1": {
+    "titre": "Dérivation"
+  },
+  "TCA7-2": {
+    "titre": "Exponentielle"
+  },
+  "TCA7-3": {
+    "titre": "Composée de deux fonctions, dérivée d'une composée"
+  },
+  "TCA7-4": {
+    "titre": "Convexité"
+  },
+  "TCA7-5": {
+    "titre": "Synthèse"
+  },
+  "TCP1": {
+    "titre": "Lois de probabilités discrètes",
+    "sousThemes": {}
+  },
+  "TCP1-1": {
+    "titre": "Probabilités conditionnelles"
+  },
+  "TCP1-2": {
+    "titre": "Loi binomiale"
+  },
+  "TCP1-3": {
+    "titre": "Tirages avec remise"
+  },
+  "TCP2": {
+    "titre": "Lois de probabilités à densité",
+    "sousThemes": {}
+  },
+  "TCP3": {
+    "titre": "Séries statistiques à deux variables",
+    "sousThemes": {}
+  },
+  "TTA": {
+    "titre": "Vocabulaire ensembliste et logique",
+    "sousThemes": {}
+  },
+  "TTB": {
+    "titre": "Algorithmique et programmation",
+    "sousThemes": {}
+  },
+  "TTC": {
+    "titre": "Activités géométriques",
+    "sousThemes": {}
+  },
+  "TTD": {
+    "titre": "Automatismes",
+    "sousThemes": {}
+  },
+  "TTE": {
+    "titre": "Analyse",
+    "sousThemes": {}
+  },
+  "TTF": {
+    "titre": "Analyse (STI2D)",
+    "sousThemes": {}
+  },
+  "TTG": {
+    "titre": "Statistique et probabilités",
+    "sousThemes": {}
+  },
+  "TTH": {
+    "titre": "Thèmes d’étude",
+    "sousThemes": {}
+  },
+  "TTI": {
+    "titre": "Nombres Complexes",
+    "sousThemes": {}
+  },
+  "TQCM": {
+    "titre": "Qcm du bac",
+    "sousThemes": {
+      "TQCMF": "Fonctions",
+      "TQCMS": "Statistiques",
+      "TQCMProb": "Probabilités",
+      "TQCMAN": "Analyse",
+      "TQCME": "Espace"
+    }
+  },
+  "ExE1": {
+    "titre": "Équations",
+    "sousThemes": {}
+  },
+  "ExL1": {
+    "titre": "Calcul littéral",
+    "sousThemes": {}
+  },
+  "HPC1": {
+    "titre": "Calculs",
+    "sousThemes": {}
+  },
+  "BP2Auto": {
+    "titre": "Automatismes"
+  },
+  "BP2AutoA": {
+    "titre": "Calcul d’une fréquence"
+  },
+  "BP2AutoB": {
+    "titre": "Utilisation des pourcentages"
+  },
+  "BP2AutoC": {
+    "titre": "Expression d’un nombre donné en écriture décimale ou fractionnaire sous forme d’un pourcentage et réciproquement"
+  },
+  "BP2AutoD": {
+    "titre": "Calcul d’une moyenne"
+  },
+  "BP2AutoE": {
+    "titre": "Calculs avec les puissances de 10"
+  },
+  "BP2AutoF": {
+    "titre": "Écriture d’un nombre en notation scientifique"
+  },
+  "BP2AutoG": {
+    "titre": "Comparaison des fractions simples entre elles ou avec des nombres décimaux"
+  },
+  "BP2AutoH": {
+    "titre": "Additions de fractions, multiplication de fractions"
+  },
+  "BP2AutoI": {
+    "titre": "Développement, factorisation, réduction d’expressions littérales"
+  },
+  "BP2AutoJ": {
+    "titre": "Transformation de formules (par exemple $U=RI$, $d=vt$…), expression d’une variable en fonction des autres"
+  },
+  "BP2AutoK": {
+    "titre": "Résolutions d’équations du type $ax=b$ et $a+x=b$, avec $a$ et $b$ entiers relatifs"
+  },
+  "BP2AutoL": {
+    "titre": "Utilisation des différentes procédures de calcul d’une quatrième proportionnelle"
+  },
+  "BP2AutoM": {
+    "titre": "Application et calcul d’un pourcentage ou d’une échelle"
+  },
+  "BP2AutoN": {
+    "titre": "Repérage dans un plan rapporté à un repère orthogonal"
+  },
+  "BP2AutoO": {
+    "titre": "Recherche d’image et d’antécédents d’un nombre par une fonction"
+  },
+  "BP2AutoP": {
+    "titre": "Utilisation des procédures de résolution graphique d’équations"
+  },
+  "BP2AutoQ": {
+    "titre": "Conversions d’unités de longueur, d’aire et de volume"
+  },
+  "BP2AutoR": {
+    "titre": "Reconnaissance des configurations de Pythagore et de Thalès"
+  },
+  "BP2AutoS": {
+    "titre": "Détermination d’un arrondi, d’une valeur approchée"
+  },
+  "BP2AutoT": {
+    "titre": "Expression d’un résultat dans une unité adaptée"
+  },
+  "BP2AutoU": {
+    "titre": "Vérification de la cohérence grandeur - unité d’une mesure"
+  },
+  "BP2AutoV": {
+    "titre": "Calcul de l’aire d’un carré, d’un rectangle, d’un disque"
+  },
+  "BP2CCF": {
+    "titre": "Calculs commerciaux et financiers"
+  },
+  "BP2FLUC": {
+    "titre": "Fluctuations d'une fréquence, probabilités"
+  },
+  "BP2FONC": {
+    "titre": "Fonctions"
+  },
+  "BP2G": {
+    "titre": "Géométrie"
+  },
+  "BP2RES": {
+    "titre": "Résolution d'un problème du premier degré"
+  },
+  "BP2SP": {
+    "titre": "Statistiques à une variable"
+  },
+  "BP1AA": {
+    "titre": "Algèbre – Analyse"
+  },
+  "BP1AUTO": {
+    "titre": "Automatismes"
+  },
+  "BP1CF": {
+    "titre": "Calculs commerciaux et financiers"
+  },
+  "BP1FDEV": {
+    "titre": "Fonction dérivée et étude des variations d’une fonction"
+  },
+  "BP1F2D": {
+    "titre": "Fonction du second degré"
+  },
+  "BP1GEO": {
+    "titre": "Géométrie"
+  },
+  "BP1GV": {
+    "titre": "Géométrie (vecteurs)"
+  },
+  "BP1INE": {
+    "titre": "Inéquations"
+  },
+  "BP1RGEI": {
+    "titre": "Résolution graphique d'équations et d'inéquations"
+  },
+  "BP1SP": {
+    "titre": "Statistique et probabilités"
+  },
+  "5N1autoA": {
+    "titre": "Mobiliser les critères de divisibilité par 2, 5 et 10 vus en CM1 et CM2"
+  },
+  "5N1autoB": {
+    "titre": "Déterminer le quotient et le reste dans une division euclidienne, par exemple, savoir que 17 = 3 × 5 + 2"
+  },
+  "5N1autoC": {
+    "titre": "Utiliser les tables de multiplication pour factoriser des nombres entiers décomposables en produit de deux nombres différents de 1, par exemple, 21 = 3 × 7"
+  },
+  "5N1autoD": {
+    "titre": "Savoir calculer des produits en lien avec les tables : 0,6 × 7 ; 40 × 0,03"
+  },
+  "5N1autoE": {
+    "titre": "Multiplier et diviser par 10, 100, 1 000"
+  },
+  "5N1autoF": {
+    "titre": "Additionner et soustraire des décimaux, par exemple, 2,7 + 1,4 ; 3,4 – 0,8"
+  },
+  "5N1A": {
+    "titre": "Additionner, soustraire, multiplier et diviser pour résoudre des problèmes et contrôler la vraisemblance de son résultat"
+  },
+  "5N1B": {
+    "titre": "Connaitre le sens et les situations d'emploi de ces opérations"
+  },
+  "5N1C": {
+    "titre": "Diviser par un nombre décimal"
+  },
+  "5N1D": {
+    "titre": "Enchainer des opérations"
+  },
+  "5N1E": {
+    "titre": "Traduire un problème, une succession donnée d'opérations, un programme de calcul, en une seule expression, en faisant appel ou non à des parenthèses"
+  },
+  "5N1F": {
+    "titre": "Nommer un calcul, distinguer sommes et produits, termes et facteurs"
+  },
+  "5N1G": {
+    "titre": "Connaitre et utiliser les priorités opératoires"
+  },
+  "5N1H": {
+    "titre": "Connaitre et utiliser la distributivité simple sur des exemples numériques"
+  },
+  "5N1I": {
+    "titre": "Utiliser les notions de multiples et diviseurs"
+  },
+  "5N1J": {
+    "titre": "Connaitre les critères de divisibilité par 3 et par 9"
+  },
+  "5N1K": {
+    "titre": "Mobiliser un algorithme dans le cadre du calcul numérique"
+  },
+  "5N1L": {
+    "titre": "Prolongement - Notion de nombre premier"
+  },
+  "5N2autoA": {
+    "titre": "Additionner, soustraire, multiplier des nombres décimaux à une ou deux décimales"
+  },
+  "5N2autoB": {
+    "titre": "Savoir que pour compléter une addition à trou, on utilise une soustraction : 2 + ... = 7 se complète en calculant 7 – 2"
+  },
+  "5N2A": {
+    "titre": "Définir les nombres relatifs"
+  },
+  "5N2B": {
+    "titre": "Définir l'opposé et la valeur absolue d'un nombre"
+  },
+  "5N2C": {
+    "titre": "Définir la notion de nombre positif, strictement positif, négatif, strictement négatif"
+  },
+  "5N2D": {
+    "titre": "Utiliser les nombres relatifs pour représenter des grandeurs observables qui peuvent prendre des valeurs inférieures à zéro (température, temps, altitude, etc.), en particulier dans le cadre de la résolution de problèmes"
+  },
+  "5N2E": {
+    "titre": "Lire l'abscisse d'un nombre relatif sur une droite graduée et placer un nombre relatif d'abscisse donnée"
+  },
+  "5N2F": {
+    "titre": "Comparer et ranger dans l'ordre croissant et décroissant des nombres décimaux relatifs"
+  },
+  "5N2G": {
+    "titre": "Additionner deux nombres décimaux relatifs"
+  },
+  "5N2H": {
+    "titre": "Additionner plusieurs nombres décimaux relatifs"
+  },
+  "5N2I": {
+    "titre": "Soustraire deux nombres décimaux relatifs"
+  },
+  "5N2J": {
+    "titre": "Connaitre et justifier les situations dans lesquelles des parenthèses sont indispensables au sens des écritures"
+  },
+  "5N2K": {
+    "titre": "Simplifier l'écriture de sommes comportant des parenthèses"
+  },
+  "5N2L": {
+    "titre": "Enchainer additions et soustractions de décimaux relatifs"
+  },
+  "5N2M": {
+    "titre": "Résoudre des problèmes mobilisant addition et soustraction de nombres décimaux relatifs"
+  },
+  "5N3autoA": {
+    "titre": "Entretenir la connaissance et l'utilisation des tables de multiplication"
+  },
+  "5N3autoB": {
+    "titre": "Entretenir l'écriture décimale des fractions simples comme 1/2 ; 1/4 ; 3/4 ; 3/2 ; 4/2 ; 5/2 ; 1/10 ; 100/100 ; 7/1"
+  },
+  "5N3autoC": {
+    "titre": "Faire vivre la notion de nombre quotient en complétant des multiplications à trou : 3 × ... = 7 puis 3 × 7/3 ="
+  },
+  "5N3autoD": {
+    "titre": "Lire l'abscisse d'un point sur une droite graduée en tiers, en quarts, en moitiés, en dixièmes"
+  },
+  "5N3autoE": {
+    "titre": "Reconnaitre des fractions égales : 2/3 = .../15 ; 4/7 = .../14"
+  },
+  "5N3autoF": {
+    "titre": "Comparer deux fractions : 2/7 et 5/7 ; 8/12 et 8/21 ; 3/4 et 7/18 ; 8/3 et 6/7"
+  },
+  "5N3autoG": {
+    "titre": "Écrire une fraction sous la forme d'une somme d'un nombre entier et d'une fraction inférieure à 1 : 17/5 = 3 + 2/5"
+  },
+  "5N3autoH": {
+    "titre": "Addition et soustraction de fractions simples : 3/5 + 4/5 ; 1 – 2/3 ; 4/7 – 2/21 ; 3/5 + 2/5 ; 2/5 + 1/4"
+  },
+  "5N3autoI": {
+    "titre": "Prendre une fraction simple d'un nombre : le 1/3 de 18 ; le 1/4 de 12"
+  },
+  "5N3autoJ": {
+    "titre": "Prendre 1 %, 10 % ou 50 % d'un nombre, en lien avec la proportionnalité"
+  },
+  "5N3autoK": {
+    "titre": "Écrire un même nombre sous de multiples formes, par exemple : 1,2 = 12/10 = 6/5 = 1 + 1/5 = 120 % = 120/100 etc"
+  },
+  "5N3A": {
+    "titre": "Comparer des fractions"
+  },
+  "5N3B": {
+    "titre": "Additionner et soustraire des fractions de dénominateurs quelconques"
+  },
+  "5N3C": {
+    "titre": "Résoudre des problèmes avec des additions et soustractions de fractions"
+  },
+  "5N4autoA": {
+    "titre": "Entretenir les tables de multiplication"
+  },
+  "5N4autoB": {
+    "titre": "Connaitre les unités d'aires et de volume"
+  },
+  "5N4A": {
+    "titre": "Découvrir la notion de puissance d'un nombre et sa notation dans le cas du carré et du cube"
+  },
+  "5N4B": {
+    "titre": "Connaitre les carrés des entiers de 0 à 12"
+  },
+  "5N4C": {
+    "titre": "Connaitre le cube de 10"
+  },
+  "5N4D": {
+    "titre": "Savoir écrire un nombre sous la forme d'une puissance 2 ou 3"
+  },
+  "5N4E": {
+    "titre": "Calculer la valeur numérique d'expressions contenant des puissances simples, additions, soustractions et produits"
+  },
+  "5N4F": {
+    "titre": "Calculer la valeur d'une expression littérale contenant une puissance simple"
+  },
+  "5N5autoA": {
+    "titre": "Identifier des régularités et poursuivre une suite de motifs évolutive"
+  },
+  "5N5autoB": {
+    "titre": "Trouver le nombre d'éléments pour une étape donnée dans une suite de motifs évolutive"
+  },
+  "5N5autoC": {
+    "titre": "Identifier la structure d'un motif évolutif en repérant une régularité"
+  },
+  "5N5autoD": {
+    "titre": "Nombre quotient"
+  },
+  "5N5A": {
+    "titre": "Produire des formules (double, triple, carré, successeur, prédécesseur, aire, périmètre, etc.)"
+  },
+  "5N5B": {
+    "titre": "Calculer la valeur d'une expression littérale par substitution"
+  },
+  "5N5C": {
+    "titre": "Tester si une égalité entre expressions algébriques comportant une variable est vraie ou fausse"
+  },
+  "5N5D": {
+    "titre": "Déterminer si une expression littérale est une somme ou un produit"
+  },
+  "5N5E": {
+    "titre": "Exploiter les relations $k(a+b)=ka+kb$ ou $k(a-b)=ka-kb$ pour factoriser ou développer une expression littérale"
+  },
+  "5N5F": {
+    "titre": "Réduire une expression littérale de la forme $ax+b$, où $a$ et $b$ sont des nombres décimaux"
+  },
+  "5N5G": {
+    "titre": "Démontrer une propriété générale par le calcul littéral"
+  },
+  "5N5H": {
+    "titre": "Utiliser un contre-exemple pour démontrer qu'une assertion est fausse"
+  },
+  "5N5I": {
+    "titre": "Formuler des conjectures en s'appuyant sur un langage algorithmique ou un tableur"
+  },
+  "5N5J": {
+    "titre": "Donner à la lettre le statut d'inconnue"
+  },
+  "5N5K": {
+    "titre": "Modéliser des problèmes relevant des opérations à trous par des équations du type $ax=c$ ou $x+b=c$"
+  },
+  "5N5L": {
+    "titre": "Résoudre des équations du type $ax=c$ ou $x+b=c$ par des méthodes arithmétiques s'appuyant sur les opérations inverses"
+  },
+  "5G1autoA": {
+    "titre": "Placer sur une demi-droite graduée un point dont l'abscisse est un nombre décimal"
+  },
+  "5G1autoB": {
+    "titre": "Repérer un nombre décimal sur une demi-droite graduée"
+  },
+  "5G1A": {
+    "titre": "Sur une droite graduée : lire l'abscisse d'un point donné ; placer un point d'abscisse donnée"
+  },
+  "5G1B": {
+    "titre": "Dans le plan muni d'un repère orthogonal : lire les coordonnées d'un point donné ; placer un point de coordonnées données"
+  },
+  "5G2autoA": {
+    "titre": "Reconnaitre des vues (de dessus, dessous…) d'empilements de cubes"
+  },
+  "5G2autoB": {
+    "titre": "Dénombrer des cubes dans des empilements"
+  },
+  "5G2autoC": {
+    "titre": "Reconnaitre un cube, un pavé représenté en perspective cavalière"
+  },
+  "5G2autoD": {
+    "titre": "Reconnaitre un patron d'un cube"
+  },
+  "5G2A": {
+    "titre": "Construire et mettre en relation différentes représentations en perspectives cavalières des solides : pavé droit, cube, cylindre de révolution, prisme droit"
+  },
+  "5G2B": {
+    "titre": "Savoir mettre en relation une représentation en perspective cavalière et un patron d'un pavé, d'un prisme droit ou d'un cylindre de révolution"
+  },
+  "5G2C": {
+    "titre": "Calculer le volume du cube, du pavé droit, du prisme droit"
+  },
+  "5G2D": {
+    "titre": "Connaitre et convertir des unités usuelles (volume et capacité)"
+  },
+  "5G2E": {
+    "titre": "Calculer l'aire du disque, le volume du cylindre de révolution"
+  },
+  "5G3autoA": {
+    "titre": "Reconnaitre et construire le symétrique d'une figure par symétrie axiale, dont l'axe est vertical, horizontal, ou en diagonale sur quadrillage"
+  },
+  "5G3autoB": {
+    "titre": "Construire le symétrique, par rapport à un axe, d'un point, d'une figure, sur feuille blanche"
+  },
+  "5G3A": {
+    "titre": "Définir le demi-tour, ou symétrie centrale"
+  },
+  "5G3B": {
+    "titre": "Connaitre les propriétés du demi-tour"
+  },
+  "5G4autoA": {
+    "titre": "Reconnaitre et citer sur une configuration géométrique des angles : angle plein, plat, nul, droit ; angles opposés par le sommet, adjacents, supplémentaires, aigus, obtus"
+  },
+  "5G4autoB": {
+    "titre": "Savoir qu'un angle droit mesure 90°, qu'un angle plat mesure 180°"
+  },
+  "5G4autoC": {
+    "titre": "Reconnaitre une bissectrice"
+  },
+  "5G4autoD": {
+    "titre": "Connaitre les mesures des angles de l'équerre dont dispose l'élève (30°, 60°, 90° ou 45°, 45°, 90°)"
+  },
+  "5G4A": {
+    "titre": "Caractériser le parallélisme par les angles : angles alternes internes, angles correspondants"
+  },
+  "5G5autoA": {
+    "titre": "Reconnaitre un triangle isocèle, équilatéral ou rectangle à partir d'un schéma codé"
+  },
+  "5G5autoB": {
+    "titre": "Connaitre la somme des angles d'un triangle, calculer le 3e angle d'un triangle connaissant les mesures des deux autres"
+  },
+  "5G5autoC": {
+    "titre": "Connaitre la notion de médiatrice, de cercle circonscrit"
+  },
+  "5G5A": {
+    "titre": "Connaitre la somme des angles d'un triangle et savoir la démontrer"
+  },
+  "5G5B": {
+    "titre": "Construire des triangles à partir de données partielles"
+  },
+  "5G5C": {
+    "titre": "Connaitre les propriétés des médiatrices et du cercle circonscrit dans le cas de triangles particuliers"
+  },
+  "5G5D": {
+    "titre": "Calculer l'aire d'un triangle"
+  },
+  "5G5E": {
+    "titre": "Définir et tracer les hauteurs dans un triangle"
+  },
+  "5G5F": {
+    "titre": "Savoir que les hauteurs d'un triangle sont concourantes"
+  },
+  "5G5G": {
+    "titre": "Définir et tracer les médianes dans un triangle"
+  },
+  "5G5H": {
+    "titre": "Démontrer qu'une médiane partage un triangle en deux triangles d'aires égales"
+  },
+  "5G5I": {
+    "titre": "Utiliser ces propriétés dans le cas de triangles particuliers"
+  },
+  "5G6autoA": {
+    "titre": "Reconnaitre en justifiant un quadrilatère, un parallélogramme, un rectangle, un losange, un carré, un trapèze, un pentagone, un hexagone dans des figures complexes"
+  },
+  "5G6autoB": {
+    "titre": "Exploiter le codage d'une figure pour identifier des parallélogrammes particuliers"
+  },
+  "5G6A": {
+    "titre": "Définir le parallélogramme"
+  },
+  "5G6B": {
+    "titre": "Construire des parallélogrammes"
+  },
+  "5G6C": {
+    "titre": "Connaitre les propriétés caractéristiques des côtés opposés et des diagonales"
+  },
+  "5G6D": {
+    "titre": "Utiliser une propriété caractéristique sur les diagonales ou les côtés pour les construire ou donner la nature du quadrilatère"
+  },
+  "5G6E": {
+    "titre": "Définir les parallélogrammes particuliers (rectangle, losange, carré)"
+  },
+  "5G6F": {
+    "titre": "Connaitre les propriétés caractéristiques des parallélogrammes particuliers"
+  },
+  "5G6G": {
+    "titre": "Savoir calculer l'aire d'un parallélogramme et de figures complexes"
+  },
+  "5G6H": {
+    "titre": "Résoudre des problèmes faisant appel à des conversions d'unités de longueur et d'unités d'aires"
+  },
+  "5D1A": {
+    "titre": "Recueillir et organiser des données"
+  },
+  "5D1B": {
+    "titre": "Calculer des effectifs et des fréquences (exprimées sous forme décimale, fractionnaire ou de pourcentage)"
+  },
+  "5D1C": {
+    "titre": "Lire et interpréter des informations présentées sous forme de tableaux, de diagrammes et de graphiques"
+  },
+  "5D1D": {
+    "titre": "Représenter, sur papier ou à l'aide d'un tableur-grapheur, des données sous la forme d'un tableau, d'un diagramme (en barres, circulaire) ou d'un graphique cartésien"
+  },
+  "5D1E": {
+    "titre": "Choisir une représentation adaptée à ce qu'il convient de mettre en avant"
+  },
+  "5D1F": {
+    "titre": "Calculer et interpréter la moyenne simple d'une série de données"
+  },
+  "5D2autoA": {
+    "titre": "Positionner sur une échelle de probabilité des évènements simples : impossible, certain, obtenir pile, obtenir une valeur donnée avec un dé, obtenir une couleur lors d'un tirage"
+  },
+  "5D2autoB": {
+    "titre": "Donner la probabilité sous diverses formes (fraction, décimale, pourcentage) pour des évènements simples"
+  },
+  "5D2autoC": {
+    "titre": "Lier l'expression « une chance sur quatre » et la probabilité 1/4"
+  },
+  "5D2A": {
+    "titre": "Aborder les questions relatives au hasard à partir de problèmes simples"
+  },
+  "5D2B": {
+    "titre": "Utiliser le vocabulaire des probabilités dans des contextes concrets : expérience aléatoire, issue, évènement"
+  },
+  "5D2C": {
+    "titre": "Attribuer des probabilités dans des cas simples (équiprobabilité)"
+  },
+  "5D2D": {
+    "titre": "Répéter matériellement une expérience aléatoire simple. Enregistrer les résultats observés dans un tableau d'effectifs et de fréquences"
+  },
+  "5P1autoA": {
+    "titre": "Reconnaitre si une situation donnée entre dans le cadre de la proportionnalité ou non"
+  },
+  "5P1autoB": {
+    "titre": "Dans des situations simples, mobiliser une procédure adaptée (propriété de linéarité, retour à l'unité) pour résoudre un problème lié à la proportionnalité"
+  },
+  "5P1A": {
+    "titre": "Utiliser des proportions, des pourcentages"
+  },
+  "5P1B": {
+    "titre": "Calculer, appliquer des proportions, des pourcentages"
+  },
+  "5P1C": {
+    "titre": "Identifier des situations de proportionnalité dans des contextes concrets (prix, recettes, distances, échelles)"
+  },
+  "5P1D": {
+    "titre": "Utiliser un coefficient de proportionnalité dans des contextes concrets (prix unitaire, vitesse moyenne, échelle, etc.)"
+  },
+  "5P1E": {
+    "titre": "Représenter une situation de proportionnalité par un tableau ou un graphique"
+  },
+  "5P1F": {
+    "titre": "Reconnaitre une situation de proportionnalité à partir d'un tableau ou d'un graphique"
+  },
+  "5P1G": {
+    "titre": "Reconnaitre graphiquement qu'un nuage de points est ou n'est pas associé à une situation de proportionnalité entre données discrètes"
+  },
+  "5P2A": {
+    "titre": "Introduire l'expression : « en fonction de » dans des contextes concrets ou mathématiques"
+  },
+  "5P2B": {
+    "titre": "Produire un tableau de valeurs"
+  },
+  "5P2C": {
+    "titre": "Lire et interpréter un tableau de valeurs"
+  },
+  "5P2D": {
+    "titre": "Placer dans un repère orthogonal donné des points correspondant à un tableau de valeurs"
+  },
+  "5P2E": {
+    "titre": "Lire et interpréter un graphique cartésien donné par une courbe ou un nuage de points"
+  },
+  "5P2F": {
+    "titre": "Traduire la relation de dépendance entre deux grandeurs par un tableau de valeurs à partir d'une formule"
+  },
+  "5P2G": {
+    "titre": "Produire une formule simple représentant la dépendance de deux grandeurs"
+  },
+  "5P2H": {
+    "titre": "Caractériser graphiquement la proportionnalité"
+  },
+  "5I1A": {
+    "titre": "Manipuler des instructions simples et les séquencer"
+  },
+  "5I1B": {
+    "titre": "Identifier les entrées et sorties d'un programme"
+  },
+  "5I1C": {
+    "titre": "Représenter des formules sous la forme d'une expression informatique dans un langage de programmation par blocs"
+  },
+  "5I1D": {
+    "titre": "Calculer la valeur de formules à l'aide d'une suite d'instructions dans un langage de programmation par blocs"
+  },
+  "5I1E": {
+    "titre": "Prévoir la valeur d'une expression informatique avant son exécution"
+  },
+  "5I1F": {
+    "titre": "Analyser un programme simple donné et modifier ses paramètres"
+  },
+  "5I1G": {
+    "titre": "Effectuer une boucle inconditionnelle simple permettant de répéter une séquence linéaire d'instructions un nombre précis de fois"
+  },
+  "5N1": {
+    "titre": "Opérations"
+  },
+  "5N2": {
+    "titre": "Nombres relatifs"
+  },
+  "5N3": {
+    "titre": "Nombres rationnels"
+  },
+  "5N4": {
+    "titre": "Puissances"
+  },
+  "5N5": {
+    "titre": "Calcul littéral et algébrique"
+  },
+  "5G1": {
+    "titre": "Repérage sur une droite et dans le plan"
+  },
+  "5G2": {
+    "titre": "Représentation de l'espace"
+  },
+  "5G3": {
+    "titre": "Transformations"
+  },
+  "5G4": {
+    "titre": "Angles"
+  },
+  "5G5": {
+    "titre": "Triangles"
+  },
+  "5G6": {
+    "titre": "Parallélogrammes"
+  },
+  "5D1": {
+    "titre": "Statistiques"
+  },
+  "5D2": {
+    "titre": "Probabilités"
+  },
+  "5P1": {
+    "titre": "Proportionnalité"
+  },
+  "5P2": {
+    "titre": "Fonctions"
+  },
+  "5I1": {
+    "titre": "La pensée informatique"
+  },
+  "EgaliteFG1-6e": {
+    "titre": "Sixième"
+  },
+  "EgaliteFG2-5e": {
+    "titre": "Cinquième"
+  },
+  "EgaliteFG3-4e": {
+    "titre": "Quatrième"
+  },
+  "EgaliteFG4-3e": {
+    "titre": "Troisième"
+  },
+  "EgaliteFG5-2de": {
+    "titre": "Seconde"
+  },
+  "EgaliteFG6-1e": {
+    "titre": "Première"
+  },
+  "EgaliteFG7-Tle": {
+    "titre": "Terminale"
+  },
+  "Portraits": {
+    "titre": "Portraits"
+  }
+}

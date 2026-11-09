@@ -1,0 +1,57 @@
+{
+  "slides": [
+    {
+      "background": "carousel07.jpg",
+      "title": "Copie des élèves",
+      "message": "Les scores des élèves sont correctement enregistrés et fiables. En revanche, l’affichage des copies faites avant le 19/9 peuvent poser problème avec des questions qui ne correspondent pas à celles soumises aux élèves.",
+      "image": "",
+      "link": "",
+      "buttonTitle":""
+    },
+    {
+      "background": "carousel01.jpg",
+      "title": "Automatismes en Première",
+      "message": "Préparez vos élèves à l’épreuve anticipée de mathématiques grâce à MathALÉA. La plateforme propose des exercices entièrement adaptés au programme et classés par thèmes.",
+      "image": "",
+      "link": "https://coopmaths.fr/alea/?uuid=0b1fc&id=1A-F4-2&alea=zkIH&uuid=35c0e&id=1A-F6-2&alea=VuzQ&uuid=8cf80&id=1A-C19&alea=rIF2&v=eleve&title=Exemples+d%27automatismes+en+Première&es=0211011",
+      "buttonTitle":"Voir un exemple"
+    },
+    {
+      "background": "carousel06.jpg",
+      "title": "Nouveau programme en 6e",
+      "message": "Le référentiel et les exercices pour la classe de 6e ont été mis à jour pour suivre les nouveaux programmes.",
+      "image": "",
+      "link": "https://coopmaths.fr/www/blog/2025-09-03-nouveauprogramme6e/"
+    },
+    {
+      "background": "",
+      "title": "Nouveauté",
+      "message": "La 3D est arrivée dans MathALÉA\u00a0!",
+      "image": "cube3d.mp4",
+      "link": "https://coopmaths.fr/alea/?uuid=5f115&id=6G8A-1&n=3&d=10&s=1&s2=1&s3=true&s4=1&i=1&cd=1&alea=WSYf&v=eleve&es=0111001",
+      "buttonTitle": "Voir un exemple"
+    },
+    {
+      "background": "carousel05.jpg",
+      "title": "Automatismes au primaire",
+      "message": "Nous vous proposons un nouveau site, fluence.mathalea.fr, pour travailler les automatismes en calcul mental à l'école primaire.",
+      "image": "fluence.png",
+      "link": "https://fluence.mathalea.fr/",
+      "buttonTitle": "fluence.mathalea.fr"
+    },
+    {
+      "background": "carousel04.jpg",
+      "title": "Capytale",
+      "message": "Les enseignants peuvent sélectionner des exercices, les donner à leurs élèves et récupérer tous les scores sur Capytale.",
+      "image": "capytale.png",
+      "link": "https://capytale2.ac-paris.fr/"
+    },
+    {
+      "background": "",
+      "title": "Glisse-nombre",
+      "message": "Pour mieux appréhender les multiplications et divisions par 10, 100, 1\u00A0000, nous avons développé un glisse-nombre.",
+      "image": "glisseNombre.png",
+      "link": "https://coopmaths.fr/apps/glisse-nombre/"
+    }
+  ]
+}

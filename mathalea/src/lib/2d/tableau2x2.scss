@@ -1,0 +1,37 @@
+table.tableau2x2 {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0.5rem;
+  border-collapse: collapse;
+  text-align: center;
+  border: 2px solid #1f2429;
+
+  tr {
+    border: 2px solid #1f2429;
+    padding: 5px 5px 5px 5px;
+    margin: 5px;
+    text-align: center;
+
+    td {
+      border: 2px solid #1f2429;
+      padding: 5px 5px 5px 5px;
+      margin: 5px;
+      text-align: center;
+      min-width: 60px;
+      min-height: 60px;
+      math-field {
+        min-width: 60px;
+        margin-top: 2px;
+        padding: 2px;
+        border: transparent;
+      }
+    }
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  /* custom css */
+  table.tableau2x2 {
+    border: 2px solid #fff;
+  }
+}

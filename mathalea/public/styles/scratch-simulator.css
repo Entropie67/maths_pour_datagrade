@@ -1,0 +1,65 @@
+.scratch-sim-controls-bar {
+  display: inline-flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.scratch-sim-controls-bar .scratch-sim-btn {
+  min-width: 2.25rem;
+  font-weight: 700;
+}
+
+.scratch-sim-controls-bar .scratch-sim-btn--flag {
+  color: #29a348 !important;
+  border-color: #29a348 !important;
+  font-size: 1.35rem;
+  line-height: 1;
+}
+
+.scratch-sim-controls-bar .scratch-sim-btn--play {
+  background-color: #2c8cff !important;
+  border-color: #2c8cff !important;
+  color: #ffffff !important;
+}
+
+.scratch-sim-controls-bar .scratch-sim-btn--pause {
+  background-color: #f59e0b !important;
+  border-color: #f59e0b !important;
+  color: #ffffff !important;
+}
+
+.scratch-sim-controls-bar .scratch-sim-btn--stop {
+  background-color: #e53935 !important;
+  border-color: #e53935 !important;
+  color: #ffffff !important;
+}
+
+dialog.modal.scratch-sim-modal {
+  padding: 0.75rem !important;
+}
+
+dialog.modal.scratch-sim-modal > .scratch-sim-modal-box {
+  width: min(96vw, 1200px) !important;
+  max-width: min(96vw, 1200px) !important;
+  max-height: calc(100vh - 1.5rem) !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+dialog.modal.scratch-sim-modal .scratch-sim-layout {
+  display: grid !important;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) !important;
+  align-items: start;
+}
+
+dialog.modal.scratch-sim-modal canvas {
+  width: 100%;
+  height: auto;
+}
+
+@media (max-width: 900px) {
+  dialog.modal.scratch-sim-modal .scratch-sim-layout {
+    grid-template-columns: minmax(0, 1fr) !important;
+  }
+}

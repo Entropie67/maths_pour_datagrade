@@ -1,0 +1,257 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculatrice - Web Component</title>
+    <style>
+      body {
+        font-family:
+          -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+          'Helvetica Neue', Arial, sans-serif;
+        padding: 2rem;
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+      }
+
+      .example-section {
+        background: white;
+        padding: 2rem;
+        border-radius: 1rem;
+        box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+      }
+
+      .example-section h2 {
+        margin-top: 0;
+        color: #333;
+      }
+
+      p {
+        color: #666;
+        line-height: 1.6;
+      }
+
+      .example-container {
+        display: flex;
+        gap: 2rem;
+        flex-wrap: wrap;
+        margin-top: 1rem;
+      }
+
+      .demo {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+      }
+
+      .description {
+        font-size: 0.9rem;
+        color: #999;
+        text-align: center;
+        max-width: 320px;
+      }
+
+      code {
+        background: #f5f5f5;
+        padding: 0.2rem 0.4rem;
+        border-radius: 0.25rem;
+        font-family: 'Courier New', monospace;
+      }
+
+      .code-block {
+        background: #f5f5f5;
+        padding: 1rem;
+        border-radius: 0.5rem;
+        margin-top: 1rem;
+        overflow-x: auto;
+      }
+
+      .code-block code {
+        background: none;
+        padding: 0;
+      }
+
+      h1 {
+        color: white;
+        margin: 0 0 1rem 0;
+      }
+
+      h3 {
+        color: #333;
+        margin-top: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>🧮 Calculatrice Web Component</h1>
+
+    <div class="example-section">
+      <h2>Utilisation basique</h2>
+      <p>
+        Le custom element s'initialise automatiquement quand il est injecté dans
+        le DOM via la méthode <code>connectedCallback()</code>.
+      </p>
+      <div class="example-container">
+        <div class="demo">
+          <h3>Calculatrice standard</h3>
+          <my-calculator></my-calculator>
+          <p class="description">Aucune touche cassée</p>
+        </div>
+      </div>
+      <div class="code-block">
+        <code>&lt;my-calculator&gt;&lt;/my-calculator&gt;</code>
+      </div>
+    </div>
+
+    <div class="example-section">
+      <h2>Avec touches cassées (attribut)</h2>
+      <p>
+        Définissez les touches cassées via l'attribut
+        <code>broken-keys</code> en séparant par des virgules.
+      </p>
+
+      <div class="example-container">
+        <div class="demo">
+          <h3>Sans 5 et multiplication</h3>
+          <my-calculator broken-keys="5,*"></my-calculator>
+          <p class="description">Défi : Faire 15</p>
+        </div>
+
+        <div class="demo">
+          <h3>Sans division</h3>
+          <my-calculator broken-keys="/"></my-calculator>
+          <p class="description">Défi : Faire 24</p>
+        </div>
+
+        <div class="demo">
+          <h3>Sans 0, + et *</h3>
+          <my-calculator broken-keys="0,+,*"></my-calculator>
+          <p class="description">Défi : Faire 36</p>
+        </div>
+      </div>
+
+      <div class="code-block">
+        <code
+          >&lt;my-calculator broken-keys="5,*"&gt;&lt;/my-calculator&gt;</code
+        >
+      </div>
+    </div>
+
+    <div class="example-section">
+      <h2>Avec touches à utilisation limitée</h2>
+      <p>
+        Définissez les touches qui se cassent après un certain nombre
+        d'utilisations via l'attribut
+        <code>limited-keys</code> avec le format <code>touche:limite</code>. Le
+        compteur se réinitialise avec le bouton <code>C</code>.
+      </p>
+
+      <div class="example-container">
+        <div class="demo">
+          <h3>Touche 2 utilisable 1 fois</h3>
+          <my-calculator limited-keys="2:1"></my-calculator>
+          <p class="description">Défi : Faire 22 (ex: 2×11 ou 11+11)</p>
+        </div>
+
+        <div class="demo">
+          <h3>Touche 5 utilisable 2 fois</h3>
+          <my-calculator limited-keys="5:2"></my-calculator>
+          <p class="description">Défi : Faire 55 (ex: 5×11)</p>
+        </div>
+
+        <div class="demo">
+          <h3>Plusieurs touches limitées</h3>
+          <my-calculator limited-keys="2:1,5:1"></my-calculator>
+          <p class="description">Défi : Faire 100</p>
+        </div>
+      </div>
+
+      <div class="code-block">
+        <code
+          >&lt;my-calculator limited-keys="2:1"&gt;&lt;/my-calculator&gt;</code
+        >
+      </div>
+    </div>
+
+    <div class="example-section">
+      <h2>Utilisation JavaScript</h2>
+      <p>Vous pouvez aussi manipuler le composant en JavaScript :</p>
+
+      <div class="code-block">
+        <code>
+          <pre>
+// Récupérer l'élément
+const calculator = document.querySelector('my-calculator');
+
+// Lire les touches cassées
+console.log(calculator.brokenKeys); // ['5', '*']
+
+// Modifier les touches cassées dynamiquement
+calculator.brokenKeys = ['/', '0'];
+calculator.setAttribute('broken-keys', '/, 0');
+
+// Lire les touches à utilisation limitée
+console.log(calculator.limitedKeys); // [{ key: '2', limit: 1 }]
+
+// Modifier les touches limitées dynamiquement
+calculator.limitedKeys = [{ key: '2', limit: 1 }, { key: '5', limit: 2 }];
+calculator.setAttribute('limited-keys', '2:1,5:2');</pre
+          >
+        </code>
+      </div>
+    </div>
+
+    <div class="example-section">
+      <h2>Caractéristiques</h2>
+      <ul>
+        <li>✅ Enregistrement automatique du custom element</li>
+        <li>✅ Initialisation via <code>connectedCallback()</code></li>
+        <li>
+          ✅ Nettoyage automatique via <code>disconnectedCallback()</code>
+        </li>
+        <li>✅ Prop <code>broken-keys</code> pour les défis</li>
+        <li>
+          ✅ Prop <code>limited-keys</code> pour touches à utilisation limitée
+        </li>
+        <li>✅ Interface intuitive et responsive</li>
+        <li>✅ Support des décimales et parenthèses</li>
+        <li>✅ Fonction carré (x²)</li>
+        <li>✅ Navigation avec flèches ← → pour déplacer le curseur</li>
+        <li>
+          ✅ Support clavier complet (nombres, opérateurs, flèches, Backspace,
+          Delete, Enter, Esc)
+        </li>
+        <li>✅ Curseur visuel (|) pour l'édition</li>
+        <li>✅ Historique des calculs avec <code>getHistory()</code></li>
+        <li>✅ Animations fluides</li>
+      </ul>
+    </div>
+
+    <div class="example-section">
+      <h2>Raccourcis clavier</h2>
+      <ul>
+        <li><code>0-9</code> : Saisir un nombre</li>
+        <li><code>+ - * /</code> : Opérateurs</li>
+        <li><code>( )</code> : Parenthèses</li>
+        <li><code>. ou ,</code> : Point décimal</li>
+        <li><code>← →</code> : Déplacer le curseur</li>
+        <li>
+          <code>Backspace</code> : Supprimer le caractère avant le curseur
+        </li>
+        <li><code>Delete</code> : Supprimer le caractère après le curseur</li>
+        <li><code>Enter ou =</code> : Calculer le résultat</li>
+        <li><code>Esc ou C</code> : Effacer</li>
+      </ul>
+    </div>
+
+    <!-- Importer le web component -->
+    <script type="module">
+      // Cette ligne enregistre le custom element automatiquement
+      import 'http://localhost:5173/src/lib/customElements/CalculatorElement.ts'
+    </script>
+  </body>
+</html>
