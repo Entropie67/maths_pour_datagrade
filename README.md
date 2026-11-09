@@ -47,11 +47,11 @@ Le contrôle navigateur supplémentaire se lance à la racine avec `node scripts
 
 ## Déployer sur maths.datagrade.fr
 
-Le workflow [`deploy-hostinger.yml`](.github/workflows/deploy-hostinger.yml) compile `mathalea/` puis dépose `dist/` par FTPS dans `public_html/alea/` du site Hostinger `maths.datagrade.fr`, à chaque push sur `integration/mathalea-complet` ou `main` touchant `mathalea/`, `hostinger/` ou le workflow, et à la demande (*Run workflow*). L'application est alors servie sur `https://maths.datagrade.fr/alea/` et `https://maths.datagrade.fr/alea/deploiement.json` indique le commit déployé et le lien vers ses sources.
+Le workflow [`deploy-hostinger.yml`](.github/workflows/deploy-hostinger.yml) compile `mathalea/` puis dépose `dist/` par FTP (`lftp`, connexion de contrôle chiffrée, données en clair car Hostinger coupe le FTPS sur le canal de données, cinq transferts en parallèle) dans `public_html/alea/` du site Hostinger `maths.datagrade.fr`, à chaque push sur `integration/mathalea-complet` ou `main` touchant `mathalea/`, `hostinger/` ou le workflow, et à la demande (*Run workflow*). L'application est alors servie sur `https://maths.datagrade.fr/alea/` et `https://maths.datagrade.fr/alea/deploiement.json` indique le commit déployé et le lien vers ses sources.
 
 Trois secrets de dépôt sont nécessaires (*Settings → Secrets and variables → Actions*) : `FTP_HOST` (hôte FTP Hostinger, sans `ftp://`), `FTP_USER` (nom d'utilisateur complet) et `FTP_PASSWORD`. Ils ne doivent figurer nulle part ailleurs.
 
-Le fichier [`hostinger/alea.htaccess`](hostinger/alea.htaccess), copié en `dist/.htaccess`, reprend pour Apache les règles de `mathalea/deploy/nginx/` : cache long des fichiers hachés, `index.html` jamais mis en cache, types MIME, compression, et renvoi des scans d'annales absents (`/alea/static/`) vers coopmaths.fr comme le fait le serveur de développement amont. Seuls les fichiers modifiés depuis le dernier déploiement sont renvoyés ; le premier envoi est long.
+Le fichier [`hostinger/alea.htaccess`](hostinger/alea.htaccess), copié en `dist/.htaccess`, reprend pour Apache les règles de `mathalea/deploy/nginx/` : cache long des fichiers hachés, `index.html` jamais mis en cache, types MIME, compression, et renvoi des scans d'annales absents (`/alea/static/`) vers coopmaths.fr comme le fait le serveur de développement amont. Seuls les fichiers absents ou de taille différente sont renvoyés (plus `index.html`, `version.txt`, `deploiement.json` et `.htaccess`, renvoyés à chaque fois), et les fichiers disparus du build sont supprimés du serveur ; le premier envoi (1,7 Go, 16 000 fichiers avec les annales) est long.
 
 ## Périmètre et licence
 
