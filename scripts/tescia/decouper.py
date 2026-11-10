@@ -255,7 +255,7 @@ def main(source, dossier_png, chemin_manifest):
                 nb_r = len({m[4] for m in mots if re.fullmatch(r'R\d+', m[4])})
                 exercices.append({
                     'id': ident,
-                    'titre': f'{titre} (TeSciA {annee.name}, {libelle.lower()}, ex. {numero})',
+                    'titre': f'{titre} (TeSciA {annee.name}, {libelle[0].lower() + libelle[1:]}, ex. {numero})',
                     'categorie': annee.name,
                     'sousCategorie': libelle,
                     'tags': [titre, f'TeSciA {annee.name}'] + ([f'{nb_m} QCM'] if nb_m else []) + (['réponses brutes'] if nb_l else []) + (['réponses rédigées'] if nb_r else []),
