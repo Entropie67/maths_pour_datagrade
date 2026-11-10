@@ -8,14 +8,15 @@
 
 Options -Indexes
 # Le portier index.php (hostinger/acces.php) sert index.html après contrôle
-# d'accès ; index.html et la configuration du portier ne sont jamais servis seuls.
+# d'accès ; index.html et les fichiers du portier (configuration, clé des cookies,
+# cache de la clé publique de DataGrade) ne sont jamais servis seuls.
 DirectoryIndex index.php index.html
 <Files "index.html">
   Require all denied
 </Files>
-<Files "acces-config.php">
+<FilesMatch "^acces-(config\.php|local\.php|cle\.json)(\..*\.tmp)?$">
   Require all denied
-</Files>
+</FilesMatch>
 
 <IfModule mod_mime.c>
   AddType application/wasm .wasm
