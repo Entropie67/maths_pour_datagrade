@@ -61,6 +61,18 @@ L'accès est réservé aux utilisateurs de DataGrade par un portier PHP, [`hosti
 
 Il n'y a aucune clé à recopier entre les deux sites. DataGrade signe ses jetons avec une clé qu'il crée lui-même et garde dans sa base ; le portier ne la connaît pas et demande à DataGrade de confirmer chaque jeton sur `https://datagrade.fr/api/axiomaths-acces.php` (HTTPS, à l'entrée seulement : ensuite le cookie suffit). Seuls curl et les fonctions PHP de base sont nécessaires (l'extension sodium n'est pas disponible sur l'hébergement). La page de refus indique le motif et l'état de la liaison avec DataGrade ; côté DataGrade, le bouton « Tester le portier » (page AxioMaths, admin) fait l'essai complet. L'ancienne clé partagée (secret `AXIO_GATE_SECRET`) reste acceptée si le secret existe, mais n'est plus nécessaire. Pour rouvrir le site à tous, créer la variable de dépôt `AXIO_PORTIER` avec la valeur `ouvert` (Settings → Secrets and variables → Actions → Variables) puis relancer le déploiement.
 
+## Annales TeSciA
+
+La banque intégrée **Annales TeSciA** (menu « Ressources partenaires ») regroupe les sujets 2022 à 2026 du Test Scientifique d'Aptitude de l'AORES, découpés exercice par exercice : 97 exercices rangés par année puis par épreuve (épreuve 1, épreuve 2 option A ou B). Chaque exercice est une image de l'énoncé officiel ; son corrigé réunit le corrigé du QCM et, jusqu'en 2025, les feuilles-réponses corrigées des questions à réponse brute ou rédigée.
+
+Les images (`mathalea/public/static/tescia/png/`) et le manifest (`mathalea/src/json/banques/tescia.manifest.json`) sont produits par [`scripts/tescia/decouper.py`](scripts/tescia/decouper.py) à partir de l'archive des annales (poppler-utils et Pillow requis) :
+
+```bash
+python3 scripts/tescia/decouper.py <Annales-TeSciA> mathalea/public/static/tescia/png mathalea/src/json/banques/tescia.manifest.json
+```
+
+La banque est déclarée dans `BANQUES_INTEGREES` (`mathalea/src/lib/stores/banquesExternesStore.ts`), à côté de celle de la FFJM. Pour ajouter une session, déposer son dossier dans l'archive, relancer le script et committer les nouvelles images avec `git add -f` (le dossier `public/static` est ignoré par défaut).
+
 ## Périmètre et licence
 
 L'import inclut tous les fichiers suivis en amont et les médias d'annales récupérés depuis les sources officielles. Voir [l'inventaire, les fichiers manquants et les essais locaux](resources/README.md). Les services externes nécessitent encore une préparation pour un hébergement autonome. La compilation et les tests réussis ne constituent pas une validation exhaustive de toutes les fonctionnalités.

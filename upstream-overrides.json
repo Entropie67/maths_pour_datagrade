@@ -78,5 +78,17 @@
   "src/lib/onboarding/tour.css": {
     "sha256": "2d1b6b6a2c55d4d5df52356a225e59bd2e94238eaa8e4b54644ffffe169f19ff",
     "reason": "Habillage AxioMaths (DataGrade) : visite guidée au nom et aux couleurs AxioMaths, mention MathALÉA conservée."
+  },
+  "src/lib/stores/banquesExternesStore.ts": {
+    "sha256": "173fa653ac7a1595bcd2a9a596f274d8f28ee0611673aa0760e14e301275b433",
+    "reason": "Banque intégrée Annales TeSciA (AORES) pour AxioMaths"
+  },
+  "src/lib/stores/banquesIntegrees.test.ts": {
+    "sha256": "97af5f972939aaefe4199f267a187a075f07c5bcca323e300b63ca2f71af419f",
+    "reason": "Banque intégrée Annales TeSciA (AORES) pour AxioMaths"
+  },
+  "src/components/keyboard/Keyboard.svelte": {
+    "sha256": "720969e7dc7b9ae30a866abf1a05b736780cc495c0b91def7cee3aaedf5f16b7",
+    "reason": "AxioMaths : champ en cours de saisie gardé visible au-dessus du clavier virtuel"
   }
 }
