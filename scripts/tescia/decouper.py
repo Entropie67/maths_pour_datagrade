@@ -11,7 +11,11 @@ et le manifest de la banque (schéma mathalea-banque-v1).
 
     python3 scripts/tescia/decouper.py <Annales-TeSciA> <dossier png> <manifest.json>
 
-Dépendances : poppler-utils (pdftotext, pdftoppm) et Pillow.
+Chaque énoncé est précédé d'un rappel des conventions du concours (questions M, L, R),
+qui ne figurent que sur la première page du sujet : un exercice isolé reste ainsi lisible.
+Le script vérifie aussi que les exercices découpés couvrent toutes les questions du sujet.
+
+Dépendances : poppler-utils (pdftotext, pdftoppm), Pillow et la police DejaVu Sans.
 """
 import json
 import re
@@ -20,7 +24,7 @@ import sys
 import tempfile
 from pathlib import Path
 
-from PIL import Image, ImageChops
+from PIL import Image, ImageChops, ImageDraw, ImageFont
 
 DPI = 125            # énoncés et corrigés découpés
 DPI_FEUILLE = 100    # feuilles-réponses manuscrites
@@ -211,6 +215,50 @@ def feuille(pdf):
     return empiler([rogner(r.page(p)) for p in range(r.nb_pages())])
 
 
+POLICE = '/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf'
+REPERES = {
+    'M': 'M : question à choix multiple, une seule bonne réponse.',
+    'L': 'L : réponse brute, sans justification.',
+    'R': 'R : réponse rédigée, à justifier.',
+}
+
+
+def bandeau_reperes(largeur, types):
+    """Rappel, en tête d'énoncé, des conventions données sur la première page du sujet."""
+    police = ImageFont.truetype(POLICE, 15)
+    phrases = ['Repères TeSciA —'] + [REPERES[t] for t in 'MLR' if t in types]
+    if 'L' in types or 'R' in types:
+        phrases.append('Les symboles △ et ○ désignent la feuille-réponse du concours.')
+    phrases.append('Les questions d’un même exercice peuvent dépendre les unes des autres.')
+    lignes_texte, courante = [], ''
+    for mot in ' '.join(phrases).split(' '):
+        essai = f'{courante} {mot}'.strip()
+        if courante and police.getlength(essai) > largeur - 24:
+            lignes_texte.append(courante)
+            courante = mot
+        else:
+            courante = essai
+    lignes_texte.append(courante)
+    interligne = 22
+    bandeau = Image.new('L', (largeur, interligne * len(lignes_texte) + 18), 255)
+    dessin = ImageDraw.Draw(bandeau)
+    for i, ligne in enumerate(lignes_texte):
+        dessin.text((12, 6 + i * interligne), ligne, font=police, fill=95)
+    dessin.line((12, bandeau.height - 5, largeur - 12, bandeau.height - 5), fill=190, width=1)
+    return bandeau
+
+
+def verifier_couverture(dossier, pages, numeros):
+    """Chaque question M, L ou R du sujet doit se retrouver dans un exercice découpé, sans trou."""
+    for lettre in 'MLR':
+        sujet = {int(m[4][1:]) for _h, mots in pages for m in mots if re.fullmatch(lettre + r'\d+', m[4])}
+        decoupes = {n for (l, n) in numeros if l == lettre}
+        if sujet != decoupes:
+            raise SystemExit(f'{dossier} : questions {lettre} absentes des exercices découpés : {sorted(sujet - decoupes)}')
+        if decoupes and decoupes != set(range(1, max(decoupes) + 1)):
+            raise SystemExit(f'{dossier} : numérotation {lettre} incomplète : {sorted(set(range(1, max(decoupes) + 1)) - decoupes)}')
+
+
 def enregistrer(im, chemin, couleurs=16):
     chemin.parent.mkdir(parents=True, exist_ok=True)
     im.quantize(colors=couleurs, dither=Image.Dither.NONE).save(chemin, optimize=True)
@@ -235,13 +283,17 @@ def main(source, dossier_png, chemin_manifest):
                 f = dossier / f'Corrige-feuille-{forme}-AORES.pdf'
                 if f.exists():
                     feuilles[forme] = feuille(f)
+            numeros = set()
             for k, (numero, titre, _p, _y) in enumerate(exos_s):
                 ident = f'tescia_{annee.name}_{code}_ex{numero}'
                 titre = TITRES.get(ident, titre)
                 bandes_s, bandes_c = segments(pages_s, exos_s, k), segments(pages_c, exos_c, k)
-                enregistrer(image_exercice(rendu_s, bandes_s), dossier_png / f'{ident}.png')
-                # Questions à réponse brute (L) ou rédigée (R) : leurs corrigés sont sur les feuilles-réponses
                 mots = mots_exercice(pages_s, bandes_s)
+                types = {m[4][0] for m in mots if re.fullmatch(r'[MLR]\d+', m[4])}
+                numeros |= {(m[4][0], int(m[4][1:])) for m in mots if re.fullmatch(r'[MLR]\d+', m[4])}
+                enonce = image_exercice(rendu_s, bandes_s)
+                enregistrer(empiler([bandeau_reperes(enonce.width, types), enonce], espace=10), dossier_png / f'{ident}.png')
+                # Questions à réponse brute (L) ou rédigée (R) : leurs corrigés sont sur les feuilles-réponses
                 besoin = set()
                 for i, m in enumerate(mots):
                     if re.fullmatch(r'L\d+', m[4]):
@@ -263,6 +315,7 @@ def main(source, dossier_png, chemin_manifest):
                     'pngCor': f'png/{ident}_cor.png',
                 })
                 print(f'{ident:28} {titre[:46]:46} M{nb_m:<3} L{nb_l:<2} R{nb_r:<2} feuilles {sorted(besoin & set(feuilles))}')
+            verifier_couverture(dossier, pages_s, numeros)
     manifest = {
         'schema': 'mathalea-banque-v1',
         'id': 'tescia',
