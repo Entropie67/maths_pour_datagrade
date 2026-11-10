@@ -120,18 +120,22 @@ jobs:
           REF: ${{ github.ref_name }}
           REPO: ${{ github.server_url }}/${{ github.repository }}
           AXIO_GATE_SECRET: ${{ secrets.AXIO_GATE_SECRET }}
+          AXIO_PORTIER: ${{ vars.AXIO_PORTIER }}
         run: |
           set -euo pipefail
           test -f mathalea/dist/index.html
           cp hostinger/alea.htaccess mathalea/dist/.htaccess
           # Portier : index.php sert index.html aux visiteurs venus de DataGrade
-          # (jeton signé ou cookie). La clé partagée vient du secret AXIO_GATE_SECRET ;
-          # absente, le portier laisse passer tout le monde.
+          # (jeton signé ou cookie). Il vérifie les jetons avec la clé publique de
+          # DataGrade, qu'il lit lui-même : aucun secret n'est nécessaire. Le secret
+          # AXIO_GATE_SECRET (ancienne clé partagée) reste accepté s'il existe, et la
+          # variable de dépôt AXIO_PORTIER=ouvert rouvre le site à tous.
           cp hostinger/acces.php mathalea/dist/index.php
           php -l mathalea/dist/index.php
           umask 077
-          printf '<?php\nreturn ["secret" => %s];\n' "$(php -r 'echo var_export((string) getenv("AXIO_GATE_SECRET"), true);')" > mathalea/dist/acces-config.php
-          if [ -n "${AXIO_GATE_SECRET:-}" ]; then echo "Portier actif : clé partagée configurée."; else echo "::warning::AXIO_GATE_SECRET absent : le site reste ouvert à tous."; fi
+          php -r 'echo "<?php\nreturn " . var_export(["secret" => (string) getenv("AXIO_GATE_SECRET"), "ouvert" => getenv("AXIO_PORTIER") === "ouvert"], true) . ";\n";' > mathalea/dist/acces-config.php
+          php -l mathalea/dist/acces-config.php
+          if [ "${AXIO_PORTIER:-}" = "ouvert" ]; then echo "::warning::AXIO_PORTIER=ouvert : le site est ouvert à tous."; else echo "Portier actif : accès réservé aux visiteurs venus de DataGrade."; fi
           # Fiche de version lisible en ligne (https://maths.datagrade.fr/alea/deploiement.json)
           # et accès aux sources de la version déployée, comme le demande la licence AGPL.
           cat > mathalea/dist/deploiement.json <<JSON
@@ -216,7 +220,7 @@ jobs:
           put -O alea/ mathalea/dist/index.html mathalea/dist/index.php mathalea/dist/acces-config.php mathalea/dist/version.txt mathalea/dist/deploiement.json mathalea/dist/.htaccess
           put -O . hostinger/root.htaccess -o .htaccess
           mirror -R --ignore-time --delete --no-perms --verbose=0 \
-            --exclude '^static/' \
+            --exclude '^static/' --exclude '^acces-local\.php$' --exclude '^acces-cle\.json$' \
             mathalea/dist/ alea/
           bye
           LFTP
