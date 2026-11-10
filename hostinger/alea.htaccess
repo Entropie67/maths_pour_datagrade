@@ -9,12 +9,12 @@
 Options -Indexes
 # Le portier index.php (hostinger/acces.php) sert index.html après contrôle
 # d'accès ; index.html et les fichiers du portier (configuration, clé des cookies,
-# cache de la clé publique de DataGrade) ne sont jamais servis seuls.
+# état de la liaison avec DataGrade) ne sont jamais servis seuls.
 DirectoryIndex index.php index.html
 <Files "index.html">
   Require all denied
 </Files>
-<FilesMatch "^acces-(config\.php|local\.php|cle\.json)(\..*\.tmp)?$">
+<FilesMatch "^acces-(config\.php|local\.php|liaison\.json|cle\.json)(\..*\.tmp)?$">
   Require all denied
 </FilesMatch>
 

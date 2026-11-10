@@ -126,8 +126,8 @@ jobs:
           test -f mathalea/dist/index.html
           cp hostinger/alea.htaccess mathalea/dist/.htaccess
           # Portier : index.php sert index.html aux visiteurs venus de DataGrade
-          # (jeton signé ou cookie). Il vérifie les jetons avec la clé publique de
-          # DataGrade, qu'il lit lui-même : aucun secret n'est nécessaire. Le secret
+          # (jeton ou cookie). Il demande à DataGrade si le jeton reçu est bien le
+          # sien : aucun secret n'est partagé entre les deux sites. Le secret
           # AXIO_GATE_SECRET (ancienne clé partagée) reste accepté s'il existe, et la
           # variable de dépôt AXIO_PORTIER=ouvert rouvre le site à tous.
           cp hostinger/acces.php mathalea/dist/index.php
@@ -220,7 +220,7 @@ jobs:
           put -O alea/ mathalea/dist/index.html mathalea/dist/index.php mathalea/dist/acces-config.php mathalea/dist/version.txt mathalea/dist/deploiement.json mathalea/dist/.htaccess
           put -O . hostinger/root.htaccess -o .htaccess
           mirror -R --ignore-time --delete --no-perms --verbose=0 \
-            --exclude '^static/' --exclude '^acces-local\.php$' --exclude '^acces-cle\.json$' \
+            --exclude '^static/' --exclude '^acces-local\.php$' --exclude '^acces-liaison\.json$' \
             mathalea/dist/ alea/
           bye
           LFTP
