@@ -16,6 +16,7 @@
 import JSZip from 'jszip'
 import { get, writable } from 'svelte/store'
 import ffjmManifest from '../../json/banques/ffjm.manifest.json'
+import tesciaManifest from '../../json/banques/tescia.manifest.json'
 import {
   construireReferentielBanque,
   ManifestInvalideError,
@@ -57,6 +58,9 @@ const TAILLE_MAX_ZIP = 50 * 1024 * 1024
  */
 const BANQUES_INTEGREES: { cle: string; manifest: unknown; base: string }[] = [
   { cle: 'builtin:ffjm', manifest: ffjmManifest, base: 'static/ffjm/' },
+  // AxioMaths (DataGrade) : annales TeSciA de l'AORES, découpées par exercice
+  // par scripts/tescia/decouper.py (à la racine du dépôt DataGrade).
+  { cle: 'builtin:tescia', manifest: tesciaManifest, base: 'static/tescia/' },
 ]
 
 /** Banques actuellement chargées, dans l'ordre d'installation */

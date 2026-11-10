@@ -1,0 +1,1415 @@
+{
+  "schema": "mathalea-banque-v1",
+  "id": "tescia",
+  "titre": "Annales TeSciA",
+  "auteur": "AORES (Association pour une Orientation Raisonnée vers l'Enseignement supérieur Scientifique)",
+  "licence": "Sujets et corrigés diffusés librement par l'AORES",
+  "version": "1.0.0",
+  "description": "Annales du Test Scientifique d'Aptitude (TeSciA), de 2022 à 2026 : sujets officiels découpés par exercice, corrigé des questions à choix multiple et feuilles-réponses corrigées.",
+  "exercices": [
+    {
+      "id": "tescia_2022_ep1_ex1",
+      "titre": "Une suite récurrente (TeSciA 2022, épreuve 1, ex. 1)",
+      "categorie": "2022",
+      "sousCategorie": "Épreuve 1",
+      "tags": [
+        "Une suite récurrente",
+        "TeSciA 2022",
+        "6 QCM",
+        "réponses rédigées"
+      ],
+      "png": "png/tescia_2022_ep1_ex1.png",
+      "pngCor": "png/tescia_2022_ep1_ex1_cor.png"
+    },
+    {
+      "id": "tescia_2022_ep1_ex2",
+      "titre": "Identités algébriques (TeSciA 2022, épreuve 1, ex. 2)",
+      "categorie": "2022",
+      "sousCategorie": "Épreuve 1",
+      "tags": [
+        "Identités algébriques",
+        "TeSciA 2022",
+        "7 QCM",
+        "réponses brutes"
+      ],
+      "png": "png/tescia_2022_ep1_ex2.png",
+      "pngCor": "png/tescia_2022_ep1_ex2_cor.png"
+    },
+    {
+      "id": "tescia_2022_ep1_ex3",
+      "titre": "Équations et inéquations (TeSciA 2022, épreuve 1, ex. 3)",
+      "categorie": "2022",
+      "sousCategorie": "Épreuve 1",
+      "tags": [
+        "Équations et inéquations",
+        "TeSciA 2022",
+        "7 QCM",
+        "réponses brutes",
+        "réponses rédigées"
+      ],
+      "png": "png/tescia_2022_ep1_ex3.png",
+      "pngCor": "png/tescia_2022_ep1_ex3_cor.png"
+    },
+    {
+      "id": "tescia_2022_ep1_ex4",
+      "titre": "Probabilités (TeSciA 2022, épreuve 1, ex. 4)",
+      "categorie": "2022",
+      "sousCategorie": "Épreuve 1",
+      "tags": [
+        "Probabilités",
+        "TeSciA 2022",
+        "8 QCM",
+        "réponses brutes"
+      ],
+      "png": "png/tescia_2022_ep1_ex4.png",
+      "pngCor": "png/tescia_2022_ep1_ex4_cor.png"
+    },
+    {
+      "id": "tescia_2022_ep1_ex5",
+      "titre": "Géométrie dans l’espace (TeSciA 2022, épreuve 1, ex. 5)",
+      "categorie": "2022",
+      "sousCategorie": "Épreuve 1",
+      "tags": [
+        "Géométrie dans l’espace",
+        "TeSciA 2022",
+        "7 QCM",
+        "réponses brutes"
+      ],
+      "png": "png/tescia_2022_ep1_ex5.png",
+      "pngCor": "png/tescia_2022_ep1_ex5_cor.png"
+    },
+    {
+      "id": "tescia_2022_ep1_ex6",
+      "titre": "Calculs de dérivées (TeSciA 2022, épreuve 1, ex. 6)",
+      "categorie": "2022",
+      "sousCategorie": "Épreuve 1",
+      "tags": [
+        "Calculs de dérivées",
+        "TeSciA 2022",
+        "7 QCM",
+        "réponses brutes"
+      ],
+      "png": "png/tescia_2022_ep1_ex6.png",
+      "pngCor": "png/tescia_2022_ep1_ex6_cor.png"
+    },
+    {
+      "id": "tescia_2022_ep1_ex7",
+      "titre": "Limites de fonctions (TeSciA 2022, épreuve 1, ex. 7)",
+      "categorie": "2022",
+      "sousCategorie": "Épreuve 1",
+      "tags": [
+        "Limites de fonctions",
+        "TeSciA 2022",
+        "7 QCM",
+        "réponses rédigées"
+      ],
+      "png": "png/tescia_2022_ep1_ex7.png",
+      "pngCor": "png/tescia_2022_ep1_ex7_cor.png"
+    },
+    {
+      "id": "tescia_2022_ep1_ex8",
+      "titre": "Géométrie plane (TeSciA 2022, épreuve 1, ex. 8)",
+      "categorie": "2022",
+      "sousCategorie": "Épreuve 1",
+      "tags": [
+        "Géométrie plane",
+        "TeSciA 2022",
+        "10 QCM",
+        "réponses rédigées"
+      ],
+      "png": "png/tescia_2022_ep1_ex8.png",
+      "pngCor": "png/tescia_2022_ep1_ex8_cor.png"
+    },
+    {
+      "id": "tescia_2022_ep1_ex9",
+      "titre": "Fonctions hyperboliques (TeSciA 2022, épreuve 1, ex. 9)",
+      "categorie": "2022",
+      "sousCategorie": "Épreuve 1",
+      "tags": [
+        "Fonctions hyperboliques",
+        "TeSciA 2022",
+        "12 QCM",
+        "réponses brutes",
+        "réponses rédigées"
+      ],
+      "png": "png/tescia_2022_ep1_ex9.png",
+      "pngCor": "png/tescia_2022_ep1_ex9_cor.png"
+    },
+    {
+      "id": "tescia_2022_ep1_ex10",
+      "titre": "Autour de la partie entière (TeSciA 2022, épreuve 1, ex. 10)",
+      "categorie": "2022",
+      "sousCategorie": "Épreuve 1",
+      "tags": [
+        "Autour de la partie entière",
+        "TeSciA 2022",
+        "6 QCM",
+        "réponses rédigées"
+      ],
+      "png": "png/tescia_2022_ep1_ex10.png",
+      "pngCor": "png/tescia_2022_ep1_ex10_cor.png"
+    },
+    {
+      "id": "tescia_2022_ep2a_ex1",
+      "titre": "Nombres complexes (TeSciA 2022, épreuve 2, option a, ex. 1)",
+      "categorie": "2022",
+      "sousCategorie": "Épreuve 2, option A",
+      "tags": [
+        "Nombres complexes",
+        "TeSciA 2022",
+        "6 QCM",
+        "réponses brutes"
+      ],
+      "png": "png/tescia_2022_ep2a_ex1.png",
+      "pngCor": "png/tescia_2022_ep2a_ex1_cor.png"
+    },
+    {
+      "id": "tescia_2022_ep2a_ex2",
+      "titre": "Arithmétique (TeSciA 2022, épreuve 2, option a, ex. 2)",
+      "categorie": "2022",
+      "sousCategorie": "Épreuve 2, option A",
+      "tags": [
+        "Arithmétique",
+        "TeSciA 2022",
+        "9 QCM",
+        "réponses brutes",
+        "réponses rédigées"
+      ],
+      "png": "png/tescia_2022_ep2a_ex2.png",
+      "pngCor": "png/tescia_2022_ep2a_ex2_cor.png"
+    },
+    {
+      "id": "tescia_2022_ep2a_ex3",
+      "titre": "Mots (TeSciA 2022, épreuve 2, option a, ex. 3)",
+      "categorie": "2022",
+      "sousCategorie": "Épreuve 2, option A",
+      "tags": [
+        "Mots",
+        "TeSciA 2022",
+        "17 QCM",
+        "réponses brutes",
+        "réponses rédigées"
+      ],
+      "png": "png/tescia_2022_ep2a_ex3.png",
+      "pngCor": "png/tescia_2022_ep2a_ex3_cor.png"
+    },
+    {
+      "id": "tescia_2022_ep2a_ex4",
+      "titre": "Congruences (TeSciA 2022, épreuve 2, option a, ex. 4)",
+      "categorie": "2022",
+      "sousCategorie": "Épreuve 2, option A",
+      "tags": [
+        "Congruences",
+        "TeSciA 2022",
+        "17 QCM"
+      ],
+      "png": "png/tescia_2022_ep2a_ex4.png",
+      "pngCor": "png/tescia_2022_ep2a_ex4_cor.png"
+    },
+    {
+      "id": "tescia_2022_ep2a_ex5",
+      "titre": "Nombres complexes et géométrie (TeSciA 2022, épreuve 2, option a, ex. 5)",
+      "categorie": "2022",
+      "sousCategorie": "Épreuve 2, option A",
+      "tags": [
+        "Nombres complexes et géométrie",
+        "TeSciA 2022",
+        "6 QCM",
+        "réponses brutes"
+      ],
+      "png": "png/tescia_2022_ep2a_ex5.png",
+      "pngCor": "png/tescia_2022_ep2a_ex5_cor.png"
+    },
+    {
+      "id": "tescia_2022_ep2a_ex6",
+      "titre": "Transformations complexes (TeSciA 2022, épreuve 2, option a, ex. 6)",
+      "categorie": "2022",
+      "sousCategorie": "Épreuve 2, option A",
+      "tags": [
+        "Transformations complexes",
+        "TeSciA 2022",
+        "4 QCM",
+        "réponses brutes",
+        "réponses rédigées"
+      ],
+      "png": "png/tescia_2022_ep2a_ex6.png",
+      "pngCor": "png/tescia_2022_ep2a_ex6_cor.png"
+    },
+    {
+      "id": "tescia_2022_ep2a_ex7",
+      "titre": "Polyominos (TeSciA 2022, épreuve 2, option a, ex. 7)",
+      "categorie": "2022",
+      "sousCategorie": "Épreuve 2, option A",
+      "tags": [
+        "Polyominos",
+        "TeSciA 2022",
+        "5 QCM",
+        "réponses brutes"
+      ],
+      "png": "png/tescia_2022_ep2a_ex7.png",
+      "pngCor": "png/tescia_2022_ep2a_ex7_cor.png"
+    },
+    {
+      "id": "tescia_2022_ep2b_ex1",
+      "titre": "Nombres réels (TeSciA 2022, épreuve 2, option b, ex. 1)",
+      "categorie": "2022",
+      "sousCategorie": "Épreuve 2, option B",
+      "tags": [
+        "Nombres réels",
+        "TeSciA 2022",
+        "4 QCM",
+        "réponses brutes",
+        "réponses rédigées"
+      ],
+      "png": "png/tescia_2022_ep2b_ex1.png",
+      "pngCor": "png/tescia_2022_ep2b_ex1_cor.png"
+    },
+    {
+      "id": "tescia_2022_ep2b_ex2",
+      "titre": "Généralités sur les suites (TeSciA 2022, épreuve 2, option b, ex. 2)",
+      "categorie": "2022",
+      "sousCategorie": "Épreuve 2, option B",
+      "tags": [
+        "Généralités sur les suites",
+        "TeSciA 2022",
+        "5 QCM",
+        "réponses brutes",
+        "réponses rédigées"
+      ],
+      "png": "png/tescia_2022_ep2b_ex2.png",
+      "pngCor": "png/tescia_2022_ep2b_ex2_cor.png"
+    },
+    {
+      "id": "tescia_2022_ep2b_ex3",
+      "titre": "Étude d’une suite (TeSciA 2022, épreuve 2, option b, ex. 3)",
+      "categorie": "2022",
+      "sousCategorie": "Épreuve 2, option B",
+      "tags": [
+        "Étude d’une suite",
+        "TeSciA 2022",
+        "7 QCM",
+        "réponses brutes"
+      ],
+      "png": "png/tescia_2022_ep2b_ex3.png",
+      "pngCor": "png/tescia_2022_ep2b_ex3_cor.png"
+    },
+    {
+      "id": "tescia_2022_ep2b_ex4",
+      "titre": "Mots (TeSciA 2022, épreuve 2, option b, ex. 4)",
+      "categorie": "2022",
+      "sousCategorie": "Épreuve 2, option B",
+      "tags": [
+        "Mots",
+        "TeSciA 2022",
+        "17 QCM",
+        "réponses brutes",
+        "réponses rédigées"
+      ],
+      "png": "png/tescia_2022_ep2b_ex4.png",
+      "pngCor": "png/tescia_2022_ep2b_ex4_cor.png"
+    },
+    {
+      "id": "tescia_2022_ep2b_ex5",
+      "titre": "Rationnels et irrationnels (TeSciA 2022, épreuve 2, option b, ex. 5)",
+      "categorie": "2022",
+      "sousCategorie": "Épreuve 2, option B",
+      "tags": [
+        "Rationnels et irrationnels",
+        "TeSciA 2022",
+        "13 QCM",
+        "réponses brutes",
+        "réponses rédigées"
+      ],
+      "png": "png/tescia_2022_ep2b_ex5.png",
+      "pngCor": "png/tescia_2022_ep2b_ex5_cor.png"
+    },
+    {
+      "id": "tescia_2022_ep2b_ex6",
+      "titre": "Logique (TeSciA 2022, épreuve 2, option b, ex. 6)",
+      "categorie": "2022",
+      "sousCategorie": "Épreuve 2, option B",
+      "tags": [
+        "Logique",
+        "TeSciA 2022",
+        "14 QCM"
+      ],
+      "png": "png/tescia_2022_ep2b_ex6.png",
+      "pngCor": "png/tescia_2022_ep2b_ex6_cor.png"
+    },
+    {
+      "id": "tescia_2022_ep2b_ex7",
+      "titre": "Polyominos (TeSciA 2022, épreuve 2, option b, ex. 7)",
+      "categorie": "2022",
+      "sousCategorie": "Épreuve 2, option B",
+      "tags": [
+        "Polyominos",
+        "TeSciA 2022",
+        "5 QCM",
+        "réponses brutes"
+      ],
+      "png": "png/tescia_2022_ep2b_ex7.png",
+      "pngCor": "png/tescia_2022_ep2b_ex7_cor.png"
+    },
+    {
+      "id": "tescia_2023_ep1_ex1",
+      "titre": "Calcul algébrique et analyse (TeSciA 2023, épreuve 1, ex. 1)",
+      "categorie": "2023",
+      "sousCategorie": "Épreuve 1",
+      "tags": [
+        "Calcul algébrique et analyse",
+        "TeSciA 2023",
+        "14 QCM",
+        "réponses brutes",
+        "réponses rédigées"
+      ],
+      "png": "png/tescia_2023_ep1_ex1.png",
+      "pngCor": "png/tescia_2023_ep1_ex1_cor.png"
+    },
+    {
+      "id": "tescia_2023_ep1_ex2",
+      "titre": "Géométrie dans l’espace (TeSciA 2023, épreuve 1, ex. 2)",
+      "categorie": "2023",
+      "sousCategorie": "Épreuve 1",
+      "tags": [
+        "Géométrie dans l’espace",
+        "TeSciA 2023",
+        "5 QCM",
+        "réponses brutes",
+        "réponses rédigées"
+      ],
+      "png": "png/tescia_2023_ep1_ex2.png",
+      "pngCor": "png/tescia_2023_ep1_ex2_cor.png"
+    },
+    {
+      "id": "tescia_2023_ep1_ex3",
+      "titre": "Calculs de limites (TeSciA 2023, épreuve 1, ex. 3)",
+      "categorie": "2023",
+      "sousCategorie": "Épreuve 1",
+      "tags": [
+        "Calculs de limites",
+        "TeSciA 2023",
+        "10 QCM",
+        "réponses brutes"
+      ],
+      "png": "png/tescia_2023_ep1_ex3.png",
+      "pngCor": "png/tescia_2023_ep1_ex3_cor.png"
+    },
+    {
+      "id": "tescia_2023_ep1_ex4",
+      "titre": "Calculs de dérivées (TeSciA 2023, épreuve 1, ex. 4)",
+      "categorie": "2023",
+      "sousCategorie": "Épreuve 1",
+      "tags": [
+        "Calculs de dérivées",
+        "TeSciA 2023",
+        "9 QCM",
+        "réponses brutes"
+      ],
+      "png": "png/tescia_2023_ep1_ex4.png",
+      "pngCor": "png/tescia_2023_ep1_ex4_cor.png"
+    },
+    {
+      "id": "tescia_2023_ep1_ex5",
+      "titre": "Probabilités (TeSciA 2023, épreuve 1, ex. 5)",
+      "categorie": "2023",
+      "sousCategorie": "Épreuve 1",
+      "tags": [
+        "Probabilités",
+        "TeSciA 2023",
+        "8 QCM"
+      ],
+      "png": "png/tescia_2023_ep1_ex5.png",
+      "pngCor": "png/tescia_2023_ep1_ex5_cor.png"
+    },
+    {
+      "id": "tescia_2023_ep1_ex6",
+      "titre": "Étude d’une suite récurrente (TeSciA 2023, épreuve 1, ex. 6)",
+      "categorie": "2023",
+      "sousCategorie": "Épreuve 1",
+      "tags": [
+        "Étude d’une suite récurrente",
+        "TeSciA 2023",
+        "13 QCM",
+        "réponses rédigées"
+      ],
+      "png": "png/tescia_2023_ep1_ex6.png",
+      "pngCor": "png/tescia_2023_ep1_ex6_cor.png"
+    },
+    {
+      "id": "tescia_2023_ep1_ex7",
+      "titre": "Dérivées successives (TeSciA 2023, épreuve 1, ex. 7)",
+      "categorie": "2023",
+      "sousCategorie": "Épreuve 1",
+      "tags": [
+        "Dérivées successives",
+        "TeSciA 2023",
+        "11 QCM",
+        "réponses brutes",
+        "réponses rédigées"
+      ],
+      "png": "png/tescia_2023_ep1_ex7.png",
+      "pngCor": "png/tescia_2023_ep1_ex7_cor.png"
+    },
+    {
+      "id": "tescia_2023_ep1_ex8",
+      "titre": "Géométrie plane (TeSciA 2023, épreuve 1, ex. 8)",
+      "categorie": "2023",
+      "sousCategorie": "Épreuve 1",
+      "tags": [
+        "Géométrie plane",
+        "TeSciA 2023",
+        "6 QCM",
+        "réponses brutes"
+      ],
+      "png": "png/tescia_2023_ep1_ex8.png",
+      "pngCor": "png/tescia_2023_ep1_ex8_cor.png"
+    },
+    {
+      "id": "tescia_2023_ep2a_ex1",
+      "titre": "Nombres complexes (TeSciA 2023, épreuve 2, option a, ex. 1)",
+      "categorie": "2023",
+      "sousCategorie": "Épreuve 2, option A",
+      "tags": [
+        "Nombres complexes",
+        "TeSciA 2023",
+        "10 QCM",
+        "réponses brutes",
+        "réponses rédigées"
+      ],
+      "png": "png/tescia_2023_ep2a_ex1.png",
+      "pngCor": "png/tescia_2023_ep2a_ex1_cor.png"
+    },
+    {
+      "id": "tescia_2023_ep2a_ex2",
+      "titre": "Semi-inverses d’une fonction (TeSciA 2023, épreuve 2, option a, ex. 2)",
+      "categorie": "2023",
+      "sousCategorie": "Épreuve 2, option A",
+      "tags": [
+        "Semi-inverses d’une fonction",
+        "TeSciA 2023",
+        "22 QCM",
+        "réponses brutes",
+        "réponses rédigées"
+      ],
+      "png": "png/tescia_2023_ep2a_ex2.png",
+      "pngCor": "png/tescia_2023_ep2a_ex2_cor.png"
+    },
+    {
+      "id": "tescia_2023_ep2a_ex3",
+      "titre": "Questions de divisibilité (TeSciA 2023, épreuve 2, option a, ex. 3)",
+      "categorie": "2023",
+      "sousCategorie": "Épreuve 2, option A",
+      "tags": [
+        "Questions de divisibilité",
+        "TeSciA 2023",
+        "8 QCM",
+        "réponses brutes",
+        "réponses rédigées"
+      ],
+      "png": "png/tescia_2023_ep2a_ex3.png",
+      "pngCor": "png/tescia_2023_ep2a_ex3_cor.png"
+    },
+    {
+      "id": "tescia_2023_ep2a_ex4",
+      "titre": "Nombres complexes et géométrie (TeSciA 2023, épreuve 2, option a, ex. 4)",
+      "categorie": "2023",
+      "sousCategorie": "Épreuve 2, option A",
+      "tags": [
+        "Nombres complexes et géométrie",
+        "TeSciA 2023",
+        "7 QCM",
+        "réponses brutes"
+      ],
+      "png": "png/tescia_2023_ep2a_ex4.png",
+      "pngCor": "png/tescia_2023_ep2a_ex4_cor.png"
+    },
+    {
+      "id": "tescia_2023_ep2a_ex5",
+      "titre": "Ensembles bien ordonnés (TeSciA 2023, épreuve 2, option a, ex. 5)",
+      "categorie": "2023",
+      "sousCategorie": "Épreuve 2, option A",
+      "tags": [
+        "Ensembles bien ordonnés",
+        "TeSciA 2023",
+        "19 QCM",
+        "réponses brutes",
+        "réponses rédigées"
+      ],
+      "png": "png/tescia_2023_ep2a_ex5.png",
+      "pngCor": "png/tescia_2023_ep2a_ex5_cor.png"
+    },
+    {
+      "id": "tescia_2023_ep2a_ex6",
+      "titre": "Nombre de distances entre points du plan (TeSciA 2023, épreuve 2, option a, ex. 6)",
+      "categorie": "2023",
+      "sousCategorie": "Épreuve 2, option A",
+      "tags": [
+        "Nombre de distances entre points du plan",
+        "TeSciA 2023",
+        "4 QCM",
+        "réponses brutes",
+        "réponses rédigées"
+      ],
+      "png": "png/tescia_2023_ep2a_ex6.png",
+      "pngCor": "png/tescia_2023_ep2a_ex6_cor.png"
+    },
+    {
+      "id": "tescia_2023_ep2b_ex1",
+      "titre": "Pot pourri de calcul algébrique (TeSciA 2023, épreuve 2, option b, ex. 1)",
+      "categorie": "2023",
+      "sousCategorie": "Épreuve 2, option B",
+      "tags": [
+        "Pot pourri de calcul algébrique",
+        "TeSciA 2023",
+        "8 QCM",
+        "réponses brutes",
+        "réponses rédigées"
+      ],
+      "png": "png/tescia_2023_ep2b_ex1.png",
+      "pngCor": "png/tescia_2023_ep2b_ex1_cor.png"
+    },
+    {
+      "id": "tescia_2023_ep2b_ex2",
+      "titre": "Semi-inverses d’une fonction (TeSciA 2023, épreuve 2, option b, ex. 2)",
+      "categorie": "2023",
+      "sousCategorie": "Épreuve 2, option B",
+      "tags": [
+        "Semi-inverses d’une fonction",
+        "TeSciA 2023",
+        "22 QCM",
+        "réponses brutes",
+        "réponses rédigées"
+      ],
+      "png": "png/tescia_2023_ep2b_ex2.png",
+      "pngCor": "png/tescia_2023_ep2b_ex2_cor.png"
+    },
+    {
+      "id": "tescia_2023_ep2b_ex3",
+      "titre": "Étude d’une famille de fonctions (TeSciA 2023, épreuve 2, option b, ex. 3)",
+      "categorie": "2023",
+      "sousCategorie": "Épreuve 2, option B",
+      "tags": [
+        "Étude d’une famille de fonctions",
+        "TeSciA 2023",
+        "17 QCM",
+        "réponses brutes"
+      ],
+      "png": "png/tescia_2023_ep2b_ex3.png",
+      "pngCor": "png/tescia_2023_ep2b_ex3_cor.png"
+    },
+    {
+      "id": "tescia_2023_ep2b_ex4",
+      "titre": "Ensembles bien ordonnés (TeSciA 2023, épreuve 2, option b, ex. 4)",
+      "categorie": "2023",
+      "sousCategorie": "Épreuve 2, option B",
+      "tags": [
+        "Ensembles bien ordonnés",
+        "TeSciA 2023",
+        "7 QCM",
+        "réponses brutes",
+        "réponses rédigées"
+      ],
+      "png": "png/tescia_2023_ep2b_ex4.png",
+      "pngCor": "png/tescia_2023_ep2b_ex4_cor.png"
+    },
+    {
+      "id": "tescia_2023_ep2b_ex5",
+      "titre": "Logique (TeSciA 2023, épreuve 2, option b, ex. 5)",
+      "categorie": "2023",
+      "sousCategorie": "Épreuve 2, option B",
+      "tags": [
+        "Logique",
+        "TeSciA 2023",
+        "15 QCM"
+      ],
+      "png": "png/tescia_2023_ep2b_ex5.png",
+      "pngCor": "png/tescia_2023_ep2b_ex5_cor.png"
+    },
+    {
+      "id": "tescia_2023_ep2b_ex6",
+      "titre": "Nombre de distances entre points du plan (TeSciA 2023, épreuve 2, option b, ex. 6)",
+      "categorie": "2023",
+      "sousCategorie": "Épreuve 2, option B",
+      "tags": [
+        "Nombre de distances entre points du plan",
+        "TeSciA 2023",
+        "5 QCM",
+        "réponses brutes",
+        "réponses rédigées"
+      ],
+      "png": "png/tescia_2023_ep2b_ex6.png",
+      "pngCor": "png/tescia_2023_ep2b_ex6_cor.png"
+    },
+    {
+      "id": "tescia_2024_ep1_ex1",
+      "titre": "Une fonction rationnelle (TeSciA 2024, épreuve 1, ex. 1)",
+      "categorie": "2024",
+      "sousCategorie": "Épreuve 1",
+      "tags": [
+        "Une fonction rationnelle",
+        "TeSciA 2024",
+        "7 QCM",
+        "réponses brutes",
+        "réponses rédigées"
+      ],
+      "png": "png/tescia_2024_ep1_ex1.png",
+      "pngCor": "png/tescia_2024_ep1_ex1_cor.png"
+    },
+    {
+      "id": "tescia_2024_ep1_ex2",
+      "titre": "Une famille de droites (TeSciA 2024, épreuve 1, ex. 2)",
+      "categorie": "2024",
+      "sousCategorie": "Épreuve 1",
+      "tags": [
+        "Une famille de droites",
+        "TeSciA 2024",
+        "6 QCM",
+        "réponses brutes"
+      ],
+      "png": "png/tescia_2024_ep1_ex2.png",
+      "pngCor": "png/tescia_2024_ep1_ex2_cor.png"
+    },
+    {
+      "id": "tescia_2024_ep1_ex3",
+      "titre": "Calculs, Fractions (TeSciA 2024, épreuve 1, ex. 3)",
+      "categorie": "2024",
+      "sousCategorie": "Épreuve 1",
+      "tags": [
+        "Calculs, Fractions",
+        "TeSciA 2024",
+        "10 QCM"
+      ],
+      "png": "png/tescia_2024_ep1_ex3.png",
+      "pngCor": "png/tescia_2024_ep1_ex3_cor.png"
+    },
+    {
+      "id": "tescia_2024_ep1_ex4",
+      "titre": "Encadrements (TeSciA 2024, épreuve 1, ex. 4)",
+      "categorie": "2024",
+      "sousCategorie": "Épreuve 1",
+      "tags": [
+        "Encadrements",
+        "TeSciA 2024",
+        "5 QCM",
+        "réponses brutes",
+        "réponses rédigées"
+      ],
+      "png": "png/tescia_2024_ep1_ex4.png",
+      "pngCor": "png/tescia_2024_ep1_ex4_cor.png"
+    },
+    {
+      "id": "tescia_2024_ep1_ex5",
+      "titre": "Équations et inégalités (TeSciA 2024, épreuve 1, ex. 5)",
+      "categorie": "2024",
+      "sousCategorie": "Épreuve 1",
+      "tags": [
+        "Équations et inégalités",
+        "TeSciA 2024",
+        "6 QCM",
+        "réponses brutes",
+        "réponses rédigées"
+      ],
+      "png": "png/tescia_2024_ep1_ex5.png",
+      "pngCor": "png/tescia_2024_ep1_ex5_cor.png"
+    },
+    {
+      "id": "tescia_2024_ep1_ex6",
+      "titre": "Limites, dérivées (TeSciA 2024, épreuve 1, ex. 6)",
+      "categorie": "2024",
+      "sousCategorie": "Épreuve 1",
+      "tags": [
+        "Limites, dérivées",
+        "TeSciA 2024",
+        "11 QCM",
+        "réponses brutes"
+      ],
+      "png": "png/tescia_2024_ep1_ex6.png",
+      "pngCor": "png/tescia_2024_ep1_ex6_cor.png"
+    },
+    {
+      "id": "tescia_2024_ep1_ex7",
+      "titre": "Pile ou Face (TeSciA 2024, épreuve 1, ex. 7)",
+      "categorie": "2024",
+      "sousCategorie": "Épreuve 1",
+      "tags": [
+        "Pile ou Face",
+        "TeSciA 2024",
+        "13 QCM",
+        "réponses brutes",
+        "réponses rédigées"
+      ],
+      "png": "png/tescia_2024_ep1_ex7.png",
+      "pngCor": "png/tescia_2024_ep1_ex7_cor.png"
+    },
+    {
+      "id": "tescia_2024_ep1_ex8",
+      "titre": "Fonctions trigonométriques (TeSciA 2024, épreuve 1, ex. 8)",
+      "categorie": "2024",
+      "sousCategorie": "Épreuve 1",
+      "tags": [
+        "Fonctions trigonométriques",
+        "TeSciA 2024",
+        "11 QCM",
+        "réponses brutes"
+      ],
+      "png": "png/tescia_2024_ep1_ex8.png",
+      "pngCor": "png/tescia_2024_ep1_ex8_cor.png"
+    },
+    {
+      "id": "tescia_2024_ep1_ex9",
+      "titre": "Distance d’un point à une courbe (TeSciA 2024, épreuve 1, ex. 9)",
+      "categorie": "2024",
+      "sousCategorie": "Épreuve 1",
+      "tags": [
+        "Distance d’un point à une courbe",
+        "TeSciA 2024",
+        "5 QCM"
+      ],
+      "png": "png/tescia_2024_ep1_ex9.png",
+      "pngCor": "png/tescia_2024_ep1_ex9_cor.png"
+    },
+    {
+      "id": "tescia_2024_ep2a_ex1",
+      "titre": "Nombres complexes : calculs (TeSciA 2024, épreuve 2, option a, ex. 1)",
+      "categorie": "2024",
+      "sousCategorie": "Épreuve 2, option A",
+      "tags": [
+        "Nombres complexes : calculs",
+        "TeSciA 2024",
+        "7 QCM",
+        "réponses brutes"
+      ],
+      "png": "png/tescia_2024_ep2a_ex1.png",
+      "pngCor": "png/tescia_2024_ep2a_ex1_cor.png"
+    },
+    {
+      "id": "tescia_2024_ep2a_ex2",
+      "titre": "Produit de convolution de deux suites (TeSciA 2024, épreuve 2, option a, ex. 2)",
+      "categorie": "2024",
+      "sousCategorie": "Épreuve 2, option A",
+      "tags": [
+        "Produit de convolution de deux suites",
+        "TeSciA 2024",
+        "18 QCM",
+        "réponses brutes",
+        "réponses rédigées"
+      ],
+      "png": "png/tescia_2024_ep2a_ex2.png",
+      "pngCor": "png/tescia_2024_ep2a_ex2_cor.png"
+    },
+    {
+      "id": "tescia_2024_ep2a_ex3",
+      "titre": "Arithmétique (TeSciA 2024, épreuve 2, option a, ex. 3)",
+      "categorie": "2024",
+      "sousCategorie": "Épreuve 2, option A",
+      "tags": [
+        "Arithmétique",
+        "TeSciA 2024",
+        "10 QCM",
+        "réponses brutes",
+        "réponses rédigées"
+      ],
+      "png": "png/tescia_2024_ep2a_ex3.png",
+      "pngCor": "png/tescia_2024_ep2a_ex3_cor.png"
+    },
+    {
+      "id": "tescia_2024_ep2a_ex4",
+      "titre": "Nombres complexes et trigonométrie (TeSciA 2024, épreuve 2, option a, ex. 4)",
+      "categorie": "2024",
+      "sousCategorie": "Épreuve 2, option A",
+      "tags": [
+        "Nombres complexes et trigonométrie",
+        "TeSciA 2024",
+        "7 QCM"
+      ],
+      "png": "png/tescia_2024_ep2a_ex4.png",
+      "pngCor": "png/tescia_2024_ep2a_ex4_cor.png"
+    },
+    {
+      "id": "tescia_2024_ep2a_ex5",
+      "titre": "Systèmes de Steiner (TeSciA 2024, épreuve 2, option a, ex. 5)",
+      "categorie": "2024",
+      "sousCategorie": "Épreuve 2, option A",
+      "tags": [
+        "Systèmes de Steiner",
+        "TeSciA 2024",
+        "25 QCM",
+        "réponses brutes",
+        "réponses rédigées"
+      ],
+      "png": "png/tescia_2024_ep2a_ex5.png",
+      "pngCor": "png/tescia_2024_ep2a_ex5_cor.png"
+    },
+    {
+      "id": "tescia_2024_ep2b_ex1",
+      "titre": "Logique : schémas de récurrence (TeSciA 2024, épreuve 2, option b, ex. 1)",
+      "categorie": "2024",
+      "sousCategorie": "Épreuve 2, option B",
+      "tags": [
+        "Logique : schémas de récurrence",
+        "TeSciA 2024",
+        "8 QCM",
+        "réponses brutes"
+      ],
+      "png": "png/tescia_2024_ep2b_ex1.png",
+      "pngCor": "png/tescia_2024_ep2b_ex1_cor.png"
+    },
+    {
+      "id": "tescia_2024_ep2b_ex2",
+      "titre": "Produit de convolution de deux suites (TeSciA 2024, épreuve 2, option b, ex. 2)",
+      "categorie": "2024",
+      "sousCategorie": "Épreuve 2, option B",
+      "tags": [
+        "Produit de convolution de deux suites",
+        "TeSciA 2024",
+        "18 QCM",
+        "réponses brutes",
+        "réponses rédigées"
+      ],
+      "png": "png/tescia_2024_ep2b_ex2.png",
+      "pngCor": "png/tescia_2024_ep2b_ex2_cor.png"
+    },
+    {
+      "id": "tescia_2024_ep2b_ex3",
+      "titre": "Suites réelles (TeSciA 2024, épreuve 2, option b, ex. 3)",
+      "categorie": "2024",
+      "sousCategorie": "Épreuve 2, option B",
+      "tags": [
+        "Suites réelles",
+        "TeSciA 2024",
+        "16 QCM",
+        "réponses brutes",
+        "réponses rédigées"
+      ],
+      "png": "png/tescia_2024_ep2b_ex3.png",
+      "pngCor": "png/tescia_2024_ep2b_ex3_cor.png"
+    },
+    {
+      "id": "tescia_2024_ep2b_ex4",
+      "titre": "Systèmes de Steiner (TeSciA 2024, épreuve 2, option b, ex. 4)",
+      "categorie": "2024",
+      "sousCategorie": "Épreuve 2, option B",
+      "tags": [
+        "Systèmes de Steiner",
+        "TeSciA 2024",
+        "22 QCM",
+        "réponses brutes",
+        "réponses rédigées"
+      ],
+      "png": "png/tescia_2024_ep2b_ex4.png",
+      "pngCor": "png/tescia_2024_ep2b_ex4_cor.png"
+    },
+    {
+      "id": "tescia_2025_ep1_ex1",
+      "titre": "Calculs de limites (TeSciA 2025, épreuve 1, ex. 1)",
+      "categorie": "2025",
+      "sousCategorie": "Épreuve 1",
+      "tags": [
+        "Calculs de limites",
+        "TeSciA 2025",
+        "10 QCM",
+        "réponses brutes"
+      ],
+      "png": "png/tescia_2025_ep1_ex1.png",
+      "pngCor": "png/tescia_2025_ep1_ex1_cor.png"
+    },
+    {
+      "id": "tescia_2025_ep1_ex2",
+      "titre": "Géométrie plane (TeSciA 2025, épreuve 1, ex. 2)",
+      "categorie": "2025",
+      "sousCategorie": "Épreuve 1",
+      "tags": [
+        "Géométrie plane",
+        "TeSciA 2025",
+        "9 QCM",
+        "réponses rédigées"
+      ],
+      "png": "png/tescia_2025_ep1_ex2.png",
+      "pngCor": "png/tescia_2025_ep1_ex2_cor.png"
+    },
+    {
+      "id": "tescia_2025_ep1_ex3",
+      "titre": "Logarithmes et exponentielles (TeSciA 2025, épreuve 1, ex. 3)",
+      "categorie": "2025",
+      "sousCategorie": "Épreuve 1",
+      "tags": [
+        "Logarithmes et exponentielles",
+        "TeSciA 2025",
+        "14 QCM",
+        "réponses brutes"
+      ],
+      "png": "png/tescia_2025_ep1_ex3.png",
+      "pngCor": "png/tescia_2025_ep1_ex3_cor.png"
+    },
+    {
+      "id": "tescia_2025_ep1_ex4",
+      "titre": "L’équation a^x = x^a (TeSciA 2025, épreuve 1, ex. 4)",
+      "categorie": "2025",
+      "sousCategorie": "Épreuve 1",
+      "tags": [
+        "L’équation a^x = x^a",
+        "TeSciA 2025",
+        "6 QCM",
+        "réponses brutes",
+        "réponses rédigées"
+      ],
+      "png": "png/tescia_2025_ep1_ex4.png",
+      "pngCor": "png/tescia_2025_ep1_ex4_cor.png"
+    },
+    {
+      "id": "tescia_2025_ep1_ex5",
+      "titre": "Histoires d’urnes (TeSciA 2025, épreuve 1, ex. 5)",
+      "categorie": "2025",
+      "sousCategorie": "Épreuve 1",
+      "tags": [
+        "Histoires d’urnes",
+        "TeSciA 2025",
+        "8 QCM",
+        "réponses brutes",
+        "réponses rédigées"
+      ],
+      "png": "png/tescia_2025_ep1_ex5.png",
+      "pngCor": "png/tescia_2025_ep1_ex5_cor.png"
+    },
+    {
+      "id": "tescia_2025_ep1_ex6",
+      "titre": "Une suite récurrente (TeSciA 2025, épreuve 1, ex. 6)",
+      "categorie": "2025",
+      "sousCategorie": "Épreuve 1",
+      "tags": [
+        "Une suite récurrente",
+        "TeSciA 2025",
+        "19 QCM",
+        "réponses brutes",
+        "réponses rédigées"
+      ],
+      "png": "png/tescia_2025_ep1_ex6.png",
+      "pngCor": "png/tescia_2025_ep1_ex6_cor.png"
+    },
+    {
+      "id": "tescia_2025_ep1_ex7",
+      "titre": "Sommes alternées de parties entières (TeSciA 2025, épreuve 1, ex. 7)",
+      "categorie": "2025",
+      "sousCategorie": "Épreuve 1",
+      "tags": [
+        "Sommes alternées de parties entières",
+        "TeSciA 2025",
+        "9 QCM",
+        "réponses brutes",
+        "réponses rédigées"
+      ],
+      "png": "png/tescia_2025_ep1_ex7.png",
+      "pngCor": "png/tescia_2025_ep1_ex7_cor.png"
+    },
+    {
+      "id": "tescia_2025_ep2a_ex1",
+      "titre": "Nombres complexes (TeSciA 2025, épreuve 2, option a, ex. 1)",
+      "categorie": "2025",
+      "sousCategorie": "Épreuve 2, option A",
+      "tags": [
+        "Nombres complexes",
+        "TeSciA 2025",
+        "8 QCM",
+        "réponses brutes",
+        "réponses rédigées"
+      ],
+      "png": "png/tescia_2025_ep2a_ex1.png",
+      "pngCor": "png/tescia_2025_ep2a_ex1_cor.png"
+    },
+    {
+      "id": "tescia_2025_ep2a_ex2",
+      "titre": "Différence symétrique d’ensembles (TeSciA 2025, épreuve 2, option a, ex. 2)",
+      "categorie": "2025",
+      "sousCategorie": "Épreuve 2, option A",
+      "tags": [
+        "Différence symétrique d’ensembles",
+        "TeSciA 2025",
+        "21 QCM",
+        "réponses brutes",
+        "réponses rédigées"
+      ],
+      "png": "png/tescia_2025_ep2a_ex2.png",
+      "pngCor": "png/tescia_2025_ep2a_ex2_cor.png"
+    },
+    {
+      "id": "tescia_2025_ep2a_ex3",
+      "titre": "Arithmétique (TeSciA 2025, épreuve 2, option a, ex. 3)",
+      "categorie": "2025",
+      "sousCategorie": "Épreuve 2, option A",
+      "tags": [
+        "Arithmétique",
+        "TeSciA 2025",
+        "10 QCM",
+        "réponses brutes",
+        "réponses rédigées"
+      ],
+      "png": "png/tescia_2025_ep2a_ex3.png",
+      "pngCor": "png/tescia_2025_ep2a_ex3_cor.png"
+    },
+    {
+      "id": "tescia_2025_ep2a_ex4",
+      "titre": "Nombres complexes et géométrie (TeSciA 2025, épreuve 2, option a, ex. 4)",
+      "categorie": "2025",
+      "sousCategorie": "Épreuve 2, option A",
+      "tags": [
+        "Nombres complexes et géométrie",
+        "TeSciA 2025",
+        "10 QCM",
+        "réponses brutes",
+        "réponses rédigées"
+      ],
+      "png": "png/tescia_2025_ep2a_ex4.png",
+      "pngCor": "png/tescia_2025_ep2a_ex4_cor.png"
+    },
+    {
+      "id": "tescia_2025_ep2a_ex5",
+      "titre": "Records d’une permutation (TeSciA 2025, épreuve 2, option a, ex. 5)",
+      "categorie": "2025",
+      "sousCategorie": "Épreuve 2, option A",
+      "tags": [
+        "Records d’une permutation",
+        "TeSciA 2025",
+        "18 QCM",
+        "réponses brutes",
+        "réponses rédigées"
+      ],
+      "png": "png/tescia_2025_ep2a_ex5.png",
+      "pngCor": "png/tescia_2025_ep2a_ex5_cor.png"
+    },
+    {
+      "id": "tescia_2025_ep2b_ex1",
+      "titre": "Calcul algébrique, équations et inéquations (TeSciA 2025, épreuve 2, option b, ex. 1)",
+      "categorie": "2025",
+      "sousCategorie": "Épreuve 2, option B",
+      "tags": [
+        "Calcul algébrique, équations et inéquations",
+        "TeSciA 2025",
+        "8 QCM",
+        "réponses brutes"
+      ],
+      "png": "png/tescia_2025_ep2b_ex1.png",
+      "pngCor": "png/tescia_2025_ep2b_ex1_cor.png"
+    },
+    {
+      "id": "tescia_2025_ep2b_ex2",
+      "titre": "Différence symétrique d’ensembles (TeSciA 2025, épreuve 2, option b, ex. 2)",
+      "categorie": "2025",
+      "sousCategorie": "Épreuve 2, option B",
+      "tags": [
+        "Différence symétrique d’ensembles",
+        "TeSciA 2025",
+        "21 QCM",
+        "réponses brutes",
+        "réponses rédigées"
+      ],
+      "png": "png/tescia_2025_ep2b_ex2.png",
+      "pngCor": "png/tescia_2025_ep2b_ex2_cor.png"
+    },
+    {
+      "id": "tescia_2025_ep2b_ex3",
+      "titre": "Une suite définie par récurrence (TeSciA 2025, épreuve 2, option b, ex. 3)",
+      "categorie": "2025",
+      "sousCategorie": "Épreuve 2, option B",
+      "tags": [
+        "Une suite définie par récurrence",
+        "TeSciA 2025",
+        "10 QCM",
+        "réponses brutes",
+        "réponses rédigées"
+      ],
+      "png": "png/tescia_2025_ep2b_ex3.png",
+      "pngCor": "png/tescia_2025_ep2b_ex3_cor.png"
+    },
+    {
+      "id": "tescia_2025_ep2b_ex4",
+      "titre": "Détection de réels par des suites d’entiers (TeSciA 2025, épreuve 2, option b, ex. 4)",
+      "categorie": "2025",
+      "sousCategorie": "Épreuve 2, option B",
+      "tags": [
+        "Détection de réels par des suites d’entiers",
+        "TeSciA 2025",
+        "10 QCM",
+        "réponses brutes",
+        "réponses rédigées"
+      ],
+      "png": "png/tescia_2025_ep2b_ex4.png",
+      "pngCor": "png/tescia_2025_ep2b_ex4_cor.png"
+    },
+    {
+      "id": "tescia_2025_ep2b_ex5",
+      "titre": "Records d’une permutation (TeSciA 2025, épreuve 2, option b, ex. 5)",
+      "categorie": "2025",
+      "sousCategorie": "Épreuve 2, option B",
+      "tags": [
+        "Records d’une permutation",
+        "TeSciA 2025",
+        "18 QCM",
+        "réponses brutes"
+      ],
+      "png": "png/tescia_2025_ep2b_ex5.png",
+      "pngCor": "png/tescia_2025_ep2b_ex5_cor.png"
+    },
+    {
+      "id": "tescia_2026_ep1_ex1",
+      "titre": "Géométrie plane (TeSciA 2026, épreuve 1, ex. 1)",
+      "categorie": "2026",
+      "sousCategorie": "Épreuve 1",
+      "tags": [
+        "Géométrie plane",
+        "TeSciA 2026",
+        "8 QCM",
+        "réponses rédigées"
+      ],
+      "png": "png/tescia_2026_ep1_ex1.png",
+      "pngCor": "png/tescia_2026_ep1_ex1_cor.png"
+    },
+    {
+      "id": "tescia_2026_ep1_ex2",
+      "titre": "Limites de fonctions (TeSciA 2026, épreuve 1, ex. 2)",
+      "categorie": "2026",
+      "sousCategorie": "Épreuve 1",
+      "tags": [
+        "Limites de fonctions",
+        "TeSciA 2026",
+        "10 QCM",
+        "réponses brutes",
+        "réponses rédigées"
+      ],
+      "png": "png/tescia_2026_ep1_ex2.png",
+      "pngCor": "png/tescia_2026_ep1_ex2_cor.png"
+    },
+    {
+      "id": "tescia_2026_ep1_ex3",
+      "titre": "Dérivation de fonctions (TeSciA 2026, épreuve 1, ex. 3)",
+      "categorie": "2026",
+      "sousCategorie": "Épreuve 1",
+      "tags": [
+        "Dérivation de fonctions",
+        "TeSciA 2026",
+        "7 QCM",
+        "réponses brutes"
+      ],
+      "png": "png/tescia_2026_ep1_ex3.png",
+      "pngCor": "png/tescia_2026_ep1_ex3_cor.png"
+    },
+    {
+      "id": "tescia_2026_ep1_ex4",
+      "titre": "Équations et inéquations (TeSciA 2026, épreuve 1, ex. 4)",
+      "categorie": "2026",
+      "sousCategorie": "Épreuve 1",
+      "tags": [
+        "Équations et inéquations",
+        "TeSciA 2026",
+        "10 QCM",
+        "réponses brutes",
+        "réponses rédigées"
+      ],
+      "png": "png/tescia_2026_ep1_ex4.png",
+      "pngCor": "png/tescia_2026_ep1_ex4_cor.png"
+    },
+    {
+      "id": "tescia_2026_ep1_ex5",
+      "titre": "Une fonction trigonométrique (TeSciA 2026, épreuve 1, ex. 5)",
+      "categorie": "2026",
+      "sousCategorie": "Épreuve 1",
+      "tags": [
+        "Une fonction trigonométrique",
+        "TeSciA 2026",
+        "8 QCM",
+        "réponses rédigées"
+      ],
+      "png": "png/tescia_2026_ep1_ex5.png",
+      "pngCor": "png/tescia_2026_ep1_ex5_cor.png"
+    },
+    {
+      "id": "tescia_2026_ep1_ex6",
+      "titre": "Étude d’une fonction à paramètre (TeSciA 2026, épreuve 1, ex. 6)",
+      "categorie": "2026",
+      "sousCategorie": "Épreuve 1",
+      "tags": [
+        "Étude d’une fonction à paramètre",
+        "TeSciA 2026",
+        "14 QCM",
+        "réponses brutes",
+        "réponses rédigées"
+      ],
+      "png": "png/tescia_2026_ep1_ex6.png",
+      "pngCor": "png/tescia_2026_ep1_ex6_cor.png"
+    },
+    {
+      "id": "tescia_2026_ep1_ex7",
+      "titre": "Un sac de billes (TeSciA 2026, épreuve 1, ex. 7)",
+      "categorie": "2026",
+      "sousCategorie": "Épreuve 1",
+      "tags": [
+        "Un sac de billes",
+        "TeSciA 2026",
+        "10 QCM",
+        "réponses brutes",
+        "réponses rédigées"
+      ],
+      "png": "png/tescia_2026_ep1_ex7.png",
+      "pngCor": "png/tescia_2026_ep1_ex7_cor.png"
+    },
+    {
+      "id": "tescia_2026_ep1_ex8",
+      "titre": "Fonctions modifiant les décimales (TeSciA 2026, épreuve 1, ex. 8)",
+      "categorie": "2026",
+      "sousCategorie": "Épreuve 1",
+      "tags": [
+        "Fonctions modifiant les décimales",
+        "TeSciA 2026",
+        "8 QCM"
+      ],
+      "png": "png/tescia_2026_ep1_ex8.png",
+      "pngCor": "png/tescia_2026_ep1_ex8_cor.png"
+    },
+    {
+      "id": "tescia_2026_ep2a_ex1",
+      "titre": "Nombres complexes (TeSciA 2026, épreuve 2, option a, ex. 1)",
+      "categorie": "2026",
+      "sousCategorie": "Épreuve 2, option A",
+      "tags": [
+        "Nombres complexes",
+        "TeSciA 2026",
+        "10 QCM",
+        "réponses brutes"
+      ],
+      "png": "png/tescia_2026_ep2a_ex1.png",
+      "pngCor": "png/tescia_2026_ep2a_ex1_cor.png"
+    },
+    {
+      "id": "tescia_2026_ep2a_ex2",
+      "titre": "Amas de nombres réels (TeSciA 2026, épreuve 2, option a, ex. 2)",
+      "categorie": "2026",
+      "sousCategorie": "Épreuve 2, option A",
+      "tags": [
+        "Amas de nombres réels",
+        "TeSciA 2026",
+        "20 QCM",
+        "réponses brutes",
+        "réponses rédigées"
+      ],
+      "png": "png/tescia_2026_ep2a_ex2.png",
+      "pngCor": "png/tescia_2026_ep2a_ex2_cor.png"
+    },
+    {
+      "id": "tescia_2026_ep2a_ex3",
+      "titre": "Questions variées d’arithmétique (TeSciA 2026, épreuve 2, option a, ex. 3)",
+      "categorie": "2026",
+      "sousCategorie": "Épreuve 2, option A",
+      "tags": [
+        "Questions variées d’arithmétique",
+        "TeSciA 2026",
+        "10 QCM",
+        "réponses brutes",
+        "réponses rédigées"
+      ],
+      "png": "png/tescia_2026_ep2a_ex3.png",
+      "pngCor": "png/tescia_2026_ep2a_ex3_cor.png"
+    },
+    {
+      "id": "tescia_2026_ep2a_ex4",
+      "titre": "Image d’un cercle par diverses transformations du plan (TeSciA 2026, épreuve 2, option a, ex. 4)",
+      "categorie": "2026",
+      "sousCategorie": "Épreuve 2, option A",
+      "tags": [
+        "Image d’un cercle par diverses transformations du plan",
+        "TeSciA 2026",
+        "10 QCM",
+        "réponses brutes",
+        "réponses rédigées"
+      ],
+      "png": "png/tescia_2026_ep2a_ex4.png",
+      "pngCor": "png/tescia_2026_ep2a_ex4_cor.png"
+    },
+    {
+      "id": "tescia_2026_ep2a_ex5",
+      "titre": "Blocs d’entiers (TeSciA 2026, épreuve 2, option a, ex. 5)",
+      "categorie": "2026",
+      "sousCategorie": "Épreuve 2, option A",
+      "tags": [
+        "Blocs d’entiers",
+        "TeSciA 2026",
+        "17 QCM",
+        "réponses brutes",
+        "réponses rédigées"
+      ],
+      "png": "png/tescia_2026_ep2a_ex5.png",
+      "pngCor": "png/tescia_2026_ep2a_ex5_cor.png"
+    },
+    {
+      "id": "tescia_2026_ep2b_ex1",
+      "titre": "Pot pourri de calculs algébriques (TeSciA 2026, épreuve 2, option b, ex. 1)",
+      "categorie": "2026",
+      "sousCategorie": "Épreuve 2, option B",
+      "tags": [
+        "Pot pourri de calculs algébriques",
+        "TeSciA 2026",
+        "10 QCM",
+        "réponses brutes"
+      ],
+      "png": "png/tescia_2026_ep2b_ex1.png",
+      "pngCor": "png/tescia_2026_ep2b_ex1_cor.png"
+    },
+    {
+      "id": "tescia_2026_ep2b_ex2",
+      "titre": "Amas de nombres réels (TeSciA 2026, épreuve 2, option b, ex. 2)",
+      "categorie": "2026",
+      "sousCategorie": "Épreuve 2, option B",
+      "tags": [
+        "Amas de nombres réels",
+        "TeSciA 2026",
+        "20 QCM",
+        "réponses brutes",
+        "réponses rédigées"
+      ],
+      "png": "png/tescia_2026_ep2b_ex2.png",
+      "pngCor": "png/tescia_2026_ep2b_ex2_cor.png"
+    },
+    {
+      "id": "tescia_2026_ep2b_ex3",
+      "titre": "Suites de radicaux imbriqués (TeSciA 2026, épreuve 2, option b, ex. 3)",
+      "categorie": "2026",
+      "sousCategorie": "Épreuve 2, option B",
+      "tags": [
+        "Suites de radicaux imbriqués",
+        "TeSciA 2026",
+        "12 QCM",
+        "réponses brutes",
+        "réponses rédigées"
+      ],
+      "png": "png/tescia_2026_ep2b_ex3.png",
+      "pngCor": "png/tescia_2026_ep2b_ex3_cor.png"
+    },
+    {
+      "id": "tescia_2026_ep2b_ex4",
+      "titre": "Composition de transformations du plan (TeSciA 2026, épreuve 2, option b, ex. 4)",
+      "categorie": "2026",
+      "sousCategorie": "Épreuve 2, option B",
+      "tags": [
+        "Composition de transformations du plan",
+        "TeSciA 2026",
+        "8 QCM",
+        "réponses brutes"
+      ],
+      "png": "png/tescia_2026_ep2b_ex4.png",
+      "pngCor": "png/tescia_2026_ep2b_ex4_cor.png"
+    },
+    {
+      "id": "tescia_2026_ep2b_ex5",
+      "titre": "Blocs d’entiers (TeSciA 2026, épreuve 2, option b, ex. 5)",
+      "categorie": "2026",
+      "sousCategorie": "Épreuve 2, option B",
+      "tags": [
+        "Blocs d’entiers",
+        "TeSciA 2026",
+        "17 QCM",
+        "réponses brutes",
+        "réponses rédigées"
+      ],
+      "png": "png/tescia_2026_ep2b_ex5.png",
+      "pngCor": "png/tescia_2026_ep2b_ex5_cor.png"
+    }
+  ]
+}

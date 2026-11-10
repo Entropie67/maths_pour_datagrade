@@ -59,6 +59,18 @@ Sur maths.datagrade.fr, MathALÉA est présenté sous le nom **AxioMaths** (les 
 
 L'accès est réservé aux utilisateurs de DataGrade par un portier PHP, [`hostinger/acces.php`](hostinger/acces.php), déployé en `alea/index.php` et servi à la place de `index.html` : DataGrade signe chaque adresse qu'il ouvre avec un jeton `dg=<expiration>.<signature>` (HMAC-SHA256, clé partagée), le portier pose un cookie signé pour la journée, et sans l'un ni l'autre affiche une page qui renvoie vers DataGrade. Les fichiers statiques restent servis directement. La clé vient du secret de dépôt `AXIO_GATE_SECRET`, écrit à chaque déploiement dans `alea/acces-config.php` (jamais servi) ; la même clé est saisie dans DataGrade (page AxioMaths, admin). Sans secret, le site reste ouvert à tous.
 
+## Annales TeSciA
+
+La banque intégrée **Annales TeSciA** (menu « Ressources partenaires ») regroupe les sujets 2022 à 2026 du Test Scientifique d'Aptitude de l'AORES, découpés exercice par exercice : 97 exercices rangés par année puis par épreuve (épreuve 1, épreuve 2 option A ou B). Chaque exercice est une image de l'énoncé officiel ; son corrigé réunit le corrigé du QCM et, jusqu'en 2025, les feuilles-réponses corrigées des questions à réponse brute ou rédigée.
+
+Les images (`mathalea/public/static/tescia/png/`) et le manifest (`mathalea/src/json/banques/tescia.manifest.json`) sont produits par [`scripts/tescia/decouper.py`](scripts/tescia/decouper.py) à partir de l'archive des annales (poppler-utils et Pillow requis) :
+
+```bash
+python3 scripts/tescia/decouper.py <Annales-TeSciA> mathalea/public/static/tescia/png mathalea/src/json/banques/tescia.manifest.json
+```
+
+La banque est déclarée dans `BANQUES_INTEGREES` (`mathalea/src/lib/stores/banquesExternesStore.ts`), à côté de celle de la FFJM. Pour ajouter une session, déposer son dossier dans l'archive, relancer le script et committer les nouvelles images avec `git add -f` (le dossier `public/static` est ignoré par défaut).
+
 ## Périmètre et licence
 
 L'import inclut tous les fichiers suivis en amont et les médias d'annales récupérés depuis les sources officielles. Voir [l'inventaire, les fichiers manquants et les essais locaux](resources/README.md). Les services externes nécessitent encore une préparation pour un hébergement autonome. La compilation et les tests réussis ne constituent pas une validation exhaustive de toutes les fonctionnalités.

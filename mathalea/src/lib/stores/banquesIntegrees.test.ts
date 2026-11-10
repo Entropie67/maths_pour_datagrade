@@ -6,6 +6,7 @@
 import { get } from 'svelte/store'
 import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest'
 import ffjmManifest from '../../json/banques/ffjm.manifest.json'
+import tesciaManifest from '../../json/banques/tescia.manifest.json'
 import {
   uuidBanqueExterne,
   validerManifest,
@@ -32,6 +33,25 @@ describe('manifest FFJM versionné', () => {
   })
 })
 
+// AxioMaths (DataGrade) : seconde banque intégrée, les annales TeSciA.
+describe('manifest TeSciA versionné', () => {
+  it('est un manifest de banque valide', () => {
+    const manifest = validerManifest(tesciaManifest)
+    expect(manifest.id).toBe('tescia')
+    expect(manifest.titre).toBe(tesciaManifest.titre)
+    expect(manifest.exercices.length).toBeGreaterThan(0)
+  })
+
+  it('range chaque exercice par année et par épreuve, avec énoncé et corrigé en image', () => {
+    for (const exercice of validerManifest(tesciaManifest).exercices) {
+      expect(exercice.categorie).toMatch(/^20\d\d$/)
+      expect(exercice.sousCategorie).toMatch(/^Épreuve [12]/)
+      expect(exercice.png).toBe(`png/${exercice.id}.png`)
+      expect(exercice.pngCor).toBe(`png/${exercice.id}_cor.png`)
+    }
+  })
+})
+
 describe('chargerBanquesIntegrees', () => {
   let fetchMock: ReturnType<typeof vi.fn>
 
@@ -55,10 +75,29 @@ describe('chargerBanquesIntegrees', () => {
     const erreurs = await chargerBanquesIntegrees()
     expect(erreurs).toEqual([])
     const banques = get(banquesExternes)
-    expect(banques).toHaveLength(1)
+    expect(banques).toHaveLength(2)
     expect(banques[0].source.type).toBe('builtin')
     expect(banques[0].source.cle).toBe('builtin:ffjm')
     expect(banques[0].manifest.id).toBe('ffjm')
+  })
+
+  it('publie les annales TeSciA en provenance builtin, servies sous static/tescia/', async () => {
+    await chargerBanquesIntegrees()
+    const tescia = get(banquesExternes).find(
+      (banque) => banque.source.cle === 'builtin:tescia',
+    )
+    expect(tescia?.source.type).toBe('builtin')
+    expect(tescia?.manifest.id).toBe('tescia')
+    const premier = tesciaManifest.exercices[0]
+    expect(tescia?.assets.get(premier.png)).toMatch(
+      new RegExp(`/static/tescia/${premier.png}$`),
+    )
+    expect(Object.keys(referentielBanquesExternes())).toContain(
+      tesciaManifest.titre,
+    )
+    expect(
+      clesBanquesPartageables([uuidBanqueExterne('tescia', premier.id)]),
+    ).toEqual([])
   })
 
   it('résout les assets en URL statiques sous static/ffjm/ (ni blob, ni API forge)', async () => {
@@ -91,7 +130,8 @@ describe('chargerBanquesIntegrees', () => {
   it('n’est pas retirable par supprimerBanque', async () => {
     await chargerBanquesIntegrees()
     await supprimerBanque('builtin:ffjm')
-    expect(get(banquesExternes)).toHaveLength(1)
+    await supprimerBanque('builtin:tescia')
+    expect(get(banquesExternes)).toHaveLength(2)
   })
 
   it('n’ajoute aucune clé partageable (pas de paramètre bq dans les liens)', async () => {
@@ -122,7 +162,10 @@ describe('chargerBanquesIntegrees', () => {
     banquesExternes.update((liste) => [...liste, versionTest])
 
     const referentiel = referentielBanquesExternes()
-    expect(Object.keys(referentiel)).toEqual(['FFJM en cours de test'])
+    expect(Object.keys(referentiel)).toEqual([
+      'FFJM en cours de test',
+      tesciaManifest.titre,
+    ])
     expect(retrieveResourceFromUuid(referentiel, uuid)).toMatchObject({
       png: 'https://forge.example/tirelire.png',
     })
@@ -132,6 +175,7 @@ describe('chargerBanquesIntegrees', () => {
     await supprimerBanque(versionTest.source.cle)
     expect(Object.keys(referentielBanquesExternes())).toEqual([
       ffjmManifest.titre,
+      tesciaManifest.titre,
     ])
     expect(preambuleBanque('ffjm')?.tex).toBe('% préambule')
   })
