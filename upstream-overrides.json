@@ -78,5 +78,9 @@
   "src/lib/onboarding/tour.css": {
     "sha256": "2d1b6b6a2c55d4d5df52356a225e59bd2e94238eaa8e4b54644ffffe169f19ff",
     "reason": "Habillage AxioMaths (DataGrade) : visite guidée au nom et aux couleurs AxioMaths, mention MathALÉA conservée."
+  },
+  "src/components/keyboard/Keyboard.svelte": {
+    "sha256": "720969e7dc7b9ae30a866abf1a05b736780cc495c0b91def7cee3aaedf5f16b7",
+    "reason": "AxioMaths : champ en cours de saisie gardé visible au-dessus du clavier virtuel"
   }
 }
