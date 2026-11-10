@@ -1,0 +1,35 @@
+\begin{enumerate}[start=6]
+\item La dérivée du premier terme est :
+$\left(12,25 t\right)' = 12,25.$
+
+Le second terme est de la forme $\cos(u(x))$ dont la dérivée est :
+\[(\cos(u(x)))' = u'(x) \times (-\sin(u(x))).\]
+
+On a donc :
+\begin{align*}
+\left(\dfrac{13,91}{\np{12466}} \cos(\np{12466}t)\right)' &= \dfrac{13,91}{\np{12466}} \times (-\np{12466} \sin(\np{12466}t)) \\
+&= -13,91 \sin(\np{12466}t).
+\end{align*}
+
+Ainsi, on a :
+\[F'(t) = 12,25 - 13,91 \sin(\np{12466}t) = f(t).\]
+
+$F$ est donc bien une primitive de $f$ sur $[0~;~+\infty[$.
+
+\item L'énergie $E_{\text{mod}}$ est donnée par l'intégrale :
+\[E_{\text{mod}} = \int_{0}^{60} f(t) \, \mathrm{d}t = F(60) - F(0).\]
+
+Calculons $F(60)$ :
+\begin{align*}
+F(60) &= 12,25 \times 60 + \dfrac{13,91}{\np{12466}} \cos(\np{12466} \times 60) \\
+&= 735 + \dfrac{13,91}{\np{12466}} \cos(\np{747960}).
+\end{align*}
+
+Calculons $F(0)$ :
+\[F(0) = 12,25 \times 0 + \dfrac{13,91}{\np{12466}} \cos(0) = \dfrac{13,91}{\np{12466}}.\]
+
+Ainsi :
+\[E_{\text{mod}} = 735 + \dfrac{13,91}{\np{12466}} \cos(\np{747960}) - \dfrac{13,91}{\np{12466}} \approx 735 \text{ mJ}.\]
+\end{enumerate}
+
+\bigskip

@@ -1,0 +1,73 @@
+
+\medskip
+
+%Dans cette exercice, on étudie la probabilité de gain des deux jeux ci-dessous.
+%
+%\bigskip
+%
+\textbf{Partie A }
+%
+%\medskip
+%
+%\begin{tabularx}{\linewidth}{X|X}
+%Jeu 1&Jeu 2\\
+%Un sac contient cinq boules indiscernables au toucher, dont une portant la lettre N, deux, portant la lettre G et deux portant la lettre P.& Une roue à six  secteurs angulaires identiques numérotées de un à six.
+%\end{tabularx}
+%
+\medskip
+
+\begin{enumerate}
+\item %On considère le jeu 1.
+
+%On pioche une boule au hasard dans ce sac et on note la lettre inscrite sur la boule choisie.
+
+%On considère qu'on a gagné si on pioche la lettre G.
+
+%Montrer que la probabilité de gagner avec ce jeu et de $\dfrac25$.
+Il y a deux boules avec la lettre G sur 5 boules, d'où $P(G) = \dfrac25 = \dfrac{4}{10} = 0,4$.
+\item %On considère le jeu 2.
+
+%On fait tourner la roue et on note le nombre d'inscrits sur le secteur pointé par la flèche.
+
+%On considère qu'on a gagné si on s'arrête sur un nombre premier.
+
+%Quelle est la probabilité de gagner à ce jeu ?
+Les nombres premiers sont : 2, \: 3 et 5 : il y a 3 cas favorables sur 6, donc la probabilité de gagner est égale à $\dfrac36 = \dfrac12 = 0,5$.
+\item 
+	\begin{enumerate}
+		\item %Quel est le jeu qui présente la plus faible probabilité de gagner ?
+On a $0,4 < 0,5$ :c'est le jeu 1 qui a la plus faible probabilité de gagner.
+		\item %Proposer une liste de boules à rajouter pour que la probabilité de gagner avec le jeu 1 soit de $\dfrac14$.
+On a $\dfrac14 = \dfrac28$ : le numérateur représente le nombre de boules G (on les a déja) et le dénominateur le nombre total de boules (8). Comme on a déjà 5 boules il faut donc en rajouter 3 qui ne soient pas marquées G, par exemple 3 P ou 2P et 1 N.
+	\end{enumerate}
+\end{enumerate}
+
+\bigskip
+
+\textbf{Partie B}
+
+\medskip
+
+%\textbf{Dans cette partie, toute trace de recherche sera valorisé}
+%
+%\medskip
+%
+%On choisit finalement de combiner ces deux jeux.
+%
+%Dans un premier temps, le joueur doit tirer une boule dans le sac du jeu 1.
+%
+%On doit ensuite faire tourner la roue du jeu 2.
+%
+%Le joueur gagne un lot s'il a tiré une boule portant la lettre G et si la roue s'arrête sur un secteur angulaire dont le numéro est un nombre premier.
+%
+%Quelle est la probabilité de gagner à cette combinaison des deux jeux ?
+\textbf{Méthode 1} : principe multiplicatif :
+
+$P(\text{gagner}) = P(\text{G}) \times P(\text{nombre premier}) = \dfrac25 \times \dfrac12 = \dfrac15 = \dfrac{2}{10} = 0,2$.
+
+\textbf{Méthode 2} On peut faire un tableau à double entrée de 5 colonnes (tirage de l'une des boules) et 6 lignes (arrêt sur l'un des six secteurs).
+
+Les cas favorables sont G1-2, G1-3, G1-5 et G2-2, G2-3 et G2-5 soit 6 cas favorables sur 30, d'où une probabilité de $\dfrac{6}{30} = \dfrac{1\times 6}{6 \times 5} = \dfrac15 = 0,2$.
+
+\bigskip
+

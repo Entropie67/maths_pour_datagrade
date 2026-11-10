@@ -1,0 +1,47 @@
+{
+  "bac": {
+    "projectId": 447,
+    "commit": "d4b0917452c3cf73cfb1fe5b0ce3b8d4ace1ebee",
+    "url": "https://forge.apps.education.fr/coopmaths/bac"
+  },
+  "dnb": {
+    "projectId": 452,
+    "commit": "6ac6503b8c315b698f34cb2893504b08aa4d2cd0",
+    "url": "https://forge.apps.education.fr/coopmaths/dnb"
+  },
+  "dnbpro": {
+    "projectId": 1775,
+    "commit": "0b8270c2e5896dfa80cff1cc4ad20ba7b905decb",
+    "url": "https://forge.apps.education.fr/coopmaths/dnbpro"
+  },
+  "e3c": {
+    "projectId": 442,
+    "commit": "66a89ecf18cb8b814cf5e13b2abd966309471e90",
+    "url": "https://forge.apps.education.fr/coopmaths/e3c"
+  },
+  "eam": {
+    "projectId": 7234,
+    "commit": "0be8a35d9ee9efb9f5fcb21193abef4193ea4394",
+    "url": "https://forge.apps.education.fr/coopmaths/eam"
+  },
+  "crpe": {
+    "projectId": 448,
+    "commit": "148f851272f2cf7828baeb40b33f6f4a54d73df4",
+    "url": "https://forge.apps.education.fr/coopmaths/crpe"
+  },
+  "flashbac": {
+    "projectId": 2327,
+    "commit": "0e1ffa1438d93f35ec7c5fcb15d466b366614ea5",
+    "url": "https://forge.apps.education.fr/coopmaths/flashbac"
+  },
+  "sti2d": {
+    "projectId": 3024,
+    "commit": "b835627d6260d4ed95c1cd6447cbacda5883d15c",
+    "url": "https://forge.apps.education.fr/coopmaths/bac-sti2d"
+  },
+  "stl": {
+    "projectId": 3025,
+    "commit": "1b2eb2f55636758a8a990abc5aa398145d851173",
+    "url": "https://forge.apps.education.fr/coopmaths/bac-stl"
+  }
+}

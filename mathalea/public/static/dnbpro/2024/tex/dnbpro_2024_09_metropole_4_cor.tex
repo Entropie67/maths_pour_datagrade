@@ -1,0 +1,102 @@
+
+\medskip
+
+Gabin installe une cuve de récupération d'eau pour arroser son potager. Cette cuve est
+représentée sur la figure 1 ci-dessous par le pavé droit ABCDIJGH. \\
+La figure 2 représente une vue de côté de l'installation.\\
+La cuve est protégée par le toit rectangulaire incliné FKLE.
+
+%fig
+%\begin{center}
+\psset{unit=1cm,arrowsize=2pt 3}
+\begin{pspicture}(0,0)(15,9.8)
+%\psgrid[subgriddiv=5,  gridlabels=0, gridcolor=gray, subgridcolor=lightgray] 
+\pspolygon(0.3,1.4)(4.3,1.4)(0.3,7.7)%DEF
+\psline(4.3,1.4)(8,2.9)(4,9.2)(0.3,7.7)%ELKF
+\psline(1.9,1.4)(1.9,5.2)(0.3,5.2)%CBA
+\psline{<->}(4.7,1.2)(8.1,2.6)\rput{20}(7.,1.7){4,0 m}
+\psline[linestyle=dashed](0.3,1.4)(4,2.9)(8,2.9)%DIL
+\psline[linestyle=dashed](1.9,1.4)(5.6,2.9)(5.6,6.7)(1.9,5.2)%CHGB
+\psline[linestyle=dashed](0.3,5.2)(4,6.7)(5.6,6.7)%AJG
+\psline[linestyle=dashed](4,2.9)(4,9.2)%IK
+\psframe(0.3,5.2)(0.55,5.45)\psframe(0.3,1.4)(0.55,1.65)\psframe(1.9,1.4)(2.15,1.65)
+\rput(2.3,0.8){Figure 1}
+\uput[l](0.3,5.2){A} \uput[dl](1.9,5.2){B} \uput[ul](1.9,1.4){C} \uput[dl](0.3,1.4){D}
+\uput[dr](4.3,1.4){E} \uput[ul](0.5,7.7){F} \uput[ur](5.6,6.7){G} \uput[ur](5.9,2.9){H}
+\uput[ul](4,2.9){I} \uput[ul](4,6.7){J} \uput[u](4,9.2){K} \uput[ur](8,2.9){L}
+%% gouttière
+{\psset{linewidth=0.7pt}
+\psplot{0.3}{4.4}{ 15 x mul 37 div 1402 185 div add }
+\psarc(0.5,7.7){0.2}{-180}{0} \psarc(4.6,9.36){0.2}{-180}{0}
+\psline(0.7,7.7)(4.8,9.36) \psline(0.5,7.5)(4.6,9.16)
+\psline(0.3,7.7)(0.7,7.7) \psline(4.4,9.36)(4.8,9.36)
+\psline(4.5,9.2)(4.5,6.4)\psline(4.7,9.2)(4.7,6.4)
+\psarc(4.6,6.45){0.1}{-145}{-35}}
+\psline{->}(6,8.8)(5,9.2) \uput[r](6,8.8){Gouttière}
+%%%%%%%%%%%
+\pspolygon(10,2.1)(14,2.1)(10,8.3)%DEF
+\psline(11.6,2.1)(11.6,5.8)(10,5.8)%CBA
+\psline{<->}(10,1.9)(14,1.9)\uput[d](12,1.9){2,5 m}
+\psline{<->}(14.3,2.3)(10.4,8.5)\rput(12.7,5.7){4,6 m}
+\psline{<->}(9.5,5.8)(9.5,8.4)\rput{90}(9.3,7.1){1,6 m}
+\psframe(10,5.8)(10.25,6.05)\psframe(11.6,2.1)(11.85,2.35)\psframe(10,2.1)(10.25,2.35)
+\uput[l](10,5.8){A} \uput[dl](11.6,5.8){B} \uput[ul](11.6,2.1){C} \uput[dl](10,2.1){D}
+\uput[dr](14,2.1){E} \uput[u](10,8.3){F}
+\uput[u](7.4,0){Les figures 1 et 2 ne sont pas à l'échelle}
+\rput(11.8,0.8){Figure 2}
+\uput{2pt}[u](13,9){Les points D, A et F} \uput{2pt}[d](13,9){sont alignés}
+\uput{2pt}[u](13,8){Les points E, B et F} \uput{2pt}[d](13,8){sont alignés}
+\end{pspicture}
+%\end{center}
+
+\begin{enumerate}
+\item Le solide EDFKLI est un prisme droit.
+
+%Indiquer sur la copie la nature géométrique du solide EDFKLI en choisissant parmi les
+%noms suivants :
+%
+%$\bullet~$ cube\hfill $\bullet~$ triangle\hfill $\bullet~$ prisme droit \hfill $\bullet~$ cylindre\hfill~
+
+\item On considère le triangle EDF rectangle en D représenté sur la figure 2.
+
+%En utilisant le théorème de Pythagore, vérifier que la longueur DF arrondie au dixième est $3,9$~m.
+D'après le théorème de Pythagore dans  le triangle EDF rectangle en D, on a:
+$\text{EF}^2 = \text{ED}^2 + \text{DF}^2$.
+
+D'après la figure: $\text{EF}=4,6$ et $\text{ED}=2,5$.
+
+Donc $4,6^2 = 2,5^2 + \text{DF}^2$ donc $\text{DF}^2 =4,6^2-2,5^2=14,91$.
+
+$\text{DF}^2 = \ds\sqrt{14,91}\approx 3,9$
+
+Donc la longueur DF arrondie au dixième est $3,9$~m.
+
+\item %Calculer, en mètre, la longueur AD.
+Les points D, A et F sont alignés dans cet ordre donc $\text{DA} + \text{AF}  = \text{DF}$.
+
+Donc: $\text{AD} =\text{DF} -\text{AF} =3,9 - 1,5=2,4$; la longueur AD mesure $2,4$~m.
+
+\item Les droites (AB) et (DC) sont parallèles.
+
+%Montrer, en utilisant le théorème de Thalès, que la longueur AB arrondie à l'unité est égale à 1~m.
+On utilise le théorème de Thalès dans les triangles FAB et FDE:
+
+$\dfrac{\text{AB}}{\text{DE}} = \dfrac{\text{FA}}{\text{FD}}$
+donc
+$\dfrac{\text{AB}}{\text{2,5}} = \dfrac{1,6}{3,9}$
+donc
+$ \text{AB} = \dfrac{1,6\times 2,5}{3,9} \approx 1,03$
+
+On déduit que la longueur AB arrondie à l'unité est égale à 1~m.
+ 
+\item %Calculer, en mètre cube $\left(\text{m}^3\right)$, le volume du solide ABCDIJGH.
+Le  solide ABCDIJGH a pour dimensions $\text{AB}=1$, $\text{AC}= 2,4$ et  $\text{DI}= \text{EL} =4,0$. 
+ 
+Son volume est donc, en m$^3$, de: $1\times 2,4\times 4,0=9,6$.
+
+%\textbf{Indication :} Volume d'un parallélépipède rectangle : $V = L \times l \times h$.
+
+\item  1 m$^3 = \np{1000}$~L, donc le récupérateur d'eau contient \np{9600} litres.
+\end{enumerate}
+
+

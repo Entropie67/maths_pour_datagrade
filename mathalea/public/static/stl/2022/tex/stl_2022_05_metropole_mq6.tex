@@ -1,0 +1,25 @@
+
+\medskip
+
+ABCD est un carré de côté 4 et ABF est un triangle rectangle en B avec BF $= 3$ comme indiqué sur la figure ci-dessous.
+
+\begin{center}
+\psset{unit=1cm}
+\begin{pspicture}(6.2,4.1)
+%\psgrid
+\psframe(0.2,0.2)(3.4,3.4)%CBAD
+\psline(3.4,0.2)(5.8,0.2)(3.4,3.4)%BFA
+\psline(0.2,3.4)(3.4,0.2)
+\psline(0.1,1.8)(0.3,1.8)\psline(3.3,1.8)(3.5,1.8)
+\psline(1.8,3.5)(1.8,3.3)\psline(1.8,0.3)(1.8,0.1)
+\uput[d](4.6,0.2){3}
+\uput[l](0.2,1.8){4}
+\uput[u](3.4,3.4){A} \uput[d](3.4,0.2){B} \uput[d](0.2,0.2){C} \uput[u](0.2,3.4){D} \uput[d](5.8,0.2){F}
+\psframe(3.4,0.2)(3.65,0.45)
+\psarc(3.4,0.2){0.5}{90}{135}\rput(3.1,0.9){$45\degres$}
+\psdots(3.4,3.4)
+\end{pspicture}
+\end{center}
+
+Donner la valeur du produit scalaire $\vect{\text{BF}} \cdot \vect{\text{BD}}$.
+

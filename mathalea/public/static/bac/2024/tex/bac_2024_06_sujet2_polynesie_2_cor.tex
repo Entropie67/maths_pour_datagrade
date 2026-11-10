@@ -1,0 +1,107 @@
+
+\medskip
+
+%\emph{Cet exercice est un questionnaire à choix multiples (QCM) qui comprend cinq questions. Les cinq questions sont indépendantes.\\
+%Pour chacune des questions, \textbf{une seule des quatre réponses est exacte}. Le candidat indiquera sur sa copie le numéro de la question suivi de la lettre correspondant à la réponse exacte.\\
+%Aucune justification n'est demandée.\\
+%Une réponse fausse, une réponse multiple ou une absence de réponse ne rapporte, ni n'enlève aucun point.}
+%
+%\medskip
+
+\begin{enumerate}
+\item La solution $f$ de l'équation différentielle $y'=-3y + 7$ telle que $f(0) = 1$ est la fonction définie sur $\R$ par :
+
+\smallskip
+
+\begin{center}
+\renewcommand\arraystretch{1.9}
+\begin{tabularx}{\linewidth}{X X}
+\textbf{A. } $f(x) = \e^{-3x}$&\textbf{B. } $f(x) = - \dfrac43 \e^{-3x} + \dfrac73$\\
+\textbf{C. } $f(x) = \e^{-3x} + \dfrac73$&\textbf{D.~} $f(x) = - \dfrac{10}{3} \e^{-3x} - \dfrac73$
+\end{tabularx}
+\end{center}
+
+L'équation différentielle $y' = - 3y$ a pour solutions les fonctions $x \longmapsto f(x) = K \e^{- 3x}$, avec $K \in \R$.
+
+La fonction $x \longmapsto \alpha$, avec $\alpha \in \R$ est solution de l'équation différentielle $y' = - 3y + 7$ si et seulement si $y' = 0 = - 3\alpha + 7 \iff 3\alpha = 7 \iff \alpha = \dfrac73$.
+
+On sait qu'alors les solutions de l'équation différentielle $y' = - 3y + 7$ sont les fonctions $x \longmapsto K \e^{- 3x} + \dfrac73$.
+
+En particulier la fonction $f$ solution telle que $f(0) = 1 \iff K + \dfrac73 = 1 \iff K = - \dfrac43$.
+
+La seule solution est donc la fonction définie par $f(x) = - \dfrac43\e^{-3x} + \dfrac73$ : réponse \textbf{B.}
+\item La courbe d'une fonction $f$ définie sur $[0~;~+\infty[$ est donnée ci-dessous.
+	
+\begin{center}
+\psset{unit=1.4cm}
+\begin{pspicture}(-0.5,-0.25)(6.25,4.25)
+\pscustom[fillstyle=solid,fillcolor=lightgray]{\psline(1,0)(1,3)\psplot[plotpoints=2000,linewidth=1.25pt,linecolor=red]{1}{5}{0.00196  x 5 exp mul 0.05764 x  4 exp mul sub 0.62643 x  3 exp mul add 3.00524 x dup mul mul sub 5.43449  x mul add}\psline(5,0.4)(5,0)}
+\psgrid[gridlabels=0pt,subgriddiv=1]
+\psaxes[linewidth=1.25pt,labelFontSize=\scriptstyle]{->}(0,0)(0,0)(6.25,4.25)
+\psplot[plotpoints=2000,linewidth=1.25pt,linecolor=red]{0}{6.25}{0.00196  x 5 exp mul 0.05764 x  4 exp mul sub 0.62643 x  3 exp mul add 3.00524 x dup mul mul sub 5.43449  x mul add}
+\pspolygon[fillstyle=hlines](1,0)(1,3)(2,3)(2,2)(3,2)(3,0)
+\pspolygon[linecolor=blue,linewidth=1.25pt](1,0)(1,4)(2,4)(2,3)(3,3)(3,2)(4,2)(4,1)(5,1)(5,0)
+\end{pspicture}
+\end{center}
+
+%Un encadrement de l'intégrale $I = \displaystyle\int_1^5 f(x) \:\text{d}x$ est :
+%
+%\begin{center}
+%\begin{tabularx}{\linewidth}{X X}
+%\textbf{A. } $0 \leqslant I \leqslant 4$&\textbf{B. } $1 \leqslant I \leqslant 5$\\
+%\textbf{C. } $5 \leqslant I \leqslant 10$&\textbf{D. } $10 \leqslant I \leqslant 15$
+%\end{tabularx}
+%\end{center}
+Le dessin est clair : la fonction est positive sur l'intervalle[1~;~5] ; l'intégrale est (en unités d'aire) la mesure de la surface limitée par la représentation graphique de $f$, l'axe des abscisses et les droites d'équations $x = 1$ et $x = 5$.
+
+La surface grise contient les 5 carreaux hachurés et est inscrite dans le polygone de 10 unités en bleu. Réponse \textbf{C.}
+\item %On considère la fonction $g$ définie sur $\R$ par $g(x) = x^2 \ln \left(x^2 + 4\right) $.
+
+%Alors $\displaystyle\int_0^2 g'(x)\:\text{d}x$ vaut, à $10^{-1}$ près :
+
+%\begin{center}
+%\begin{tabularx}{\linewidth}{X X}
+%\textbf{A. } 4,9&\textbf{B. } $8,3$\\
+%\textbf{C. } $1,7$&\textbf{D. } $7,5$
+%\end{tabularx}
+%\end{center}	
+On sait que si $g'$ est la dérivée de $g$, alors $g$ est une primitive de la fonction $g'$, donc :
+
+$\displaystyle\int_0^2 g'(x)\:\text{d}x = \left[x^2 \ln \left(x^2 + 4\right)\right]_0^2 = 2^2\ln \left(2^2 + 2 \right) = 4\ln 4 + 4)  = 4\ln 8$ ou $4\ln 2^3 = 3 \times 4 \ln 2 = 12\ln 2 \approx 8,31$ soit 8,3 au dixième près. Réponse \textbf{B.}
+	\smallskip
+	
+\item %Une professeure enseigne la spécialité mathématiques dans une classe de $31$ élèves de terminale.
+	
+%Elle veut former un groupe de 5 élèves. De combien de façons différentes peut-elle former 
+%un tel groupe de 5 élèves ?
+
+%\begin{center}
+%\begin{tabularx}{\linewidth}{X X}
+%\textbf{A. } $31^5$&\textbf{B. } $31\times30\times29\times28\times27$\\
+%\textbf{C. } $31+30+29+28+27$&\textbf{D. } $\dbinom{31}{5}$
+%\end{tabularx}
+%\end{center}
+Le nombre de groupes de 5 élèves parmi les 31 est $\displaystyle\binom{31}{5}$. Réponse : \textbf{D.}
+	\item %La professeure s'intéresse maintenant à l'autre spécialité des 31 élèves de son groupe :
+	
+%\begin{itemize}
+%	\item 10 élèves ont choisi la spécialité physique-chimie ;
+%	\item 20 élèves ont choisi la spécialité SES ;
+%	\item 1 élève a choisi la spécialité LLCE espagnol.
+%\end{itemize}
+%	
+%Elle veut former un groupe de 5 élèves comportant exactement 3 élèves ayant choisi la
+%	spécialité SES. De combien de façons différentes peut-elle former un tel groupe ?
+	
+%\begin{center}
+%\renewcommand\arraystretch{1.9}
+%\begin{tabularx}{\linewidth}{X X}
+%\textbf{A. } $\displaystyle\binom{20}{3} \times \binom{11}{2}$&\textbf{B. } $\displaystyle\binom{20}{3} + \binom{11}{2}$\\
+%\textbf{C. } $\displaystyle\binom{20}{3}$&\textbf{D. } $20^3 \times 11^2$
+%\end{tabularx}
+%\end{center}
+Elle choisit 3 élèves parmi les 20 faisant SES : elle a $\displaystyle\binom{20}{3}$ possibilités ; ensuite dans chacun de ces cas elle choisit 2 élèves parmi les $31 - 20 = 11$ élèves qui ne font pas SES, ce qui fait $\displaystyle\binom{20}{3} \times \binom{11}{2}$ possibilités. Réponse \textbf{A.}
+\end{enumerate}
+
+\bigskip
+

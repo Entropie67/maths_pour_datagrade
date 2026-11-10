@@ -1,0 +1,112 @@
+
+\medskip
+
+\textbf{Les questions 1, 2, 3 et 4 sont indépendantes les unes des autres.}
+
+\bigskip
+
+\textbf{Question 1}
+
+\medskip
+
+\begin{enumerate}
+\item On considère l'équation différentielle :
+\[(E) : \quad  y'+ 100y = 8.\]
+
+Déterminer la solution $v$ définie sur $[0~;~ +\infty[$ de cette équation différentielle, qui vérifie la condition initiale $v(0) = 0$.
+\item La fonction $v$ déterminée à la question précédente modélise la vitesse (exprimée en
+m.s$^{-1}$) de chute d'une bille dans un liquide visqueux en fonction du temps $t$ écoulé depuis le début de la chute (exprimé en s).
+
+Déterminer la vitesse, arrondie à $0,001$ m.s$^{-1}$, de la bille après $0,01$ seconde de chute.
+\end{enumerate}
+
+\bigskip
+
+\textbf{Question 2}
+
+\medskip
+
+\begin{center}
+\fbox{
+\begin{minipage}{0.9\textwidth}
+\textbf{Rappel :} pour $a$ et $b$ deux réels, on a les formules suivantes :
+\[\bullet~~\cos(a + b) = \cos (a) \cos(b) - \sin(a) \sin(b)\]
+\[\bullet~~\cos(a - b) = \cos (a) \cos(b) + \sin(a) \sin(b)\]
+\[\bullet~~\sin(a + b) = \sin(a) \cos(b) + \cos (a) \sin(b)\]
+\[\bullet~~\sin(a - b) = \sin(a) \cos(b) - \cos (a) \sin(b)\]
+\end{minipage}}
+\end{center}
+
+La tension $u$ (exprimée en volt) aux bornes d'un dipôle en fonction du temps $t$ (exprimé en
+seconde) est donnée par :
+
+\[u(t) = \dfrac{7\sqrt{3}}{4}\cos (100t) - \dfrac{7}{4}\sin (100t).\]
+
+\begin{enumerate}
+\item Transformer l'écriture de $u$ sous la forme $u(t) = U_{\text{max}}\cos(\omega t + \varphi)$ où :
+
+\setlength\parindent{1cm}
+\begin{itemize}
+\item[$\bullet~~$]$U_{\text{max}}$ représente la tension maximale (exprimée en V) ;
+\item[$\bullet~~$]$\omega$ représente la pulsation (exprimée en rad$\cdot \text{s}^{-1}$) ;
+\item[$\bullet~~$]$\varphi$ représente le déphasage (exprimé en rad).
+\end{itemize}
+\setlength\parindent{0cm}
+
+\item En déduire la valeur du déphasage $\varphi$ de $u(t)$.
+\end{enumerate}
+
+\bigskip
+
+\textbf{Question 3}
+
+\medskip
+
+On considère les deux fonctions $f$ et $g$ définies et continues sur [0~;~9] respectivement par:
+
+\[f(x) = x^2 - 2x + 4  \quad \text{et} \quad g(x) = 7x+4.\]
+
+Les représentations graphiques des deux fonctions sont données ci-dessous.
+
+\begin{center}
+\psset{unit=1cm,yunit=0.1cm}
+\begin{pspicture}(-1,-1)(10,75)
+\psaxes[linewidth=1.25pt,Dy=5,labelFontSize=\scriptstyle]{->}(0,0)(0,0)(10,75)[$x$,-90][$y$,180]
+
+\pscustom[fillstyle=solid,fillcolor=lightgray]{
+\psplot[plotpoints=2000,linewidth=1.25pt,linecolor=red]{0}{9}{x dup mul x 2 mul sub 4 add}
+\psplot[plotpoints=2000,linewidth=1.25pt,linecolor=blue]{9}{0}{x 7 mul  4 add}}
+\psplot[plotpoints=2000,linewidth=1.25pt,linecolor=red]{0}{9}{x dup mul x 2 mul sub 4 add}
+\psplot[plotpoints=2000,linewidth=1.25pt,linecolor=blue]{0}{9}{x 7 mul  4 add}
+\uput[dr](8.5,56){\red $\mathcal{C}_f$}
+\uput[ul](8.5,63){\blue $\mathcal{C}_g$}
+\end{pspicture}
+\end{center}
+
+Déterminer la valeur exacte de l'aire, exprimée en unité d'aire, située entre les courbes représentatives de ces deux fonctions.
+
+\bigskip
+
+\textbf{Question 4}
+
+\medskip
+
+La tension $u_c(t)$ (exprimée en voit), aux bornes d'un condensateur lors de sa charge, est modélisée par:
+
+\[u_c(t) = E\left(1 - \e^{-\frac{t}{RC}}\right) \, \text{ où }\,  t\,  \text{désigne le temps, exprimé en seconde.}\]
+
+Les caractéristiques du condensateur utilisé sont :
+
+\setlength\parindent{1cm}
+\begin{itemize}
+\item[$\bullet~~$] Tension maximale : $E = 4$ V 
+\item[$\bullet~~$] Résistance : $R = 10^3$~$\Omega$ 
+\item[$\bullet~~$] Capacité : $C = 2 \times 10^{-3}$ F
+\end{itemize}
+\setlength\parindent{0cm}
+
+Déterminer le temps de charge $t$ (exprimé en seconde, arrondi à $0,1$~s près) nécessaire pour obtenir une tension aux bornes du condensateur égale à la moitié de sa tension maximale.
+
+\bigskip
+
+

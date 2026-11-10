@@ -1,0 +1,75 @@
+
+\medskip
+
+\begin{enumerate}
+\item $\ds \lim_{x\to+\infty}f(x)=\lim_{x\to +\infty}\e^{-x}+\lim_{x\to +\infty} 0,5x-3=0+(+\infty)=+\infty.$
+
+\item Prenons deux points appartenant à cette droite et calculons son coefficient directeur.
+
+Par exemple M$(-2~;~-1)$ et N$(2~;~-3)$, le coefficient directeur de (MN) est  : 
+\[\dfrac{-3+1}{2+2}=-\dfrac{1}{2}\ \text{d'où }\ f'(0)=-\dfrac{1}{2}.\]
+
+\item $f'(x)=-\e^{-x}+\np{0.5}\ \text{d'où }\ f'(0)=-\e^0+\np{0.5}=-1+\np{0.5}=-\np{0.5}.$ 
+
+Nous obtenons le même résultat qu'à la question 2.
+
+\item Étudions le signe de $f'(x)$ :
+
+\begin{align*}
+-\e^{-x}+\dfrac{1}{2}&>0 \\
+-\e^{-x}&>-\dfrac{1}{2} \\
+\e^{-x}&<\dfrac{1}{2} \\
+-x&<-\ln 2 \\
+x&>\ln 2
+\end{align*}
+
+Si pour tout $x\in I,\:f'(x)< 0$ alors $f$ est  strictement décroissante sur $I$.
+
+Sur $]-\infty~;~\ln 2[,\:f'(x)<0$ par conséquent $f$ est strictement décroissante sur cet intervalle.
+
+Si pour tout $x\in I, \:f'(x)>0 $ alors la fonction $f$ est strictement croissante sur $I$.
+
+Sur $]\ln 2~;~+\infty[,\:f'(x)>0$ par conséquent $f$ est strictement croissante sur  cet intervalle.
+
+Dressons le tableau de variations :
+
+\begin{center}
+\psset{xunit=1cm,yunit=1.3cm}
+\begin{pspicture}(12,3)
+%\psgrid
+\psframe(12,3)
+\psline(0,1.5)(12,1.5)\psline(0,2.5)(12,2.5)  \psline(3.5,0)(3.5,3)
+\uput[u](1.75,2.5){$x$} \uput[ur](3.35,2.5){$-\infty$}\uput[u](11.6,2.5){$+\infty$}\uput[u](7.8,2.5){$\ln 2$}
+\uput[u](1.3,1.75){Signe de $f'(x)$}\uput[u](1.3,0.5){Variations de $f$}
+\psline[linestyle=dotted,linewidth=0.5pt](7.8,1.5)(7.8,2.5)
+\uput[u](7.8,1.75){$0$} 
+\uput[u](5.7,1.75){$-$}
+\uput[u](10.2,1.75){$+$}
+%\psline{->}(4,0.5)(8.2,1.25)
+\psline{->}(4,1.25)(7.1,0.5)\psline{->}(8.5,0.5)(11,1.25)
+\uput[dl](4.2,1.5){\small $+\infty$} \uput[u](8,0.15) {\small $\dfrac{\ln 2-5}{2}$}
+\uput[d](11.5,1.5){$+\infty$}
+\end{pspicture}
+\end{center}
+
+$f(\ln 2) =\e^{-\ln 2}+\frac{\ln 2}{2}-3=-\frac{1}2+\frac{\ln 2}{2}-3=\frac{\ln 2-5}{2}\approx -\np{2.15}$
+
+\item Dans le contexte de l'exercice la valeur $-1,29$ à $10^{-2}$ près renvoyée par l'exécution de l'instruction {\ttfamily abscisse()} est l'abscisse du point A.
+
+\item En rouge et gras, les modifications du programme Python :
+
+\begin{center}
+\begin{tabular}{|>{\ttfamily}l|}\hline
+from math import exp\\
+def abscisse():\\
+\quad $x=~$\textbf{\textcolor{red}{5.5}}\\
+\quad while exp$(-x)+0.5*x-3~\textbf{\textcolor{red}{<}}~0:$\\
+\quad \quad $x = x + 0.01$\\
+\quad return $x$ \\ \hline
+\end{tabular}
+\end{center}
+\end{enumerate}
+
+\bigskip
+
+

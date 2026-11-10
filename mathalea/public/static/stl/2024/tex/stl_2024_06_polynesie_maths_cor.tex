@@ -1,0 +1,42 @@
+
+\medskip
+
+\begin{enumerate}
+
+\item La bonne réponse est \textbf{a.}
+
+\begin{center}
+\fbox{\parbox{5cm}{\ttfamily
+from math import exp\\ 
+for k in range(10) :\\
+\hspace*{1cm}x=k/10       \\
+\hspace*{1cm}y=5*exp(2*x+1)  \\        
+\hspace*{1cm}print(y) }}
+\end{center}
+
+\item On résout dans $\R $ l'équation $f(x) = 5$ :
+
+\[f(x)=5
+\iff 5\e^{2x+1}=5
+\iff \e^{2x+1}=1
+\iff 2x+1=0
+\iff x=-\dfrac{1}{2}.\]
+
+\item $f(0)=5\e^{2\times 0+1} = 5\e \approx 13,6>5$, donc l'affirmation est \textbf{fausse}.
+
+\item 
+\begin{enumerate}
+	\item $F'(x) = \dfrac{5}{2}\times 2\e^{2x+1} = 5 \e^{2x+1}  = f(x)$, \\
+donc la fonction $F$ est une primitive sur $\R$ de la fonction $f$.
+		
+	\item 
+$\ds\int_0^1 f(x) \d x
+= F(1)-F(0)
+= \left ( \dfrac{5}{2}\e^{2\times 1+1} \right ) - \left ( \dfrac{5}{2}\e^{2\times 0+1} \right )
+= \dfrac{5}{2} \left ( \e^{3} - \e\right )\approx 43$.		
+\end{enumerate}
+\end{enumerate}
+
+\bigskip
+
+

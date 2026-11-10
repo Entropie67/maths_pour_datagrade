@@ -1,0 +1,42 @@
+\begin{center}
+\textbf{Une coulée comme Leon Marchand}
+\end{center}
+
+On appelle coulée la phase sous-marine qui suit le plongeon ou le virage d'un nageur.
+
+On suppose que le déplacement du nageur se produit à une profondeur constante lors de la coulée. Pendant cette phase, le sportif se laisse glisser dans l'eau, sans nager. Le mouvement du nageur est supposé rectiligne.
+
+La figure 1 ci-après représente l'évolution de la vitesse du nageur en fonction du temps.
+
+\begin{center}
+\psset{xunit=6cm,yunit=1.8cm,comma}
+\begin{pspicture}(-0.2,-0.35)(2,4)
+\psaxes[linewidth=1.25pt,Dx=0.2,Dy=0.5,labelFontSize=\scriptstyle](0,0)(0,0)(2,4)
+\multido{\n=0.00+0.04}{51}{\psline[linewidth=0.1pt](\n,0)(\n,4)}
+\multido{\n=0.0+0.2}{11}{\psline[linewidth=0.55pt](\n,0)(\n,4)}
+\multido{\n=0.0+0.1}{41}{\psline[linewidth=0.1pt](0,\n)(2,\n)}
+\multido{\n=0.0+0.5}{9}{\psline[linewidth=0.55pt](0,\n)(2,\n)}
+\psplot[plotpoints=2000,linewidth=1.25pt,linecolor=red]{0}{1.78}{3.64 2.71828 0.6 x mul exp div}
+\uput[d](1,-0.25){Temps (s)}\rput{90}(-0.2,2){Vitesse (m/s)}
+\end{pspicture}
+\medskip
+
+\textbf{Figure 1 - Vitesse du nageur en fonction du temps
+}
+\end{center}
+
+On détermine un modèle numérique à partir de  cette expérience. On suppose que la distance parcourue par le nageur durant la coulée, exprimée en mètre, en fonction du temps $t$, exprimée en seconde, est définie sur l'intervalle [0~;~2] par :
+
+\[f(t) = 3,64\ln(1 + t).\]
+
+\begin{enumerate}[start=5]
+\item Calculer $f(0)$.
+
+\item On admet que la vitesse du nageur, en m/s, est donnée, en fonction du temps en s, par $v(t) = \dfrac{3,64}{1 + t}$.
+
+Montrer que l'accélération, correspondant à la dérivée de $v$ est $a(t) = - \dfrac{3,64}{(1 + t)^2}$.
+
+\item Interpréter le signe de $a$ dans le contexte de l'exercice et vérifier la cohérence avec l'observation de la courbe représentative de la fonction $v$.
+\end{enumerate}
+
+\bigskip

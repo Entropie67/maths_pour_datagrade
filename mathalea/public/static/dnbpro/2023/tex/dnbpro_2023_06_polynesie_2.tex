@@ -1,0 +1,83 @@
+
+\textbf{Les calculs seront détaillés sur la copie.}
+
+\smallskip
+
+Hiro vient d'acheter un terrain dont on peut assimiler la forme à la figure ci-dessous.
+
+\medskip
+
+\textbf{Partie A - Semage du terrain}
+
+\medskip
+
+\begin{multicols}{2}
+\begin{enumerate}
+\item  \textbf{Calculer} l'aire de la figure 1
+\item \textbf{Indiquer} la longueur DC et \textbf{calculer} l'aire de la figure 2.
+\item \textbf{Calculer} la longueur DE et \textbf{calculer} l'aire de la figure 3.
+\item \textbf{Vérifier} que l'aire du terrain qu'il vient d'acheter est de \np{9300}~m$^2$
+\item Il voudrait semer de l'herbe de prairie sur la totalité du terrain. Les semences se vendent par sac de 12 kg, ce qui permet d'ensemencer \np{1200}~m$^2$.
+\begin{enumerate}
+\item \textbf{Calculer} la masse de semences nécessaire pour ensemencer les \np{9300}~m$^2$.
+\end{enumerate}
+\end{enumerate}
+
+\columnbreak
+
+\scalebox{0.9}{
+\psset{unit=0.4cm,radius=0pt,arrowsize=3pt 2}
+\def\xmin{-1}   \def\xmax{19} \def\ymin{-1}   \def\ymax{18}
+\begin{pspicture}(\xmin,\ymin)(\xmax,\ymax)
+%\psgrid[subgriddiv=1, gridlabels=0, gridcolor=lightgray]
+%\psaxes[labelFontSize=\scriptstyle, ticksize=-0pt 0pt](0,0)(\xmin,\ymin)(\xmax,\ymax)
+\Cnode*(12,0){E} \Cnode*(12,7){F} \Cnode*(18,7){C}  \Cnode*(12,7){D} 
+\Cnode*(12,15){B} \Cnode*(6,15){A} \Cnode*(6,7){F}   
+\uput[r](E){E} \uput[dl](F){F} \uput[dr](C){C} \uput[dr](D){D} 
+\uput[ur](B){B} \uput[ul](A){A} \uput[dr](C){C} 
+\pspolygon[fillstyle=solid,fillcolor=lightgray!50](A)(B)(C)(D)(E)(F)
+\psframe[fillstyle=solid,fillcolor=gray](B)(11.5,14.5)
+\psframe[fillstyle=solid,fillcolor=gray](D)(11.5,7.5)
+\psline[linestyle=dashed](B)(D)(F)
+\psline{<->}(6,17)(12,17) \rput*(9,17){60 m}
+\psline{<->}(4,15)(4,7) \rput*(4,11){80 m}
+\psline{<->}(1,15)(1,0) \rput*(1,7.5){150 m}
+\psline[linestyle=dotted](1,15)(A)
+\psline[linestyle=dotted](1,0)(E)
+\rput(15,7){\pmb{//}} \rput(9,7){\pmb{//}}
+\rput(9,11){\Huge\ding{172}} \rput(14,9){\Huge\ding{173}}
+\rput(10,5){\Huge\ding{174}}
+\end{pspicture}}
+\end{multicols}
+
+\begin{enumerate}[label=~]
+%\setcounter{enumi}{4}
+\item \begin{enumerate}
+\setcounter{enumii}{1}
+\item \textbf{Calculer} le nombre de sacs de semences qu'il devra acheter pour ensemencer l'ensemble de son terrain.
+\end{enumerate}
+\end{enumerate}
+\medskip
+
+\textbf{Partie B - Clôture du terrain}
+
+\medskip
+
+\begin{enumerate}
+\item Dans le triangle rectangle BDC rectangle en D, on veut déterminer la longueur BC
+\begin{enumerate}
+\item  \textbf{Citer} le théorème utilisé pour calculer cette longueur
+\item \textbf{Vérifier} que la longueur BC est égale à 100 m.
+\end{enumerate}
+\end{enumerate}
+
+On admet que EF = 92 m.
+
+\begin{enumerate}[resume]
+\item \textbf{Calculer} le périmètre du terrain.
+\item Il souhaiterait grillager le contour de son terrain.\\
+Il dispose de 460 m de grillage. Cette longueur de grillage est-elle suffisante ?\\ \textbf{Justifier} la réponse.
+\end{enumerate}
+ 
+\vspace{0.5cm} 
+ 

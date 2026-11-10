@@ -1,0 +1,98 @@
+
+\medskip
+
+On considère le programme de calcul suivant :
+
+\medskip
+
+\begin{itemize}
+\item[$\bullet~~$]Choisir un nombre
+\item[$\bullet~~$]Prendre le carré de ce nombre
+\item[$\bullet~~$]Multiplier le résultat par 2
+\item[$\bullet~~$]Ajouter le nombre de départ
+\item[$\bullet~~$]Soustraire 66
+\end{itemize}
+
+\medskip
+
+\begin{enumerate}
+\item 
+	\begin{enumerate}
+		\item Montrer que si le nombre choisi au départ est 4, le résultat obtenu est $-30$.
+		\item  Quel résultat obtient-on si le nombre choisi au départ est $-3$ ?
+	\end{enumerate}
+\item 
+	\begin{enumerate}
+		\item On s'intéresse au bloc d'instruction ci-dessous intitulé \og Programme de calcul \fg.
+On souhaite le compléter pour calculer le résultat obtenu avec le programme de calcul en fonction du nombre choisi au départ.
+
+On précise que deux variables ont été créées: \og nombre choisi\fg{} qui correspond au nombre choisi au départ, et \og Résultat \fg.
+
+\begin{center}
+\begin{scratch}
+\initmoreblocks{d\'efinir \namemoreblocks{Programme de calcul}}
+\blockvariable{mettre \selectmenu{Résultat} à \ovaloperator{\ovalnum{A} * \ovalvariable{Nombre choisi}}}
+\blockvariable{mettre \selectmenu{Résultat} à \ovaloperator{\ovalnum{B} * \ovalvariable{Résultat}}}
+\blockvariable{mettre \selectmenu{Résultat} à \ovaloperator{\ovalvariable{Résultat} + \ovalvariable{Nombre choisi}}}
+\blockvariable{mettre \selectmenu{Résultat} à \ovaloperator{\ovalvariable{Résultat} - \ovalnum{66}}}
+\end{scratch}
+\end{center}
+
+Écrire sur votre copie le contenu qui doit être inséré dans les emplacements A et B. 
+\textbf{Aucune justification n'est attendue pour cette question.}
+
+		\item  Lucie insère le bloc précédent dans le script ci-dessous et observe la réponse donnée par le lutin:
+
+\medskip
+
+\begin{minipage}{0.6\linewidth}
+\begin{center}
+Script
+\end{center}
+\begin{scratch}
+\blockinit{Quand \greenflag est cliqué}
+\blockvariable{mettre \selectmenu{nombre choisi} à \ovalnum{0}}
+\blockrepeat{répéter \ovalnum{20} fois}
+{
+\blocklist{Programme de calcul}
+\blockif{si \booloperator{\ovalmove{Résultat} = \ovalnum{0}} alors}
+{
+\blocksound{dire \ovaloperator{regrouper \ovalnum{On peut choisir comme nombre de départ} et \ovalvariable{nombre choisi}} }
+}
+\blockvariable{mettre \selectmenu{nombre choisi} à \ovaloperator{\ovalvariable{nombre choisi} + \ovalnum{0,5}}}
+}
+\end{scratch}
+\end{minipage}
+\begin{minipage}{0.37\linewidth}
+\begin{center}
+Réponse du lutin\\
+\end{center}
+On peut choisir comme nombre de départ $5,5$.\\
+\\
+\qquad\includegraphics[scale=0.7]{Lutin}\\
+\\
+\\
+\\
+\\
+\\
+\\
+\\
+\\
+\\
+\end{minipage}
+
+\medskip
+
+À quoi correspond la valeur 5,5 donnée comme réponse par le lutin avec le programme de Lucie?
+	\end{enumerate}
+\item On nomme $x$ le nombre choisi au départ.
+	\begin{enumerate}
+		\item Déterminer l'expression obtenue par ce programme de calcul en fonction de $x$.
+		\item On admet que $(2x - 11) (x + 6)$ est la forme factorisée de l'expression trouvée à la question précédente.
+		
+Pour quelle(s) valeur(s) de $x$, le résultat obtenu avec le programme est-il égal à $0$ ?
+	\end{enumerate}
+\end{enumerate}
+
+\bigskip
+

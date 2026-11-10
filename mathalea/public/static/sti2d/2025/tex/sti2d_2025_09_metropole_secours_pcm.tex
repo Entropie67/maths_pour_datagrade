@@ -1,0 +1,35 @@
+\begin{center}
+\textbf{Transferts thermiques dans une glacière}
+\end{center}
+
+On souhaite savoir combien de temps une boisson peut rester au frais dans une glacière comprenant un dispositif de refroidissement. On considère que la boisson reste fraîche tant que sa température est inférieure à $17~\degres$C.
+
+Le dispositif de refroidissement fonctionne un moment puis est interrompu à un instant pris comme origine des temps t = 0. La glacière demeure fermée pendant 1~h dans une pièce dont la température ambiante est constante et vaut $\theta_{\text{ext}} = 24,2~\degres$C.
+
+Le suivi temporel de la température à l'intérieur de la glacière a permis d'obtenir le graphique de la figure 1 ci-après.
+
+\begin{center}
+\psset{xunit=0.003cm,yunit=0.3cm,labelFontSize=\scriptstyle,comma=true}
+\begin{pspicture}(0,-3)(4000,25)
+\multido{\n=0+500}{8}{\psline[linewidth=0.75pt,linecolor=lightgray](\n,-0.025)(\n,25)}
+\multido{\n=0+5}{5}{\psline[linewidth=0.75pt,linecolor=lightgray](0,\n)(4000,\n)}
+\multido{\n=0+100}{41}{\psline[linewidth=0.35pt,linecolor=lightgray](\n,-0.025)(\n,25)}
+\multido{\n=0+1}{26}{\psline[linewidth=0.35pt,linecolor=lightgray](0,\n)(4000,\n)}
+\psdots[dotstyle=B+,dotscale=1.5](0,13.4)(150,13.7)(300,14)(450,14.5)(600,14.7)(750,14.9)(900,15.4)(1050,15.8)(1200,16)(1350,16.1)(1500,16.5)(1650,16.8)(1800,17)(1950,17.05)(2100,17.15)(2250,17.2)(2400,17.7)(2550,18)(2700,18.1)(2850,18.3)(3000,18.2)(3150,18.5)(3300,18.9)(3450,19.1)(3550,19)
+\psaxes[linewidth=0.95pt,Dx=500,Dy=5]{-}(0,0)(4000,25)
+\uput[d](2000,-1.25){Temps(s)}\uput[u]{90}(-300,5){Température (\unit{\celsius})}
+\uput[d](2000,-2.5){Figure 1 – Évolution de la température de la glacière au cours du temps}
+\end{pspicture}
+\end{center}
+
+On détermine un modèle numérique de cette expérience. On suppose que la fonction $\theta$ modélisant la température de l'air contenu dans la glacière, en degré Celsius, en fonction du temps $t$, en seconde, est définie sur l'intervalle $[0~;~+\infty[$ par :
+
+\[\theta(t) = - 10,8 \e^{\frac{-t}{5040}}+ 24,2.\]
+
+\begin{enumerate}[start=10]
+\item Déterminer $\displaystyle \lim_{t\to +\infty} \theta(t)$ et analyser le résultat dans le contexte de l'exercice.
+
+\item Résoudre l'inéquation $\theta(t) \geqslant 17$. Interpréter le résultat dans le contexte de l'exercice.
+\end{enumerate}
+
+\bigskip

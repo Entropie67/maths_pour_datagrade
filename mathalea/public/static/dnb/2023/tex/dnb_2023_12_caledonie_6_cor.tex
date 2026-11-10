@@ -1,0 +1,124 @@
+
+\medskip
+
+%\begin{minipage}{0.6\linewidth}
+%Un hexagone régulier est un polygone à 6 côtés de même longueur et dont tous les angles mesurent $120\degres{}$.
+%
+% Les hexagones réguliers se retrouvent fréquemment dans la nature, notamment dans les ruches
+%d'abeilles.
+%\end{minipage}\hfill
+%\begin{minipage}{0.38\linewidth}
+%\psset{unit=1cm}
+%\begin{pspicture}(-2.3,-2.3)(2.3,2.3)
+%\pspolygon(2;0)(2;60)(2;120)(2;180)(2;240)(2;300)%CDEFAB
+%\uput[r](2;0){C} \uput[ur](2;60){D} \uput[ul](2;120){E} \uput[l](2;180){F} \uput[dl](2;240){A} \uput[dr](2;300){B} 
+%\psarc(2;0){0.35}{120}{240}\psarc(2;60){0.35}{180}{300}\psarc(2;120){0.35}{240}{0}
+%\psarc(2;180){0.35}{-60}{60}\psarc(2;240){0.35}{0}{120}\psarc(2;300){0.35}{60}{180}
+%\uput[ul](1.75;300){\small $120\degres$}
+%\multido{\n=30+60}{6}{\rput(1.73;\n){$\bullet$}}
+%\end{pspicture}
+%\end{minipage}
+
+\begin{enumerate}
+\item 
+	\begin{enumerate}
+		\item %Calculer la mesure de l'angle $\widehat{\text{XBC}}$ dans la figure ci-dessous. :
+		
+%\begin{minipage}{0.43\linewidth}
+%\psset{unit=1cm}
+%\begin{pspicture}(-1.38,-2.3)(3,1.3)
+%%\psgrid
+%\psline(1.732;210)(2;240)(2;300)(2;0)(1.732;30)%?ABC?
+%\uput[dl](2;240){A}\uput[d](2;300){B}\uput[r](2;0){C}\uput[d](3.464;-30){X}
+%\psarc(2;240){0.35}{0}{120}\psarc(2;300){0.35}{60}{180}\psarc(2;0){0.35}{120}{240}
+%\rput(1.35;300){$120\degres$}
+%\psline[linestyle=dashed](2;300)(3.464;-30)
+%\psarc[linecolor=red](2;300){0.45}{0}{60}\rput(1.6,-1.4){\red ?}
+%\end{pspicture}
+%\end{minipage}\hfill
+%\begin{minipage}{0.55\linewidth}
+%Les points A, B et X sont alignés.
+%\end{minipage}
+On a $\widehat{\text{XBC}} = 180 - 120 = 60(\degres{})$.
+		\item %Sur l'ann-exe, compléter les deux informations manquantes du bloc Hexagone pour qu'il trace un hexagone régulier.
+		Il faut répéter 6 fois et tourner de $60\degres{}$ dans le sens inverse des aiguilles d'une montre.
+		
+\begin{center}
+\textbf{Bloc Hexagone}
+
+\bigskip
+
+\begin{scratch}
+%\initmoreblocks{définir \namemoreblocks{trace_carré \ovalmoreblocks{coté_carré}}}
+\initmoreblocks{définir \namemoreblocks{Hexagone}}
+%\blocklook{définir{Hexagone}}
+\blockpen{stylo en position d'écriture}
+\blockrepeat{répéter \ovalnum{6} fois}
+{\blockmove{avancer de \ovalvariable{longueur}}
+\blockmove{tourner \turnleft{} de \ovalnum{60} degrés}
+}
+\blockpen{relever le stylo}
+\end{scratch}
+\end{center}
+	\end{enumerate}
+	
+%Rappel : \emph{s'orienter à $90\degres{}$ permet au lutin de se déplacer vers la droite.}
+
+%\begin{minipage}{0.47\linewidth}
+\item %On considère le script ci-contre qui utilise le bloc Hexagone de l'ann-exe : 
+	\begin{enumerate}
+		\item %Combien d'hexagones réguliers ce script trace-t-il ?
+Le script trace  5 hexagones.
+		\item %Quelle est la longueur des côtés du 1\up{er} hexagone régulier tracé ?
+Les côtés du premier hexagone mesurent 32 unités.
+		\item %Quelle est la longueur des côtés du 2\up{e} hexagone régulier tracé?
+Les côtés du deuxième  hexagone mesurent $32 \times 1,5 = 48$ unités.
+		\item %Parmi les dessins ci-dessous, lequel correspond à ce script ?
+On obtient le dessin 3.
+	\end{enumerate}
+%\end{minipage}\hfill
+%\begin{minipage}{0.52\linewidth}
+%\setscratch{scale=.75}
+%\begin{scratch}
+%\blockinit{Quand \greenflag est cliqué}
+%\blockmove{s'orienter à \ovaloperator{ \ovalnum{90}}}
+%\blockvariable{mettre \ovalvariable{longueur} à \ovalnum{32}}
+%\blockrepeat{répéter \ovalnum{5} fois}
+%{\blocklook{Hexagone}
+%\blockvariable{mettre \ovalvariable{longueur} à \ovaloperator{\ovalvariable{longueur} * 1.5 }}
+%}
+%\end{scratch}
+%\end{minipage}
+\end{enumerate}
+
+%\begin{center}
+%\begin{tabularx}{\linewidth}{|*{3}{>{\centering \arraybackslash}X|}}\hline
+%\textbf{Dessin 1}&\textbf{Dessin 2}&\textbf{Dessin 3}\\ \hline
+%\psset{unit=1cm}
+%\begin{pspicture}(-2.8,-2.8)(2.,1.8)
+%%\psgrid
+%\def\hexa{\pspolygon(0.4;0)(0.4;60)(0.4;120)(0.4;180)(0.4;240)(0.4;300)}
+%\multido{\n=-2+0.8}{5}{\rput(\n,0){\hexa}}
+%\end{pspicture}&
+%\psset{unit=0.85cm}
+%\begin{pspicture}(-2.8,-2.8)(2.8,2.8)
+%%\psgrid
+%\rput(-0.3,0.5){\pspolygon(0.45;0)(0.45;60)(0.45;120)(0.45;180)(0.45;240)(0.45;300)}
+%\rput(-0.3,0.5){\pspolygon(0.6;0)(0.6;60)(0.6;120)(0.6;180)(0.6;240)(0.6;300)}
+%\rput(-0.3,0.5){\pspolygon(0.9;0)(0.9;60)(0.9;120)(0.9;180)(0.9;240)(0.9;300)}
+%\rput(-0.3,0.5){\pspolygon(1.6;0)(1.6;60)(1.6;120)(1.6;180)(1.6;240)(1.6;300)}
+%\rput(-0.3,0.5){\pspolygon(2.4;0)(2.4;60)(2.4;120)(2.4;180)(2.4;240)(2.4;300)}
+%\end{pspicture}&
+%\psset{unit=1cm}
+%\begin{pspicture}(-1.,-1)(3.4,4)
+%%\psgrid
+%\rput(0.4;60){\pspolygon(0.4;0)(0.4;60)(0.4;120)(0.4;180)(0.4;240)(0.4;300)}
+%\rput(0.6;60){\pspolygon(0.6;0)(0.6;60)(0.6;120)(0.6;180)(0.6;240)(0.6;300)}
+%\rput(0.9;60){\pspolygon(0.9;0)(0.9;60)(0.9;120)(0.9;180)(0.9;240)(0.9;300)}
+%\rput(1.35;60){\pspolygon(1.35;0)(1.35;60)(1.35;120)(1.35;180)(1.35;240)(1.35;300)}
+%\rput(2.025;60){\pspolygon(2.025;0)(2.025;60)(2.025;120)(2.025;180)(2.025;240)(2.025;300)}
+%\end{pspicture}\\ \hline
+%\end{tabularx}
+%\end{center}
+
+

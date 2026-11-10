@@ -1,0 +1,133 @@
+Un enseignant de CM2 souhaite créer avec ses élèves des décorations pour la salle de classe.
+   \begin{enumerate}
+      \setlength{\itemsep}{-1mm}
+      \item Un premier groupe fabriquera une guirlande constituée d’un motif proposé par l’enseignant dans le script ci-dessous.
+         \begin{center}
+            \psset{unit=0.9}
+            \begin{pspicture}(0,0.3)(15,6.8)
+               \psframe[fillstyle=solid,fillcolor=white,linecolor=white](0,0)(15,7)
+               \psline[linewidth=2mm,linecolor=CornflowerBlue!20](7,0)(7,7)
+               \psline[linewidth=2mm,linecolor=CornflowerBlue!20](7,2.3)(15,2.3)
+               \rput(3,3.5){
+                  \begin{Scratch}[Echelle=0.8]
+                     Place Drapeau;
+                     Place Cacher;
+                     Place Effacer;
+                     Place PoserStylo;
+                     Place Repeter("4");
+                        Place Avancer("100");
+                        Place Tournerd("90");
+                     Place FinBlocRepeter;
+                  \end{Scratch}}
+               \scriptsize
+               \rput{45}(11.5,3.5){\psframe[linecolor=blue](0,0)(2,2)}
+               \psset{linecolor=lightgray,cornersize=absolute,linearc=\baselineskip,framesep=2.5mm}
+                  \rput[l](7.3,1.5){Sprite}
+                  \rput[l](8.3,1.5){\psframebox{Sprite1\hskip1.7cm}}
+                  \rput[l](11.8,1.5){x}
+                  \rput[l](12.1,1.5){\psframebox{\;-40\;}}
+                  \rput[l](13.5,1.5){y}
+                  \rput[l](13.8,1.5){\psframebox{\;-24\;}}
+                  \psframe[linearc=0.1](7.4,0.2)(9,1)
+                  \psdot(7.8,0.6)
+                  \pscircle(7.8,0.6){0.15}
+                  \psline(8.2,0.2)(8.2,1)
+                  \psdot[linecolor=blue](8.6,0.6)
+                  \pscircle[linecolor=blue](8.6,0.6){0.15}
+                  \psline[linecolor=blue](8.4,0.4)(8.8,0.8)
+                  \rput[l](9.4,0.6){Taille}
+                  \rput[l](10.3,0.6){\psframebox{\quad100\quad}}
+                  \rput[l](12.1,0.6){Direction}
+                  \rput[l](13.4,0.6){\psframebox{\quad45\quad}}
+               \end{pspicture}
+         \end{center}
+         En voyant apparaître la figure, \par \vspace*{-3mm}
+         \begin{itemize}
+            \setlength{\itemsep}{-1mm}
+            \item Pierre dit : << c’est un losange >>.
+            \item Ana dit : << ce n’est pas un rectangle >>.
+            \item Karim dit : << c’est un quadrilatère >>.
+            \item Lucie dit : << c’est un carré >>.
+         \end{itemize}
+         En utilisant le script et les propriétés des quadrilatères, dire si chaque affirmation est vraie ou fausse en justifiant.
+      \item \ \\ [-8.2mm]
+         \begin{minipage}{9cm}
+            Un second groupe fabriquera des étoiles. \newline
+            L’enseignant leur a montré comment dessiner une étoile à cinq branches sur GeoGebra en utilisant un pentagone : \par \vskip8mm
+            Pour pouvoir construire des pentagones avec la règle et le compas, il propose le programme de construction ci-dessous.
+         \end{minipage}
+         \quad
+         \begin{minipage}{7cm}
+            \footnotesize
+            \psset{unit=0.8}
+            \begin{pspicture}(-4,-2.4)(3,3)
+               \pstGeonode[PosAngle={-126,-54,18,90,162},CurveType=polygon,fillstyle=solid,fillcolor=gray!20,PointSymbol=x](2.5;-126){A}(2.5;-54){B}(2.5;18){C}(2.5;90){J}(2.5;162){E}
+               \pstGeonode[PosAngle={126,54,-18,-90,-162},CurveType=polygon,PointSymbol=x,dotscale=2](0.96;126){K}(0.96;54){F}(0.96;-18){G}(0.96;-90){H}(0.96;-162){I}
+               \pstMarkAngle[fillstyle=solid,fillcolor=gray,LabelSep=0.7]{C}{G}{F}{72°}
+               \psset{MarkAngle=90}
+                  \pstSegmentMark{A}{I} \pstSegmentMark{A}{H}
+                  \pstSegmentMark{B}{H} \pstSegmentMark{B}{G}
+                  \pstSegmentMark{C}{G} \pstSegmentMark{C}{F}
+                  \pstSegmentMark{J}{F} \pstSegmentMark{J}{K}
+                  \pstSegmentMark{E}{K} \pstSegmentMark{E}{I}
+            \end{pspicture}
+         \end{minipage}
+         \begin{center}
+            \fbox{
+               \begin{minipage}{11cm}
+                  -- Tracer un segment $[RS]$. \newline
+                  -- Placer le point $O$ au milieu du segment $[RS]$. \newline
+                  -- Tracer le cercle de diamètre $[RS]$. \newline
+                  -- Soit L un point de ce cercle tel que $(OL)\perp(RS)$. \newline
+                  -- Placer le point $I$ au milieu du segment [$OS]$. \newline
+                  -- Le cercle de centre $I$ et de rayon IL coupe le segment $[RO]$ en $D$. \newline
+                  -- $LD$ est la longueur des côtés du pentagone régulier inscrit dans le cercle de diamètre $[$RS], placer les 5 sommets du pentagone sur le cercle. \newline
+                  -- Construire le pentagone.
+               \end{minipage}}
+         \end{center}
+         La longueur des côtés du pentagone obtenu est proportionnelle à la longueur du segment $[RS]$ choisi au départ. En choisissant un segment $[RS]$ de longueur 4 cm, on obtient un pentagone dont les côtés mesurent $\sqrt{10-2\sqrt5}$ cm.
+         \begin{enumerate}
+            \item Montrer que pour obtenir un pentagone dont les côtés mesurent \Lg{7}, il faut commencer par construire un segment $[RS]$ mesurant environ \Lg{11,9}.
+            \item En utilisant le programme de construction précédent, construire un pentagone régulier $LMNPQ$ dont les côtés mesurent \Lg{7}.
+         \end{enumerate}
+      \end{enumerate}
+
+      \begin{minipage}{5cm}
+         Puis, il leur montre l’étoile à cinq branches ci-contre, obtenue en utilisant le logiciel Scratch :
+      \end{minipage}
+      \qquad
+      \begin{minipage}{8cm}
+         \begin{pspicture}(-4,-2.1)(5,1.7)
+            \rput{36}(0,0){\PstStarFive[unit=2]}
+            \psline{<-}(0.5,-0.7)(2,-1.5)
+            \rput(2.4,-1.8){\footnotesize Point de départ de la construction}
+         \end{pspicture}
+      \end{minipage}
+      \begin{enumerate}
+         \setcounter{enumi}{1}
+         \item
+            \begin{enumerate}
+               \setcounter{enumii}{2}
+               \item Recopier et compléter les lignes 7 et 9 du script utilisé pour construire l’étoile. \newline
+                  {\it On rappelle que lorsque le lutin est orienté à 90° cela signifie qu’il va se déplacer vers la droite}.
+                  \begin{center}
+                     \begin{Scratch}[Numerotation,Echelle=0.76]
+                        Place Drapeau;
+                        Place Cacher;
+                        Place Aller("0","0");
+                        Place Orienter("90");
+                        Place Effacer;
+                        Place PoserStylo;
+                        Place Repeter("\quad");
+                           Place Avancer("80");
+                           Place Tournerg("\quad");
+                           Place Avancer("80");
+                           Place Tournerd("72");
+                        Place FinBlocRepeter;
+                        Place ReleverStylo;
+                     \end{Scratch}
+                  \end{center} 
+               \item Quel est le périmètre, en pas, de cette étoile ?
+               \item L’enseignant souhaite doubler le périmètre de son étoile. Recopier les quatre lignes à l’intérieur du bloc << répéter >>, ligne 8 à 11, en apportant les modifications nécessaires pour obtenir cette nouvelle étoile.
+            \end{enumerate}
+         \end{enumerate}

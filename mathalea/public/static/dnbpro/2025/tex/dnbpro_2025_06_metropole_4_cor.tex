@@ -1,0 +1,68 @@
+
+\medskip
+
+%Paul prévoit de faire de la randonnée pendant les vacances. Il utilise habituellement un bâton
+%de marche de longueur réglable.
+%
+%La longueur minimale du bâton est 48 cm.
+%
+%Il doit le placer dans la valise représentée ci-dessous.
+%
+%\psset{unit=1cm,arrowsize=2pt 3}
+%\begin{center}
+%\begin{pspicture}(8,3.6)
+%%\psgrid
+%\psframe(1.6,0.2)(3.4,3)
+%\psline[linewidth=1.25pt](2.2,3)(2.2,3.8)\psline[linewidth=1.25pt](2.8,3.)(2.8,3.8)
+%\psline[linewidth=3pt](2,3.8)(3,3.8)
+%\psline[linewidth=0.8pt]{<->}(1.4,0.2)(1.4,3)\rput{90}(1.2,1.6){45 cm}
+%\rput(4.8,1.6){Valise de Paul}
+%\end{pspicture}
+%\end{center}
+
+\begin{enumerate}
+\item %Indiquer s'il est possible de mettre le bâton à la verticale dans la valise.
+
+%Justifier la réponse.
+Comme $48 \leqslant 45$ (longueur de la valise) est fausse, le bâton ne peut être mis à la verticale.
+
+\medskip
+
+%On schématise le fond de la valise par le rectangle ABCD ci-dessous (le dessin n'est pas à l'échelle).
+%
+%\psset{unit=1cm,arrowsize=2pt 3}
+%\begin{center}
+%\begin{pspicture}(1,0)(12,3.8)
+%
+%\psframe(5.7,0.8)(12.8,3.6)
+%\psline(5.7,0.8)(12.8,3.6)
+%\psframe(5.7,3.6)(5.9,3.4)\psframe(5.7,0.8)(5.9,1)
+%\psframe(12.8,3.6)(12.6,3.4)\psframe(12.8,0.8)(12.6,1)
+%\uput[r](1,2.5){Longueur $L$ : 45 cm}\uput[r](1,1.4){Largeur $l$ : 32 cm}
+%\psline{<->}(5.7,0.6)(12.8,0.6)\uput[d](9.25,0.6){$L$}
+%\psline{<->}(5.5,0.8)(5.5,3.6)\uput[l](5.5,2.2){$l$}
+%\uput[dl](5.7,0.8){A} \uput[dr](12.8,0.8){B} \uput[ur](12.8,3.6){C} \uput[ul](5.7,3.6){D} 
+%\end{pspicture}
+%\end{center}
+
+\item  %Parmi les propositions suivantes, recopier sur la copie celle qui est exacte.
+%Le triangle ABC est:
+
+%\begin{tabularx}{\linewidth}{*{4}{X}}
+%$\bullet~$ isocèle &$\bullet~$ rectangle &$\bullet~$ isocèle rectangle& $\bullet~$ équilatéral\\
+%\end{tabularx}
+Le triangle ABC est rectangle en B, d'hypoténuse [AC].
+\item %Calculer, à l'aide du théorème de Pythagore, la longueur AC en centimètre.
+
+%Arrondir le résultat à l'unité.
+Dans le triangle ABC rectangle en B, le théorème de Pythagore permet d'écrire :
+
+AC$^2 = \text{AB}^2 + \text{BC}^2 = 45^2 + 32^2 = \np{2025} + \np{1024} = \np{3049}$.
+
+La longueur AC est supérieure à zéro, donc AC $= \sqrt{3039} \approx55,2 \approx 55$~(cm) à l'unité près
+\item %Justifier que Paul peut placer son bâton dans le fond de la valise.
+Maintenant l'inégalité $48 < 55$ est vraie donc le bâton peut rentrer dans la valise.
+\end{enumerate}
+
+\bigskip
+

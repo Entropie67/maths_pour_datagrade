@@ -1,0 +1,44 @@
+
+\begin{center}
+\textit{\textbf{Corrigé officiel (éduscol)}}
+\end{center}
+
+\begin{enumerate}[start=4]
+\item
+	\begin{enumerate}
+	\item $(I)$ est une équation différentielle de la forme $y' = ay + b$ avec $a = -17 \times 10^9$ et $b = 55 \times 10^6$.
+
+La solution générale est donc une fonction définie sur $\mathbb{R}$ et définie par :
+\[t \mapsto k. \e^{at} - \dfrac{b}{a},\]
+où $k$ est un réel.
+
+En remplaçant $a$ et $b$ par les valeurs numériques du problème, la solution générale de $(I)$ est de la forme :
+\[t \mapsto k. \e^{-17 \times 10^9t} + 3,2 \times 10^{-3},\]
+où $k$ est un réel.
+
+	\item $v$ est solution de $(I)$ donc il existe un réel $k$ tel que, pour tout réel $t$,
+\[v(t) = k. \e^{-17 \times 10^9t} - 3,2 \times 10^{-3}.\]
+
+La condition $v(0) = 0$ se traduit par l'équation d'inconnue $k: 0 = k + 3,2 \times 10^{-3}$ de solution $k = -3,2 \times 10^{-3}$ ce qui, après factorisation par $3,2 \times 10^{-3}$, confirme l'expression proposée.
+
+	\item $\ds\lim_{t \to \infty} \e^{-17 \times 10^9 t} = 0$ car $-17 \times 10^9 < 0$.
+	
+	Par opérations sur les limites, on obtient :
+\[\lim_{t \to \infty} v(t) = 3,2 \times 10^{-3}.\]
+
+	\item Le problème revient à résoudre l'équation :
+\[v(t_0) = 0,63 \times 3,2 \times 10^{-3}\]
+
+qui se ramène à :
+\[1 - \e^{-17 \times 10^9 t_0} = 0,63\]
+
+On trouve la valeur :
+\[t_0 = -\dfrac{\ln 0,37}{17} \times 10^{-9} \approx 5,8 \times 10^{-11} \text{ s}.\]
+
+Cette valeur est négligeable devant la durée de l'expérience, on peut donc considérer que la valeur limite est immédiatement atteinte.
+	\end{enumerate}
+\end{enumerate}
+
+\bigskip
+
+

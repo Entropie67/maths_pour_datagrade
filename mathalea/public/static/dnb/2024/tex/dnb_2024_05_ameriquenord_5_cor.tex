@@ -1,0 +1,48 @@
+
+\section*{Partie A}
+
+\begin{enumerate}
+\item %Montrer que le triangle ABC est équilatéral.
+D'après la figure :
+
+$\bullet~$Les angles $\widehat{\text{A}}$ et $\widehat{\text{B}}$ ont la même mesure soit $60~\degres{}$ ;
+
+$\bullet~$ $\widehat{\text{C}}$ a pour mesure le complément à 180 des mesures des deux autres angles soit 
+
+$180 - (60 + 60) = 180 - 120 = 60~(\degres{})$
+
+\emph{Rem }: on peut aussi remarquer que le triangle CDE ayant ses trois côtés de même longueur est équilatéral donc que la mesure de l'angle $\widehat{\text{DCE}}$ est égale à $60~\degres{}$ et celui de l'angle opposé par le sommet $\widehat{\text{ACB}}$ aussi.
+
+Le triangle ABC a ses trois angles de même mesure : il est équilatéral.
+\item %Montrer que les droites (DE) et (AB) sont parallèles.
+On a remarqué que CDE est équilatéral donc $\widehat{\text{E}} = 60 \degres{}$.
+
+Les angles $\widehat{\text{A}}$ et $\widehat{\text{C}}$ ont la même mesure et sont donc alternes-internes : les droites (AB) et (DE) sont parallèles.
+\end{enumerate}
+
+\section*{Partie B}
+
+%On donne le programme suivant qui permet de tracer la figure précédente.
+%
+%Ce programme comporte une variable nommée \og côté \fg.
+%
+%Les longueurs sont données en pas : 1 pas représente 1~mm.
+
+%On rappelle que l'instruction \begin{scratch}[scale=0.6]
+%\blockmove{s'orienter à \ovalnum{90} degrés}
+%\end{scratch}
+%signifie que le lutin se dirige horizontalement vers la droite.
+
+\begin{enumerate}
+\item %Quelles sont les coordonnées du point de départ du lutin ? Aucune justification n'est demandée.
+Le point de départ a pour coordonnées (D8), soit $(-180~;~-150)$
+\item %Quelle valeur doit être saisie à la ligne 4 dans le programme ? Aucune justification n'est demandée.
+À l'instruction 7 on est revenu au point de départ et on avance de 240 pas pour aller dessiner le petit triangle, donc on écrit 240 à la ligne 4.
+\item %Le lutin démarre à la case D8. Dans quelle case se trouve-t-il lorsqu'il vient d'exécuter la ligne 7 du programme ? Aucune justification n'est demandée.
+Après l'exécution de la ligne le lutin se trouve au point de coordonnées (G3)
+
+
+
+\item %Expliquer l'instruction \og côté $/ 3$ \fg{} de la ligne 8 du programme pour le tracé de la figure.
+Les bases des triangles sont dans le rapport $\dfrac62 = 3$, donc les côtés du petit triangle sont 3 fois plus courts que ceux du grand : 80 pas ou 8 cm pour le petit et 240 pas ou 24 cm pour le grand.
+\end{enumerate}

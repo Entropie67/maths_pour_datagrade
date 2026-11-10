@@ -1,0 +1,49 @@
+
+\medskip
+
+Un hippodrome est un lieu où se déroule des courses de chevaux.
+
+On s'intéresse à la piste d'un hippodrome.
+
+Cette piste est composée de :
+\begin{itemize}
+\item deux lignes droites modélisées par des segments de $850$~mètres; 
+\item deux virages modélisés par deux demi-cercles de rayon $40$~mètres.
+\end{itemize}
+
+\begin{center}
+\psset{unit=1cm,arrowsize=2pt 3}
+\begin{pspicture}(11.6,5)
+\psline(1.4,0.8)(11.4,0.8)\psline(1.4,3.5)(11.4,3.5)
+\psarc(1.4,2.15){1.35}{90}{270}\psarc(11.4,2.15){1.35}{-90}{90}
+\psline[linestyle=dashed](1.4,0.8)(1.4,3.5)\psline[linestyle=dashed](11.4,0.8)(11.4,2.15)
+\psline{<->}(11.4,2.15)(11.4,3.5)\uput[l](11.4,2.825){rayon : 40 m}
+\psline{<->}(1.4,0.5)(11.4,0.5)\uput[d](6.4,0.5){Segment de longueur : 850 m}
+\rput(5.8,4.5){Schéma de la piste de cet hippodrome}
+\end{pspicture}
+\end{center}
+
+\begin{enumerate}
+\item Montrer que la longueur d'un tour de piste est d'environ \np{1951}~m. 
+\item Un cheval parcourt un tour de piste en 2~min~9~s.
+	\begin{enumerate}
+		\item Calculer la vitesse moyenne de ce cheval sur un tour de piste en mètre par seconde (m/s). Donner une valeur approchée à l'unité près.
+		\item Convertir cette vitesse en kilomètre par heure (km/h).
+	\end{enumerate}	
+\item On admet que la surface de la piste a une aire d'environ \np{73027} m$^2$.
+
+On souhaite semer du gazon sur la totalité de la surface de la piste.
+
+On doit choisir des sacs de gazon à semer parmi les trois marques ci-dessous :
+
+\begin{center}
+\begin{tabularx}{\linewidth}{|*{3}{>{\centering \arraybackslash}X|}}\hline
+&Surface couverte par sac& Prix d'un sac\\ \hline
+Marque A &500 m$^2$& 141,95~\euro\\ \hline
+Marque B& 400 m$^2$&87,90~\euro\\ \hline
+Marque C&300 m$^2$&66,50~\euro\\ \hline
+\end{tabularx}
+\end{center}
+
+Quelle marque doit-on choisir pour que cela coûte le moins cher possible ?
+\end{enumerate}

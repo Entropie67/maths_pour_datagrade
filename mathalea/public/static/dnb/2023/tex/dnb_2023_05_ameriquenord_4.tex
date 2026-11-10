@@ -1,0 +1,112 @@
+
+\medskip
+
+À l'aide d'un logiciel de programmation, on veut réaliser le motif \og Fleur\fg suivant.
+
+\begin{center}
+\begin{tabular}{|c|}\hline
+\textbf{Motif \og Fleur \fg}\\
+\psset{unit=1cm}
+\begin{pspicture}(-1.6,-1.5)(1.5,1.5)
+\def\para{\pspolygon(0,0)(0.9,0)(1.1,0.4)(0.2,0.4)}
+\multido{\n=0+72}{5}{\rput{\n}(0,0){\para}}
+\rput(-1,-1.35){Un pétale}\psline[linewidth=1.25pt]{->}(-1,-1.1)(-0.4,-0.5)
+\end{pspicture}\\ \hline
+\end{tabular}
+\end{center}
+
+\begin{enumerate}
+\item 
+	\begin{enumerate}
+		\item Le parallélogramme KLMN ci-dessous représente un des pétales du motif \og Fleur \fg.
+
+Construire ce parallélogramme sur la copie en prenant $1$~cm pour 5 pas.
+
+\begin{center}
+\psset{unit=0.8cm}
+\begin{pspicture}(9.5,4)
+\pspolygon(0.2,0.4)(7.2,0.4)(9.2,3.8641)(2.2,3.8641)
+\uput[dl](0.2,0.4){K} \uput[dr](7.2,0.4){L} \uput[ur](9.2,3.8641){M} \uput[ul](2.2,3.8641){N} \uput[d](3.7,0.4){35 pas} \uput[ul](7,0.6){$120\degres$} \uput[dl](9,3.6641){$60\degres$} \uput[r](8.2,2.13){20 pas} 
+\psarc(7.2,0.4){0.5}{60}{180}\psarc(9.2,3.8641){0.4}{180}{240}
+\end{pspicture}
+\end{center}
+	\end{enumerate}
+\end{enumerate}
+
+\medskip
+
+\begin{minipage}{0.56\linewidth}
+
+\textbf{b.~} On définit le bloc \og Pétale \fg{} ci-contre afin de dessiner ce parallélogramme.
+
+On commence la construction du parallélogramme au point K en s'orientant vers la droite.
+
+Par quelles valeurs doit-on compléter les lignes 4, 5, 6, et 7 du bloc \og Pétale \fg{} ci-contre ?
+
+\emph{Aucune justification n'est attendue, écrire sur la copie le numéro de la ligne du bloc \og Pétale\fg{} et la valeur correspondante.}
+\end{minipage}\hfill
+\begin{minipage}{0.4\linewidth}
+
+\begin{tabular}{|l|}\hline
+\multicolumn{1}{|c|}{Bloc \og Pétale \fg}\\
+\begin{scratch}[num blocks]
+\initmoreblocks{définir \namemoreblocks{Pétale}}
+\blockpen{stylo en position d'écriture}
+\blockrepeat{répéter \ovalnum{2} fois}
+{\blockmove{avancer de \ovalnum{} pas}
+\blockmove{tourner \turnleft{} de \ovalnum{} degr\'es}
+\blockmove{avancer de \ovalnum{} pas}
+\blockmove{tourner \turnleft{} de \ovalnum{} degr\'es}
+}
+\end{scratch}\\ \hline
+\end{tabular}
+%\end{enumerate}
+\end{minipage}
+
+\begin{enumerate}[resume]
+\item Le bloc ci-dessous permet de construire un motif \og Fleur\fg{} en partant de son centre.
+
+\begin{minipage}{0.48\linewidth}
+\begin{tabular}{|l|}\hline
+\multicolumn{1}{|c|}{Bloc \og Fleur \fg}\\
+\begin{scratch}[num blocks]
+\initmoreblocks{définir \namemoreblocks{Fleur}}
+\blockrepeat{r\'ep\'eter \ovalnum{} fois}
+{\blocklook{Pétale}
+\blockmove{tourner \turnright{} de \ovalnum{72} degr\'es}
+}
+\end{scratch}\\ \hline
+\end{tabular}
+\end{minipage}\hfill
+\begin{minipage}{0.48\linewidth}
+\begin{tabular}{|c|}\hline
+\textbf{Motif \og Fleur \fg}\\
+\psset{unit=1cm}
+\begin{pspicture}(-1.5,-1.5)(1.5,1.5)
+\def\para{\pspolygon(0,0)(0.9,0)(1.1,0.4)(0.2,0.4)}
+\multido{\n=0+72}{5}{\rput{\n}(0,0){\para}}
+\end{pspicture}\\ \hline
+\end{tabular}
+\end{minipage}
+	\begin{enumerate}
+		\item Par quelle valeur doit-on compléter la ligne 2 du bloc \og Fleur \fg{} ci-dessus ? 
+\emph{Aucune justification n'est attendue.}
+		\item Expliquer le choix de la valeur \og 72 \fg{} dans la ligne 4.
+		\item On modifie le bloc \og Fleur \fg{} pour construire le motif suivant:
+
+\begin{center}
+\psset{unit=0.2cm}
+\begin{pspicture}(-7.75,-7.75)(7.75,7.75)
+\def\para{\pspolygon(0,0)(0.9,0)(1.12,0.4)(0.22,0.4)}
+%%
+\def\para2{\pspolygon(0,0)(7,0)(9,3.4641)(2,3.4641)}
+\multido{\n=0+30}{12}{\rput{\n}(0,0){\para2}}
+\end{pspicture}
+\end{center}
+
+Quelles sont alors les modifications à apporter aux lignes 2 et 4 du bloc \og Fleur\fg{} ? \emph{Aucune justification n'est attendue}.
+	\end{enumerate}
+\end{enumerate}
+
+\bigskip
+

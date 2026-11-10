@@ -1,0 +1,38 @@
+
+\medskip
+
+\begin{enumerate}
+\item Le premier terme de $F(x)$ est de la forme $u(x) \times v(x)$ :
+\begin{list}{\textbullet}{}
+\item $u(x) = x^2 - 1,8x \quad \text{et} \quad u'(x) = 2x - 1,8$,
+\item $v(x) = e^{-x} \quad \text{et} \quad v'(x) = -e^{-x}$.
+\end{list}
+
+La dérivée du second terme est $1,8$.
+
+La dérivée de $F'$ est, pour tout réel $x$ :
+\begin{align*}
+F'(x) &= u'(x) \times v(x) + u(x) \times v'(x) + 1,8 \\
+&= (2x - 1,8)\e^{-x} - (x^2 - 1,8x)\e^{-x} + 1,8 \\
+&= \left(2x - 1,8 - x^2 + 1,8x\right)\e^{-x} + 1,8 \\
+&= -(x^2 - 3,8x + 1,8)\e^{-x} + 1,8 \\
+&= f(x),
+\end{align*}
+ce qui montre que $F$ est une primitive de $f$ sur $\mathbb{R}$.
+
+\item Le quart de la surface du bassin est, en unité d'aire :
+\begin{align*}
+\dfrac{S}{4} &= \int_0^4 f(x) \, dx \\
+&= F(4) - F(0) \\
+&= \left((4^2 - 1,8 \times 4)\e^{-4} + 1,8 \times 4\right) - \left((0^2 - 1,8 \times 0)\e^{0} + 1,8 \times 0\right) \\
+&= \left(8,8\e^{-4} + 7,2\right) - 0 \\
+&= 8,8\e^{-4} + 7,2.
+\end{align*}
+L'unité d'aire étant de $15^2 = 225 \, \text{m}^2$, la surface est bien :
+\[S = 225 \times 4 \times (8,8\e^{-4} + 7,2) = 6480 + 7920\e^{-4}.\]
+Soit : $S \approx 6625 \text{ m}^2$.
+\end{enumerate}
+
+\bigskip
+
+

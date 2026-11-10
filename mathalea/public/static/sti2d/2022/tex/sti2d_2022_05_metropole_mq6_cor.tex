@@ -1,0 +1,23 @@
+
+\medskip
+
+\begin{enumerate}
+\item Soit $z$ le nombre complexe défini par $z = 1 + \text{i} \sqrt 3$.
+
+Ce nombre complexe a pour module $|z| = \sqrt{1^2 + \bigl(\sqrt 3\bigr)^2} = \sqrt {1 + 3} = \sqrt 4 = 2$.
+
+Par ailleurs, le nombre complexe :
+\[ \dfrac z {|z|} = \frac{1 + \text{i} \sqrt 3} 2 = \dfrac 1 2 + \text{i} \dfrac{\sqrt 3} 2, \]
+est de module $1$ et admet pour argument un nombre $\psi$ tel que $\cos \psi = \dfrac 1 2$ et $\sin \psi = \dfrac{\sqrt 3} 2$, soit $\psi = \dfrac \pi 3$ comme argument principal. Ce nombre $\psi$ est aussi un argument de $z$. 
+
+Alors, il suffit de prendre $U_{\text{max}} = |z| = 2$, $\omega = 50$ et $\varphi = - \psi = - \dfrac \pi 3$ pour obtenir la bonne expression. En effet :
+\begin{align*}
+2\cos\left(50 t - \dfrac \pi 3\right) &= 2 \left(\cos(50t) \cos\left(\dfrac \pi 3\right) + \sin(50t) \sin\left(\dfrac \pi 3\right)\right)\\
+&= 2 \left(\cos(50t) \times \dfrac 1 2 + \sin(50t) \times \dfrac {\sqrt 3} 2 \right)\\
+&=\cos(50t) \times 1 + \sin(50t) \times \sqrt 3\\
+&= U(t).
+\end{align*}
+
+\item Il suffit de calculer $f = \dfrac {50}{2\pi} = \dfrac {25} {\pi} \simeq 8$ Hz, une fois arrondi à l'unité.
+\end{enumerate}
+

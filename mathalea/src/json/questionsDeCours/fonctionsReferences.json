@@ -1,0 +1,286 @@
+{
+  "questions": [
+    {
+      "themes": "Fonctions de référence",
+      "level": "2",
+      "id": "ref1",
+      "type":"qcm",
+      "title": "Variations fonction carré",
+      "question": "Sur $\\mathbb R$, la fonction carré est ",
+      "answer": "non-monotone",
+      "badPropositions": ["croissante", "décroissante"]
+    },
+    {
+      "themes": "Fonctions de référence",
+      "level": "2",
+      "id": "ref2",
+      "type":"qcm",
+      "title": "Variations fonction carré",
+      "question": "Sur $\\mathbb R_{+}$, la fonction carré est ",
+      "answer": "croissante",
+      "badPropositions": ["décroissante", "non-monotone"]
+    },
+    {
+      "themes": "Fonctions de référence",
+      "level": "2",
+      "id": "ref3",
+      "type":"qcm",
+      "title": "Variations fonction carré",
+      "question": "Sur $\\mathbb R_{-}$, la fonction carré est ",
+      "answer": "décroissante",
+      "badPropositions": ["croissante", "non-monotone"]
+    },
+    {
+    "themes": "Fonctions de référence",
+    "level": "2",
+    "id": "ref4",
+    "title": "Fonction croissante",
+    "question": "Soit une fonction $f$ croissante sur un intervalle $I$, avec $a < b$ et $a, b \\in I$. Comparer $f(a)$ et $f(b)$.",
+    "answer": ["f(a) \\lt f(b)", "f(b) \\gt f(a)"],
+    "keys": ["f(a)", "f(b)", "<", ">", "="]
+    },
+    {
+    "themes": "Fonctions de référence",
+    "level": "2",
+    "id": "ref5",
+    "title": "Fonction décroissante",
+    "question": "Soit une fonction $f$ décroissante sur un intervalle $I$, avec $a < b$ et $a, b \\in I$. Comparer $f(a)$ et $f(b)$.",
+    "answer": ["f(a)>f(b)", "f(b)<f(a)"],
+    "keys": ["f(a)", "f(b)", "<", ">", "="]
+    },
+    {
+    "themes": "Fonctions de référence",
+    "level": "2",
+    "id": "ref6",
+    "title": "Fonction constante",
+    "question": "Soit une fonction $f$ constante sur un intervalle $I$, avec $a < b$ et $a, b \\in I$. Comparer $f(a)$ et $f(b)$.",
+    "answer": ["f(a)=f(b)", "f(b)=f(a)"],
+    "keys": ["f(a)", "f(b)", "<", ">", "="]
+    },
+    {
+    "themes": "Fonctions de référence",
+    "level": "2",
+    "id": "ref7",
+    "title": "Formule du coefficient directeur d'une fonction affine",
+    "question": "Soit une fonction affine $f$. Quelle est la formule du coefficient directeur avec $a$ et $b$ deux réels distincts ?",
+    "answer": ["\\dfrac{f(a)-f(b)}{a-b}", "\\dfrac{f(b)-f(a)}{b-a}"],
+    "keys": ["a", "b", "f(a)", "f(b)"]
+    },
+    {
+    "themes": "Fonctions de référence",
+    "level": "2",
+    "id": "ref8",
+    "title": "Formule de l'ordonnée à l'origine d'une fonction affine",
+    "question": "Soit une fonction affine telle que $f(x)=mx+p$. Quelle est la formule de l'ordonnée à l'origine ?",
+    "answer": ["f(0)", "p", "f(0)=p"],
+    "keys": ["m", "p", "f", "(", ")"]
+    },
+    {
+    "themes": "Fonctions de référence",
+    "level": "2",
+    "id": "ref9",
+    "title": "Croissance d'une fonction affine",
+    "question": "Soit une fonction affine $f$ croissante avec $f(x)=mx+p$. Que peut-on en déduire sur le signe de $m$ ou de $p$ ?",
+    "answer": "m>0",
+    "keys": ["m", "p", "<", ">", "="]
+    },
+    {
+    "themes": "Fonctions de référence",
+    "level": "2",
+    "id": "ref10",
+    "title": "Décroissance d'une fonction affine",
+    "question": "Soit une fonction affine $f$ décroissante avec $f(x)=mx+p$. Que peut-on en déduire sur le signe de $m$ ou de $p$ ?",
+    "answer": "m<0",
+    "keys": ["m", "p", "<", ">", "="]
+    },
+    {
+    "themes": "Fonctions de référence",
+    "level": "2",
+    "id": "ref11",
+    "title": "Fonction affine linéaire",
+    "question": "Soit une fonction affine $f$ telle que $f(x)=mx+p$. À quelle condition $f$ est une fonction linéaire ?",
+    "answer": "p=0",
+    "keys": ["m", "p", "<", ">", "="]
+    },
+    {
+    "themes": "Fonctions de référence",
+    "level": "2",
+    "id": "ref12",
+    "title": "Fonction affine et droites parallèles",
+    "question": "Soit deux fonctions affines $f$ et $g$, telles que $f(x)=mx+p$ et $g(x)=ax+b$. À quelle condition la droite qui représente $f$ et la droite qui représente $g$ sont paralèlles ?",
+    "answer": ["m=a", "a=m"],
+    "keys": ["m", "p", "a", "b", "=", "\\neq"]
+    },
+    {
+    "themes": "Fonctions de référence",
+    "level": "2",
+    "id": "ref13",
+    "title": "Fonction carré",
+    "question": "Quelle est l'expression algébrique de la fonction carré ?",
+    "answer": "f(x)=x^2",
+    "keys": ["f(x)=", "x"]
+    },
+    {
+    "themes": "Fonctions de référence",
+    "level": "2",
+    "id": "ref14",
+    "title": "Fonction inverse",
+    "question": "Quelle est l'expression algébrique de la fonction inverse ?",
+    "answer": ["f(x)=\\dfrac{1}{x}", "\\dfrac{1}{x}", "x^{-1}"],
+    "keys": ["f(x)=", "x"]
+    },
+    {
+    "themes": "Fonctions de référence",
+    "level": "2",
+    "id": "ref15",
+    "title": "Fonction racine carrée",
+    "question": "Quelle est l'expression algébrique de la fonction racine carrée ?",
+    "answer": ["f(x)=\\sqrt{x}", "\\sqrt{x}"],
+    "keys": ["f(x)=", "x"]
+    },
+    {
+    "themes": "Fonctions de référence",
+    "level": "2",
+    "id": "ref16",
+    "title": "Fonction cube",
+    "question": "Quelle est l'expression algébrique de la fonction cube ?",
+    "answer": ["f(x)=x^3", "x^3"],
+    "keys": ["f(x)=", "x"]
+    },
+    {
+    "themes": "Fonctions de référence",
+    "level": "2",
+    "id": "ref17",
+    "title": "Fonction cube",
+    "question": "Quelle est l'expression algébrique de la fonction cube ?",
+    "answer": ["f(x)=x^3", "x^3"],
+    "keys": ["f(x)=", "x"]
+    },
+     {
+    "themes": "Fonctions de référence",
+     "level": "2",
+      "id": "ref18",
+      "title": "Fonction croissante",
+      "question": "Soit une fonction $f$ croissante sur un intervalle $I$, avec $a < b$ et $a, b \\in I$. Comparer $f(a)$ et $f(b)$.",
+      "answer": ["f(a) \\lt f(b)", "f(b) \\gt f(a)"],
+      "keys": ["f(a)", "f(b)", "<", ">", "="]
+    },
+    {
+      "themes": "Fonctions de référence",
+      "level": "2",
+      "id": "ref19",
+      "title": "Fonction décroissante",
+      "question": "Soit une fonction $f$ décroissante sur un intervalle $I$, avec $a < b$ et $a, b \\in I$. Comparer $f(a)$ et $f(b)$.",
+      "answer": ["f(a)>f(b)", "f(b)<f(a)"],
+      "keys": ["f(a)", "f(b)", "<", ">", "="]
+    },
+    {
+      "themes": "Fonctions de référence",
+      "level": "2",
+      "id": "ref20",
+      "title": "Fonction constante",
+      "question": "Soit une fonction $f$ constante sur un intervalle $I$, avec $a < b$ et $a, b \\in I$. Comparer $f(a)$ et $f(b)$.",
+      "answer": ["f(a)=f(b)", "f(b)=f(a)"],
+      "keys": ["f(a)", "f(b)", "<", ">", "="]
+    },
+    {
+      "themes": "Fonctions de référence",
+      "level": "2",
+      "id": "ref21",
+      "title": "Formule du coefficient directeur d'une fonction affine",
+      "question": "Soit une fonction affine $f$. Quelle est la formule du coefficient directeur avec $a$ et $b$ deux réels distincts ?",
+      "answer": ["\\dfrac{f(a)-f(b)}{a-b}", "\\dfrac{f(b)-f(a)}{b-a}"],
+      "keys": ["a", "b", "f(a)", "f(b)"]
+    },
+    {
+      "themes": "Fonctions de référence",
+      "level": "2",
+      "id": "ref22",
+      "title": "Formule de l'ordonnée à l'origine d'une fonction affine",
+      "question": "Soit une fonction affine telle que $f(x)=mx+p$. Quelle est la formule de l'ordonnée à l'origine ?",
+      "answer": ["f(0)", "p", "f(0)=p"],
+      "keys": ["m", "p", "f", "(", ")"]
+    },
+    {
+      "themes": "Fonctions de référence",
+      "level": "2",
+      "id": "ref23",
+      "title": "Croissance d'une fonction affine",
+      "question": "Soit une fonction affine $f$ croissante avec $f(x)=mx+p$. Que peut-on en déduire sur le signe de $m$ ou de $p$ ?",
+      "answer": "m>0",
+      "keys": ["m", "p", "<", ">", "="]
+    },
+    {
+      "themes": "Fonctions de référence",
+      "level": "2",
+      "id": "ref24",
+      "title": "Décroissance d'une fonction affine",
+      "question": "Soit une fonction affine $f$ décroissante avec $f(x)=mx+p$. Que peut-on en déduire sur le signe de $m$ ou de $p$ ?",
+      "answer": "m<0",
+      "keys": ["m", "p", "<", ">", "="]
+    },
+    {
+      "themes": "Fonctions de référence",
+      "level": "2",
+      "id": "ref25",
+      "title": "Fonction affine linéaire",
+      "question": "Soit une fonction affine $f$ telle que $f(x)=mx+p$. À quelle condition $f$ est une fonction linéaire ?",
+      "answer": "p=0",
+      "keys": ["m", "p", "<", ">", "="]
+    },
+    {
+      "themes": "Fonctions de référence",
+      "level": "2",
+      "id": "ref26",
+      "title": "Fonction affine et droites parallèles",
+      "question": "Soit deux fonctions affines $f$ et $g$, telles que $f(x)=mx+p$ et $g(x)=ax+b$. À quelle condition la droite qui représente $f$ et la droite qui représente $g$ sont paralèlles ?",
+      "answer": ["m=a", "a=m"],
+      "keys": ["m", "p", "a", "b", "=", "\\neq"]
+    },
+    {
+      "themes": "Fonctions de référence",
+      "level": "2",
+      "id": "ref27",
+      "title": "Fonction carré",
+      "question": "Quelle est l'expression algébrique de la fonction carré ?",
+      "answer": "f(x)=x^2",
+      "keys": ["f(x)=", "x"]
+    },
+    {
+      "themes": "Fonctions de référence",
+      "level": "2",
+      "id": "ref28",
+      "title": "Fonction inverse",
+      "question": "Quelle est l'expression algébrique de la fonction inverse ?",
+      "answer": ["f(x)=\\dfrac{1}{x}", "\\dfrac{1}{x}", "x^{-1}"],
+      "keys": ["f(x)=", "x"]
+    },
+    {
+      "themes": "Fonctions de référence",
+      "level": "2",
+      "id": "ref29",
+      "title": "Fonction racine carrée",
+      "question": "Quelle est l'expression algébrique de la fonction racine carrée ?",
+      "answer": ["f(x)=\\sqrt{x}", "\\sqrt{x}"],
+      "keys": ["f(x)=", "x"]
+    },
+    {
+      "themes": "Fonctions de référence",
+      "level": "2",
+      "id": "ref30",
+      "title": "Fonction cube",
+      "question": "Quelle est l'expression algébrique de la fonction cube ?",
+      "answer": ["f(x)=x^3", "x^3"],
+      "keys": ["f(x)=", "x"]
+    },
+    {
+      "themes": "Fonctions de référence",
+      "level": "2",
+      "id": "ref31",
+      "title": "Fonction cube",
+      "question": "Quelle est l'expression algébrique de la fonction cube ?",
+      "answer": ["f(x)=x^3", "x^3"],
+      "keys": ["f(x)=", "x"]
+    }
+  ]
+}

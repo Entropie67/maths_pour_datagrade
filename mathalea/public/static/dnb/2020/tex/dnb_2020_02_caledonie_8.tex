@@ -1,0 +1,81 @@
+
+\medskip
+
+On souhaite représenter 6 bassins rectangulaires à l'aide d'un logiciel de programmation comme sur la figure \no 1 ci-dessous :
+
+\begin{center}
+\psset{unit=1cm}
+\begin{pspicture}(10,6)
+\uput[l](3,1){Point de départ}
+\rput(3,1){\large $\times$}
+\rput(5,6){La figure n'est pas à l'échelle}
+\multido{\n=3.00+1.25}{6}{\rput(\n,1){\psframe(1,4)}}
+\psline{<->}(3,0.5)(10.25,0.5)
+\uput[d](6.625,0.5){220 pixels}
+\uput[d](5,0){Figure \no 1}
+\end{pspicture}
+\end{center}
+
+\medskip
+
+\begin{enumerate}
+\item Compléter le script, ci-dessous, du bloc \og bassin \fg{} pour qu'il permette de tracer
+un bassin rectangulaire de largeur $30$ pixels et de longueur $150$ pixels.
+
+\begin{scratch}
+\initmoreblocks{définir \namemoreblocks{bassin}}
+	\blockpen{stylo en position d'écriture}
+	\blockrepeat{répéter \ovalnum{\ldots} fois}
+		{\blockmove{avancer de \ovalnum{30}}
+		\blockmove{tourner \turnleft{} de \ovalnum{\ldots} degrés}
+		\blockmove{avancer de \ovalnum{\ldots}}
+		\blockmove{tourner \turnleft{} de \ovalnum{\ldots} degrés}
+		}			
+\end{scratch}
+
+\item  Le script ci-dessous doit permettre d'obtenir la figure \no 1. Il utilise le bloc \og bassin \fg{} du script ci-dessus.
+
+\medskip
+
+\begin{multicols}{2}
+\begin{center}
+%\begin{tabularx}{0.8\linewidth}{*{2}{>{\centering \arraybackslash}X}}
+\begin{scratch}
+\blockinit{Quand \greenflag est cliqué}
+\blockmove{s'orienter à \ovalnum{90} degrés}
+\blockpen{effacer tout}
+	\blockrepeat{répéter \ovalnum{6} fois}
+		{\blocksound{bassin}
+		\blockpen{relever le stylo}
+		\blockmove{avancer de \ovalnum{?}}
+		}
+\end{scratch}
+\end{center}
+
+\columnbreak
+
+~\vfill
+
+\begin{center}
+\textbf{Rappel :}
+
+\begin{scratch}
+\blockmove{s'orienter à \ovalnum{90} degrés}
+\blockspace[0.5]
+\blockmove{(0) à droite}
+\blockmove{($-90$) à gauche}
+\blockmove{(0) vers le haut}
+\blockmove{(180) vers le bas}
+\end{scratch}
+%\end{tabularx}
+\end{center} 
+
+\vfill~
+
+\end{multicols}
+
+Sachant que la longueur totale de la figure \no 1 est de $220$ pixels, quelle valeur doit être placée à la dernière ligne dans la consigne \og avancer de \fg{} ? Justifier la réponse.
+
+\emph{Dans cette question, toute trace de recherche, même incomplète ou non fructueuse, sera prise en compte dans l'évaluation.}
+\end{enumerate}
+

@@ -1,0 +1,395 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Rapport d'analyse de la CI GitLab</title>
+<style>
+  :root {
+    --fg: #1b1f23;
+    --border: #d0d7de;
+    --bg-code: #f6f8fa;
+    --link: #0969da;
+  }
+  @page {
+    size: A4;
+    margin: 18mm 16mm;
+  }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+    color: var(--fg);
+    line-height: 1.5;
+    font-size: 11pt;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+  h1, h2, h3, h4 {
+    line-height: 1.2;
+    margin: 1.2em 0 0.55em;
+    break-after: avoid;
+  }
+  h1 { font-size: 24pt; }
+  h2 { font-size: 17pt; border-bottom: 1px solid var(--border); padding-bottom: 0.2em; }
+  h3 { font-size: 13pt; }
+  h4 { font-size: 11.5pt; }
+  p, ul, ol, pre { margin: 0 0 0.85em; }
+  ul, ol { padding-left: 1.5em; }
+  li { margin: 0.18em 0; }
+  code {
+    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+    background: var(--bg-code);
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    padding: 0.08em 0.32em;
+    font-size: 0.92em;
+  }
+  pre {
+    background: var(--bg-code);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 12px 14px;
+    overflow-wrap: anywhere;
+    white-space: pre-wrap;
+  }
+  pre code {
+    background: transparent;
+    border: 0;
+    padding: 0;
+    border-radius: 0;
+    white-space: pre-wrap;
+  }
+  a { color: var(--link); text-decoration: none; }
+</style>
+</head>
+<body>
+<h1>Rapport d'analyse de la CI GitLab</h1>
+<p>Ce document résume ce que teste la CI définie dans <a href="../.gitlab-ci.yml">.gitlab-ci.yml</a>, à quel moment chaque job se lance, et comment reproduire localement chaque vérification.</p>
+<h2>Vue d'ensemble</h2>
+<p>La CI couvre principalement cinq familles de vérifications :</p>
+<ul>
+<li>analyse de sécurité SAST avec Semgrep</li>
+<li>tests unitaires Vitest</li>
+<li>tests e2e Playwright/Vitest sur les vues, la cohérence et l'interactivité</li>
+<li>tests e2e Playwright/Vitest de détection d'erreurs console par niveaux</li>
+<li>tests e2e d'exports PDF</li>
+</ul>
+<p>Elle contient aussi des jobs de build et de déploiement. Le build n'est pas un test à proprement parler, mais il valide que la génération des JSON et la compilation Vite passent correctement.</p>
+<p>Point important : <code>pnpm check</code> n'est pas exécuté dans cette CI.</p>
+<h2>Stages</h2>
+<p>Les stages déclarés sont les suivants :</p>
+<ol>
+<li><code>test</code></li>
+<li><code>build-projet</code></li>
+<li><code>playwright-testCanEleve</code></li>
+<li><code>deploy-server</code></li>
+<li><code>playwright-test</code></li>
+<li><code>playwright-testLycee</code></li>
+<li><code>playwright-pdf</code></li>
+<li><code>playwright-pdfDNB</code></li>
+<li><code>playwright-pdfBAC</code></li>
+</ol>
+<h2>Préparation commune des jobs e2e</h2>
+<p>Les jobs e2e non PDF héritent de la préparation définie dans <code>.install_dependencies</code> :</p>
+<ul>
+<li>installation et activation de <code>pnpm</code></li>
+<li>installation des dépendances du projet</li>
+<li>ajout de <code>playwright</code> et <code>@playwright/test</code></li>
+<li>démarrage de l'application avec <code>pnpm start</code></li>
+<li>attente de disponibilité de <code>http://localhost:80/alea/</code></li>
+</ul>
+<p>Pour reproduire localement les tests concernés :</p>
+<pre><code class="language-bash">pnpm install
+pnpm start
+</code></pre>
+<p>Puis, dans un autre terminal, lancer la commande du job voulu.</p>
+<p>Les jobs PDF utilisent une préparation spécifique :</p>
+<ul>
+<li>vérification de <code>lualatex</code></li>
+<li>installation des dépendances système nécessaires à Chromium</li>
+<li>installation du navigateur Chromium via Playwright</li>
+<li>démarrage de l'application</li>
+</ul>
+<p>Les variantes DNB et BAC ajoutent en plus un clonage de dépôts annexes dans <code>public/static/</code>.</p>
+<h2>Analyse de sécurité</h2>
+<h3><code>semgrep-sast</code></h3>
+<p>Ce job provient du template GitLab SAST et n'est activé que sur la branche <code>main</code>.</p>
+<p>Déclenchement :</p>
+<ul>
+<li>automatique sur <code>main</code></li>
+</ul>
+<p>Reproduction locale :</p>
+<ul>
+<li>il n'existe pas de script <code>package.json</code> dédié dans le dépôt</li>
+<li>la reproduction exacte dépend de l'outillage GitLab SAST utilisé par le runner</li>
+</ul>
+<h2>Tests unitaires</h2>
+<h3><code>tests-unitaires</code></h3>
+<p>Ce job exécute :</p>
+<ul>
+<li><code>pnpm run makeJson</code></li>
+<li><code>NODE_OPTIONS=--max-old-space-size=4096 pnpm test:unit</code></li>
+<li><code>NODE_OPTIONS=--max-old-space-size=4096 pnpm test:src</code></li>
+</ul>
+<p>Cela correspond à :</p>
+<ul>
+<li>tests Vitest dans <code>tests/unit</code></li>
+<li>tests Vitest directement dans <code>src</code></li>
+</ul>
+<p>Déclenchement :</p>
+<ul>
+<li>automatique sur toute Merge Request</li>
+<li>automatique sur <code>main</code></li>
+<li>manuel sur <code>guironne-jobs</code></li>
+</ul>
+<p>Reproduction locale :</p>
+<pre><code class="language-bash">pnpm install
+pnpm makeJson
+NODE_OPTIONS=--max-old-space-size=4096 pnpm test:unit
+NODE_OPTIONS=--max-old-space-size=4096 pnpm test:src
+</code></pre>
+<p>Commande condensée équivalente :</p>
+<pre><code class="language-bash">pnpm install
+pnpm makeJson
+NODE_OPTIONS=--max-old-space-size=4096 pnpm run prebuild-unit-tests
+</code></pre>
+<h2>Tests e2e globaux</h2>
+<h3><code>playwright-testCanEleve</code></h3>
+<p>Ce job teste les vues via :</p>
+<pre><code class="language-bash">pnpm test:e2e:views
+</code></pre>
+<p>Déclenchement :</p>
+<ul>
+<li>automatique sur toute Merge Request</li>
+<li>automatique sur <code>main</code></li>
+<li>manuel sur <code>guironne-jobs</code></li>
+</ul>
+<p>Reproduction locale :</p>
+<pre><code class="language-bash">pnpm install
+pnpm start
+pnpm test:e2e:views
+</code></pre>
+<h3><code>playwright-testConsistency</code></h3>
+<p>Ce job teste la cohérence fonctionnelle via :</p>
+<pre><code class="language-bash">pnpm test:e2e:consistency
+</code></pre>
+<p>Déclenchement :</p>
+<ul>
+<li>automatique sur toute Merge Request</li>
+<li>automatique sur <code>main</code></li>
+<li>manuel sur <code>guironne-jobs</code></li>
+</ul>
+<p>Reproduction locale :</p>
+<pre><code class="language-bash">pnpm install
+pnpm start
+pnpm test:e2e:consistency
+</code></pre>
+<h3><code>playwright-testInteractivity</code></h3>
+<p>Ce job teste l'interactivité via :</p>
+<pre><code class="language-bash">pnpm test:e2e:interactivity
+</code></pre>
+<p>Déclenchement :</p>
+<ul>
+<li>automatique sur toute Merge Request</li>
+<li>automatique sur <code>main</code></li>
+<li>la règle <code>guironne-jobs</code> semble incomplète dans le YAML, donc pas de <code>when: manual</code> explicite</li>
+</ul>
+<p>Reproduction locale :</p>
+<pre><code class="language-bash">pnpm install
+pnpm start
+pnpm test:e2e:interactivity
+</code></pre>
+<h2>Tests e2e ciblés sur les exercices modifiés</h2>
+<h3><code>testExosModifiedWithoutPlayWright</code></h3>
+<p>Ce job récupère les fichiers modifiés sur une fenêtre allant jusqu'à 5 commits, les place dans <code>CHANGED_FILES</code>, active le mode CI, puis exécute :</p>
+<pre><code class="language-bash">CI=1 CHANGED_FILES="$CHANGED_FILES" pnpm vitest --config tests/e2e/vitest.config.all_exercises.js --run
+</code></pre>
+<p>Note : sans <code>CI=1</code>, la branche conditionnelle qui filtre sur les fichiers modifiés n'est pas activée dans <code>all_exercises.test.ts</code>.</p>
+<p>Déclenchement :</p>
+<ul>
+<li>automatique sur toute Merge Request</li>
+<li>automatique sur <code>main</code></li>
+<li>manuel sur <code>guironne-jobs</code></li>
+</ul>
+<p>Reproduction locale :</p>
+<pre><code class="language-bash">pnpm install
+pnpm start
+CI=1 CHANGED_FILES="$(git diff --name-only HEAD~5..HEAD)" pnpm vitest --config tests/e2e/vitest.config.all_exercises.js --run
+</code></pre>
+<h3><code>testExosModified</code></h3>
+<p>Ce job récupère lui aussi les fichiers modifiés, puis exécute les tests console ciblés :</p>
+<pre><code class="language-bash">CHANGED_FILES="$CHANGED_FILES" pnpm test:e2e:console_errors
+</code></pre>
+<p>Déclenchement :</p>
+<ul>
+<li>automatique sur toute Merge Request</li>
+<li>automatique sur <code>main</code></li>
+<li>manuel sur <code>guironne-jobs</code></li>
+</ul>
+<p>Reproduction locale :</p>
+<pre><code class="language-bash">pnpm install
+pnpm start
+CHANGED_FILES="$(git diff --name-only HEAD~5..HEAD)" pnpm test:e2e:console_errors
+</code></pre>
+<h2>Tests e2e d'erreurs console par niveaux</h2>
+<p>Ces jobs héritent de <code>.testCI</code>.</p>
+<p>Déclenchement commun :</p>
+<ul>
+<li>automatique si <code>CI_COMMIT_BRANCH == "main"</code> et <code>CI_PIPELINE_SOURCE == "merge_request_event"</code></li>
+<li>automatique en pipeline planifié si <code>CI_TEST_MA == "CONSOLE"</code></li>
+<li>manuel sur <code>guironne-jobs</code></li>
+</ul>
+<p>Remarque : cette règle est plus restrictive qu'un simple "toute Merge Request", car elle dépend explicitement de <code>CI_COMMIT_BRANCH == "main"</code> dans <code>.testCI</code>.</p>
+<h3>Collège</h3>
+<h4><code>test6e</code></h4>
+<pre><code class="language-bash">NIV=6e/6 pnpm test:e2e:console_errors
+</code></pre>
+<h4><code>test5e</code></h4>
+<pre><code class="language-bash">NIV=5e/5 pnpm test:e2e:console_errors
+</code></pre>
+<h4><code>test4e</code></h4>
+<pre><code class="language-bash">NIV=4e/4 pnpm test:e2e:console_errors
+</code></pre>
+<h4><code>test3e</code></h4>
+<pre><code class="language-bash">NIV=3e/3 pnpm test:e2e:console_errors
+</code></pre>
+<h3>Lycée</h3>
+<h4><code>test2e</code></h4>
+<pre><code class="language-bash">NIV=2e/2 pnpm test:e2e:console_errors
+</code></pre>
+<h4><code>test1e</code></h4>
+<pre><code class="language-bash">NIV=1e/1 pnpm test:e2e:console_errors
+</code></pre>
+<h4><code>testTExOuTSpeOutechno</code></h4>
+<pre><code class="language-bash">NIV=TEx^TSpe^techno pnpm test:e2e:console_errors
+</code></pre>
+<h3>Autres ensembles</h3>
+<h4><code>testQCM</code></h4>
+<pre><code class="language-bash">NIV=QCM pnpm test:e2e:console_errors
+</code></pre>
+<h4><code>testCan6e5e</code></h4>
+<pre><code class="language-bash">NIV=can/6e^can/5e pnpm test:e2e:console_errors
+</code></pre>
+<h4><code>testCan4e3e</code></h4>
+<pre><code class="language-bash">NIV=can/4e^can/3e pnpm test:e2e:console_errors
+</code></pre>
+<h4><code>testCan2e1e</code></h4>
+<pre><code class="language-bash">NIV=can/2e^can/1e pnpm test:e2e:console_errors
+</code></pre>
+<h4><code>testCanExTSpe</code></h4>
+<pre><code class="language-bash">NIV=can/Ex^can/TSpe pnpm test:e2e:console_errors
+</code></pre>
+<h2>Tests e2e d'exports PDF</h2>
+<p>Ces jobs héritent de <code>.testCIPDF</code>.</p>
+<p>Note : dans <code>pdfexports.test.ts</code>, les modes ciblés par <code>NIV</code> et <code>CHANGED_FILES</code> ne sont activés que si <code>CI</code> est défini. En local, il faut donc préfixer les commandes ciblées par <code>CI=1</code>.</p>
+<p>Déclenchement commun :</p>
+<ul>
+<li>manuel sur <code>guironne-jobs</code></li>
+<li>manuel sur <code>mathalea-jobs</code></li>
+<li>automatique en pipeline planifié si <code>CI_TEST_MA == "PDF"</code></li>
+</ul>
+<h3>Export PDF par niveaux</h3>
+<h4><code>test6ePDF</code></h4>
+<pre><code class="language-bash">CI=1 NIV=6e/6 pnpm test:e2e:pdfexports
+</code></pre>
+<h4><code>test5ePDF</code></h4>
+<pre><code class="language-bash">CI=1 NIV=5e/5 pnpm test:e2e:pdfexports
+</code></pre>
+<h4><code>test4ePDF</code></h4>
+<pre><code class="language-bash">CI=1 NIV=4e/4 pnpm test:e2e:pdfexports
+</code></pre>
+<h4><code>test3ePDF</code></h4>
+<pre><code class="language-bash">CI=1 NIV=3e/3 pnpm test:e2e:pdfexports
+</code></pre>
+<h3>Export PDF CAN</h3>
+<h4><code>testCan6e5ePDF</code></h4>
+<pre><code class="language-bash">CI=1 NIV=can/6e^can/5e pnpm test:e2e:pdfexports
+</code></pre>
+<h4><code>testCan4e3ePDF</code></h4>
+<pre><code class="language-bash">CI=1 NIV=can/4e^can/3e pnpm test:e2e:pdfexports
+</code></pre>
+<h4><code>testCan2e1ePDF</code></h4>
+<pre><code class="language-bash">CI=1 NIV=can/2e^can/1e pnpm test:e2e:pdfexports
+</code></pre>
+<h3>Export PDF DNB</h3>
+<p>Ces jobs nécessitent en plus :</p>
+<pre><code class="language-bash">git clone https://forge.apps.education.fr/coopmaths/dnb.git ./public/static/dnb
+mv ./public/static/dnb/sujets_decoupes/* ./public/static/dnb/
+</code></pre>
+<h4><code>testDNB20132015PDF</code></h4>
+<pre><code class="language-bash">CI=1 NIV=dnb_2013^dnb_2014^dnb_2015 pnpm test:e2e:pdfexports
+</code></pre>
+<h4><code>testDNB20162019PDF</code></h4>
+<pre><code class="language-bash">CI=1 NIV=dnb_2016^dnb_2017^dnb_2018^dnb_2019 pnpm test:e2e:pdfexports
+</code></pre>
+<h4><code>testDNB20202024PDF</code></h4>
+<pre><code class="language-bash">CI=1 NIV=dnb_2020^dnb_2021^dnb_2022^dnb_2023^dnb_2024 pnpm test:e2e:pdfexports
+</code></pre>
+<h3>Export PDF BAC et E3C</h3>
+<p>Ces jobs nécessitent en plus :</p>
+<pre><code class="language-bash">git clone https://forge.apps.education.fr/coopmaths/bac.git ./public/static/bac
+</code></pre>
+<h4><code>testBAC20202024PDF</code></h4>
+<pre><code class="language-bash">CI=1 NIV=bac_2024^bac_2023^bac_2022^bac_2021 pnpm test:e2e:pdfexports
+</code></pre>
+<h4><code>testE3C20202024PDF</code></h4>
+<pre><code class="language-bash">CI=1 NIV=e3c_2024^e3c_2023^e3c_2022^e3c_2021 pnpm test:e2e:pdfexports
+</code></pre>
+<h2>Build et déploiements</h2>
+<h3><code>build</code></h3>
+<p>Ce job ne lance pas de tests, mais vérifie que les étapes suivantes passent :</p>
+<pre><code class="language-bash">pnpm run makeJson
+NODE_OPTIONS="--max-old-space-size=5096 --expose-gc" pnpm vite build
+</code></pre>
+<p>Déclenchement :</p>
+<ul>
+<li>automatique sur <code>main</code></li>
+<li>manuel sur <code>guironne-jobs</code></li>
+</ul>
+<p>Reproduction locale :</p>
+<pre><code class="language-bash">pnpm install
+pnpm run makeJson
+NODE_OPTIONS="--max-old-space-size=5096 --expose-gc" pnpm vite build
+</code></pre>
+<h3><code>deploy</code> et <code>deployftp</code></h3>
+<p>Ces jobs sont des déploiements manuels, mais ils relancent implicitement des tests unitaires avant publication :</p>
+<pre><code class="language-bash">NODE_OPTIONS=--max-old-space-size=4096 pnpm run makeJson &amp;&amp; pnpm run prebuild-unit-tests &amp;&amp; pnpm vite build
+</code></pre>
+<p>Déclenchement :</p>
+<ul>
+<li>manuel sur <code>main</code></li>
+<li>manuel sur <code>guironne-jobs</code></li>
+</ul>
+<h2>Commandes utiles de synthèse</h2>
+<h3>Reproduire les tests unitaires attendus avant build</h3>
+<pre><code class="language-bash">pnpm install
+pnpm makeJson
+pnpm run prebuild-unit-tests
+</code></pre>
+<h3>Reproduire les e2e globaux les plus visibles</h3>
+<pre><code class="language-bash">pnpm install
+pnpm start
+pnpm test:e2e:views
+pnpm test:e2e:consistency
+pnpm test:e2e:interactivity
+</code></pre>
+<h3>Reproduire un test console ciblé sur un niveau</h3>
+<pre><code class="language-bash">pnpm install
+pnpm start
+NIV=6e/6 pnpm test:e2e:console_errors
+</code></pre>
+<h3>Reproduire un export PDF ciblé</h3>
+<pre><code class="language-bash">pnpm install
+pnpm start
+CI=1 NIV=6e/6 pnpm test:e2e:pdfexports
+</code></pre>
+<h2>Points d'attention</h2>
+<ul>
+<li><code>pnpm check</code> n'est pas lancé dans la CI actuelle.</li>
+<li><code>playwright-testInteractivity</code> semble avoir une règle incomplète pour <code>guironne-jobs</code>.</li>
+<li>les jobs e2e par niveaux sont marqués <code>allow_failure: true</code></li>
+<li>les jobs PDF sont aussi marqués <code>allow_failure: true</code></li>
+<li>les jobs ciblés sur exercices modifiés s'appuient sur une fenêtre de comparaison d'au plus 5 commits</li>
+</ul>
+
+</body>
+</html>

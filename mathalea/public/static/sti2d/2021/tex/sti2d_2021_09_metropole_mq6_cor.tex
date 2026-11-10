@@ -1,0 +1,39 @@
+
+\begin{center}
+\psset{unit=0.7cm}
+\def\xmin {-2}   \def\xmax {5}
+\def\ymin {-5}   \def\ymax {3}
+\begin{pspicture*}(\xmin,\ymin)(\xmax,\ymax)
+\psgrid[subgriddiv=1,  gridlabels=0, gridcolor=lightgray] 
+\psaxes[arrowsize=3pt 3, ticksize=-2pt 2pt, labels=none]{->}%
+                               (0,0)(\xmin,\ymin)(\xmax,\ymax) 
+\uput[dl](0,0){O}
+\pspolygon[showpoints,linecolor=blue](-1,1)(4,2)(0,-4)
+{\blue
+\uput[ul](-1,1){A} \uput[ur](4,2){B} \uput[dr](0,-4){C} 
+}
+\end{pspicture*}
+\end{center}
+
+$\text{AB}^2 = \left (x_{\text{B}}-x_{\text{A}}\right )^2 + \left (y_{\text{B}}-y_{\text{A}}\right )^2
+= \left (4-(-1)\right )^2 + \left (2-1\right)^2
+= 25+1=26$
+
+$\text{AC}^2 = \left (x_{\text{C}}-x_{\text{A}}\right )^2 + \left (y_{\text{C}}-y_{\text{A}}\right )^2
+= \left (0-(-1)\right )^2 + \left (-4-1\right)^2
+= 1+25=26$
+
+On peut donc dire que le triangle ABC est isocèle en A.
+
+$\text{BC}^2 = \left (x_{\text{C}}-x_{\text{B}}\right )^2 + \left (y_{\text{C}}-y_{\text{B}}\right )^2
+= \left (0-4\right )^2 + \left (-4-2\right)^2
+= 16+36=52$
+
+Or $52=26+26$ donc $\text{BC}^2 = \text{AB}^2 + \text{AC}^2$ donc, d'après la récirpoque du théorème de Pythagore, le triangle ABC est rectangle en A.
+
+On peut donc dire que le triangle ABC est isocèle rectangle en A.
+
+\medskip
+
+\textbf{Affirmation 6 vraie}
+

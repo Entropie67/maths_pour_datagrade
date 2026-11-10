@@ -1,0 +1,23 @@
+\medskip
+
+\begin{minipage}{0.6\linewidth}
+Les fonctions $f$ et $g$ définies sur $\R$ respectivement par :
+
+\[f(x) =\dfrac12 x^2 +1 \text{ et } g(x) = x + 5,\]
+
+sont représentées sur le graphique ci-contre par la courbe $\mathcal{C}$, courbe représentative de la fonction $f$ et la droite $\Delta$, courbe représentative de la fonction $g$.
+
+Lire graphiquement les positions relatives des courbes représentatives $\mathcal{C}$ de la fonction $f$ et $\Delta$ de la fonction $g$ puis montrer que l'aire de la partie colorée comprise entre la courbe $\mathcal{C}$ et la droite $\Delta$ vaut 18 unités d'aire.
+\end{minipage}\hfill
+\begin{minipage}{0.39\linewidth}
+\psset{unit=0.5cm,arrowsize=2pt 3}
+\begin{pspicture*}(-6,-1)(5.5,10)
+\pscustom[fillstyle=solid,fillcolor=lightgray]{\psplot[plotpoints=2000,linewidth=1.25pt,linecolor=red]{-2}{4}{x dup mul 0.5 mul 1 add}\psline(4,9)(-2,3)
+}
+\psgrid[gridlabels=0pt,subgriddiv=1,gridwidth=0.25pt]
+\psaxes[linewidth=1.25pt,labelFontSize=\scriptstyle]{->}(0,0)(-6,-1)(5.5,10)
+\psplot[plotpoints=2000,linewidth=1.25pt,linecolor=red]{-6}{5.5}{x dup mul 0.5 mul 1 add}
+\psplot[plotpoints=500,linewidth=1.25pt,linecolor=blue]{-6}{5.5}{x 5 add}
+\uput[r](-4,9){\red $\mathcal{C}$}\uput[ul](2,7){\blue $\Delta$}
+\end{pspicture*}
+\end{minipage}

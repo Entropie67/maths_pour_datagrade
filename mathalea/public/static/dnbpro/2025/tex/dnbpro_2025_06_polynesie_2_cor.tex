@@ -1,0 +1,71 @@
+
+\begin{enumerate}
+\item %Justifier par un calcul le montant total pour les gâteaux à la banane.
+22 gâteaux à la banane coûtent : $22 \times 900 = \np{19800}$~(F).
+\item %Recopier sur la copie la formule à insérer dans la cellule D5, parmi les trois
+%propositions suivantes :
+
+%\begin{center}$\fbox{=B5*C5}$\qquad  $\fbox{=B5+C5}\qquad $\fbox{=C5+1 000}\end{center}
+$\fbox{=B5*C5}$
+\item %Finalisation de la facture correspondant à la commande 
+	\begin{enumerate}
+		\item Voici le tableau complété.
+		
+		\begin{tabularx}{\linewidth}{|c|c|*{3}{>{\centering \arraybackslash}X|}}\hline
+	&A				&B						&C			&D\\ \hline
+1	&Gâteau			&Prix à l'unité (en F)	&Quantité	&Montant total (en F)\\ \hline
+2	&Au beurre		&{\red \np{1000}}					&35		&{\red \np{35000}}\\ \hline
+3	&À la banane	&900 					&22			&\np{19800}\\ \hline
+4	&À la vanille	& \np{1100}				&15			&\np{16500}\\ \hline
+5	&Au chocolat	&\np{1200}				& 28		&{\red \np{33600}}\\ \hline
+6	&				&						&			&\\ \hline
+7	&				&\multicolumn{2}{|c|}{Montant total HT (hors taxe)}&\np{104900}\\ \hline
+8	&				&\multicolumn{2}{|c|}{Montant de la TVA (5\,\%)}&{\red \np{5245}}\\ \hline 
+9	&				&\multicolumn{2}{|c|}{Montant total TTC}&{\red \np{110145}}\\ \hline
+\end{tabularx}
+
+		Les gâteaux au chocolat coûtent $28 \times 1200 = \np{33600}$~(F).
+		
+Si un gâteau au beurre coûte $b$~(F), alors 25 coûtent : $35b$.
+
+On a donc un montant total à payer de :
+
+$35b + \np{19800} + \np{16500} + \np{33600} = \np{104900}$, soit encore :
+
+$35b + \np{69900} = \np{104900}$, soit en ajoutant à chaque membre $-\np{69900}$ :
+
+$35b = \np{104900} - \np{69900} = \np{35000}$.
+On obtient facilement $b = \np{1000}$.
+		\item %\textbf{Détailler} le calcul du montant de la TVA sur la copie.
+Calcul de la TVA : $\np{104900} \times \dfrac{5}{100} = \np{104900} \times 0,05 = \np{5245}$~(F).
+
+Le montant total TTC est donc égal à : $\np{104900} + \np{5425} = \np{110325}$~(F).
+	\end{enumerate}
+\item %Calculer la quantité totale de gâteaux achetés au commerçant.
+On calcule la somme des nombres de la colonne \og Quantité \fg, soit :
+
+\[35 + 22 + 15 + 28 = (35 + 15) + (22 + 28) = 50 + 50 = 100~(\text{gâteaux})\]
+\end{enumerate}
+
+Pour la revente des gâteaux, l'association fixe le prix à \np{1400} F l'unité quel que soit le 
+gâteau.
+
+\begin{enumerate}[resume]
+\item %En supposant que tous les gâteaux seront vendus, calculer le montant total de la revente. \textbf{Exprimer} le résultat en F.
+Si les 100 gâteaux sont vendus \np{1400}~(F) chacun, l'association récupérera :
+
+\[100 \times \np{1400} = \np{140000}~(\text{F}).\]
+\item %\textbf{Calculer} le bénéfice réalisé par l'association. Exprimer le résultat en F.
+
+% \textbf{Donnée} : bénéfice = montant total de la revente - montant total TTC de la facture du commerçant.
+Le bénéfice est donc la différence entre la somme récupérée ci-dessus soit \np{140000} et le montant payé de la cellule C9, soit \np{110325} :
+
+Bénéfice : $\np{140000} - \np{110325} = \np{29675}$~(F).
+\item %L'association souhaite faire un bénéfice de \np{30000} F{}.
+
+%\textbf{Indiquer} si l'objectif est atteint. \textbf{Justifier} la réponse.
+Comme $\np{29675} < \np{30000}$, l'objectif n'est pas atteint.
+\end{enumerate}
+
+\medskip
+

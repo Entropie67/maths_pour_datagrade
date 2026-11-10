@@ -1,0 +1,75 @@
+
+\subsection*{Partie A}
+
+\begin{enumerate}
+	\item Le périmètre de EFGH vaut : \quad $4 \times 2x=4 \times  2 \times 1,5 = \np[cm]{12}$.
+
+	\item On a :\quad $\mathrm{AB} = 16-2x=16 - 2 \times 1,5 = \np[cm]{13}$.
+
+	\item $x=\np[cm]{1,5}=\mathrm{AD}$ et $\mathrm{AB}=\np[cm]{13}$.
+
+	 On construit le rectangle en utilisant son équerre, les lignes de la copie et sa règle graduée.
+
+	 \begin{tikzpicture}[x=1cm,y=1cm]
+	 	\draw (0,0) rectangle (13,1.5);
+	 \end{tikzpicture}
+
+	\item \begin{multicols}{2}
+		D'une part le périmètre de ABCD est :
+
+		\hfill~$\begin{aligned}
+			2 \times (\mathrm{AB} + \mathrm{AD})&= 2 \times (1,5+13)\\
+			&= 2 \times 14,5\\
+			&=\np[cm]{29}
+		\end{aligned}$ \hfill~
+
+		\columnbreak
+
+		D'autre part le périmètre de EFGH est d'après la question \textbf{1.} :
+
+		\hfill~
+		$\begin{aligned}
+			4 \times \mathrm{EF} & =	4 \times (2 \times 1,5)\\
+			&= \np[cm]{12}\\
+		\end{aligned}$\hfill~
+	\end{multicols}
+
+	Donc les périmètres de ABCD et de EFGH ne sont pas égaux quand $x$ vaut $\np[cm]{1,5}$.
+\end{enumerate}
+
+\subsection*{Partie B}
+\begin{enumerate}
+	\item \begin{enumerate}
+		\item Le périmètre d'un carré, c'est quatre fois le côté du carré. Ici, le côté du carré, c'est $2x$, avec $x$ qui est renseigné dans la cellule de la ligne \textsf{1}.
+
+		La formule en \textsf{B2} est donc : \quad\textsf{ = 4*2*A1} \quad ou bien \quad \textsf{ = 8*A1}.
+
+		\item Non il n'y a aucune valeur de $x$ dans ce tableau pour laquelle les deux périmètres sont égaux. On trouve des périmètres proches pour $x = 3$, mais ils ne sont pas égaux.
+	\end{enumerate}
+
+	\item \begin{enumerate}
+		\item Le périmètre du rectangle est donné par :
+
+		$\begin{aligned}[t]
+			2 \times (x + 16 - 2x) &= 2 \times (16-x)
+			= 2 \times 16- 2 \times x
+			=32-2x\\
+			&=-2x+32		\end{aligned}$
+
+		\item On veut donc résoudre l'équation suivante :
+
+		\hfill~ $	\begin{aligned}
+		\mathcal{P}_{\mathrm{ABCD}}&=\mathcal{P}_{\mathrm{EFGH}}\\
+		-2x+32&=4 \times 2 \times x\\
+		-2x+32&=8x\\
+		-2x+32+2x&=8x+2x\\
+		32&=10x\\
+		32\div10&=10x \div10\\
+		x&=3,2\\
+	\end{aligned}$\hfill~
+
+	La solution du problème est $\np[cm]{3,2}$.
+	\end{enumerate}
+\end{enumerate}
+
+

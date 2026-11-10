@@ -1,0 +1,132 @@
+{
+  "questions": [
+    {
+      "themes": "Évolutions",
+      "level": "2",
+      "id": "evo1",
+      "type":"math",
+      "title": "Conversion Taux de variation - CM",
+      "question": "Quel est le coefficient multiplicateur de l'évolution de taux de variations $t$ ?",
+      "answer": ["1+t"],
+      "correction":"Si la consigne avait été : Quel est le coefficient multiplicateur de l'évolution de taux de variations $t\\,\\%$ ?, alors la réponse aurait été $1+\\dfrac{t}{100}$.",
+      "keys": ["t"]
+    },
+    {
+      "themes": "Évolutions",
+      "level": "2",
+      "id": "evo1q",
+      "type":"qcm",
+      "title": "Conversion Taux de variation - CM (QCM)",
+      "question": "Quel est le coefficient multiplicateur de l'évolution de taux de variations $t$ ?",
+       "answer": ["$1+t$"],
+      "correction":"Si la consigne avait été : Quel est le coefficient multiplicateur de l'évolution de taux de variations $t\\,\\%$ ?, alors la réponse aurait été $1+\\dfrac{t}{100}$.",
+      "badPropositions": 
+        ["$1+\\dfrac{t}{100}$",
+         "$1-t$",
+         "$\\dfrac{t}{100}$",
+         "$\\dfrac{100}{t}$",
+         "$\\dfrac{1}{t}$"]
+      },
+      {
+      "themes": "Évolutions",
+      "level": "2",
+      "id": "evo2q",
+      "type":"qcm",
+      "title": "Taux de variation (QCM)",
+      "question": "Quel est le taux de variation de la quantité V entre l'état $V_1$ et l'état $V_2$ ?",
+      "answer": ["$t_{1\\rightarrow 2}=\\dfrac{V_2-V_1}{V_1}$"],
+      "correction":"Le taux de variation mesure la variation absolue $V_2-V_1$ ramené en proportion de la valeur de départ $V_1$.",
+      "badPropositions": 
+        ["$t_{1\\rightarrow 2}=\\dfrac{V_2}{V_1}$",
+         "$t_{1\\rightarrow 2}=\\dfrac{V_2-V_1}{V_2}$",
+         "$t_{1\\rightarrow 2}=\\dfrac{V_1}{V_2}$"]
+    },
+    {
+      "themes": "Évolutions",
+      "level": "2",
+      "id": "evo2",
+      "title": "Taux de variation",
+      "question": "Quel est le taux de variation de la quantité V entre l'état $V_1$ et l'état $V_2$ ?",
+      "answer": ["\\dfrac{V_2-V_1}{V_1}"],
+      "correction":"Le taux de variation mesure la variation absolue $V_2-V_1$ ramené en proportion de la valeur de départ $V_1$.",
+      "keys": ["V", "INDICE"]
+    },
+    {
+      "themes": "Évolutions",
+      "level": "2",
+      "id": "evo3",
+      "title": "Conversion CM - Taux de variation",
+      "question": "Quel est le taux de variation t d'une évolution de coefficient multiplicateur CM ?",
+      "answer": ["CM-1","t=CM-1"],
+      "correction":"Comme $CM = 1+t$, on a $t=CM-1$.",
+      "keys": ["CM","t"]
+    },
+    {
+      "themes": "Évolutions",
+      "level": "2",
+      "id": "evo3q",
+      "type":"qcm",
+      "title": "Conversion CM - Taux de variation (QCM)",
+      "question": "Quel est le taux de variation t d'une évolution de coefficient multiplicateur CM ?",
+      "answer": ["$t=CM-1$"],
+      "correction":"Comme $CM = 1+t$, on a $t=CM-1$.",
+      "badPropositions": 
+        ["$t=1+CM$",
+         "$t=\\dfrac{1}{CM}$",
+         "$t=1-CM$"]
+    },
+    {
+      "themes": "Évolutions",
+      "level": "2",
+      "id": "evo4",
+      "type":"math",
+      "title": "Coefficient multiplicateur d'évolutions successives",
+      "question": "Quel est le coefficient multiplicateur de l'évolution correspondante à une augmentation de p\u00a0% suivie d'une diminution de q\u00a0% ?",
+      "answer": ["\\left(1+\\dfrac{p}{100}\\right)\\left(1-\\dfrac{q}{100}\\right)"],
+      "correction":"Le coefficient multiplicateur de l'augmentation est $\\left(1+\\dfrac{p}{100}\\right)$ et celui de la réduction est $\\left(1-\\dfrac{q}{100}\\right)$",
+      "keys": ["p","q"]
+    },
+    {
+      "themes": "Évolutions",
+      "level": "2",
+      "id": "evo4q",
+      "type":"qcm",
+      "title": "Coefficient multiplicateur d'évolutions successives (QCM)",
+      "question": "Quel est le coefficient multiplicateur de l'évolution correspondante à une augmentation de p\u00a0% suivie d'une diminution de q\u00a0% ?",
+      "answer": ["$\\left(1+\\dfrac{p}{100}\\right)\\left(1-\\dfrac{q}{100}\\right)$"],
+      "correction":"Le coefficient multiplicateur de l'augmentation est $\\left(1+\\dfrac{p}{100}\\right)$ et celui de la réduction est $\\left(1-\\dfrac{q}{100}\\right)$",
+      "badPropositions": 
+        ["$\\left(1+\\dfrac{p}{100}\\right)+\\left(1-\\dfrac{q}{100}\\right)$",
+         "$(1+p)(1-q)$",
+         "$\\left(1+\\dfrac{1}{p}\\right)\\left(1-\\dfrac{1}{q}\\right)$",
+         "$\\dfrac{p}{100}\\dfrac{q}{100}$",
+         "$\\dfrac{p}{q}$"]
+    } ,
+    {
+      "themes": "Évolutions",
+      "level": "2",
+      "id": "evo5",
+      "title": "Coefficient multiplicateur d'évolution réciproque",
+      "question": "Quel est le coefficient multiplicateur de l'évolution réciproque à une évolution de taux $t$ ?",
+      "answer": ["\\dfrac{1}{1+t}-1"],
+      "correction":"Le coefficient multiplicateur de l'évolution de taux $t$ est $1+t$ donc l'évolution réciproque est donnée par la division par $1+t$ c'est à dire la multiplication par $\\dfrac{1}{1+t}$ donc le taux correspondant est $\\dfrac{1}{1+t}-1$",
+      "keys": ["t"]
+    },
+    {
+      "themes": "Évolutions",
+      "level": "2",
+      "id": "evo5q",
+      "type":"qcm",
+      "title": "Coefficient multiplicateur d'évolution réciproque (QCM)",
+      "question": "Quel est le coefficient multiplicateur de l'évolution réciproque à une évolution de taux $t$ ?",
+      "answer": ["$\\dfrac{1}{1+t}-1$"],
+      "correction":"Le coefficient multiplicateur de l'évolution de taux $t$ est $1+t$ donc l'évolution réciproque est donnée par la division par $1+t$ c'est à dire la multiplication par $\\dfrac{1}{1+t}$ donc le taux correspondant est $\\dfrac{1}{1+t}-1$",
+      "badPropositions": 
+        ["$\\dfrac{1}{1+t}$",
+         "$1+\\dfrac{t}{100}$",
+         "$\\dfrac{1}{1-t}$",
+         "$\\dfrac{1}{1+t}+1$",
+         "$\\dfrac{1}{1-t}+1 $"]
+     }   
+    ]
+}

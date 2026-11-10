@@ -1,0 +1,87 @@
+
+\begin{center}
+\textbf{Le parkour}
+\end{center}
+
+Le parkour est une discipline sportive acrobatique qui consiste à franchir des obstacles urbains ou naturels sans l'aide de matériel.
+
+Une traceuse (pratiquante de parkour) s'apprête à sauter du haut d'un mobilier de rue, noté bloc A sur la \textbf{figure 1}, dans le  but d'atteindre le bloc B distant de \np[m]{4,0} du bloc A 
+et plus bas de \np[m]{2,0}.
+
+La traceuse est modélisée par un point matériel M  de masse $m$ évoluant dans le champ de pesanteur terrestre $\vv{g}$. Dans ce modèle, on néglige la résistance de l'air et on suppose que la traceuse n'est soumise qu'à son poids. L'étude est menée dans le référentiel terrestre supposé galiléen et les blocs A et B sont immobiles.
+ 
+La position de la traceuse sera repérée par le point M de coordonnées $(x(t) ; y(t))$ dans le repère représenté \textbf{figure 1}, la variable $t$, exprimée en secondes, étant étudiée sur l'intervalle [0 ; 1].
+
+\begin{center}
+\psset{arrowsize=2pt 3, unit=1cm}
+\begin{pspicture}(-4,-3)(10,1.5)
+%\psgrid[subgriddiv=5,gridlabels=0,gridcolor=gray,subgridcolor=lightgray] 
+\psframe[fillcolor=lightgray!50,fillstyle=solid](-4,-3)(0,0)
+\psframe[fillcolor=lightgray!50,fillstyle=solid](4,-3)(8,-2)
+\psline{->}(0,0)(9,0)\psline{->}(0,0)(0,1.5)
+\rput(-2,-1.5){Bloc A} \rput(6,-2.5){Bloc B}
+\psline{<->}(0,-2.5)(4,-2.5) \uput[ur](1.5,-2.5){\np[m]{4}}
+\psline{<->}(6,-2)(6,0) \uput[r](6,-1){\np[m]{2}}
+\psline[linewidth=1.25pt]{->}(0,0)(0.5,0)\psline[linewidth=1.3pt]{->}(0,0)(1.5,0)
+\psline[linewidth=1.25pt]{->}(0,0)(0,0.5)
+\uput[l](0,0.25){$\vv{\jmath}$}\uput[d](0.25,0){$\vv{\imath}$}\uput[u](0.75,0){$\vv{v_0}$}
+\psline[linewidth=1.75pt]{->}(2.5,1.5)(2.5,0.75)\uput[r](2.5,0.75){$\vv{g}$}
+\uput[dl](0,1.5){$y$}\uput[dl](9.1,0){$x$}
+\uput[dl](0,0){O}
+%\psplot[linecolor=blue,linestyle=dashed]{0}{4.2}{9.8 neg x x mul mul 2 div 49 div}
+%\psdots[linecolor=blue](4,-1.6)
+\end{pspicture}
+
+\textbf{Figure 1 :} schématisation des conditions du saut
+\end{center}
+
+La traceuse arrive en courant à l'extrémité du bloc A. À l'instant $t = 0$, elle s'élance du point origine O avec un vecteur vitesse initiale $\vv{v_0}$ orienté selon l'axe horizontal $(Ox)$ : $\vv{v_0}=v_0\vv{\imath}$ avec $v_0 = \np[m\cdot s^{-1}]{7,0}$. On cherche à savoir si la traceuse réussira à atteindre le bloc B.
+
+\medskip
+
+\textbf{Donnée :}
+Intensité du champ de pesanteur $g = \np[m\cdot s^{-2}]{9,8}$.
+
+\medskip
+
+En appliquant la deuxième loi de Newton au point M, les coordonnées $a_x(t)$ et $a_y(t)$ du vecteur accélération $\vv{a}$ sont :
+\[ \begin{cases}
+a_x(t)=0\\a_y(t)=-g
+\end{cases}\]
+
+Pour $t$ appartenant à l'intervalle [0 ; 1], on note $v_x(t)$ et $v_y(t)$ les coordonnées du vecteur vitesse~$\vv{v}$ :
+
+\begin{itemize}
+\item [\textbullet] $v_x$ est la primitive de la fonction $a_x$ vérifiant $v_x(0) = v_0$ ; 
+\item [\textbullet] $v_y$ est la primitive de la fonction $a_y$ vérifiant $v_y(0) = 0$.
+\end{itemize}
+
+\begin{enumerate}[start=3]
+\item Déterminer les expressions $v_x(t)$ et $v_y(t)$.
+\end{enumerate}
+Pour $t$ appartenant à l'intervalle [0~;~1], $x(t)$ et $y(t)$ sont les coordonnées du point M donnant la position de la traceuse :
+\begin{itemize}
+ \item [\textbullet] $x$ est la primitive de la fonction $v_x$ vérifiant $x(0) = 0$;
+\item [\textbullet] $y$ est la primitive de la fonction $v_y$ vérifiant $y(0) = 0$.
+\end{itemize}
+\begin{enumerate}[resume]
+\item Justifier que les lois horaires du mouvement de la traceuse s'écrivent :
+\[ \begin{cases} x(t)= v_0t\\
+ y(t)=-\frac{1}{2} gt^2
+ \end{cases}\]
+\item Dans l'intervalle [0~;~1], résoudre l'équation $y(t) = -2$ dans laquelle la grandeur $y$ est exprimée en mètres. Arrondir la solution à $10^{- 3}$.
+\end{enumerate}
+On note $t_c$ la solution de l'équation $y(t) = -2$.
+
+Pour la suite de l'exercice, on prendra pour $t_c$, la valeur \np[s]{0,64}.
+\begin{enumerate}[resume]
+\item Déterminer l'abscisse $x(t_c)$ de la position de la traceuse à l'instant $t_c$.
+\end{enumerate}
+
+\begin{enumerate}[start=9]
+\item En utilisant les résultats précédents, en déduire si la traceuse atteint le bloc B.
+\end{enumerate}
+
+\bigskip
+
+

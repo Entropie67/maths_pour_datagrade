@@ -1,0 +1,57 @@
+%source mathadata
+% alignement de 3 points
+	% relation entre coordonnées et équation de la droite : calculer y à partir de x et comparer et l'inverse
+	% rester dans un contexte de classification comme dans l'activité précédente
+
+	\begin{multicols}{2}
+		On considère 5 points $A(0;1)$, $B(-2;-3)$, $C(-3;2)$, $D(1;-4)$ et $E(1;3)$. On cherche à identifier quels points sont alignés avec $A$ et $B$.
+
+		\begin{MADenumerate}
+			\item Calcul de l'équation de la droite $(AB)$ :
+			\begin{enumerate}
+				\item Déterminer le coefficient directeur $m$ à partir des coordonnées de $A$ et $B$ ;
+				\item Déterminer l'ordonnée à l'origine $p$ en remplaçant les coordonnées de $A$ dans l'équation $y=mx+p$ ;
+				\item Écrire l'équation réduite de la droite.
+			\end{enumerate}
+
+			\item Position des points $C$, $D$ et $E$ par rapport à la droite $(AB)$ :
+			\begin{enumerate}
+				\item Remplacer l'abscisse de chaque point dans l'équation pour vérifier l'égalité ;
+				\item Conclure : quels points sont alignés avec $A$ et $B$ ?
+			\end{enumerate}
+
+			\item Placer ensuite les points et tracer la droite obtenue pour vérifier vos résultats.
+
+			\item (Bonus) En utilisant l'algorithme de l'encadré précédent par rapport à la droite $(AB)$, quelle serait la couleur de chaque point ?
+
+		\end{MADenumerate}
+
+		%\begin{center}
+		\begin{figure}[H]\centering
+			\definecolor{wrwrwr}{rgb}{0.380,0.380,0.380}
+			\definecolor{rvwvcq}{rgb}{0.082,0.396,0.753}
+			\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1cm,y=1cm,scale=0.7]
+				\begin{axis}[
+						x=1cm,y=1cm,
+						axis lines=middle,
+						ymajorgrids=true,
+						xmajorgrids=true,
+						xmin=-4.5,
+						xmax=4.5,
+						ymin=-4.5,
+						ymax=4.5,
+						xtick={-4,...,4},
+						ytick={-4,...,4},
+						tick label style={font=\Large},
+					]
+
+					%\draw[domain=-1:7] plot(\x,{(2*\x-7)/3});
+
+					%\node[above,font=\LARGE] at (axis cs:6,2) {d};
+
+				\end{axis}
+			\end{tikzpicture}
+		\end{figure}
+		%\end{center}
+
+	\end{multicols}

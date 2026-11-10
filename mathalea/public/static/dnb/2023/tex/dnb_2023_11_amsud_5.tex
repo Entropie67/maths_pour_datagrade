@@ -1,0 +1,94 @@
+
+\medskip
+
+On dispose d'une roue dont les 4 secteurs ont tous la même aire et sont numérotés : 
+
+1 ; 2 ; 3 ;~4.
+
+On dispose également d'une urne contenant 3 boules numérotées: 2 ; 3 et 4.
+
+Les boules sont indiscernables au toucher.
+
+On considère l'expérience aléatoire suivante : 
+
+\og On fait tourner la roue puis on tire au hasard une boule dans l'urne. On forme alors un nombre entier à deux chiffres tel que :
+
+\begin{itemize}
+\item[$\bullet~~$]Le chiffre des dizaines est le numéro indiqué par la flèche sur la roue.
+\item[$\bullet~~$]Le chiffre des unités est le numéro de la boule tirée dans l'urne. \fg
+\end{itemize}
+
+\psset{unit=1cm,arrowsize=2pt 3}
+\begin{center}
+\begin{pspicture}(13.5,4)
+%\psgrid
+\pscircle(4.5,2.2){1.3}
+\rput(3.9,3){1} \rput(3.9,3){1} \rput(5.2,3){4} \rput(5.2,1.5){3} \rput(3.9,1.5){2}
+\rput(4.5,0.4){La roue: chiffre des dizaines}
+\psline[linewidth=2.5pt]{->}(3,4)(3.7,3.22)
+\pspolygon(10,0.8)(12.6,0.8)(12.1,3.3)(10.5,3.3)
+\rput(11.4,0.4){L'urne: chiffre des unités}
+\pscircle(10.8,1.6){0.4} \pscircle(11.8,1.6){0.4}\pscircle(11.4,2.6){0.4}
+\rput(10.8,1.6){2} \rput(11.8,1.6){4} \rput(11.4,2.6){3}
+\end{pspicture}
+\end{center}
+
+\emph{Exemple} : Si la flèche indique le numéro 1 sur la roue et que la boule tirée dans l'urne porte le numéro 3, on forme le nombre 13.
+
+\medskip
+
+\begin{enumerate}
+\item Écrire la liste des 12 issues possibles.
+\item Déterminer la probabilité de l'évènement: \og Obtenir un nombre impair \fg.
+\item On considère l'évènement $A$ : \og Le nombre formé est un nombre premier et inférieur à 30 \fg.
+	\begin{enumerate}
+		\item Quelle est la probabilité de l'évènement $A$ ?
+		\item Quelle est la probabilité de son évènement contraire ?
+	\end{enumerate}
+\end{enumerate}
+
+À l'aide de cette expérience aléatoire, on crée un jeu de hasard.
+
+Le joueur gagne s'il obtient un multiple de 11.
+
+\begin{enumerate}[resume]
+\item Montrer que la probabilité d'obtenir un multiple de 11 est égale à $0,25$.
+\item On souhaite simuler ce jeu à l'aide d'un logiciel de programmation.
+
+On a rédigé le script ci-dessous:
+
+\begin{center}
+\setscratch{scale=.8}
+\begin{scratch}[num blocks]
+\blockinit{quand \greenflag est cliqué}
+\blockvariable{mettre \ovalcontrol*{Gagné} à \ovalnum{0}}
+\blockrepeat{répéter \ovalnum{100} fois}
+{%% début repeat
+\blockvariable{mettre \ovalcontrol*{Chiffre des dizaines} à \ovaloperator{nombre aléatoire entre \ovalnum{1} et \ovalnum{4}}}
+\blockvariable{mettre \ovalcontrol*{Chiffre des unités} à \ovaloperator{nombre aléatoire entre \ovalnum{...} et \ovalnum{...}}}
+\blockif{si \ovalnum{....................} = \ovalnum{....................} alors}
+{% début if
+\blockvariable{ajouter \ovalnum{1} à \ovalnum{Gagné}}
+}% fin if
+}% fin repeat
+\blockstop{dire  regrouper \ovalnum{La fréquence d'apparition d'un multiple de 11 est de :} et \ovalcontrol{Gagné} / \ovalnum{100} pendant \ovalnum{2} secondes}
+\end{scratch}
+\end{center}
+
+Information:
+
+\ovaloperator{nombre aléatoire entre \ovalnum{1} et \ovalnum{4}} renvoie au hasard un nombre parmi 1, 2, 3, 4.
+	\begin{enumerate}
+		\item Écrire sur la copie comment compléter les deux cases vides de la ligne 5.
+
+\emph{Ne pas justifier}.
+		\item Écrire sur la copie comment compléter les deux cases vides de la ligne 6.
+
+\emph{Ne pas justifier}.
+		\item On a cliqué sur le drapeau et voici le résultat du programme :
+
+\og La fréquence d'apparition d'un multiple de $11$ est $0,23$. \fg
+
+Pourquoi le résultat est-il différent de celui obtenu dans la question 4 ?
+	\end{enumerate}
+\end{enumerate}

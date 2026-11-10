@@ -1,0 +1,86 @@
+{
+  "questions": [
+    {
+      "themes": "Dénombrement",
+      "level": "T",
+      "id": "den1",
+      "title": "Nombre de permutations d'un ensemble de $n$ éléments",
+      "question": "Combien y a-t-il de façons d'ordonner $n$ objets distincts ?",
+      "answer": ["n\\!"],
+      "keys": ["n", "EXCPOINT","POW"]
+    },
+    {
+      "themes": "Dénombrement",
+      "level": "T",
+      "id": "den2",
+      "title": "Nombre de k-uplets sans répétition",
+      "question": "Combien y a-t-il de façons d'ordonner $k$ objets distincts parmi $n$ ?",
+      "answer": ["\\dfrac{n!}{(n-k)!}"],
+      "keys": ["n", "k", "!", "POW"]
+    },
+    {
+      "themes": "Dénombrement",
+      "level": "T",
+      "id": "den3",
+      "title": "Nombre de k-uplets avec répétition",
+      "question": "Combien y a-t-il de façons de choisir un $k$-uplet, avec répétition, parmi $n$ objets distincts  ?",
+      "answer": ["n^k"],
+      "keys": ["n", "k", "POW"]
+    },
+    {
+      "themes": "Dénombrement",
+      "level": "T",
+      "id": "den4",
+      "title": "Nombre de combinaisons de $k$ éléments parmi $n$",
+      "question": "Combien y a-t-il de façons de choisir $k$ objets parmi $n$ ?",
+      "answer": ["\\binom{n}{k}", "\\dfrac{n!}{k!(n-k)!}"],
+      "keys": ["n", "k", "!", "PMATRIX11", "POW"]
+    },
+    {
+      "themes": "Dénombrement",
+      "level": "T",
+      "id": "den5",
+      "title": "Nombre de parties d'un ensemble à $n$ éléments",
+      "question": "Combien de sous-ensembles possède un ensemble de $n$ éléments ?",
+      "answer": ["2^n"],
+      "keys": ["n", "POW"]
+    },
+    {
+      "themes": "Dénombrement",
+      "level": "T",
+      "id": "den6",
+      "title": "Somme des coefficients binomiaux",
+      "question": "Combien vaut $\\displaystyle\\sum_{k=0}^n \\dbinom{n}{k}$ ?",
+      "answer": ["2^n"],
+      "keys": ["n", "k", "PMATRIX11", "POW"]
+    },
+    {
+      "themes": "Dénombrement",
+      "level": "T",
+      "id": "den7",
+      "title": "Expression du coefficient binomial",
+      "question": "Comment s'exprime le coefficient binomial $\\binom{n}{k}$ en fonction de $n$ et $k$ ?",
+      "answer": ["\\dfrac{n!}{k!(n-k)!}", "\\dfrac{n!}{(n-k)!k!}"],
+      "keys": ["n", "k", "!", "PMATRIX11", "POW"]
+    },
+    {
+      "themes": "Dénombrement",
+      "level": "T",
+      "id": "den8",
+      "title": "Relation de Pascal (triangle de Pascal)",
+      "question": "$\\dbinom{n}{k} + \\dbinom{n}{k+1}=$",
+      "answer": ["\\dbinom{n+1}{k+1}"],
+      "keys": ["n", "k", "PMATRIX11"]
+    },
+    {
+      "themes": "Dénombrement",
+      "level": "T",
+      "id": "den9",
+      "type": "qcm",
+      "title": "Somme des coefficients binomiaux (QCM)",
+      "question": "Combien vaut $\\displaystyle\\sum_{k=0}^n \\dbinom{n}{k}$ ?",
+      "answer": ["$2^n$"],
+      "badPropositions": ["$n^2$", "$2n$", "$n!$"]
+    }
+  ]
+}

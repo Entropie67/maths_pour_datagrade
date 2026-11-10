@@ -1,0 +1,88 @@
+
+\medskip
+
+Une usine fabrique des bougies parfumées en cire de forme cylindrique.
+
+\medskip
+
+\textbf{Les questions 1, 2 et 3 sont indépendantes}
+
+\begin{center}
+\begin{tabularx}{\linewidth}{|p{5.8cm}|X|}\hline
+\textbf{Document 1}
+
+\psset{unit=1cm,arrowsize=2pt 3}
+\begin{pspicture}(-2.7,0)(2.7,4.9)
+\psellipse(0,4)(0.7,0.15)
+\psellipticarc(0,0.8)(0.7,0.15){180}{0}
+\psellipticarc[linestyle=dashed](0,0.8)(0.7,0.15){0}{180}
+\psline(-0.7,0.8)(-0.7,4)\psline(0.7,0.8)(0.7,4)
+\pscurve[linewidth=1.5pt](0,4)(-0.1,4.15)(0.15,4.3)
+\rput(1.,4.4){la mèche}\rput(1.9,2.35){la bougie}
+\psline{<->}(0,0.5)(0.7,0.5)
+\uput[d](0.35,0.5){\small 3 cm}
+\psline{<->}(-1,0.8)(-1,4)
+\uput[l](-1,2.4){\small 12 cm}
+\end{pspicture}
+
+Rayon du cylindre : 3 cm 
+
+Hauteur du cylindre : 12 cm&
+\textbf{Document 2}
+
+Aire d'un disque  : rayon $^2 \times \pi$
+
+Volume d'un cylindre : Aire de la base $\times$ hauteur
+%\rule{6cm}
+
+\textbf{Document 3}
+
+\begin{itemize}
+\item Une bougie est composée de cire et de parfum.
+\item Le volume de cire nécessaire à la fabrication d'une bougie correspond au $\dfrac{9}{10}$ du volume de cette bougie.
+\item 1~cm$^3$ de cire a une masse de $0,7$~g.
+\end{itemize}\\ \hline
+\end{tabularx}
+\end{center}
+
+\begin{enumerate}
+\item 
+	\begin{enumerate}
+		\item Montrer que le volume d'une bougie est d'environ 339 cm$^3$.
+		\item Quelle est la masse de cire nécessaire pour une bougie ? On donnera une valeur approchée au gramme près.
+	\end{enumerate}
+
+\begin{minipage}{8.4cm}
+\item Au mois de novembre, l'usine a fabriqué des bougies de 4 parfums différents :
+
+vanille, miel, lavande et jasmin.
+
+Le diagramme circulaire codé ci-contre donne la répartition, pour le mois de novembre, du nombre de bougies fabriquées en fonction de leur parfum.
+
+Les bougies au miel représentent 22\,\% de la production du mois de novembre.
+
+Quel est le pourcentage de bougies à la lavande fabriquées au mois de novembre ?
+\end{minipage}\hspace{0.4cm}
+\begin{minipage}{4.8cm}
+\psset{unit=0.8cm}
+\begin{pspicture}(-2.9,-2.9)(2.9,2.9)
+\pscircle(0,0){2.9}
+\psline(2.9;180)(0,0)(2.9;-90)
+\psline(2.9;5.4) \psline(2.9;84.6)
+\rput(1.45;46){Miel}\rput(1.45;135){Lavande}
+\rput(1.45;225){Vanille}\rput(1.45;-45){Jasmin}
+\psframe(0,0)(-0.3,-0.3)
+\psarc(0,0){0.5}{5.4}{84.6}\psarc(0,0){0.6}{5.4}{84.6}
+\psarc(0,0){0.4}{84.6}{180}\psarc(0,0){0.4}{270}{5.4}
+\end{pspicture}
+\end{minipage}
+
+\item Durant les trois premiers mois de l'année suivante, l'entreprise se donne pour objectif de produire en moyenne \np{7900} bougies par mois.
+
+En janvier, elle fabrique \np{6500} bougies et \np{8000} en février.
+
+Quel est le nombre de bougies à produire en mars pour atteindre l'objectif ?
+\end{enumerate}
+
+\medskip
+

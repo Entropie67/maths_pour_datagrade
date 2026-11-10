@@ -1,0 +1,51 @@
+
+\medskip
+
+Dans la commune de Gabin, le tarif de ramassage des bacs à ordures ménagères est composé:\\
+\hspace*{2cm}\textbullet~~d'une partie fixe de 115~\euro{} par an,\\
+\hspace*{2cm}\textbullet~~d'une partie variable de 5~\euro{} par ramassage.
+
+Le tableau ci-dessous, donne des coûts à l'année en fonction du nombre de ramassages.
+
+
+{\renewcommand{\arraystretch}{1.5}
+\begin{tabularx}{\linewidth}{|m{5cm}|*{4}{>{\centering \arraybackslash}X|}}\hline
+Nombre de ramassages (x)&4&10&14&20\\ \hline
+Coût à l'année en euros (\euro)&135 &165&\ldots&215\\ \hline
+Point de coordonnées $(x~;~y)$&A(4~;~135)&B(10~;~165)&C(14~;~\ldots)&D(20~;~215)\\ \hline
+\end{tabularx}}
+
+\medskip
+
+\begin{enumerate}
+\item Vérifier par un calcul que Gabin paie 185~\euro{} pour $14$~ramassages dans l'année.
+
+Compléter les éléments vides du tableau précédent.
+\item Compléter le graphique suivant en plaçant les points C et D et tracer la droite passant par les points A, B, C et D.
+
+\begin{center}
+\psset{xunit=0.5cm,yunit=0.1cm,arrowsize=2pt 3}
+\begin{pspicture}(-1,-5)(25,140)
+\uput[u](22,0){\footnotesize Nombre de ramassages ($x$)}
+\uput[r](0,137){\footnotesize Coût payé (\euro) ($y$)}
+\psaxes[linewidth=1.25pt,labelFontSize=\scriptstyle,Oy=100,Dy=5]{->}(0,0)(0,0)(25,140)
+\multido{\n=1+1}{25}{\psline[linewidth=0.15pt](\n,0)(\n,140)}
+\multido{\n=0+5}{29}{\psline[linewidth=0.15pt](0,\n)(25,\n)}
+\psdots[dotstyle=+,dotscale=1.5](4,35)(10,65)
+\uput[ur](4,35){A}\uput[ur](10,65){B}
+\end{pspicture}
+\end{center}
+\item Le coût à payer en euros en fonction du nombre $x$ de ramassages dans l'année peut être modélisé par la fonction $f$ d'expression $f(x) = 5x + 115$.
+
+Indiquer si cette fonction est une fonction linéaire. Justifier la réponse.
+\item Gabin ne souhaite pas dépasser 195~\euro{} cette année.\\
+Déterminer le nombre maximum de ramassages correspondant à cet objectif. \\
+Justifier la réponse.
+
+\smallskip
+
+\emph{Indication} : la résolution peut se faire par le calcul ou à l'aide de la représentation graphique que vous avez réalisée, en laissant apparents les traits de lecture.
+\end{enumerate}
+
+\vspace{0.5cm}
+

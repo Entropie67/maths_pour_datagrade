@@ -1,0 +1,81 @@
+
+\vspace{0.25cm}
+
+%\emph{Les calculs seront détaillés sur la copie.}
+%
+%\smallskip
+
+Pour limiter les bouteilles en plastique, une association souhaite offrir une gourde en métal à chaque élève de sixième.\\
+Les prix que propose un commerçant sont dans le tableau page suivante.
+
+\begin{figure}[t!]
+\centering
+Facture\rule[-15pt]{0pt}{0pt}
+
+\renewcommand{\arraystretch}{1.4}
+\begin{tabular}{|>{\cellcolor{lightgray}} c |c|c|>{\raggedleft\arraybackslash} m{3.5cm}|>{\raggedleft\arraybackslash} m{3cm}|}
+\hline
+\rowcolor{lightgray} & A & B & \centering C & \centering\arraybackslash  D\\
+\hline
+1 & Articles & Quantités & \centering Prix unitaire en F (prix d'une gourde) & \centering\arraybackslash Montant total \newline{} (en F)\\
+\hline
+2 & Gourdes vertes & 45 & \np{1500,00} & \np{67500,00}\\
+\hline
+3 & Gourdes bleues & 29 & \np{1200,00} & \np{34800,00}\\
+\hline
+4 & Gourdes rouges & 36 & \np{1300,00} & $\blue\np{46800,00}$\\
+\hline
+5 & Gourdes grises &$\blue 70$ & \np{1125,00} & $\blue\np{78750,00}$\\
+\hline
+6 & \multicolumn{2}{c|}{~} & \centering Total HT & \np{227850,00}\\
+\cline{1-1} \cline{4-5} 
+7 & \multicolumn{2}{|c|}{~} & \centering TVA 13\,\% & $\blue\np{29620,50}$\\
+\cline{1-1} \cline{4-5} 
+8 & \multicolumn{2}{|c|}{~} & \centering Total TTC & $\blue\np{257470,50}$\\
+\cline{1-1} \cline{4-5} 
+\end{tabular}
+\end{figure}
+
+\begin{flushleft}
+\textbf{Partie A}
+\end{flushleft}
+
+\begin{enumerate}
+\item % \textbf{Justifier} par un calcul le montant total pour les gourdes vertes.
+Il y a 45 gourdes vertes à \np[F]{1500,00} pièce. \\
+$45\times \np{1500,00}=\np{67500,00}$
+
+Le montant total pour les gourdes vertes est donc bien de \np[F]{67500,00}.
+
+\item 	
+\begin{list}{\textbullet}{On détaille les calculs permettant de compléter le tableau.}
+\item Montant total (en F) des gourdes rouges:
+$36 \times \np{1300,00} = \np{46800,00}$.
+\item Montant total (en F) des gourdes grises:\\
+$\np{227850,00}  - ( \np{67500,00} + \np{34800,00} +  \np{46800,00}) = \np{78750,00}$.
+\item Nombre de gourdes grises:
+$\dfrac{\np{78750,00}}{\np{1125,00}}=70$.
+\item Montant (en F) de la TVA:
+$\np{227850,00} \times  \dfrac{13}{100} = \np{29620,50}$.
+\item Montant total TTC (en F):
+$\np{227850,00} + \np{29620,50} = \np{257470,50}$.
+\end{list}
+
+\item La formule que l'on doit mettre dans la cellule D8 est: \quad
+\fbox{\texttt{= D6 + D7}}
+
+\end{enumerate}
+
+\begin{flushleft}
+\textbf{Partie B}
+\end{flushleft}
+
+Les gourdes sont toutes distribuées aux élèves. Parmi les 180 élèves de sixième, on choisit un élève au hasard.
+
+\begin{enumerate}[resume]
+\item  Il y a 36 gourdes rouges et 180 gourdes au total.\\
+La probabilité que l'élève ait une gourde rouge est $\dfrac{36}{180}$ soit $0,2$.
+
+\item La probabilité qu'il ait une gourde d'une autre couleur est donc $1-0,2=0,8$.
+\end{enumerate}
+

@@ -1,0 +1,53 @@
+
+\bigskip
+
+%On considère deux fonctions $f$ et $g$ définies par :
+
+\[f(x) = x^2 - x - 6 \qquad \qquad g(x) = -2x.\]
+
+\begin{enumerate}
+\item 
+	\begin{enumerate}
+		\item %Montrer que l'image de 5 par la fonction $f$ est 14.
+L'image de 5 par la fonction $f$ est $f(5) = 5^2 - 5 - 6 = 25 - 11 = 14$.
+		\item %Déterminer l'antécédent de 4 par la fonction $g$.
+L'antécédent de 4 par la fonction $g$ est le nombre $x$ tel que $g(x) = 4$,\\
+ soit $x = \dfrac{4}{-2} = - 2$.
+
+%Pour calculer des images de nombres par les fonctions $f$et $g$, on utilise un tableur et on obtient la copie d'écran suivante:
+\begin{center}
+\begin{tabularx}{0.9\linewidth}{|c|c|*{7}{>{\centering \arraybackslash}X|}}\hline
+	&\text{A}&B&C&D&E&F&G&H\\ \hline
+1	&$x$&$-4$&$-3$&$-2$&$-1$&0&1&2\\ \hline
+2	&$f(x) = x^2 - x - 6$&14&6&0&$-4$&$-6$&$-6$&$-4$\\ \hline
+3	&$g(x) = -2x$&8&6&4&2&0&$-2$&$-4$\\ \hline
+\end{tabularx}
+\end{center}
+
+		\item %À l'aide des informations précédentes, citer deux antécédents de 14 par la fonction $f$.
+On a vu que 5 a pour image 14 à la question 1 et le tableur montre que $- 4$ a aussi pour image 14 : donc $-4$ et 5 ont pour image 14 par la fonction $f$
+		\item  %Quelle formule a-t-on pu saisir dans la cellule B2 avant de l'étirer vers la droite jusqu'à la cellule H2 ?
+		On a écrit dans la cellule \texttt{B2} : \texttt{= B1*B1 -- B1 -- 6}.
+		\item %Existe-t-il un nombre qui a la même image par la fonction $f$ et par la fonction $g$ ?
+On lit sur le tableur :
+
+$f(-3 ) = 6$ et $g(-3) = 6$ d'une part et $f(2) = - 4, \, g(2) = - 4$ d'autre part : il existe donc au moins deux nombres $- 3$ et 2 qui ont les mêmes images par $f$ et $g$.
+		\end{enumerate}
+\item 
+	\begin{enumerate}
+		\item %Montrer que, pour tout nombre $x,\, f(x)$ est égal à $(x + 2)(x - 3)$.
+On développe $(x + 2)(x - 3) = x^2 - 3x + 2x - 6 = x^2 - x - 6 = f(x)$, quel que soit le nombre $x$, donc $f(x) = (x + 2)(x - 3)$.
+
+		\item %Résoudre l'équation $f(x) = 0$.
+D'après la question précédente résoudre $f(x) = 0$ revient à résoudre l'équation-produit $(x + 2)(x - 3) = 0$ : ce produit est nul si l'un des facteurs est nul, donc si $\left\{\begin{array}{l c l}
+x + 2&=&0\\x - 3&=&0
+\end{array}\right.$ ou 
+$\left\{\begin{array}{l c l}
+x &=&- 2\\x &=&3
+\end{array}\right.$.
+L'ensemble des solutions est donc $S = \{- 2~;~3\}$.
+	\end{enumerate}
+\end{enumerate}
+
+\bigskip
+

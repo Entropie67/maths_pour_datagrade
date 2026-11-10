@@ -1,0 +1,46 @@
+
+Voici un programme de calcul :
+
+\begin{figure}[!h]
+\begin{center}
+\psset{unit=1cm,arrowsize=2pt 3}
+\begin{pspicture}(-7,0)(7,8.4)
+%\psgrid
+\rput(0,0){\fbox{Résultat obtenu à l'arrivée}}
+\rput(0,2){\fbox{Multiplier les deux nombres}}
+\rput(-3,4){\fbox{Multiplier par 4}}\rput(3,4){\fbox{Soustraire 3}}
+\rput(-3,6){\fbox{Ajouter 2}}\rput(3,6){\fbox{Multiplier par 5}}
+\rput(0,8){\fbox{Nombre choisi au départ}}
+\psline[linewidth=1.5pt]{->}(0,7.7)(-3,6.3)\psline[linewidth=1.5pt]{->}(0,7.7)(3,6.3)
+\psline[linewidth=1.5pt]{->}(-3,5.7)(-3,4.3)\psline[linewidth=1.5pt]{->}(3,5.7)(3,4.3)
+\psline[linewidth=1.5pt]{->}(-3,3.7)(0,2.3)\psline[linewidth=1.5pt]{->}(3,3.7)(0,2.3)
+\psline[linewidth=1.5pt]{->}(0,1.7)(0,0.3)
+\end{pspicture}
+\end{center}
+\end{figure}
+
+\begin{enumerate}
+\item Montrer que si on choisit 2 comme nombre de départ, le résultat à l'arrivée est 112.
+
+\item Quel est le résultat obtenu à l'arrivée quand on choisit $-3$ comme nombre de départ ?
+
+\item On choisit $x$ comme nombre de départ.
+
+Parmi les expressions suivantes, lesquelles permettent d'exprimer le résultat à l'arrivée de ce programme de calcul. Aucune justification n'est demandée.
+
+\begin{center}
+\begin{tabular}{|c|c|c|c|}
+\hline
+Expression $A$ & Expression $B$ & Expression $C$ & Expression $D$ \\
+\hline
+$(x + 2 \times 4)(x \times 5 - 3)$ & $(4 x+ 2)(5x - 3)$ & $(4 x + 8)(5x - 3)$ & $(x + 2) \times 4 \times(5 x - 3)$ \\
+\hline
+\end{tabular}
+\end{center}
+
+\item Trouver les deux nombres de départ qui permettent d'obtenir 0 à l'arrivée. Expliquer la démarche.
+
+\item Développer et réduire l'expression $B$.
+
+\end{enumerate}
+

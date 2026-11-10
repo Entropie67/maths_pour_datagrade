@@ -1,0 +1,111 @@
+
+\medskip
+
+\textbf{Dans cet exercice, seulement 4 questions au choix parmi les 6 questions proposées sont à traiter. Toutes ces questions sont indépendantes les unes des autres.}
+
+\medskip
+
+\emph{Pour chaque question, indiquer la lettre de la réponse exacte. Aucune justification n'est demandée.}
+
+\begin{center}
+\textbf{Loi de refroidissement de Newton}
+\end{center}
+
+La loi de refroidissement de Newton indique que la vitesse de refroidissement d'un matériau est proportionnelle à la différence entre la température $\theta$ (en degré Celsius) de ce matériau à l'instant $t$ (en minute) et la température A constante de l'air ambiant.
+
+Cela se traduit par la relation :
+\[\theta'(t) = \alpha(\theta(t) - A),\]
+
+où $\theta$ est la fonction définie et dérivable sur l'intervalle $[0~;~ +\infty[$ modélisant la température du matériau en fonction du temps $t$, en prenant comme origine du temps l'instant où la pièce en acier est mise à refroidir.
+
+La valeur du coefficient $\alpha$, qui est négatif, dépend du matériau.
+
+Une pièce en acier, initialement à la température de $600\degres$ C, est mise à refroidir à l'air libre dans une pièce à $20\degres$ C. Pour cet acier, $\alpha$ vaut $-0,1$.
+
+\medskip
+
+\begin{enumerate}
+\item La fonction $\theta$ est solution de l'équation différentielle :
+
+\begin{tabularx}{\linewidth}{*{2}{X}}
+\textbf{a.~~}$y= -0,1y' +2$&\textbf{b.~~}$y= -0,1y' +20$\\
+\textbf{c.~~}$y' = -0,1y + 2$&\textbf{d.~~}$y' = 0,1y + 20$
+\end{tabularx}
+\end{enumerate}
+
+\textbf{Pour l'ensemble des questions suivantes}, on admet que, sur l'intervalle $[0~;~ +\infty[$, la fonction $\theta$ est définie par :
+\[\theta(t) = 580 \text{e}^{-0,1t} + 20.\]
+
+\begin{enumerate}[resume]
+\item La pente de la tangente à la courbe représentative de la fonction $\theta$ au point d'abscisse 10 vaut :
+
+\begin{center}
+\renewcommand\arraystretch{2.1}
+\begin{tabularx}{\linewidth}{*{2}{X}}
+\textbf{a.~~}$-\dfrac{58}{\text{e}}$&\textbf{b.~~}$580\text{e}^{-1} + 20$\\
+\textbf{c.~~}$- \dfrac{58}{\text{e}} + 20$&\textbf{d.~~}$\dfrac{580}{\text{e}}$
+\end{tabularx}
+\renewcommand\arraystretch{1}
+\end{center}
+
+\item Sur l'intervalle $[0~;~+ \infty[$, la fonction $\theta$ est:
+
+\begin{center}
+\begin{tabularx}{\linewidth}{*{2}{X}}
+\textbf{a.~~} croissante&\textbf{b.~~}décroissante\\
+\textbf{c.~~}croissante puis décroissante&\textbf{d.~~}constante
+\end{tabularx}
+\end{center}
+
+\item La limite en $+\infty$ de $\theta(t)$ est : 
+\begin{center}
+\begin{tabularx}{\linewidth}{*{2}{X}}
+\textbf{a.~~} 20&\textbf{b.~~}580 \\
+\textbf{c.~~}  $- \infty$&\textbf{d.~~} $+ \infty$
+\end{tabularx}
+\end{center}
+\end{enumerate}
+
+\smallskip
+
+La pièce peut être manipulée lorsque sa température devient inférieure à $40~\degres$ C.
+
+Pour déterminer la durée minimale d'attente (en minutes), à compter de l'instant où elle est mise à refroidir, on veut mettre en place un algorithme de balayage, écrit en langage Python.
+
+\begin{center}
+\begin{tabular}{l l}
+1 &from math import exp \\
+2&\\
+3&def duree\_d\_attente ( ) :\\
+4&\qquad t = 0\\
+5&\qquad Temperature = 600\\
+6&\qquad \dots\dots\dots\\
+7&\qquad \qquad t = t + 1\\
+8&\qquad \qquad Temperature = 580 * exp(- 0,1*t) + 20\\
+9&\qquad return t
+\end{tabular}
+\end{center}
+
+\begin{enumerate}[resume]
+\item Pour que la valeur renvoyée par la fonction \textbf{duree\_d\_attente} soit la valeur entière minimale de la durée d'attente, la ligne 6 contient :
+
+\begin{center}
+\begin{tabularx}{\linewidth}{*{2}{X}}
+\textbf{a.~~} while $t > 40$ : &\textbf{b.~~} while Temperature $> 40$ :\\
+\textbf{c.~~} while Temperature $< 40$ : &\textbf{d.~~} for i in range(Temperature) :
+\end{tabularx}
+\end{center}
+
+\item L'inéquation $\theta(t) \leqslant 40$, d'inconnue $t$, admet comme ensemble solution sur $[0~;~+\infty[$ :
+
+\begin{center}
+\begin{tabularx}{\linewidth}{*{2}{X}}
+\textbf{a.~~}l'intervalle $\left[0~;~10\ln \left(\frac{1}{29}\right)\right]$&\textbf{b.~~} l'intervalle $\left[-10\ln \left(\frac{1}{29}\right)~;~+\infty\right[$\\
+\textbf{c.~~} l'intervalle $\left[0~;~\dfrac{10}{29}\right]$&\textbf{d.~~} l'ensemble vide (pas de solution)
+\end{tabularx}
+\end{center}
+\end{enumerate}
+
+\bigskip
+
+

@@ -1,0 +1,72 @@
+	Dans cet exercice, on considère la figure ci-contre.
+
+	\medskip
+
+	\begin{minipage}{0.47\linewidth}
+Les points A, B et M sont alignés.
+
+Les points A, C et N sont alignés.
+
+Le triangle ABC est rectangle en B.
+
+Le triangle AMN est rectangle en M.
+\end{minipage}\hfill
+\begin{minipage}{0.49\linewidth}
+%début PSTricks
+\psset{unit=1cm,arrowsize=2pt 3}
+\begin{pspicture}(7,4.8)
+	%\psgrid
+	\psline(0,0.6)(7,4.7)
+	\psline(1,1.2)(6,1.2)(6,4.1)%AMN
+	\psline(4,1.2)(4,2.96)%BC
+	\uput[dl](1,1.2){A} \uput[r](6,1.2){M} \uput[dr](6,4.1){N}
+	\uput[ur](4,1.2){B} \uput[ur](3.9,3.13){C}
+	\psline[linewidth=0.8pt]{<->}(1,0.8)(4,0.8)\uput[d](2.5,0.8){6,4 cm}
+	\psline[linewidth=0.8pt]{<->}(4,0.8)(6,0.8)\uput[d](5,0.8){3,2 cm}
+	\psline[linewidth=0.8pt]{<->}(0.9,1.3)(3.95,3.11)\rput{31}(2.5,2.45){8 cm}
+	\psframe(4,1.2)(3.75,1.45)
+	\psline(6,1.2)(6,0)%M..
+\end{pspicture}
+%Fin PSTricks
+%Tikz
+%\begin{center}
+%\begin{tikzpicture}[scale=0.55]
+%\coordinate (A) at (0,0);
+%\coordinate (B) at (6.4,0);
+%\coordinate (M) at (9.6,0);
+%\coordinate (C) at (6.4,4.8);
+%\coordinate (N) at (9.6,7.2);
+%\draw (A) -- (M);
+%\draw (A) -- (N);
+%\draw (B) -- (C);
+%\draw (M) -- (N);
+%\draw (5.9,0) rectangle (6.4,0.5);
+%\draw (9.1,0) rectangle (9.6,0.5);
+%\node[below] at (A) {$A$};
+%\node[below] at (B) {$B$};
+%\node[below right] at (M) {M};
+%\node[above left] at (C) {C};
+%\node[above right] at (N) {N};
+%\node[below] at (3.2,0) {6,4 cm};
+%\node[below] at (8,0) {3,2 cm};
+%\node[left] at (3.2,2.4) {8 cm};
+%\end{tikzpicture}
+%\end{center}
+\end{minipage}
+
+\medskip
+
+On donne :
+
+AB $= 6,4$ cm ; BM $= 3,2$ cm et AC $= 8$ cm.
+
+\emph{La figure n'est pas en vraie grandeur.}
+
+\begin{enumerate}
+\item Tracer sur la copie le triangle ABC en vraie grandeur et en laissant les traits de construction.
+\item Démontrer que BC $= 4,8$ cm.
+\item Justifier que les droites (BC) et (MN) sont parallèles.
+\item Démontrer que MN $= 7,2$ cm et AN $= 12$ cm.
+\item Le périmètre du triangle ABC et le périmètre du quadrilatère BMNC sont-ils égaux ?\\
+\textbf{Argumenter la réponse en précisant la démarche.}
+\end{enumerate}

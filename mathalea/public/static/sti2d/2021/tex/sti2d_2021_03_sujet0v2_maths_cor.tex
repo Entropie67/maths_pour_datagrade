@@ -1,0 +1,162 @@
+
+\bigskip
+
+\textbf{Question 1}
+
+\medskip
+
+Forme algébrique de $z_1$ :
+\[z_1 = \dfrac{2 - 6\text{i}}{2 - \text{i}}
+= \dfrac{\left (2-6\text{i}\right ) \left (2+\text{i}\right )}{\left (2-\text{i}\right ) \left (2+\text{i}\right )}
+=\dfrac{4+2\text{i} -12\text{i} -6 \text{i}^2}{4 - \text{i}^2}
+= \dfrac{10 -10\text{i}}{5} = \dfrac{5(2 - 2\text{i})}{5}
+= 2 -2\text{i}\]
+
+\bigskip
+
+\textbf{Question 2}
+
+\medskip
+
+\begin{enumerate}
+\item Forme exponentielle de $z_2$ :
+
+\begin{list}{\textbullet}{}
+\item $\left | z_2 \right | = \left | -2-2\text{i} \right | = \ds\sqrt{(-2)^2+(-2)^2} = \ds\sqrt{8} = 2\sqrt{2}$
+
+\item $z_2 = - 2 - 2\text{i} = 2\sqrt{2}\left ( \dfrac{-2}{2\sqrt{2}} - \dfrac{2}{2\sqrt{2}}\text{i}\right )
+= 2\sqrt{2} \left ( -\dfrac{\sqrt{2}}{2} - \dfrac{\sqrt{2}}{2}\text{i} \right )$
+
+On cherche $\theta$ tel que $\cos \theta = -\dfrac{\sqrt{2}}{2}$ et $\sin \theta = - \dfrac{\sqrt{2}}{2}$.
+
+Une valeur de $\theta$ est $-\dfrac{3\pi}{4}$.
+\end{list}
+
+$z_2$ a pour forme exponentielle $2\sqrt{2} \e^{-\frac{3\pi}{4}\text{i}}$.
+
+\item 
+$z_2^4 = \left (2\sqrt{2} \e^{-\frac{3\pi}{4}\text{i}}\right )^4
+= \left (2\sqrt{2}\right )^4 \e^{4\times\left (-\frac{3\pi}{4}\text{i}\right )}
+= 64 \e^{-3\pi\text{i}}$
+
+$\e^{-3\pi\text{i}} = \e^{\pi\text{i}}=-1$ donc $z_2^4=-64$ et donc $z_2^4$ est un nombre réel.
+\end{enumerate}
+
+\bigskip
+
+\textbf{Question 3}
+
+\medskip
+
+\begin{enumerate}
+\item On place les points A, B et C dans un repère :
+
+\begin{center}
+\psset{unit=1cm}
+\def\xmin {-3}   \def\xmax {3}
+\def\ymin {-5}   \def\ymax {2}
+\begin{pspicture*}(\xmin,\ymin)(\xmax,\ymax)
+\psgrid[subgriddiv=1,  gridlabels=0, gridcolor=lightgray] 
+\psaxes[arrowsize=3pt 3, ticksize=-2pt 2pt, labels=none](0,0)(\xmin,\ymin)(\xmax,\ymax) 
+\psaxes[linewidth=1.5pt]{->}(0,0)(1,1)[$\vect u$,-90][$\vect v$,180]
+\uput[dl](0,0){O}
+\pspolygon[showpoints,linecolor=blue](2,-2)(-2,-2)(0,-4)
+{\blue
+\uput[ur](2,-2){A} \uput[ul](-2,-2){B} \uput[dr](0,-4){C} 
+}
+\end{pspicture*}
+\end{center}
+
+\item On calcule les longueurs AB, BC et AC.
+
+\begin{list}{\textbullet}{}
+\item $\text{AB} = \left | z_{\text B} - z_{\text A} \right | = \left | -2-2\text{i} -2+2\text{i} \right | = \left | -4 \right | = 4$
+\item  $\text{BC} = \left | z_{\text C} - z_{\text B} \right | = \left | -4\text{i} +2+2\text{i} \right | = \left | 2-2\text{i} \right | = \ds\sqrt{2^2 + (-2)^2} = \ds\sqrt{8} = 2\sqrt{2}$ 
+\item $\text{AC} = \left | z_{\text C} - z_{\text A} \right | = \left | -4\text{i} -2+2\text{i} \right | = \left | -2-2\text{i} \right | = \ds\sqrt{(-2)^2 + (-2)^2} = \ds\sqrt{8} = 2\sqrt{2}$ 
+\end{list}
+
+$\text{BC} = \text{AC}$ donc le triangle ABC est isocèle.
+
+$\text{BC}^2 + \text{AC}^2 = 8 + 8 = 16 = 4^2 =  \text{AB}^2$ donc d'après la réciproque du théorème de Pythagore, le triangle ABC est rectangle en C.
+
+Donc  le triangle ABC est isocèle rectangle en C.
+\end{enumerate}
+
+\bigskip
+
+\textbf{Question 4}
+
+\medskip
+
+\begin{enumerate}
+\item D'après le cours on sait que pour $a\neq 0$, les solutions de l'équation différentielle :
+
+$y'+ay=b$ sont les fonctions $f$ définies sur $\R$ par: $f(t)=k \e^{-at} + \dfrac{b}{a}$ où $k\in\R$.
+
+Les solutions de l'équation différentielle $y'+5y=7$ sont donc les fonctions $f$ définies sur $\R$ par: $f(t)=k \e^{-5t} + \dfrac{7}{5}$ où $k\in\R$.
+
+\item $f(0) = 4 \iff k\e^{0}+\dfrac{7}{5}=4 \iff k= 4-\dfrac{7}{5} \iff k =\dfrac{13}{5}$
+
+La solution cherchée est la fonction $f$ telle que: $f(t)=\dfrac{13}{5} \e^{-5t} + \dfrac{7}{5}$
+\end{enumerate}
+
+\bigskip
+
+\textbf{Question 5}
+
+\medskip
+
+\begin{enumerate}
+\item On admet que $g$ est dérivable sur l'intervalle $]0~;~+\infty[$, et on note $g'$ sa fonction dérivée. 
+
+Pour tout $x>0$, $g'(x)=1\times \ln(x) + x\times \dfrac{1}{x}-1 - 0 = \ln(x) +1-1=\ln(x)$.
+
+\item 
+\begin{list}{\textbullet}{On étudie les variations de $g$ :}
+\item Sur $]0~;~1[$, $\ln(x)<0$ donc $g'(x)<0$: la fonction $g$ est strictement décroissante.
+\item Sur $]1~;~+\infty[$, $\ln(x)>0$ donc $g'(x)>0$: la fonction $g$ est strictement croissante.
+\item Pour $x=1$, $\ln(x)=0$ donc $g'$ s'annule et passe de négative à positive: la fonction $g$ admet un minimum égal à $g(1)= 1\times\ln(1) - 1 + 4 = 3$.
+\end{list}
+\end{enumerate}
+
+\bigskip
+
+\textbf{Question 6}
+
+\medskip
+
+\begin{enumerate}
+\item Limite de $h$ en $-\infty$.
+
+$\left.
+\begin{array}{l}
+\ds\lim_{x\to -\infty} x^2 = +\infty\\
+\ds\lim_{x\to -\infty} \e^{-x}=+\infty
+\end{array}
+\right \}
+\text{ donc par produit, } \ds\lim_{x\to -\infty} h(x) = +\infty$
+
+\item $\displaystyle\lim_{x \to + \infty}  h(x) = \ds\lim_{x \to + \infty} x^2\e^{-x} = \ds\lim_{x \to + \infty} \dfrac{x^2}{\e^{x}}$
+
+D'après le cours, on sait que pour $n\geqslant 1$, on a $\ds\lim_{x \to + \infty} \dfrac{\e^{x}}{x^n}=+\infty$ donc $\ds\lim_{x \to + \infty} \dfrac{\e^{x}}{x^2}=+\infty$.
+
+On en déduit que $\ds\lim_{x \to + \infty} \dfrac{x^2}{\e^{x}}=0$ et donc que $\ds\lim_{x \to + \infty} h(x)=0$.
+
+\item Programme python complété :
+\begin{center}
+\fbox{
+\begin{tabularx}{0.4\linewidth}{X}%\hline
+from math import exp\\
+~\\
+def sol\_bal(n) \\
+\qquad x = 2\\
+\qquad while {\blue x**2*exp(-x)} > 0,5\\
+\qquad\qquad x = {\blue x+10**(-n)}\\
+\qquad return x\\ %\hline
+\end{tabularx}}
+\end{center}
+\end{enumerate}
+
+\bigskip
+
+

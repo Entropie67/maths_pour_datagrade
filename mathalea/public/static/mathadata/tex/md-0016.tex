@@ -1,0 +1,56 @@
+%source mathadata
+On reprend les points de référence : $A(1\,;\,2)$ pour le chiffre 1, $B(5\,;\,2)$ pour le chiffre 3 et $C(3\,;\,6)$ pour le chiffre 8.
+
+		\begin{multicols}{2}
+
+			\begin{MADenumerate}
+
+				\item Déterminer l'équation de la droite qui sépare les zones des chiffres 1 et 3.
+
+				\begin{exemple}[Aide]
+					Soit $M(x\,;\,y)$ un point sur la droite qui sépare les zones de $A(1\,;\,2)$ et $B(5\,;\,2)$.
+					On a donc :
+					\begingroup\small
+					\begin{align*}
+						MA                            & \; \ldots\; MB                        \\
+						MA^2                          & \; \ldots\; MB^2                      \\
+						(x-\ldots)^2+(y-\ldots)^2     & \; \ldots\; (x-\ldots)^2+(y-\ldots)^2 \\
+						\text{Après simplification :} &                                       \\
+						y                             & = \ldots x+\ldots
+					\end{align*}
+					\endgroup
+				\end{exemple}
+
+				\item Déterminer de même les équations des droites séparant les zones des chiffres 1 et 8, puis des chiffres 3 et 8.
+
+				\item Pour chaque droite, chercher deux points avant de tracer. Tracer les trois droites dans le repère ci-contre et mettre en évidence les trois zones d'estimation.
+
+				\item Que remarquez-vous pour les trois droites obtenues ?
+
+				\item On donne le point $P(3\,;\,3{,}5)$. Vérifier que ce point vérifie les trois équations trouvées. Pouviez-vous prévoir ce résultat ?
+
+				\item (Bonus) Que représentent ces trois droites pour le triangle $ABC$ ? Comment appelle-t-on le point $P$ ?
+
+				\item (Bonus) Vérifier que $P$ est à égale distance de $A$, $B$ et $C$. Que cela signifie-t-il géométriquement ?
+
+			\end{MADenumerate}
+
+			\begin{figure}[H]
+				\centering
+				\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1cm,y=1cm,scale=0.7]
+					\begin{axis}[
+							x=1cm,y=1cm,
+							axis lines=middle,
+							ymajorgrids=true,
+							xmajorgrids=true,
+							xmin=-1,
+							xmax=8,
+							ymin=-1,
+							ymax=8,
+							xtick={0,1,...,7},
+							ytick={0,1,...,7},]
+					\end{axis}
+				\end{tikzpicture}
+			\end{figure}
+
+		\end{multicols}

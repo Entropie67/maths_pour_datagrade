@@ -1,0 +1,58 @@
+
+\medskip
+
+%Un aquaculteur étudie l'évolution de la masse moyenne des crevettes dans un bassin.
+%
+%Il dispose de valeurs théoriques.
+%
+%On donne la représentation graphique de la masse moyenne théorique des
+%crevettes (en grammes) en fonction du temps passé dans le bassin (en jours).
+%
+%\medskip
+
+\begin{enumerate}
+\item %Répondre aux questions suivantes en utilisant le graphique.
+	\begin{enumerate}
+		\item %La masse moyenne théorique des crevettes est-elle proportionnelle au nombre de jours passés dans le bassin? Justifier la réponse.
+La proportionnalité se traduirait par une droite représentation graphique : ce n'est pas le cas. Il n'y a pas proportionnalité.
+		\item %Au bout de $80$ jours, quelle est la masse moyenne théorique des crevettes ?
+On lit pour 80 jours une masse approximative de 11~g.
+		\item %La pêche dans un bassin peut être effectuée lorsque la masse moyenne des crevettes atteint $20$ grammes.
+		
+%Au bout de combien de jours peut-on envisager la pêche dans ce bassin ?
+La masse de 20~g est obtenue au bout de 125~jours.
+	\end{enumerate}
+\item  %L'aquaculteur effectue régulièrement des relevés dans son bassin pour suivre son évolution.
+
+%Voici les résultats de ses derniers relevés:
+%
+%\begin{center}
+%\begin{tabularx}{0.75\linewidth}{|p{3cm}|*{3}{>{\centering \arraybackslash}X|}}\hline
+%Nombre de jours						& 120	& 145	& 175\\ \hline
+%Masse moyenne relevée(en grammes)	& 23	& 31	& 38\\ \hline
+%\end{tabularx}
+%\end{center}
+	\begin{enumerate}
+		\item Les points A(120~;~23), B(145~;~31) et C(175~;~38) sont sur le graphique ci-dessous.
+
+\psset{xunit=0.06cm,yunit=0.24cm}
+\begin{pspicture}(-20,-5)(200,40)
+\multido{\n=0+5}{41}{\psline[linewidth=0.2pt](\n,0)(\n,40)}
+\multido{\n=0+20}{11}{\psline[linewidth=0.4pt](\n,0)(\n,40)}
+\multido{\n=0+1}{41}{\psline[linewidth=0.2pt](0,\n)(200,\n)}
+\multido{\n=0+5}{9}{\psline[linewidth=0.4pt](0,\n)(200,\n)}
+\psaxes[linewidth=1.25pt,Dx=20,Dy=5]{->}(0,0)(0,0)(200,40)
+\psaxes[linewidth=1.25pt,Dx=20,Dy=5](0,0)(0,0)(200,40)
+\pscurve[linecolor=blue,linewidth=1.25pt](0,0)(10,0.2)(20,0.5)(40,3.5)(60,7)(80,11)(100,14.9)(120,19)(140,23.1)(160,27.1)(180,31)(192.5,32.8)
+\uput[d](100,-4){Nombre de jours}
+\psdots[linecolor=red](120,23)(145,31)(175,38)
+\rput{90}(-15,20){Masse (en grammes)}
+\end{pspicture}	
+	
+		\item %Comparer les masses moyennes relevées par rapport aux masses moyennes théoriques.
+Les masses moyennes relevées sont toutes supérieures aux masses moyennes théoriques espérées, ce qui est une bonne nouvelle pour l'éleveur.
+	\end{enumerate}
+\end{enumerate}
+
+\vspace{0,5cm}
+

@@ -1,0 +1,34 @@
+
+\medskip
+
+On considère la fonction $f$ définie sur $]0~;~+\infty[$ par $f(x) = ax + b - \ln (x)$ où $a$ et $b$ sont des réels. On note $\mathcal{C}_f$, la courbe représentative de $f$ tracée dans le repère ci-dessous.
+
+On note A le point d'abscisse $0,5$ appartenant à la courbe $\mathcal{C}_f$.
+
+On note $T$ la tangente à la courbe $\mathcal{C}_f$, au point A. La droite $T$ est parallèle à l'axe des abscisses.
+
+Le point $B(1~;~1)$ appartient à la courbe $\mathcal{C}_f$.
+
+\begin{center}
+\psset{unit=3cm,comma=true}
+\begin{pspicture*}(-0.5,-0.5)(3.3,3.3)
+\psgrid[gridlabels=0pt,subgriddiv=2,gridcolor=gray](0,0)(4,4)
+\psaxes[linewidth=1.25pt,Dx=0.5,Dy=0.5,labelFontSize=\scriptstyle]{->}(0,0)(0,0)(3.3,3.3)[$x$,110][$y$,2000]
+\psplot[plotpoints=2000,linewidth=1.25pt,linecolor=red]{0.01}{3}{2 x mul 1 sub x ln sub}
+\psline[linecolor=blue](0,0.6931)(3.25,0.6931) \uput[u](2.2,0.6932){\blue $T$}
+\psdots(0.5,0.6931)(1,1)
+\uput[d](0.5,0.6931){A}\uput[ul](1,1){B}
+\uput[dr](2.5,3){\red $\mathcal{C}_f$}
+\end{pspicture*}
+\end{center}
+
+\begin{enumerate}
+\item Donner la valeur de $f(1)$. En déduire une relation entre $a$ et $b$.
+
+\item Justifier que $f'(0,5) = 0$. En déduire la valeur de $a$.
+
+\item En déduire la valeur de $b$.
+\end{enumerate}
+
+\bigskip
+

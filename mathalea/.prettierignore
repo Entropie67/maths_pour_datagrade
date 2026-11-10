@@ -1,0 +1,7 @@
+# La banque des questions de cours est reprise telle quelle du dépôt de l'app
+# questions-de-cours : la reformater rendrait les synchronisations illisibles.
+src/json/questionsDeCours/
+
+# Manifests des banques intégrées : générés par `pnpm update:ffjm` depuis la
+# forge, à garder tels quels pour un diff lisible entre deux synchronisations.
+src/json/banques/

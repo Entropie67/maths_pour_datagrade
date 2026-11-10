@@ -1,0 +1,64 @@
+
+
+\begin{center}
+\textbf{Concert musical}
+\end{center}
+
+Lors d'un concert de musique rock organisé dans la ville de Venise, une scène flottante était placée à 120~m au large de la côte et donc des spectateurs du premier rang. Cette configuration particulière a posé des problèmes d'acoustique liés à l'atténuation différentielle du son émis par les différents instruments, notamment du fait de l'influence de la fréquence du son sur la directivité de l'émission par les haut-parleurs.\\
+L'exercice propose de modéliser cette situation à partir de données expérimentales.
+
+\begin{list}{\textbullet}{\textbf{Données:}}
+\item Fréquences correspondant à certaines notes de musique:
+
+\begin{center}
+\begin{tabularx}{0.9\linewidth}{|>{\centering \arraybackslash}m{2cm}|*{7}{>{\centering \arraybackslash}X|}c|}
+\hline
+\cellcolor{lightgray} \textbf{Note} & Do1 & La1 & Mi2 & Ré3 & Do4 & Fa4 & Si4\\
+\hline
+\cellcolor{lightgray} \textbf{Fréquence}\newline \textbf{(Hz)} & $65,4$ & $110$ & $165$ & $294$ & $523$ & $698$ & $988$\\
+ \hline
+\end{tabularx}
+\end{center}
+
+\item Le niveau sonore $L$ (en dB) d'une onde sonore est relié à son intensité acoustique $I$ (en W.m$^{-2}$) par la relation:
+
+\[L=10 \,\log \dfrac{I}{I_0},\]
+
+où $I_0=10^{-12}$~W.m$^2$  et $\log$ désigne le logarithme décimal.
+\end{list}
+
+\medskip
+
+[...]
+
+\medskip
+On étudie mathématiquement le modèle obtenu en introduisant les fonctions $f$ et $g$ définies sur $[1\;;\;+\infty[$ par:
+
+\[f(x) = 125 -10 \ln(x) \text{ et } g(x) = 117 - 7,5 \ln(x).\]
+
+Ces fonctions modélisent respectivement les niveaux sonores du La1 et du Fa4 en fonction de la distance.
+
+\medskip
+
+\begin{enumerate}[start=5]
+\item Déterminer une expression de $f '(x)$ où $f '$ est la fonction dérivée de $f$ sur $[1\;;\;+\infty[$.
+\end{enumerate}
+
+On modifie désormais les réglages d'émission pour améliorer la qualité du son. Les expressions des nouvelles fonctions décrivant la dépendance de $L_1$ et $L_2$ avec la distance sont alors :
+
+\[f_m(x) = 148 - 10 \ln(x) \text{ et } g_m(x) = 136 - 7,5 \ln(x),\]
+
+respectivement, pour les notes La1 et Fa4.
+
+\begin{enumerate}[start=6]
+\item Résoudre l'équation $f_m(x) = g_m(x)$ correspondant à $148 - 10 \ln(x) = 136 - 7,5 \ln(x)$ (arrondir le résultat à $10^{-1}$).
+
+En déduire la distance $d_m$ des enceintes à laquelle doit se trouver le public pour que les deux notes aient le même niveau sonore.
+
+\item Pour les réglages modifiés, calculer le niveau sonore du son reçu par les
+spectateurs à la distance $d_m$ des enceintes pour chacune des notes.
+\end{enumerate}
+
+\bigskip
+
+

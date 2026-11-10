@@ -1,0 +1,71 @@
+
+\medskip
+
+%Voici deux programmes de calcul.
+%
+%\begin{center}
+%	\begin{tabularx}{\linewidth}{|X|X|}\hline
+%		Programme A &Programme B\\
+%		$\bullet~~$ Choisir un nombre&$\bullet~~$ Choisir un nombre\\
+%		$\bullet~~$ Multiplier ce nombre par $-2$&$\bullet~~$ Soustraire 5 à ce nombre\\
+%		$\bullet~~$Ajouter 5 à ce résultat.&$\bullet~~$ Multiplier le résultat par 3\\
+%		&$\bullet~~$ Ajouter 11 au résultat\\ \hline
+%	\end{tabularx}
+%\end{center}
+
+\begin{enumerate}
+	\item
+	\begin{enumerate}
+		\item %Montrer que, si on choisit $- 3$ comme nombre de départ, le résultat obtenu avec le programme A est 11.
+On a successivement $-3 \longmapsto (- 2) \times (- 3) = 6 \longmapsto 6 + 5 = 11$.
+		\item %Quel résultat obtient-on avec le programme B si on choisit 5,5 comme nombre de départ ?
+On a successivement $5,5 \longmapsto 5,5 - 5 = 0,5  \longmapsto 3 \times 0,5 = 1,5  \longmapsto 1,5 + 11 = 12,5$.
+	\end{enumerate}
+	\item %En désignant par $x$ le nombre de départ, on obtient $- 2x + 5$ comme résultat avec le programme A.
+
+%Montrer, qu'avec le même nombre de départ, le résultat du programme B est égal à $3x - 4$.
+On a successivement $x  \longmapsto x - 5 \longmapsto 3 \times (x - 5) = 3x - 15 \longmapsto 3x - 15 + 11 = 3x - 4$.
+\end{enumerate}
+\begin{minipage}{0.56\linewidth}
+	\begin{enumerate}[resume]
+		\item
+		\begin{enumerate}
+			\item %On a représenté ci-contre les fonctions $f$ et $g$ définies par $f(x) = -2x + 5$ et $g(x) = 3x - 4$.
+
+%Associer, en justifiant, chaque droite à la fonction qui lui correspond.
+Ces deux droites sont les représentations graphiques de deux fonctions affines.
+
+Comme $g$ a un coefficient directeur $+3 > 0$, la fonction est croissante : sa représentation est la droite $(D_1)$.
+
+$f$ a un coefficient directeur $- 2 < 0$, la fonction est décroissante : sa représentation est la droite $(D_2)$.
+			\item %Par lecture graphique, donner, le plus précisément possible, le nombre dont l'image est la même par la fonction $f$ et la fonction $g$.
+Le nombre cherché est l'abscisse du point commun aux deux droites.
+
+Avec la précision du dessin on lit $x \approx 1,8$
+		\end{enumerate}
+	\end{enumerate}
+\end{minipage}\hfill
+\begin{minipage}{0.42\linewidth}
+	\psset{xunit=1cm,yunit=0.7cm,arrowsize=2pt 3}
+	\begin{pspicture*}(-1.02,-4)(5,7.02)
+		\psgrid[gridlabels=0pt,subgriddiv=1,gridwidth=0.3pt]
+		\psaxes[linewidth=1.25pt,labelFontSize=\scriptstyle]{->}(0,0)(-1,-4)(5,7)
+		\psplot[plotpoints=500,linewidth=1.25pt]{-1}{5}{x 3 mul 4 sub}\uput[dr](3.4,6){$(D_1)$}
+		\psplot[plotpoints=500,linewidth=1.25pt]{-1}{5}{5 x 2 mul sub}\uput[ur](4.3,-4){$(D_2)$}
+		\psline[linewidth=1.25pt,linestyle=dashed,ArrowInside=->](0,1.4)(1.8,1.4)(1.8,0)
+	\end{pspicture*}
+\end{minipage}
+
+\medskip
+
+\begin{enumerate}[start=4]
+	\item %Déterminer par le calcul le nombre de départ pour lequel les programmes A et B donnent le même résultat.
+	Si $x$ a la même image par $f$ et par $g$, on a donc :
+	
+$- 2x + 5 = 3x - 4$, d'où $5 = 5x - 4$ et $9 = 5x$ ou $18 = 10x$ et enfin $x = 1,8$.
+
+\emph{Remarque} : $f(1,8) = - 3,6 + 5 = 1,4$ et $g(1,8) = 5,4 - 4 = 1,4$. Même antécédent et mêmes images par $f$ et par $g$.
+\end{enumerate}
+
+
+

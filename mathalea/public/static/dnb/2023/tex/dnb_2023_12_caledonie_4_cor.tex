@@ -1,0 +1,83 @@
+
+\medskip
+
+%À quelques kilomètres au nord du village de Hienghène, se trouve une des plus belles
+%randonnées de Nouvelle-Calédonie appelée \og les roches de la Ouaïème \fg.
+%
+%Le départ se situe au niveau de la mer près d'une plage de sable blanc.
+%
+%Le sentier grimpe le long d'un versant de montagne et atteint un point de vue imprenable sur le Mont Panié et le lagon.
+%
+%Voici quelques informations pratiques sur cette randonnée:
+%
+%\begin{center}
+%\begin{tabularx}{0.8\linewidth}{|m{5cm}|X|}\hline
+%Durée estimée (Aller simple)&2 h 30 min\\
+%Distance (Aller simple)&3,8 km\\ \hline
+%Altitude&minimale : 0 m / maximale : 741 m\\ \hline
+%\end{tabularx}
+%\end{center}
+%
+%On considère que la pente de la montagne est rectiligne.
+%
+%On a schématisé le parcours [DV] de la randonnée par la figure ci-dessous:
+%
+%\begin{center}
+%\psset{unit=1cm,arrowsize=2pt 3}
+%\begin{pspicture}(-1,-0.4)(15,6.)
+%%\psgrid
+%\rput(7.5,6){Les points D, N et M sont alignés}
+%\psline(0,0)(12,4.2)
+%\psline[linestyle=dashed](0,0)(12,0)(12,4.2)%DMV
+%\psline[linestyle=dashed](8,0)(8,2.8)%NP
+%\psframe(8,0)(7.75,0.25)\psframe(12,0)(11.75,0.25)
+%\uput[d](0,0){D} \uput[d](8,0){N} \uput[dr](12,0){M} \uput[ur](12,4.2){V} \uput[ul](8,2.8){P}
+%\uput[r](12,2.1){0,741 km}\rput{20}(4,1.65){3 km}\rput{20}(5.7,3.2){3,8 km}
+%\psdots(0,0)(12,0)(12,4.2)(8,0)(8,2.8)
+%\psline[linewidth=0.5pt]{<->}(-0.3,0.8)(11.7,5)
+%\rput(0.1,0.4){Le départ}\rput(12.4,4.8){L'arrivée}\rput(8.8,2.6){Panneau}
+%\end{pspicture}
+%\end{center}
+%
+%Fabienne s'est engagée sur ce parcours en partant du point D.
+%
+%Au bout de 2 heures, elle arrive au panneau P indiquant qu'elle a déjà parcouru $3$~km.
+
+\begin{enumerate}
+\item %Justifier que les droites (PN) et (VM) sont parallèles.
+Les droites (PN) et (VM) sont perpendiculaires à la même droite DM) : elles sont donc parallèles.
+\item %Déterminer à quelle altitude PN se trouve Fabienne lorsqu'elle se situe au panneau P.
+D'après le résultat précédent on a une configuration de Thalès, les triangles DNP et DMV sont semblables ; leurs côtés ont donc des mesure proportionnelles ; en particulier :
+
+$\dfrac{\text{DP}}{\text{DV}} = \dfrac{\text{NP}}{\text{MV}}$, soit $\dfrac{3}{3,8} = \dfrac{\text{NP}}{741}$, d'où $741 \times 3 = \text{NP} \times 3,8$, puis NP $= \dfrac{741 \times 3}{3,8} = 585$.
+
+Le panneau est à l'altitude 585~m.
+%\textbf{Rédiger la réponse en faisant apparaître les différentes étapes.}
+\item %À quelle vitesse moyenne, en km/h, a-t-elle parcouru le trajet [DP] ?
+Fabienne a parcouru 3 km en 2 heures : sa vitesse moyenne a donc été égale à 
+
+$\dfrac{3}{2} = 1,5$~(km/h).
+%Sur la fin du parcours [PV], Fabienne marche à une vitesse moyenne de 1,2 km/h.
+
+%On rappelle que la durée de l'aller simple est estimée à 2~h 30~min.
+\item %A-t-elle dépassé cette durée ?
+
+%\textbf{Justifier en faisant apparaître les différentes étapes.}
+
+$\bullet~~$Méthode 1
+
+Fabienne doit encore faire 0,8 km  à la vitesse de 1,2~km/h : elle va donc mettre 
+
+$\dfrac{0,8}{1,2} = \dfrac{0,8 \times 5}{1,2 \times 5} = \dfrac46 = \dfrac{40}{60}$~(h).
+
+Or $\dfrac{40}{60} = 40 \times \dfrac{1}{60}$~(h) ou $40 \times 1$~min soit 40 minutes.
+
+Fabienne va donc monter en 2~h 40~min soit 10 min de plus que la durée estimée.
+
+$\bullet~~$Méthode 2
+
+À la vitesse de 1,2~km/h Fabienne va monter de 0,6~km en une demi-heure soit 30~minutes : donc en 2~h 30~min elle n'aura monté que de $3 + 0,6 = 3,6$~km soit moins que la distance totale de 3,8~km. Fabienne va donc dépasser les 2~h 30~min de montée.
+\end{enumerate}
+
+\bigskip
+

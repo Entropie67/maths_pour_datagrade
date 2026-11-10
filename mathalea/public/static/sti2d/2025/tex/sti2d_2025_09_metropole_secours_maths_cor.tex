@@ -1,0 +1,106 @@
+\bigskip
+
+\textbf{Question 1}
+
+\medskip
+
+$f(x)=\left (2+5x\right ) \e^{3x}$ donc :
+\begin{align*}
+f'(x) &= 5\times \e^{3x} + \left (2+5x\right )\times 3\e^{3x} \\
+&= \left (5+6+15x\right ) \e^{3x} \\
+&= \left (11+15x\right )\e^{3x}
+\end{align*}
+La bonne réponse est \textbf{C}.
+
+\bigskip
+
+\textbf{Question 2}
+
+\medskip
+
+La solution générale d'une équation différentielle d'ordre 1 est la somme d'une solution particulière et de la solution générale de l'équation différentielle sans second membre associée.
+
+\begin{list}{\textbullet}{}
+\item L'équation sans second membre associée est: $y'=-3y$.
+
+D'après le cours, on sait que les solutions de cette équation sont les fonctions $y_0$ définies par $y_0(x)= k\e^{-3x}$ où $k$ est un réel quelconque.
+
+\item On cherche une solution particulière de $(E)$ sous forme de constante $a$. \\
+Donc $a'=-3a+5$. Or $a'=0$, donc $-3a+5=0$ donc $a=\dfrac{5}{3}$.
+\end{list}
+
+Les fonctions solutions de l'équation différentielle $(E)$ sont les fonctions $y$ définies sur $\R$ par $y(x)= k \e^{-3x} +\dfrac{5}{3}$ où $k$ est un réel quelconque.
+
+\bigskip
+
+\textbf{Question 3}
+
+\medskip
+
+On veut déterminer la forme exponentielle du nombre complexe 
+$z = - 6\sqrt 3 + 6\text{i}.$
+
+\begin{list}{\textbullet}{}
+\item Le module de $z$ est $|z| = \ds\sqrt{\left(-6\sqrt{3}\right )^2 + 6^2 } = \ds\sqrt{108+36} = \ds\sqrt{144}=12$.
+
+\item Un argument $\theta$ de $z$ vérifie $\cos\left (\theta\right )=\dfrac{-6\sqrt{3}}{|z|} = \dfrac{-6\sqrt{3}}{12} = -\dfrac{\sqrt{3}}{2}$ et $\sin\left (\theta\right )=\dfrac{6}{|z|} = \dfrac{6}{12} = \dfrac{1}{2}$.
+
+$\theta = \dfrac{5\pi}{6}$ vérifie ces égalités.
+\end{list}
+
+La forme exponentielle du nombre complexe 
+$z = - 6\sqrt 3 + 6\text{i}$
+est donc $z = 12 \e^{\frac{5\pi}{6}\i}$.
+
+\bigskip
+
+\textbf{Question 4}
+
+\medskip
+
+\begin{list}{\textbullet}{Graphiquement, on voit que:}
+\item sur l'intervalle $]-\infty\,,\, -2[$, la courbe $\mathcal{C}$ est au-dessus de la droite $\Delta$;
+\item sur l'intervalle $]-2\,,\, 4[$, la courbe $\mathcal{C}$ est en dessous de la droite $\Delta$;
+\item sur l'intervalle $]4\,,\, +\infty[$, la courbe $\mathcal{C}$ est au-dessus de la droite $\Delta$.
+\end{list}
+
+Sur l'intervalle $[-2\,,\,4]$, la courbe est en dessous de la droite.
+
+Soit $\mathcal{A}_1$ l'aire comprise entre la droite $\Delta$, l'axe des abscisses et les droites verticales d'équations $x=-2$ et $x=4$.\\
+Soit $\mathcal{A}_2$ l'aire comprise entre la courbe $\mathcal{C}$, l'axe des abscisses et les droites verticales d'équations $x=-2$ et $x=4$.
+
+L'aire hachurée est égale à $\mathcal{A}_1-\mathcal{A}_2$.
+
+\begin{list}{\textbullet}{}
+\item $\mathcal{A}_1$ est l'aire d'un trapèze rectangle de petite base 3, de grande base 9, et de hauteur 6, donc\\
+ $\mathcal{A}_1=\dfrac{\left (3+ 9\right )\times 6 }{2}=\dfrac{72}{2}=36$.
+\item $\mathcal{A}_2 = \ds\int_{-2}^{4}f(x) \d x$.
+
+La fonction $f$ a pour primitive la fonction $F$ définie par $F(x)=\dfrac{1}{2}\times \dfrac{x^3}{3}+x$ soit $F(x)=\dfrac{x^3}{6}+x$.
+
+$\ds\int_{-2}^{4}f(x) \d x 
+= F(4)-F(-2)
+= \left ( \dfrac{4^3}{6} + 4 \right ) - \left ( \dfrac{(-2)^3}{6} + (-2)\right )
+= \dfrac{64}{6}+ 4 + \dfrac{8}{6} + 2
+= \dfrac{72}{6}+6 = 12+6=18$.
+\end{list}
+
+L'aire hachurée vaut donc, en unités d'aire: $36 - 18 = 18$.
+
+\textbf{Correction alternative :}
+
+On peut calculer l'aire de la partie colorée en faisant :
+$\ds\int_{-2}^{4}(g(x)-f(x)) \d x.$
+
+Comme :
+$g(x)-f(x) = x + 5 - \left(\dfrac12 x^2 +1\right) = -\dfrac12 x^2 + x + 4$
+
+Alors :
+\begin{align*}
+\ds\int_{-2}^{4}\left(-\dfrac12 x^2 + x + 4\right) \d x &= \left[-\dfrac{1}{6}x^3 + \dfrac{1}{2}x^2 + 4x\right]_{-2}^{4}\\
+&= \left(-\dfrac{1}{6} \times 4^3 + \dfrac{1}{2} \times 4^2 + 4 \times 4\right) - \left(-\dfrac{1}{6} \times (-2)^3 + \dfrac{1}{2} \times (-2)^2 + 4 \times (-2)\right) \\
+&= \dfrac{40}{3} + \dfrac{14}{3} \\
+&= 18 \text{ u.a.}
+\end{align*}
+
+\bigskip

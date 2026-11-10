@@ -1,0 +1,43 @@
+\begin{enumerate}
+	\item La droite (BF) est un axe de symétrie de la figure. Le point O appartient à cet axe et le point A est le symétrique du point C par rapport à (BF).
+
+	La symétrie axiale conserve les longueurs, donc OA = OC = $3$ cm.
+
+	\item Les diagonales [AC] et [BD] se coupent en O perpendiculairement, avec OA = OC = $3$~cm, OB =$ 6$~cm et OD $= 4$~cm.
+
+	\begin{center}
+		\begin{tikzpicture}[x=1cm,y=1cm,line cap=round,line join=round]
+			\coordinate (O) at (0,0);
+			\coordinate (A) at (-3,0);
+			\coordinate (C) at (3,0);
+			\coordinate (B) at (0,6);
+			\coordinate (D) at (0,-4);
+			\draw[dashed] (A)--(C);
+			\draw[dashed] (B)--(D);
+			\draw[line width=1.2pt] (A)--(B)--(C)--(D)--cycle;
+			\draw (0.3,0)--(0.3,0.3)--(0,0.3);
+			\node[left] at (A) {A};
+			\node[above] at (B) {B};
+			\node[right] at (C) {C};
+			\node[below] at (D) {D};
+			\node[below left] at (O) {O};
+		\end{tikzpicture}
+	\end{center}
+
+	\item Les points O, D, F sont alignés dans cet ordre, de même que O, C, E :
+	
+	\begin{center}OF = OD + DF = 4+2 = 6 \qquad\text{et}\qquad OE = OC + CE = 3 + 1,5 = 4,5.\end{center}
+	
+	Le triangle OFE est rectangle en O. D'après le théorème de Pythagore :
+	
+\[\text{FE}^{2}= \text{OF}^{2}+ \text{OE}^{2}\]
+	\[ \text{FE}^2 =6^{2}+4,5^{2}= 36 + 20,25 = 56,25.\]
+
+Donc FE $=\sqrt{56,25}= 7,5$ cm.
+
+	\item Les points O, C, E et O, D, F sont alignés dans le même ordre.
+	\[\dfrac{\text{OC}}{\text{OE}}=\dfrac{3}{4,5}=\dfrac{2}{3} \qquad\text{et}\qquad \dfrac{\text{OD}}{\text{OF}}=\dfrac{4}{6}=\dfrac{2}{3}.\]
+	\[\text{Ainsi }\dfrac{\text{OC}}{\text{OE}}=\dfrac{\text{OD}}{\text{OF}}\]
+	
+D'après la réciproque du théorème de Thalès, les droites (CD) et (EF) sont parallèles.
+\end{enumerate}

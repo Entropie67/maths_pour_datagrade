@@ -1,0 +1,70 @@
+
+\textbf{Partie A}
+
+\smallskip
+
+\begin{enumerate}
+	\item En choisissant 5 comme nombre de départ, les deux résultats intermédiaires sont : 
+	$5 - 2 = 3 $ (à gauche) \quad et \quad$5 + 1 = 6$ (à droite).
+
+Le résultat final est donc le produit de ces deux résultats intermédiaires :\quad $3\times 6 = 18$.
+
+On a bien 18 comme résultat final.
+
+	\item Si le nombre de départ choisi est $-\dfrac{3}{2}$, alors les deux résultats intermédiaires sont : \quad $-\dfrac{3}{2} - 2 = -\dfrac{7}{2}$  (à gauche)\quad et \quad $-\dfrac{3}{2} + 1 = -\dfrac{1}{2}$ (à droite).
+
+Le résultat final est alors : \quad $-\dfrac{7}{2}\times \dfrac{-1}{2} = \dfrac{7}{4}$
+
+	\item Le script complété est :
+	\begin{center}
+		\begin{scratch}[num blocks]
+			\blockinit{Quand \greenflag est cliqué}
+			\blocksensing{demander \ovalnum{choisir un nombre} et attendre}
+			\blockvariable{mettre \selectmenu{a} à \ovaloperator{\ovalmove{réponse} - \ovalnum{2}}}
+			\blockvariable{mettre \selectmenu{b} à \ovaloperator{\ovalmove{réponse} + \ovalnum{1}}}
+\blocklook{dire \ovaloperator{\ovalvariable{a}*\ovalvariable{b}} pendant \ovalnum{2} secondes}
+		\end{scratch}
+	\end{center}
+
+\end{enumerate}
+
+\medskip
+
+\textbf{Partie B}
+
+\smallskip
+
+\begin{enumerate}
+\item Développons :\quad $\aligned [t] (x-2)(x+1)&= x\times x + x \times 1 - 2\times x - 2\times 1 \\
+&=x^{2}+x - 2x - 2\\
+&=x^{2}- x- 2\endaligned$.
+
+\item \begin{enumerate}
+	\item Résolvons l'équation :
+
+$\aligned[t]  &(x-2)(x+1)=0\\
+&(x-2) = 0 \quad\text{ou} \quad(x+1)=0\qquad\text{d'après la règle du produit nul}\\
+&x = 2 \quad\text{ou} \quad x = -1	\endaligned$
+
+L'équation a deux solutions :\quad 2 et $-1$.
+
+	\item Chercher les antécédents de 0 par la fonction $g$, c'est trouver les valeurs $x$ telles que $g(x) = 0$, c'est-à-dire résoudre l'équation de la question précédente.
+
+0 admet donc deux antécédents par $g$ : \quad 2 et $- 1$.
+\end{enumerate}
+\item Parmi les trois graphiques ci-dessous, c'est le graphique 3 qui est la représentation graphique de la fonction $g$.
+
+En effet, sur le graphique 1, on voit que l'image de $-1$ n'est pas 0, et sur les graphique 2, c'est l'image de 2 qui n'est pas 0.
+
+Il n'y a que le graphique 3 qui pour lequel les deux nombres 2 et $-1$ ont pour image 0.
+
+Une autre façon de voir les choses, c'est de remarquer que la fonction $g$ n'est pas une fonction affine, alors que manifestement, les graphiques 1 et 2 sont des droites, représentant des fonctions affines.
+
+\item Comme le programme de calcul prend un nombre $x$, le transforme de deux façons : en $(x-2)$, quand on soustrait 2 et en $(x+1)$ quand on ajoute 1, puis fait le produit de ces deux résultats, on en déduit que le résultat final obtenu est $(x - 2)(x + 1)$, or, d'après la question \textbf{1.} de la partie B, ce produit est égal à $x^2 - x -2$, c'est-à-dire à $g(x)$.
+
+On en déduit que pour obtenir 0 comme résultat final, il faut choisir au début un nombre qui est un antécédent de 0 par $g$, donc ici, soit 2, soit $-1$.
+
+\end{enumerate}
+
+\bigskip
+

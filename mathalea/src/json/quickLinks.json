@@ -1,0 +1,28 @@
+{
+  "links": [
+    {
+      "title": "Cahiers de vacances",
+      "subtitle": "6e - 2nde - 1re - Tle",
+      "icon": "bx bx-book",
+      "url": "https://coopmaths.fr/www/cahiers-de-vacances/"
+    },
+    {
+      "title": "Cahiers d'automatismes",
+      "subtitle": "2nde - 1re",
+      "icon": "bx bx-book",
+      "url": "https://coopmaths.fr/www/automatismes/"
+    },
+    {
+      "title": "Fluence - Calcul mental",
+      "subtitle": "CP - CE1 - CE2 - CM1 - CM2",
+      "icon": "bx bx-stopwatch",
+      "url": "https://fluence.mathalea.fr"
+    },
+    {
+      "title": "ApiGeom",
+      "subtitle": "Géométrie dynamique",
+      "icon": "bx bx-shape-triangle",
+      "url": "https://coopmaths.fr/apigeom/"
+    }
+  ]
+}

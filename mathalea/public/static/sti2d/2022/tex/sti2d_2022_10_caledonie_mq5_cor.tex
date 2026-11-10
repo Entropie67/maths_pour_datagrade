@@ -1,0 +1,21 @@
+
+\medskip
+
+Pour que la valeur renvoyée par la fonction \textbf{duree\_d\_attente} soit la valeur entière minimale de la durée d'attente, la ligne 6 doit contenir :
+\begin{center}
+\begin{tabular}{l l}
+1 &from math import exp \\
+2&\\
+3&def duree\_d\_attente ( ) :\\
+4&\qquad t = 0\\
+5&\qquad Temperature = 600\\
+6&\qquad \textbf{while Temperature > 40}\\
+7&\qquad \qquad t = t + 1\\
+8&\qquad \qquad Temperature = 580 * exp(- 0,1*t) + 20\\
+9&\qquad return t
+\end{tabular}
+\end{center}
+La bonne réponse est \textbf{b.}
+
+\bigskip
+

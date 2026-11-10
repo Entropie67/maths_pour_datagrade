@@ -1,0 +1,10 @@
+{
+  "iframe": "ressources/iframe.ts",
+  "video": "ressources/video.ts",
+  "spline": "OutilSpline.svelte",
+  "test": "Test.svelte",
+  "clavier": "ClavierTest.svelte",
+  "equation": "EquationSolve.svelte",
+  "version": "Version.svelte",
+  "e70eb": "OutilScratch.svelte"
+}

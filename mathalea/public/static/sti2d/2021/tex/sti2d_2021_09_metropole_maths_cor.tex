@@ -1,0 +1,155 @@
+
+\bigskip
+
+\textbf{Question 1}
+
+\medskip
+
+La fonction $f$ est dérivable sur $\R$ et $f'(x) = 2x\times \e^{x} + x^2\times \e^{x}=x(2+x)\e^{x}$.
+
+Sur $]-2~;~0[$, $f'(x)<0$ donc la fonction $f$ est décroissante sur cet intervalle.
+
+\medskip
+
+\textbf{Affirmation 1 fausse}
+
+\bigskip
+
+\textbf{Question 2}
+
+\medskip
+
+On cherche l'abscisse du point de la courbe d'ordonnée 15, ce qui signifie qu'on cherche le nombre $x$ tel que $h(x)=15$. On résout cette équation :
+
+$h(x)=15
+\iff
+\ln(2x+1)=15
+\iff
+2x+1=\e^{15}
+\iff
+x=\dfrac{\e^{15}-1}{2}$
+donc $x\approx \np{1634508,19}$~cm soit environ $16,345$~km.
+
+\medskip
+
+\textbf{Affirmation 2 vraie}
+
+\bigskip
+
+\textbf{Question 3}
+
+\medskip
+
+On cherche $t_{0,5}$ tel que $N(t_{0,5}) = \dfrac{1}{2} N(0)$ soit $N(0) \e^{-0,027 t_{0,5}} = \dfrac{1}{2} N(0)$ ou $\e^{-0,027 t_{0,5}} = \dfrac{1}{2}$. 
+
+On résout cette équation:
+$\e^{-0,027 t_{0,5}} = \dfrac{1}{2}
+\iff
+-0,027 t_{0,5} = \ln \left (\frac{1}{2}\right )
+\iff
+t_{0,5} = \dfrac{\ln \left (\frac{1}{2}\right )}{-0,027 }
+$
+
+Donc $t_{0,5}\approx 25,7$.
+
+\medskip
+
+\textbf{Affirmation 3 fausse}
+
+\bigskip
+
+\textbf{Question 4}
+
+\medskip
+
+On regarde si la fonction $f$ vérifie les conditions requises.
+
+\begin{list}{\textbullet}{}
+\item $f(t) = \cos(t) + 2 \sin(t)$ donc
+$f'(t)= -\sin(t) +2\cos(t)$ et
+$f''(t)= -\cos(t) -2\sin(t)$.
+
+$f''(t)+f(t) = \left (-\cos(t) -2\sin(t)\right ) + \left ( \cos(t) + 2 \sin(t)\right ) = 0$ donc la fonction $f$ est solution de l'équation différentielle $(E)$.
+
+\item $f(t) = \cos(t) + 2 \sin(t)$ donc $f(0)=\cos(0) + 2 \sin(0) = 1$
+
+\item $f'(t)= -\sin(t) +2\cos(t)$  donc $f'(0)= -\sin(0) +2\cos(0) = 2$ 
+\end{list}
+
+\medskip
+
+\textbf{Affirmation 4 vraie}
+
+\bigskip
+
+\textbf{Question 5}
+
+\medskip
+
+$z = \dfrac{2 - \text{i}}{1 - 3\text{i}}
+= \dfrac{(2-\text{i})(1+3\text{i})}{(1-3\text{i})(1+3\text{i})}
+= \dfrac{2-\text{i}+6\text{i} -3\text{i}^2}{1-(3\text{i})^2}
+= \dfrac{5+5\text{i}}{10}
+= \dfrac{1}{2} + \dfrac{1}{2}\text{i}$
+
+$\left |z\right | = \ds\sqrt{\left (\dfrac{1}{2}\right )^2 + \left (\dfrac{1}{2}\right )^2} 
+=\ds\sqrt{\dfrac{1}{4}+ \dfrac{1}{4}}
+= \ds\sqrt{\dfrac{2}{4}}
+= \dfrac{\sqrt{2}}{2}$
+
+$z = \dfrac{\sqrt{2}}{2} \left ( \dfrac{\sqrt{2}}{2} + \dfrac{\sqrt{2}}{2} \text{i}\right )
+= \dfrac{\sqrt{2}}{2} \left ( \cos \dfrac{\pi}{4} + \text{i} \sin \dfrac{\pi}{4}\right )
+= \dfrac{\sqrt{2}}{2} \e^{\text{i}\frac{\pi}{4}}$
+
+$z^4 = \left ( \dfrac{\sqrt{2}}{2} \right )^4 \e^{4\times \text{i}\frac{\pi}{4}}
+= \dfrac{1}{4} \e^{\text{i} \pi }= -\dfrac{1}{4}$
+
+\medskip
+
+\textbf{Affirmation 5 vraie}
+ 
+\bigskip
+ 
+\textbf{Question 6}
+
+\begin{center}
+\psset{unit=0.7cm}
+\def\xmin {-2}   \def\xmax {5}
+\def\ymin {-5}   \def\ymax {3}
+\begin{pspicture*}(\xmin,\ymin)(\xmax,\ymax)
+\psgrid[subgriddiv=1,  gridlabels=0, gridcolor=lightgray] 
+\psaxes[arrowsize=3pt 3, ticksize=-2pt 2pt, labels=none]{->}%
+                               (0,0)(\xmin,\ymin)(\xmax,\ymax) 
+\uput[dl](0,0){O}
+\pspolygon[showpoints,linecolor=blue](-1,1)(4,2)(0,-4)
+{\blue
+\uput[ul](-1,1){A} \uput[ur](4,2){B} \uput[dr](0,-4){C} 
+}
+\end{pspicture*}
+\end{center}
+
+$\text{AB}^2 = \left (x_{\text{B}}-x_{\text{A}}\right )^2 + \left (y_{\text{B}}-y_{\text{A}}\right )^2
+= \left (4-(-1)\right )^2 + \left (2-1\right)^2
+= 25+1=26$
+
+$\text{AC}^2 = \left (x_{\text{C}}-x_{\text{A}}\right )^2 + \left (y_{\text{C}}-y_{\text{A}}\right )^2
+= \left (0-(-1)\right )^2 + \left (-4-1\right)^2
+= 1+25=26$
+
+On peut donc dire que le triangle ABC est isocèle en A.
+
+$\text{BC}^2 = \left (x_{\text{C}}-x_{\text{B}}\right )^2 + \left (y_{\text{C}}-y_{\text{B}}\right )^2
+= \left (0-4\right )^2 + \left (-4-2\right)^2
+= 16+36=52$
+
+Or $52=26+26$ donc $\text{BC}^2 = \text{AB}^2 + \text{AC}^2$ donc, d'après la récirpoque du théorème de Pythagore, le triangle ABC est rectangle en A.
+
+On peut donc dire que le triangle ABC est isocèle rectangle en A.
+
+\medskip
+
+\textbf{Affirmation 6 vraie}
+
+\bigskip
+
+

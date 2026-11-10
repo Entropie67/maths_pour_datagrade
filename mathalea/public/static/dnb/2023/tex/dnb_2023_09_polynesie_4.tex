@@ -1,0 +1,56 @@
+
+\medskip
+
+Les propriétaires d'une maison souhaitent créer une rampe d'accès à leur terrasse.
+
+Cette rampe devra avoir la forme d'un prisme droit à base triangulaire comme représenté sur le schéma en perspective cavalière ci-dessous:
+
+\begin{center}
+\psset{unit=1cm}
+\begin{pspicture}(0,-3.4)(15,5.3)
+\pscurve(0,0)(0.33,0.33)(0,0.5)(0.5,0.66)(0,1)(1,1.6)(1.9,2)(2.5,3.2)(3.2,3.7)(3.4,4.2)(4.2,4.1)(4.7,4.3)
+\psline(4.7,4.3)(8.3,4.3)(12.1,3.3)(14.8,3.3)
+\psline(12.1,3.3)(7.5,0)(3.6,1)(0,1)
+\psline(0,0)(10,0)
+\psline(8.3,4.3)(3.6,1)(3.6,0)%DAC
+\psline[linestyle=dashed](3.6,0)(8.3,3.3)(8.3,4.3)%CFD
+\psline[linestyle=dashed](8.3,3.3)(12.1,3.3)%FE
+\pscurve(10,0)(10.3,0.8)(10.5,1)(11.3,0.8)(12,1.1)(12.2,2.2)(13,2.5)(14,2.8)(14.3,2.7)(14.8,3.3)
+\rput(4.2,2.9){TERRASSE}\rput(8.4,1.9){RAMPE D'ACCÈS}\rput(11.2,1.6){SOL}
+\uput[ul](3.6,1){A}\uput[d](7.5,0){B}\uput[d](3.6,0){C}
+\uput[u](8.3,4.3){D}\uput[ur](12.1,3.3){E}\uput[dr](8.3,3.3){F}
+\rput(2.2,-2){Vue de face de la rampe :}
+\pspolygon(5.2,-3.2)(10.3,-3.2)(5.2,-1.8)%CBA
+\psframe(5.2,-3.2)(5.35,-3.05)
+\uput[dl](5.2,-3.2){C}\uput[d](10.3,-3.2){B}\uput[u](5.2,-1.8){A}
+\end{pspicture}
+\end{center}
+
+Les figures ci-dessus ne sont pas à l'échelle.
+
+On donne les informations suivantes :
+
+\begin{itemize}
+\item[$\bullet~$]la hauteur [AC] de la rampe mesure $30$~cm ;
+\item[$\bullet~$]AB $= 124$~cm ;
+\item[$\bullet~$]la longueur BE de la rampe mesure $9$~m ;
+\item[$\bullet~$]l'angle $\widehat{\text{ACB}}$ est un angle droit.
+\end{itemize}
+
+\medskip
+
+\begin{enumerate}
+\item Déterminer la mesure de l'angle $\widehat{\text{ABC}}$ que doit faire la rampe avec le sol du jardin.
+
+On arrondira au degré près.
+\item Montrer que la longueur BC doit être environ égale à $120$~cm.
+\item Pour réaliser cette rampe, les propriétaires envisagent de se faire livrer $2$~m$^3$ de béton.
+
+Ce volume est-il suffisant ?
+\item En utilisant le volume de $2$~m$^3$ de béton, sans modifier les longueurs AC et BE de la rampe, quelle serait la valeur de BC ?
+
+On arrondira au centimètre près.
+\end{enumerate}
+
+\bigskip
+

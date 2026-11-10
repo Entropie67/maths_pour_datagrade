@@ -1,0 +1,90 @@
+{\bf Partie A}
+\begin{enumerate}
+   \item Le terrain est un rectangle $ABEC$ d'aire \Aire[m]{100}. \par
+      Sa longueur $CE$ vaut : $CE =CD+DF+FE =\Lg[m]{6.5}+\Lg[m]{2}+\Lg[m]{4} =\Lg[m]{12.5}$. \par
+      Sachant que $\mathcal{A}(ABEC) =CE\times CA$, alors $CA =\dfrac{\mathcal{A}(ABEC)}{CE} =\dfrac{\Aire[m]{100}}{\Lg[m]{12.5}} =\Lg[m]{8}$. \par
+      \con{La longueur du segment $[CA]$ est égale à \Lg[m]{8}.}
+   \item À l'échelle 1\,:\,80, on obtient les les mesures suivantes :
+      \begin{center}
+         \hautab{1.5}
+         \begin{tabular}{|c|C{2}|C{2}|C{2}|C{2}|}
+            \hline
+            Longueur en cm dans la réalité & \Lg{1250} & \Lg{800} & \Lg{750} & \Lg{100} \\
+            \hline
+            Longueur en cm sur le plan & \Lg{15.625} & \Lg{10} & \Lg{9.375} & \Lg{1.25}\\
+            \hline
+         \end{tabular} $\downarrow \div 80$
+
+         \medskip
+         \begin{pspicture}(0,-0.3)(16,10.3)
+            \psset{linecolor=violet}
+            \psframe(0,0)(15.625,10)
+            \psline(8.125,0)(0,10)
+            \psline(10.625,0)(15.625,10)
+            \psarc(9.375,0){1.25}{0}{180} 
+            \rput(9.375,0){$\times$}
+            \rput(3,3){\fbox{Zone 1}}
+            \rput(14,3){\fbox{Zone 2}}
+            \rput(9,6){\fbox{Zone 3}}
+            \rput(-0.3,10.3){$A$}
+            \rput(-0.3,-0.3){$C$}
+            \rput(15.925,-0.3){$E$}
+            \rput(15.925,10.3){$B$}
+            \rput(8.125,-0.3){$D$}
+            \rput(10.625,-0.3){$F$}
+            \rput(9.375,-0.3){Entrée}
+         \end{pspicture}
+      \end{center}
+   \item
+      \begin{enumerate}
+         \item Avec des mesures de longueur en mètres, on a : \par 
+            \Pythagore[Racine,Unite={}]{DCA}{6.5}{8}{}
+            \con{La longueur du segment $[AD]$ est égale à $\sqrt{106,25}$ m.}
+         \item Soit $L$ la longueur de la bordure de la zone 1. \par
+            $L =AD+DC+CA =\sqrt{106,25}\text{ m}+\Lg[m]{6.5}+\Lg[m]{8} \approx\Lg[m]{24,81}$. \par
+            \con{La bordure autour de la zone 1 est d'environ \Lg[m]{25}.}
+         \item $\Lg[m]{25} =7\times\Lg[m]{4}-\Lg[m]{3}$. \con{Il faudra donc sept rouleaux de bordures pour entourer la zone 1.}
+      \end{enumerate}
+   \item Les zones 1 et 2 sont des triangles (rectangles). Leur aire se calcule grâce à la formule $\mathcal{A} =\dfrac{\text{base}\times\text{hauteur}}{2}$. \par
+      \begin{enumerate}
+         \item $\mathcal{A}_1 =\dfrac{CD\times CA}{2} =\dfrac{\Lg[m]{6.5}\times\Lg[m]{8}}{2} =\Aire[m]{26}$. \con{La zone 1 a une aire de $\Aire[m]{26}$.}
+         \item $\mathcal{A}_2 =\dfrac{EF\times EB}{2} =\dfrac{\Lg[m]{4}\times\Lg[m]{8}}{2} =\Aire[m]{16}$. \con{La zone 2 a une aire de $\Aire[m]{16}$.}
+         \item Pour déterminer l'aire $\mathcal{A}_3$ de la zone 3, il faut soustraire les aires des zones 1, 2 et de l'entrée à l'aire totale. \par
+            Aire de l'entrée : $\mathcal{A}_E =\dfrac{\pi\times R^2}{2} =\dfrac{\pi\times(\Lg[m]{1})^2}{2} =\dfrac{\pi}{2}\Aire[m]{}$. \par
+            $\mathcal{A}_3 =\mathcal{A}_{ABEC}-\mathcal{A}_1-\mathcal{A}_2-\mathcal{A}_E =\Aire[m]{100}-\Aire[m]{26}-\Aire[m]{16}-\dfrac{\pi}{2}\Aire[m]{} =\left(58-\dfrac{\pi}{2}\right)\Aire[m]{}$. \par
+            \con{La zone 3 a une aire de $\left(58-\dfrac{\pi}{2}\right)\Aire[m]{} \approx\Aire[m]{56,4}$.}
+      \end{enumerate}
+   \item $6\times\left(58-\dfrac{\pi}{2}\right) \approx338,6$. Dans la zone 3, on peut donc planter 338 pieds de fraisiers. \par
+      Sachant qu'un pied donne \Masse{650} de fraise, on a alors : $338\times\Masse{650} =\Masse{219700} =\Masse[kg]{219,7}$ \par
+      \con{Les élèves peuvent espérer récolter environ \Masse[kg]{220} de fraise en une année.}
+\end{enumerate}
+
+{\bf Partie B}
+
+\begin{enumerate}
+   \item On suppose ici que la confiture de fraise se prépare uniquement à partir de sucre et de fraises. \par
+      Le sucre représente 55\,\% de la masse totale avant cuisson, ce qui veut dire que les fraises représentent 45\,\%.
+      \begin{description}
+         \item[Méthode 1] : Le sucre et les fraises sont dans un ratio de 55\,:\,45, ou encore 11\,:\,9 ce qui veut dire que pour \Masse[kg]{9} de fraises, on a \Masse[kg]{11} de sucre. \par
+            Donc, pour \Masse[kg]{25} de fraise, soit $\dfrac{25}{9}$ fois plus de fraise, on a $\dfrac{25}{9}\times\Masse[kg]{11} \approx\Masse[kg]{30,6}$ de sucre.
+         \item[Méthode 2] : Si les \Masse[kg]{25} de fraises représentent 45\,\% de la masse totale, alors la masse totale est égale à \par
+            $\Masse[kg]{25}\times100\div45 \approx\Masse[kg]{55,55}$. \par
+            Et 55\,\% de cette masse totale est égal à $\dfrac{55}{100}\times\Masse[kg]{55,55} \approx\Masse[kg]{30,6}$.
+      \end{description}
+      \con{Le directeur devra acheter \Masse[kg]{31} de sucre pour cette recette.}
+   \item Si \Masse[kg]{3} de fraises permettent de faire \Capa{48} de confiture, \Masse[kg]{25} de fraises permettent de faire $\dfrac{\Masse[kg]{25}\times\Capa{4,8}}{\Masse[kg]{3}} =\Capa{40}$. \par
+      \con{Avec \Masse[kg]{25} de fraises, on peut faire \Capa{40} de confiture.}
+   \item Un pot cylindrique d'un diamètre de \Lg{8,4}, soit de rayon \Lg{4,2} et de hauteur \Lg{11} a pour volume  : \par
+      $\mathcal{V} =\text{aire de la base}\times\text{hauteur} =\pi\times(\Lg{4,2})^2\times\Lg{11} =194,04\,\pi\,\Vol{} \\approx  610 \Vol{}$. \par
+      \begin{description}
+         \item[Méthode 1 (avec la valeur exacte)] : $194,04\,\pi\,\Vol{} =0,19404\,\pi\,\Vol[dm]{} =0,19404\,\pi\,\Capa{}$. \par
+      Les pots étant remplis au 8/9 de leur capacité, la capacité de confiture qu'il est possible de mettre dans un pot est donc de $\dfrac89\times0,19404\,\pi\,\Capa{} \approx0,17248\,\pi\,\Capa{}$. \par
+      On a \Capa{40} de confiture et $\dfrac{\Capa{40}}{0,17248\,\pi\,\Capa{}} \approx73,82$. \con{Pour \Capa{40} de confiture, il faudra 74 pots.}
+      
+      		\item[Méthode 2 (avec la valeur approchée)] : $610\,\Vol{} = 0,610\,\Vol[dm]{} =0,610\,\Capa{}$. \par
+      Les pots étant remplis au 8/9 de leur capacité, la capacité de confiture qu'il est possible de mettre dans un pot est donc de $\dfrac89\times0,61\,\Capa{} \approx 0,542\,\Capa{}$. \par
+      On a \Capa{40} de confiture et $\dfrac{\Capa{40}}{0,542\,\Capa{}} \approx73,8$. \con{Pour \Capa{40} de confiture, il faudra 74 pots.}
+
+      
+      \end{description}
+\end{enumerate

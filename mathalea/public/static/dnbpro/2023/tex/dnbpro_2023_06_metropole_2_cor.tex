@@ -1,0 +1,74 @@
+
+\vspace{0.25cm}
+
+%Les photographies ci-dessous représentent deux pots de fleurs cylindriques.
+
+Le grand pot est un agrandissement de coefficient 3 du petit pot. \\
+Ce qui signifie que le diamètre et la hauteur du grand pot sont 3 fois plus grands que le diamètre et la hauteur du petit pot.
+
+\hfill
+{\small
+\psset{xunit=1cm,yunit=0.9cm,radius=0pt,arrowsize=3pt 2}
+\def\xmin{-1}   \def\xmax{12} \def\ymin{-1}   \def\ymax{6}
+\begin{pspicture}(\xmin,\ymin)(\xmax,\ymax)
+%\psgrid[subgriddiv=5,gridlabels=0, gridcolor=lightgray, subgridcolor=lightgray!40] 
+%%%%%
+\psellipse[linecolor=gray,fillstyle=solid,fillcolor=gray](2,2)(1,0.3)
+\psframe[linecolor=gray,fillstyle=solid,fillcolor=gray](1,2)(3,4)
+\psellipse[linecolor=lightgray!60,fillstyle=solid,fillcolor=gray,linewidth=1mm](2,4)(0.95,0.3)
+\rput(2,3){\white\bf\large Pot 1}
+\psline{<->}(0.8,2)(0.8,4) \uput[l](0.8,3){$h_1=15$ cm}
+\psline{<->}(1.1,4)(2.9,4) \uput[u](2,4.2){$D_1=10$ cm}
+%%%%%
+\psellipse[linecolor=gray,fillstyle=solid,fillcolor=gray](9,1)(2,0.6)
+\psframe[linecolor=gray,fillstyle=solid,fillcolor=gray](7,1)(11,5)
+\psellipse[linecolor=lightgray!60,fillstyle=solid,fillcolor=gray,linewidth=2mm](9,5)(1.9,0.6)
+\rput(9,3){\white\bf\Large Pot 2}
+\psline{<->}(11.2,1)(11.2,5) \uput[r](11.2,3){$h_2$}
+\psline{<->}(7.2,5)(10.8,5) \uput[u](9,5){$D_2$}
+%%%%%
+\psline(3.4,2)(4,3)(3.4,4)(5.6,4)(5.6,4.8)(6.8,3)(5.6,1.2)(5.6,2)(3.4,2)
+\uput[u](5.2,3){Agrandissement}
+\uput[d](5.2,3){de coefficient 3}
+\uput[d](6,0){\bf\normalsize Le schéma n'est pas à l'échelle}
+\end{pspicture}}
+\hfill~
+
+\textbf{Volume du petit pot}
+
+\begin{enumerate}
+\item  %Calculer le rayon $R_1$ du pot 1.
+On sait que le diamètre $D_1$ du pot 1 vaut 10~cm, donc $R_1 = 5$ cm.
+
+\item $V_{\text{Cylindre}} = \pi \times R^2 \times h$
+
+$R_1 = 5$ et $h_1=15$ donc $V_1 = \pi \times R_1^2 \times h_1 = 3,14\times 5^2 \times 15 = \np{1177,5}$
+
+Le volume $V_1$ du pot 1 est égal à \np{1177,5}~cm$^3$.
+
+%Rappel: $V_{\text{Cylindre}} = \pi \times R^2 \times h$, on prendra $\pi=3,14$.
+\end{enumerate}
+
+\textbf{Volume du grand pot}
+
+\begin{enumerate}[resume]
+\item  Le grand pot est un agrandissement de coefficient 3 du petit pot donc le rayon $R_2$ du pot 2 est $3\times R_1=3\times 5=15$.
+
+\item Le grand pot est un agrandissement de coefficient 3 du petit pot donc la hauteur $h_2$ du pot 2 est $3\times h_1=3\times 15=45$.
+
+\item %À l'aide de la formule, calculer le volume $V_2$ du pot 2.
+$R_2 = 15$ et $h_2=45$ donc $V_2 = \pi \times R_2^2 \times h_2 = 3,14\times 15^2 \times 45 = \np{31792,5}$
+
+Le volume $V_2$ du pot 2 est égal à \np{31792,5}~cm$^3$.
+
+\item Affirmation : \og Quand on réalise un agrandissement avec un coefficient multiplicateur de 3, le volume d'un cylindre est multiplié par 27. \fg
+
+%$\dfrac{\np{31792,5}}{\np{1177,5}}=27$ donc cette affirmation semble exacte.
+
+$V_2=\pi R_2^2 h_2 = \pi \left (3R_1\strut \right )^2 \left (3h_1\strut \right ) = \pi\times 3R_1 \times 3R_1 \times 3h_1 = 27\left ( \pi R_1^2 h_1 \strut \right ) = 27V_1$ 
+
+Donc l'affirmation est vraie.
+\end{enumerate}
+
+\vspace{0.5cm}
+

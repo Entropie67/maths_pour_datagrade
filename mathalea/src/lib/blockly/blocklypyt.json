@@ -1,0 +1,441 @@
+{
+  "blocks": {
+    "languageVersion": 0,
+    "blocks": [
+      {
+        "type": "start",
+        "id": "j%QdW%xgZNb~-NN/5.va",
+        "x": 68,
+        "y": 32,
+        "next": {
+          "block": {
+            "type": "demonstration",
+            "id": "4B`MRg:zdav6+,+vuSV`",
+            "fields": {
+              "Cond": "Condition",
+              "Prop": "Propriété",
+              "Concl": "Conclusion"
+            },
+            "inputs": {
+              "Condition": {
+                "block": {
+                  "type": "triangle_rect_iso",
+                  "id": "m~|V`KGtJ1/^!=_OOZlw",
+                  "fields": {
+                    "prepoint": "A",
+                    "deuxpoint": "B",
+                    "troispoint": "C",
+                    "tritype": "rect",
+                    "trisommet": "A"
+                  }
+                }
+              },
+              "Propriété": {
+                "block": {
+                  "type": "pythagore",
+                  "id": ")/9+PSXNx$@UmE|fz^nN",
+                  "fields": {
+                    "pytha": "Théorème de Pythagore"
+                  },
+                  "next": {
+                    "block": {
+                      "type": "egale_comp",
+                      "id": "J=`(=T~J?R]alt9T]R,l",
+                      "fields": {
+                        "op": "equal"
+                      },
+                      "inputs": {
+                        "op1": {
+                          "block": {
+                            "type": "carre",
+                            "id": "bW^DpCQGPPB8O!AF5woC",
+                            "inputs": {
+                              "value": {
+                                "block": {
+                                  "type": "longueur",
+                                  "id": "=;3RccP%g),.u;*Bspp3",
+                                  "fields": {
+                                    "Longueur_triangle": "BC"
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        },
+                        "op2": {
+                          "block": {
+                            "type": "operation",
+                            "id": "B?19:lYk+:;lLY90piTK",
+                            "fields": {
+                              "op": "plus"
+                            },
+                            "inputs": {
+                              "op1": {
+                                "block": {
+                                  "type": "carre",
+                                  "id": "T6iox}Y,Xs*tWOPEuY;]",
+                                  "inputs": {
+                                    "value": {
+                                      "block": {
+                                        "type": "longueur",
+                                        "id": "Md5$oK^Zo(Ik.U9uZS,D",
+                                        "fields": {
+                                          "Longueur_triangle": "AB"
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              },
+                              "op2": {
+                                "block": {
+                                  "type": "carre",
+                                  "id": "1QQ#wDe,=cvbh_b/dL:d",
+                                  "inputs": {
+                                    "value": {
+                                      "block": {
+                                        "type": "longueur",
+                                        "id": ",L-_lg-I2?2gb}?0H{d`",
+                                        "fields": {
+                                          "Longueur_triangle": "CA"
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      },
+                      "next": {
+                        "block": {
+                          "type": "egale_comp",
+                          "id": "@o~N`U8+VPCxGdwcO?J.",
+                          "fields": {
+                            "op": "equal"
+                          },
+                          "inputs": {
+                            "op1": {
+                              "block": {
+                                "type": "carre",
+                                "id": "L9V9evJg;4wM_Yy,r8?o",
+                                "inputs": {
+                                  "value": {
+                                    "block": {
+                                      "type": "longueur",
+                                      "id": "+ri[HM;pe*InaCw]1x*+",
+                                      "fields": {
+                                        "Longueur_triangle": "AB"
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            },
+                            "op2": {
+                              "block": {
+                                "type": "operation",
+                                "id": "#=P,o4IoxPrE*=vax{8D",
+                                "fields": {
+                                  "op": "moins"
+                                },
+                                "inputs": {
+                                  "op1": {
+                                    "block": {
+                                      "type": "carre",
+                                      "id": "?nnEkr^N8N~tIn%N.)QI",
+                                      "inputs": {
+                                        "value": {
+                                          "block": {
+                                            "type": "longueur",
+                                            "id": "@B/Wb-Yg6u~^)ysNY$LT",
+                                            "fields": {
+                                              "Longueur_triangle": "BC"
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  },
+                                  "op2": {
+                                    "block": {
+                                      "type": "carre",
+                                      "id": "m-[Pa$]-j~TqHolCnrpx",
+                                      "inputs": {
+                                        "value": {
+                                          "block": {
+                                            "type": "longueur",
+                                            "id": "}S^`Nq#EaUNxFBr2ME:~",
+                                            "fields": {
+                                              "Longueur_triangle": "CA"
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          },
+                          "next": {
+                            "block": {
+                              "type": "egale_comp",
+                              "id": "xNlujFymrb7$fp6md$Ml",
+                              "fields": {
+                                "op": "equal"
+                              },
+                              "inputs": {
+                                "op1": {
+                                  "block": {
+                                    "type": "carre",
+                                    "id": "Wr,9,)5ib$tjqPFFWHOq",
+                                    "inputs": {
+                                      "value": {
+                                        "block": {
+                                          "type": "longueur",
+                                          "id": "`R#0tU`9CT/Iz.tG(@tr",
+                                          "fields": {
+                                            "Longueur_triangle": "AB"
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                },
+                                "op2": {
+                                  "block": {
+                                    "type": "operation",
+                                    "id": "TPf)(;w/?Uf)o(^i7ijb",
+                                    "fields": {
+                                      "op": "moins"
+                                    },
+                                    "inputs": {
+                                      "op1": {
+                                        "block": {
+                                          "type": "carre",
+                                          "id": "WyM2%6(Q._U*y7fw]#2b",
+                                          "inputs": {
+                                            "value": {
+                                              "block": {
+                                                "type": "textinput",
+                                                "id": "#KQLOegrZ{_FsF*40v?+",
+                                                "fields": {
+                                                  "NUM": "10"
+                                                }
+                                              }
+                                            }
+                                          }
+                                        }
+                                      },
+                                      "op2": {
+                                        "block": {
+                                          "type": "carre",
+                                          "id": "|SdHl=:P^{BIj]n#mvOA",
+                                          "inputs": {
+                                            "value": {
+                                              "block": {
+                                                "type": "textinput",
+                                                "id": "GJ.xm+$Avc4ZZOp}r`Hd",
+                                                "fields": {
+                                                  "NUM": 8
+                                                }
+                                              }
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              },
+                              "next": {
+                                "block": {
+                                  "type": "egale_comp",
+                                  "id": "Y;u|7{Og[zLntAnt^Dok",
+                                  "fields": {
+                                    "op": "equal"
+                                  },
+                                  "inputs": {
+                                    "op1": {
+                                      "block": {
+                                        "type": "carre",
+                                        "id": "oMp-KYkTM}_jfA2)]oLA",
+                                        "inputs": {
+                                          "value": {
+                                            "block": {
+                                              "type": "longueur",
+                                              "id": "/nJ5=W^}Rrvr,QVnj_.i",
+                                              "fields": {
+                                                "Longueur_triangle": "AB"
+                                              }
+                                            }
+                                          }
+                                        }
+                                      }
+                                    },
+                                    "op2": {
+                                      "block": {
+                                        "type": "operation",
+                                        "id": ";#RYV}urNL0vqMzWky4k",
+                                        "fields": {
+                                          "op": "moins"
+                                        },
+                                        "inputs": {
+                                          "op1": {
+                                            "block": {
+                                              "type": "textinput",
+                                              "id": "MxtwQtIzFdosy4;]:RwR",
+                                              "fields": {
+                                                "NUM": 100
+                                              }
+                                            }
+                                          },
+                                          "op2": {
+                                            "block": {
+                                              "type": "textinput",
+                                              "id": "BeHI8aHvTi*XM|YX:oC+",
+                                              "fields": {
+                                                "NUM": 64
+                                              }
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  },
+                                  "next": {
+                                    "block": {
+                                      "type": "egale_comp",
+                                      "id": "xQ/{N2+(MH{UtS7_fex!",
+                                      "fields": {
+                                        "op": "equal"
+                                      },
+                                      "inputs": {
+                                        "op1": {
+                                          "block": {
+                                            "type": "carre",
+                                            "id": "qaQEvng.heuqa3H*?`^,",
+                                            "inputs": {
+                                              "value": {
+                                                "block": {
+                                                  "type": "longueur",
+                                                  "id": "acKWtwMN:=*P(ga|srjw",
+                                                  "fields": {
+                                                    "Longueur_triangle": "AB"
+                                                  }
+                                                }
+                                              }
+                                            }
+                                          }
+                                        },
+                                        "op2": {
+                                          "block": {
+                                            "type": "textinput",
+                                            "id": "ie;zY(%/y[3kQO@=.$C~",
+                                            "fields": {
+                                              "NUM": 36
+                                            }
+                                          }
+                                        }
+                                      },
+                                      "next": {
+                                        "block": {
+                                          "type": "egale_comp",
+                                          "id": "RlvS%(+z5m:Td$hmP}RB",
+                                          "fields": {
+                                            "op": "equal"
+                                          },
+                                          "inputs": {
+                                            "op1": {
+                                              "block": {
+                                                "type": "longueur",
+                                                "id": "{2@-jr4VZVnQC!,WiGgZ",
+                                                "fields": {
+                                                  "Longueur_triangle": "AB"
+                                                }
+                                              }
+                                            },
+                                            "op2": {
+                                              "block": {
+                                                "type": "operation_square_trigo",
+                                                "id": "83.,](s3Kyse.8`}bi`X",
+                                                "fields": {
+                                                  "op": "racine"
+                                                },
+                                                "inputs": {
+                                                  "value": {
+                                                    "block": {
+                                                      "type": "textinput",
+                                                      "id": "yk_cCLyIhGA9BqHbLYC3",
+                                                      "fields": {
+                                                        "NUM": 36
+                                                      }
+                                                    }
+                                                  }
+                                                }
+                                              }
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              },
+              "Conclusion": {
+                "block": {
+                  "type": "egale_comp",
+                  "id": "6H2-6H^(hH9@t^F{H5cY",
+                  "fields": {
+                    "op": "equal"
+                  },
+                  "inputs": {
+                    "op1": {
+                      "block": {
+                        "type": "longueur",
+                        "id": "`-zYvUV-DJ!.so{Z^`,E",
+                        "fields": {
+                          "Longueur_triangle": "AB"
+                        }
+                      }
+                    },
+                    "op2": {
+                      "block": {
+                        "type": "unite",
+                        "id": "RKu`d(?zgA(b]IlE:tR5",
+                        "fields": {
+                          "unite": "cm"
+                        },
+                        "inputs": {
+                          "value": {
+                            "block": {
+                              "type": "textinput",
+                              "id": "nZ-S{~hYA{}$xmC+#49I",
+                              "fields": {
+                                "NUM": 6
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    ]
+  }
+}

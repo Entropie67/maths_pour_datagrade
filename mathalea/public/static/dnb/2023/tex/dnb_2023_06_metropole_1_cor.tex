@@ -1,0 +1,38 @@
+
+\medskip
+
+Un opticien vend différents modèles de lunettes de soleil.
+
+Il reporte dans le tableur ci-dessous des informations sur cinq modèles vendus pendant l'année 2022.
+
+\begin{center}
+\begin{tabularx}{\linewidth}{|c|>{\centering \arraybackslash}m{4cm}|*{6}{>{\centering \arraybackslash}X|}} \hline
+	 & \textsf{A} & \textsf{B} & \textsf{C} & \textsf{D} & \textsf{E} & \textsf{F} & \textsf{G}\\ \hline
+ 	\textsf{1} & \textbf{Lunettes de soleil} & \textbf{Modèle 1} & \textbf{Modèle 2} & \textbf{Modèle 3} & \textbf{Modèle 4} & \textbf{Modèle 5} & \textbf{Total}\\ \hline
+	\textsf{2} & \textbf{Nombre de paires de lunettes vendues} & \np{1200} & 950 & 875 & 250 & 300 & \\ \hline
+	\textsf{3} & \textbf{Prix à l'unité en euro} & 75 & 100 & 110 & 140 & 160 & \\ \hline
+\end{tabularx}
+\end{center}
+
+\begin{enumerate}
+	\item %Montrer que l'étendue des prix de ces paires de lunettes de soleil est de 85 euros.
+On a $160 - 75 = 85$~(\euro).
+	\item \begin{enumerate}
+		\item %Quelle formule doit-on saisir dans la cellule G2 pour calculer le nombre total de paires de lunettes de soleil vendues en 2022 ?
+Il faut écrire  dans la cellule G2 : = SOMME(B2\negthinspace:F2).
+		\item %Calculer le nombre total de paires de lunettes de soleil vendues en 2022.
+On a $\np{1200} + 950 + 875 + 250 + 300 = \np{3575}$.
+	\end{enumerate}
+	\item \begin{enumerate}
+		\item %Calculer le montant total, en euros, des ventes des paires de lunettes de soleil en 2022.
+		La recette totale pour l'année 2022 est :
+		
+		$\np{1200} \times 75 + 950 \times 100 + 875 \times 110 + 250 \times 140 + 300 \times 160 = \np{364250}$~(\euro).
+		\item %Calculer le prix moyen d'une paire de lunettes de soleil vendue en 2022 , arrondi au centime près.
+Le prix moyen d'une paire de lunettes de soleil vendue en 2022 est égale à $\dfrac{\np{364250}}{\np{3575}} \approx 101,888$, soit 101,89~\euro{} au centime d'euro près.
+	\end{enumerate}
+\end{enumerate}
+
+\vspace{5mm}
+
+%%%%%%%%

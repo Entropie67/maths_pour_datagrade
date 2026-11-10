@@ -1,0 +1,64 @@
+# Configuration Apache de MathALÉA servi sous https://maths.datagrade.fr/alea/
+# (hébergement mutualisé Hostinger). Copié par le workflow de déploiement
+# dans dist/.htaccess ; aucun fichier de mathalea/ n'est modifié.
+#
+# Équivalent des règles nginx amont (mathalea/deploy/nginx/) : fichiers hachés
+# par Vite en cache long, index.html jamais mis en cache, mêmes en-têtes,
+# pas d'en-tête anti-iframe (MathALÉA s'affiche dans DataGrade, Moodle, Capytale).
+
+Options -Indexes
+# Le portier index.php (hostinger/acces.php) sert index.html après contrôle
+# d'accès ; index.html et les fichiers du portier (configuration, clé des cookies,
+# état de la liaison avec DataGrade) ne sont jamais servis seuls.
+DirectoryIndex index.php index.html
+<Files "index.html">
+  Require all denied
+</Files>
+<FilesMatch "^acces-(config\.php|local\.php|liaison\.json|cle\.json)(\..*\.tmp)?$">
+  Require all denied
+</FilesMatch>
+
+<IfModule mod_mime.c>
+  AddType application/wasm .wasm
+  AddType application/javascript .mjs
+  AddType font/woff2 .woff2
+  AddType font/woff .woff
+  AddType font/ttf .ttf
+  AddCharset UTF-8 .js .mjs .css .json .svg .txt
+</IfModule>
+
+<IfModule mod_headers.c>
+  Header always set X-Content-Type-Options "nosniff"
+  Header always set Referrer-Policy "strict-origin-when-cross-origin"
+
+  # Fichiers nommés avec une empreinte par Vite (index-a1b2c3d4.js, vendors/...).
+  <FilesMatch "-[A-Za-z0-9_-]{8}\.(js|mjs|css|woff2?|ttf)$">
+    Header set Cache-Control "public, max-age=31536000, immutable"
+  </FilesMatch>
+
+  # Chaque visite doit voir la dernière version déployée.
+  <FilesMatch "^(index\.html|version\.txt|deploiement\.json)$">
+    Header set Cache-Control "no-cache"
+  </FilesMatch>
+</IfModule>
+
+<IfModule mod_expires.c>
+  ExpiresActive On
+  # Ressources de public/ (images, sons, polices) recopiées sans empreinte.
+  ExpiresDefault "access plus 1 day"
+</IfModule>
+
+<IfModule mod_deflate.c>
+  AddOutputFilterByType DEFLATE text/html text/plain text/css text/javascript application/javascript application/json image/svg+xml application/wasm font/ttf
+</IfModule>
+
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteBase /alea/
+
+  # Scans d'annales (DNB, BAC, CRPE...) : ils ne sont pas dans le dépôt amont et
+  # ne sont donc pas déployés ici. Comme le serveur de développement amont
+  # (vite.config.ts, relais /alea/static), on renvoie vers coopmaths.fr.
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteRule ^static/(.*)$ https://coopmaths.fr/alea/static/$1 [R=302,L]
+</IfModule>

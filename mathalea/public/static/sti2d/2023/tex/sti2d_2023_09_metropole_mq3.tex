@@ -1,0 +1,26 @@
+
+\medskip
+
+On désigne par i le nombre complexe de module $1$ et d'argument $\dfrac{\pi}{2}$.
+
+Le plan est muni d'un repère orthonormé \Ouv.
+
+Sur le graphique suivant, on considère le point E dont l'affixe est notée: $Z_E$.
+
+\begin{center}
+\psset{xunit=1.5cm,yunit=1.5cm,labelFontSize=\scriptstyle,showorigin=false}
+\begin{pspicture}(-2.8,-2.8)(2.8,2.8)
+\multido{\n=-2+1}{5}{\psline[linewidth=0.45pt,linecolor=lightgray](\n,-2.5)(\n,2.5)}
+\multido{\n=-2+1}{5}{\psline[linewidth=0.45pt,linecolor=lightgray](-2.5,\n)(2.5,\n)}
+\psaxes[linewidth=0.75pt]{-}(0,0)(-2.5,-2.5)(2.5,2.5)
+\pscircle[linewidth=1pt,linecolor=blue](0,0){3}
+\uput[ur](0,0){O}\uput[ur](1,1.732){$E$}\psdots[dotstyle=bullet,dotscale=1.2](0,0)(1,1.732)
+\psline[linewidth=0.95pt]{->}(0,0)(1,0)\psline[linewidth=0.95pt]{->}(0,0)(0,1)
+\uput[d](0.5,0){$\vect{u}$}\uput[l](0,0.5){$\vect{v}$}
+\end{pspicture}
+\end{center}
+
+Par lecture graphique, donner l'écriture exponentielle de $Z_E$.
+
+\bigskip
+

@@ -1,0 +1,461 @@
+{
+  "6N0": {
+    "titre": "Nombres entiers"
+  },
+  "6N0A": {
+    "titre": "Connaître des faits numériques usuels avec des entiers"
+  },
+  "6N0B": {
+    "titre": "Verbaliser"
+  },
+  "6N1": {
+    "titre": "Nombres entiers et décimaux"
+  },
+  "6N1A": {
+    "titre": "Connaître et utiliser la valeur des chiffres selon leur rang dans l'écriture d'un nombre"
+  },
+  "6N1B": {
+    "titre": "Connaître les liens entre les unités de numération : unité, dizaine, centaine, millier, dixième, centième, millième"
+  },
+  "6N1C": {
+    "titre": "Connaître des grands nombres entiers"
+  },
+  "6N1D": {
+    "titre": "Reconnaître un nombre décimal"
+  },
+  "6N1E": {
+    "titre": "Connaître la définition d'un pourcentage"
+  },
+  "6N1F": {
+    "titre": "Associer et utiliser différentes écritures d'un nombre décimal : écriture à virgule, fraction, nombre mixte, pourcentage"
+  },
+  "6N1G": {
+    "titre": "Placer sur une demi-droite graduée un point dont l'abscisse est un nombre décimal"
+  },
+  "6N1H": {
+    "titre": "Repérer un nombre décimal sur une demi-droite graduée"
+  },
+  "6N1I": {
+    "titre": "Comparer deux nombres décimaux"
+  },
+  "6N1J": {
+    "titre": "Ordonner une liste de nombres décimaux"
+  },
+  "6N1K": {
+    "titre": "Donner la valeur arrondie à l'unité, au dixième ou au centième, d'un nombre décimal"
+  },
+  "6N1L": {
+    "titre": "Déterminer ou connaître la valeur arrondie de certains nombres non décimaux"
+  },
+  "6N1M": {
+    "titre": "Encadrer un nombre décimal par deux nombres décimaux, intercaler un nombre décimal entre deux nombres décimaux"
+  },
+  "6N2": {
+    "titre": "Nombres décimaux"
+  },
+  "6N2A": {
+    "titre": "Additionner et soustraire des nombres décimaux"
+  },
+  "6N2B": {
+    "titre": "Multiplier un nombre entier ou un nombre décimal par 0,1, par 0,01, et par 0,001"
+  },
+  "6N2C": {
+    "titre": "Connaître le lien avec la division par 10, 100 et par 1 000"
+  },
+  "6N2D": {
+    "titre": "Comprendre le sens de la multiplication de deux nombres décimaux"
+  },
+  "6N2E": {
+    "titre": "Calculer le produit de deux nombres décimaux"
+  },
+  "6N2F": {
+    "titre": "Contrôler les résultats à l'aide d'ordres de grandeur"
+  },
+  "6N2G": {
+    "titre": "Résoudre des problèmes mettant en jeu des multiplications entre des nombres décimaux"
+  },
+  "6N2H": {
+    "titre": "Diviser un nombre décimal par un nombre entier non nul inférieur à 10"
+  },
+  "6N2I": {
+    "titre": "Résoudre des problèmes mettant en jeu des divisions décimales"
+  },
+  "6N2J": {
+    "titre": "Effectuer la division euclidienne d'un nombre entier par un nombre entier inférieur à 100"
+  },
+  "6N2K": {
+    "titre": "Résoudre des problèmes mettant en jeu des divisions euclidiennes"
+  },
+  "6N2Aauto": {
+    "titre": "L'élève restitue de manière automatique les résultats suivants, relatifs aux relations entre 1/1000, 1/100, 1/10 et 1 : 1=10/10=100/100=1000/1000 ; 1/10=10/100=100/1000 ; 1/100=10/1000 : 1=10*1/10=100*1/100=1000*1/1000; 1/10=10*1/100"
+  },
+  "6N2Bauto": {
+    "titre": "L'élève passe de manière automatique d'une écriture sous forme de fraction décimale ou de somme de fractions décimales à une écriture décimale, et inversement. Par exemple il sait que les écritures 4107/1000 4 + 107/1000 ; 4 + 1/10 + 7/1000 ; 4,107 représentent le même nombre."
+  },
+  "6N2Cauto": {
+    "titre": "L'élève applique de manière automatique la procédure de multiplication d'un nombre décimal par 1, 10, 100 ou 1 000, en lien avec la numération."
+  },
+  "6N2Dauto": {
+    "titre": "L'élève applique de manière automatique la procédure de division d'un nombre décimal par 1, 10, 100 ou 1 000."
+  },
+  "6N2Eauto": {
+    "titre": "Jusqu'à l'automatisation, la manipulation d'un outil du type «glisse-nombres» peut compléter la verbalisation en termes d'unités de numération."
+  },
+  "6N3": {
+    "titre": "Fractions"
+  },
+  "6N3A": {
+    "titre": "Relier une fraction au résultat exact de la division de son numérateur par son dénominateur"
+  },
+  "6N3B": {
+    "titre": "Comprendre et connaître la définition du quotient d'un entier a par un entier b non nul"
+  },
+  "6N3C": {
+    "titre": "Compléter des égalités à trous multiplicatives"
+  },
+  "6N3D": {
+    "titre": "Placer une fraction sur une demi-droite graduée dans des cas simples (Exemple de mise en oeuvre : 7/3 comme 7 partagé en 3 et non comme 7 fois 1/3)."
+  },
+  "6N3E": {
+    "titre": "Graduer un segment de longueur donnée a. (Exemple de mise en oeuvre : Plier en 2, 4, 8... ou bien avec un guide-âne)"
+  },
+  "6N3F": {
+    "titre": "Savoir que la fraction a/b peut représenter un nombre entier, un nombre décimal non entier ou un nombre non décimal"
+  },
+  "6N3G": {
+    "titre": "Utiliser une multiplication pour appliquer une fraction à un nombre entier"
+  },
+  "6N3H": {
+    "titre": "Établir des égalités de fractions"
+  },
+  "6N3I": {
+    "titre": "Comparer et encadrer des fractions"
+  },
+  "6N3J": {
+    "titre": "Ordonner une liste de nombres écrits sous forme de fractions ou de nombres mixtes"
+  },
+  "6N3K": {
+    "titre": "Additionner et soustraire des fractions"
+  },
+  "6N3L": {
+    "titre": "Multiplier une fraction par un nombre entier"
+  },
+  "6N3M": {
+    "titre": "Résoudre des problèmes mettant en jeu des fractions"
+  },
+  "6N3N": {
+    "titre": "Inventer des problèmes mettant en jeu des fractions"
+  },
+  "6N3O": {
+    "titre": "Comprendre le sens d'un pourcentage"
+  },
+  "6N3P": {
+    "titre": "Calculer une proportion (rapport entre une partie et le tout) et l'exprimer sous forme de pourcentage dans des cas simples"
+  },
+  "6N3Q": {
+    "titre": "Appliquer un pourcentage à une grandeur ou à un nombre"
+  },
+  "6N3Aauto": {
+    "titre": "L'élève sait reconnaître une fraction sur des représentations variées (figures diverses : carré, disque, rectangle coupé en triangles, barre rectangulaire)."
+  },
+  "6N3Bauto": {
+    "titre": "L'élève connaît des relations entre 1/4, 1/2, 3/4 et 1, et complète de manière automatique des « égalités à trous » du type : 1/2+1/2=… ; 1/4+1/4=… ; 1-1/4=… ; 1/2+1/4=… : 1-1/2=… ; 3/4+1/4=… ; 1/2-1/4=… : 3/4-1/4=… ."
+  },
+  "6N3Cauto": {
+    "titre": "L'élève sait passer de manière automatique d'une écriture fractionnaire à une écriture décimale, et inversement, dans les cas suivants : 1/4=0,25 ; 1/2=0,5 ; 3/4=0,75 ; 3/2=1,5 ; 4/2=2 ; 5/2=2,5."
+  },
+  "6N3Dauto": {
+    "titre": "Les notions de diviseur et de multiple et les tables de multiplication sont réactivées en vue de leur utilisation dans le calcul sur les fractions (simplification, addition et soustraction)."
+  },
+  "6N3Eauto": {
+    "titre": "L'élève sait calculer 2/3 de 12 œufs, 3/4 de 10 m."
+  },
+  "6N4": {
+    "titre": "Algèbre"
+  },
+  "6N4A": {
+    "titre": "Utiliser des modèles pré-algébriques pour résoudre des problèmes algébriques"
+  },
+  "6N4B": {
+    "titre": "Identifier la structure d'un motif évolutif en repérant une régularité et en identifiant une structure"
+  },
+  "6N5": {
+    "titre": "Résolution de problèmes"
+  },
+  "6M1": {
+    "titre": "Longueurs"
+  },
+  "6M1A": {
+    "titre": "Savoir que le périmètre du disque est proportionnel à son diamètre"
+  },
+  "6M1B": {
+    "titre": "Connaître la formule du périmètre d'un disque"
+  },
+  "6M1C": {
+    "titre": "Calculer le périmètre d'un disque"
+  },
+  "6M1D": {
+    "titre": "Calculer des périmètres de figures composées"
+  },
+  "6M1E": {
+    "titre": "Résoudre des problèmes impliquant des longueurs"
+  },
+  "6M1Aauto": {
+    "titre": "L'élève connaît les significations des préfixes allant du kilo- au milli-, ainsi que les relations entre le mètre, ses multiples et ses sous-multiples, et fait le lien avec les unités de numération du système décimal."
+  },
+  "6M1Bauto": {
+    "titre": "L'élève connaît les relations entre deux unités successives du système décimal, par exemple : 1 dm = 10 cm et 1 cm = 1/10 dm = 0,1 dm."
+  },
+  "6M1Cauto": {
+    "titre": "L'élève sait convertir en mètre une longueur donnée dans une autre unité, multiple ou sous-multiple du mètre. Inversement, l'élève sait convertir dans une unité donnée une longueur exprimée en mètre."
+  },
+  "6M1Dauto": {
+    "titre": "L'élève sait utiliser le compas comme outil de report de longueurs."
+  },
+  "6M1Eauto": {
+    "titre": "L'élève sait que le périmètre d'une figure plane est la longueur de son contour. L'élève sait calculer le périmètre d'un carré et d'un rectangle."
+  },
+  "6M2": {
+    "titre": "Aires"
+  },
+  "6M2A": {
+    "titre": "Effectuer des conversions d'aire"
+  },
+  "6M2B": {
+    "titre": "Connaître la formule de l'aire d'un carré ou d'un rectangle"
+  },
+  "6M2C": {
+    "titre": "Calculer l'aire d'un carré ou d'un rectangle"
+  },
+  "6M2Aauto": {
+    "titre": "L'élève sait comparer des aires sans avoir recours à la mesure, par superposition ou par découpage et recollement de surfaces."
+  },
+  "6M2Bauto": {
+    "titre": "L'élève sait que 1 cm² est l'aire d'un carré de 1 cm de côté, que 1 m² est l'aire d'un carré de 1 m de côté, que 1 dm² est l'aire d'un carré de 1 dm de côté."
+  },
+  "6M2Cauto": {
+    "titre": "Dans des cas simples, l'élève sait déterminer l'aire d'une surface en s'appuyant sur un quadrillage composé de carreaux dont les côtés mesurent 1 cm."
+  },
+  "6M2Dauto": {
+    "titre": "L'élève sait que : 1 m² = 1 m × 1 m = 10 dm × 10 dm = 10 × 10 dm² = 100 dm² ; 1 dm² = 1 dm × 1 dm = 10 cm × 10 cm = 10 × 10 cm² = 100 cm² ."
+  },
+  "6M2Eauto": {
+    "titre": "L'élève mémorise que 1 cm² est égal à un centième de 1 dm², qu'il écrit 1 cm² = 1/100 dm² ou 1 cm² = 0,01 dm² . L'élève mémorise que 1 dm² est égal à un centième de 1 m², qu'il écrit 1 dm² = 1/100 ou 1 dm² = 0,01 m² ."
+  },
+  "6M3": {
+    "titre": "Volumes"
+  },
+  "6M3A": {
+    "titre": "Connaître l'unité centimètre cube"
+  },
+  "6M3B": {
+    "titre": "Comparer des volumes"
+  },
+  "6M3C": {
+    "titre": "Déterminer un volume"
+  },
+  "6M4": {
+    "titre": "Durées"
+  },
+  "6M4A": {
+    "titre": "Effectuer des calculs sur des horaires et des durées"
+  },
+  "6M4B": {
+    "titre": "Résoudre des problèmes impliquant des horaires et des durées"
+  },
+  "6M4C": {
+    "titre": "Convertir des durées"
+  },
+  "6M4Aauto": {
+    "titre": "L'élève lit l'heure sur un cadran à aiguilles ou sur un affichage digital (heures, minutes et secondes)."
+  },
+  "6M4Bauto": {
+    "titre": "L'élève place les aiguilles pour qu'une horloge indique une heure donnée."
+  },
+  "6M4Cauto": {
+    "titre": "L'élève connaît les unités de mesure de durées jour, heure, minute et seconde et les relations qui les lient."
+  },
+  "6M4Dauto": {
+    "titre": "L'élève sait combien de jours il y a dans une année (bissextile ou non), combien d'années il y a dans un siècle, et dans un millénaire."
+  },
+  "6M4Eauto": {
+    "titre": "L'élève sait qu'une demi-heure c'est 30 minutes, qu'un quart d'heure c'est 15 minutes, que trois quarts d'heure c'est 45 minutes."
+  },
+  "6G0": {
+    "titre": "Géométrie de base"
+  },
+  "6G1": {
+    "titre": "Distances"
+  },
+  "6G1A": {
+    "titre": "Connaître et utiliser la définition de la distance entre deux points"
+  },
+  "6G1B": {
+    "titre": "Connaître et utiliser la définition du milieu d'un segment"
+  },
+  "6G1Aauto": {
+    "titre": "L'élève connaît le lexique et le codage des objets de base de la géométrie plane : angle droit, égalité de longueurs, égalité d'angles."
+  },
+  "6G1Bauto": {
+    "titre": "L'élève reconnaît un carré, un rectangle, un triangle."
+  },
+  "6G1Cauto": {
+    "titre": "L'élève reconnaît si une figure possède un ou plusieurs axes de symétrie."
+  },
+  "6G1Dauto": {
+    "titre": "L'élève sait coder des angles droits et des longueurs égales."
+  },
+  "6G2": {
+    "titre": "Cercles et disques"
+  },
+  "6G2A": {
+    "titre": "Connaître les définitions d'un cercle, d'un disque, d'un rayon, d'un diamètre, d'une corde"
+  },
+  "6G2B": {
+    "titre": "Comprendre la définition d'un cercle et celle d'un disque sous la forme d'ensembles de points"
+  },
+  "6G2C": {
+    "titre": "Résoudre des problèmes mettant en jeu des distances à un point"
+  },
+  "6G3": {
+    "titre": "Médiatrices"
+  },
+  "6G3A": {
+    "titre": "Connaître la définition de la médiatrice d'un segment"
+  },
+  "6G3B": {
+    "titre": "Comprendre et utiliser la propriété caractéristique de la médiatrice d'un segment"
+  },
+  "6G3C": {
+    "titre": "Résoudre des problèmes en s'appuyant sur la propriété caractéristique de la médiatrice"
+  },
+  "6G4": {
+    "titre": "Angles"
+  },
+  "6G4A": {
+    "titre": "Connaître et utiliser les angles ainsi que le lexique et les notations qui s'y rapportent : angle droit, angle plat, angle plein, angle nul, angle aigu, angle obtus, angles opposés par le sommet, angles adjacents, angles supplémentaires"
+  },
+  "6G4B": {
+    "titre": "Mesurer un angle"
+  },
+  "6G4C": {
+    "titre": "Construire un angle de mesure donnée"
+  },
+  "6G5": {
+    "titre": "Bissectrices"
+  },
+  "6G5A": {
+    "titre": "Connaître la définition de la bissectrice d'un angle saillant"
+  },
+  "6G5B": {
+    "titre": "Utiliser la définition de la bissectrice d'un angle pour effectuer des constructions et résoudre des problèmes"
+  },
+  "6G6": {
+    "titre": "Triangles"
+  },
+  "6G6A": {
+    "titre": "Construire des triangles"
+  },
+  "6G6B": {
+    "titre": "Connaître et utiliser les propriétés angulaires des triangles particuliers : triangle rectangle, triangle isocèle, triangle équilatéral"
+  },
+  "6G6C": {
+    "titre": "Connaître la valeur de la somme des mesures des angles d'un triangle"
+  },
+  "6G6D": {
+    "titre": "L'utiliser pour calculer des angles, effectuer des constructions et résoudre des problèmes"
+  },
+  "6G6E": {
+    "titre": "Savoir que les médiatrices d'un triangle sont concourantes"
+  },
+  "6G6F": {
+    "titre": "Connaître et construire le cercle circonscrit à un triangle"
+  },
+  "6G7": {
+    "titre": "Symétrie axiale"
+  },
+  "6G7A": {
+    "titre": "Connaître la définition du symétrique d'un point par rapport à une droite"
+  },
+  "6G7B": {
+    "titre": "Connaître et utiliser les propriétés de la symétrie axiale pour effectuer des constructions"
+  },
+  "6G8": {
+    "titre": "Espace"
+  },
+  "6G8A": {
+    "titre": "Voir dans l'espace des assemblages de cubes"
+  },
+  "6G8Aauto": {
+    "titre": "L'élève identifie dans un ensemble de solides lesquels sont des pyramides, des boules, des cubes, des cylindres, des pavés, des cônes ou des prismes droits."
+  },
+  "6P1": {
+    "titre": "Organisation et gestion de données"
+  },
+  "6P1A": {
+    "titre": "Planifier une enquête et recueillir des données"
+  },
+  "6P1B": {
+    "titre": "Réaliser des mesures et les consigner dans un tableau"
+  },
+  "6P1C": {
+    "titre": "Construire un tableau simple pour présenter des données (observations, caractères)"
+  },
+  "6P1D": {
+    "titre": "Faire un choix en filtrant les données d'un tableau selon un critère"
+  },
+  "6P1Aauto": {
+    "titre": "L'élève sait lire un tableau, un diagramme en barres, un diagramme circulaire ou une courbe dans des cas adaptés à une lecture immédiate."
+  },
+  "6P2": {
+    "titre": "Probabilités"
+  },
+  "6P2A": {
+    "titre": "Savoir que la probabilité d'un événement est un nombre compris entre 0 et 1"
+  },
+  "6P2B": {
+    "titre": "Calculer des probabilités dans des situations simples d'équiprobabilité"
+  },
+  "6P2C": {
+    "titre": "Comparer des résultats d'une expérience aléatoire répétée à une probabilité calculée"
+  },
+  "6P3": {
+    "titre": "Proportionnalité"
+  },
+  "6P3A": {
+    "titre": "Connaître la définition de la proportionnalité entre deux grandeurs et la mettre en lien avec des expressions de la vie courante"
+  },
+  "6P3B": {
+    "titre": "Identifier si une situation relève du « modèle » de la proportionnalité"
+  },
+  "6P3C": {
+    "titre": "Résoudre un problème de proportionnalité en choisissant une procédure adaptée : propriété de linéarité pour la multiplication ou l'addition, retour à l'unité"
+  },
+  "6P3D": {
+    "titre": "Représenter une situation de proportionnalité à l'aide d'un tableau ou de notations symboliques"
+  },
+  "6P3E": {
+    "titre": "S'initier à la résolution de problèmes d'échelles"
+  },
+  "6P3Aauto": {
+    "titre": "L'élève sait repérer des relations multiplicatives simples entre des nombres (double, quadruple, moitié, tiers, quart)."
+  },
+  "6P3Bauto": {
+    "titre": "L'élève associe de manière automatique les expressions du type : « 4 fois plus grand, 4 fois plus petit, 5 fois plus, 5 fois moins » à une multiplication ou à une division."
+  },
+  "6I1": {
+    "titre": "Pensée informatique"
+  },
+  "6I1A": {
+    "titre": "Identifier une instruction ou une séquence d'instructions"
+  },
+  "6I1B": {
+    "titre": "Produire et exécuter une séquence d'instructions"
+  },
+  "6I1C": {
+    "titre": "Répéter à la main une séquence d'instructions pour accomplir une tâche imposée"
+  },
+  "6I1D": {
+    "titre": "Programmer la construction d'un chemin simple"
+  }
+}

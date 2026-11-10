@@ -1,0 +1,74 @@
+%-------------------------------------------------------------
+%Dans cet exercice, les deux parties sont indépendantes.
+
+%Une entreprise développe une intelligence artificielle (IA) capable de reconnaître des objets sur des images.
+
+\subsubsection*{Partie A}
+
+%On entraîne l'IA à partir d'une base de données de \np{50000} images réparties en 4 catégories : \og Objets du quotidien \fg, \og Animaux \fg, \og Véhicules \fg, \og Autres \fg.
+
+%L'intelligence artificielle est testée pour mesurer sa précision et son efficacité. Les images sont réparties comme suit :
+
+%\vspace{6pt}
+%\begin{center}
+%\begin{tabular}{|>{\columncolor{gris}}c|l|c|}\hline
+%\rowcolor{gris}
+%& \textbf{Type d'image} & \textbf{Nombre d'images} \\\hline
+%2 & Objets du quotidien & 28\,000 \\\hline
+%3 & Animaux & \np{12000} \\\hline
+%4 & Véhicules & \np{8000} \\\hline
+%5 & Autres & ? \\\hline
+%\end{tabular}
+%\end{center}
+
+%\medskip
+
+\begin{enumerate}
+	\item $\np{50000}-(\np{28 000}+\np{12000}+\np{8000})=\np{2000}$ \\
+	Il y a $\np{2000}$ images dans la catégorie \og Autres \fg{}.
+	\item $\dfrac{90}{100}\times \np{28000}=\np{25200}$
+
+	Il y a $\np{25200}$ images reconnues correctement dans cette catégorie.
+	\item $\dfrac{\np{5600}}{\np{8000}}\times 100=70$.
+
+	Donc 70\% des images dans la catégorie \og Véhicules \fg{} sont reconnues correctement. 
+	\item $\dfrac{\np{28000}}{\np{50000}}=0,56$.
+	
+	La probabilité que l'image tirée soit l'image d'un \og Objet du quotidien \fg{} est 0,56.
+\end{enumerate}
+
+\bigskip
+
+\subsubsection*{Partie B}
+
+%L'intelligence artificielle, très utilisée dans le monde entier, nécessite une quantité importante d'électricité. L'énergie consommée peut s'exprimer en wattheures (Wh).
+%
+%En 2024, sa consommation annuelle est estimée à 82\,000 Gigawattheures (GWh).
+%
+%En comparaison, un collège consomme en moyenne 200\,000 kilowattheures (kWh) par an.
+%
+%\medskip
+%
+%\begin{center}
+%\begin{tabularx}{0.35\linewidth}{|X|}\hline
+%\textbf{Rappels :}\\
+%-- 1\,kWh $= 10^3$\,Wh\\
+%-- 1\,GWh $= 10^9$\,Wh\\ \hline
+%\end{tabularx}
+%\end{center}
+%
+%\medskip
+
+\begin{enumerate}[resume]
+	\item IA : $8,2\times 10^{13}$ Wh\\
+	Collège : $2\times 10^8$ Wh
+	\item $\dfrac{8,2\times 10^{13}}{2\times 10^8}=4,1\times 10 ^5$
+	
+	On pourrait alimenter \np{410000} collèges pendant un an avec la consommation électrique de l'intelligence artificielle.
+	\item $\dfrac{\np{410000}}{\np{7100}}=\dfrac{4100}{71}\approx 57,74$
+
+	On pourrait alimenter tous les collèges français avec la consommation électrique annuelle de cette intelligence artificielle pendant près de 58 ans.
+\end{enumerate}
+
+
+%-------------------------------------------------------------

@@ -1,0 +1,54 @@
+\begin{enumerate}
+	\item \hfill~\begin{tikzpicture}[baseline=(N.base)]
+	\draw[->](0,0)node[below]{A}--(6.4,0)node[below]{B}--(9.6,0)node[below]{M};
+	\draw[->](6,.4)rectangle(6.4,0)--(6.4,4.8)	(9.2,0.4)rectangle(9.6,0)--(9.6,7.2);
+	\draw[->][dashed](6.4,4.8)--(6.4,6)(9.6,7.2)--(9.6,8);
+	\draw[->][dashed](8,0)arc(0:45:8);
+	\draw[->](6.4,4.8)node[above right]{C};
+	\draw[->,dashed](-0.5,-0.375)--(10,7.5);
+	\draw[->](0,0)--(9.6,7.2)node[above](N){N};
+	\end{tikzpicture}\hfill~
+
+	Commencer par tracer le segment [AM] (\np[cm]{9.6}) avec le point B intercalé à \np[cm]{6.4} de A.
+
+	Puis tracer les deux perpendiculaires en B et M.
+
+	Laisser apparent un bel arc de cercle centré sur A et de rayon 8.
+
+	À l'intersection avec la perpendiculaire en B, on place le point C.
+
+	On peut ensuite tracer la droite (AC) et placer N à l'intersection avec la perpendiculaire en M.
+
+	\item ABC est un triangle rectangle en B, selon le théorème de Pythagore, {$\text{AC}^2=\text{AB}^2+\text{BC}^2$}.
+
+	Donc {$\text{BC}^2=8^2-\np{6.4}^2=\np{23.04}$} et {$\text{BC}=\sqrt{\np{23.04}}=\np{4.8}$}.
+
+	La longueur BC mesure \np[cm]{4.8}.
+
+	\item (BC) et (MN) sont toutes deux perpendiculaires à (AM).
+
+	Comme deux droites perpendiculaires à une même troisième droite sont parallèles entre elles, (BC) et (MN) sont parallèles.
+
+	\item \begin{itemize}
+		\item Les points A, B et M sont alignés;
+		\item les points A, C et N sont alignés;
+		\item (BC) et (MN) sont parallèles.
+	\end{itemize}
+	Donc, selon le théorème de Thalès, \quad	{$\dfrac{\text{AB}}{\text{AM}}=\dfrac{\text{AC}}{\text{AN}}=\dfrac{\text{BC}}{\text{MN}}$}
+
+	On peut donc calculer : \quad
+	{$\text{MN}=\dfrac{\text{BC}\times\text{AM}}{\text{AB}}=\np{7.2}$}\quad et \quad
+	{$\text{AN}=\dfrac{\text{AC}\times\text{AM}}{\text{AB}}=\np{12}$}.
+
+	Les longueurs MN et AN sont respectivement \np[cm]{7.2} et \np[cm]{12}.
+
+	\item Le périmètre du triangle ABC est de {$\np{6.4}+\np{4.8}+8=\np[cm]{19.2}$}.
+
+	Comme A, C et N sont alignés, {$\text{CN}=\np[cm]{4}$}.
+
+	Donc le périmètre de BMNC est égal à {$\np{3.2}+\np{7.2}+\np{4}+\np{4.8}=\np[cm]{19.2}$}.
+
+	Les deux figures ont le même périmètre et celui-ci est de \np[cm]{19.2}.
+\end{enumerate}
+
+\needspace{10\baselineskip}

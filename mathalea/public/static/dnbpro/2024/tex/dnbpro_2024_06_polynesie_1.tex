@@ -1,0 +1,103 @@
+
+\smallskip
+
+Cet exercice est un questionnaire à choix multiples (QCM). \\
+Pour chaque question, une seule des trois réponses proposées est exacte.\\
+Pour chaque question, recopier sur la copie, sans justifier, la réponse choisie : Réponse A,
+Réponse B ou Réponse C.\\
+
+\begin{tabularx}{\linewidth}{|m{6cm}|*{3}{>{\centering \arraybackslash}X|}}
+\hline
+\centering Questions & \multicolumn{3}{ c|}{Réponses proposées}\\
+\cline{2-4}
+ & Réponse A & Réponse B & Réponse C\\
+\hline
+\begin{enumerate}
+\item Pauro possède 50~F{}. Rai a le double de Pauro. Rai dépense 2 fois 15~F{}.
+\end{enumerate}
+Combien reste-t-il à Rai?
+& 70 F & 30 F & 20 F\\ 
+\hline
+\begin{enumerate}[start=2]
+\item Voici les notes de Haiata:\newline
+8 \quad 18 \quad  14 \quad 16 \quad 12 \quad 16
+\end{enumerate}
+La moyenne des notes de Haiata est:
+& 84 & 14 & 6\\
+\hline
+\begin{enumerate}[start=3]
+\item Dans une urne, il y a 15 boules : 5 boules bleues, 7 boules vertes et 3 boules rouges. Léo tire une boule au hasard.
+\end{enumerate}
+La probabilité de tirer une boule rouge est:
+& $\dfrac{5}{15}$ & $\dfrac{3}{15}$ & $\dfrac{12}{15}$\\
+\hline
+\begin{enumerate}[start=4]
+\item Un pavé droit a une longueur $L$ de 12 m, une largeur $\ell$ de 6 m et une hauteur $h$ de $2,2$0 m.
+
+\scalebox{0.8}{
+\psset{xunit=0.5cm,yunit=0.2cm,radius=0pt,arrowsize=3pt 2}
+\def\xmin {-1}   \def\xmax {9} \def\ymin {-2}   \def\ymax {10}
+\begin{pspicture}(\xmin,\ymin)(\xmax,\ymax)
+%\psgrid[subgriddiv=1, gridlabels=0, gridcolor=lightgray] 
+\Cnode*(0,0){A}  \Cnode*(2,2){D}\Cnode*(6,0){B} \Cnode*(8,2){C} 
+\Cnode*(6,6){F}    \Cnode*(8,8){G} \Cnode*(0,6){E} \Cnode*(2,8){H} 
+\pspolygon[linecolor=white,fillstyle=solid,fillcolor=lightgray!30](A)(B)(C)(G)(H)(E)
+\psline(G)(C)(B)(A)(E)(F)(G)(H)(E) \psline(B)(F)
+{\psset{linestyle=dashed}
+\psline(A)(D)(C) \psline(D)(H)}
+\psline{<->}(0,-1)(6,-1)\uput[d](3,-1){$L$} 
+\psline{<->}(-0.3,0)(-0.3,6) \uput[l](-0.3,3){$h$} 
+\psline{<->}(7,0)(9,2) \uput[dr](8,1){$\ell$}
+\end{pspicture}
+}% fin du scalebox
+\end{enumerate}
+Le volume du pavé droit est de:
+& $20,2$ m$^3$ & $132$ m$^3$ & $158,4$ m$^3$\\
+\hline
+%\begin{minipage}[t][2cm][t]{6cm}
+%\vspace{0pt}
+\begin{enumerate}[start=5]
+\item Soit la fonction $f$ définie par:\newline
+$f(x)=-2x+10$
+\end{enumerate}
+La représentation graphique de $f$ est:\newline
+%\end{minipage}
+&
+\parbox{3cm}{
+\psset{unit=0.15cm,radius=0pt,arrowsize=3pt 3}
+\def\xmin{-7}   \def\xmax{7} \def\ymin{-9}   \def\ymax {12}
+\begin{pspicture*}(\xmin,\ymin)(\xmax,\ymax)
+\psgrid[unit=0.75cm,subgriddiv=1, gridlabels=0, gridcolor=lightgray]
+\psaxes[labelFontSize=\scriptstyle, ticksize=-0pt 0pt, Dx=5, Dy=5](0,0)(\xmin,\ymin)(\xmax,\ymax)
+\uput[dl](0,0){\footnotesize 0}
+\psplot{\xmin}{\xmax}{-2 x mul 10 add}
+\end{pspicture*}
+}
+&
+\parbox{3cm}{
+\psset{unit=0.1cm,radius=0pt,arrowsize=3pt 3}
+\def\xmin{-12}   \def\xmax{12} \def\ymin{-18}   \def\ymax {18}
+\begin{pspicture*}(\xmin,\ymin)(\xmax,\ymax)
+\psgrid[unit=1cm,subgriddiv=1, gridlabels=0, gridcolor=lightgray]
+\psaxes[labelFontSize=\scriptstyle, ticksize=-0pt 0pt, Dx=10, Dy=10](0,0)(\xmin,\ymin)(\xmax,\ymax)
+\uput[dl](0,0){\footnotesize 0}
+\psplot{\xmin}{\xmax}{2 x mul 10 sub}
+\end{pspicture*}
+}
+&
+\parbox{3cm}{
+\psset{unit=0.5cm}
+\def\xmin{-1.5}   \def\xmax{3.5} \def\ymin{-1.5}   \def\ymax {6.5}
+\begin{pspicture*}(\xmin,\ymin)(\xmax,\ymax)
+\psgrid[subgriddiv=1, gridlabels=0, gridcolor=lightgray]
+\psaxes[labelFontSize=\scriptstyle, ticksize=-0pt 0pt, Dx=1, Dy=1](0,0)(\xmin,\ymin)(\xmax,\ymax)
+\uput[dl](0,0){\footnotesize 0}
+\psplot{\xmin}{\xmax}{x  -2 mul 5 add}
+\end{pspicture*}
+}\\
+\hline
+\end{tabularx}
+
+\bigskip
+
+

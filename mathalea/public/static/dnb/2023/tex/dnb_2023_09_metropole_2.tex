@@ -1,0 +1,117 @@
+
+\medskip
+
+\begin{center}
+\psset{unit=0.8cm}
+\begin{pspicture}(-1,0)(2.1,1.9)
+\pspolygon[linecolor=blue](0,0)(2.1;0)(2.1;60)(2.1;120)
+\end{pspicture}
+\end{center}
+
+\begin{enumerate}
+\item On souhaite tracer le losange ci-dessus de côté $50$ pas à l'aide du bloc losange.
+
+On a écrit le script ci-dessous avec le logiciel Scratch.
+
+Recopier les lignes 3 et 6 sur la copie en les complétant.
+
+\begin{center}
+\begin{scratch}[num blocks]
+\initmoreblocks{définir \namemoreblocks{losange}}
+\blockpen{stylo en position d'écriture}
+\blockrepeat{répéter \ovalnum{...} fois}
+{
+\blockmove{avancer de \ovalnum{50} pas}
+\blockmove{tourner \turnright{} de \ovalnum{60} degrés}
+\blockmove{avancer de \ovalnum{...} pas}
+\blockmove{tourner \turnright{} de \ovalnum{120} degrés}
+}
+\blockpen{relever le stylo}
+\end{scratch}
+\end{center}
+
+\item Préciser sur votre copie quelle figure est associée à chaque script 1, 2 ou 3.
+
+Aucune justification n'est demandée.
+
+\begin{center}
+\begin{tabularx}{\linewidth}{*{3}{>{\centering \arraybackslash}X}}
+Figure A &Figure B& Figure C\\ \hline
+\psset{unit=0.3cm}
+\begin{pspicture}(-3,0)(6.1,1.9)
+\def\los{\pspolygon[linecolor=blue](0,0)(2.1,0)(1.2,1.8)(-0.9,1.8)}
+\multido{\n=-3.0+3}{4}{\rput(\n,0){\los}}
+\end{pspicture}&
+\psset{unit=0.25cm}
+\begin{pspicture}(-3,-1)(7.6,5)
+\def\los{\pspolygon[linecolor=blue](0,0)(2.1,0)(1.2,1.8)(-0.9,1.8)}
+\multido{\n=-3+2.1,\na=-0.5+1.0}{4}{\rput(\n,\na){\los}}
+\end{pspicture}&
+\psset{unit=0.3cm}
+\begin{pspicture}(-3,0)(5,3.9)
+\def\los{\pspolygon[linecolor=blue](0,0)(2.1,0)(1.2,1.8)(-0.9,1.8)}
+\multido{\n=-2.0+2.1}{4}{\rput(\n,0){\los}}
+\end{pspicture}\\
+Script 1 &Script 2 &Script 3\\
+\begin{scratch}
+\blockinit{Quand \ovalnum{1} est pressé}
+\blockmove{aller à x: \ovalnum{-220} y: \ovalnum0}
+\blockmove{s'orienter à \ovalnum{90} degrés}
+\blockpen{effacer tout}
+\blockrepeat{répéter \ovalnum{4} fois}
+{\blockmove{losange}
+\blockmove{avancer de \ovalnum{50} pas}
+}
+\end{scratch}&
+\begin{scratch}
+\blockinit{Quand \ovalnum{2} est pressé}
+\blockmove{aller à x: \ovalnum{-220} y: \ovalnum0}
+\blockmove{s'orienter à \ovalnum{90} degrés}
+\blockpen{effacer tout}
+\blockrepeat{répéter \ovalnum{4} fois}
+{\blockmove{losange}
+\blockmove{avancer de \ovalnum{100} pas}
+}
+\end{scratch}&
+\begin{scratch}
+\blockinit{Quand \ovalnum{3} est pressé}
+\blockmove{aller à x: \ovalnum{-220} y: \ovalnum0}
+\blockmove{s'orienter à \ovalnum{90} degrés}
+\blockpen{effacer tout}
+\blockrepeat{répéter \ovalnum{4} fois}
+{\blockmove{losange}
+\blockmove{avancer de \ovalnum{50} pas}
+\blockmove{ajouter \ovalnum{30} à y}
+}
+\end{scratch}\\
+\end{tabularx}
+\end{center}
+\item  Dans la figure ci-dessous obtenue par le programme associé, décrire une transformation qui permet d'obtenir le losange ABCD à partir du losange EDCF.
+
+Préciser ses caractéristiques.
+
+%\begin{tabularx}{\linewidth}{*{2}{>{\centering \arraybackslash}X}}
+\begin{minipage}{7cm}
+\psset{unit=1cm}
+\begin{pspicture}(-2.8,-2.8)(2.8,2.8)
+\def\los{\pspolygon[linecolor=blue](0,0)(1.4;0)(2.42488;30)(1.4;60)}
+\multido{\n=0+60}{6}{\rput{\n}(0,0){\los}}
+\uput[u](2.42488;90){A} \uput[ur](1.4;60){B} \uput[d](0,-0.1){C}
+\uput[ul](1.4;120){D} \uput[ul](2.42488;150){E} \uput[l](1.4;180){F} 
+\end{pspicture}
+\end{minipage}\hfill
+\begin{minipage}{7cm}
+\begin{scratch}
+\blockinit{Quand \greenflag est cliqué}
+\blockpen{effacer tout}
+\blockmove{aller à x: \ovalnum{0} y: \ovalnum0}
+\blockrepeat{répéter \ovalnum{6} fois}
+{\blockmove{losange}
+\blockmove{tourner \turnright{} de \ovalnum{60} degrés}}
+\end{scratch}
+\end{minipage}
+%\end{tabularx}
+\end{enumerate}
+
+\bigskip
+

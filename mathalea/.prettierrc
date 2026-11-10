@@ -1,0 +1,10 @@
+{
+  "semi": false,
+  "singleQuote": true,
+  "svelteSortOrder": "options-scripts-markup-styles",
+  "svelteStrictMode": true,
+  "svelteBracketNewLine": true,
+  "svelteAllowShorthand": true,
+  "svelteIndentScriptAndStyle": true,
+  "plugins": ["prettier-plugin-svelte"]
+}

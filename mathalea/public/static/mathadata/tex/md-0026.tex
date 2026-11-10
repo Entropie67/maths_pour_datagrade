@@ -1,0 +1,55 @@
+%source mathadata
+On considère deux nuages de points représentés dans le repère ci-contre : les points du nuage des 2 et ceux du nuage des 7. Les points de référence sont $C(2\,;\,4)$ pour le chiffre 2 et $R(5\,;\,2)$ pour le chiffre 7.
+
+		\begin{multicols}{2}
+
+			\begin{MADenumerate}
+
+				\item Calculer les distances $TC$, $TR$, $UC$ et $UR$ pour les points $T(4\,;\,3)$ et $U(3\,;\,2{,}5)$. Quel chiffre l'algorithme estime-t-il pour chacun ?
+
+				\item On cherche l'équation de la droite qui sépare les deux zones d'estimation.
+
+				Soit $M(x;y)$ un point sur cette droite.
+				\begin{enumerate}
+					\item Que peut-on dire des distances $MC$ et $MR$ ?
+					\item Justifier que :
+					      $$(x-2)^2+(y-4)^2=(x-5)^2+(y-2)^2$$
+					\item Déduire l'équation de la droite sous la forme $y=mx+p$.
+				\end{enumerate}
+
+				\begin{exemple}[Aide]
+					Vous devriez :
+					\begin{enumerate}
+						\item Développer l'équation de la question b.
+						\item Simplifier.
+						\item Mettre l'équation sous la forme $y=mx+p$.
+					\end{enumerate}
+				\end{exemple}
+
+				\item Calculer les coordonnées de deux points de la droite, par exemple pour $x=0$ et $x=2$.
+
+				\item Tracer la droite dans le repère ci-contre. Puis, colorer les deux zones — une pour le chiffre 2, une pour le chiffre 7.
+
+				\item Sans calculer de distances, quel chiffre l'algorithme estime-t-il pour le point $V(1\,;\,5)$ ? Justifier en utilisant les zones.
+
+			\end{MADenumerate}
+
+			\begin{figure}[H]
+				\centering
+				\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1cm,y=1cm,scale=0.7]
+					\begin{axis}[
+							x=1cm,y=1cm,
+							axis lines=middle,
+							ymajorgrids=true,
+							xmajorgrids=true,
+							xmin=-1,
+							xmax=8,
+							ymin=-1,
+							ymax=8,
+							xtick={0,1,...,7},
+							ytick={0,1,...,7},]
+					\end{axis}
+				\end{tikzpicture}
+			\end{figure}
+
+		\end{multicols}

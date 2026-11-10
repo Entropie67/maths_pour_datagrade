@@ -1,0 +1,73 @@
+
+\begin{center}
+\textbf{Pouvoir virucide d'une eau de Javel}
+\end{center}
+
+L'eau de Javel est une solution aqueuse contenant des ions hypochlorite ClO$^-$(aq) et des ions chlorure Cl$^-$(aq) en quantité égale. L'ion hypochlorite lui confère des propriétés désinfectantes et virucides. En avril 2020, en lien avec l'épidémie de coronavirus, l'Institut Pasteur de Lille conseillait de nettoyer et de désinfecter le mobilier sanitaire avec une solution d'eau de Javel contenant une concentration minimale en ions hypochlorite $\boldsymbol{C_\textbf{min}}$ égale à $\boldsymbol{0{,}076 \textbf{ mol\cdot L}^{-1}}$.
+
+\medskip
+
+\underline{Données :}
+\begin{itemize}[label=\textbullet]
+    \item Couples oxydant-réducteur : ClO$^-~$(aq) / Cl$^-~$(aq) ; O$_2~$(g) / H$_2$O (l).
+    \item Une eau de Javel à 2,6\% de chlore actif est telle que la concentration initiale $C_0$ en ions hypochlorite ClO$^-$ (aq) est $\boldsymbol{C_0 = 0{,}380 \textbf{ mol\cdot L}^{-1}}$.
+\end{itemize}
+
+On dispose d'informations extraites d'une étiquette d'eau de Javel :
+
+\begin{quote}
+\textbf{Composition :} \\
+Solution aqueuse d'hypochlorite de sodium : 2,6 \% de chlore actif.\\
+\textbf{Conseils d'utilisation :} \\
+Rincer le matériel utilisé à l’eau froide.
+
+À utiliser dans les trois ans qui suivent la date de fabrication.
+\end{quote}
+
+Dans une solution aqueuse d'eau de Javel, les ions hypochlorite se décomposent. Cette transformation chimique est lente et peut être modélisée par la réaction :
+\[\text{ClO}^-~(\mathrm{aq}) \longrightarrow \dfrac{1}{2}~\mathrm{O}_2~(\mathrm{g}) + \text{Cl}^-~(\mathrm{aq})\]
+
+\medskip
+
+On réalise à présent une étude expérimentale de la cinétique de la réaction de décomposition des ions hypochlorite dans l'objectif de tester l'hypothèse de l'ordre 1.
+
+À $20^\circ$C, la concentration $C(t)$ des ions hypochlorite ClO$^-~$(aq) contenus dans la solution commerciale d'eau de Javel est suivie au cours du temps. Une courbe expérimentale est tracée et présentée ci-dessous :
+
+\begin{center}
+\psset{xunit=0.06cm,yunit=5cm,labelFontSize=\scriptstyle,comma=true}
+\begin{pspicture}(-30,-2.05)(210,-0.55)
+\multido{\n=0+10}{21}{\psline[linewidth=0.75pt,linecolor=lightgray](\n,-2)(\n,-0.80)}
+\multido{\n=-2+0.04}{31}{\psline[linewidth=0.75pt,linecolor=lightgray](0,\n)(200,\n)}
+\multido{\n=0+50}{5}{\psline[linewidth=0.75pt,linecolor=gray](\n,-2)(\n,-0.80)}
+\multido{\n=-2+0.20}{7}{\psline[linewidth=0.75pt,linecolor=gray](0,\n)(200,\n)}
+\psaxes[linewidth=0.95pt,Dx=50,Dy=0.20,xlabelPos=top,Oy=-0.80]{-}(0,-0.8)(200.5,-2.005)
+\uput[u](190,-0.7){$t \text{ en jours}$}
+\uput[dl](-20,-1.25){\rotatebox{90}{$\ln C(t)$}}
+\def\Func{x -0.0042 mul -0.968 add}
+\psplot[plotpoints=1000,linewidth=0.75pt,linecolor=blue]{0}{200}{\Func}
+\multido{\n=0+10}{21}{%
+  \psdot[dotsize=4pt,linecolor=red](! \n\space \n\space -0.0042 mul -0.968 add )
+}
+\psline[arrows=->,linewidth=1pt](60,-1.6)(!85 85 -0.0042 mul -0.968 add)
+\uput[u](60,-1.72){$\ln C(t) = -\np{0.0042} \times t - 0,968$}
+\end{pspicture}
+
+Évolution de $\ln C$ de fonction du temps $t$
+\end{center}
+
+\begin{enumerate}[start=6]
+\item Déduire, des résultats expérimentaux, la valeur $k$ de la constante de vitesse de la réaction à $20^\circ$C. Préciser son unité.
+\end{enumerate}
+
+L'évolution de la concentration en ions hypochlorite dans cette solution commerciale est donnée par la fonction $C$ définie sur l'intervalle $[0~;~400]$ par :
+\[C(t) = 0,380e^{-\np{0.0042}t}.\]
+
+\begin{enumerate}[resume]
+\item Montrer, par le calcul, que la durée $t$ pour laquelle une eau de Javel à 2,6\% de chlore actif reste virucide, pour le coronavirus (conformément aux conseils prodigués par l'Institut Pasteur de Lille) est d'environ 380 jours.
+    
+\item Porter un regard critique sur les conseils d'utilisation figurant sur l'étiquette de l'eau de Javel à 2,6\% de chlore actif.
+\end{enumerate}
+
+\bigskip
+
+

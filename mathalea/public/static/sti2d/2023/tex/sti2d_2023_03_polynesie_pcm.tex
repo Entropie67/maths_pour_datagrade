@@ -1,0 +1,39 @@
+
+\begin{center}
+\textbf{Sécurité d'un four à pyrolyse}
+\end{center}
+
+La fonction $\theta$, représentée ci-dessous, modélise l'évolution de la température du four (exprimée en degré Celsius) en fonction du temps t (exprimé en minute) écoulé depuis la fin de la pyrolyse. L'instant initial $t = 0$ correspond au début de la phase de refroidissement.
+
+\begin{center}
+\psset{unit=0.015cm,arrowsize=2pt 4}
+\begin{pspicture}(-80,-20)(660,600)
+\psaxes[linewidth=1.25pt,Dx=60,Dy=100]{->}(0,0)(0,0)(660,600)
+\multido{\n=0+12}{56}{\psline[linewidth=0.2pt](\n,0)(\n,600)}
+\multido{\n=0+20}{31}{\psline[linewidth=0.2pt](0,\n)(660,\n)}
+\psplot[plotpoints=2000,linewidth=1.25pt,linecolor=blue]{0}{660}{480 2.71828 x 95 div neg exp mul 20 add}
+\uput[d](560,-30){Temps (en min)}
+\rput{90}(-70,400){Température (en $\degres C$}
+\end{pspicture}
+
+\bigskip
+
+\emph{Evolution de la température en fonction du temps lors de la phase de refroidissement}
+\end{center}
+
+\begin{enumerate}[start=4]
+\item Déterminer graphiquement $\displaystyle\lim_{t \to + \infty} \theta(t)$.
+\item Interpréter cette limite dans le contexte de l'exercice.
+\end{enumerate}
+La fonction $\theta$ utilisée pour cette modélisation est définie sur $[~0~; +\infty[$ par : $\theta(t) = 480\e^{-\frac{1}{95}t} + 20.$
+\begin{enumerate}[start=6]
+\item Calculer la valeur exacte de la solution de l'équation $\theta(t) = 280$.
+\end{enumerate}
+Pour des raisons de sécurité, le fabricant impose que la porte du four reste verrouillée tant que la température du four est supérieure à $280\degres C$.
+\begin{enumerate}[start=7]
+\item Au bout de combien de temps la porte se déverrouille-t-elle ?
+\end{enumerate}
+
+\bigskip
+
+

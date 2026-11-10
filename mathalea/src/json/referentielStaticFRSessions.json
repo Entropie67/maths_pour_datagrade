@@ -1,0 +1,2777 @@
+{
+  "sessions": {
+    "dnb_2013_04_pondichery": {
+      "annee": "2013",
+      "mois": "Avril",
+      "lieu": "Pondichéry",
+      "typeExercice": "dnb"
+    },
+    "dnb_2013_06_ameriquenord": {
+      "annee": "2013",
+      "mois": "Juin",
+      "lieu": "Amérique du Nord",
+      "typeExercice": "dnb"
+    },
+    "dnb_2013_06_asie": {
+      "annee": "2013",
+      "mois": "Juin",
+      "lieu": "Asie",
+      "typeExercice": "dnb"
+    },
+    "dnb_2013_06_etrangers": {
+      "annee": "2013",
+      "mois": "Juin",
+      "lieu": "Centres étrangers",
+      "typeExercice": "dnb"
+    },
+    "dnb_2013_06_metropole": {
+      "annee": "2013",
+      "mois": "Juin",
+      "lieu": "Métropole",
+      "typeExercice": "dnb"
+    },
+    "dnb_2013_06_polynesie": {
+      "annee": "2013",
+      "mois": "Juin",
+      "lieu": "Polynésie",
+      "typeExercice": "dnb"
+    },
+    "dnb_2013_09_metropole": {
+      "annee": "2013",
+      "mois": "Septembre",
+      "lieu": "Métropole",
+      "typeExercice": "dnb"
+    },
+    "dnb_2013_09_polynesie": {
+      "annee": "2013",
+      "mois": "Septembre",
+      "lieu": "Polynésie",
+      "typeExercice": "dnb"
+    },
+    "dnb_2013_11_ameriquesud": {
+      "annee": "2013",
+      "mois": "Novembre",
+      "lieu": "Amérique du sud",
+      "typeExercice": "dnb"
+    },
+    "dnb_2013_11_ameriquesud_secours": {
+      "annee": "2013",
+      "mois": "Novembre",
+      "lieu": "Amérique du sud (Secours)",
+      "typeExercice": "dnb"
+    },
+    "dnb_2013_12_caledonie": {
+      "annee": "2013",
+      "mois": "Décembre",
+      "lieu": "Nouvelle Calédonie",
+      "typeExercice": "dnb"
+    },
+    "dnb_2014_03_caledonie": {
+      "annee": "2014",
+      "mois": "Mars",
+      "lieu": "Nouvelle Calédonie",
+      "typeExercice": "dnb"
+    },
+    "dnb_2014_04_pondichery": {
+      "annee": "2014",
+      "mois": "Avril",
+      "lieu": "Pondichéry",
+      "typeExercice": "dnb"
+    },
+    "dnb_2014_06_ameriquenord": {
+      "annee": "2014",
+      "mois": "Juin",
+      "lieu": "Amérique du Nord",
+      "typeExercice": "dnb"
+    },
+    "dnb_2014_06_asie": {
+      "annee": "2014",
+      "mois": "Juin",
+      "lieu": "Asie",
+      "typeExercice": "dnb"
+    },
+    "dnb_2014_06_etrangers": {
+      "annee": "2014",
+      "mois": "Juin",
+      "lieu": "Centres étrangers",
+      "typeExercice": "dnb"
+    },
+    "dnb_2014_06_metropole": {
+      "annee": "2014",
+      "mois": "Juin",
+      "lieu": "Métropole",
+      "typeExercice": "dnb"
+    },
+    "dnb_2014_06_polynesie": {
+      "annee": "2014",
+      "mois": "Juin",
+      "lieu": "Polynésie",
+      "typeExercice": "dnb"
+    },
+    "dnb_2014_09_metropole": {
+      "annee": "2014",
+      "mois": "Septembre",
+      "lieu": "Métropole",
+      "typeExercice": "dnb"
+    },
+    "dnb_2014_09_polynesie": {
+      "annee": "2014",
+      "mois": "Septembre",
+      "lieu": "Polynésie",
+      "typeExercice": "dnb"
+    },
+    "dnb_2014_11_ameriquesud": {
+      "annee": "2014",
+      "mois": "Novembre",
+      "lieu": "Amérique du sud",
+      "typeExercice": "dnb"
+    },
+    "dnb_2014_12_caledonie": {
+      "annee": "2014",
+      "mois": "Décembre",
+      "lieu": "Nouvelle Calédonie",
+      "typeExercice": "dnb"
+    },
+    "dnb_2015_04_pondichery": {
+      "annee": "2015",
+      "mois": "Avril",
+      "lieu": "Pondichéry",
+      "typeExercice": "dnb"
+    },
+    "dnb_2015_06_ameriquenord": {
+      "annee": "2015",
+      "mois": "Juin",
+      "lieu": "Amérique du Nord",
+      "typeExercice": "dnb"
+    },
+    "dnb_2015_06_asie": {
+      "annee": "2015",
+      "mois": "Juin",
+      "lieu": "Asie",
+      "typeExercice": "dnb"
+    },
+    "dnb_2015_06_etrangers": {
+      "annee": "2015",
+      "mois": "Juin",
+      "lieu": "Centres étrangers",
+      "typeExercice": "dnb"
+    },
+    "dnb_2015_06_etrangers_maroc": {
+      "annee": "2015",
+      "mois": "Juin",
+      "lieu": "Centres étrangers - Maroc",
+      "typeExercice": "dnb"
+    },
+    "dnb_2015_06_metropole": {
+      "annee": "2015",
+      "mois": "Juin",
+      "lieu": "Métropole",
+      "typeExercice": "dnb"
+    },
+    "dnb_2015_06_polynesie": {
+      "annee": "2015",
+      "mois": "Juin",
+      "lieu": "Polynésie",
+      "typeExercice": "dnb"
+    },
+    "dnb_2015_09_metropole": {
+      "annee": "2015",
+      "mois": "Septembre",
+      "lieu": "Métropole",
+      "typeExercice": "dnb"
+    },
+    "dnb_2015_09_polynesie": {
+      "annee": "2015",
+      "mois": "Septembre",
+      "lieu": "Polynésie",
+      "typeExercice": "dnb"
+    },
+    "dnb_2015_12_ameriquesud": {
+      "annee": "2015",
+      "mois": "Décembre",
+      "lieu": "Amérique du sud",
+      "typeExercice": "dnb"
+    },
+    "dnb_2015_12_caledonie": {
+      "annee": "2015",
+      "mois": "Décembre",
+      "lieu": "Nouvelle Calédonie",
+      "typeExercice": "dnb"
+    },
+    "dnb_2015_03_caledonie": {
+      "annee": "2015",
+      "mois": "Mars",
+      "lieu": "Nouvelle Calédonie",
+      "typeExercice": "dnb"
+    },
+    "dnb_2016_04_pondichery": {
+      "annee": "2016",
+      "mois": "Avril",
+      "lieu": "Pondichéry",
+      "typeExercice": "dnb"
+    },
+    "dnb_2016_06_ameriquenord": {
+      "annee": "2016",
+      "mois": "Juin",
+      "lieu": "Amérique du Nord",
+      "typeExercice": "dnb"
+    },
+    "dnb_2016_06_metropole": {
+      "annee": "2016",
+      "mois": "Juin",
+      "lieu": "Métropole",
+      "typeExercice": "dnb"
+    },
+    "dnb_2016_06_asie": {
+      "annee": "2016",
+      "mois": "Juin",
+      "lieu": "Asie",
+      "typeExercice": "dnb"
+    },
+    "dnb_2016_06_etrangers": {
+      "annee": "2016",
+      "mois": "Juin",
+      "lieu": "Centres étrangers",
+      "typeExercice": "dnb"
+    },
+    "dnb_2016_06_polynesie": {
+      "annee": "2016",
+      "mois": "Juin",
+      "lieu": "Polynésie",
+      "typeExercice": "dnb"
+    },
+    "dnb_2016_09_metropole": {
+      "annee": "2016",
+      "mois": "Septembre",
+      "lieu": "Métropole",
+      "typeExercice": "dnb"
+    },
+    "dnb_2016_12_ameriquesud": {
+      "annee": "2016",
+      "mois": "Décembre",
+      "lieu": "Amérique du sud",
+      "typeExercice": "dnb"
+    },
+    "dnb_2017_05_pondichery": {
+      "annee": "2017",
+      "mois": "Mai",
+      "lieu": "Pondichéry",
+      "typeExercice": "dnb"
+    },
+    "dnb_2017_06_ameriquenord": {
+      "annee": "2017",
+      "mois": "Juin",
+      "lieu": "Amérique du Nord",
+      "typeExercice": "dnb"
+    },
+    "dnb_2017_06_asie": {
+      "annee": "2017",
+      "mois": "Juin",
+      "lieu": "Asie",
+      "typeExercice": "dnb"
+    },
+    "dnb_2017_06_etrangers": {
+      "annee": "2017",
+      "mois": "Juin",
+      "lieu": "Centres étrangers",
+      "typeExercice": "dnb"
+    },
+    "dnb_2017_06_metropole": {
+      "annee": "2017",
+      "mois": "Juin",
+      "lieu": "Métropole",
+      "typeExercice": "dnb"
+    },
+    "dnb_2017_06_polynesie": {
+      "annee": "2017",
+      "mois": "Juin",
+      "lieu": "Polynésie",
+      "typeExercice": "dnb"
+    },
+    "dnb_2017_09_metropole": {
+      "annee": "2017",
+      "mois": "Septembre",
+      "lieu": "Métropole",
+      "typeExercice": "dnb"
+    },
+    "dnb_2017_09_polynesie": {
+      "annee": "2017",
+      "mois": "Septembre",
+      "lieu": "Polynésie",
+      "typeExercice": "dnb"
+    },
+    "dnb_2017_11_ameriquesud": {
+      "annee": "2017",
+      "mois": "Novembre",
+      "lieu": "Amérique du sud",
+      "typeExercice": "dnb"
+    },
+    "dnb_2017_12_caledonie": {
+      "annee": "2017",
+      "mois": "Décembre",
+      "lieu": "Nouvelle Calédonie",
+      "typeExercice": "dnb"
+    },
+    "dnb_2017_12_wallisfutuna": {
+      "annee": "2017",
+      "mois": "Décembre",
+      "lieu": "Wallis et Futuna",
+      "typeExercice": "dnb"
+    },
+    "dnb_2018_05_pondichery": {
+      "annee": "2018",
+      "mois": "Mai",
+      "lieu": "Pondichéry",
+      "typeExercice": "dnb"
+    },
+    "dnb_2018_06_ameriquenord": {
+      "annee": "2018",
+      "mois": "Juin",
+      "lieu": "Amérique du Nord",
+      "typeExercice": "dnb"
+    },
+    "dnb_2018_06_asie": {
+      "annee": "2018",
+      "mois": "Juin",
+      "lieu": "Asie",
+      "typeExercice": "dnb"
+    },
+    "dnb_2018_06_etrangers": {
+      "annee": "2018",
+      "mois": "Juin",
+      "lieu": "Centres étrangers",
+      "typeExercice": "dnb"
+    },
+    "dnb_2018_06_metropole": {
+      "annee": "2018",
+      "mois": "Juin",
+      "lieu": "Métropole",
+      "typeExercice": "dnb"
+    },
+    "dnb_2018_07_polynesie": {
+      "annee": "2018",
+      "mois": "Juillet",
+      "lieu": "Polynésie",
+      "typeExercice": "dnb"
+    },
+    "dnb_2018_09_metropole": {
+      "annee": "2018",
+      "mois": "Septembre",
+      "lieu": "Métropole",
+      "typeExercice": "dnb"
+    },
+    "dnb_2018_09_polynesie": {
+      "annee": "2018",
+      "mois": "Septembre",
+      "lieu": "Polynésie",
+      "typeExercice": "dnb"
+    },
+    "dnb_2018_11_ameriquesud": {
+      "annee": "2018",
+      "mois": "Novembre",
+      "lieu": "Amérique du sud",
+      "typeExercice": "dnb"
+    },
+    "dnb_2018_12_caledonie": {
+      "annee": "2018",
+      "mois": "Décembre",
+      "lieu": "Nouvelle Calédonie",
+      "typeExercice": "dnb"
+    },
+    "dnb_2019_03_caledonie": {
+      "annee": "2019",
+      "mois": "Mars",
+      "lieu": "Nouvelle Calédonie",
+      "typeExercice": "dnb"
+    },
+    "dnb_2019_06_ameriquenord": {
+      "annee": "2019",
+      "mois": "Juin",
+      "lieu": "Amérique du Nord",
+      "typeExercice": "dnb"
+    },
+    "dnb_2019_06_antilles": {
+      "annee": "2019",
+      "mois": "Juin",
+      "lieu": "Antilles - Guyane",
+      "typeExercice": "dnb"
+    },
+    "dnb_2019_06_asie": {
+      "annee": "2019",
+      "mois": "Juin",
+      "lieu": "Asie",
+      "typeExercice": "dnb"
+    },
+    "dnb_2019_06_etrangers": {
+      "annee": "2019",
+      "mois": "Juin",
+      "lieu": "Centres étrangers",
+      "typeExercice": "dnb"
+    },
+    "dnb_2019_06_grece": {
+      "annee": "2019",
+      "mois": "Juin",
+      "lieu": "Grèce",
+      "typeExercice": "dnb"
+    },
+    "dnb_2019_07_metropole": {
+      "annee": "2019",
+      "mois": "Juillet",
+      "lieu": "Métropole",
+      "typeExercice": "dnb"
+    },
+    "dnb_2019_07_polynesie": {
+      "annee": "2019",
+      "mois": "Juillet",
+      "lieu": "Polynésie",
+      "typeExercice": "dnb"
+    },
+    "dnb_2019_09_metropole": {
+      "annee": "2019",
+      "mois": "Septembre",
+      "lieu": "Métropole",
+      "typeExercice": "dnb"
+    },
+    "dnb_2019_09_polynesie": {
+      "annee": "2019",
+      "mois": "Septembre",
+      "lieu": "Polynésie",
+      "typeExercice": "dnb"
+    },
+    "dnb_2019_11_ameriquesud": {
+      "annee": "2019",
+      "mois": "Novembre",
+      "lieu": "Amérique du sud",
+      "typeExercice": "dnb"
+    },
+    "dnb_2019_12_caledonie": {
+      "annee": "2019",
+      "mois": "Décembre",
+      "lieu": "Nouvelle Calédonie",
+      "typeExercice": "dnb"
+    },
+    "dnb_2020_09_antilles": {
+      "annee": "2020",
+      "mois": "Septembre",
+      "lieu": "Antilles - Guyane",
+      "typeExercice": "dnb"
+    },
+    "dnb_2020_09_metropole": {
+      "annee": "2020",
+      "mois": "Septembre",
+      "lieu": "Métropole",
+      "typeExercice": "dnb"
+    },
+    "dnb_2020_09_polynesie": {
+      "annee": "2020",
+      "mois": "Septembre",
+      "lieu": "Polynésie",
+      "typeExercice": "dnb"
+    },
+    "dnb_2020_12_caledonie": {
+      "annee": "2020",
+      "mois": "Décembre",
+      "lieu": "Nouvelle Calédonie",
+      "typeExercice": "dnb"
+    },
+    "dnb_2020_02_caledonie": {
+      "annee": "2020",
+      "mois": "Février",
+      "lieu": "Nouvelle Calédonie",
+      "typeExercice": "dnb"
+    },
+    "dnb_2021_06_ameriquenord": {
+      "annee": "2021",
+      "mois": "Juin",
+      "lieu": "Amérique du Nord",
+      "typeExercice": "dnb"
+    },
+    "dnb_2021_06_etrangers": {
+      "annee": "2021",
+      "mois": "Juin",
+      "lieu": "Centres étrangers",
+      "typeExercice": "dnb"
+    },
+    "dnb_2021_06_metropole": {
+      "annee": "2021",
+      "mois": "Juin",
+      "lieu": "Métropole",
+      "typeExercice": "dnb"
+    },
+    "dnb_2021_06_asie": {
+      "annee": "2021",
+      "mois": "Juin",
+      "lieu": "Asie",
+      "typeExercice": "dnb"
+    },
+    "dnb_2021_09_metropole": {
+      "annee": "2021",
+      "mois": "Septembre",
+      "lieu": "Métropole",
+      "typeExercice": "dnb"
+    },
+    "dnb_2021_11_ameriquesud": {
+      "annee": "2021",
+      "mois": "Novembre",
+      "lieu": "Amérique du sud",
+      "typeExercice": "dnb"
+    },
+    "dnb_2021_12_caledonie": {
+      "annee": "2021",
+      "mois": "Décembre",
+      "lieu": "Nouvelle Calédonie",
+      "typeExercice": "dnb"
+    },
+    "dnb_2021_06_polynesie": {
+      "annee": "2021",
+      "mois": "Juin",
+      "lieu": "Polynésie",
+      "typeExercice": "dnb"
+    },
+    "dnb_2022_06_ameriquenord": {
+      "annee": "2022",
+      "mois": "Juin",
+      "lieu": "Amérique du Nord",
+      "typeExercice": "dnb"
+    },
+    "dnb_2022_06_asie": {
+      "annee": "2022",
+      "mois": "Juin",
+      "lieu": "Asie",
+      "typeExercice": "dnb"
+    },
+    "dnb_2022_06_etrangers": {
+      "annee": "2022",
+      "mois": "Juin",
+      "lieu": "Centres étrangers",
+      "typeExercice": "dnb"
+    },
+    "dnb_2022_06_polynesie": {
+      "annee": "2022",
+      "mois": "Juin",
+      "lieu": "Polynésie",
+      "typeExercice": "dnb"
+    },
+    "dnb_2022_06_metropole_mathalea": {
+      "annee": "2022",
+      "mois": "Juin",
+      "lieu": "Métropole",
+      "typeExercice": "dnb"
+    },
+    "dnb_2022_09_metropole": {
+      "annee": "2022",
+      "mois": "Septembre",
+      "lieu": "Métropole",
+      "typeExercice": "dnb"
+    },
+    "dnb_2022_09_polynesie": {
+      "annee": "2022",
+      "mois": "Septembre",
+      "lieu": "Polynésie",
+      "typeExercice": "dnb"
+    },
+    "dnb_2023_05_ameriquenord": {
+      "annee": "2023",
+      "mois": "Mai",
+      "lieu": "Amérique du Nord",
+      "typeExercice": "dnb"
+    },
+    "dnb_2023_06_asie": {
+      "annee": "2023",
+      "mois": "Juin",
+      "lieu": "Asie",
+      "typeExercice": "dnb"
+    },
+    "dnb_2023_06_etrangers": {
+      "annee": "2023",
+      "mois": "Juin",
+      "lieu": "Centres étrangers",
+      "typeExercice": "dnb"
+    },
+    "dnb_2023_06_metropole": {
+      "annee": "2023",
+      "mois": "Juin",
+      "lieu": "Métropole",
+      "typeExercice": "dnb"
+    },
+    "dnb_2023_06_polynesie": {
+      "annee": "2023",
+      "mois": "Juin",
+      "lieu": "Polynésie",
+      "typeExercice": "dnb"
+    },
+    "dnb_2023_09_metropole": {
+      "annee": "2023",
+      "mois": "Septembre",
+      "lieu": "Métropole",
+      "typeExercice": "dnb"
+    },
+    "dnb_2023_09_polynesie": {
+      "annee": "2023",
+      "mois": "Septembre",
+      "lieu": "Polynésie",
+      "typeExercice": "dnb"
+    },
+    "dnb_2023_11_amsud": {
+      "annee": "2023",
+      "mois": "Octobre",
+      "lieu": "Amérique du Sud",
+      "typeExercice": "dnb"
+    },
+    "dnb_2023_12_caledonie": {
+      "annee": "2023",
+      "mois": "Décembre",
+      "lieu": "Nouvelle Calédonie",
+      "typeExercice": "dnb"
+    },
+    "dnb_2026_07_polynesie": {
+      "annee": "2026",
+      "mois": "Juillet",
+      "lieu": "Polynésie",
+      "typeExercice": "dnb"
+    },
+    "dnb_2026_09_metropole": {
+      "annee": "2026",
+      "mois": "Septembre",
+      "lieu": "Métropole",
+      "typeExercice": "dnb"
+    },
+    "dnbpro_2023_06_metropole": {
+      "annee": "2023",
+      "mois": "Juin",
+      "lieu": "Métropole",
+      "typeExercice": "dnbpro"
+    },
+    "dnbpro_2023_06_polynesie": {
+      "annee": "2023",
+      "mois": "Juin",
+      "lieu": "Polynésie",
+      "typeExercice": "dnbpro"
+    },
+    "dnbpro_2023_09_metropole": {
+      "annee": "2023",
+      "mois": "Septembre",
+      "lieu": "Métropole",
+      "typeExercice": "dnbpro"
+    },
+    "dnbpro_2023_09_polynesie": {
+      "annee": "2023",
+      "mois": "Septembre",
+      "lieu": "Polynésie",
+      "typeExercice": "dnbpro"
+    },
+    "dnb_2024_05_ameriquenord": {
+      "annee": "2024",
+      "mois": "Mai",
+      "lieu": "Amérique du Nord",
+      "typeExercice": "dnb"
+    },
+    "dnb_2024_06_asie": {
+      "annee": "2024",
+      "mois": "Juin",
+      "lieu": "Asie",
+      "typeExercice": "dnb"
+    },
+    "dnb_2024_06_etrangers": {
+      "annee": "2024",
+      "mois": "Juin",
+      "lieu": "Centres étrangers",
+      "typeExercice": "dnb"
+    },
+    "dnb_2024_06_polynesie": {
+      "annee": "2024",
+      "mois": "Juin",
+      "lieu": "Polynésie",
+      "typeExercice": "dnb"
+    },
+    "dnb_2024_07_antilles": {
+      "annee": "2024",
+      "mois": "Juillet",
+      "lieu": "Antilles Martinique",
+      "typeExercice": "dnb"
+    },
+    "dnb_2024_09_polynesie": {
+      "annee": "2024",
+      "mois": "Septembre",
+      "lieu": "Polynésie",
+      "typeExercice": "dnb"
+    },
+    "dnb_2024_07_metropole": {
+      "annee": "2024",
+      "mois": "Juillet",
+      "lieu": "Métropole",
+      "typeExercice": "dnb"
+    },
+    "dnb_2024_09_metropole": {
+      "annee": "2024",
+      "mois": "Septembre",
+      "lieu": "Métropole",
+      "typeExercice": "dnb"
+    },
+    "dnb_2024_12_ameriquesud": {
+      "annee": "2024",
+      "mois": "Décembre",
+      "lieu": "Amérique du sud",
+      "typeExercice": "dnb"
+    },
+    "dnbpro_2024_06_polynesie": {
+      "annee": "2024",
+      "mois": "Juin",
+      "lieu": "Polynésie",
+      "typeExercice": "dnbpro"
+    },
+    "dnbpro_2024_07_metropole": {
+      "annee": "2024",
+      "mois": "Juillet",
+      "lieu": "Métropole",
+      "typeExercice": "dnbpro"
+    },
+    "dnbpro_2024_09_metropole": {
+      "annee": "2024",
+      "mois": "Septembre",
+      "lieu": "Métropole",
+      "typeExercice": "dnbpro"
+    },
+    "dnbpro_2024_09_polynesie": {
+      "annee": "2024",
+      "mois": "Septembre",
+      "lieu": "Polynésie",
+      "typeExercice": "dnbpro"
+    },
+    "dnb_2025_06_ameriquenord": {
+      "annee": "2025",
+      "mois": "Juin",
+      "lieu": "Amérique du Nord",
+      "typeExercice": "dnb"
+    },
+    "dnb_2025_06_asie": {
+      "annee": "2025",
+      "mois": "Juin",
+      "lieu": "Asie",
+      "typeExercice": "dnb"
+    },
+    "dnb_2025_06_etrangers": {
+      "annee": "2025",
+      "mois": "Juin",
+      "lieu": "Centres étrangers",
+      "typeExercice": "dnb"
+    },
+    "dnb_2025_06_metropole": {
+      "annee": "2025",
+      "mois": "Juin",
+      "lieu": "Métropole",
+      "typeExercice": "dnb"
+    },
+    "dnb_2025_06_polynesie": {
+      "annee": "2025",
+      "mois": "Juin",
+      "lieu": "Polynésie",
+      "typeExercice": "dnb"
+    },
+    "dnb_2025_09_metropole": {
+      "annee": "2025",
+      "mois": "Septembre",
+      "lieu": "Métropole",
+      "typeExercice": "dnb"
+    },
+    "dnbpro_2025_06_metropole": {
+      "annee": "2025",
+      "mois": "Juin",
+      "lieu": "Métropole",
+      "typeExercice": "dnbpro"
+    },
+    "dnbpro_2025_06_polynesie": {
+      "annee": "2025",
+      "mois": "Juin",
+      "lieu": "Polynésie",
+      "typeExercice": "dnbpro"
+    },
+    "dnb_2026_01_sujet0va": {
+      "annee": "2026",
+      "mois": "Janvier",
+      "lieu": "Sujet 0 Version A",
+      "typeExercice": "dnb"
+    },
+    "dnb_2026_01_sujet0vb": {
+      "annee": "2026",
+      "mois": "Janvier",
+      "lieu": "Sujet 0 Version B",
+      "typeExercice": "dnb"
+    },
+    "dnb_2026_06_ameriquenord": {
+      "annee": "2026",
+      "mois": "Juin",
+      "lieu": "Amérique du Nord",
+      "typeExercice": "dnb"
+    },
+    "dnb_2026_06_asie": {
+      "annee": "2026",
+      "mois": "Juin",
+      "lieu": "Asie",
+      "typeExercice": "dnb"
+    },
+    "dnb_2026_06_etrangers": {
+      "annee": "2026",
+      "mois": "Juin",
+      "lieu": "Centres étrangers",
+      "typeExercice": "dnb"
+    },
+    "dnb_2026_06_metropole": {
+      "annee": "2026",
+      "mois": "Juin",
+      "lieu": "Métropole",
+      "typeExercice": "dnb"
+    },
+    "dnb_2026_06_antilles": {
+      "annee": "2026",
+      "mois": "Juin",
+      "lieu": "Antilles",
+      "typeExercice": "dnb"
+    },
+    "dnb_2026_06_polynesie": {
+      "annee": "2026",
+      "mois": "Juin",
+      "lieu": "Polynésie",
+      "typeExercice": "dnb"
+    },
+    "e3c_2020_00_sujet1": {
+      "annee": "2020",
+      "mois": "",
+      "lieu": "sujet1",
+      "typeExercice": "e3c"
+    },
+    "e3c_2020_00_sujet2": {
+      "annee": "2020",
+      "mois": "",
+      "lieu": "sujet2",
+      "typeExercice": "e3c"
+    },
+    "e3c_2020_00_sujet3": {
+      "annee": "2020",
+      "mois": "",
+      "lieu": "sujet3",
+      "typeExercice": "e3c"
+    },
+    "e3c_2020_00_sujet4": {
+      "annee": "2020",
+      "mois": "",
+      "lieu": "sujet4",
+      "typeExercice": "e3c"
+    },
+    "e3c_2020_00_sujet5": {
+      "annee": "2020",
+      "mois": "",
+      "lieu": "sujet5",
+      "typeExercice": "e3c"
+    },
+    "e3c_2020_00_sujet6": {
+      "annee": "2020",
+      "mois": "",
+      "lieu": "sujet6",
+      "typeExercice": "e3c"
+    },
+    "e3c_2020_00_sujet7": {
+      "annee": "2020",
+      "mois": "",
+      "lieu": "sujet7",
+      "typeExercice": "e3c"
+    },
+    "e3c_2020_00_sujet8": {
+      "annee": "2020",
+      "mois": "",
+      "lieu": "sujet8",
+      "typeExercice": "e3c"
+    },
+    "e3c_2020_00_sujet10": {
+      "annee": "2020",
+      "mois": "",
+      "lieu": "sujet10",
+      "typeExercice": "e3c"
+    },
+    "e3c_2020_00_sujet11": {
+      "annee": "2020",
+      "mois": "",
+      "lieu": "sujet11",
+      "typeExercice": "e3c"
+    },
+    "e3c_2020_00_sujet12": {
+      "annee": "2020",
+      "mois": "",
+      "lieu": "sujet12",
+      "typeExercice": "e3c"
+    },
+    "e3c_2020_00_sujet13": {
+      "annee": "2020",
+      "mois": "",
+      "lieu": "sujet13",
+      "typeExercice": "e3c"
+    },
+    "e3c_2020_00_sujet14": {
+      "annee": "2020",
+      "mois": "",
+      "lieu": "sujet14",
+      "typeExercice": "e3c"
+    },
+    "e3c_2020_00_sujet9": {
+      "annee": "2020",
+      "mois": "",
+      "lieu": "sujet9",
+      "typeExercice": "e3c"
+    },
+    "e3c_2020_00_sujet15": {
+      "annee": "2020",
+      "mois": "",
+      "lieu": "sujet15",
+      "typeExercice": "e3c"
+    },
+    "e3c_2020_00_sujet16": {
+      "annee": "2020",
+      "mois": "",
+      "lieu": "sujet16",
+      "typeExercice": "e3c"
+    },
+    "e3c_2020_00_sujet17": {
+      "annee": "2020",
+      "mois": "",
+      "lieu": "sujet17",
+      "typeExercice": "e3c"
+    },
+    "e3c_2020_00_sujet18": {
+      "annee": "2020",
+      "mois": "",
+      "lieu": "sujet18",
+      "typeExercice": "e3c"
+    },
+    "e3c_2020_00_sujet19": {
+      "annee": "2020",
+      "mois": "",
+      "lieu": "sujet19",
+      "typeExercice": "e3c"
+    },
+    "e3c_2020_00_sujet20": {
+      "annee": "2020",
+      "mois": "",
+      "lieu": "sujet20",
+      "typeExercice": "e3c"
+    },
+    "e3c_2020_00_sujet21": {
+      "annee": "2020",
+      "mois": "",
+      "lieu": "sujet21",
+      "typeExercice": "e3c"
+    },
+    "e3c_2020_00_sujet22": {
+      "annee": "2020",
+      "mois": "",
+      "lieu": "sujet22",
+      "typeExercice": "e3c"
+    },
+    "e3c_2020_00_sujet23": {
+      "annee": "2020",
+      "mois": "",
+      "lieu": "sujet23",
+      "typeExercice": "e3c"
+    },
+    "e3c_2020_00_sujet24": {
+      "annee": "2020",
+      "mois": "",
+      "lieu": "sujet24",
+      "typeExercice": "e3c"
+    },
+    "e3c_2020_00_sujet25": {
+      "annee": "2020",
+      "mois": "",
+      "lieu": "sujet25",
+      "typeExercice": "e3c"
+    },
+    "e3c_2020_00_sujet26": {
+      "annee": "2020",
+      "mois": "",
+      "lieu": "sujet26",
+      "typeExercice": "e3c"
+    },
+    "e3c_2020_00_sujet27": {
+      "annee": "2020",
+      "mois": "",
+      "lieu": "sujet27",
+      "typeExercice": "e3c"
+    },
+    "e3c_2020_00_sujet28": {
+      "annee": "2020",
+      "mois": "",
+      "lieu": "sujet28",
+      "typeExercice": "e3c"
+    },
+    "e3c_2020_00_sujet29": {
+      "annee": "2020",
+      "mois": "",
+      "lieu": "sujet29",
+      "typeExercice": "e3c"
+    },
+    "e3c_2020_00_sujet30": {
+      "annee": "2020",
+      "mois": "",
+      "lieu": "sujet30",
+      "typeExercice": "e3c"
+    },
+    "e3c_2020_00_sujet31": {
+      "annee": "2020",
+      "mois": "",
+      "lieu": "sujet31",
+      "typeExercice": "e3c"
+    },
+    "e3c_2020_00_sujet32": {
+      "annee": "2020",
+      "mois": "",
+      "lieu": "sujet32",
+      "typeExercice": "e3c"
+    },
+    "e3c_2020_00_sujet33": {
+      "annee": "2020",
+      "mois": "",
+      "lieu": "sujet33",
+      "typeExercice": "e3c"
+    },
+    "e3c_2020_00_sujet34": {
+      "annee": "2020",
+      "mois": "",
+      "lieu": "sujet34",
+      "typeExercice": "e3c"
+    },
+    "e3c_2020_00_sujet35": {
+      "annee": "2020",
+      "mois": "",
+      "lieu": "sujet35",
+      "typeExercice": "e3c"
+    },
+    "e3c_2020_00_sujet36": {
+      "annee": "2020",
+      "mois": "",
+      "lieu": "sujet36",
+      "typeExercice": "e3c"
+    },
+    "e3c_2020_00_sujet37": {
+      "annee": "2020",
+      "mois": "",
+      "lieu": "sujet37",
+      "typeExercice": "e3c"
+    },
+    "e3c_2020_00_sujet38": {
+      "annee": "2020",
+      "mois": "",
+      "lieu": "sujet38",
+      "typeExercice": "e3c"
+    },
+    "e3c_2020_00_sujet39": {
+      "annee": "2020",
+      "mois": "",
+      "lieu": "sujet39",
+      "typeExercice": "e3c"
+    },
+    "e3c_2020_00_sujet40": {
+      "annee": "2020",
+      "mois": "",
+      "lieu": "sujet40",
+      "typeExercice": "e3c"
+    },
+    "e3c_2020_00_sujet41": {
+      "annee": "2020",
+      "mois": "",
+      "lieu": "sujet41",
+      "typeExercice": "e3c"
+    },
+    "e3c_2020_00_sujet42": {
+      "annee": "2020",
+      "mois": "",
+      "lieu": "sujet42",
+      "typeExercice": "e3c"
+    },
+    "e3c_2020_00_sujet43": {
+      "annee": "2020",
+      "mois": "",
+      "lieu": "sujet43",
+      "typeExercice": "e3c"
+    },
+    "e3c_2020_00_sujet44": {
+      "annee": "2020",
+      "mois": "",
+      "lieu": "sujet44",
+      "typeExercice": "e3c"
+    },
+    "e3c_2020_00_sujet45": {
+      "annee": "2020",
+      "mois": "",
+      "lieu": "sujet45",
+      "typeExercice": "e3c"
+    },
+    "e3c_2020_00_sujet46": {
+      "annee": "2020",
+      "mois": "",
+      "lieu": "sujet46",
+      "typeExercice": "e3c"
+    },
+    "e3c_2020_00_sujet50": {
+      "annee": "2020",
+      "mois": "",
+      "lieu": "sujet50",
+      "typeExercice": "e3c"
+    },
+    "e3c_2020_00_sujet51": {
+      "annee": "2020",
+      "mois": "",
+      "lieu": "sujet51",
+      "typeExercice": "e3c"
+    },
+    "e3c_2020_00_sujet52": {
+      "annee": "2020",
+      "mois": "",
+      "lieu": "sujet52",
+      "typeExercice": "e3c"
+    },
+    "e3c_2020_00_sujet53": {
+      "annee": "2020",
+      "mois": "",
+      "lieu": "sujet53",
+      "typeExercice": "e3c"
+    },
+    "e3c_2020_00_sujet54": {
+      "annee": "2020",
+      "mois": "",
+      "lieu": "sujet54",
+      "typeExercice": "e3c"
+    },
+    "e3c_2020_00_sujet55": {
+      "annee": "2020",
+      "mois": "",
+      "lieu": "sujet55",
+      "typeExercice": "e3c"
+    },
+    "e3c_2020_00_sujet56": {
+      "annee": "2020",
+      "mois": "",
+      "lieu": "sujet56",
+      "typeExercice": "e3c"
+    },
+    "e3c_2020_00_sujet47": {
+      "annee": "2020",
+      "mois": "",
+      "lieu": "sujet47",
+      "typeExercice": "e3c"
+    },
+    "e3c_2020_00_sujet48": {
+      "annee": "2020",
+      "mois": "",
+      "lieu": "sujet48",
+      "typeExercice": "e3c"
+    },
+    "e3c_2020_00_sujet49": {
+      "annee": "2020",
+      "mois": "",
+      "lieu": "sujet49",
+      "typeExercice": "e3c"
+    },
+    "e3c_2020_00_sujet57": {
+      "annee": "2020",
+      "mois": "",
+      "lieu": "sujet57",
+      "typeExercice": "e3c"
+    },
+    "e3c_2020_00_sujet58": {
+      "annee": "2020",
+      "mois": "",
+      "lieu": "sujet58",
+      "typeExercice": "e3c"
+    },
+    "e3c_2020_00_sujet59": {
+      "annee": "2020",
+      "mois": "",
+      "lieu": "sujet59",
+      "typeExercice": "e3c"
+    },
+    "e3c_2020_00_sujet60": {
+      "annee": "2020",
+      "mois": "",
+      "lieu": "sujet60",
+      "typeExercice": "e3c"
+    },
+    "e3c_2020_00_sujet61": {
+      "annee": "2020",
+      "mois": "",
+      "lieu": "sujet61",
+      "typeExercice": "e3c"
+    },
+    "e3c_2020_00_sujet62": {
+      "annee": "2020",
+      "mois": "",
+      "lieu": "sujet62",
+      "typeExercice": "e3c"
+    },
+    "e3c_2020_00_sujet63": {
+      "annee": "2020",
+      "mois": "",
+      "lieu": "sujet63",
+      "typeExercice": "e3c"
+    },
+    "e3c_2020_00_sujet64": {
+      "annee": "2020",
+      "mois": "",
+      "lieu": "sujet64",
+      "typeExercice": "e3c"
+    },
+    "e3c_2020_00_sujet65": {
+      "annee": "2020",
+      "mois": "",
+      "lieu": "sujet65",
+      "typeExercice": "e3c"
+    },
+    "e3c_2021_01_specimen1": {
+      "annee": "2021",
+      "mois": "Janvier",
+      "lieu": "specimen1",
+      "typeExercice": "e3c"
+    },
+    "e3c_2021_01_specimen2": {
+      "annee": "2021",
+      "mois": "Janvier",
+      "lieu": "specimen2",
+      "typeExercice": "e3c"
+    },
+    "e3c_2021_01_specimen3": {
+      "annee": "2021",
+      "mois": "Janvier",
+      "lieu": "specimen3",
+      "typeExercice": "e3c"
+    },
+    "e3c_2021_01_specimen4": {
+      "annee": "2021",
+      "mois": "Janvier",
+      "lieu": "specimen4",
+      "typeExercice": "e3c"
+    },
+    "e3c_2021_06_ameriquenord": {
+      "annee": "2021",
+      "mois": "Juin",
+      "lieu": "Amérique du Nord",
+      "typeExercice": "e3c"
+    },
+    "eam_specialite_2025_06_sujet0v1": {
+      "annee": "2025",
+      "mois": "Juin",
+      "lieu": "Spécialité sujet0v1",
+      "typeExercice": "eam",
+      "filiere": "Specialite"
+    },
+    "eam_specialite_2025_06_sujet0v2": {
+      "annee": "2025",
+      "mois": "Juin",
+      "lieu": "Spécialité sujet0v2",
+      "typeExercice": "eam",
+      "filiere": "Specialite"
+    },
+    "eam_specialite_2026_06_ameriquenord": {
+      "annee": "2026",
+      "mois": "Juin",
+      "lieu": "Spécialité Amérique du Nord",
+      "typeExercice": "eam",
+      "filiere": "Specialite"
+    },
+    "eam_specialite_2026_06_etrangers": {
+      "annee": "2026",
+      "mois": "Juin",
+      "lieu": "Spécialité Centres étrangers",
+      "typeExercice": "eam",
+      "filiere": "Specialite"
+    },
+    "eam_specialite_2026_06_antilles": {
+      "annee": "2026",
+      "mois": "Juin",
+      "lieu": "Spécialité antilles",
+      "typeExercice": "eam",
+      "filiere": "Specialite"
+    },
+    "eam_specialite_2026_06_metropole": {
+      "annee": "2026",
+      "mois": "Juin",
+      "lieu": "Spécialité Métropole",
+      "typeExercice": "eam",
+      "filiere": "Specialite"
+    },
+    "eam_specialite_2026_06_polynesie": {
+      "annee": "2026",
+      "mois": "Juin",
+      "lieu": "Spécialité Polynésie",
+      "typeExercice": "eam",
+      "filiere": "Specialite"
+    },
+    "eam_specialite_2026_06_asie": {
+      "annee": "2026",
+      "mois": "Juin",
+      "lieu": "Spécialité Asie",
+      "typeExercice": "eam",
+      "filiere": "Specialite"
+    },
+    "eam_specifique_2025_06_sujet0v1": {
+      "annee": "2025",
+      "mois": "Juin",
+      "lieu": "Tronc commun sujet0v1",
+      "typeExercice": "eam",
+      "filiere": "Specifique"
+    },
+    "eam_specifique_2025_06_sujet0v2": {
+      "annee": "2025",
+      "mois": "Juin",
+      "lieu": "Tronc commun sujet0v2",
+      "typeExercice": "eam",
+      "filiere": "Specifique"
+    },
+    "eam_specifique_2025_06_sujet0v3": {
+      "annee": "2025",
+      "mois": "Juin",
+      "lieu": "Tronc commun sujet0v3",
+      "typeExercice": "eam",
+      "filiere": "Specifique"
+    },
+    "eam_specifique_2026_06_ameriquenord": {
+      "annee": "2026",
+      "mois": "Juin",
+      "lieu": "Spécifique Amérique du Nord",
+      "typeExercice": "eam",
+      "filiere": "Specifique"
+    },
+    "eam_specifique_2026_06_etrangers": {
+      "annee": "2026",
+      "mois": "Juin",
+      "lieu": "Spécifique Centres étrangers",
+      "typeExercice": "eam",
+      "filiere": "Specifique"
+    },
+    "eam_specifique_2026_06_antilles": {
+      "annee": "2026",
+      "mois": "Juin",
+      "lieu": "Spécifique antilles",
+      "typeExercice": "eam",
+      "filiere": "Specifique"
+    },
+    "eam_specifique_2026_06_metropole": {
+      "annee": "2026",
+      "mois": "Juin",
+      "lieu": "Spécifique Métropole",
+      "typeExercice": "eam",
+      "filiere": "Specifique"
+    },
+    "eam_specifique_2026_06_polynesie": {
+      "annee": "2026",
+      "mois": "Juin",
+      "lieu": "Spécifique Polynésie",
+      "typeExercice": "eam",
+      "filiere": "Specifique"
+    },
+    "eam_specifique_2026_06_asie": {
+      "annee": "2026",
+      "mois": "Juin",
+      "lieu": "Spécifique Asie",
+      "typeExercice": "eam",
+      "filiere": "Specifique"
+    },
+    "eam_technologique_2025_06_sujet0v1": {
+      "annee": "2025",
+      "mois": "Juin",
+      "lieu": "Technologique sujet0v1",
+      "typeExercice": "eam",
+      "filiere": "Technologique"
+    },
+    "eam_technologique_2025_06_sujet0v2": {
+      "annee": "2025",
+      "mois": "Juin",
+      "lieu": "Technologique sujet0v2",
+      "typeExercice": "eam",
+      "filiere": "Technologique"
+    },
+    "eam_technologique_2026_06_etrangers": {
+      "annee": "2026",
+      "mois": "Juin",
+      "lieu": "Centres étrangers",
+      "typeExercice": "eam",
+      "filiere": "Technologique"
+    },
+    "eam_technologique_2026_06_antilles": {
+      "annee": "2026",
+      "mois": "Juin",
+      "lieu": "Antilles",
+      "typeExercice": "eam",
+      "filiere": "Technologique"
+    },
+    "eam_technologique_2026_06_metropole": {
+      "annee": "2026",
+      "mois": "Juin",
+      "lieu": "Métropole",
+      "typeExercice": "eam",
+      "filiere": "Technologique"
+    },
+    "eam_technologique_2026_06_polynesie": {
+      "annee": "2026",
+      "mois": "Juin",
+      "lieu": "Polynésie",
+      "typeExercice": "eam",
+      "filiere": "Technologique"
+    },
+    "eam_technologique_2026_09_antilles": {
+      "annee": "2026",
+      "mois": "Septembre",
+      "lieu": "Antilles",
+      "typeExercice": "eam",
+      "filiere": "Technologique"
+    },
+    "eam_technologique_2026_09_metropole": {
+      "annee": "2026",
+      "mois": "Septembre",
+      "lieu": "Métropole",
+      "typeExercice": "eam",
+      "filiere": "Technologique"
+    },
+    "eam_technologique_2026_09_polynesie": {
+      "annee": "2026",
+      "mois": "Septembre",
+      "lieu": "Polynésie",
+      "typeExercice": "eam",
+      "filiere": "Technologique"
+    },
+    "bac_2021_01_sujet0": {
+      "annee": "2021",
+      "mois": "Janvier",
+      "lieu": "sujet0",
+      "typeExercice": "bac"
+    },
+    "bac_2021_03_sujet1": {
+      "annee": "2021",
+      "mois": "Mars",
+      "lieu": "sujet1",
+      "typeExercice": "bac"
+    },
+    "bac_2021_03_sujet2": {
+      "annee": "2021",
+      "mois": "Mars",
+      "lieu": "sujet2",
+      "typeExercice": "bac"
+    },
+    "bac_2021_05_ameriquenord": {
+      "annee": "2021",
+      "mois": "Mai",
+      "lieu": "Amérique du Nord",
+      "typeExercice": "bac"
+    },
+    "bac_2021_06_polynesie": {
+      "annee": "2021",
+      "mois": "Juin",
+      "lieu": "Polynésie",
+      "typeExercice": "bac"
+    },
+    "bac_2021_06_asie": {
+      "annee": "2021",
+      "mois": "Juin",
+      "lieu": "Asie",
+      "typeExercice": "bac"
+    },
+    "bac_2021_06_etrangers": {
+      "annee": "2021",
+      "mois": "Juin",
+      "lieu": "Centres étrangers",
+      "typeExercice": "bac"
+    },
+    "bac_2021_06_metropole": {
+      "annee": "2021",
+      "mois": "Juin",
+      "lieu": "Métropole",
+      "typeExercice": "bac"
+    },
+    "bac_2021_09_metropole": {
+      "annee": "2021",
+      "mois": "Septembre",
+      "lieu": "Métropole",
+      "typeExercice": "bac"
+    },
+    "bac_2022_05_sujet1_ameriquenord": {
+      "annee": "2022",
+      "mois": "Mai",
+      "lieu": "Amérique du Nord",
+      "jour": "J1",
+      "typeExercice": "bac"
+    },
+    "bac_2022_05_sujet1_asie": {
+      "annee": "2022",
+      "mois": "Mai",
+      "lieu": "Asie",
+      "jour": "J1",
+      "typeExercice": "bac"
+    },
+    "bac_2022_05_sujet1_etrangers": {
+      "annee": "2022",
+      "mois": "Mai",
+      "lieu": "Centres étrangers",
+      "jour": "J1",
+      "typeExercice": "bac"
+    },
+    "bac_2022_05_sujet1_madagascar": {
+      "annee": "2022",
+      "mois": "Mai",
+      "lieu": "Madagascar",
+      "jour": "J1",
+      "typeExercice": "bac"
+    },
+    "bac_2022_05_sujet1_metropole": {
+      "annee": "2022",
+      "mois": "Mai",
+      "lieu": "Métropole",
+      "jour": "J1",
+      "typeExercice": "bac"
+    },
+    "bac_2022_05_sujet1_polynesie": {
+      "annee": "2022",
+      "mois": "Mai",
+      "lieu": "Polynésie",
+      "jour": "J1",
+      "typeExercice": "bac"
+    },
+    "bac_2022_05_sujet2_ameriquenord": {
+      "annee": "2022",
+      "mois": "Mai",
+      "lieu": "Amérique du Nord",
+      "jour": "J2",
+      "typeExercice": "bac"
+    },
+    "bac_2022_05_sujet2_asie": {
+      "annee": "2022",
+      "mois": "Mai",
+      "lieu": "Asie",
+      "jour": "J2",
+      "typeExercice": "bac"
+    },
+    "bac_2022_05_sujet2_etrangers": {
+      "annee": "2022",
+      "mois": "Mai",
+      "lieu": "Centres étrangers",
+      "jour": "J2",
+      "typeExercice": "bac"
+    },
+    "bac_2022_05_sujet2_madagascar": {
+      "annee": "2022",
+      "mois": "Mai",
+      "lieu": "Madagascar",
+      "jour": "J2",
+      "typeExercice": "bac"
+    },
+    "bac_2022_05_sujet2_metropole": {
+      "annee": "2022",
+      "mois": "Mai",
+      "lieu": "Métropole",
+      "jour": "J2",
+      "typeExercice": "bac"
+    },
+    "bac_2022_05_sujet2_polynesie": {
+      "annee": "2022",
+      "mois": "Mai",
+      "lieu": "Polynésie",
+      "jour": "J2",
+      "typeExercice": "bac"
+    },
+    "bac_2022_09_sujet1_ameriquesud": {
+      "annee": "2022",
+      "mois": "Septembre",
+      "lieu": "Amérique du sud",
+      "jour": "J1",
+      "typeExercice": "bac"
+    },
+    "bac_2022_09_sujet1_metropole": {
+      "annee": "2022",
+      "mois": "Septembre",
+      "lieu": "Métropole",
+      "jour": "J1",
+      "typeExercice": "bac"
+    },
+    "bac_2022_09_sujet1_polynesie": {
+      "annee": "2022",
+      "mois": "Septembre",
+      "lieu": "Polynésie",
+      "jour": "J1",
+      "typeExercice": "bac"
+    },
+    "bac_2022_09_sujet2_ameriquesud": {
+      "annee": "2022",
+      "mois": "Septembre",
+      "lieu": "Amérique du sud",
+      "jour": "J2",
+      "typeExercice": "bac"
+    },
+    "bac_2022_09_sujet2_metropole": {
+      "annee": "2022",
+      "mois": "Septembre",
+      "lieu": "Métropole",
+      "jour": "J2",
+      "typeExercice": "bac"
+    },
+    "bac_2022_10_sujet1_caledonie": {
+      "annee": "2022",
+      "mois": "Octobre",
+      "lieu": "Nouvelle Calédonie",
+      "jour": "J1",
+      "typeExercice": "bac"
+    },
+    "bac_2022_10_sujet2_caledonie": {
+      "annee": "2022",
+      "mois": "Octobre",
+      "lieu": "Nouvelle Calédonie",
+      "jour": "J2",
+      "typeExercice": "bac"
+    },
+    "bac_2023_03_sujet1_ameriquenord": {
+      "annee": "2023",
+      "mois": "Mars",
+      "lieu": "Amérique du Nord",
+      "jour": "J1",
+      "typeExercice": "bac"
+    },
+    "bac_2023_03_sujet1_asie": {
+      "annee": "2023",
+      "mois": "Mars",
+      "lieu": "Asie",
+      "jour": "J1",
+      "typeExercice": "bac"
+    },
+    "bac_2023_03_sujet1_etrangers_groupe1": {
+      "annee": "2023",
+      "mois": "Mars",
+      "lieu": "Centres étrangers G1",
+      "jour": "J1",
+      "typeExercice": "bac"
+    },
+    "bac_2023_03_sujet1_etrangers_groupe2": {
+      "annee": "2023",
+      "mois": "Mars",
+      "lieu": "Centres étrangers G2",
+      "jour": "J1",
+      "typeExercice": "bac"
+    },
+    "bac_2023_03_sujet1_metropole": {
+      "annee": "2023",
+      "mois": "Mars",
+      "lieu": "Métropole",
+      "jour": "J1",
+      "typeExercice": "bac"
+    },
+    "bac_2023_03_sujet1_polynesie": {
+      "annee": "2023",
+      "mois": "Mars",
+      "lieu": "Polynésie",
+      "jour": "J1",
+      "typeExercice": "bac"
+    },
+    "bac_2023_03_sujet1_reunion": {
+      "annee": "2023",
+      "mois": "Mars",
+      "lieu": "reunion",
+      "jour": "J1",
+      "typeExercice": "bac"
+    },
+    "bac_2023_03_sujet2_ameriquenord": {
+      "annee": "2023",
+      "mois": "Mars",
+      "lieu": "Amérique du Nord",
+      "jour": "J2",
+      "typeExercice": "bac"
+    },
+    "bac_2023_03_sujet2_asie": {
+      "annee": "2023",
+      "mois": "Mars",
+      "lieu": "Asie",
+      "jour": "J2",
+      "typeExercice": "bac"
+    },
+    "bac_2023_03_sujet2_etrangers_groupe1": {
+      "annee": "2023",
+      "mois": "Mars",
+      "lieu": "Centres étrangers G1",
+      "jour": "J2",
+      "typeExercice": "bac"
+    },
+    "bac_2023_03_sujet2_etrangers_groupe2": {
+      "annee": "2023",
+      "mois": "Mars",
+      "lieu": "Centres étrangers G2",
+      "jour": "J2",
+      "typeExercice": "bac"
+    },
+    "bac_2023_03_sujet2_metropole": {
+      "annee": "2023",
+      "mois": "Mars",
+      "lieu": "Métropole",
+      "jour": "J2",
+      "typeExercice": "bac"
+    },
+    "bac_2023_03_sujet2_polynesie": {
+      "annee": "2023",
+      "mois": "Mars",
+      "lieu": "Polynésie",
+      "jour": "J2",
+      "typeExercice": "bac"
+    },
+    "bac_2023_03_sujet2_reunion": {
+      "annee": "2023",
+      "mois": "Mars",
+      "lieu": "reunion",
+      "jour": "J2",
+      "typeExercice": "bac"
+    },
+    "bac_2023_08_sujet1_caledonie": {
+      "annee": "2023",
+      "mois": "Août",
+      "lieu": "Nouvelle Calédonie",
+      "jour": "J1",
+      "typeExercice": "bac"
+    },
+    "bac_2023_08_sujet2_caledonie": {
+      "annee": "2023",
+      "mois": "Août",
+      "lieu": "Nouvelle Calédonie",
+      "jour": "J2",
+      "typeExercice": "bac"
+    },
+    "bac_2023_09_sujet1_ameriquesud": {
+      "annee": "2023",
+      "mois": "Septembre",
+      "lieu": "Amérique du sud",
+      "jour": "J1",
+      "typeExercice": "bac"
+    },
+    "bac_2023_09_sujet1_metropole": {
+      "annee": "2023",
+      "mois": "Septembre",
+      "lieu": "Métropole",
+      "jour": "J1",
+      "typeExercice": "bac"
+    },
+    "bac_2023_09_sujet1_polynesie": {
+      "annee": "2023",
+      "mois": "Septembre",
+      "lieu": "Polynésie",
+      "jour": "J1",
+      "typeExercice": "bac"
+    },
+    "bac_2023_09_sujet2_ameriquesud": {
+      "annee": "2023",
+      "mois": "Septembre",
+      "lieu": "Amérique du sud",
+      "jour": "J2",
+      "typeExercice": "bac"
+    },
+    "bac_2023_09_sujet2_metropole": {
+      "annee": "2023",
+      "mois": "Septembre",
+      "lieu": "Métropole",
+      "jour": "J2",
+      "typeExercice": "bac"
+    },
+    "bac_2024_01_sujet0": {
+      "annee": "2024",
+      "mois": "Janvier",
+      "lieu": "sujet0",
+      "typeExercice": "bac"
+    },
+    "bac_2024_05_sujet1_ameriquenord": {
+      "annee": "2024",
+      "mois": "Mai",
+      "lieu": "Amérique du Nord",
+      "jour": "J1",
+      "typeExercice": "bac"
+    },
+    "bac_2024_05_sujet2_ameriquenord": {
+      "annee": "2024",
+      "mois": "Mai",
+      "lieu": "Amérique du Nord",
+      "jour": "J2",
+      "typeExercice": "bac"
+    },
+    "bac_2024_06_sujet1_etrangers": {
+      "annee": "2024",
+      "mois": "Juin",
+      "lieu": "Centres étrangers",
+      "jour": "J1",
+      "typeExercice": "bac"
+    },
+    "bac_2024_06_sujet2_etrangers": {
+      "annee": "2024",
+      "mois": "Juin",
+      "lieu": "Centres étrangers",
+      "jour": "J2",
+      "typeExercice": "bac"
+    },
+    "bac_2024_06_sujet1_asie": {
+      "annee": "2024",
+      "mois": "Juin",
+      "lieu": "Asie",
+      "jour": "J1",
+      "typeExercice": "bac"
+    },
+    "bac_2024_06_sujet1_metropole": {
+      "annee": "2024",
+      "mois": "Juin",
+      "lieu": "Métropole",
+      "jour": "J1",
+      "typeExercice": "bac"
+    },
+    "bac_2024_06_sujet1_metropole_devoile": {
+      "annee": "2024",
+      "mois": "Juin",
+      "lieu": "Métropole",
+      "jour": "J1",
+      "typeExercice": "bac"
+    },
+    "bac_2024_06_sujet1_polynesie": {
+      "annee": "2024",
+      "mois": "Juin",
+      "lieu": "Polynésie",
+      "jour": "J1",
+      "typeExercice": "bac"
+    },
+    "bac_2024_06_sujet2_asie": {
+      "annee": "2024",
+      "mois": "Juin",
+      "lieu": "Asie",
+      "jour": "J2",
+      "typeExercice": "bac"
+    },
+    "bac_2024_06_sujet2_metropole": {
+      "annee": "2024",
+      "mois": "Juin",
+      "lieu": "Métropole",
+      "jour": "J2",
+      "typeExercice": "bac"
+    },
+    "bac_2024_06_sujet2_metropole_devoile": {
+      "annee": "2024",
+      "mois": "Juin",
+      "lieu": "Métropole",
+      "jour": "J2",
+      "typeExercice": "bac"
+    },
+    "bac_2024_06_sujet2_polynesie": {
+      "annee": "2024",
+      "mois": "Juin",
+      "lieu": "Polynésie",
+      "jour": "J2",
+      "typeExercice": "bac"
+    },
+    "bac_2024_09_sujet1_metropole": {
+      "annee": "2024",
+      "mois": "Septembre",
+      "lieu": "Métropole",
+      "jour": "J1",
+      "typeExercice": "bac"
+    },
+    "bac_2024_09_sujet1_polynesie": {
+      "annee": "2024",
+      "mois": "Septembre",
+      "lieu": "Polynésie",
+      "jour": "J1",
+      "typeExercice": "bac"
+    },
+    "bac_2024_06_sujet1_suede": {
+      "annee": "2024",
+      "mois": "Juin",
+      "lieu": "suede",
+      "jour": "J1",
+      "typeExercice": "bac"
+    },
+    "bac_2024_11_sujet1_amsud": {
+      "annee": "2024",
+      "mois": "Novembre",
+      "lieu": "amsud",
+      "jour": "J1",
+      "typeExercice": "bac"
+    },
+    "bac_2024_11_sujet2_amsud": {
+      "annee": "2024",
+      "mois": "Novembre",
+      "lieu": "amsud",
+      "jour": "J2",
+      "typeExercice": "bac"
+    },
+    "bac_2025_05_sujet1_ameriquenord": {
+      "annee": "2025",
+      "mois": "Mai",
+      "lieu": "Amérique du Nord",
+      "jour": "J1",
+      "typeExercice": "bac"
+    },
+    "bac_2025_05_sujet2_ameriquenord": {
+      "annee": "2025",
+      "mois": "Mai",
+      "lieu": "Amérique du Nord",
+      "jour": "J2",
+      "typeExercice": "bac"
+    },
+    "bac_2025_05_sujet2_ameriquenord_secours": {
+      "annee": "2025",
+      "mois": "Mai",
+      "lieu": "Amérique du Nord",
+      "jour": "J2",
+      "typeExercice": "bac"
+    },
+    "bac_2025_06_sujet1_asie": {
+      "annee": "2025",
+      "mois": "Juin",
+      "lieu": "Asie",
+      "jour": "J1",
+      "typeExercice": "bac"
+    },
+    "bac_2025_06_sujet1_etrangers": {
+      "annee": "2025",
+      "mois": "Juin",
+      "lieu": "Centres étrangers",
+      "jour": "J1",
+      "typeExercice": "bac"
+    },
+    "bac_2025_06_sujet2_asie": {
+      "annee": "2025",
+      "mois": "Juin",
+      "lieu": "Asie",
+      "jour": "J2",
+      "typeExercice": "bac"
+    },
+    "bac_2025_06_sujet2_etrangers": {
+      "annee": "2025",
+      "mois": "Juin",
+      "lieu": "Centres étrangers",
+      "jour": "J2",
+      "typeExercice": "bac"
+    },
+    "bac_2025_06_sujet1_polynesie": {
+      "annee": "2025",
+      "mois": "Juin",
+      "lieu": "Polynésie",
+      "jour": "J1",
+      "typeExercice": "bac"
+    },
+    "bac_2025_06_sujet1_metropole": {
+      "annee": "2025",
+      "mois": "Juin",
+      "lieu": "Métropole",
+      "jour": "J1",
+      "typeExercice": "bac"
+    },
+    "bac_2025_06_sujet2_metropole": {
+      "annee": "2025",
+      "mois": "Juin",
+      "lieu": "Métropole",
+      "jour": "J2",
+      "typeExercice": "bac"
+    },
+    "bac_2025_06_sujet2_polynesie": {
+      "annee": "2025",
+      "mois": "Juin",
+      "lieu": "Polynésie",
+      "jour": "J2",
+      "typeExercice": "bac"
+    },
+    "bac_2025_09_sujet1_asie": {
+      "annee": "2025",
+      "mois": "Septembre",
+      "lieu": "Asie",
+      "jour": "J1",
+      "typeExercice": "bac"
+    },
+    "bac_2025_09_sujet1_metropole": {
+      "annee": "2025",
+      "mois": "Septembre",
+      "lieu": "Métropole",
+      "jour": "J1",
+      "typeExercice": "bac"
+    },
+    "bac_2025_09_sujet1_polynesie": {
+      "annee": "2025",
+      "mois": "Septembre",
+      "lieu": "Polynésie",
+      "jour": "J1",
+      "typeExercice": "bac"
+    },
+    "bac_2025_09_sujet2_metropole": {
+      "annee": "2025",
+      "mois": "Septembre",
+      "lieu": "Métropole",
+      "jour": "J2",
+      "typeExercice": "bac"
+    },
+    "bac_2025_11_sujet1_ameriquesud": {
+      "annee": "2025",
+      "mois": "Novembre",
+      "lieu": "Amérique du sud",
+      "jour": "J1",
+      "typeExercice": "bac"
+    },
+    "bac_2025_11_sujet1_caledonie": {
+      "annee": "2025",
+      "mois": "Novembre",
+      "lieu": "Nouvelle Calédonie",
+      "jour": "J1",
+      "typeExercice": "bac"
+    },
+    "bac_2025_11_sujet2_ameriquesud": {
+      "annee": "2025",
+      "mois": "Novembre",
+      "lieu": "Amérique du sud",
+      "jour": "J2",
+      "typeExercice": "bac"
+    },
+    "bac_2025_11_sujet2_caledonie": {
+      "annee": "2025",
+      "mois": "Novembre",
+      "lieu": "Nouvelle Calédonie",
+      "jour": "J2",
+      "typeExercice": "bac"
+    },
+    "bac_2026_05_sujet1_ameriquenord": {
+      "annee": "2026",
+      "mois": "Mai",
+      "lieu": "Amérique du Nord",
+      "jour": "J1",
+      "typeExercice": "bac"
+    },
+    "bac_2026_05_sujet2_ameriquenord": {
+      "annee": "2026",
+      "mois": "Mai",
+      "lieu": "Amérique du Nord",
+      "jour": "J2",
+      "typeExercice": "bac"
+    },
+    "bac_2026_06_sujet1_asie": {
+      "annee": "2026",
+      "mois": "Juin",
+      "lieu": "Asie",
+      "jour": "J1",
+      "typeExercice": "bac"
+    },
+    "bac_2026_06_sujet1_etrangers": {
+      "annee": "2026",
+      "mois": "Juin",
+      "lieu": "Centres étrangers",
+      "jour": "J1",
+      "typeExercice": "bac"
+    },
+    "bac_2026_06_sujet2_asie": {
+      "annee": "2026",
+      "mois": "Juin",
+      "lieu": "Asie",
+      "jour": "J2",
+      "typeExercice": "bac"
+    },
+    "bac_2026_06_sujet2_etrangers": {
+      "annee": "2026",
+      "mois": "Juin",
+      "lieu": "Centres étrangers",
+      "jour": "J2",
+      "typeExercice": "bac"
+    },
+    "bac_2026_06_sujet1_antilles": {
+      "annee": "2026",
+      "mois": "Juin",
+      "lieu": "Antilles",
+      "jour": "J1",
+      "typeExercice": "bac"
+    },
+    "bac_2026_06_sujet1_metropole": {
+      "annee": "2026",
+      "mois": "Juin",
+      "lieu": "Métropole",
+      "jour": "J1",
+      "typeExercice": "bac"
+    },
+    "bac_2026_06_sujet1_polynesie": {
+      "annee": "2026",
+      "mois": "Juin",
+      "lieu": "Polynésie",
+      "jour": "J1",
+      "typeExercice": "bac"
+    },
+    "bac_2026_06_sujet2_antilles": {
+      "annee": "2026",
+      "mois": "Juin",
+      "lieu": "Antilles",
+      "jour": "J2",
+      "typeExercice": "bac"
+    },
+    "bac_2026_06_sujet2_metropole": {
+      "annee": "2026",
+      "mois": "Juin",
+      "lieu": "Métropole",
+      "jour": "J2",
+      "typeExercice": "bac"
+    },
+    "bac_2026_06_sujet2_polynesie": {
+      "annee": "2026",
+      "mois": "Juin",
+      "lieu": "Polynésie",
+      "jour": "J2",
+      "typeExercice": "bac"
+    },
+    "bac_2026_09_sujet2_metropole": {
+      "annee": "2026",
+      "mois": "Septembre",
+      "lieu": "Métropole",
+      "jour": "J2",
+      "typeExercice": "bac"
+    },
+    "sti2d_2021_03_sujet0v1": {
+      "annee": "2021",
+      "mois": "Mars",
+      "lieu": "sujet0v1",
+      "typeExercice": "sti2d"
+    },
+    "sti2d_2021_03_sujet0v2": {
+      "annee": "2021",
+      "mois": "Mars",
+      "lieu": "sujet0v2",
+      "typeExercice": "sti2d"
+    },
+    "sti2d_2021_06_metropole_j1": {
+      "annee": "2021",
+      "mois": "Juin",
+      "lieu": "Métropole",
+      "typeExercice": "sti2d"
+    },
+    "sti2d_2021_06_metropole_j2": {
+      "annee": "2021",
+      "mois": "Juin",
+      "lieu": "Métropole",
+      "typeExercice": "sti2d"
+    },
+    "sti2d_2021_09_metropole": {
+      "annee": "2021",
+      "mois": "Septembre",
+      "lieu": "Métropole",
+      "typeExercice": "sti2d"
+    },
+    "sti2d_2022_05_etrangers": {
+      "annee": "2022",
+      "mois": "Mai",
+      "lieu": "Centres étrangers",
+      "typeExercice": "sti2d"
+    },
+    "sti2d_2022_05_metropole": {
+      "annee": "2022",
+      "mois": "Mai",
+      "lieu": "Métropole",
+      "typeExercice": "sti2d"
+    },
+    "sti2d_2022_05_polynesie": {
+      "annee": "2022",
+      "mois": "Mai",
+      "lieu": "Polynésie",
+      "typeExercice": "sti2d"
+    },
+    "sti2d_2022_09_metropole": {
+      "annee": "2022",
+      "mois": "Septembre",
+      "lieu": "Métropole",
+      "typeExercice": "sti2d"
+    },
+    "sti2d_2022_10_caledonie": {
+      "annee": "2022",
+      "mois": "Octobre",
+      "lieu": "Nouvelle Calédonie",
+      "typeExercice": "sti2d"
+    },
+    "sti2d_2023_03_metropole": {
+      "annee": "2023",
+      "mois": "Mars",
+      "lieu": "Métropole",
+      "typeExercice": "sti2d"
+    },
+    "sti2d_2023_03_polynesie": {
+      "annee": "2023",
+      "mois": "Mars",
+      "lieu": "Polynésie",
+      "typeExercice": "sti2d"
+    },
+    "sti2d_2023_03_reunion": {
+      "annee": "2023",
+      "mois": "Mars",
+      "lieu": "reunion",
+      "typeExercice": "sti2d"
+    },
+    "sti2d_2023_06_mexique": {
+      "annee": "2023",
+      "mois": "Juin",
+      "lieu": "mexique",
+      "typeExercice": "sti2d"
+    },
+    "sti2d_2023_09_caledonie": {
+      "annee": "2023",
+      "mois": "Septembre",
+      "lieu": "Nouvelle Calédonie",
+      "typeExercice": "sti2d"
+    },
+    "sti2d_2023_09_metropole": {
+      "annee": "2023",
+      "mois": "Septembre",
+      "lieu": "Métropole",
+      "typeExercice": "sti2d"
+    },
+    "sti2d_2024_06_polynesie": {
+      "annee": "2024",
+      "mois": "Juin",
+      "lieu": "Polynésie",
+      "typeExercice": "sti2d"
+    },
+    "sti2d_2024_09_metropole": {
+      "annee": "2024",
+      "mois": "Septembre",
+      "lieu": "Métropole",
+      "typeExercice": "sti2d"
+    },
+    "sti2d_2024_06_metropole": {
+      "annee": "2024",
+      "mois": "Juin",
+      "lieu": "Métropole",
+      "typeExercice": "sti2d"
+    },
+    "sti2d_2025_06_metropole": {
+      "annee": "2025",
+      "mois": "Juin",
+      "lieu": "Métropole",
+      "typeExercice": "sti2d"
+    },
+    "sti2d_2025_09_metropole": {
+      "annee": "2025",
+      "mois": "Septembre",
+      "lieu": "Métropole",
+      "typeExercice": "sti2d"
+    },
+    "sti2d_2025_09_metropole_secours": {
+      "annee": "2025",
+      "mois": "Septembre",
+      "lieu": "Métropole",
+      "typeExercice": "sti2d"
+    },
+    "sti2d_2025_06_polynesie": {
+      "annee": "2025",
+      "mois": "Juin",
+      "lieu": "Polynésie",
+      "typeExercice": "sti2d"
+    },
+    "sti2d_2025_11_caledonie": {
+      "annee": "2025",
+      "mois": "Novembre",
+      "lieu": "Nouvelle Calédonie",
+      "typeExercice": "sti2d"
+    },
+    "sti2d_2026_06_metropole_j2": {
+      "annee": "2026",
+      "mois": "Juin",
+      "lieu": "Métropole",
+      "typeExercice": "sti2d"
+    },
+    "sti2d_2026_06_antilles_j2": {
+      "annee": "2026",
+      "mois": "Juin",
+      "lieu": "Antilles",
+      "typeExercice": "sti2d"
+    },
+    "sti2d_2026_06_polynesie_j2": {
+      "annee": "2026",
+      "mois": "Juin",
+      "lieu": "Polynésie",
+      "typeExercice": "sti2d"
+    },
+    "stl_2021_03_metropole": {
+      "annee": "2021",
+      "mois": "Mars",
+      "lieu": "Métropole",
+      "typeExercice": "stl"
+    },
+    "stl_2021_03_sujet0": {
+      "annee": "2021",
+      "mois": "Mars",
+      "lieu": "sujet0",
+      "typeExercice": "stl"
+    },
+    "stl_2021_06_metropole": {
+      "annee": "2021",
+      "mois": "Juin",
+      "lieu": "Métropole",
+      "typeExercice": "stl"
+    },
+    "stl_2022_05_mayotte": {
+      "annee": "2022",
+      "mois": "Mai",
+      "lieu": "mayotte",
+      "typeExercice": "stl"
+    },
+    "stl_2022_05_metropole": {
+      "annee": "2022",
+      "mois": "Mai",
+      "lieu": "Métropole",
+      "typeExercice": "stl"
+    },
+    "stl_2022_05_polynesie": {
+      "annee": "2022",
+      "mois": "Mai",
+      "lieu": "Polynésie",
+      "typeExercice": "stl"
+    },
+    "stl_2022_09_metropole": {
+      "annee": "2022",
+      "mois": "Septembre",
+      "lieu": "Métropole",
+      "typeExercice": "stl"
+    },
+    "stl_2022_10_caledonie": {
+      "annee": "2022",
+      "mois": "Octobre",
+      "lieu": "Nouvelle Calédonie",
+      "typeExercice": "stl"
+    },
+    "stl_2023_03_metropole": {
+      "annee": "2023",
+      "mois": "Mars",
+      "lieu": "Métropole",
+      "typeExercice": "stl"
+    },
+    "stl_2023_03_polynesie": {
+      "annee": "2023",
+      "mois": "Mars",
+      "lieu": "Polynésie",
+      "typeExercice": "stl"
+    },
+    "stl_2023_03_reunion": {
+      "annee": "2023",
+      "mois": "Mars",
+      "lieu": "reunion",
+      "typeExercice": "stl"
+    },
+    "stl_2023_09_caledonie": {
+      "annee": "2023",
+      "mois": "Septembre",
+      "lieu": "Nouvelle Calédonie",
+      "typeExercice": "stl"
+    },
+    "stl_2023_09_metropole": {
+      "annee": "2023",
+      "mois": "Septembre",
+      "lieu": "Métropole",
+      "typeExercice": "stl"
+    },
+    "stl_2024_06_metropole": {
+      "annee": "2024",
+      "mois": "Juin",
+      "lieu": "Métropole",
+      "typeExercice": "stl"
+    },
+    "stl_2024_06_polynesie": {
+      "annee": "2024",
+      "mois": "Juin",
+      "lieu": "Polynésie",
+      "typeExercice": "stl"
+    },
+    "stl_2024_09_metropole": {
+      "annee": "2024",
+      "mois": "Septembre",
+      "lieu": "Métropole",
+      "typeExercice": "stl"
+    },
+    "stl_2025_06_metropole": {
+      "annee": "2025",
+      "mois": "Juin",
+      "lieu": "Métropole",
+      "typeExercice": "stl"
+    },
+    "stl_2026_06_antilles_j2": {
+      "annee": "2026",
+      "mois": "Juin",
+      "lieu": "Antilles",
+      "typeExercice": "stl"
+    },
+    "stl_2026_06_metropole_j2": {
+      "annee": "2026",
+      "mois": "Juin",
+      "lieu": "Métropole",
+      "typeExercice": "stl"
+    },
+    "crpe_2015_g1": {
+      "annee": "2015",
+      "lieu": "COPIRELEM Groupement 1",
+      "typeExercice": "crpe"
+    },
+    "crpe_2015_g2": {
+      "annee": "2015",
+      "lieu": "COPIRELEM Groupement 2",
+      "typeExercice": "crpe"
+    },
+    "crpe_2015_g3": {
+      "annee": "2015",
+      "lieu": "COPIRELEM Groupement 3",
+      "typeExercice": "crpe"
+    },
+    "crpe_2015_espe": {
+      "annee": "2015",
+      "lieu": "COPIRELEM ESPE",
+      "typeExercice": "crpe"
+    },
+    "crpe_2015_cre": {
+      "annee": "2015",
+      "lieu": "COPIRELEM Créteil",
+      "typeExercice": "crpe"
+    },
+    "crpe_2016_g1": {
+      "annee": "2016",
+      "lieu": "COPIRELEM Groupement 1",
+      "typeExercice": "crpe"
+    },
+    "crpe_2016_g2": {
+      "annee": "2016",
+      "lieu": "COPIRELEM Groupement 2",
+      "typeExercice": "crpe"
+    },
+    "crpe_2016_g3": {
+      "annee": "2016",
+      "lieu": "COPIRELEM Groupement 3",
+      "typeExercice": "crpe"
+    },
+    "crpe_2016_cre": {
+      "annee": "2016",
+      "lieu": "COPIRELEM Créteil",
+      "typeExercice": "crpe"
+    },
+    "crpe_2016_pol": {
+      "annee": "2016",
+      "lieu": "COPIRELEM Polynésie",
+      "typeExercice": "crpe"
+    },
+    "crpe_2017_g1": {
+      "annee": "2017",
+      "lieu": "COPIRELEM Groupement 1",
+      "typeExercice": "crpe"
+    },
+    "crpe_2017_g2": {
+      "annee": "2017",
+      "lieu": "COPIRELEM Groupement 2",
+      "typeExercice": "crpe"
+    },
+    "crpe_2017_g3": {
+      "annee": "2017",
+      "lieu": "COPIRELEM Groupement 3",
+      "typeExercice": "crpe"
+    },
+    "crpe_2017_g4": {
+      "annee": "2017",
+      "lieu": "COPIRELEM Groupement 4",
+      "typeExercice": "crpe"
+    },
+    "crpe_2017_g5": {
+      "annee": "2017",
+      "lieu": "COPIRELEM Groupement 5",
+      "typeExercice": "crpe"
+    },
+    "crpe_blanc_2017_besancon": {
+      "annee": "2017",
+      "lieu": "COPIRELEM ESPE Besançon",
+      "typeExercice": "crpe"
+    },
+    "crpe_2018_g1": {
+      "annee": "2018",
+      "lieu": "COPIRELEM Groupement 1",
+      "typeExercice": "crpe"
+    },
+    "crpe_2018_g2": {
+      "annee": "2018",
+      "lieu": "COPIRELEM Groupement 2",
+      "typeExercice": "crpe"
+    },
+    "crpe_2018_g3": {
+      "annee": "2018",
+      "lieu": "COPIRELEM Groupement 3",
+      "typeExercice": "crpe"
+    },
+    "crpe_2018_g4": {
+      "annee": "2018",
+      "lieu": "COPIRELEM Groupement 4",
+      "typeExercice": "crpe"
+    },
+    "crpe_2018_g5": {
+      "annee": "2018",
+      "lieu": "COPIRELEM Groupement 5",
+      "typeExercice": "crpe"
+    },
+    "crpe_2018_s1": {
+      "annee": "2018",
+      "lieu": "COPIRELEM ESPE Dijon",
+      "typeExercice": "crpe"
+    },
+    "crpe_2018_s2": {
+      "annee": "2018",
+      "lieu": "COPIRELEM ESPE Paris",
+      "typeExercice": "crpe"
+    },
+    "crpe_2018_s4": {
+      "annee": "2018",
+      "lieu": "COPIRELEM ESPE Paris _ Sujet 2",
+      "typeExercice": "crpe"
+    },
+    "crpe_2019_g1": {
+      "annee": "2019",
+      "lieu": "COPIRELEM Groupement 1",
+      "typeExercice": "crpe"
+    },
+    "crpe_2019_g2": {
+      "annee": "2019",
+      "lieu": "COPIRELEM Groupement 2",
+      "typeExercice": "crpe"
+    },
+    "crpe_2019_g3": {
+      "annee": "2019",
+      "lieu": "COPIRELEM Groupement 3",
+      "typeExercice": "crpe"
+    },
+    "crpe_2019_g4": {
+      "annee": "2019",
+      "lieu": "COPIRELEM Groupement 4",
+      "typeExercice": "crpe"
+    },
+    "crpe_2019_g5": {
+      "annee": "2019",
+      "lieu": "COPIRELEM Groupement 5",
+      "typeExercice": "crpe"
+    },
+    "crpe_2019_ver": {
+      "annee": "2019",
+      "lieu": "COPIRELEM ESPE Versailles",
+      "typeExercice": "crpe"
+    },
+    "crpe_2019_bes": {
+      "annee": "2019",
+      "lieu": "COPIRELEM ESPE Besançon",
+      "typeExercice": "crpe"
+    },
+    "crpe_2019_cle": {
+      "annee": "2019",
+      "lieu": "COPIRELEM ESPE Clermont_Ferrand",
+      "typeExercice": "crpe"
+    },
+    "crpe_2019_tou": {
+      "annee": "2019",
+      "lieu": "COPIRELEM ESPE Toulouse",
+      "typeExercice": "crpe"
+    },
+    "crpe_2022_g1": {
+      "annee": "2022",
+      "lieu": "Groupement 1",
+      "typeExercice": "crpe"
+    },
+    "crpe_2022_g2": {
+      "annee": "2022",
+      "lieu": "Groupement 2",
+      "typeExercice": "crpe"
+    },
+    "crpe_2022_g3": {
+      "annee": "2022",
+      "lieu": "Groupement 3",
+      "typeExercice": "crpe"
+    },
+    "crpe_2022_g4": {
+      "annee": "2022",
+      "lieu": "Groupement 4",
+      "typeExercice": "crpe"
+    },
+    "crpe_2023_g1": {
+      "annee": "2023",
+      "lieu": "Groupement 1",
+      "typeExercice": "crpe"
+    },
+    "crpe_2023_g2": {
+      "annee": "2023",
+      "lieu": "Groupement 2",
+      "typeExercice": "crpe"
+    },
+    "crpe_2023_g3": {
+      "annee": "2023",
+      "lieu": "Groupement 3",
+      "typeExercice": "crpe"
+    },
+    "crpe_l3_2025_sujet0": {
+      "annee": "2025",
+      "lieu": "L3 sujet0",
+      "typeExercice": "crpe"
+    },
+    "eam_specialite_2026_04_polynesie": {
+      "typeExercice": "eam",
+      "annee": "2026",
+      "lieu": "Spécialité Polynésie",
+      "mois": "Avril",
+      "filiere": "Specialite"
+    },
+    "eam_specialite_2026_09_antilles": {
+      "typeExercice": "eam",
+      "annee": "2026",
+      "lieu": "Spécialité Antilles",
+      "mois": "Septembre",
+      "filiere": "Specialite"
+    },
+    "eam_specialite_2026_09_metropole": {
+      "typeExercice": "eam",
+      "annee": "2026",
+      "lieu": "Spécialité Métropole",
+      "mois": "Septembre",
+      "filiere": "Specialite"
+    },
+    "eam_specifique_2026_04_polynesie": {
+      "typeExercice": "eam",
+      "annee": "2026",
+      "lieu": "Spécifique Polynésie",
+      "mois": "Avril",
+      "filiere": "Specifique"
+    },
+    "eam_specifique_2026_09_antilles": {
+      "typeExercice": "eam",
+      "annee": "2026",
+      "lieu": "Spécifique Antilles",
+      "mois": "Septembre",
+      "filiere": "Specifique"
+    },
+    "eam_specifique_2026_09_metropole": {
+      "typeExercice": "eam",
+      "annee": "2026",
+      "lieu": "Spécifique Métropole",
+      "mois": "Septembre",
+      "filiere": "Specifique"
+    },
+    "crpe_l3_2026_g1": {
+      "typeExercice": "crpe",
+      "annee": "2026",
+      "lieu": "L3 Groupement 1"
+    },
+    "crpe_l3_2026_g2": {
+      "typeExercice": "crpe",
+      "annee": "2026",
+      "lieu": "L3 Groupement 2"
+    },
+    "crpe_l3_2026_g3": {
+      "typeExercice": "crpe",
+      "annee": "2026",
+      "lieu": "L3 Groupement 3"
+    },
+    "crpe_m2_2026_g1": {
+      "typeExercice": "crpe",
+      "annee": "2026",
+      "lieu": "M2 Groupement 1"
+    },
+    "crpe_m2_2026_g2": {
+      "typeExercice": "crpe",
+      "annee": "2026",
+      "lieu": "M2 Groupement 2"
+    },
+    "crpe_m2_2026_g3": {
+      "typeExercice": "crpe",
+      "annee": "2026",
+      "lieu": "M2 Groupement 3"
+    },
+    "crpe_l3_2024_g1": {
+      "typeExercice": "crpe",
+      "annee": "2024",
+      "lieu": "L3 Groupement 1"
+    },
+    "crpe_l3_2024_g2": {
+      "typeExercice": "crpe",
+      "annee": "2024",
+      "lieu": "L3 Groupement 2"
+    },
+    "crpe_l3_2024_g3": {
+      "typeExercice": "crpe",
+      "annee": "2024",
+      "lieu": "L3 Groupement 3"
+    },
+    "crpe_l3_2024_g4": {
+      "typeExercice": "crpe",
+      "annee": "2024",
+      "lieu": "L3 Groupement 4"
+    },
+    "crpe_l3_2025_g1": {
+      "typeExercice": "crpe",
+      "annee": "2025",
+      "lieu": "L3 Groupement 1"
+    },
+    "crpe_l3_2025_g2": {
+      "typeExercice": "crpe",
+      "annee": "2025",
+      "lieu": "L3 Groupement 2"
+    },
+    "crpe_l3_2025_g4": {
+      "typeExercice": "crpe",
+      "annee": "2025",
+      "lieu": "L3 Groupement 4"
+    }
+  },
+  "numeroOverrides": {
+    "bac_2024_06_sujet1_metropole_devoile_1": "devoile",
+    "bac_2024_06_sujet1_metropole_devoile_2": "devoile",
+    "bac_2024_06_sujet1_metropole_devoile_3": "devoile",
+    "bac_2024_06_sujet1_metropole_devoile_4": "devoile",
+    "bac_2024_06_sujet2_metropole_devoile_1": "devoile",
+    "bac_2024_06_sujet2_metropole_devoile_2": "devoile",
+    "bac_2024_06_sujet2_metropole_devoile_3": "devoile",
+    "bac_2024_06_sujet2_metropole_devoile_4": "devoile",
+    "bac_2025_05_sujet2_ameriquenord_secours_1": "secours",
+    "bac_2025_05_sujet2_ameriquenord_secours_2": "secours",
+    "bac_2025_05_sujet2_ameriquenord_secours_3": "secours",
+    "bac_2025_05_sujet2_ameriquenord_secours_4": "secours",
+    "sti2d_2021_06_metropole_j1_maths": "J1 - maths",
+    "sti2d_2021_06_metropole_j1_mq1": "J1 - mq1",
+    "sti2d_2021_06_metropole_j1_mq2": "J1 - mq2",
+    "sti2d_2021_06_metropole_j1_mq3": "J1 - mq3",
+    "sti2d_2021_06_metropole_j1_mq4": "J1 - mq4",
+    "sti2d_2021_06_metropole_j1_mq5": "J1 - mq5",
+    "sti2d_2021_06_metropole_j1_mq6": "J1 - mq6",
+    "sti2d_2021_06_metropole_j1_pcm": "J1 - pcm",
+    "sti2d_2021_06_metropole_j2_maths": "J2 - maths",
+    "sti2d_2021_06_metropole_j2_mq1": "J2 - mq1",
+    "sti2d_2021_06_metropole_j2_mq2": "J2 - mq2",
+    "sti2d_2021_06_metropole_j2_mq3": "J2 - mq3",
+    "sti2d_2021_06_metropole_j2_mq4": "J2 - mq4",
+    "sti2d_2021_06_metropole_j2_mq5": "J2 - mq5",
+    "sti2d_2021_06_metropole_j2_mq6": "J2 - mq6",
+    "sti2d_2021_06_metropole_j2_pcm": "J2 - pcm",
+    "sti2d_2025_09_metropole_secours_maths": "secours",
+    "sti2d_2025_09_metropole_secours_mq1": "secours",
+    "sti2d_2025_09_metropole_secours_mq2": "secours",
+    "sti2d_2025_09_metropole_secours_mq3": "secours",
+    "sti2d_2025_09_metropole_secours_mq4": "secours",
+    "sti2d_2025_09_metropole_secours_pcm": "secours",
+    "sti2d_2026_06_metropole_j2_maths": "J2 - maths ",
+    "sti2d_2026_06_metropole_j2_pcm": "J2 - pcm ",
+    "sti2d_2026_06_antilles_j2_maths": "J2 - maths ",
+    "sti2d_2026_06_antilles_j2_pcm": "J2 - pcm ",
+    "sti2d_2026_06_polynesie_j2_maths": "J2 - maths ",
+    "sti2d_2026_06_polynesie_j2_pcm": "J2 - pcm ",
+    "stl_2026_06_antilles_j2_mq1": "J2 - mq1 ",
+    "stl_2026_06_antilles_j2_mq2": "J2 - mq2 ",
+    "stl_2026_06_metropole_j2_mq1": "J2 - mq1 ",
+    "stl_2026_06_metropole_j2_mq2": "J2 - mq2 "
+  },
+  "entryOverrides": {
+    "crpe_blanc_2017_algo": {
+      "annee": "2017",
+      "lieu": "COPIRELEM ESPE",
+      "typeExercice": "crpe",
+      "numeroInitial": "Algorithmique et programmation"
+    },
+    "crpe_blanc_2017_clermont": {
+      "annee": "2017",
+      "lieu": "COPIRELEM ESPE Clermont",
+      "typeExercice": "crpe",
+      "numeroInitial": "Numération"
+    },
+    "crpe_blanc_2017_vraifaux": {
+      "annee": "2017",
+      "lieu": "COPIRELEM ESPE",
+      "typeExercice": "crpe",
+      "numeroInitial": "Vrai/Faux"
+    }
+  }
+}

@@ -1,0 +1,80 @@
+
+\bigskip
+
+%Yanis vit en France métropolitaine. Il part cet été en Guadeloupe en vacances.
+%
+%Il se renseigne quant aux locations de véhicules.
+%
+%Une société de location de voitures à Pointe-à-Pitre propose les tarifs suivants pour un véhicule  5 places de taille moyenne,  assurances non comprises :
+
+\begin{itemize}
+\item[$\bullet~~$]Tarif \og Affaire \fg{} : 0,50~\euro{} par kilomètre parcouru.
+\item[$\bullet~~$]Tarif \og Voyage court \fg{} : un forfait de 120~\euro{} puis 20 centimes par 
+kilomètre parcouru
+\item[$\bullet~~$]Tarif \og Voyage long \fg : un forfait de 230~\euro, quel que soit le nombre de kilomètres effectués.
+\end{itemize}
+
+\medskip
+
+\begin{enumerate}
+\item %Yanis a préparé son plan de route et il fera $280$~km. Il choisit le tarif
+
+
+%Combien va-t-il payer ?
+Avec le tarif \og Affaire \fg{}  Yanis va payer $280 \times 0,50 = 140$~\euro.
+\item %S'il parcourt $450$~km, quelle offre est la plus avantageuse financièrement ?
+$\bullet~~$Avec le tarif \og Affaire \fg{} il va payer $450 \times 0,5 = 225$~(\euro)  ;
+
+$\bullet~~$Tarif \og Voyage court \fg{} il va payer $120 + 450 \times 0,20 = 120 + 90 = 210$~(\euro)
+
+$\bullet~~$Avec le Tarif \og Voyage long \fg{} il va payer 230~\euro.
+
+Le tarif le plus intéressant est le \og Voyage court \fg.
+\item Dans la suite, $x$ désigne le nombre de kilomètres parcourus en voiture.
+
+On considère les trois fonctions  $l,\:m,\:n$ suivantes :
+
+\[l(x) = 230 \qquad m(x) = 0,5x \qquad n(x) = 0,2x + 120\]
+
+	\begin{enumerate}
+		\item %Associer, sans justifier, chacune de ces fonctions au tarif correspondant.
+		
+$l$ correspond au tarif \og Voyage long{} ;
+
+$m$ correspond au tarif \og Affaire \fg{} ;
+
+$n$ correspond au tarif \og Voyage court.
+		\item %Déterminer le nombre de kilomètres à parcourir pour que le tarif \og Voyage court \fg{} soit égal au tarif \og Affaire \fg.
+		Il faut trouver $x$ tel que $lmx) = n(x)$, soit $ 0,5x = 0,2x + 120$, d'où $0,3x = 120$ et en divisant chaque membre par $0,3$ : $x = 400$.
+		
+		Pour un voyage de 400 km, on paiera le même prix avec le tarif \og Affaire \fg{} ou le tarif \og Voyage court \fg.
+	\end{enumerate}
+\item 
+	\begin{enumerate}
+		\item Sur le document joint, tracer les courbes représentatives des fonctions $l,\:m$ et $n$.	
+		\item Déterminez graphiquement le nombre de kilomètres que devra atteindre Yanis  pour que le tarif \og Voyage long \fg{} soit le plus avantageux.
+		\emph{On laissera les traits de constructions apparents sur le graphique.}
+
+		On constate que pour une distance supérieure à 550 km, le tarif \og Voyage long \fg{} est le plus avantageux.
+
+	\psset{xunit=0.0325cm,yunit=0.05cm,arrowsize=2pt 3}
+	\begin{pspicture}(600,260)
+	\multido{\n=0+20}{31}{\psline[linewidth=0.15pt](\n,0)(\n,260)}
+	\multido{\n=0+20}{14}{\psline[linewidth=0.15pt](0,\n)(600,\n)}
+	\psaxes[linewidth=1.25pt,Dx=40,Dy=40]{->}(0,0)(0,0)(600,260)
+	\uput[u](528,0){distance parcourue en km}
+	\uput[r](0,255){coût en euro}
+	\psline[linewidth=1.25pt](0,230)(600,230)
+	\psplot[plotpoints=500,linewidth=1.25pt,linecolor=blue]{0}{500}{0.5 x mul}
+	\psplot[plotpoints=500,linewidth=1.25pt,linecolor=red]{0}{600}{0.2 x mul 120 add}
+	\uput[u](40,230){$l(x) = 230$}
+	\rput{36}(40,25){\blue $m(x) = 0,5x$}
+	\rput{16}(40,135){$\red n(x) = 0,2x + 120$}
+	\psline[linewidth=1.25pt,linestyle=dashed]{->}(550,230)(550,0)
+	\uput[d](550,2.5){550}
+	\end{pspicture}
+	\end{enumerate}
+\end{enumerate}
+
+\bigskip
+

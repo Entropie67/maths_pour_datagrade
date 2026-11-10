@@ -1,0 +1,85 @@
+\subsection*{Question 1}
+
+$A = 4x+3x = 7x$.
+
+\subsection*{Question 2}
+
+On range les cinq valeurs dans l'ordre croissant :
+\[3 ; 7 ; 8 ; 17 ; 18.\]
+La série comporte cinq valeurs : la médiane est la troisième valeur, soit 8.
+
+\subsection*{Question 3}
+
+\[\dfrac{25}{100}\times 160 = \dfrac{160}{4}= 40.\]
+25\,\% de 160~\euro{} valent 40~\euro.
+
+\subsection*{Question 4}
+
+Dans un triangle, la somme des mesures des trois angles est égale à $180^{\circ}$ :
+\[180 - (60+100) = 180-160 = 20.\]
+Le troisième angle mesure $20^{\circ}$.
+
+\subsection*{Question 5}
+
+Le triangle DEF est rectangle en D. Son hypoténuse est [EF] et, pour l'angle de sommet E, le côté adjacent est [ED].
+\[\cos\left(\widehat{\text{DEF}}\right)=\dfrac{\text{ED}}{\text{EF}}.\]
+
+\subsection*{Question 6}
+
+$a(3a-2) = a\times 3a - a\times 2 = 3a^{2}-2a$.
+
+\subsection*{Question 7 \quad Élève 2}
+
+Le critère de divisibilité par 3 porte sur la somme des nombres représentés par chacun des chiffres du nombre \np{4836}:
+
+$4+8+3+6 = 21 = 3\times 7$, donc \np{4836} est divisible par 3.
+
+\subsection*{Question 8}
+
+L'aire d'un disque de rayon $r$ vaut $\pi\times r^{2}$ et le rayon est la moitié du diamètre :
+\[r = \dfrac{6}{2}=3\quad\text{donc}\quad \mathcal{A}=\pi\times 3^{2}.\]
+
+\subsection*{Question 9}
+
+\begin{center}
+	\begin{tikzpicture}[line cap=round, line join=round, scale=0.72]
+	\tikzset{
+  untrait/.style={postaction={decorate,decoration={markings,mark=at position 0.5 with {
+      \draw[line width=0.9pt] (0,-3pt) -- (0,3pt);}}}},
+  deuxtraits/.style={postaction={decorate,decoration={markings,mark=at position 0.5 with {
+      \draw[line width=0.9pt] (-1.3pt,-3pt) -- (-1.3pt,3pt);
+      \draw[line width=0.9pt] (1.3pt,-3pt) -- (1.3pt,3pt);}}}}
+}
+
+		\coordinate (A) at (0,3);
+		\coordinate (B) at (2,1);
+		\coordinate (C) at (2.7,3.7);
+		\coordinate (D) at (6.7,3.9);
+		\coordinate (E) at (7.6,1.1);
+		\coordinate (F) at (4.2,-0.3);
+		\draw[line width=1.1pt, deuxtraits] (A) -- (B);
+		\draw[line width=1.1pt] (B) -- (F);
+		\draw[line width=1.1pt, untrait] (F) -- (E);
+		\draw[line width=1.1pt, deuxtraits] (E) -- (D);
+		\draw[line width=1.1pt, untrait] (D) -- (C);
+		\draw[line width=1.1pt, deuxtraits] (C) -- (A);
+		\draw[line width=1.1pt, deuxtraits] (B) -- (C);
+		\draw[<->, line width=0.7pt] (-0.2, 2.7) -- (1.8, 0.65);
+		\draw[<->, line width=0.7pt] (2.15, 0.5) -- (4.15, -0.7);
+		\draw[<->, line width=0.7pt] (4.7, -0.6) -- (7.6, 0.6);
+		\node[above left] at (A) {A};
+		\node[below left] at (B) {B};
+		\node[above] at (C) {C};
+		\node[above] at (D) {D};
+		\node[right] at (E) {E};
+		\node[below right] at (F) {F};
+		\node at (0.5,1.5) {$x$};
+		\node at (2.8,-0.35) {3};
+		\node at (6.2,-0.35) {4};
+	\end{tikzpicture}
+\end{center}
+
+D'après les codages, $AB = BC = CA = DE = x$ et $FE = DC = 4$ ; enfin $BF = 3$.
+\[\mathcal{P}= AC + CD + DE + EF + FB + BA \]
+\[\mathcal{P}= x + 4 + x + 4 + 3 + x\]
+\[\mathcal{P}=  3x+11\]

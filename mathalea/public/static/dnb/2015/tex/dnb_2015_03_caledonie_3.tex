@@ -1,0 +1,65 @@
+
+\medskip
+
+
+\parbox{0.5\linewidth}{À la kermesse du village, il y a un jeu de grande
+roue. Le joueur lance la roue et gagne le lot indiqué.
+
+On suppose que la roue est bien équilibrée et que les
+secteurs sont superposables.
+
+Les lots sont de deux sortes : les jouets (petite
+voiture, poupée et ballon) et les sucreries (chocolat,
+sucette et bonbons).
+
+\medskip
+
+\begin{enumerate}
+\item Gilda lance la roue une fois. Quelle est la
+probabilité qu'elle gagne un ballon ?
+\item Marie lance la roue une fois. Quelle est la
+probabilité qu'elle gagne une des sucreries ?
+\item Roméo lance la roue deux fois. Quelle est la
+probabilité qu'il gagne du chocolat puis une
+petite voiture ?\end{enumerate}}\hfill\parbox{0.48\linewidth}{\psset{unit=0.5cm}
+\begin{tikzpicture}
+  % Définir les paramètres du cercle
+  \def\radius{3} % Rayon du cercle
+  \filldraw[black!80] (-0.2,3.2) -- (0.2,3.2) -- (0,2.8) -- cycle;
+  \draw[-latex] (150:3.3) arc (150:120:3.3) ; 
+  % Dessiner les secteurs et ajouter du texte le long de chaque secteur
+  \foreach \nom [count=\i from 1] in {sucette,petite voiture,chocolat,poup{é}e,bonbons,ballon}  {
+    % Calculer les angles de début et de fin pour chaque secteur
+    \pgfmathsetmacro{\startangle}{60 * (\i - 1)};
+    \pgfmathsetmacro{\endangle}{60 * \i};
+    
+    % Dessiner le secteur
+    \draw (0,0) -- (\startangle:\radius) arc (\startangle:\endangle:\radius) -- cycle;
+    
+    
+    % Ajouter du texte le long de l'arc
+       % \path[
+       %     postaction={decorate, decoration={text along path, text align=center, text={|\Huge|Texte %\i}, reverse path=true}}
+       % ] (\startangle:\radius) arc (\startangle:\endangle:\radius);
+         \draw (\startangle:\radius) -- ($(\startangle:\radius) + (0.6, 0.2)$);
+         \filldraw[color=black!60, fill=black!95] ($(\startangle:\radius) + (0.6, 0.2)$) circle(0.08);
+         
+    % Ajouter du texte le long de l'arc
+        \path[
+            postaction={decorate, decoration={text along path, text align=center, raise=-4ex,  text={|\large | \nom }, reverse path=true}}
+        ] (\startangle:\radius) arc (\startangle:\endangle:\radius);
+        
+        
+  }
+ %psarc{<-}(0,0){3.2}{120}{150}
+  %\draw[line width=1.5pt] (0,0) -- (0.75,0.2);
+  %\filldraw[color=black!60, fill=black!95] (30:3) circle(0.08pt)
+  %\filldraw[color=black!60, fill=black!95, very thick] ({3 cos(\startangle)}, 0.2) circle (0.08);
+  %\def\clou{\psline[linewidth=1.5pt](0,0)(0.75,0.2)\pscircle*(0.75,0.2){0.08}}
+\end{tikzpicture}
+}
+
+
+
+\vspace{0,5cm}
+

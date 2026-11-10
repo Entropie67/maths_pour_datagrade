@@ -1,0 +1,148 @@
+
+\medskip
+
+\textbf{Vous traiterez 4 questions au choix parmi les 6 questions proposées.}
+
+\medskip
+
+\textbf{Question 1}
+
+\medskip
+
+Écrire sur la copie le numéro de la question ainsi que la lettre correspondant à la bonne réponse. \textbf{Aucune justification n'est attendue.}
+
+\medskip
+
+On donne ci-dessous un tracé de la courbe représentative $\mathcal{C}_f$ d'une fonction $f$ définie sur $\R$ :
+
+\medskip
+
+\begin{minipage}{0.4\linewidth}
+
+$f'(-2) =$
+
+\medskip
+
+\textbf{a.~~} 0
+
+\textbf{b.~~} 2
+
+\textbf{c.~~} $-1$
+
+\textbf{d.~~}  $-2,25$
+
+\end{minipage}\hfill
+\begin{minipage}{0.56\linewidth}
+\psset{unit=1cm,arrowsize=2pt 3}
+\begin{pspicture*}(-3,-3)(2,4)
+\psgrid[gridlabels=0pt,subgriddiv=1,gridwidth=0.1pt,gridcolor=orange]
+\psaxes[linewidth=1.25pt,labelFontSize=\scriptstyle]{->}(0,0)(-3,-3)(2,4)
+\uput[u](1.8,0){$x$} \uput[r](0,3.8){$y$}
+\psplot[plotpoints=2000,linewidth=1.25pt]{-3}{0.5}{x 2 mul  3  add }
+\psplot[plotpoints=2000,linewidth=1.25pt]{-3}{2}{x 2  add neg}
+\psbezier[linewidth=1.25pt,linecolor=blue](-2.5,-3)(-2.05,0)(-1.5,-0.5)(-1,-1)
+\psbezier[linewidth=1.25pt,linecolor=blue](-1,-1)(-0.43,-1.45)(-0.56,-1.75)(0,-1)
+\psbezier[linewidth=1.25pt,linecolor=blue](0,-1)(1,1)(0.83,5)(0.89,4)
+\uput[r](0.75,2.75){\blue $\mathcal{C}_f$}
+\psdots(-2,-1)(-1,-1)(0,-1)
+%\psplot[plotpoints=2000,linewidth=1.25pt,linestyle=dashed]{-3}{1}{x 3 exp 1.533 mul x dup mul 4.1 mul add x 1.567 mul add 1 sub}
+\end{pspicture*}
+\end{minipage}
+
+\bigskip
+
+\textbf{Question 2}
+
+\medskip
+
+Écrire sur la copie le numéro de la question ainsi que la lettre correspondant à la bonne réponse. \textbf{Aucune justification n'est attendue.}
+
+\medskip
+
+On considère l'équation $\ln (x) = 7$. Cette équation admet pour solution :
+
+\medskip
+
+\textbf{a.~~} $\ln (7)$
+
+\medskip
+
+\textbf{b.~~} $\ln \left(\text{e}^7\right)$
+
+\medskip
+
+\textbf{c.~~} $\text{e}^7$
+
+\medskip
+
+\textbf{d.~~} $\dfrac17$
+
+\bigskip
+
+\textbf{Question 3}
+
+\medskip
+
+On considère la fonction $f$ définie sur $\R$ par $f(x) = x\text{e}^{2x}$.
+
+Déterminer $f'(x)$, où $f'$ est la fonction dérivée de la fonction $f$.
+
+\textbf{Justifier la réponse}.
+
+\bigskip
+
+\textbf{Question 4}
+
+\medskip
+
+Soit ABCD un carré de côté $4$~cm. Calculer le produit scalaire $\vect{\text{AB}}\cdot \vect{\text{AC}}$.
+
+\textbf{Justifier la réponse}.
+
+\bigskip
+
+\textbf{Question 5}
+
+\medskip
+
+On considère l'équation différentielle suivante : 
+\[v' = -4,5v + 6,3 \qquad(E)\]
+
+Déterminer la fonction $v$ solution de l'équation (E) et vérifiant la condition initiale $v(0) = 0$. 
+
+\textbf{Justifier la réponse}.
+
+\bigskip
+
+\textbf{Question 6}
+
+\medskip
+
+Afin d'étudier l'évolution d'une population de bactéries à l'intérieur d'une boîte fermée, on considère la fonction $f$ définie pour tout $t \geqslant 0$ par :
+\[f(t) = \dfrac{100}{1 + \text{e}^{- 1,3t}}\]
+
+où $f(t)$ désigne le nombre de bactéries (exprimé en millier) à l'instant $t$ (exprimé en heure).
+
+\medskip
+
+\begin{minipage}{0.58\linewidth}
+Le programme en Python ci-contre affiche la valeur de $t$ (arrondie à
+l'unité) à partir de laquelle le nombre de bactéries à l'intérieur
+de l'enceinte dépasse \np{99000}.
+
+Quelle est la valeur affichée lorsqu'on exécute ce programme ?
+
+\end{minipage}\hfill
+\begin{minipage}{0.38\linewidth}
+\begin{tabular}{|l|}\hline
+from math import exp\\
+T=0\\
+while 100/(1+exp(-1,3*T)) <= 99 :\\
+\qquad T = T+1\\
+print (T)\\ \hline
+\end{tabular}
+\end{minipage}
+
+\bigskip
+
+

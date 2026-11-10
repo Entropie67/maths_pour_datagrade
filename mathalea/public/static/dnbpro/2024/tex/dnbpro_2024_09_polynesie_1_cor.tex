@@ -1,0 +1,81 @@
+
+%\smallskip
+%
+%Cet exercice est un questionnaire à choix multiples (QCM). Pour chaque question, une
+%seule des trois réponses proposées est exacte.
+%
+%Pour chaque question, \textbf{recopier} sur la copie, sans justifier, la réponse choisie: Réponse A, Réponse B ou Réponse C.
+
+\begin{center}
+%\begin{tabularx}{\linewidth}{|m{5.5cm}|*{3}{>{\centering \arraybackslash}X|}}
+\begin{tabular}{|m{5.3cm}|*{3}{>{\centering \arraybackslash}m{2.5cm}|}}
+\hline
+\multicolumn{1}{|c|}{Questions}&\multicolumn{3}{|c|}{Réponses proposées}\\ 
+\cline{2-4}
+&Réponse A&Réponse B&Réponse C\\ 
+\hline
+\textbf{1.} Soit la fonction $f$ définie par:
+
+\[f(x) = -3x - 4\]
+
+La représentation graphique de $f$ est:
+&
+\psset{unit=0.4cm}
+\begin{pspicture*}(-2.5,-6)(4,8)
+\psaxes[linewidth=1.25pt,Dx=2,Dy=2,labelFontSize=\scriptstyle]{->}(0,0)(-2.5,-5.9)(4,8)
+\multido{\n=-2+2}{4}{\psline[linewidth=0.15pt,linecolor=gray](\n,-6)(\n,8)}
+\multido{\n=-6+2}{7}{\psline[linewidth=0.15pt,linecolor=gray](-2,\n)(4,\n)}
+\psplot[plotpoints=500]{-1}{4}{4 3 x mul sub}
+\end{pspicture*}
+&
+\psset{unit=0.4cm}\begin{pspicture*}(-2.5,-6)(4,8)
+\psaxes[linewidth=1.25pt,Dx=2,Dy=2,labelFontSize=\scriptstyle]{->}(0,0)(-2.5,-5.9)(4,8)
+\multido{\n=-2+2}{4}{\psline[linewidth=0.15pt,linecolor=gray](\n,-6)(\n,8)}
+\multido{\n=-6+2}{7}{\psline[linewidth=0.15pt,linecolor=gray](-2,\n)(4,\n)}
+\psplot[plotpoints=500]{-1}{4}{3 x mul 4 sub}
+\end{pspicture*}
+&
+\psset{unit=0.4cm}\begin{pspicture*}(-4.5,-6)(2,8)
+\psaxes[linewidth=1.25pt,Dx=2,Dy=2,labelFontSize=\scriptstyle]{->}(0,0)(-4.5,-5.9)(2,8)
+\multido{\n=-4+2}{4}{\psline[linewidth=0.15pt,linecolor=gray](\n,-6)(\n,8)}
+\multido{\n=-6+2}{7}{\psline[linewidth=0.15pt,linecolor=gray](-4,\n)(2,\n)}
+\psplot[plotpoints=500,linecolor=blue]{-4}{2}{4 3 x mul add neg}
+\end{pspicture*}\\ 
+\hline
+\textbf{2.}  On considère la fonction $f$\newline définie par : $f(x) = 3x + 4$
+
+L'image de 1 par $f$ est :&12&4&$\blue 7$\\ 
+\hline
+\textbf{3.} Il y a 13 cartes trèfles dans un jeu de 52 cartes.
+
+La probabilité de tirer un trèfle est :&$\blue\dfrac14$&$\dfrac{1}{52}$&$\dfrac{1}{13}$\\ 
+\hline
+\textbf{4.} Une réduction de $20\,\%$ est\newline accordée sur un article de sport de \np{3000}~F.
+
+Le montant de cette réduction est de : &\blue 600 F&60 F&\np{3020} F\\ 
+\hline
+\textbf{5.} On considère l'équation 
+
+\hspace*{1cm}$2x + 6 = 0$.
+
+La solution de cette équation est :&$\blue -3$& 0 &3\\ 
+\hline
+\textbf{6.}  Il y a $71$~km entre Papeete et 
+
+Teahupo'o. Le bus met deux heures pour effectuer ce trajet.
+
+La vitesse moyenne du bus en km/h est de:&142 km/h&71 km/h&\blue $35,5$ km/h\\ \hline
+\end{tabular}
+\end{center}
+
+\begin{center}
+\begin{tabularx}{0.7\linewidth}{|c|*{6}{>{\centering \arraybackslash}X|}}
+\hline
+Question & 1 & 2 & 3 & 4 & 5 & 6\\
+\hline
+Réponse & C & C & A & A & A & C\\
+\hline
+\end{tabularx}
+\end{center}
+
+

@@ -1,0 +1,51 @@
+%source mathadata
+\begin{multicols}{2}
+		Voici un jeu de fléchettes entre Samia et Alicia sans cible au début du jeu. Chaque joueuse lance deux fléchettes sur un mur. Le point milieu de ces deux lancers est la cible de la joueuse.
+
+		\begin{center}
+			\includegraphics[scale=0.7]{images/dart1.png}
+		\end{center}
+	\end{multicols}
+
+	\begin{multicols}{2}
+
+		\begin{MADenumerate}
+
+			\item Samia lance deux fléchettes en $K(0\,;\,3)$ et $L(2\,;\,1)$.
+			\begin{enumerate}
+				\item Tracer le point cible $S$ de Samia dans le repère.
+				\item Calculer les coordonnées de $S$ à l'aide de la formule du milieu.
+			\end{enumerate}
+
+			\item Alicia lance deux fléchettes en $M(6\,;\,2)$ et $N(2\,;\,4)$.
+			\begin{enumerate}
+				\item Tracer le point cible $A$ d'Alicia dans le repère.
+				\item Calculer les coordonnées de $A$ à l'aide de la formule du milieu.
+			\end{enumerate}
+
+			\item (Bonus) Vérifier que $S$ est bien le point milieu de $[KL]$ en calculant les distances $KS$ et $SL$.
+
+			%\columnbreak
+
+		\end{MADenumerate}
+
+		\begin{figure}[H]
+			\centering
+			\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1cm,y=1cm,scale=0.8]
+				\begin{axis}[
+						x=1cm,y=1cm,
+						axis lines=middle,
+						ymajorgrids=true,
+						xmajorgrids=true,
+						xmin=-1,
+						xmax=7,
+						ymin=-1,
+						ymax=6,
+						xtick={-1,...,7},
+						ytick={-1,...,5},
+					]
+				\end{axis}
+			\end{tikzpicture}
+		\end{figure}
+
+	\end{multicols}

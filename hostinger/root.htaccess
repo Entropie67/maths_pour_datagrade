@@ -1,0 +1,7 @@
+# Racine du site maths.datagrade.fr (public_html/.htaccess), déposé par le
+# workflow de déploiement. L'application vit sous /alea/ (base Vite) ; la racine
+# y renvoie en gardant les paramètres de l'adresse, et /alea sans barre finale
+# est ramené à /alea/ pour que les liens partagés continuent de marcher.
+RewriteEngine On
+RewriteRule ^$ /alea/ [R=302,L]
+RewriteRule ^alea$ /alea/ [R=301,L]

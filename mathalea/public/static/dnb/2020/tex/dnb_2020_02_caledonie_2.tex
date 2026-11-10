@@ -1,0 +1,47 @@
+
+\medskip
+
+Laura a créé trois variables puis elle a réalisé le script ci-dessous.
+
+
+\begin{multicols}{2}
+~\vfill
+
+\begin{center}
+Créer une variable
+
+\medskip
+
+\begin{scratch}
+\blockvariable{Étape 1}
+\blockvariable{Étape 2}
+\blockvariable{$\times$}
+\end{scratch}
+\end{center}
+
+\vfill~
+
+\columnbreak
+
+\begin{scratch}
+\blockinit{Quand \greenflag est cliqué}
+\blocksensing{demander \ovalnum{valeur de x ?} et attendre}
+\blockvariable{mettre{\selectmenu{$x$} à \ovalsensing{réponse}}}
+\blockvariable{mettre{\selectmenu{Étape 1}} à \ovaloperator{\ovalvariable{$x$}  + \ovalnum{4}}}
+\blockvariable{mettre{\selectmenu{Étape 2}} à \ovaloperator{\ovalnum{2} *\ovalvariable{$x$} - \ovalnum{3}}}
+\blocklook{dire {\ovaloperator{regroupe {\ovalnum{Le résultat est : }} et \ovaloperator{\ovalvariable{~Étape 1} * \ovalvariable{Étape 2}}}}}
+\end{scratch}
+\end{multicols}
+
+\begin{enumerate}
+\item Vérifier que si la valeur de $x$ est 5 alors le résultat est $63$.
+\item  Quel résultat obtient-on si la valeur de $x$ est $- 3$ ?
+\item  Parmi les expressions suivantes, recopier celle qui correspond au programme de calcul donné par le script.
+
+\[A = (x + 4) \times (2x - 3)\qquad  B = x + 4 \times 2x - 3\qquad  C = x + 4 \times (2x - 3)\]
+
+\item  Pour quelle(s) valeur(s) de $x$ obtient-on un résultat égal à $0$ ?
+\end{enumerate}
+
+\vspace{0,5cm}
+

@@ -1,0 +1,11 @@
+{
+  "outils": true,
+  "aleatoires": true,
+  "statiques": false,
+  "ressources": true,
+  "geometrieDynamique": true,
+  "bibliotheque": false,
+  "apps": true,
+  "examens": true,
+  "partenaires": true
+}

@@ -1,0 +1,94 @@
+{
+  "tests/e2e/helpers/issue.ts": {
+    "sha256": "1bb46d5ba50d37f48735cc21809eb41d072cec7d160c1fe0ee76e4a22c40873c",
+    "reason": "Jeton GitLab amont remplacé par MATHALEA_GITLAB_TOKEN ; aucune requête sans configuration explicite."
+  },
+  "src/lib/siteOrigin.ts": {
+    "sha256": "b9b6213c0d37fdeba21325a969f2d0030b6836029c04b07e530596deb3f5c453",
+    "reason": "Annales locales sur maths.datagrade.fr en production ; vitrine associative et autres domaines conservés."
+  },
+  "src/lib/siteOrigin.test.ts": {
+    "sha256": "2509030481b1a15ca06c63268261677cd34f9a1581d9aa63b92e145c2a64ad5c",
+    "reason": "Annales locales sur maths.datagrade.fr en production ; vitrine associative et autres domaines conservés."
+  },
+  "src/lib/components/refUtils.ts": {
+    "sha256": "fabe0e547f5c280e950d0d54f55cbbc82503c51daf3f83644989d087c8c66488",
+    "reason": "Annales locales sur maths.datagrade.fr en production ; vitrine associative et autres domaines conservés."
+  },
+  "index.html": {
+    "sha256": "aa25f0742d8f822a6183c1d318529f68643ed53c122b65e3451379c2506bb817",
+    "reason": "Habillage AxioMaths (DataGrade) : nom, mascotte Liu, palette violette, accueil et pied de page maison, triangle de Penrose au chargement, mention MathALÉA/CoopMaths conservée."
+  },
+  "src/app.css": {
+    "sha256": "c1ecd1a8adf1102b5c4b83569de73bdded60994f9191dfe1080a68428efda16c",
+    "reason": "Habillage AxioMaths (DataGrade) : nom, mascotte Liu, palette violette, accueil et pied de page maison, mention MathALÉA/CoopMaths conservée."
+  },
+  "src/components/shared/header/NavBar.svelte": {
+    "sha256": "7345227b52c84b37dde39f986cab00ff8d62a358b3269d1a6300b504766d4598",
+    "reason": "Habillage AxioMaths (DataGrade) : nom, mascotte Liu, palette violette, accueil et pied de page maison, mention MathALÉA/CoopMaths conservée."
+  },
+  "src/components/setup/start/capytale/NavBarRecorder.svelte": {
+    "sha256": "e4fcc96f6747d11ae6df6a75aa5f1cac2c3b4849f63aecc0dfd9aafb8e601aae",
+    "reason": "Habillage AxioMaths (DataGrade) : nom, mascotte Liu, palette violette, accueil et pied de page maison, mention MathALÉA/CoopMaths conservée."
+  },
+  "src/components/setup/mobile/MobileView.svelte": {
+    "sha256": "00cd763b3ac3616025c14bea8029e25cccf6aa6dd2367548866d28afed0060b0",
+    "reason": "Habillage AxioMaths (DataGrade) : nom, mascotte Liu, palette violette, accueil et pied de page maison, mention MathALÉA/CoopMaths conservée."
+  },
+  "src/components/setup/start/presentationalComponents/Placeholder.svelte": {
+    "sha256": "f2fd810bf258b746755c1beb5b8bf7d0e59094897b78432a6db7b313978d3cf0",
+    "reason": "Habillage AxioMaths (DataGrade) : nom, mascotte Liu, palette violette, accueil et pied de page maison, mention MathALÉA/CoopMaths conservée."
+  },
+  "src/components/Footer.svelte": {
+    "sha256": "3376f595f40e3a7d344a73d5ab5a42bec0b5979a438bdb9a90a67d4d765d6fb6",
+    "reason": "Habillage AxioMaths (DataGrade) : nom, mascotte Liu, palette violette, accueil et pied de page maison, mention MathALÉA/CoopMaths conservée."
+  },
+  "public/favicon/apple-touch-icon.png": {
+    "sha256": "2a9f11b59a61e8a4f7232bd1f89d4d904d338daa54408bbff3046ab9747ddffc",
+    "reason": "Habillage AxioMaths (DataGrade) : nom, mascotte Liu, palette violette, accueil et pied de page maison, mention MathALÉA/CoopMaths conservée."
+  },
+  "public/favicon/favicon-96x96.png": {
+    "sha256": "ea432b9e06651a5684a4e23072fd3fe11cbbd25647913b3fb8ced8ce5e03a3ef",
+    "reason": "Habillage AxioMaths (DataGrade) : nom, mascotte Liu, palette violette, accueil et pied de page maison, mention MathALÉA/CoopMaths conservée."
+  },
+  "public/favicon/favicon.ico": {
+    "sha256": "76077eede85d97bb4f2ff59a87f3d0fbcffbe7be2f69698c86c5d991a850ac6c",
+    "reason": "Habillage AxioMaths (DataGrade) : nom, mascotte Liu, palette violette, accueil et pied de page maison, mention MathALÉA/CoopMaths conservée."
+  },
+  "public/favicon/favicon.svg": {
+    "sha256": "4ad00a681334daa25c57bf04d3cfbdacdf4abfd6c725b3d96832540746a12bee",
+    "reason": "Habillage AxioMaths (DataGrade) : nom, mascotte Liu, palette violette, accueil et pied de page maison, mention MathALÉA/CoopMaths conservée."
+  },
+  "public/favicon/site.webmanifest": {
+    "sha256": "321cfcb326b713b5075c2963040c76489040089c51e83ed63d03a3048c44aa32",
+    "reason": "Habillage AxioMaths (DataGrade) : nom, mascotte Liu, palette violette, accueil et pied de page maison, mention MathALÉA/CoopMaths conservée."
+  },
+  "public/favicon/web-app-manifest-192x192.png": {
+    "sha256": "2783cd68db8ed8549bf6fa55397320b15d7006ce885dfdf4b1c8f5c628fc7dd4",
+    "reason": "Habillage AxioMaths (DataGrade) : nom, mascotte Liu, palette violette, accueil et pied de page maison, mention MathALÉA/CoopMaths conservée."
+  },
+  "public/favicon/web-app-manifest-512x512.png": {
+    "sha256": "e21c484c5d02b8be641d7029093fe0b2d8b075b9e4e2d57b11b061df53df031a",
+    "reason": "Habillage AxioMaths (DataGrade) : nom, mascotte Liu, palette violette, accueil et pied de page maison, mention MathALÉA/CoopMaths conservée."
+  },
+  "src/lib/onboarding/tour.ts": {
+    "sha256": "d8083bb52c9b595bed2257683c509cc71b8213b9cba2f9661cad5b0f591b3b78",
+    "reason": "Habillage AxioMaths (DataGrade) : visite guidée au nom et aux couleurs AxioMaths, mention MathALÉA conservée."
+  },
+  "src/lib/onboarding/tour.css": {
+    "sha256": "2d1b6b6a2c55d4d5df52356a225e59bd2e94238eaa8e4b54644ffffe169f19ff",
+    "reason": "Habillage AxioMaths (DataGrade) : visite guidée au nom et aux couleurs AxioMaths, mention MathALÉA conservée."
+  },
+  "src/lib/stores/banquesExternesStore.ts": {
+    "sha256": "173fa653ac7a1595bcd2a9a596f274d8f28ee0611673aa0760e14e301275b433",
+    "reason": "Banque intégrée Annales TeSciA (AORES) pour AxioMaths"
+  },
+  "src/lib/stores/banquesIntegrees.test.ts": {
+    "sha256": "97af5f972939aaefe4199f267a187a075f07c5bcca323e300b63ca2f71af419f",
+    "reason": "Banque intégrée Annales TeSciA (AORES) pour AxioMaths"
+  },
+  "src/components/keyboard/Keyboard.svelte": {
+    "sha256": "720969e7dc7b9ae30a866abf1a05b736780cc495c0b91def7cee3aaedf5f16b7",
+    "reason": "AxioMaths : champ en cours de saisie gardé visible au-dessus du clavier virtuel"
+  }
+}

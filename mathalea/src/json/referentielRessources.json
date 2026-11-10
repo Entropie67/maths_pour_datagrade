@@ -1,0 +1,18 @@
+{
+  "video": {
+    "id": "video",
+    "uuid": "video",
+    "titre": "Vidéo",
+    "typeExercice": "html",
+    "url": "ressources/video.ts",
+    "tags": {}
+  },
+  "iframe": {
+    "id": "iframe",
+    "uuid": "iframe",
+    "titre": "Iframe",
+    "typeExercice": "html",
+    "url": "ressources/iframe.ts",
+    "tags": {}
+  }
+}

@@ -1,0 +1,70 @@
+
+\medskip
+
+Un centre de loisirs dispose d'un bâtiment et d'un espace extérieur pour accueillir des enfants.
+
+\begin{minipage}{0.5\linewidth}
+L'espace extérieur, modélisé par un triangle, est partagé en deux parties: un potager (quadrilatère DEFG hachuré) et une zone de jeux (triangle EFC), comme représenté par la figure ci-contre.\\\\
+\begin{list}{\textbullet}{Données:}
+\item Les points C, E et D  sont alignés.
+\item Les points C, F et G  sont alignés.
+\item Les droites (EF) et (DG) sont parallèles.
+\item Les droites (DG) et (CD) sont perpendiculaires.
+\item $\text{CE}=30$~m; $\text{ED}=10$~m et $\text{DG}=24$~m.
+\end{list}
+\end{minipage}
+%\hfill
+\begin{minipage}{0.4\linewidth}
+\rotatebox{-20}{
+\psset{unit=1cm,radius=1pt}
+\def\xmin {-1}   \def\xmax {5}
+\def\ymin {-1}   \def\ymax {5}
+\begin{pspicture}(\xmin,\ymin)(\xmax,\ymax)
+%\psgrid[subgriddiv=10, gridcolor=gray] 
+%\psaxes[arrowsize=3pt 3, ticksize=-2pt 2pt, labels=none](0,0)(\xmin,\ymin)(\xmax,\ymax)
+%\uput[dl](0,0){$O$}
+\Cnode*(0,0){A} \Cnode*(2,0){D} \Cnode*(2,4){C} \Cnode*(0,4){B}
+\Cnode*(4.4,0){G} \Cnode*(2,1){E} \Cnode*(3.8,1){F}
+\psframe[fillstyle=solid,fillcolor=lightgray](A)(C)
+\psline(C)(G)
+\pspolygon[fillstyle=hlines,hatchwidth=0.5pt](D)(E)(F)(G)
+\psframe(A)(0.2,0.2) \psframe(D)(2.2,0.2) \psframe(B)(0.2,3.8) \psframe(C)(1.8,3.8) 
+\uput[l]{20}(A){A} \uput[d]{20}(D){D} \uput[r]{20}(G){G} \uput[l]{20}(E){E} 
+\uput[ur]{20}(F){F} \uput[ul]{20}(B){B} \uput[ur]{20}(C){C} 
+\uput[d]{20}(1.1,2.5){bâtiment} \rput{20}(2.5,2){zone} \uput[d]{20}(2.75,2){de jeux}
+ \rput{20}(3,-0.6){potager} \psline{->}(3,-0.4)(3.2,0.55)
+\end{pspicture}
+}% fin du rotate
+\end{minipage}
+
+\begin{enumerate}
+\item %Déterminer la longueur CD.
+On a CD = CE + ED $ = 30 + 10 = 40$~(m).
+\item %Calculer la longueur CG. Arrondir au dixième de mètre près.
+Le théorème de Pythagore appliqué au triangle CDG rectangle en D s'écrit :
+
+CG$^2 = \text{CD}^2 + \text{DG}^2 = 40 ^2+ 24^2 = \np{1600} + 576 = \np{2176}$.
+
+Donc CG $ = \sqrt{\np{2176}} \approx 46,64$, soit 46,4~(m) au décimètre premier.
+\item %L'équipe veut séparer la zone de jeux et le potager par une clôture représentée par le segment [EF].\\
+%Montrer que la clôture doit mesurer 18~m.
+Les droites (DE) et (GF) sont sécantes en C et les droites (EF) et (DG) sont parallèles. le théorème de Thalès permet d'écrire :
+
+$\dfrac{\text{CE}}{\text{CD}} = \dfrac{\text{EF}}{\text{DG}}$ soit $\dfrac{30}{40} = \dfrac{\text{EF}}{24}$. On en déduit EF $= 24 \times \dfrac{30}{40} = 24 \times \dfrac34 = 6 \times 3 = 18$~(m).
+\item %Pour semer du gazon sur la zone de jeux, l'équipe décide d'acheter des sacs de 5~kg de graines à $22,90$~€ l'unité. Chaque sac permet de couvrir une surface d'environ 140~m$^2$.\\
+%Quel budget doit-on prévoir pour pouvoir semer du gazon sur la totalité de la zone de jeux?
+L'aire de la zone  de jeux est égale à :
+
+$\mathcal{A}(\text{CEF}) = \dfrac{\text{CE} \times \text{EF}}{2} = \dfrac{30 \times 18}{2} = 30 \times 9 = 270$~(m$^2$).
+
+Avec deux sacs on peut donc ensemencer l'aire de jeux ; il faut donc prévoir un budget de $2 \times 22,90 = 45,80$~\euro.
+\item %La direction du centre affirme que la surface du potager est plus grande que celle de la zone de jeux. A-t-elle raison?
+On a $\mathcal{A}(\text{CDG}) = \dfrac{\text{CD} \times \text{DG}}{2} = \dfrac{40 \times 24}{2} = 40 \times 12 = 480$~(m$^2$).
+
+Par différence on a : $\mathcal{A}(\text{DEFG}) = \mathcal{A}(\text{CDG}) - \mathcal{A}(\text{CEF}) = 480 - 270 = 210$~(m$^2$).
+
+On a $210 < 280$, donc la direction du centre a tort.
+\end{enumerate}
+
+\bigskip
+

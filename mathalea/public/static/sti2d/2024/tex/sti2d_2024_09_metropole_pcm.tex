@@ -1,0 +1,66 @@
+\begin{center}
+\textbf{Isolation phonique et réverbération}
+\end{center}
+
+La réverbération est un phénomène acoustique qui désigne la persistance d'un son dans un espace clos lorsque sa source a cessé d'émettre.
+
+Pour atténuer ce phénomène, une solution consiste à installer des panneaux de matériaux absorbants acoustiques sur les murs. Cet exercice étudie les propriétés d'absorption acoustique de deux matériaux, la mousse de mélamine et le feutre acoustique.
+
+\textbf{Donnée :} On rappelle la relation entre niveau sonore et intensité acoustique :
+\[L = 10\log \dfrac{I}{I_0}\]
+où :
+\begin{itemize}
+\item $L$ est le niveau sonore en dB ;
+\item $I$ est l'intensité acoustique du son considéré en W \:$\cdot$~m$^{-2}$ ;
+\item $I_0$ est l'intensité acoustique correspondant au seuil conventionnel d'audibilité, soit $10^{-12}$ W $\cdot$~m$^{-2}$ ;
+\item log désigne le logarithme décimal.
+\end{itemize}
+
+\medskip
+
+\begin{enumerate}
+\item Calculer la valeur de l'intensité acoustique $I_1$ correspondant à un son de niveau sonore $L_1 = 85$~dB.
+\end{enumerate}
+
+\medskip
+
+Pour caractériser l'absorption des ondes sonores dans la mousse de mélamine, on place une source d'ondes sonores en contact avec une plaque de ce matériau, comme représenté sur la figure 1. On note $I(x)$ l'intensité acoustique de l'onde sonore après traversée d'une épaisseur $x$ de matériau absorbant.
+
+\begin{center}
+\psset{unit=1cm,arrowsize=2pt 3}
+\begin{pspicture}(0,-0.6)(14,2.5)
+\psframe(3.5,0.3)(7.6,2)
+\rput(5.55,1.5){Source d'ondes}\rput(5.55,0.9){sonores}
+\psframe[fillstyle=solid,fillcolor=cyan](7.6,0)(10.7,2.5)
+\psline[linewidth=1.25pt,linecolor=blue](7.6,0)(7.6,2.5)
+\psline[linewidth=1.25pt,linecolor=blue]{->}(7.6,1.15)(10.5,1.15)
+\uput[d](9.05,1.15){Épaisseur $x$}
+%\piccaptionside
+\rput(7,-0.5){Figure 1 - Émission d'une onde sonore dans une plaque de mousse de mélamine.}
+\end{pspicture}
+\end{center}
+
+\medskip
+
+Dans un modèle simple, on montre que l'intensité sonore $I(x)$ dans la mousse de mélamine vérifie la relation :
+\[\dfrac{\text{d}I}{\text{d}x} = - \mu  I(x)\]
+
+où $\mu$ est un coefficient caractéristique du matériau.
+
+Pour la mousse de mélamine, on a : 
+$\mu = 0,262$ cm$^{-1}$.
+
+Pour des valeurs de x, en cm, l'intensité acoustique I(x) peut donc être obtenue en résolvant l'équation différentielle :
+\[(E) \::\quad y'= -0,262y\]
+
+\begin{enumerate}[resume]
+\item Déterminer les solutions sur $[0~;~+\infty[$ de l'équation différentielle $(E)$.
+\item Montrer que la fonction $f$ définie sur $[0~;~+\infty[$ par :
+\[f(x) = 3,2\cdot 10^{-4}\e^{-0,262x},\]
+est la solution particulière de $(E)$ vérifiant la condition initiale $f(0) = 3,2\cdot 10^{-4}$.
+\item Résoudre sur $[0~;~+\infty[$ l'équation :
+\[\e^{-0,262x} =0,5.\]
+Déterminer la distance de propagation $d$ au bout de laquelle l'intensité acoustique de l'onde est divisée par 2.
+\end{enumerate}
+
+\bigskip

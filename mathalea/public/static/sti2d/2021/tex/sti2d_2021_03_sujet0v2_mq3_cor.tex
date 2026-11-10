@@ -1,0 +1,39 @@
+
+\medskip
+
+\begin{enumerate}
+\item On place les points A, B et C dans un repère :
+
+\begin{center}
+\psset{unit=1cm}
+\def\xmin {-3}   \def\xmax {3}
+\def\ymin {-5}   \def\ymax {2}
+\begin{pspicture*}(\xmin,\ymin)(\xmax,\ymax)
+\psgrid[subgriddiv=1,  gridlabels=0, gridcolor=lightgray] 
+\psaxes[arrowsize=3pt 3, ticksize=-2pt 2pt, labels=none](0,0)(\xmin,\ymin)(\xmax,\ymax) 
+\psaxes[linewidth=1.5pt]{->}(0,0)(1,1)[$\vect u$,-90][$\vect v$,180]
+\uput[dl](0,0){O}
+\pspolygon[showpoints,linecolor=blue](2,-2)(-2,-2)(0,-4)
+{\blue
+\uput[ur](2,-2){A} \uput[ul](-2,-2){B} \uput[dr](0,-4){C} 
+}
+\end{pspicture*}
+\end{center}
+
+\item On calcule les longueurs AB, BC et AC.
+
+\begin{list}{\textbullet}{}
+\item $\text{AB} = \left | z_{\text B} - z_{\text A} \right | = \left | -2-2\text{i} -2+2\text{i} \right | = \left | -4 \right | = 4$
+\item  $\text{BC} = \left | z_{\text C} - z_{\text B} \right | = \left | -4\text{i} +2+2\text{i} \right | = \left | 2-2\text{i} \right | = \ds\sqrt{2^2 + (-2)^2} = \ds\sqrt{8} = 2\sqrt{2}$ 
+\item $\text{AC} = \left | z_{\text C} - z_{\text A} \right | = \left | -4\text{i} -2+2\text{i} \right | = \left | -2-2\text{i} \right | = \ds\sqrt{(-2)^2 + (-2)^2} = \ds\sqrt{8} = 2\sqrt{2}$ 
+\end{list}
+
+$\text{BC} = \text{AC}$ donc le triangle ABC est isocèle.
+
+$\text{BC}^2 + \text{AC}^2 = 8 + 8 = 16 = 4^2 =  \text{AB}^2$ donc d'après la réciproque du théorème de Pythagore, le triangle ABC est rectangle en C.
+
+Donc  le triangle ABC est isocèle rectangle en C.
+\end{enumerate}
+
+\bigskip
+

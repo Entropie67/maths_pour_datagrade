@@ -1,0 +1,116 @@
+
+\medskip
+
+\textbf{Vous traiterez 4 questions au choix parmi les 6 questions proposées.}
+
+\medskip
+
+Dans cet exercice, on s'intéresse à l'énergie stockée dans la batterie d'un téléphone portable. Cette grandeur s'exprime en kW\cdot h. Lorsque la batterie est totalement chargée, l'énergie stockée vaut 0,715 kW\cdot h.
+
+Lors du branchement de la batterie vide sur une borne de recharge, l'énergie stockée dans la batterie (en kW\cdot h) en fonction du temps $t$ (en heure) est modélisée par une fonction $f$ définie sur $[0~;~+\infty[$ par:
+
+\[f(t) = a \e^{-t} + b \text{, où $a$ et $b$ sont deux réels à déterminer.}\]
+
+\bigskip
+
+\textbf{Question 1}
+
+\medskip
+
+\begin{enumerate}
+\item Sachant que $\displaystyle\lim_{t \to +\infty} f(t) = 0,715$, déterminer la valeur de $b$.
+\item Sachant que $f(0) = 0$, déterminer la valeur de $a$.
+\end{enumerate}
+
+\medskip
+		
+\textbf{Dans les questions suivantes, on admet que pour tout nombre réel} \boldmath$t \geqslant 0~:$\unboldmath
+
+\boldmath\[f(t) = -0,715 \e^{-t} + 0,715.\]\unboldmath
+
+\bigskip
+
+\textbf{Question 2}
+
+\medskip
+
+Montrer que pour tout nombre réel $t \geqslant 0,\: f(t) < 0,715$.
+
+\bigskip
+
+\textbf{Question 3}
+
+\medskip
+
+\begin{enumerate}
+\item Déterminer la fonction dérivée $f'$ de la fonction $f$.
+\item En déduire le sens de variation de la fonction $f$ sur $[0~;~+\infty[$.
+\end{enumerate}
+
+\bigskip
+
+\textbf{Question 4}
+
+\medskip
+
+La durée de demi-charge est le temps nécessaire pour charger à 50\,\% une batterie qui était vide au départ. 
+
+\smallskip
+
+Déterminer la durée de demi-charge de la batterie de ce téléphone en minute et seconde, arrondie à la seconde.
+
+\bigskip
+
+\textbf{Question 5}
+
+\medskip
+
+On considère la fonction en langage Python suivante :
+
+\begin{center}
+\fbox{\begin{tabular}{l}
+from math import exp\\
+def temps(pourcentage) :\\
+\quad t = 0\\
+\quad y = 0\\
+while y < pourcentage$*0.715$:\\
+\qquad t = t+1/60\\
+\qquad y = - 0.715*exp(-t)+0.715\\
+return(t)
+\end{tabular}
+}
+\end{center}
+
+\smallskip
+
+Que renvoie l'exécution de l'instruction {\ttfamily temps(0.15)} ? 
+
+Interpréter ce résultat dans le contexte de l'exercice.
+
+\bigskip
+
+\textbf{Question 6}
+
+\medskip
+
+On considère la fonction $F$ définie sur $[0~;~+\infty[$ par :
+
+\[F(t) = 0,715 t + 0,715 \e^{-t}.\]
+
+\begin{enumerate}
+\item Vérifier que $F$ est une primitive de $f$ sur $[0~;~+\infty[$.
+\end{enumerate}
+
+\smallskip
+
+On admet que l'énergie stockée moyenne de la batterie sur [0~;~3,5] est égale à :
+
+\[m = \dfrac{1}{3,5} [F(3,5) - F(0)].\]
+
+\begin{enumerate}[resume]
+\item Cette énergie stockée moyenne est-elle égale à la moitié de l'énergie stockée maximale ? Justifier la réponse.
+\end{enumerate}
+
+\bigskip
+
+

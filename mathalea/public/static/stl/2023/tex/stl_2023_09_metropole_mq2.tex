@@ -1,0 +1,25 @@
+
+\medskip
+
+Soit la fonction $f$ définie sur $[0~;~ +\infty[$ et $\mathcal{C}_f$ sa courbe représentative donnée sur le graphique ci-dessous.
+
+On admet que $f$ est dérivable sur $[0~;~ +\infty[$ et on note $f'$ sa dérivée.
+
+Soit $T$ la tangente à la courbe $\mathcal{C}_f$ au point d'abscisse 2.
+
+Déterminer par lecture graphique $f(2)$ et $f'(2)$.
+
+\begin{center}
+\psset{unit=0.75cm,arrowsize=2pt 3}
+\begin{pspicture*}(-2.1,-6.2)(10.2,2.2)
+\psgrid[gridlabels=0pt,subgriddiv=1,gridwidth=0.2pt]
+\psaxes[linewidth=1.25pt,labelFontSize=\scriptstyle]{->}(0,0)(-1.95,-6.2)(10.2,2.2)
+\psaxes[linewidth=1.25pt,labelFontSize=\scriptstyle](0,0)(-2,-6.2)(10,2.2)
+\psplot[plotpoints=2000,linewidth=1.25pt, linecolor=blue]{0}{10}{15 x mul 2.71828 x neg exp mul neg}
+\psplotTangent{2}{7}{15 x mul 2.71828 x neg exp mul neg}
+\uput[dr](4.1,-1){\blue $\mathcal{C}_f$}
+\end{pspicture*}
+\end{center}
+
+\bigskip
+

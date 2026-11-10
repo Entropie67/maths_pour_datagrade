@@ -1,0 +1,88 @@
+{
+  "questions": [
+   {
+      "themes": "Exponentielle",
+      "level": "1",
+      "id": "exp1",
+      "title": "Propriété exponentielle produit",
+      "question": "Compléter l'égalité $e^{a} \\times e^{b}=$",
+      "answer": ["e^{a+b}", "e^{b+a}"],
+      "keys": ["a", "b", "EXP", "x", "n"]
+    },
+    {
+      "themes": "Exponentielle",
+      "level": "1",
+      "id": "exp2",
+      "title": "Propriété exponentielle puissance",
+      "question": "Compléter l'égalité $\\left(e^{a}\\right)^n=$",
+      "answer": ["e^{a\\times n}", "e^{n \\ times a}", "e^{an}", "e^{na}"],
+      "keys": ["a", "b", "e", "x", "n"]
+    },
+    {
+      "themes": "Exponentielle",
+      "level": "1",
+      "id": "exp3",
+      "title": "Propriété exponentielle puissance négative",
+      "question": "Compléter l'égalité $e^{-a}=$",
+      "answer": "\\dfrac{1}{e^{a}}",
+      "keys": ["a", "b", "e", "x", "n"]
+    },
+    {
+      "themes": "Exponentielle",
+      "level": "1",
+      "id": "exp4",
+      "title": "Propriété exponentielle à l'origine",
+      "question": "Compléter l'égalité $e^{0}=$",
+      "answer": "1"
+    },
+    {
+      "themes": "Exponentielle",
+      "level": "1",
+      "id": "exp5",
+      "title": "Nombre $\\mathrm{e}$",
+      "question": "Donner une valeur approchée du nombre $\\mathrm{e}$ au centième",
+      "answer": ["2,72","2.72"]
+    },
+    {
+      "themes": "Exponentielle",
+      "level": "1",
+      "id": "exp6",
+      "type":"qcm",
+      "title": "Variations (QCM)",
+      "question": "Quelle est le sens de variation de la fonction exponentielle sur $\\mathbb R$ ?",
+      "answer":"croissante",
+      "badPropositions": ["décroissante", "croissante puis décroissante", "décroissante puis croisante"]
+  
+    },
+    {
+      "themes": "Exponentielle",
+      "level": "1",
+      "id": "exp7",
+      "type":"text",
+      "title": "Variations",
+      "question": "Quelle est le sens de variation de la fonction exponentielle sur $\\mathbb R$ ?",
+      "answer":["croissante","croissante sur \\mathbb{R}"],
+      "keys" :["\\mathbb{R}"]
+    },
+    {
+      "themes": "Exponentielle",
+      "level": "1",
+      "id": "exp8",
+       "type":"qcm",
+      "title": "Signe (QCM)",
+      "question": "Quelle est le signe de la fonction exponentielle sur $\\mathbb R$ ?",
+      "answer":"positive",
+      "badPropositions": ["négative", "positive puis négative", "négative puis positive"]
+  
+    },
+    {
+      "themes": "Exponentielle",
+      "level": "1",
+      "id": "exp9",
+       "type":"text",
+      "title": "Signe",
+      "question": "Quelle est le signe de la fonction exponentielle sur $\\mathbb R$ ?",
+      "answer":"positive"
+    }
+  ]
+}

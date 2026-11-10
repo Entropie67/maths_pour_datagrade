@@ -1,0 +1,104 @@
+
+\medskip
+
+%On considère le programme de calcul suivant :
+%
+%\medskip
+%
+%\begin{itemize}
+%\item[$\bullet~~$]Choisir un nombre
+%\item[$\bullet~~$]Prendre le carré de ce nombre
+%\item[$\bullet~~$]Multiplier le résultat par 2
+%\item[$\bullet~~$]Ajouter le nombre de départ
+%\item[$\bullet~~$]Soustraire 66
+%\end{itemize}
+%
+%\medskip
+
+\begin{enumerate}
+\item 
+	\begin{enumerate}
+		\item %Montrer que si le nombre choisi au départ est 4, le résultat obtenu est $-30$.
+On a $4^2 = 16$, puis $16 \times 2 = 32$, puis
+		
+$32 + 4 = 36$, puis $36 - 66 = - 30$.
+		\item %Quel résultat obtient-on si le nombre choisi au départ est $-3$ ?
+$(-3)^2 = 9$, puis $2 \times 9 = 18$, puis 
+		
+$18 + (- 3) = 15$ et $15 - 66 = - 51$.
+	\end{enumerate}
+\item 
+	\begin{enumerate}
+		\item %On s'intéresse au bloc d'instruction ci-dessous intitulé \og Programme de calcul \fg.
+%On souhaite le compléter pour calculer le résultat obtenu avec le programme de calcul en fonction du nombre choisi au départ.
+
+%On précise que deux variables ont été créées: \og nombre choisi\fg{} qui correspond au nombre choisi au départ, et \og Résultat \fg.
+
+%\begin{center}
+%\begin{scratch}
+%\blockcontrol{Programme de calcul}
+%\end{scratch}
+%
+%\begin{scratch}
+%\blockmove{mettre{\selectmenu{Résultat} à \ovaloperator{\ovalmove{A} * \ovalmove{nombre choisi}}}}
+%\blockmove{mettre{\selectmenu{Résultat} à \ovaloperator{\ovalmove{B} * \ovalmove{nombre choisi}}}}
+%\blockmove{mettre{\selectmenu{Résultat} à \ovaloperator{Résultat + \ovalmove{nombre choisi}}}}
+%\blockmove{mettre{\selectmenu{Résultat} à \ovaloperator{Résultat - \ovalmove{66}}}}
+%\end{scratch}
+%\end{center}
+%Écrire sur votre copie le contenu qui doit être inséré dans les emplacements A et B. 
+
+Pour A : on met nombre choisi (pour obtenir le carré).
+
+Pour B : on met 2 (pour calculer le double).
+%\textbf{Aucune justification n'est attendue pour cette question.}
+		\item  %Lucie insère le bloc précédent dans le script ci-dessous et observe la réponse donnée par le lutin:
+
+%\begin{tabular}{l l}
+%\multicolumn{1}{c}{Script}&\multicolumn{1}{c}{Réponse du lutin}\\
+%\begin{scratch}
+%\blockinit{Quand \greenflag est cliqué}
+%\blockmove{mettre{\selectmenu{nombre choisi} à \ovalmove{0}}}
+%\blockrepeat{répéter \ovalnum{20} fois}
+%{
+%\blockcontrol{Programme de calcul}
+%\blockif{si {\selectmenu{Résultat = 0}  alors}}
+%{\blocklook{dire {regrouper{On peut choisir comme nombre de départ et {\ovalmove{nombre choisi}}}}}
+%\blockmove{mettre{\selectmenu{nombre choisi} à \ovalmove{nombre choisi} + \ovalnum{0,5}}}
+%}
+%}
+%\end{scratch}&On peut choisir comme nombre du départ 5,5.
+%%
+%\end{tabular}
+%
+%À quoi correspond la valeur 5,5 donnée comme réponse par le lutin avec le programme de Lucie ?
+La valeur 5,5 est une valeur possible comme nombre de départ pour que le résultat final soit $0$.
+	\end{enumerate}
+\item On nomme $x$ le nombre choisi au départ.
+	\begin{enumerate}
+		\item %Déterminer l'expression obtenue par ce programme de calcul en fonction de $x$.
+		On a successivement :
+
+$x\:;\quad x^2\:;\quad  2x^2\:;\quad  2x^2 + x\:;\quad  2x^2 + x - 66$.
+		\item %On admet que $(2x - 11) (x + 6)$ est la forme factorisée de l'expression trouvée à la question précédente.
+		
+%Pour quelle(s) valeur(s) de $x$, le résultat obtenu avec le programme est-il égal à $0$ ?
+$2x^2 + x - 66 = (2x - 11) (x + 6) = 0$ : un produit est nul si l'un des facteurs est nul, soit 
+
+$\left\{\begin{array}{l c l}
+2x - 11&=&0\\
+x + 6&=&0
+\end{array}\right.$, ou encore $\left\{\begin{array}{l c l}
+2x &=&11\\
+x &=&- 6
+\end{array}\right.$ et enfin $\left\{\begin{array}{l c l}
+x &=&\frac{11}{2}\\
+x &=&- 6
+\end{array}\right.$
+
+Les nombres qui donnent donc comme résultat final 0, sont 5,5 (déjà vu) et $- 6$.
+	\end{enumerate}
+\end{enumerate}
+
+\bigskip
+

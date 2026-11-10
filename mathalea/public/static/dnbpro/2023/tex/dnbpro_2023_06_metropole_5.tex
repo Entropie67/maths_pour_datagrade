@@ -1,0 +1,49 @@
+
+\vspace{0.25cm}
+
+Les deux programmes ci-dessous sont réalisés à l'aide du logiciel Scratch.
+
+\medskip
+
+\textbf{Programme A~~~~}
+\begin{scratch}%[num blocks,baseline=10]
+\blockinit{quand \greenflag est cliqué}
+\blockmove{demander \ovalnum{Saisir une valeur} et attendre}
+\blockvariable{mettre \selectmenu{x} à \ovalmove{réponse}}
+\blockvariable{mettre \selectmenu{x} à \ovaloperator{\ovalmove{x} * \ovalnum{6}}}
+\blocklook{Dire \ovaloperator{regrouper \ovalnum{Le résultat est} et \ovalmove{x}} pendant \ovalnum{3} secondes}
+\end{scratch}
+
+\bigskip
+
+\textbf{Programme B~~~~}
+\begin{scratch}[num blocks]
+\renewcommand*\numblock[1]{Ligne \no \the\numexpr#1~~}
+\blockinit{quand \greenflag est cliqué}
+\renewcommand*\numblock[1]{\the\numexpr#1~~}
+\blockmove{demander \ovalnum{Saisir une valeur} et attendre}
+\blockvariable{mettre \selectmenu{x} à \ovalmove{réponse}}
+\blockvariable{mettre \selectmenu{x} à \ovaloperator{\ovalmove{x} * \ovalnum{2}}}
+\blockvariable{mettre \selectmenu{x} à \ovaloperator{\ovalmove{x} + \ovalnum{26}}}
+\blocklook{Dire \ovaloperator{regrouper \ovalnum{Le résultat est} et \ovalmove{x}} pendant \ovalnum{3} secondes}
+\end{scratch}
+
+\begin{enumerate}
+\item  Déterminer le résultat affiché par le programme A si la valeur saisie est 5.
+\item La valeur 4 est saisie dans le programme B, écrire sur la copie le calcul et le résultat affiché par ce programme.
+\item Les instructions des lignes 4 et 5 du programme B peuvent être remplacées par une seule ligne, à choisir parmi les quatre propositions suivantes. Recopier sur la copie la bonne proposition.
+
+\begin{tabularx}{\linewidth}{ *4{>{\centering\arraybackslash} X}}
+\textbf{Proposition 1} & \textbf{Proposition 2}  & \textbf{Proposition 3}  & \textbf{Proposition 4} \\
+{\ovaloperator{\ovalmove{x} * \ovaloperator{\ovalmove{x} * \ovalnum{2}}}} 
+&{\ovaloperator{\ovalmove{x} + \ovalnum{30}}} 
+&{\ovaloperator{\ovaloperator{\ovalmove{x} * \ovalnum{4}} + \ovalnum{30}}} &{\ovaloperator{\ovaloperator{\ovalmove{x} * \ovalnum{2}} + \ovalnum{26}}}\\
+\end{tabularx}
+
+\item On note $x$ le nombre saisi. \\
+L'expression algébrique qui traduit le programme B est $2x+26$.\\
+Écrire sur la copie l'expression algébrique qui traduit le programme A.
+\item Un seul nombre conduit les deux programmes à afficher le même résultat.\\
+Déterminer ce nombre.
+\end{enumerate}
+

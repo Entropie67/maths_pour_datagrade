@@ -1,0 +1,35 @@
+
+\medskip
+
+\begin{minipage}{0.65\linewidth}
+Les points O, A et B sont alignés si les vecteurs $\vectt{OA}$ et $\vectt{OB}$ sont colinéaires.
+
+$\vectt{OA}$ a pour affixe $z_{\text A}$ et $\vectt{OB}$ a pour affixe $z_{\text B}$.
+
+$z_{\text{A}} = 3\e^{- \text{i}\frac{\pi}{3}} = 3 \left ( \cos \left (-\dfrac{\pi}{3}\right ) + \text{i} \sin \left ( -\dfrac{\pi}{3} \right ) \right ) = 3\left ( \dfrac{1}{2} - \text{i} \dfrac{\sqrt{3}}{2} \right )\\
+\phantom{z_{\text{A}}}
+= -\dfrac{3}{2}\left ( -1 + \text{i} \sqrt{3}\right ) = -\dfrac{3}{2} z_{\text B}$
+
+Donc les vecteurs $\vectt{OA}$ et $\vectt{OB}$ sont colinéaires, et donc les points O, A et B sont alignés.
+\end{minipage}
+\hfill
+\begin{minipage}{0.25\linewidth}
+%\begin{center}
+\psset{unit=0.7cm}
+\def\xmin {-2}   \def\xmax {3}
+\def\ymin {-3}   \def\ymax {3}
+\begin{pspicture*}(\xmin,\ymin)(\xmax,\ymax)
+\psgrid[subgriddiv=1,  gridlabels=0, gridcolor=lightgray] 
+\psaxes[arrowsize=3pt 3, ticksize=-2pt 2pt, labels=none](0,0)(\xmin,\ymin)(\xmax,\ymax) 
+\psaxes[linewidth=1.5pt]{->}(0,0)(1,1)
+\uput[dl](0,0){O}
+\psline[showpoints,linecolor=blue](3;-60)(-1,1.732)(0,0)
+{\blue
+\uput[ur](3;-60){A} \uput[ur](-1,1.732){B}
+}
+\end{pspicture*}
+%\end{center}
+\end{minipage}
+
+\bigskip
+

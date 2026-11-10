@@ -1,0 +1,77 @@
+
+\medskip
+
+Dans la commune de Gabin, le tarif de ramassage des bacs à ordures ménagères est composé:\\
+\hspace*{2cm}\textbullet~~d'une partie fixe de 115~\euro{} par an,\\
+\hspace*{2cm}\textbullet~~d'une partie variable de 5~\euro{} par ramassage.
+
+Le tableau ci-après, donne des coûts à l'année en fonction du nombre de ramassages.
+
+%\medskip
+
+\begin{enumerate}
+\item $5\times 14 + 115 = 70 + 115 = 185$
+
+Donc Gabin paie 185~\euro{} pour $14$~ramassages dans l'année.
+
+On complète le tableau.
+
+{\renewcommand{\arraystretch}{1.5}
+\begin{tabularx}{\linewidth}{|m{5cm}|*{4}{>{\centering \arraybackslash}X|}}\hline
+Nombre de ramassages (x)&1&10&14&20\\ \hline
+Coût à l'année en euros (\euro)&135 &165& $\blue 185$&215\\ \hline
+Point de coordonnées $(x~;~y)$&A (4~;~135)&B (10~;~165)&C (14~;~$\blue 185$) & D (20~;~215)\\ \hline
+\end{tabularx}}
+
+\item On complète le graphique en plaçant les points C et D et en traçant la droite passant par les points A, B, C et D.
+
+\begin{center}
+\psset{xunit=0.5cm,yunit=0.1cm,arrowsize=3pt 3}
+\begin{pspicture}(-1,-3)(25,140)
+\uput[u](22,0){\footnotesize Nombre de ramassages ($x$)}
+\uput[r](0,137){\footnotesize Coût payé (\euro) ($y$)}
+\psaxes[linewidth=1.25pt,labelFontSize=\scriptstyle,Oy=100,Dy=5]{->}(0,0)(0,0)(25,140)
+\multido{\n=1+1}{25}{\psline[linewidth=0.15pt](\n,0)(\n,140)}
+\multido{\n=0+5}{29}{\psline[linewidth=0.15pt](0,\n)(25,\n)}
+\psdots[dotstyle=+,dotscale=1.5](4,35)(10,65)
+\uput[ul](4,35){A}\uput[ul](10,65){B}
+%%%%%
+\psset{linecolor=blue}
+\psdots[dotstyle=+,dotscale=1.5](14,85)(20,115)
+\uput[ul](14,85){\blue C} \uput[ul](20,115){\blue D}
+\psplot{0}{23}{115 5 x mul add 100 sub}
+\psline[linestyle=dashed,ArrowInside=->,ArrowInsideNo=2](0,95)(16,95)
+\psline[linestyle=dashed,ArrowInside=->,ArrowInsideNo=3](16,95)(16,0)
+\uput*[l](0,95){\blue 195} \uput*{8pt}[d](16,0){\blue 16} 
+\end{pspicture}
+\end{center}
+
+\item Le coût à payer en euros en fonction du nombre $x$ de ramassages dans l'année peut être modélisé par la fonction $f$ d'expression $f(x) = 5x + 115$.
+
+$f(0)\neq 0$ donc cette fonction n'est pas une fonction linéaire.
+
+\item Gabin ne souhaite pas dépasser 195~\euro{} cette année.
+
+%Déterminer le nombre maximum de ramassages correspondant à cet objectif. \\
+%Justifier la réponse.
+
+Donc le nombre $x$ de ramassages doit vérifier l'inéquation $f(x) \leqslant 195$:
+
+c'est-à-dire
+$5x+115 \leqslant 195$
+c'est-à-dire
+$5x\leqslant 195-115$
+c'est-à-dire
+$5x\leqslant 80$
+c'est-à-dire
+$x \leqslant \dfrac{80}{5}$
+soit
+$x \leqslant 16$; cela correspond donc à un maximum de 16 ramassages.
+
+%\smallskip
+
+
+\end{enumerate}
+
+\vspace{0.5cm}
+

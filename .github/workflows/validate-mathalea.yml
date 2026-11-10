@@ -1,0 +1,79 @@
+name: Valider l'import MathALÉA
+on:
+  workflow_dispatch:
+  push:
+    branches: [integration/mathalea-complet]
+  pull_request:
+permissions:
+  contents: read
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24.13.0'
+      - name: Vérifier la copie amont
+        run: node scripts/verify-upstream.mjs
+      - name: Vérifier les fichiers des annales
+        run: python scripts/verify-annales.py
+      - name: Installer les dépendances verrouillées
+        working-directory: mathalea
+        run: |
+          npm install --global pnpm@12.6.0
+          pnpm install --frozen-lockfile
+      - name: Générer les catalogues et tester
+        working-directory: mathalea
+        run: |
+          pnpm makeJson
+          pnpm prebuild-unit-tests
+      - name: Vérifier la configuration des tickets sans réseau
+        run: node --test scripts/test-ticket-config.mjs
+      - name: Compiler l'application complète et le moteur
+        working-directory: mathalea
+        env:
+          MOTEUR_VERSION: f03d4179f5ebade4828bb3b78e8cf2021309a37b
+        run: |
+          pnpm build
+          pnpm build:moteur
+      - name: Tester le navigateur
+        shell: bash
+        run: |
+          set -euo pipefail
+          cd mathalea
+          pnpm exec playwright install --with-deps chromium
+          env -u CI pnpm dev --port 5173 --strictPort > ../serveur.log 2>&1 &
+          SERVER_PID=$!
+          trap 'kill "$SERVER_PID"' EXIT
+          cd ..
+          for attempt in $(seq 1 90); do
+            if curl --fail --silent http://localhost:5173/alea/ > /dev/null; then break; fi
+            sleep 2
+          done
+          node scripts/smoke-browser.mjs
+      - name: Tester les annales locales sans accès aux médias externes
+        shell: bash
+        run: |
+          set -euo pipefail
+          cd mathalea
+          env -u CI pnpm exec vite --config ../vite.annales-locales.config.mjs --port 5180 --strictPort > ../annales-serveur.log 2>&1 &
+          SERVER_PID=$!
+          trap 'kill "$SERVER_PID"' EXIT
+          cd ..
+          for attempt in $(seq 1 90); do
+            if curl --fail --silent http://localhost:5180/alea/ > /dev/null; then break; fi
+            sleep 2
+          done
+          node scripts/test-annales-locales.mjs
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: validation-mathalea
+          path: |
+            validation/browser-smoke.json
+            validation/annales-browser.json
+            validation/screenshots/
+            serveur.log
+            annales-serveur.log

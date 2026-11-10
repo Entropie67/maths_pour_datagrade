@@ -1,0 +1,147 @@
+
+\medskip
+
+\textbf{Dans cet exercice, seulement 4 questions au choix parmi les 6 questions proposées sont à traiter. Toutes ces questions sont indépendantes les unes des autres.}
+
+\bigskip
+
+\textbf{Question 1}
+
+\medskip
+
+\parbox{0.45\linewidth}{On a tracé dans le repère orthonormé ci-contre la courbe représentative $\mathcal{C}_f$ de la fonction $f$ définie sur $]0~;~+\infty[$ par :
+\[f(x) = \ln (x).\]
+
+On note A le point de $\mathcal{C}_f$ de coordonnées $(\e~;~1)$.
+
+On note $T$ la tangente à la courbe $\mathcal{C}_f$ au point A.
+
+La tangente $T$ passe-t-elle par l'origine du repère ? Justifier.}\hfill
+\parbox{0.52\linewidth}{
+\psset{unit=1.2cm}
+\begin{pspicture*}(-0.5,-2.2)(6.2,2.2)
+\psgrid[gridlabels=0pt,subgriddiv=1,gridwidth=0.1pt]
+\psaxes[linewidth=1.25pt,labelFontSize=\scriptstyle]{->}(0,0)(-0.5,-2.2)(6.2,2.2)
+\psplot[plotpoints=2000,linewidth=1.25pt,linecolor=red]{0.1}{6.2}{x ln}
+\psline[linestyle=dashed,linewidth=1.25pt](0,1)(2.71828,1)(2.71828,0)
+\psdots(2.71828,1)\uput[ul](2.71828,1){A}
+\uput[u](5.3,1.5){\red $\mathcal{C}_f$}
+\end{pspicture*}}
+
+\bigskip
+
+\textbf{Question 2}
+
+\medskip
+
+On considère la fonction $f$ définie sur l'intervalle $[0,5~;~10]$ par :
+\[f(x) = x^2 - x - 2- 3 \ln (x).\]
+
+On note $f'$ la fonction dérivée de $f$.
+
+\medskip
+
+\begin{enumerate}
+\item Montrer que $f '(x) = \dfrac{(x + 1)(2x - 3)}{x}$ pour tout $x$ appartenant à l'intervalle [0,5~;~10].
+\item Montrer que $f$ admet un minimum sur l'intervalle [0,5~;~10] et préciser la valeur exacte de ce minimum.
+\end{enumerate}
+
+\bigskip
+
+\textbf{Question 3}
+
+\medskip
+
+\begin{enumerate}
+\item Résoudre dans $\R$ l'équation $\e^{\np{- 0.0434} x} = 0,01$. 
+
+On donnera la valeur exacte de la solution.
+\item Un signal de puissance initiale $P(0) = 6,75$~mW parcourt une fibre optique. 
+
+La puissance du signal, exprimée en mW, lorsque celui-ci a parcouru une distance de $x$ kilomètres depuis l'entrée est donnée par $P(x) = 6,75\e^{\np{- 0.0434} x}$.
+
+Quelle est la distance parcourue par le signal lorsque celui-ci aura perdu 99\,\% de sa puissance ? 
+
+On arrondira le résultat obtenu au kilomètre.
+\end{enumerate}
+
+\bigskip
+
+\textbf{Question 4}
+
+\medskip
+
+Le plan complexe est muni d'un repère orthonormé direct \Ouv. On considère
+les points A et B d'affixes respectives : 
+
+\[z_{\text{A}} = 3\e^{- \text{i}\frac{\pi}{3}} \quad \text{et}\quad z_{\text{B}}= - 1 + \text{i}\sqrt{3}.\]
+
+Les points O, A et B sont-ils alignés ?
+
+\bigskip
+
+\textbf{Question 5}
+
+\medskip
+
+\parbox{0.48\linewidth}{On considère la fonction $f$ définie sur l'intervalle
+[1~;~2] par:
+\[f(x) = x + \e^x - \dfrac{1}{x}.\]
+
+On a tracé dans le repère orthonormé ci-contre la courbe représentative $\mathcal{C}_f$ de la fonction $f$.
+
+On considère les points A(1~;~0) ; B(2~;~0) ; C(1~;~2); D(2~;~8) ; E(1~;~3) et F(2~;~9).
+
+On admet que la courbe $\mathcal{C}_f$ est au-dessus du segment [CD] et en dessous du segment [EF].
+
+\begin{enumerate}
+\item À l'aide du graphique, donner un encadrement d'amplitude 1 de l'intégrale : 
+
+\[\displaystyle\int_1^2 f(x)\: \text{d}x.\]
+
+\item Calculer la valeur exacte de $\displaystyle\int_1^2 f(x)\: \text{d}x$.
+\end{enumerate}} \hfill
+\parbox{0.48\linewidth}{\psset{yunit=1.5cm,xunit=1.5cm}
+\begin{pspicture*}(-0.5,-0.4)(3,9.2)
+\psgrid[gridlabels=0pt,subgriddiv=1,gridwidth=0.1pt]
+\psaxes[linewidth=1.25pt,labelFontSize=\scriptstyle]{->}(0,0)(0,0)(3,9.2)
+\psplot[plotpoints=2000,linewidth=1.25pt,linecolor=blue]{1}{2}{2.71828 x exp x add 1 x div sub}
+\psline[linestyle=dashed,linewidth=1.25pt](1,3)(2,9)
+\psline[linestyle=dashed,linewidth=1.25pt](1,2)(2,8)
+\uput[ur](1,0){A}\uput[ur](2,0){B}\uput[dr](1,2){C}
+\uput[ur](2,8){D}\uput[ul](1,3){E}\uput[l](2,9){F}
+\uput[l](1,2.75){\blue $\mathcal{C}_f$}
+\end{pspicture*}}
+
+\bigskip
+
+\textbf{Question 6}
+
+\medskip
+
+\begin{center}
+\fbox{
+\begin{minipage}{0.9\textwidth}
+\textbf{Rappel :} pour $a$ et $b$ deux réels, on a les formules suivantes :
+\[\bullet~~\cos(a + b) = \cos (a) \cos(b) - \sin(a) \sin(b)\]
+\[\bullet~~\cos(a - b) = \cos (a) \cos(b) + \sin(a) \sin(b)\]
+\[\bullet~~\sin(a + b) = \sin(a) \cos(b) + \cos (a) \sin(b)\]
+\[\bullet~~\sin(a - b) = \sin(a) \cos(b) - \cos (a) \sin(b)\]
+\end{minipage}}
+\end{center}
+
+La tension $u$ aux bornes d'un générateur, exprimée en volt, dépendant du temps $t$, exprimé en seconde, est donnée à l'instant $t$ par : 
+
+\[u(t) = 120 \cos(70t) - 120 \sin(70t).\]
+
+\begin{enumerate}
+\item Montrer que, pour tout $t$ de l'intervalle $[0~;~+\infty[$, \, $u(t) = 120\sqrt{2} \cos \left(70t + \dfrac{\pi}{4}\right)$.
+
+\item En déduire la fréquence $f = \dfrac{\omega}{2\pi}$, exprimée en Hz, délivrée par le générateur, où $\omega$ désigne la pulsation. 
+
+On arrondira le résultat à l'unité.
+\end{enumerate}
+
+\bigskip
+
+

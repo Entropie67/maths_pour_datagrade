@@ -1,0 +1,91 @@
+{
+  "questions": [
+    {
+      "themes": "Calcul littéral",
+      "level": "2",
+    "id": "lit1",
+      "title": "Carré d'une somme",
+      "question": "Développer $(a+b)^2$.",
+      "answer": "a^2 + 2ab + b^2",
+      "keys": ["a", "b"],
+      "comparison": "expressionsForcementReduites"
+    },
+    {
+      "themes": "Calcul littéral",
+      "level": "2",
+      "id": "lit2",
+      "title": "Carré d'une différence",
+      "question": "Développer $(a-b)^2$.",
+      "answer": "a^2 - 2ab + b^2",
+      "keys": ["a", "b"],
+      "comparison": "expressionsForcementReduites"
+    },
+    {
+      "themes": "Calcul littéral",
+      "level": "3",
+      "id": "lit3",
+      "title": "Produit d'une somme avec une différence",
+      "question": "Développer $(a-b)(a+b)$.",
+      "answer": "a^2 - b^2",
+      "keys": ["a", "b"],
+      "comparison": "expressionsForcementReduites"
+    },
+    {
+      "themes": "Calcul littéral",
+      "level": "4",
+      "id": "lit4",
+      "title": "Distributivité simple",
+      "question": "Développer $a\\times(b+c)$.",
+      "answer": "ab+ac",
+      "keys": ["a", "b", "c"],
+      "comparison": "expressionsForcementReduites"
+    },
+    {
+      "themes": "Calcul littéral",
+      "level": "3",
+      "id": "lit5",
+      "title": "Distributivité double",
+      "question": "Développer $(a+b)(c+d)$.",
+      "answer": "ac+ad+bc+bd",
+      "keys": ["a", "b", "c", "d"],
+      "comparison": "expressionsForcementReduites"
+    },
+    {
+      "themes": "Calcul littéral",
+      "level": "2",
+      "id": "lit6",
+      "title": "Identité remarquable",
+      "question": "Factoriser $a^2 + 2ab + b^2$.",
+      "answer": "(a+b)^2",
+      "keys": ["a", "b"],
+      "comparison": "isSame"
+    },
+    {
+      "themes": "Calcul littéral",
+      "level": "2",
+      "id": "lit7",
+      "title": "Identité remarquable",
+      "question": "Factoriser $a^2 - 2ab + b^2$.",
+      "answer": "(a-b)^2",
+      "keys": ["a", "b"]
+    },
+    {
+      "themes": "Calcul littéral",
+      "level": "3",
+      "id": "lit8",
+      "title": "Différence de deux carrés",
+      "question": "Factoriser $a^2 - b^2$.",
+      "answer": "(a-b)(a+b)",
+      "keys": ["a", "b"]
+    },
+    {
+      "themes": "Calcul littéral",
+      "level": "3",
+      "id": "lit9",
+      "title": "Factoriser",
+      "question": "Factoriser $ab+ac$.",
+      "answer": "a(b+c)",
+      "keys": ["a", "b", "c"]
+    }
+  ]
+}

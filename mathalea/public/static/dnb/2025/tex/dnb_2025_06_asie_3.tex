@@ -1,0 +1,73 @@
+
+Dans cet exercice, toutes les longueurs sont exprimées en centimètres.
+
+On considère :
+\begin{itemize}[label=$\bullet$]
+\item le rectangle ABCD tel que AD = $x$ et AB = $16 - 2x$ ;
+\item le carré EFGH tel que EF $= 2x$.
+\end{itemize}
+
+\psset{unit=0.85cm,arrowsize=2pt 3}
+\begin{center}
+\begin{pspicture}(0,0)(15,5)
+%\psgrid
+\psframe(0,2)(10,4)
+\psframe(11,0)(15,4)
+\psline[linewidth=0.8pt]{<->}(-0.5,2)(-0.5,4)
+\psline[linewidth=0.8pt]{<->}(0,1.8)(10,1.8)
+\psline[linewidth=0.8pt]{<->}(11,-0.5)(15,-0.5)
+\uput[l](-0.5,3){$x$}\uput[d](4.5,1.8){$16 - 2x$}\uput[d](13,-0.5){$2x$}
+\uput[l](0,2){A}\uput[ul](0,4){D}\uput[dr](10,2){B}\uput[ur](10,4){C}
+\uput[dl](11,0){E}\uput[l](11,4){H}\uput[dr](15,0){F}\uput[r](15,4){G}
+\psframe(0,2)(0.2,2.2)\psframe(0,4)(0.2,3.8)
+\psframe(10,4)(9.8,3.8) \psframe(10,2)(9.8,2.2)
+\psframe(11,0)(11.2,0.2) \psframe(15,0)(14.8,0.2)
+\psframe(15,4)(14.8,3.8) \psframe(11,4)(11.2,3.8)
+\end{pspicture}
+\end{center}
+
+\bigskip
+
+\textbf{PARTIE A :} Dans cette partie, $x = \np[cm]{1,5}$.
+
+\medskip
+
+\begin{enumerate}
+\item Calculer le périmètre du carré EFGH.
+\item Calculer AB.
+\item Construire en vraie grandeur le rectangle ABCD.
+\item Les périmètres de ABCD et EFGH sont-ils égaux ?
+\end{enumerate}
+
+\bigskip
+
+\textbf{PARTIE B :} Dans cette partie, on cherche pour quelle(s) valeur(s) de $x$, le périmètre du rectangle est égal au périmètre du carré.
+
+\medskip
+
+\begin{enumerate}
+\item Pour essayer de répondre au problème, on utilise la feuille de calcul suivante:
+
+\smallskip
+
+\renewcommand \arraystretch {1}
+\begin{tabularx}{\linewidth}{|c|m{3.85cm}|*{6}{>{\centering \arraybackslash}X|}}
+\cline{2-8}
+\multicolumn{1}{c|}{}&\centering A&B&C&D&E&F&G\\\hline
+1&Valeur de $x$&1&2&3&4&5&6\\\hline
+2&Périmètre du carré&8&16&24&32&40&48\\\hline
+3&Périmètre du rectangle&30&28&26&24&22&20\\\hline
+\end{tabularx}
+
+\begin{enumerate}
+\item Quel formule a-t-on pu saisir dans la cellule B2 avant de l'étirer jusqu'à G2?
+\item Ce tableau nous permet-il de trouver une valeur de $x$ pour laquelle les deux périmètres sont égaux ?
+\end{enumerate}
+
+\item 
+	\begin{enumerate}
+		\item Montrer que le périmètre du rectangle peut s'écrire $-2x + 32$.
+		\item Déterminer la solution au problème par la résolution d'une équation.
+	\end{enumerate}
+\end{enumerate}
+

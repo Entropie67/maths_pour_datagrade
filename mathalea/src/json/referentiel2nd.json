@@ -1,0 +1,2638 @@
+{
+  "PDT2nde": {
+    "Calcul littéral": {
+      "Développer factoriser": {
+        "2nd_calcul_litteral_001": {
+          "uuid": "2nd_calcul_litteral_001",
+          "url": "static/2nd/calcul_litteral_001.tex",
+          "png": "static/2nd/calcul_litteral_001.png",
+          "pngCor": "static/2nd/calcul_litteral_001_corr.png"
+        },
+        "2nd_calcul_litteral_002": {
+          "uuid": "2nd_calcul_litteral_002",
+          "url": "static/2nd/calcul_litteral_002.tex",
+          "png": "static/2nd/calcul_litteral_002.png",
+          "pngCor": "static/2nd/calcul_litteral_002_corr.png"
+        },
+        "2nd_calcul_litteral_003": {
+          "uuid": "2nd_calcul_litteral_003",
+          "url": "static/2nd/calcul_litteral_003.tex",
+          "png": "static/2nd/calcul_litteral_003.png",
+          "pngCor": "static/2nd/calcul_litteral_003_corr.png"
+        },
+        "2nd_calcul_litteral_004": {
+          "uuid": "2nd_calcul_litteral_004",
+          "url": "static/2nd/calcul_litteral_004.tex",
+          "png": "static/2nd/calcul_litteral_004.png",
+          "pngCor": "static/2nd/calcul_litteral_004_corr.png"
+        },
+        "2nd_calcul_litteral_005": {
+          "uuid": "2nd_calcul_litteral_005",
+          "url": "static/2nd/calcul_litteral_005.tex",
+          "png": "static/2nd/calcul_litteral_005.png",
+          "pngCor": "static/2nd/calcul_litteral_005_corr.png"
+        },
+        "2nd_calcul_litteral_006": {
+          "uuid": "2nd_calcul_litteral_006",
+          "url": "static/2nd/calcul_litteral_006.tex",
+          "png": "static/2nd/calcul_litteral_006.png",
+          "pngCor": "static/2nd/calcul_litteral_006_corr.png"
+        },
+        "2nd_calcul_litteral_007": {
+          "uuid": "2nd_calcul_litteral_007",
+          "url": "static/2nd/calcul_litteral_007.tex",
+          "png": "static/2nd/calcul_litteral_007.png",
+          "pngCor": "static/2nd/calcul_litteral_007_corr.png"
+        },
+        "2nd_calcul_litteral_008": {
+          "uuid": "2nd_calcul_litteral_008",
+          "url": "static/2nd/calcul_litteral_008.tex",
+          "png": "static/2nd/calcul_litteral_008.png",
+          "pngCor": "static/2nd/calcul_litteral_008_corr.png"
+        },
+        "2nd_calcul_litteral_009": {
+          "uuid": "2nd_calcul_litteral_009",
+          "url": "static/2nd/calcul_litteral_009.tex",
+          "png": "static/2nd/calcul_litteral_009.png",
+          "pngCor": "static/2nd/calcul_litteral_009_corr.png"
+        },
+        "2nd_calcul_litteral_010": {
+          "uuid": "2nd_calcul_litteral_010",
+          "url": "static/2nd/calcul_litteral_010.tex",
+          "png": "static/2nd/calcul_litteral_010.png",
+          "pngCor": "static/2nd/calcul_litteral_010_corr.png"
+        },
+        "2nd_calcul_litteral_011": {
+          "uuid": "2nd_calcul_litteral_011",
+          "url": "static/2nd/calcul_litteral_011.tex",
+          "png": "static/2nd/calcul_litteral_011.png",
+          "pngCor": "static/2nd/calcul_litteral_011_corr.png"
+        },
+        "2nd_calcul_litteral_012": {
+          "uuid": "2nd_calcul_litteral_012",
+          "url": "static/2nd/calcul_litteral_012.tex",
+          "png": "static/2nd/calcul_litteral_012.png",
+          "pngCor": "static/2nd/calcul_litteral_012_corr.png"
+        },
+        "2nd_calcul_litteral_013": {
+          "uuid": "2nd_calcul_litteral_013",
+          "url": "static/2nd/calcul_litteral_013.tex",
+          "png": "static/2nd/calcul_litteral_013.png",
+          "pngCor": "static/2nd/calcul_litteral_013_corr.png"
+        },
+        "2nd_calcul_litteral_014": {
+          "uuid": "2nd_calcul_litteral_014",
+          "url": "static/2nd/calcul_litteral_014.tex",
+          "png": "static/2nd/calcul_litteral_014.png",
+          "pngCor": "static/2nd/calcul_litteral_014_corr.png"
+        },
+        "2nd_calcul_litteral_015": {
+          "uuid": "2nd_calcul_litteral_015",
+          "url": "static/2nd/calcul_litteral_015.tex",
+          "png": "static/2nd/calcul_litteral_015.png",
+          "pngCor": "static/2nd/calcul_litteral_015_corr.png"
+        },
+        "2nd_calcul_litteral_016": {
+          "uuid": "2nd_calcul_litteral_016",
+          "url": "static/2nd/calcul_litteral_016.tex",
+          "png": "static/2nd/calcul_litteral_016.png",
+          "pngCor": "static/2nd/calcul_litteral_016_corr.png"
+        },
+        "2nd_calcul_litteral_017": {
+          "uuid": "2nd_calcul_litteral_017",
+          "url": "static/2nd/calcul_litteral_017.tex",
+          "png": "static/2nd/calcul_litteral_017.png",
+          "pngCor": "static/2nd/calcul_litteral_017_corr.png"
+        },
+        "2nd_calcul_litteral_018": {
+          "uuid": "2nd_calcul_litteral_018",
+          "url": "static/2nd/calcul_litteral_018.tex",
+          "png": "static/2nd/calcul_litteral_018.png",
+          "pngCor": "static/2nd/calcul_litteral_018_corr.png"
+        },
+        "2nd_calcul_litteral_019": {
+          "uuid": "2nd_calcul_litteral_019",
+          "url": "static/2nd/calcul_litteral_019.tex",
+          "png": "static/2nd/calcul_litteral_019.png",
+          "pngCor": "static/2nd/calcul_litteral_019_corr.png"
+        },
+        "2nd_calcul_litteral_020": {
+          "uuid": "2nd_calcul_litteral_020",
+          "url": "static/2nd/calcul_litteral_020.tex",
+          "png": "static/2nd/calcul_litteral_020.png",
+          "pngCor": "static/2nd/calcul_litteral_020_corr.png"
+        },
+        "2nd_calcul_litteral_021": {
+          "uuid": "2nd_calcul_litteral_021",
+          "url": "static/2nd/calcul_litteral_021.tex",
+          "png": "static/2nd/calcul_litteral_021.png",
+          "pngCor": "static/2nd/calcul_litteral_021_corr.png"
+        },
+        "2nd_calcul_litteral_022": {
+          "uuid": "2nd_calcul_litteral_022",
+          "url": "static/2nd/calcul_litteral_022.tex",
+          "png": "static/2nd/calcul_litteral_022.png",
+          "pngCor": "static/2nd/calcul_litteral_022_corr.png"
+        },
+        "2nd_calcul_litteral_023": {
+          "uuid": "2nd_calcul_litteral_023",
+          "url": "static/2nd/calcul_litteral_023.tex",
+          "png": "static/2nd/calcul_litteral_023.png",
+          "pngCor": "static/2nd/calcul_litteral_023_corr.png"
+        },
+        "2nd_calcul_litteral_024": {
+          "uuid": "2nd_calcul_litteral_024",
+          "url": "static/2nd/calcul_litteral_024.tex",
+          "png": "static/2nd/calcul_litteral_024.png",
+          "pngCor": "static/2nd/calcul_litteral_024_corr.png"
+        },
+        "2nd_calcul_litteral_025": {
+          "uuid": "2nd_calcul_litteral_025",
+          "url": "static/2nd/calcul_litteral_025.tex",
+          "png": "static/2nd/calcul_litteral_025.png",
+          "pngCor": "static/2nd/calcul_litteral_025_corr.png"
+        },
+        "2nd_calcul_litteral_026": {
+          "uuid": "2nd_calcul_litteral_026",
+          "url": "static/2nd/calcul_litteral_026.tex",
+          "png": "static/2nd/calcul_litteral_026.png",
+          "pngCor": "static/2nd/calcul_litteral_026_corr.png"
+        },
+        "2nd_calcul_litteral_027": {
+          "uuid": "2nd_calcul_litteral_027",
+          "url": "static/2nd/calcul_litteral_027.tex",
+          "png": "static/2nd/calcul_litteral_027.png",
+          "pngCor": "static/2nd/calcul_litteral_027_corr.png"
+        },
+        "2nd_calcul_litteral_028": {
+          "uuid": "2nd_calcul_litteral_028",
+          "url": "static/2nd/calcul_litteral_028.tex",
+          "png": "static/2nd/calcul_litteral_028.png",
+          "pngCor": "static/2nd/calcul_litteral_028_corr.png"
+        },
+        "2nd_calcul_litteral_029": {
+          "uuid": "2nd_calcul_litteral_029",
+          "url": "static/2nd/calcul_litteral_029.tex",
+          "png": "static/2nd/calcul_litteral_029.png",
+          "pngCor": "static/2nd/calcul_litteral_029_corr.png"
+        },
+        "2nd_calcul_litteral_030": {
+          "uuid": "2nd_calcul_litteral_030",
+          "url": "static/2nd/calcul_litteral_030.tex",
+          "png": "static/2nd/calcul_litteral_030.png",
+          "pngCor": "static/2nd/calcul_litteral_030_corr.png"
+        },
+        "2nd_calcul_litteral_031": {
+          "uuid": "2nd_calcul_litteral_031",
+          "url": "static/2nd/calcul_litteral_031.tex",
+          "png": "static/2nd/calcul_litteral_031.png",
+          "pngCor": "static/2nd/calcul_litteral_031_corr.png"
+        },
+        "2nd_calcul_litteral_032": {
+          "uuid": "2nd_calcul_litteral_032",
+          "url": "static/2nd/calcul_litteral_032.tex",
+          "png": "static/2nd/calcul_litteral_032.png",
+          "pngCor": "static/2nd/calcul_litteral_032_corr.png"
+        },
+        "2nd_calcul_litteral_033": {
+          "uuid": "2nd_calcul_litteral_033",
+          "url": "static/2nd/calcul_litteral_033.tex",
+          "png": "static/2nd/calcul_litteral_033.png",
+          "pngCor": "static/2nd/calcul_litteral_033_corr.png"
+        },
+        "2nd_calcul_litteral_034": {
+          "uuid": "2nd_calcul_litteral_034",
+          "url": "static/2nd/calcul_litteral_034.tex",
+          "png": "static/2nd/calcul_litteral_034.png",
+          "pngCor": "static/2nd/calcul_litteral_034_corr.png"
+        },
+        "2nd_calcul_litteral_035": {
+          "uuid": "2nd_calcul_litteral_035",
+          "url": "static/2nd/calcul_litteral_035.tex",
+          "png": "static/2nd/calcul_litteral_035.png",
+          "pngCor": "static/2nd/calcul_litteral_035_corr.png"
+        },
+        "2nd_calcul_litteral_036": {
+          "uuid": "2nd_calcul_litteral_036",
+          "url": "static/2nd/calcul_litteral_036.tex",
+          "png": "static/2nd/calcul_litteral_036.png",
+          "pngCor": "static/2nd/calcul_litteral_036_corr.png"
+        },
+        "2nd_calcul_litteral_037": {
+          "uuid": "2nd_calcul_litteral_037",
+          "url": "static/2nd/calcul_litteral_037.tex",
+          "png": "static/2nd/calcul_litteral_037.png",
+          "pngCor": "static/2nd/calcul_litteral_037_corr.png"
+        },
+        "2nd_calcul_litteral_038": {
+          "uuid": "2nd_calcul_litteral_038",
+          "url": "static/2nd/calcul_litteral_038.tex",
+          "png": "static/2nd/calcul_litteral_038.png",
+          "pngCor": "static/2nd/calcul_litteral_038_corr.png"
+        },
+        "2nd_calcul_litteral_039": {
+          "uuid": "2nd_calcul_litteral_039",
+          "url": "static/2nd/calcul_litteral_039.tex",
+          "png": "static/2nd/calcul_litteral_039.png",
+          "pngCor": "static/2nd/calcul_litteral_039_corr.png"
+        },
+        "2nd_calcul_litteral_040": {
+          "uuid": "2nd_calcul_litteral_040",
+          "url": "static/2nd/calcul_litteral_040.tex",
+          "png": "static/2nd/calcul_litteral_040.png",
+          "pngCor": "static/2nd/calcul_litteral_040_corr.png"
+        },
+        "2nd_calcul_litteral_041": {
+          "uuid": "2nd_calcul_litteral_041",
+          "url": "static/2nd/calcul_litteral_041.tex",
+          "png": "static/2nd/calcul_litteral_041.png",
+          "pngCor": "static/2nd/calcul_litteral_041_corr.png"
+        },
+        "2nd_calcul_litteral_042": {
+          "uuid": "2nd_calcul_litteral_042",
+          "url": "static/2nd/calcul_litteral_042.tex",
+          "png": "static/2nd/calcul_litteral_042.png",
+          "pngCor": "static/2nd/calcul_litteral_042_corr.png"
+        },
+        "2nd_calcul_litteral_043": {
+          "uuid": "2nd_calcul_litteral_043",
+          "url": "static/2nd/calcul_litteral_043.tex",
+          "png": "static/2nd/calcul_litteral_043.png",
+          "pngCor": "static/2nd/calcul_litteral_043_corr.png"
+        },
+        "2nd_calcul_litteral_044": {
+          "uuid": "2nd_calcul_litteral_044",
+          "url": "static/2nd/calcul_litteral_044.tex",
+          "png": "static/2nd/calcul_litteral_044.png",
+          "pngCor": "static/2nd/calcul_litteral_044_corr.png"
+        }
+      },
+      "Équations": {
+        "2nd_equation_001": {
+          "uuid": "2nd_equation_001",
+          "url": "static/2nd/equation_001.tex",
+          "png": "static/2nd/equation_001.png",
+          "pngCor": "static/2nd/equation_001_corr.png"
+        },
+        "2nd_equation_002": {
+          "uuid": "2nd_equation_002",
+          "url": "static/2nd/equation_002.tex",
+          "png": "static/2nd/equation_002.png",
+          "pngCor": "static/2nd/equation_002_corr.png"
+        },
+        "2nd_equation_003": {
+          "uuid": "2nd_equation_003",
+          "url": "static/2nd/equation_003.tex",
+          "png": "static/2nd/equation_003.png",
+          "pngCor": "static/2nd/equation_003_corr.png"
+        },
+        "2nd_equation_004": {
+          "uuid": "2nd_equation_004",
+          "url": "static/2nd/equation_004.tex",
+          "png": "static/2nd/equation_004.png",
+          "pngCor": "static/2nd/equation_004_corr.png"
+        },
+        "2nd_equation_005": {
+          "uuid": "2nd_equation_005",
+          "url": "static/2nd/equation_005.tex",
+          "png": "static/2nd/equation_005.png",
+          "pngCor": "static/2nd/equation_005_corr.png"
+        },
+        "2nd_equation_006": {
+          "uuid": "2nd_equation_006",
+          "url": "static/2nd/equation_006.tex",
+          "png": "static/2nd/equation_006.png",
+          "pngCor": "static/2nd/equation_006_corr.png"
+        },
+        "2nd_equation_007": {
+          "uuid": "2nd_equation_007",
+          "url": "static/2nd/equation_007.tex",
+          "png": "static/2nd/equation_007.png",
+          "pngCor": "static/2nd/equation_007_corr.png"
+        },
+        "2nd_equation_008": {
+          "uuid": "2nd_equation_008",
+          "url": "static/2nd/equation_008.tex",
+          "png": "static/2nd/equation_008.png",
+          "pngCor": "static/2nd/equation_008_corr.png"
+        },
+        "2nd_equation_009": {
+          "uuid": "2nd_equation_009",
+          "url": "static/2nd/equation_009.tex",
+          "png": "static/2nd/equation_009.png",
+          "pngCor": "static/2nd/equation_009_corr.png"
+        },
+        "2nd_equation_010": {
+          "uuid": "2nd_equation_010",
+          "url": "static/2nd/equation_010.tex",
+          "png": "static/2nd/equation_010.png",
+          "pngCor": "static/2nd/equation_010_corr.png"
+        },
+        "2nd_equation_011": {
+          "uuid": "2nd_equation_011",
+          "url": "static/2nd/equation_011.tex",
+          "png": "static/2nd/equation_011.png",
+          "pngCor": "static/2nd/equation_011_corr.png"
+        },
+        "2nd_equation_012": {
+          "uuid": "2nd_equation_012",
+          "url": "static/2nd/equation_012.tex",
+          "png": "static/2nd/equation_012.png",
+          "pngCor": "static/2nd/equation_012_corr.png"
+        },
+        "2nd_equation_013": {
+          "uuid": "2nd_equation_013",
+          "url": "static/2nd/equation_013.tex",
+          "png": "static/2nd/equation_013.png",
+          "pngCor": "static/2nd/equation_013_corr.png"
+        },
+        "2nd_equation_014": {
+          "uuid": "2nd_equation_014",
+          "url": "static/2nd/equation_014.tex",
+          "png": "static/2nd/equation_014.png",
+          "pngCor": "static/2nd/equation_014_corr.png"
+        },
+        "2nd_equation_015": {
+          "uuid": "2nd_equation_015",
+          "url": "static/2nd/equation_015.tex",
+          "png": "static/2nd/equation_015.png",
+          "pngCor": "static/2nd/equation_015_corr.png"
+        },
+        "2nd_equation_016": {
+          "uuid": "2nd_equation_016",
+          "url": "static/2nd/equation_016.tex",
+          "png": "static/2nd/equation_016.png",
+          "pngCor": "static/2nd/equation_016_corr.png"
+        },
+        "2nd_equation_017": {
+          "uuid": "2nd_equation_017",
+          "url": "static/2nd/equation_017.tex",
+          "png": "static/2nd/equation_017.png",
+          "pngCor": "static/2nd/equation_017_corr.png"
+        },
+        "2nd_equation_018": {
+          "uuid": "2nd_equation_018",
+          "url": "static/2nd/equation_018.tex",
+          "png": "static/2nd/equation_018.png",
+          "pngCor": "static/2nd/equation_018_corr.png"
+        },
+        "2nd_equation_019": {
+          "uuid": "2nd_equation_019",
+          "url": "static/2nd/equation_019.tex",
+          "png": "static/2nd/equation_019.png",
+          "pngCor": "static/2nd/equation_019_corr.png"
+        },
+        "2nd_equation_020": {
+          "uuid": "2nd_equation_020",
+          "url": "static/2nd/equation_020.tex",
+          "png": "static/2nd/equation_020.png",
+          "pngCor": "static/2nd/equation_020_corr.png"
+        },
+        "2nd_equation_021": {
+          "uuid": "2nd_equation_021",
+          "url": "static/2nd/equation_021.tex",
+          "png": "static/2nd/equation_021.png",
+          "pngCor": "static/2nd/equation_021_corr.png"
+        },
+        "2nd_equation_022": {
+          "uuid": "2nd_equation_022",
+          "url": "static/2nd/equation_022.tex",
+          "png": "static/2nd/equation_022.png",
+          "pngCor": "static/2nd/equation_022_corr.png"
+        },
+        "2nd_equation_023": {
+          "uuid": "2nd_equation_023",
+          "url": "static/2nd/equation_023.tex",
+          "png": "static/2nd/equation_023.png",
+          "pngCor": "static/2nd/equation_023_corr.png"
+        },
+        "2nd_equation_024": {
+          "uuid": "2nd_equation_024",
+          "url": "static/2nd/equation_024.tex",
+          "png": "static/2nd/equation_024.png",
+          "pngCor": "static/2nd/equation_024_corr.png"
+        },
+        "2nd_equation_025": {
+          "uuid": "2nd_equation_025",
+          "url": "static/2nd/equation_025.tex",
+          "png": "static/2nd/equation_025.png",
+          "pngCor": "static/2nd/equation_025_corr.png"
+        },
+        "2nd_equation_026": {
+          "uuid": "2nd_equation_026",
+          "url": "static/2nd/equation_026.tex",
+          "png": "static/2nd/equation_026.png",
+          "pngCor": "static/2nd/equation_026_corr.png"
+        },
+        "2nd_equation_027": {
+          "uuid": "2nd_equation_027",
+          "url": "static/2nd/equation_027.tex",
+          "png": "static/2nd/equation_027.png",
+          "pngCor": "static/2nd/equation_027_corr.png"
+        },
+        "2nd_equation_028": {
+          "uuid": "2nd_equation_028",
+          "url": "static/2nd/equation_028.tex",
+          "png": "static/2nd/equation_028.png",
+          "pngCor": "static/2nd/equation_028_corr.png"
+        },
+        "2nd_equation_029": {
+          "uuid": "2nd_equation_029",
+          "url": "static/2nd/equation_029.tex",
+          "png": "static/2nd/equation_029.png",
+          "pngCor": "static/2nd/equation_029_corr.png"
+        },
+        "2nd_equation_030": {
+          "uuid": "2nd_equation_030",
+          "url": "static/2nd/equation_030.tex",
+          "png": "static/2nd/equation_030.png",
+          "pngCor": "static/2nd/equation_030_corr.png"
+        }
+      },
+      "Inéquations": {
+        "2nd_inequations_001": {
+          "uuid": "2nd_inequations_001",
+          "url": "static/2nd/inequations_001.tex",
+          "png": "static/2nd/inequations_001.png",
+          "pngCor": "static/2nd/inequations_001_corr.png"
+        },
+        "2nd_inequations_002": {
+          "uuid": "2nd_inequations_002",
+          "url": "static/2nd/inequations_002.tex",
+          "png": "static/2nd/inequations_002.png",
+          "pngCor": "static/2nd/inequations_002_corr.png"
+        },
+        "2nd_inequations_003": {
+          "uuid": "2nd_inequations_003",
+          "url": "static/2nd/inequations_003.tex",
+          "png": "static/2nd/inequations_003.png",
+          "pngCor": "static/2nd/inequations_003_corr.png"
+        },
+        "2nd_inequations_004": {
+          "uuid": "2nd_inequations_004",
+          "url": "static/2nd/inequations_004.tex",
+          "png": "static/2nd/inequations_004.png",
+          "pngCor": "static/2nd/inequations_004_corr.png"
+        },
+        "2nd_inequations_005": {
+          "uuid": "2nd_inequations_005",
+          "url": "static/2nd/inequations_005.tex",
+          "png": "static/2nd/inequations_005.png",
+          "pngCor": "static/2nd/inequations_005_corr.png"
+        },
+        "2nd_inequations_006": {
+          "uuid": "2nd_inequations_006",
+          "url": "static/2nd/inequations_006.tex",
+          "png": "static/2nd/inequations_006.png",
+          "pngCor": "static/2nd/inequations_006_corr.png"
+        },
+        "2nd_inequations_007": {
+          "uuid": "2nd_inequations_007",
+          "url": "static/2nd/inequations_007.tex",
+          "png": "static/2nd/inequations_007.png",
+          "pngCor": "static/2nd/inequations_007_corr.png"
+        },
+        "2nd_inequations_008": {
+          "uuid": "2nd_inequations_008",
+          "url": "static/2nd/inequations_008.tex",
+          "png": "static/2nd/inequations_008.png",
+          "pngCor": "static/2nd/inequations_008_corr.png"
+        },
+        "2nd_inequations_009": {
+          "uuid": "2nd_inequations_009",
+          "url": "static/2nd/inequations_009.tex",
+          "png": "static/2nd/inequations_009.png",
+          "pngCor": "static/2nd/inequations_009_corr.png"
+        },
+        "2nd_inequations_010": {
+          "uuid": "2nd_inequations_010",
+          "url": "static/2nd/inequations_010.tex",
+          "png": "static/2nd/inequations_010.png",
+          "pngCor": "static/2nd/inequations_010_corr.png"
+        },
+        "2nd_inequations_011": {
+          "uuid": "2nd_inequations_011",
+          "url": "static/2nd/inequations_011.tex",
+          "png": "static/2nd/inequations_011.png",
+          "pngCor": "static/2nd/inequations_011_corr.png"
+        },
+        "2nd_inequations_012": {
+          "uuid": "2nd_inequations_012",
+          "url": "static/2nd/inequations_012.tex",
+          "png": "static/2nd/inequations_012.png",
+          "pngCor": "static/2nd/inequations_012_corr.png"
+        },
+        "2nd_inequations_013": {
+          "uuid": "2nd_inequations_013",
+          "url": "static/2nd/inequations_013.tex",
+          "png": "static/2nd/inequations_013.png",
+          "pngCor": "static/2nd/inequations_013_corr.png"
+        },
+        "2nd_inequations_014": {
+          "uuid": "2nd_inequations_014",
+          "url": "static/2nd/inequations_014.tex",
+          "png": "static/2nd/inequations_014.png",
+          "pngCor": "static/2nd/inequations_014_corr.png"
+        },
+        "2nd_inequations_015": {
+          "uuid": "2nd_inequations_015",
+          "url": "static/2nd/inequations_015.tex",
+          "png": "static/2nd/inequations_015.png",
+          "pngCor": "static/2nd/inequations_015_corr.png"
+        },
+        "2nd_inequations_016": {
+          "uuid": "2nd_inequations_016",
+          "url": "static/2nd/inequations_016.tex",
+          "png": "static/2nd/inequations_016.png",
+          "pngCor": "static/2nd/inequations_016_corr.png"
+        },
+        "2nd_inequations_017": {
+          "uuid": "2nd_inequations_017",
+          "url": "static/2nd/inequations_017.tex",
+          "png": "static/2nd/inequations_017.png",
+          "pngCor": "static/2nd/inequations_017_corr.png"
+        },
+        "2nd_inequations_018": {
+          "uuid": "2nd_inequations_018",
+          "url": "static/2nd/inequations_018.tex",
+          "png": "static/2nd/inequations_018.png",
+          "pngCor": "static/2nd/inequations_018_corr.png"
+        },
+        "2nd_inequations_019": {
+          "uuid": "2nd_inequations_019",
+          "url": "static/2nd/inequations_019.tex",
+          "png": "static/2nd/inequations_019.png",
+          "pngCor": "static/2nd/inequations_019_corr.png"
+        },
+        "2nd_inequations_020": {
+          "uuid": "2nd_inequations_020",
+          "url": "static/2nd/inequations_020.tex",
+          "png": "static/2nd/inequations_020.png",
+          "pngCor": "static/2nd/inequations_020_corr.png"
+        },
+        "2nd_inequations_021": {
+          "uuid": "2nd_inequations_021",
+          "url": "static/2nd/inequations_021.tex",
+          "png": "static/2nd/inequations_021.png",
+          "pngCor": "static/2nd/inequations_021_corr.png"
+        },
+        "2nd_inequations_022": {
+          "uuid": "2nd_inequations_022",
+          "url": "static/2nd/inequations_022.tex",
+          "png": "static/2nd/inequations_022.png",
+          "pngCor": "static/2nd/inequations_022_corr.png"
+        },
+        "2nd_inequations_023": {
+          "uuid": "2nd_inequations_023",
+          "url": "static/2nd/inequations_023.tex",
+          "png": "static/2nd/inequations_023.png",
+          "pngCor": "static/2nd/inequations_023_corr.png"
+        },
+        "2nd_inequations_024": {
+          "uuid": "2nd_inequations_024",
+          "url": "static/2nd/inequations_024.tex",
+          "png": "static/2nd/inequations_024.png",
+          "pngCor": "static/2nd/inequations_024_corr.png"
+        },
+        "2nd_inequations_025": {
+          "uuid": "2nd_inequations_025",
+          "url": "static/2nd/inequations_025.tex",
+          "png": "static/2nd/inequations_025.png",
+          "pngCor": "static/2nd/inequations_025_corr.png"
+        },
+        "2nd_inequations_026": {
+          "uuid": "2nd_inequations_026",
+          "url": "static/2nd/inequations_026.tex",
+          "png": "static/2nd/inequations_026.png",
+          "pngCor": "static/2nd/inequations_026_corr.png"
+        },
+        "2nd_inequations_027": {
+          "uuid": "2nd_inequations_027",
+          "url": "static/2nd/inequations_027.tex",
+          "png": "static/2nd/inequations_027.png",
+          "pngCor": "static/2nd/inequations_027_corr.png"
+        },
+        "2nd_inequations_028": {
+          "uuid": "2nd_inequations_028",
+          "url": "static/2nd/inequations_028.tex",
+          "png": "static/2nd/inequations_028.png",
+          "pngCor": "static/2nd/inequations_028_corr.png"
+        },
+        "2nd_inequations_029": {
+          "uuid": "2nd_inequations_029",
+          "url": "static/2nd/inequations_029.tex",
+          "png": "static/2nd/inequations_029.png",
+          "pngCor": "static/2nd/inequations_029_corr.png"
+        },
+        "2nd_inequations_030": {
+          "uuid": "2nd_inequations_030",
+          "url": "static/2nd/inequations_030.tex",
+          "png": "static/2nd/inequations_030.png",
+          "pngCor": "static/2nd/inequations_030_corr.png"
+        },
+        "2nd_inequations_031": {
+          "uuid": "2nd_inequations_031",
+          "url": "static/2nd/inequations_031.tex",
+          "png": "static/2nd/inequations_031.png",
+          "pngCor": "static/2nd/inequations_031_corr.png"
+        },
+        "2nd_inequations_032": {
+          "uuid": "2nd_inequations_032",
+          "url": "static/2nd/inequations_032.tex",
+          "png": "static/2nd/inequations_032.png",
+          "pngCor": "static/2nd/inequations_032_corr.png"
+        },
+        "2nd_inequations_033": {
+          "uuid": "2nd_inequations_033",
+          "url": "static/2nd/inequations_033.tex",
+          "png": "static/2nd/inequations_033.png",
+          "pngCor": "static/2nd/inequations_033_corr.png"
+        },
+        "2nd_inequations_034": {
+          "uuid": "2nd_inequations_034",
+          "url": "static/2nd/inequations_034.tex",
+          "png": "static/2nd/inequations_034.png",
+          "pngCor": "static/2nd/inequations_034_corr.png"
+        },
+        "2nd_inequations_035": {
+          "uuid": "2nd_inequations_035",
+          "url": "static/2nd/inequations_035.tex",
+          "png": "static/2nd/inequations_035.png",
+          "pngCor": "static/2nd/inequations_035_corr.png"
+        },
+        "2nd_inequations_036": {
+          "uuid": "2nd_inequations_036",
+          "url": "static/2nd/inequations_036.tex",
+          "png": "static/2nd/inequations_036.png",
+          "pngCor": "static/2nd/inequations_036_corr.png"
+        },
+        "2nd_inequations_037": {
+          "uuid": "2nd_inequations_037",
+          "url": "static/2nd/inequations_037.tex",
+          "png": "static/2nd/inequations_037.png",
+          "pngCor": "static/2nd/inequations_037_corr.png"
+        },
+        "2nd_inequations_038": {
+          "uuid": "2nd_inequations_038",
+          "url": "static/2nd/inequations_038.tex",
+          "png": "static/2nd/inequations_038.png",
+          "pngCor": "static/2nd/inequations_038_corr.png"
+        },
+        "2nd_inequations_039": {
+          "uuid": "2nd_inequations_039",
+          "url": "static/2nd/inequations_039.tex",
+          "png": "static/2nd/inequations_039.png",
+          "pngCor": "static/2nd/inequations_039_corr.png"
+        },
+        "2nd_inequations_040": {
+          "uuid": "2nd_inequations_040",
+          "url": "static/2nd/inequations_040.tex",
+          "png": "static/2nd/inequations_040.png",
+          "pngCor": "static/2nd/inequations_040_corr.png"
+        },
+        "2nd_inequations_041": {
+          "uuid": "2nd_inequations_041",
+          "url": "static/2nd/inequations_041.tex",
+          "png": "static/2nd/inequations_041.png",
+          "pngCor": "static/2nd/inequations_041_corr.png"
+        }
+      },
+      "Systèmes": {}
+    },
+    "Calculs numériques": {
+      "Fractions": {
+        "2nd_fractions_001": {
+          "uuid": "2nd_fractions_001",
+          "url": "static/2nd/fractions_001.tex",
+          "png": "static/2nd/fractions_001.png",
+          "pngCor": "static/2nd/fractions_001_corr.png"
+        },
+        "2nd_fractions_002": {
+          "uuid": "2nd_fractions_002",
+          "url": "static/2nd/fractions_002.tex",
+          "png": "static/2nd/fractions_002.png",
+          "pngCor": "static/2nd/fractions_002_corr.png"
+        },
+        "2nd_fractions_003": {
+          "uuid": "2nd_fractions_003",
+          "url": "static/2nd/fractions_003.tex",
+          "png": "static/2nd/fractions_003.png",
+          "pngCor": "static/2nd/fractions_003_corr.png"
+        },
+        "2nd_fractions_004": {
+          "uuid": "2nd_fractions_004",
+          "url": "static/2nd/fractions_004.tex",
+          "png": "static/2nd/fractions_004.png",
+          "pngCor": "static/2nd/fractions_004_corr.png"
+        },
+        "2nd_fractions_005": {
+          "uuid": "2nd_fractions_005",
+          "url": "static/2nd/fractions_005.tex",
+          "png": "static/2nd/fractions_005.png",
+          "pngCor": "static/2nd/fractions_005_corr.png"
+        },
+        "2nd_fractions_006": {
+          "uuid": "2nd_fractions_006",
+          "url": "static/2nd/fractions_006.tex",
+          "png": "static/2nd/fractions_006.png",
+          "pngCor": "static/2nd/fractions_006_corr.png"
+        },
+        "2nd_fractions_007": {
+          "uuid": "2nd_fractions_007",
+          "url": "static/2nd/fractions_007.tex",
+          "png": "static/2nd/fractions_007.png",
+          "pngCor": "static/2nd/fractions_007_corr.png"
+        },
+        "2nd_fractions_008": {
+          "uuid": "2nd_fractions_008",
+          "url": "static/2nd/fractions_008.tex",
+          "png": "static/2nd/fractions_008.png",
+          "pngCor": "static/2nd/fractions_008_corr.png"
+        },
+        "2nd_fractions_009": {
+          "uuid": "2nd_fractions_009",
+          "url": "static/2nd/fractions_009.tex",
+          "png": "static/2nd/fractions_009.png",
+          "pngCor": "static/2nd/fractions_009_corr.png"
+        },
+        "2nd_fractions_010": {
+          "uuid": "2nd_fractions_010",
+          "url": "static/2nd/fractions_010.tex",
+          "png": "static/2nd/fractions_010.png",
+          "pngCor": "static/2nd/fractions_010_corr.png"
+        },
+        "2nd_fractions_011": {
+          "uuid": "2nd_fractions_011",
+          "url": "static/2nd/fractions_011.tex",
+          "png": "static/2nd/fractions_011.png",
+          "pngCor": "static/2nd/fractions_011_corr.png"
+        },
+        "2nd_fractions_012": {
+          "uuid": "2nd_fractions_012",
+          "url": "static/2nd/fractions_012.tex",
+          "png": "static/2nd/fractions_012.png",
+          "pngCor": "static/2nd/fractions_012_corr.png"
+        },
+        "2nd_fractions_013": {
+          "uuid": "2nd_fractions_013",
+          "url": "static/2nd/fractions_013.tex",
+          "png": "static/2nd/fractions_013.png",
+          "pngCor": "static/2nd/fractions_013_corr.png"
+        },
+        "2nd_fractions_014": {
+          "uuid": "2nd_fractions_014",
+          "url": "static/2nd/fractions_014.tex",
+          "png": "static/2nd/fractions_014.png",
+          "pngCor": "static/2nd/fractions_014_corr.png"
+        },
+        "2nd_fractions_015": {
+          "uuid": "2nd_fractions_015",
+          "url": "static/2nd/fractions_015.tex",
+          "png": "static/2nd/fractions_015.png",
+          "pngCor": "static/2nd/fractions_015_corr.png"
+        },
+        "2nd_fractions_016": {
+          "uuid": "2nd_fractions_016",
+          "url": "static/2nd/fractions_016.tex",
+          "png": "static/2nd/fractions_016.png",
+          "pngCor": "static/2nd/fractions_016_corr.png"
+        },
+        "2nd_fractions_017": {
+          "uuid": "2nd_fractions_017",
+          "url": "static/2nd/fractions_017.tex",
+          "png": "static/2nd/fractions_017.png",
+          "pngCor": "static/2nd/fractions_017_corr.png"
+        },
+        "2nd_fractions_018": {
+          "uuid": "2nd_fractions_018",
+          "url": "static/2nd/fractions_018.tex",
+          "png": "static/2nd/fractions_018.png",
+          "pngCor": "static/2nd/fractions_018_corr.png"
+        }
+      },
+      "Pourcentages - Évolution": {},
+      "Pourcentages - Proportion": {
+        "2nd_pourcentages_001": {
+          "uuid": "2nd_pourcentages_001",
+          "url": "static/2nd/pourcentages_001.tex",
+          "png": "static/2nd/pourcentages_001.png",
+          "pngCor": "static/2nd/pourcentages_001_corr.png"
+        },
+        "2nd_pourcentages_002": {
+          "uuid": "2nd_pourcentages_002",
+          "url": "static/2nd/pourcentages_002.tex",
+          "png": "static/2nd/pourcentages_002.png",
+          "pngCor": "static/2nd/pourcentages_002_corr.png"
+        },
+        "2nd_pourcentages_003": {
+          "uuid": "2nd_pourcentages_003",
+          "url": "static/2nd/pourcentages_003.tex",
+          "png": "static/2nd/pourcentages_003.png",
+          "pngCor": "static/2nd/pourcentages_003_corr.png"
+        },
+        "2nd_pourcentages_004": {
+          "uuid": "2nd_pourcentages_004",
+          "url": "static/2nd/pourcentages_004.tex",
+          "png": "static/2nd/pourcentages_004.png",
+          "pngCor": "static/2nd/pourcentages_004_corr.png"
+        },
+        "2nd_pourcentages_005": {
+          "uuid": "2nd_pourcentages_005",
+          "url": "static/2nd/pourcentages_005.tex",
+          "png": "static/2nd/pourcentages_005.png",
+          "pngCor": "static/2nd/pourcentages_005_corr.png"
+        },
+        "2nd_pourcentages_006": {
+          "uuid": "2nd_pourcentages_006",
+          "url": "static/2nd/pourcentages_006.tex",
+          "png": "static/2nd/pourcentages_006.png",
+          "pngCor": "static/2nd/pourcentages_006_corr.png"
+        },
+        "2nd_pourcentages_007": {
+          "uuid": "2nd_pourcentages_007",
+          "url": "static/2nd/pourcentages_007.tex",
+          "png": "static/2nd/pourcentages_007.png",
+          "pngCor": "static/2nd/pourcentages_007_corr.png"
+        },
+        "2nd_pourcentages_008": {
+          "uuid": "2nd_pourcentages_008",
+          "url": "static/2nd/pourcentages_008.tex",
+          "png": "static/2nd/pourcentages_008.png",
+          "pngCor": "static/2nd/pourcentages_008_corr.png"
+        },
+        "2nd_pourcentages_009": {
+          "uuid": "2nd_pourcentages_009",
+          "url": "static/2nd/pourcentages_009.tex",
+          "png": "static/2nd/pourcentages_009.png",
+          "pngCor": "static/2nd/pourcentages_009_corr.png"
+        },
+        "2nd_pourcentages_010": {
+          "uuid": "2nd_pourcentages_010",
+          "url": "static/2nd/pourcentages_010.tex",
+          "png": "static/2nd/pourcentages_010.png",
+          "pngCor": "static/2nd/pourcentages_010_corr.png"
+        },
+        "2nd_pourcentages_011": {
+          "uuid": "2nd_pourcentages_011",
+          "url": "static/2nd/pourcentages_011.tex",
+          "png": "static/2nd/pourcentages_011.png",
+          "pngCor": "static/2nd/pourcentages_011_corr.png"
+        },
+        "2nd_pourcentages_012": {
+          "uuid": "2nd_pourcentages_012",
+          "url": "static/2nd/pourcentages_012.tex",
+          "png": "static/2nd/pourcentages_012.png",
+          "pngCor": "static/2nd/pourcentages_012_corr.png"
+        },
+        "2nd_pourcentages_013": {
+          "uuid": "2nd_pourcentages_013",
+          "url": "static/2nd/pourcentages_013.tex",
+          "png": "static/2nd/pourcentages_013.png",
+          "pngCor": "static/2nd/pourcentages_013_corr.png"
+        },
+        "2nd_pourcentages_014": {
+          "uuid": "2nd_pourcentages_014",
+          "url": "static/2nd/pourcentages_014.tex",
+          "png": "static/2nd/pourcentages_014.png",
+          "pngCor": "static/2nd/pourcentages_014_corr.png"
+        },
+        "2nd_pourcentages_015": {
+          "uuid": "2nd_pourcentages_015",
+          "url": "static/2nd/pourcentages_015.tex",
+          "png": "static/2nd/pourcentages_015.png",
+          "pngCor": "static/2nd/pourcentages_015_corr.png"
+        },
+        "2nd_pourcentages_016": {
+          "uuid": "2nd_pourcentages_016",
+          "url": "static/2nd/pourcentages_016.tex",
+          "png": "static/2nd/pourcentages_016.png",
+          "pngCor": "static/2nd/pourcentages_016_corr.png"
+        },
+        "2nd_pourcentages_017": {
+          "uuid": "2nd_pourcentages_017",
+          "url": "static/2nd/pourcentages_017.tex",
+          "png": "static/2nd/pourcentages_017.png",
+          "pngCor": "static/2nd/pourcentages_017_corr.png"
+        },
+        "2nd_pourcentages_018": {
+          "uuid": "2nd_pourcentages_018",
+          "url": "static/2nd/pourcentages_018.tex",
+          "png": "static/2nd/pourcentages_018.png",
+          "pngCor": "static/2nd/pourcentages_018_corr.png"
+        },
+        "2nd_pourcentages_019": {
+          "uuid": "2nd_pourcentages_019",
+          "url": "static/2nd/pourcentages_019.tex",
+          "png": "static/2nd/pourcentages_019.png",
+          "pngCor": "static/2nd/pourcentages_019_corr.png"
+        },
+        "2nd_pourcentages_020": {
+          "uuid": "2nd_pourcentages_020",
+          "url": "static/2nd/pourcentages_020.tex",
+          "png": "static/2nd/pourcentages_020.png",
+          "pngCor": "static/2nd/pourcentages_020_corr.png"
+        },
+        "2nd_pourcentages_021": {
+          "uuid": "2nd_pourcentages_021",
+          "url": "static/2nd/pourcentages_021.tex",
+          "png": "static/2nd/pourcentages_021.png",
+          "pngCor": "static/2nd/pourcentages_021_corr.png"
+        },
+        "2nd_pourcentages_022": {
+          "uuid": "2nd_pourcentages_022",
+          "url": "static/2nd/pourcentages_022.tex",
+          "png": "static/2nd/pourcentages_022.png",
+          "pngCor": "static/2nd/pourcentages_022_corr.png"
+        },
+        "2nd_pourcentages_023": {
+          "uuid": "2nd_pourcentages_023",
+          "url": "static/2nd/pourcentages_023.tex",
+          "png": "static/2nd/pourcentages_023.png",
+          "pngCor": "static/2nd/pourcentages_023_corr.png"
+        }
+      },
+      "Puissances": {
+        "2nd_calculs_numeriques_001": {
+          "uuid": "2nd_calculs_numeriques_001",
+          "url": "static/2nd/calculs_numeriques_001.tex",
+          "png": "static/2nd/calculs_numeriques_001.png",
+          "pngCor": "static/2nd/calculs_numeriques_001_corr.png"
+        },
+        "2nd_calculs_numeriques_002": {
+          "uuid": "2nd_calculs_numeriques_002",
+          "url": "static/2nd/calculs_numeriques_002.tex",
+          "png": "static/2nd/calculs_numeriques_002.png",
+          "pngCor": "static/2nd/calculs_numeriques_002_corr.png"
+        },
+        "2nd_calculs_numeriques_003": {
+          "uuid": "2nd_calculs_numeriques_003",
+          "url": "static/2nd/calculs_numeriques_003.tex",
+          "png": "static/2nd/calculs_numeriques_003.png",
+          "pngCor": "static/2nd/calculs_numeriques_003_corr.png"
+        },
+        "2nd_calculs_numeriques_004": {
+          "uuid": "2nd_calculs_numeriques_004",
+          "url": "static/2nd/calculs_numeriques_004.tex",
+          "png": "static/2nd/calculs_numeriques_004.png",
+          "pngCor": "static/2nd/calculs_numeriques_004_corr.png"
+        },
+        "2nd_calculs_numeriques_005": {
+          "uuid": "2nd_calculs_numeriques_005",
+          "url": "static/2nd/calculs_numeriques_005.tex",
+          "png": "static/2nd/calculs_numeriques_005.png",
+          "pngCor": "static/2nd/calculs_numeriques_005_corr.png"
+        },
+        "2nd_calculs_numeriques_006": {
+          "uuid": "2nd_calculs_numeriques_006",
+          "url": "static/2nd/calculs_numeriques_006.tex",
+          "png": "static/2nd/calculs_numeriques_006.png",
+          "pngCor": "static/2nd/calculs_numeriques_006_corr.png"
+        },
+        "2nd_calculs_numeriques_007": {
+          "uuid": "2nd_calculs_numeriques_007",
+          "url": "static/2nd/calculs_numeriques_007.tex",
+          "png": "static/2nd/calculs_numeriques_007.png",
+          "pngCor": "static/2nd/calculs_numeriques_007_corr.png"
+        },
+        "2nd_calculs_numeriques_008": {
+          "uuid": "2nd_calculs_numeriques_008",
+          "url": "static/2nd/calculs_numeriques_008.tex",
+          "png": "static/2nd/calculs_numeriques_008.png",
+          "pngCor": "static/2nd/calculs_numeriques_008_corr.png"
+        },
+        "2nd_calculs_numeriques_009": {
+          "uuid": "2nd_calculs_numeriques_009",
+          "url": "static/2nd/calculs_numeriques_009.tex",
+          "png": "static/2nd/calculs_numeriques_009.png",
+          "pngCor": "static/2nd/calculs_numeriques_009_corr.png"
+        },
+        "2nd_calculs_numeriques_010": {
+          "uuid": "2nd_calculs_numeriques_010",
+          "url": "static/2nd/calculs_numeriques_010.tex",
+          "png": "static/2nd/calculs_numeriques_010.png",
+          "pngCor": "static/2nd/calculs_numeriques_010_corr.png"
+        },
+        "2nd_calculs_numeriques_011": {
+          "uuid": "2nd_calculs_numeriques_011",
+          "url": "static/2nd/calculs_numeriques_011.tex",
+          "png": "static/2nd/calculs_numeriques_011.png",
+          "pngCor": "static/2nd/calculs_numeriques_011_corr.png"
+        },
+        "2nd_calculs_numeriques_012": {
+          "uuid": "2nd_calculs_numeriques_012",
+          "url": "static/2nd/calculs_numeriques_012.tex",
+          "png": "static/2nd/calculs_numeriques_012.png",
+          "pngCor": "static/2nd/calculs_numeriques_012_corr.png"
+        },
+        "2nd_calculs_numeriques_013": {
+          "uuid": "2nd_calculs_numeriques_013",
+          "url": "static/2nd/calculs_numeriques_013.tex",
+          "png": "static/2nd/calculs_numeriques_013.png",
+          "pngCor": "static/2nd/calculs_numeriques_013_corr.png"
+        },
+        "2nd_calculs_numeriques_014": {
+          "uuid": "2nd_calculs_numeriques_014",
+          "url": "static/2nd/calculs_numeriques_014.tex",
+          "png": "static/2nd/calculs_numeriques_014.png",
+          "pngCor": "static/2nd/calculs_numeriques_014_corr.png"
+        },
+        "2nd_calculs_numeriques_015": {
+          "uuid": "2nd_calculs_numeriques_015",
+          "url": "static/2nd/calculs_numeriques_015.tex",
+          "png": "static/2nd/calculs_numeriques_015.png",
+          "pngCor": "static/2nd/calculs_numeriques_015_corr.png"
+        },
+        "2nd_calculs_numeriques_016": {
+          "uuid": "2nd_calculs_numeriques_016",
+          "url": "static/2nd/calculs_numeriques_016.tex",
+          "png": "static/2nd/calculs_numeriques_016.png",
+          "pngCor": "static/2nd/calculs_numeriques_016_corr.png"
+        },
+        "2nd_calculs_numeriques_017": {
+          "uuid": "2nd_calculs_numeriques_017",
+          "url": "static/2nd/calculs_numeriques_017.tex",
+          "png": "static/2nd/calculs_numeriques_017.png",
+          "pngCor": "static/2nd/calculs_numeriques_017_corr.png"
+        },
+        "2nd_calculs_numeriques_018": {
+          "uuid": "2nd_calculs_numeriques_018",
+          "url": "static/2nd/calculs_numeriques_018.tex",
+          "png": "static/2nd/calculs_numeriques_018.png",
+          "pngCor": "static/2nd/calculs_numeriques_018_corr.png"
+        },
+        "2nd_calculs_numeriques_019": {
+          "uuid": "2nd_calculs_numeriques_019",
+          "url": "static/2nd/calculs_numeriques_019.tex",
+          "png": "static/2nd/calculs_numeriques_019.png",
+          "pngCor": "static/2nd/calculs_numeriques_019_corr.png"
+        },
+        "2nd_calculs_numeriques_020": {
+          "uuid": "2nd_calculs_numeriques_020",
+          "url": "static/2nd/calculs_numeriques_020.tex",
+          "png": "static/2nd/calculs_numeriques_020.png",
+          "pngCor": "static/2nd/calculs_numeriques_020_corr.png"
+        },
+        "2nd_calculs_numeriques_021": {
+          "uuid": "2nd_calculs_numeriques_021",
+          "url": "static/2nd/calculs_numeriques_021.tex",
+          "png": "static/2nd/calculs_numeriques_021.png",
+          "pngCor": "static/2nd/calculs_numeriques_021_corr.png"
+        },
+        "2nd_calculs_numeriques_022": {
+          "uuid": "2nd_calculs_numeriques_022",
+          "url": "static/2nd/calculs_numeriques_022.tex",
+          "png": "static/2nd/calculs_numeriques_022.png",
+          "pngCor": "static/2nd/calculs_numeriques_022_corr.png"
+        },
+        "2nd_calculs_numeriques_023": {
+          "uuid": "2nd_calculs_numeriques_023",
+          "url": "static/2nd/calculs_numeriques_023.tex",
+          "png": "static/2nd/calculs_numeriques_023.png",
+          "pngCor": "static/2nd/calculs_numeriques_023_corr.png"
+        },
+        "2nd_calculs_numeriques_024": {
+          "uuid": "2nd_calculs_numeriques_024",
+          "url": "static/2nd/calculs_numeriques_024.tex",
+          "png": "static/2nd/calculs_numeriques_024.png",
+          "pngCor": "static/2nd/calculs_numeriques_024_corr.png"
+        },
+        "2nd_calculs_numeriques_025": {
+          "uuid": "2nd_calculs_numeriques_025",
+          "url": "static/2nd/calculs_numeriques_025.tex",
+          "png": "static/2nd/calculs_numeriques_025.png",
+          "pngCor": "static/2nd/calculs_numeriques_025_corr.png"
+        },
+        "2nd_calculs_numeriques_026": {
+          "uuid": "2nd_calculs_numeriques_026",
+          "url": "static/2nd/calculs_numeriques_026.tex",
+          "png": "static/2nd/calculs_numeriques_026.png",
+          "pngCor": "static/2nd/calculs_numeriques_026_corr.png"
+        },
+        "2nd_calculs_numeriques_027": {
+          "uuid": "2nd_calculs_numeriques_027",
+          "url": "static/2nd/calculs_numeriques_027.tex",
+          "png": "static/2nd/calculs_numeriques_027.png",
+          "pngCor": "static/2nd/calculs_numeriques_027_corr.png"
+        },
+        "2nd_calculs_numeriques_028": {
+          "uuid": "2nd_calculs_numeriques_028",
+          "url": "static/2nd/calculs_numeriques_028.tex",
+          "png": "static/2nd/calculs_numeriques_028.png",
+          "pngCor": "static/2nd/calculs_numeriques_028_corr.png"
+        },
+        "2nd_calculs_numeriques_029": {
+          "uuid": "2nd_calculs_numeriques_029",
+          "url": "static/2nd/calculs_numeriques_029.tex",
+          "png": "static/2nd/calculs_numeriques_029.png",
+          "pngCor": "static/2nd/calculs_numeriques_029_corr.png"
+        },
+        "2nd_calculs_numeriques_030": {
+          "uuid": "2nd_calculs_numeriques_030",
+          "url": "static/2nd/calculs_numeriques_030.tex",
+          "png": "static/2nd/calculs_numeriques_030.png",
+          "pngCor": "static/2nd/calculs_numeriques_030_corr.png"
+        },
+        "2nd_calculs_numeriques_031": {
+          "uuid": "2nd_calculs_numeriques_031",
+          "url": "static/2nd/calculs_numeriques_031.tex",
+          "png": "static/2nd/calculs_numeriques_031.png",
+          "pngCor": "static/2nd/calculs_numeriques_031_corr.png"
+        },
+        "2nd_calculs_numeriques_032": {
+          "uuid": "2nd_calculs_numeriques_032",
+          "url": "static/2nd/calculs_numeriques_032.tex",
+          "png": "static/2nd/calculs_numeriques_032.png",
+          "pngCor": "static/2nd/calculs_numeriques_032_corr.png"
+        },
+        "2nd_calculs_numeriques_033": {
+          "uuid": "2nd_calculs_numeriques_033",
+          "url": "static/2nd/calculs_numeriques_033.tex",
+          "png": "static/2nd/calculs_numeriques_033.png",
+          "pngCor": "static/2nd/calculs_numeriques_033_corr.png"
+        },
+        "2nd_calculs_numeriques_034": {
+          "uuid": "2nd_calculs_numeriques_034",
+          "url": "static/2nd/calculs_numeriques_034.tex",
+          "png": "static/2nd/calculs_numeriques_034.png",
+          "pngCor": "static/2nd/calculs_numeriques_034_corr.png"
+        },
+        "2nd_calculs_numeriques_035": {
+          "uuid": "2nd_calculs_numeriques_035",
+          "url": "static/2nd/calculs_numeriques_035.tex",
+          "png": "static/2nd/calculs_numeriques_035.png",
+          "pngCor": "static/2nd/calculs_numeriques_035_corr.png"
+        },
+        "2nd_calculs_numeriques_036": {
+          "uuid": "2nd_calculs_numeriques_036",
+          "url": "static/2nd/calculs_numeriques_036.tex",
+          "png": "static/2nd/calculs_numeriques_036.png",
+          "pngCor": "static/2nd/calculs_numeriques_036_corr.png"
+        },
+        "2nd_calculs_numeriques_037": {
+          "uuid": "2nd_calculs_numeriques_037",
+          "url": "static/2nd/calculs_numeriques_037.tex",
+          "png": "static/2nd/calculs_numeriques_037.png",
+          "pngCor": "static/2nd/calculs_numeriques_037_corr.png"
+        },
+        "2nd_calculs_numeriques_038": {
+          "uuid": "2nd_calculs_numeriques_038",
+          "url": "static/2nd/calculs_numeriques_038.tex",
+          "png": "static/2nd/calculs_numeriques_038.png",
+          "pngCor": "static/2nd/calculs_numeriques_038_corr.png"
+        },
+        "2nd_calculs_numeriques_039": {
+          "uuid": "2nd_calculs_numeriques_039",
+          "url": "static/2nd/calculs_numeriques_039.tex",
+          "png": "static/2nd/calculs_numeriques_039.png",
+          "pngCor": "static/2nd/calculs_numeriques_039_corr.png"
+        },
+        "2nd_calculs_numeriques_040": {
+          "uuid": "2nd_calculs_numeriques_040",
+          "url": "static/2nd/calculs_numeriques_040.tex",
+          "png": "static/2nd/calculs_numeriques_040.png",
+          "pngCor": "static/2nd/calculs_numeriques_040_corr.png"
+        },
+        "2nd_calculs_numeriques_041": {
+          "uuid": "2nd_calculs_numeriques_041",
+          "url": "static/2nd/calculs_numeriques_041.tex",
+          "png": "static/2nd/calculs_numeriques_041.png",
+          "pngCor": "static/2nd/calculs_numeriques_041_corr.png"
+        },
+        "2nd_calculs_numeriques_042": {
+          "uuid": "2nd_calculs_numeriques_042",
+          "url": "static/2nd/calculs_numeriques_042.tex",
+          "png": "static/2nd/calculs_numeriques_042.png",
+          "pngCor": "static/2nd/calculs_numeriques_042_corr.png"
+        },
+        "2nd_calculs_numeriques_043": {
+          "uuid": "2nd_calculs_numeriques_043",
+          "url": "static/2nd/calculs_numeriques_043.tex",
+          "png": "static/2nd/calculs_numeriques_043.png",
+          "pngCor": "static/2nd/calculs_numeriques_043_corr.png"
+        }
+      },
+      "Racines carrées": {
+        "2nd_calculs_numeriques_001": {
+          "uuid": "2nd_calculs_numeriques_001",
+          "url": "static/2nd/calculs_numeriques_001.tex",
+          "png": "static/2nd/calculs_numeriques_001.png",
+          "pngCor": "static/2nd/calculs_numeriques_001_corr.png"
+        },
+        "2nd_calculs_numeriques_002": {
+          "uuid": "2nd_calculs_numeriques_002",
+          "url": "static/2nd/calculs_numeriques_002.tex",
+          "png": "static/2nd/calculs_numeriques_002.png",
+          "pngCor": "static/2nd/calculs_numeriques_002_corr.png"
+        },
+        "2nd_calculs_numeriques_003": {
+          "uuid": "2nd_calculs_numeriques_003",
+          "url": "static/2nd/calculs_numeriques_003.tex",
+          "png": "static/2nd/calculs_numeriques_003.png",
+          "pngCor": "static/2nd/calculs_numeriques_003_corr.png"
+        },
+        "2nd_calculs_numeriques_004": {
+          "uuid": "2nd_calculs_numeriques_004",
+          "url": "static/2nd/calculs_numeriques_004.tex",
+          "png": "static/2nd/calculs_numeriques_004.png",
+          "pngCor": "static/2nd/calculs_numeriques_004_corr.png"
+        },
+        "2nd_calculs_numeriques_005": {
+          "uuid": "2nd_calculs_numeriques_005",
+          "url": "static/2nd/calculs_numeriques_005.tex",
+          "png": "static/2nd/calculs_numeriques_005.png",
+          "pngCor": "static/2nd/calculs_numeriques_005_corr.png"
+        },
+        "2nd_calculs_numeriques_006": {
+          "uuid": "2nd_calculs_numeriques_006",
+          "url": "static/2nd/calculs_numeriques_006.tex",
+          "png": "static/2nd/calculs_numeriques_006.png",
+          "pngCor": "static/2nd/calculs_numeriques_006_corr.png"
+        },
+        "2nd_calculs_numeriques_007": {
+          "uuid": "2nd_calculs_numeriques_007",
+          "url": "static/2nd/calculs_numeriques_007.tex",
+          "png": "static/2nd/calculs_numeriques_007.png",
+          "pngCor": "static/2nd/calculs_numeriques_007_corr.png"
+        },
+        "2nd_calculs_numeriques_008": {
+          "uuid": "2nd_calculs_numeriques_008",
+          "url": "static/2nd/calculs_numeriques_008.tex",
+          "png": "static/2nd/calculs_numeriques_008.png",
+          "pngCor": "static/2nd/calculs_numeriques_008_corr.png"
+        },
+        "2nd_calculs_numeriques_009": {
+          "uuid": "2nd_calculs_numeriques_009",
+          "url": "static/2nd/calculs_numeriques_009.tex",
+          "png": "static/2nd/calculs_numeriques_009.png",
+          "pngCor": "static/2nd/calculs_numeriques_009_corr.png"
+        },
+        "2nd_calculs_numeriques_010": {
+          "uuid": "2nd_calculs_numeriques_010",
+          "url": "static/2nd/calculs_numeriques_010.tex",
+          "png": "static/2nd/calculs_numeriques_010.png",
+          "pngCor": "static/2nd/calculs_numeriques_010_corr.png"
+        },
+        "2nd_calculs_numeriques_011": {
+          "uuid": "2nd_calculs_numeriques_011",
+          "url": "static/2nd/calculs_numeriques_011.tex",
+          "png": "static/2nd/calculs_numeriques_011.png",
+          "pngCor": "static/2nd/calculs_numeriques_011_corr.png"
+        },
+        "2nd_calculs_numeriques_012": {
+          "uuid": "2nd_calculs_numeriques_012",
+          "url": "static/2nd/calculs_numeriques_012.tex",
+          "png": "static/2nd/calculs_numeriques_012.png",
+          "pngCor": "static/2nd/calculs_numeriques_012_corr.png"
+        },
+        "2nd_calculs_numeriques_013": {
+          "uuid": "2nd_calculs_numeriques_013",
+          "url": "static/2nd/calculs_numeriques_013.tex",
+          "png": "static/2nd/calculs_numeriques_013.png",
+          "pngCor": "static/2nd/calculs_numeriques_013_corr.png"
+        },
+        "2nd_calculs_numeriques_014": {
+          "uuid": "2nd_calculs_numeriques_014",
+          "url": "static/2nd/calculs_numeriques_014.tex",
+          "png": "static/2nd/calculs_numeriques_014.png",
+          "pngCor": "static/2nd/calculs_numeriques_014_corr.png"
+        },
+        "2nd_calculs_numeriques_015": {
+          "uuid": "2nd_calculs_numeriques_015",
+          "url": "static/2nd/calculs_numeriques_015.tex",
+          "png": "static/2nd/calculs_numeriques_015.png",
+          "pngCor": "static/2nd/calculs_numeriques_015_corr.png"
+        },
+        "2nd_calculs_numeriques_016": {
+          "uuid": "2nd_calculs_numeriques_016",
+          "url": "static/2nd/calculs_numeriques_016.tex",
+          "png": "static/2nd/calculs_numeriques_016.png",
+          "pngCor": "static/2nd/calculs_numeriques_016_corr.png"
+        },
+        "2nd_calculs_numeriques_017": {
+          "uuid": "2nd_calculs_numeriques_017",
+          "url": "static/2nd/calculs_numeriques_017.tex",
+          "png": "static/2nd/calculs_numeriques_017.png",
+          "pngCor": "static/2nd/calculs_numeriques_017_corr.png"
+        },
+        "2nd_calculs_numeriques_018": {
+          "uuid": "2nd_calculs_numeriques_018",
+          "url": "static/2nd/calculs_numeriques_018.tex",
+          "png": "static/2nd/calculs_numeriques_018.png",
+          "pngCor": "static/2nd/calculs_numeriques_018_corr.png"
+        },
+        "2nd_calculs_numeriques_019": {
+          "uuid": "2nd_calculs_numeriques_019",
+          "url": "static/2nd/calculs_numeriques_019.tex",
+          "png": "static/2nd/calculs_numeriques_019.png",
+          "pngCor": "static/2nd/calculs_numeriques_019_corr.png"
+        },
+        "2nd_calculs_numeriques_020": {
+          "uuid": "2nd_calculs_numeriques_020",
+          "url": "static/2nd/calculs_numeriques_020.tex",
+          "png": "static/2nd/calculs_numeriques_020.png",
+          "pngCor": "static/2nd/calculs_numeriques_020_corr.png"
+        },
+        "2nd_calculs_numeriques_021": {
+          "uuid": "2nd_calculs_numeriques_021",
+          "url": "static/2nd/calculs_numeriques_021.tex",
+          "png": "static/2nd/calculs_numeriques_021.png",
+          "pngCor": "static/2nd/calculs_numeriques_021_corr.png"
+        },
+        "2nd_calculs_numeriques_022": {
+          "uuid": "2nd_calculs_numeriques_022",
+          "url": "static/2nd/calculs_numeriques_022.tex",
+          "png": "static/2nd/calculs_numeriques_022.png",
+          "pngCor": "static/2nd/calculs_numeriques_022_corr.png"
+        },
+        "2nd_calculs_numeriques_023": {
+          "uuid": "2nd_calculs_numeriques_023",
+          "url": "static/2nd/calculs_numeriques_023.tex",
+          "png": "static/2nd/calculs_numeriques_023.png",
+          "pngCor": "static/2nd/calculs_numeriques_023_corr.png"
+        },
+        "2nd_calculs_numeriques_024": {
+          "uuid": "2nd_calculs_numeriques_024",
+          "url": "static/2nd/calculs_numeriques_024.tex",
+          "png": "static/2nd/calculs_numeriques_024.png",
+          "pngCor": "static/2nd/calculs_numeriques_024_corr.png"
+        },
+        "2nd_calculs_numeriques_025": {
+          "uuid": "2nd_calculs_numeriques_025",
+          "url": "static/2nd/calculs_numeriques_025.tex",
+          "png": "static/2nd/calculs_numeriques_025.png",
+          "pngCor": "static/2nd/calculs_numeriques_025_corr.png"
+        },
+        "2nd_calculs_numeriques_026": {
+          "uuid": "2nd_calculs_numeriques_026",
+          "url": "static/2nd/calculs_numeriques_026.tex",
+          "png": "static/2nd/calculs_numeriques_026.png",
+          "pngCor": "static/2nd/calculs_numeriques_026_corr.png"
+        },
+        "2nd_calculs_numeriques_027": {
+          "uuid": "2nd_calculs_numeriques_027",
+          "url": "static/2nd/calculs_numeriques_027.tex",
+          "png": "static/2nd/calculs_numeriques_027.png",
+          "pngCor": "static/2nd/calculs_numeriques_027_corr.png"
+        },
+        "2nd_calculs_numeriques_028": {
+          "uuid": "2nd_calculs_numeriques_028",
+          "url": "static/2nd/calculs_numeriques_028.tex",
+          "png": "static/2nd/calculs_numeriques_028.png",
+          "pngCor": "static/2nd/calculs_numeriques_028_corr.png"
+        },
+        "2nd_calculs_numeriques_029": {
+          "uuid": "2nd_calculs_numeriques_029",
+          "url": "static/2nd/calculs_numeriques_029.tex",
+          "png": "static/2nd/calculs_numeriques_029.png",
+          "pngCor": "static/2nd/calculs_numeriques_029_corr.png"
+        },
+        "2nd_calculs_numeriques_030": {
+          "uuid": "2nd_calculs_numeriques_030",
+          "url": "static/2nd/calculs_numeriques_030.tex",
+          "png": "static/2nd/calculs_numeriques_030.png",
+          "pngCor": "static/2nd/calculs_numeriques_030_corr.png"
+        },
+        "2nd_calculs_numeriques_031": {
+          "uuid": "2nd_calculs_numeriques_031",
+          "url": "static/2nd/calculs_numeriques_031.tex",
+          "png": "static/2nd/calculs_numeriques_031.png",
+          "pngCor": "static/2nd/calculs_numeriques_031_corr.png"
+        },
+        "2nd_calculs_numeriques_032": {
+          "uuid": "2nd_calculs_numeriques_032",
+          "url": "static/2nd/calculs_numeriques_032.tex",
+          "png": "static/2nd/calculs_numeriques_032.png",
+          "pngCor": "static/2nd/calculs_numeriques_032_corr.png"
+        },
+        "2nd_calculs_numeriques_033": {
+          "uuid": "2nd_calculs_numeriques_033",
+          "url": "static/2nd/calculs_numeriques_033.tex",
+          "png": "static/2nd/calculs_numeriques_033.png",
+          "pngCor": "static/2nd/calculs_numeriques_033_corr.png"
+        },
+        "2nd_calculs_numeriques_034": {
+          "uuid": "2nd_calculs_numeriques_034",
+          "url": "static/2nd/calculs_numeriques_034.tex",
+          "png": "static/2nd/calculs_numeriques_034.png",
+          "pngCor": "static/2nd/calculs_numeriques_034_corr.png"
+        },
+        "2nd_calculs_numeriques_035": {
+          "uuid": "2nd_calculs_numeriques_035",
+          "url": "static/2nd/calculs_numeriques_035.tex",
+          "png": "static/2nd/calculs_numeriques_035.png",
+          "pngCor": "static/2nd/calculs_numeriques_035_corr.png"
+        },
+        "2nd_calculs_numeriques_036": {
+          "uuid": "2nd_calculs_numeriques_036",
+          "url": "static/2nd/calculs_numeriques_036.tex",
+          "png": "static/2nd/calculs_numeriques_036.png",
+          "pngCor": "static/2nd/calculs_numeriques_036_corr.png"
+        },
+        "2nd_calculs_numeriques_037": {
+          "uuid": "2nd_calculs_numeriques_037",
+          "url": "static/2nd/calculs_numeriques_037.tex",
+          "png": "static/2nd/calculs_numeriques_037.png",
+          "pngCor": "static/2nd/calculs_numeriques_037_corr.png"
+        },
+        "2nd_calculs_numeriques_038": {
+          "uuid": "2nd_calculs_numeriques_038",
+          "url": "static/2nd/calculs_numeriques_038.tex",
+          "png": "static/2nd/calculs_numeriques_038.png",
+          "pngCor": "static/2nd/calculs_numeriques_038_corr.png"
+        },
+        "2nd_calculs_numeriques_039": {
+          "uuid": "2nd_calculs_numeriques_039",
+          "url": "static/2nd/calculs_numeriques_039.tex",
+          "png": "static/2nd/calculs_numeriques_039.png",
+          "pngCor": "static/2nd/calculs_numeriques_039_corr.png"
+        },
+        "2nd_calculs_numeriques_040": {
+          "uuid": "2nd_calculs_numeriques_040",
+          "url": "static/2nd/calculs_numeriques_040.tex",
+          "png": "static/2nd/calculs_numeriques_040.png",
+          "pngCor": "static/2nd/calculs_numeriques_040_corr.png"
+        },
+        "2nd_calculs_numeriques_041": {
+          "uuid": "2nd_calculs_numeriques_041",
+          "url": "static/2nd/calculs_numeriques_041.tex",
+          "png": "static/2nd/calculs_numeriques_041.png",
+          "pngCor": "static/2nd/calculs_numeriques_041_corr.png"
+        },
+        "2nd_calculs_numeriques_042": {
+          "uuid": "2nd_calculs_numeriques_042",
+          "url": "static/2nd/calculs_numeriques_042.tex",
+          "png": "static/2nd/calculs_numeriques_042.png",
+          "pngCor": "static/2nd/calculs_numeriques_042_corr.png"
+        },
+        "2nd_calculs_numeriques_043": {
+          "uuid": "2nd_calculs_numeriques_043",
+          "url": "static/2nd/calculs_numeriques_043.tex",
+          "png": "static/2nd/calculs_numeriques_043.png",
+          "pngCor": "static/2nd/calculs_numeriques_043_corr.png"
+        }
+      },
+      "Valeur absolue": {}
+    },
+    "Fonctions": {
+      "Fonctions affines": {
+        "2nd_fonctions_affines_001": {
+          "uuid": "2nd_fonctions_affines_001",
+          "url": "static/2nd/fonctions_affines_001.tex",
+          "png": "static/2nd/fonctions_affines_001.png",
+          "pngCor": "static/2nd/fonctions_affines_001_corr.png"
+        },
+        "2nd_fonctions_affines_002": {
+          "uuid": "2nd_fonctions_affines_002",
+          "url": "static/2nd/fonctions_affines_002.tex",
+          "png": "static/2nd/fonctions_affines_002.png",
+          "pngCor": "static/2nd/fonctions_affines_002_corr.png"
+        },
+        "2nd_fonctions_affines_003": {
+          "uuid": "2nd_fonctions_affines_003",
+          "url": "static/2nd/fonctions_affines_003.tex",
+          "png": "static/2nd/fonctions_affines_003.png",
+          "pngCor": "static/2nd/fonctions_affines_003_corr.png"
+        },
+        "2nd_fonctions_affines_004": {
+          "uuid": "2nd_fonctions_affines_004",
+          "url": "static/2nd/fonctions_affines_004.tex",
+          "png": "static/2nd/fonctions_affines_004.png",
+          "pngCor": "static/2nd/fonctions_affines_004_corr.png"
+        },
+        "2nd_fonctions_affines_005": {
+          "uuid": "2nd_fonctions_affines_005",
+          "url": "static/2nd/fonctions_affines_005.tex",
+          "png": "static/2nd/fonctions_affines_005.png",
+          "pngCor": "static/2nd/fonctions_affines_005_corr.png"
+        },
+        "2nd_fonctions_affines_006": {
+          "uuid": "2nd_fonctions_affines_006",
+          "url": "static/2nd/fonctions_affines_006.tex",
+          "png": "static/2nd/fonctions_affines_006.png",
+          "pngCor": "static/2nd/fonctions_affines_006_corr.png"
+        },
+        "2nd_fonctions_affines_007": {
+          "uuid": "2nd_fonctions_affines_007",
+          "url": "static/2nd/fonctions_affines_007.tex",
+          "png": "static/2nd/fonctions_affines_007.png",
+          "pngCor": "static/2nd/fonctions_affines_007_corr.png"
+        },
+        "2nd_fonctions_affines_008": {
+          "uuid": "2nd_fonctions_affines_008",
+          "url": "static/2nd/fonctions_affines_008.tex",
+          "png": "static/2nd/fonctions_affines_008.png",
+          "pngCor": "static/2nd/fonctions_affines_008_corr.png"
+        },
+        "2nd_fonctions_affines_009": {
+          "uuid": "2nd_fonctions_affines_009",
+          "url": "static/2nd/fonctions_affines_009.tex",
+          "png": "static/2nd/fonctions_affines_009.png",
+          "pngCor": "static/2nd/fonctions_affines_009_corr.png"
+        },
+        "2nd_fonctions_affines_010": {
+          "uuid": "2nd_fonctions_affines_010",
+          "url": "static/2nd/fonctions_affines_010.tex",
+          "png": "static/2nd/fonctions_affines_010.png",
+          "pngCor": "static/2nd/fonctions_affines_010_corr.png"
+        },
+        "2nd_fonctions_affines_011": {
+          "uuid": "2nd_fonctions_affines_011",
+          "url": "static/2nd/fonctions_affines_011.tex",
+          "png": "static/2nd/fonctions_affines_011.png",
+          "pngCor": "static/2nd/fonctions_affines_011_corr.png"
+        },
+        "2nd_fonctions_affines_012": {
+          "uuid": "2nd_fonctions_affines_012",
+          "url": "static/2nd/fonctions_affines_012.tex",
+          "png": "static/2nd/fonctions_affines_012.png",
+          "pngCor": "static/2nd/fonctions_affines_012_corr.png"
+        },
+        "2nd_fonctions_affines_013": {
+          "uuid": "2nd_fonctions_affines_013",
+          "url": "static/2nd/fonctions_affines_013.tex",
+          "png": "static/2nd/fonctions_affines_013.png",
+          "pngCor": "static/2nd/fonctions_affines_013_corr.png"
+        },
+        "2nd_fonctions_affines_014": {
+          "uuid": "2nd_fonctions_affines_014",
+          "url": "static/2nd/fonctions_affines_014.tex",
+          "png": "static/2nd/fonctions_affines_014.png",
+          "pngCor": "static/2nd/fonctions_affines_014_corr.png"
+        },
+        "2nd_fonctions_affines_015": {
+          "uuid": "2nd_fonctions_affines_015",
+          "url": "static/2nd/fonctions_affines_015.tex",
+          "png": "static/2nd/fonctions_affines_015.png",
+          "pngCor": "static/2nd/fonctions_affines_015_corr.png"
+        },
+        "2nd_fonctions_affines_016": {
+          "uuid": "2nd_fonctions_affines_016",
+          "url": "static/2nd/fonctions_affines_016.tex",
+          "png": "static/2nd/fonctions_affines_016.png",
+          "pngCor": "static/2nd/fonctions_affines_016_corr.png"
+        },
+        "2nd_fonctions_affines_017": {
+          "uuid": "2nd_fonctions_affines_017",
+          "url": "static/2nd/fonctions_affines_017.tex",
+          "png": "static/2nd/fonctions_affines_017.png",
+          "pngCor": "static/2nd/fonctions_affines_017_corr.png"
+        },
+        "2nd_fonctions_affines_018": {
+          "uuid": "2nd_fonctions_affines_018",
+          "url": "static/2nd/fonctions_affines_018.tex",
+          "png": "static/2nd/fonctions_affines_018.png",
+          "pngCor": "static/2nd/fonctions_affines_018_corr.png"
+        },
+        "2nd_fonctions_affines_019": {
+          "uuid": "2nd_fonctions_affines_019",
+          "url": "static/2nd/fonctions_affines_019.tex",
+          "png": "static/2nd/fonctions_affines_019.png",
+          "pngCor": "static/2nd/fonctions_affines_019_corr.png"
+        },
+        "2nd_fonctions_affines_020": {
+          "uuid": "2nd_fonctions_affines_020",
+          "url": "static/2nd/fonctions_affines_020.tex",
+          "png": "static/2nd/fonctions_affines_020.png",
+          "pngCor": "static/2nd/fonctions_affines_020_corr.png"
+        },
+        "2nd_fonctions_affines_021": {
+          "uuid": "2nd_fonctions_affines_021",
+          "url": "static/2nd/fonctions_affines_021.tex",
+          "png": "static/2nd/fonctions_affines_021.png",
+          "pngCor": "static/2nd/fonctions_affines_021_corr.png"
+        },
+        "2nd_fonctions_affines_022": {
+          "uuid": "2nd_fonctions_affines_022",
+          "url": "static/2nd/fonctions_affines_022.tex",
+          "png": "static/2nd/fonctions_affines_022.png",
+          "pngCor": "static/2nd/fonctions_affines_022_corr.png"
+        },
+        "2nd_fonctions_affines_023": {
+          "uuid": "2nd_fonctions_affines_023",
+          "url": "static/2nd/fonctions_affines_023.tex",
+          "png": "static/2nd/fonctions_affines_023.png",
+          "pngCor": "static/2nd/fonctions_affines_023_corr.png"
+        },
+        "2nd_fonctions_affines_024": {
+          "uuid": "2nd_fonctions_affines_024",
+          "url": "static/2nd/fonctions_affines_024.tex",
+          "png": "static/2nd/fonctions_affines_024.png",
+          "pngCor": "static/2nd/fonctions_affines_024_corr.png"
+        },
+        "2nd_fonctions_affines_025": {
+          "uuid": "2nd_fonctions_affines_025",
+          "url": "static/2nd/fonctions_affines_025.tex",
+          "png": "static/2nd/fonctions_affines_025.png",
+          "pngCor": "static/2nd/fonctions_affines_025_corr.png"
+        },
+        "2nd_fonctions_affines_026": {
+          "uuid": "2nd_fonctions_affines_026",
+          "url": "static/2nd/fonctions_affines_026.tex",
+          "png": "static/2nd/fonctions_affines_026.png",
+          "pngCor": "static/2nd/fonctions_affines_026_corr.png"
+        },
+        "2nd_fonctions_affines_027": {
+          "uuid": "2nd_fonctions_affines_027",
+          "url": "static/2nd/fonctions_affines_027.tex",
+          "png": "static/2nd/fonctions_affines_027.png",
+          "pngCor": "static/2nd/fonctions_affines_027_corr.png"
+        },
+        "2nd_fonctions_affines_028": {
+          "uuid": "2nd_fonctions_affines_028",
+          "url": "static/2nd/fonctions_affines_028.tex",
+          "png": "static/2nd/fonctions_affines_028.png",
+          "pngCor": "static/2nd/fonctions_affines_028_corr.png"
+        }
+      },
+      "Généralités sur les fonctions - Calculs": {
+        "2nd_fonctions_generalites_Calculs_001": {
+          "uuid": "2nd_fonctions_generalites_Calculs_001",
+          "url": "static/2nd/fonctions_generalites_Calculs_001.tex",
+          "png": "static/2nd/fonctions_generalites_Calculs_001.png",
+          "pngCor": "static/2nd/fonctions_generalites_Calculs_001_corr.png"
+        },
+        "2nd_fonctions_generalites_Calculs_002": {
+          "uuid": "2nd_fonctions_generalites_Calculs_002",
+          "url": "static/2nd/fonctions_generalites_Calculs_002.tex",
+          "png": "static/2nd/fonctions_generalites_Calculs_002.png",
+          "pngCor": "static/2nd/fonctions_generalites_Calculs_002_corr.png"
+        },
+        "2nd_fonctions_generalites_Calculs_003": {
+          "uuid": "2nd_fonctions_generalites_Calculs_003",
+          "url": "static/2nd/fonctions_generalites_Calculs_003.tex",
+          "png": "static/2nd/fonctions_generalites_Calculs_003.png",
+          "pngCor": "static/2nd/fonctions_generalites_Calculs_003_corr.png"
+        },
+        "2nd_fonctions_generalites_Calculs_004": {
+          "uuid": "2nd_fonctions_generalites_Calculs_004",
+          "url": "static/2nd/fonctions_generalites_Calculs_004.tex",
+          "png": "static/2nd/fonctions_generalites_Calculs_004.png",
+          "pngCor": "static/2nd/fonctions_generalites_Calculs_004_corr.png"
+        },
+        "2nd_fonctions_generalites_Calculs_005": {
+          "uuid": "2nd_fonctions_generalites_Calculs_005",
+          "url": "static/2nd/fonctions_generalites_Calculs_005.tex",
+          "png": "static/2nd/fonctions_generalites_Calculs_005.png",
+          "pngCor": "static/2nd/fonctions_generalites_Calculs_005_corr.png"
+        },
+        "2nd_fonctions_generalites_Calculs_006": {
+          "uuid": "2nd_fonctions_generalites_Calculs_006",
+          "url": "static/2nd/fonctions_generalites_Calculs_006.tex",
+          "png": "static/2nd/fonctions_generalites_Calculs_006.png",
+          "pngCor": "static/2nd/fonctions_generalites_Calculs_006_corr.png"
+        },
+        "2nd_fonctions_generalites_Calculs_007": {
+          "uuid": "2nd_fonctions_generalites_Calculs_007",
+          "url": "static/2nd/fonctions_generalites_Calculs_007.tex",
+          "png": "static/2nd/fonctions_generalites_Calculs_007.png",
+          "pngCor": "static/2nd/fonctions_generalites_Calculs_007_corr.png"
+        },
+        "2nd_fonctions_generalites_Calculs_008": {
+          "uuid": "2nd_fonctions_generalites_Calculs_008",
+          "url": "static/2nd/fonctions_generalites_Calculs_008.tex",
+          "png": "static/2nd/fonctions_generalites_Calculs_008.png",
+          "pngCor": "static/2nd/fonctions_generalites_Calculs_008_corr.png"
+        },
+        "2nd_fonctions_generalites_Calculs_009": {
+          "uuid": "2nd_fonctions_generalites_Calculs_009",
+          "url": "static/2nd/fonctions_generalites_Calculs_009.tex",
+          "png": "static/2nd/fonctions_generalites_Calculs_009.png",
+          "pngCor": "static/2nd/fonctions_generalites_Calculs_009_corr.png"
+        },
+        "2nd_fonctions_generalites_Calculs_010": {
+          "uuid": "2nd_fonctions_generalites_Calculs_010",
+          "url": "static/2nd/fonctions_generalites_Calculs_010.tex",
+          "png": "static/2nd/fonctions_generalites_Calculs_010.png",
+          "pngCor": "static/2nd/fonctions_generalites_Calculs_010_corr.png"
+        },
+        "2nd_fonctions_generalites_Calculs_011": {
+          "uuid": "2nd_fonctions_generalites_Calculs_011",
+          "url": "static/2nd/fonctions_generalites_Calculs_011.tex",
+          "png": "static/2nd/fonctions_generalites_Calculs_011.png",
+          "pngCor": "static/2nd/fonctions_generalites_Calculs_011_corr.png"
+        },
+        "2nd_fonctions_generalites_Calculs_012": {
+          "uuid": "2nd_fonctions_generalites_Calculs_012",
+          "url": "static/2nd/fonctions_generalites_Calculs_012.tex",
+          "png": "static/2nd/fonctions_generalites_Calculs_012.png",
+          "pngCor": "static/2nd/fonctions_generalites_Calculs_012_corr.png"
+        },
+        "2nd_fonctions_generalites_Calculs_013": {
+          "uuid": "2nd_fonctions_generalites_Calculs_013",
+          "url": "static/2nd/fonctions_generalites_Calculs_013.tex",
+          "png": "static/2nd/fonctions_generalites_Calculs_013.png",
+          "pngCor": "static/2nd/fonctions_generalites_Calculs_013_corr.png"
+        },
+        "2nd_fonctions_generalites_Calculs_014": {
+          "uuid": "2nd_fonctions_generalites_Calculs_014",
+          "url": "static/2nd/fonctions_generalites_Calculs_014.tex",
+          "png": "static/2nd/fonctions_generalites_Calculs_014.png",
+          "pngCor": "static/2nd/fonctions_generalites_Calculs_014_corr.png"
+        },
+        "2nd_fonctions_generalites_Calculs_015": {
+          "uuid": "2nd_fonctions_generalites_Calculs_015",
+          "url": "static/2nd/fonctions_generalites_Calculs_015.tex",
+          "png": "static/2nd/fonctions_generalites_Calculs_015.png",
+          "pngCor": "static/2nd/fonctions_generalites_Calculs_015_corr.png"
+        },
+        "2nd_fonctions_generalites_Calculs_016": {
+          "uuid": "2nd_fonctions_generalites_Calculs_016",
+          "url": "static/2nd/fonctions_generalites_Calculs_016.tex",
+          "png": "static/2nd/fonctions_generalites_Calculs_016.png",
+          "pngCor": "static/2nd/fonctions_generalites_Calculs_016_corr.png"
+        },
+        "2nd_fonctions_generalites_Calculs_017": {
+          "uuid": "2nd_fonctions_generalites_Calculs_017",
+          "url": "static/2nd/fonctions_generalites_Calculs_017.tex",
+          "png": "static/2nd/fonctions_generalites_Calculs_017.png",
+          "pngCor": "static/2nd/fonctions_generalites_Calculs_017_corr.png"
+        },
+        "2nd_fonctions_generalites_Calculs_018": {
+          "uuid": "2nd_fonctions_generalites_Calculs_018",
+          "url": "static/2nd/fonctions_generalites_Calculs_018.tex",
+          "png": "static/2nd/fonctions_generalites_Calculs_018.png",
+          "pngCor": "static/2nd/fonctions_generalites_Calculs_018_corr.png"
+        },
+        "2nd_fonctions_generalites_Calculs_019": {
+          "uuid": "2nd_fonctions_generalites_Calculs_019",
+          "url": "static/2nd/fonctions_generalites_Calculs_019.tex",
+          "png": "static/2nd/fonctions_generalites_Calculs_019.png",
+          "pngCor": "static/2nd/fonctions_generalites_Calculs_019_corr.png"
+        },
+        "2nd_fonctions_generalites_Calculs_020": {
+          "uuid": "2nd_fonctions_generalites_Calculs_020",
+          "url": "static/2nd/fonctions_generalites_Calculs_020.tex",
+          "png": "static/2nd/fonctions_generalites_Calculs_020.png",
+          "pngCor": "static/2nd/fonctions_generalites_Calculs_020_corr.png"
+        },
+        "2nd_fonctions_generalites_Calculs_021": {
+          "uuid": "2nd_fonctions_generalites_Calculs_021",
+          "url": "static/2nd/fonctions_generalites_Calculs_021.tex",
+          "png": "static/2nd/fonctions_generalites_Calculs_021.png",
+          "pngCor": "static/2nd/fonctions_generalites_Calculs_021_corr.png"
+        },
+        "2nd_fonctions_generalites_Calculs_022": {
+          "uuid": "2nd_fonctions_generalites_Calculs_022",
+          "url": "static/2nd/fonctions_generalites_Calculs_022.tex",
+          "png": "static/2nd/fonctions_generalites_Calculs_022.png",
+          "pngCor": "static/2nd/fonctions_generalites_Calculs_022_corr.png"
+        },
+        "2nd_fonctions_generalites_Calculs_023": {
+          "uuid": "2nd_fonctions_generalites_Calculs_023",
+          "url": "static/2nd/fonctions_generalites_Calculs_023.tex",
+          "png": "static/2nd/fonctions_generalites_Calculs_023.png",
+          "pngCor": "static/2nd/fonctions_generalites_Calculs_023_corr.png"
+        },
+        "2nd_fonctions_generalites_Calculs_024": {
+          "uuid": "2nd_fonctions_generalites_Calculs_024",
+          "url": "static/2nd/fonctions_generalites_Calculs_024.tex",
+          "png": "static/2nd/fonctions_generalites_Calculs_024.png",
+          "pngCor": "static/2nd/fonctions_generalites_Calculs_024_corr.png"
+        },
+        "2nd_fonctions_generalites_Calculs_025": {
+          "uuid": "2nd_fonctions_generalites_Calculs_025",
+          "url": "static/2nd/fonctions_generalites_Calculs_025.tex",
+          "png": "static/2nd/fonctions_generalites_Calculs_025.png",
+          "pngCor": "static/2nd/fonctions_generalites_Calculs_025_corr.png"
+        }
+      },
+      "Généralités sur les fonctions - Lectures graphiques": {
+        "2nd_fonctions_generalites_Lectures_Graphiques_001": {
+          "uuid": "2nd_fonctions_generalites_Lectures_Graphiques_001",
+          "url": "static/2nd/fonctions_generalites_Lectures_Graphiques_001.tex",
+          "png": "static/2nd/fonctions_generalites_Lectures_Graphiques_001.png",
+          "pngCor": "static/2nd/fonctions_generalites_Lectures_Graphiques_001_corr.png"
+        },
+        "2nd_fonctions_generalites_Lectures_Graphiques_002": {
+          "uuid": "2nd_fonctions_generalites_Lectures_Graphiques_002",
+          "url": "static/2nd/fonctions_generalites_Lectures_Graphiques_002.tex",
+          "png": "static/2nd/fonctions_generalites_Lectures_Graphiques_002.png",
+          "pngCor": "static/2nd/fonctions_generalites_Lectures_Graphiques_002_corr.png"
+        },
+        "2nd_fonctions_generalites_Lectures_Graphiques_003": {
+          "uuid": "2nd_fonctions_generalites_Lectures_Graphiques_003",
+          "url": "static/2nd/fonctions_generalites_Lectures_Graphiques_003.tex",
+          "png": "static/2nd/fonctions_generalites_Lectures_Graphiques_003.png",
+          "pngCor": "static/2nd/fonctions_generalites_Lectures_Graphiques_003_corr.png"
+        },
+        "2nd_fonctions_generalites_Lectures_Graphiques_004": {
+          "uuid": "2nd_fonctions_generalites_Lectures_Graphiques_004",
+          "url": "static/2nd/fonctions_generalites_Lectures_Graphiques_004.tex",
+          "png": "static/2nd/fonctions_generalites_Lectures_Graphiques_004.png",
+          "pngCor": "static/2nd/fonctions_generalites_Lectures_Graphiques_004_corr.png"
+        },
+        "2nd_fonctions_generalites_Lectures_Graphiques_005": {
+          "uuid": "2nd_fonctions_generalites_Lectures_Graphiques_005",
+          "url": "static/2nd/fonctions_generalites_Lectures_Graphiques_005.tex",
+          "png": "static/2nd/fonctions_generalites_Lectures_Graphiques_005.png",
+          "pngCor": "static/2nd/fonctions_generalites_Lectures_Graphiques_005_corr.png"
+        },
+        "2nd_fonctions_generalites_Lectures_Graphiques_006": {
+          "uuid": "2nd_fonctions_generalites_Lectures_Graphiques_006",
+          "url": "static/2nd/fonctions_generalites_Lectures_Graphiques_006.tex",
+          "png": "static/2nd/fonctions_generalites_Lectures_Graphiques_006.png",
+          "pngCor": "static/2nd/fonctions_generalites_Lectures_Graphiques_006_corr.png"
+        },
+        "2nd_fonctions_generalites_Lectures_Graphiques_007": {
+          "uuid": "2nd_fonctions_generalites_Lectures_Graphiques_007",
+          "url": "static/2nd/fonctions_generalites_Lectures_Graphiques_007.tex",
+          "png": "static/2nd/fonctions_generalites_Lectures_Graphiques_007.png",
+          "pngCor": "static/2nd/fonctions_generalites_Lectures_Graphiques_007_corr.png"
+        },
+        "2nd_fonctions_generalites_Lectures_Graphiques_008": {
+          "uuid": "2nd_fonctions_generalites_Lectures_Graphiques_008",
+          "url": "static/2nd/fonctions_generalites_Lectures_Graphiques_008.tex",
+          "png": "static/2nd/fonctions_generalites_Lectures_Graphiques_008.png",
+          "pngCor": "static/2nd/fonctions_generalites_Lectures_Graphiques_008_corr.png"
+        },
+        "2nd_fonctions_generalites_Lectures_Graphiques_009": {
+          "uuid": "2nd_fonctions_generalites_Lectures_Graphiques_009",
+          "url": "static/2nd/fonctions_generalites_Lectures_Graphiques_009.tex",
+          "png": "static/2nd/fonctions_generalites_Lectures_Graphiques_009.png",
+          "pngCor": "static/2nd/fonctions_generalites_Lectures_Graphiques_009_corr.png"
+        },
+        "2nd_fonctions_generalites_Lectures_Graphiques_010": {
+          "uuid": "2nd_fonctions_generalites_Lectures_Graphiques_010",
+          "url": "static/2nd/fonctions_generalites_Lectures_Graphiques_010.tex",
+          "png": "static/2nd/fonctions_generalites_Lectures_Graphiques_010.png",
+          "pngCor": "static/2nd/fonctions_generalites_Lectures_Graphiques_010_corr.png"
+        },
+        "2nd_fonctions_generalites_Lectures_Graphiques_011": {
+          "uuid": "2nd_fonctions_generalites_Lectures_Graphiques_011",
+          "url": "static/2nd/fonctions_generalites_Lectures_Graphiques_011.tex",
+          "png": "static/2nd/fonctions_generalites_Lectures_Graphiques_011.png",
+          "pngCor": "static/2nd/fonctions_generalites_Lectures_Graphiques_011_corr.png"
+        },
+        "2nd_fonctions_generalites_Lectures_Graphiques_012": {
+          "uuid": "2nd_fonctions_generalites_Lectures_Graphiques_012",
+          "url": "static/2nd/fonctions_generalites_Lectures_Graphiques_012.tex",
+          "png": "static/2nd/fonctions_generalites_Lectures_Graphiques_012.png",
+          "pngCor": "static/2nd/fonctions_generalites_Lectures_Graphiques_012_corr.png"
+        },
+        "2nd_fonctions_generalites_Lectures_Graphiques_013": {
+          "uuid": "2nd_fonctions_generalites_Lectures_Graphiques_013",
+          "url": "static/2nd/fonctions_generalites_Lectures_Graphiques_013.tex",
+          "png": "static/2nd/fonctions_generalites_Lectures_Graphiques_013.png",
+          "pngCor": "static/2nd/fonctions_generalites_Lectures_Graphiques_013_corr.png"
+        },
+        "2nd_fonctions_generalites_Lectures_Graphiques_014": {
+          "uuid": "2nd_fonctions_generalites_Lectures_Graphiques_014",
+          "url": "static/2nd/fonctions_generalites_Lectures_Graphiques_014.tex",
+          "png": "static/2nd/fonctions_generalites_Lectures_Graphiques_014.png",
+          "pngCor": "static/2nd/fonctions_generalites_Lectures_Graphiques_014_corr.png"
+        },
+        "2nd_fonctions_generalites_Lectures_Graphiques_015": {
+          "uuid": "2nd_fonctions_generalites_Lectures_Graphiques_015",
+          "url": "static/2nd/fonctions_generalites_Lectures_Graphiques_015.tex",
+          "png": "static/2nd/fonctions_generalites_Lectures_Graphiques_015.png",
+          "pngCor": "static/2nd/fonctions_generalites_Lectures_Graphiques_015_corr.png"
+        },
+        "2nd_fonctions_generalites_Lectures_Graphiques_016": {
+          "uuid": "2nd_fonctions_generalites_Lectures_Graphiques_016",
+          "url": "static/2nd/fonctions_generalites_Lectures_Graphiques_016.tex",
+          "png": "static/2nd/fonctions_generalites_Lectures_Graphiques_016.png",
+          "pngCor": "static/2nd/fonctions_generalites_Lectures_Graphiques_016_corr.png"
+        },
+        "2nd_fonctions_generalites_Lectures_Graphiques_017": {
+          "uuid": "2nd_fonctions_generalites_Lectures_Graphiques_017",
+          "url": "static/2nd/fonctions_generalites_Lectures_Graphiques_017.tex",
+          "png": "static/2nd/fonctions_generalites_Lectures_Graphiques_017.png",
+          "pngCor": "static/2nd/fonctions_generalites_Lectures_Graphiques_017_corr.png"
+        },
+        "2nd_fonctions_generalites_Lectures_Graphiques_018": {
+          "uuid": "2nd_fonctions_generalites_Lectures_Graphiques_018",
+          "url": "static/2nd/fonctions_generalites_Lectures_Graphiques_018.tex",
+          "png": "static/2nd/fonctions_generalites_Lectures_Graphiques_018.png",
+          "pngCor": "static/2nd/fonctions_generalites_Lectures_Graphiques_018_corr.png"
+        },
+        "2nd_fonctions_generalites_Lectures_Graphiques_019": {
+          "uuid": "2nd_fonctions_generalites_Lectures_Graphiques_019",
+          "url": "static/2nd/fonctions_generalites_Lectures_Graphiques_019.tex",
+          "png": "static/2nd/fonctions_generalites_Lectures_Graphiques_019.png",
+          "pngCor": "static/2nd/fonctions_generalites_Lectures_Graphiques_019_corr.png"
+        }
+      },
+      "Fonctions de référence": {
+        "2nd_fonctions_generalites_Ref_001": {
+          "uuid": "2nd_fonctions_generalites_Ref_001",
+          "url": "static/2nd/fonctions_generalites_Ref_001.tex",
+          "png": "static/2nd/fonctions_generalites_Ref_001.png",
+          "pngCor": "static/2nd/fonctions_generalites_Ref_001_corr.png"
+        },
+        "2nd_fonctions_generalites_Ref_002": {
+          "uuid": "2nd_fonctions_generalites_Ref_002",
+          "url": "static/2nd/fonctions_generalites_Ref_002.tex",
+          "png": "static/2nd/fonctions_generalites_Ref_002.png",
+          "pngCor": "static/2nd/fonctions_generalites_Ref_002_corr.png"
+        },
+        "2nd_fonctions_generalites_Ref_003": {
+          "uuid": "2nd_fonctions_generalites_Ref_003",
+          "url": "static/2nd/fonctions_generalites_Ref_003.tex",
+          "png": "static/2nd/fonctions_generalites_Ref_003.png",
+          "pngCor": "static/2nd/fonctions_generalites_Ref_003_corr.png"
+        },
+        "2nd_fonctions_generalites_Ref_004": {
+          "uuid": "2nd_fonctions_generalites_Ref_004",
+          "url": "static/2nd/fonctions_generalites_Ref_004.tex",
+          "png": "static/2nd/fonctions_generalites_Ref_004.png",
+          "pngCor": "static/2nd/fonctions_generalites_Ref_004_corr.png"
+        },
+        "2nd_fonctions_generalites_Ref_005": {
+          "uuid": "2nd_fonctions_generalites_Ref_005",
+          "url": "static/2nd/fonctions_generalites_Ref_005.tex",
+          "png": "static/2nd/fonctions_generalites_Ref_005.png",
+          "pngCor": "static/2nd/fonctions_generalites_Ref_005_corr.png"
+        },
+        "2nd_fonctions_generalites_Ref_006": {
+          "uuid": "2nd_fonctions_generalites_Ref_006",
+          "url": "static/2nd/fonctions_generalites_Ref_006.tex",
+          "png": "static/2nd/fonctions_generalites_Ref_006.png",
+          "pngCor": "static/2nd/fonctions_generalites_Ref_006_corr.png"
+        },
+        "2nd_fonctions_generalites_Ref_007": {
+          "uuid": "2nd_fonctions_generalites_Ref_007",
+          "url": "static/2nd/fonctions_generalites_Ref_007.tex",
+          "png": "static/2nd/fonctions_generalites_Ref_007.png",
+          "pngCor": "static/2nd/fonctions_generalites_Ref_007_corr.png"
+        },
+        "2nd_fonctions_generalites_Ref_008": {
+          "uuid": "2nd_fonctions_generalites_Ref_008",
+          "url": "static/2nd/fonctions_generalites_Ref_008.tex",
+          "png": "static/2nd/fonctions_generalites_Ref_008.png",
+          "pngCor": "static/2nd/fonctions_generalites_Ref_008_corr.png"
+        },
+        "2nd_fonctions_generalites_Ref_009": {
+          "uuid": "2nd_fonctions_generalites_Ref_009",
+          "url": "static/2nd/fonctions_generalites_Ref_009.tex",
+          "png": "static/2nd/fonctions_generalites_Ref_009.png",
+          "pngCor": "static/2nd/fonctions_generalites_Ref_009_corr.png"
+        },
+        "2nd_fonctions_generalites_Ref_010": {
+          "uuid": "2nd_fonctions_generalites_Ref_010",
+          "url": "static/2nd/fonctions_generalites_Ref_010.tex",
+          "png": "static/2nd/fonctions_generalites_Ref_010.png",
+          "pngCor": "static/2nd/fonctions_generalites_Ref_010_corr.png"
+        },
+        "2nd_fonctions_generalites_Ref_011": {
+          "uuid": "2nd_fonctions_generalites_Ref_011",
+          "url": "static/2nd/fonctions_generalites_Ref_011.tex",
+          "png": "static/2nd/fonctions_generalites_Ref_011.png",
+          "pngCor": "static/2nd/fonctions_generalites_Ref_011_corr.png"
+        },
+        "2nd_fonctions_generalites_Ref_012": {
+          "uuid": "2nd_fonctions_generalites_Ref_012",
+          "url": "static/2nd/fonctions_generalites_Ref_012.tex",
+          "png": "static/2nd/fonctions_generalites_Ref_012.png",
+          "pngCor": "static/2nd/fonctions_generalites_Ref_012_corr.png"
+        },
+        "2nd_fonctions_generalites_Ref_013": {
+          "uuid": "2nd_fonctions_generalites_Ref_013",
+          "url": "static/2nd/fonctions_generalites_Ref_013.tex",
+          "png": "static/2nd/fonctions_generalites_Ref_013.png",
+          "pngCor": "static/2nd/fonctions_generalites_Ref_013_corr.png"
+        }
+      },
+      "Variations de fonctions": {
+        "2nd_fonctions_variations_001": {
+          "uuid": "2nd_fonctions_variations_001",
+          "url": "static/2nd/fonctions_variations_001.tex",
+          "png": "static/2nd/fonctions_variations_001.png",
+          "pngCor": "static/2nd/fonctions_variations_001_corr.png"
+        },
+        "2nd_fonctions_variations_002": {
+          "uuid": "2nd_fonctions_variations_002",
+          "url": "static/2nd/fonctions_variations_002.tex",
+          "png": "static/2nd/fonctions_variations_002.png",
+          "pngCor": "static/2nd/fonctions_variations_002_corr.png"
+        },
+        "2nd_fonctions_variations_003": {
+          "uuid": "2nd_fonctions_variations_003",
+          "url": "static/2nd/fonctions_variations_003.tex",
+          "png": "static/2nd/fonctions_variations_003.png",
+          "pngCor": "static/2nd/fonctions_variations_003_corr.png"
+        },
+        "2nd_fonctions_variations_004": {
+          "uuid": "2nd_fonctions_variations_004",
+          "url": "static/2nd/fonctions_variations_004.tex",
+          "png": "static/2nd/fonctions_variations_004.png",
+          "pngCor": "static/2nd/fonctions_variations_004_corr.png"
+        },
+        "2nd_fonctions_variations_005": {
+          "uuid": "2nd_fonctions_variations_005",
+          "url": "static/2nd/fonctions_variations_005.tex",
+          "png": "static/2nd/fonctions_variations_005.png",
+          "pngCor": "static/2nd/fonctions_variations_005_corr.png"
+        },
+        "2nd_fonctions_variations_006": {
+          "uuid": "2nd_fonctions_variations_006",
+          "url": "static/2nd/fonctions_variations_006.tex",
+          "png": "static/2nd/fonctions_variations_006.png",
+          "pngCor": "static/2nd/fonctions_variations_006_corr.png"
+        },
+        "2nd_fonctions_variations_007": {
+          "uuid": "2nd_fonctions_variations_007",
+          "url": "static/2nd/fonctions_variations_007.tex",
+          "png": "static/2nd/fonctions_variations_007.png",
+          "pngCor": "static/2nd/fonctions_variations_007_corr.png"
+        },
+        "2nd_fonctions_variations_008": {
+          "uuid": "2nd_fonctions_variations_008",
+          "url": "static/2nd/fonctions_variations_008.tex",
+          "png": "static/2nd/fonctions_variations_008.png",
+          "pngCor": "static/2nd/fonctions_variations_008_corr.png"
+        },
+        "2nd_fonctions_variations_009": {
+          "uuid": "2nd_fonctions_variations_009",
+          "url": "static/2nd/fonctions_variations_009.tex",
+          "png": "static/2nd/fonctions_variations_009.png",
+          "pngCor": "static/2nd/fonctions_variations_009_corr.png"
+        },
+        "2nd_fonctions_variations_010": {
+          "uuid": "2nd_fonctions_variations_010",
+          "url": "static/2nd/fonctions_variations_010.tex",
+          "png": "static/2nd/fonctions_variations_010.png",
+          "pngCor": "static/2nd/fonctions_variations_010_corr.png"
+        },
+        "2nd_fonctions_variations_011": {
+          "uuid": "2nd_fonctions_variations_011",
+          "url": "static/2nd/fonctions_variations_011.tex",
+          "png": "static/2nd/fonctions_variations_011.png",
+          "pngCor": "static/2nd/fonctions_variations_011_corr.png"
+        },
+        "2nd_fonctions_variations_012": {
+          "uuid": "2nd_fonctions_variations_012",
+          "url": "static/2nd/fonctions_variations_012.tex",
+          "png": "static/2nd/fonctions_variations_012.png",
+          "pngCor": "static/2nd/fonctions_variations_012_corr.png"
+        },
+        "2nd_fonctions_variations_013": {
+          "uuid": "2nd_fonctions_variations_013",
+          "url": "static/2nd/fonctions_variations_013.tex",
+          "png": "static/2nd/fonctions_variations_013.png",
+          "pngCor": "static/2nd/fonctions_variations_013_corr.png"
+        },
+        "2nd_fonctions_variations_014": {
+          "uuid": "2nd_fonctions_variations_014",
+          "url": "static/2nd/fonctions_variations_014.tex",
+          "png": "static/2nd/fonctions_variations_014.png",
+          "pngCor": "static/2nd/fonctions_variations_014_corr.png"
+        },
+        "2nd_fonctions_variations_015": {
+          "uuid": "2nd_fonctions_variations_015",
+          "url": "static/2nd/fonctions_variations_015.tex",
+          "png": "static/2nd/fonctions_variations_015.png",
+          "pngCor": "static/2nd/fonctions_variations_015_corr.png"
+        },
+        "2nd_fonctions_variations_016": {
+          "uuid": "2nd_fonctions_variations_016",
+          "url": "static/2nd/fonctions_variations_016.tex",
+          "png": "static/2nd/fonctions_variations_016.png",
+          "pngCor": "static/2nd/fonctions_variations_016_corr.png"
+        }
+      }
+    },
+    "Géométrie": {
+      "Équations de droites": {
+        "2nd_equations_droites_001": {
+          "uuid": "2nd_equations_droites_001",
+          "url": "static/2nd/equations_droites_001.tex",
+          "png": "static/2nd/equations_droites_001.png",
+          "pngCor": "static/2nd/equations_droites_001_corr.png"
+        },
+        "2nd_equations_droites_002": {
+          "uuid": "2nd_equations_droites_002",
+          "url": "static/2nd/equations_droites_002.tex",
+          "png": "static/2nd/equations_droites_002.png",
+          "pngCor": "static/2nd/equations_droites_002_corr.png"
+        },
+        "2nd_equations_droites_003": {
+          "uuid": "2nd_equations_droites_003",
+          "url": "static/2nd/equations_droites_003.tex",
+          "png": "static/2nd/equations_droites_003.png",
+          "pngCor": "static/2nd/equations_droites_003_corr.png"
+        },
+        "2nd_equations_droites_004": {
+          "uuid": "2nd_equations_droites_004",
+          "url": "static/2nd/equations_droites_004.tex",
+          "png": "static/2nd/equations_droites_004.png",
+          "pngCor": "static/2nd/equations_droites_004_corr.png"
+        },
+        "2nd_equations_droites_005": {
+          "uuid": "2nd_equations_droites_005",
+          "url": "static/2nd/equations_droites_005.tex",
+          "png": "static/2nd/equations_droites_005.png",
+          "pngCor": "static/2nd/equations_droites_005_corr.png"
+        },
+        "2nd_equations_droites_006": {
+          "uuid": "2nd_equations_droites_006",
+          "url": "static/2nd/equations_droites_006.tex",
+          "png": "static/2nd/equations_droites_006.png",
+          "pngCor": "static/2nd/equations_droites_006_corr.png"
+        },
+        "2nd_equations_droites_007": {
+          "uuid": "2nd_equations_droites_007",
+          "url": "static/2nd/equations_droites_007.tex",
+          "png": "static/2nd/equations_droites_007.png",
+          "pngCor": "static/2nd/equations_droites_007_corr.png"
+        },
+        "2nd_equations_droites_008": {
+          "uuid": "2nd_equations_droites_008",
+          "url": "static/2nd/equations_droites_008.tex",
+          "png": "static/2nd/equations_droites_008.png",
+          "pngCor": "static/2nd/equations_droites_008_corr.png"
+        },
+        "2nd_equations_droites_009": {
+          "uuid": "2nd_equations_droites_009",
+          "url": "static/2nd/equations_droites_009.tex",
+          "png": "static/2nd/equations_droites_009.png",
+          "pngCor": "static/2nd/equations_droites_009_corr.png"
+        },
+        "2nd_equations_droites_010": {
+          "uuid": "2nd_equations_droites_010",
+          "url": "static/2nd/equations_droites_010.tex",
+          "png": "static/2nd/equations_droites_010.png",
+          "pngCor": "static/2nd/equations_droites_010_corr.png"
+        },
+        "2nd_equations_droites_011": {
+          "uuid": "2nd_equations_droites_011",
+          "url": "static/2nd/equations_droites_011.tex",
+          "png": "static/2nd/equations_droites_011.png",
+          "pngCor": "static/2nd/equations_droites_011_corr.png"
+        },
+        "2nd_equations_droites_012": {
+          "uuid": "2nd_equations_droites_012",
+          "url": "static/2nd/equations_droites_012.tex",
+          "png": "static/2nd/equations_droites_012.png",
+          "pngCor": "static/2nd/equations_droites_012_corr.png"
+        },
+        "2nd_equations_droites_013": {
+          "uuid": "2nd_equations_droites_013",
+          "url": "static/2nd/equations_droites_013.tex",
+          "png": "static/2nd/equations_droites_013.png",
+          "pngCor": "static/2nd/equations_droites_013_corr.png"
+        },
+        "2nd_equations_droites_014": {
+          "uuid": "2nd_equations_droites_014",
+          "url": "static/2nd/equations_droites_014.tex",
+          "png": "static/2nd/equations_droites_014.png",
+          "pngCor": "static/2nd/equations_droites_014_corr.png"
+        },
+        "2nd_equations_droites_015": {
+          "uuid": "2nd_equations_droites_015",
+          "url": "static/2nd/equations_droites_015.tex",
+          "png": "static/2nd/equations_droites_015.png",
+          "pngCor": "static/2nd/equations_droites_015_corr.png"
+        },
+        "2nd_equations_droites_016": {
+          "uuid": "2nd_equations_droites_016",
+          "url": "static/2nd/equations_droites_016.tex",
+          "png": "static/2nd/equations_droites_016.png",
+          "pngCor": "static/2nd/equations_droites_016_corr.png"
+        },
+        "2nd_equations_droites_017": {
+          "uuid": "2nd_equations_droites_017",
+          "url": "static/2nd/equations_droites_017.tex",
+          "png": "static/2nd/equations_droites_017.png",
+          "pngCor": "static/2nd/equations_droites_017_corr.png"
+        },
+        "2nd_equations_droites_018": {
+          "uuid": "2nd_equations_droites_018",
+          "url": "static/2nd/equations_droites_018.tex",
+          "png": "static/2nd/equations_droites_018.png",
+          "pngCor": "static/2nd/equations_droites_018_corr.png"
+        },
+        "2nd_equations_droites_019": {
+          "uuid": "2nd_equations_droites_019",
+          "url": "static/2nd/equations_droites_019.tex",
+          "png": "static/2nd/equations_droites_019.png",
+          "pngCor": "static/2nd/equations_droites_019_corr.png"
+        },
+        "2nd_equations_droites_020": {
+          "uuid": "2nd_equations_droites_020",
+          "url": "static/2nd/equations_droites_020.tex",
+          "png": "static/2nd/equations_droites_020.png",
+          "pngCor": "static/2nd/equations_droites_020_corr.png"
+        },
+        "2nd_equations_droites_021": {
+          "uuid": "2nd_equations_droites_021",
+          "url": "static/2nd/equations_droites_021.tex",
+          "png": "static/2nd/equations_droites_021.png",
+          "pngCor": "static/2nd/equations_droites_021_corr.png"
+        },
+        "2nd_equations_droites_022": {
+          "uuid": "2nd_equations_droites_022",
+          "url": "static/2nd/equations_droites_022.tex",
+          "png": "static/2nd/equations_droites_022.png",
+          "pngCor": "static/2nd/equations_droites_022_corr.png"
+        },
+        "2nd_equations_droites_023": {
+          "uuid": "2nd_equations_droites_023",
+          "url": "static/2nd/equations_droites_023.tex",
+          "png": "static/2nd/equations_droites_023.png",
+          "pngCor": "static/2nd/equations_droites_023_corr.png"
+        },
+        "2nd_equations_droites_024": {
+          "uuid": "2nd_equations_droites_024",
+          "url": "static/2nd/equations_droites_024.tex",
+          "png": "static/2nd/equations_droites_024.png",
+          "pngCor": "static/2nd/equations_droites_024_corr.png"
+        },
+        "2nd_equations_droites_025": {
+          "uuid": "2nd_equations_droites_025",
+          "url": "static/2nd/equations_droites_025.tex",
+          "png": "static/2nd/equations_droites_025.png",
+          "pngCor": "static/2nd/equations_droites_025_corr.png"
+        },
+        "2nd_equations_droites_026": {
+          "uuid": "2nd_equations_droites_026",
+          "url": "static/2nd/equations_droites_026.tex",
+          "png": "static/2nd/equations_droites_026.png",
+          "pngCor": "static/2nd/equations_droites_026_corr.png"
+        },
+        "2nd_equations_droites_027": {
+          "uuid": "2nd_equations_droites_027",
+          "url": "static/2nd/equations_droites_027.tex",
+          "png": "static/2nd/equations_droites_027.png",
+          "pngCor": "static/2nd/equations_droites_027_corr.png"
+        },
+        "2nd_equations_droites_028": {
+          "uuid": "2nd_equations_droites_028",
+          "url": "static/2nd/equations_droites_028.tex",
+          "png": "static/2nd/equations_droites_028.png",
+          "pngCor": "static/2nd/equations_droites_028_corr.png"
+        }
+      },
+      "Géométrie repérée": {
+        "2nd_geometrie_reperee_001": {
+          "uuid": "2nd_geometrie_reperee_001",
+          "url": "static/2nd/geometrie_reperee_001.tex",
+          "png": "static/2nd/geometrie_reperee_001.png",
+          "pngCor": "static/2nd/geometrie_reperee_001_corr.png"
+        },
+        "2nd_geometrie_reperee_002": {
+          "uuid": "2nd_geometrie_reperee_002",
+          "url": "static/2nd/geometrie_reperee_002.tex",
+          "png": "static/2nd/geometrie_reperee_002.png",
+          "pngCor": "static/2nd/geometrie_reperee_002_corr.png"
+        },
+        "2nd_geometrie_reperee_003": {
+          "uuid": "2nd_geometrie_reperee_003",
+          "url": "static/2nd/geometrie_reperee_003.tex",
+          "png": "static/2nd/geometrie_reperee_003.png",
+          "pngCor": "static/2nd/geometrie_reperee_003_corr.png"
+        },
+        "2nd_geometrie_reperee_004": {
+          "uuid": "2nd_geometrie_reperee_004",
+          "url": "static/2nd/geometrie_reperee_004.tex",
+          "png": "static/2nd/geometrie_reperee_004.png",
+          "pngCor": "static/2nd/geometrie_reperee_004_corr.png"
+        },
+        "2nd_geometrie_reperee_005": {
+          "uuid": "2nd_geometrie_reperee_005",
+          "url": "static/2nd/geometrie_reperee_005.tex",
+          "png": "static/2nd/geometrie_reperee_005.png",
+          "pngCor": "static/2nd/geometrie_reperee_005_corr.png"
+        },
+        "2nd_geometrie_reperee_006": {
+          "uuid": "2nd_geometrie_reperee_006",
+          "url": "static/2nd/geometrie_reperee_006.tex",
+          "png": "static/2nd/geometrie_reperee_006.png",
+          "pngCor": "static/2nd/geometrie_reperee_006_corr.png"
+        },
+        "2nd_geometrie_reperee_007": {
+          "uuid": "2nd_geometrie_reperee_007",
+          "url": "static/2nd/geometrie_reperee_007.tex",
+          "png": "static/2nd/geometrie_reperee_007.png",
+          "pngCor": "static/2nd/geometrie_reperee_007_corr.png"
+        },
+        "2nd_geometrie_reperee_008": {
+          "uuid": "2nd_geometrie_reperee_008",
+          "url": "static/2nd/geometrie_reperee_008.tex",
+          "png": "static/2nd/geometrie_reperee_008.png",
+          "pngCor": "static/2nd/geometrie_reperee_008_corr.png"
+        },
+        "2nd_geometrie_reperee_009": {
+          "uuid": "2nd_geometrie_reperee_009",
+          "url": "static/2nd/geometrie_reperee_009.tex",
+          "png": "static/2nd/geometrie_reperee_009.png",
+          "pngCor": "static/2nd/geometrie_reperee_009_corr.png"
+        },
+        "2nd_geometrie_reperee_010": {
+          "uuid": "2nd_geometrie_reperee_010",
+          "url": "static/2nd/geometrie_reperee_010.tex",
+          "png": "static/2nd/geometrie_reperee_010.png",
+          "pngCor": "static/2nd/geometrie_reperee_010_corr.png"
+        },
+        "2nd_geometrie_reperee_011": {
+          "uuid": "2nd_geometrie_reperee_011",
+          "url": "static/2nd/geometrie_reperee_011.tex",
+          "png": "static/2nd/geometrie_reperee_011.png",
+          "pngCor": "static/2nd/geometrie_reperee_011_corr.png"
+        },
+        "2nd_geometrie_reperee_012": {
+          "uuid": "2nd_geometrie_reperee_012",
+          "url": "static/2nd/geometrie_reperee_012.tex",
+          "png": "static/2nd/geometrie_reperee_012.png",
+          "pngCor": "static/2nd/geometrie_reperee_012_corr.png"
+        },
+        "2nd_geometrie_reperee_013": {
+          "uuid": "2nd_geometrie_reperee_013",
+          "url": "static/2nd/geometrie_reperee_013.tex",
+          "png": "static/2nd/geometrie_reperee_013.png",
+          "pngCor": "static/2nd/geometrie_reperee_013_corr.png"
+        },
+        "2nd_geometrie_reperee_014": {
+          "uuid": "2nd_geometrie_reperee_014",
+          "url": "static/2nd/geometrie_reperee_014.tex",
+          "png": "static/2nd/geometrie_reperee_014.png",
+          "pngCor": "static/2nd/geometrie_reperee_014_corr.png"
+        },
+        "2nd_geometrie_reperee_015": {
+          "uuid": "2nd_geometrie_reperee_015",
+          "url": "static/2nd/geometrie_reperee_015.tex",
+          "png": "static/2nd/geometrie_reperee_015.png",
+          "pngCor": "static/2nd/geometrie_reperee_015_corr.png"
+        },
+        "2nd_geometrie_reperee_016": {
+          "uuid": "2nd_geometrie_reperee_016",
+          "url": "static/2nd/geometrie_reperee_016.tex",
+          "png": "static/2nd/geometrie_reperee_016.png",
+          "pngCor": "static/2nd/geometrie_reperee_016_corr.png"
+        },
+        "2nd_geometrie_reperee_017": {
+          "uuid": "2nd_geometrie_reperee_017",
+          "url": "static/2nd/geometrie_reperee_017.tex",
+          "png": "static/2nd/geometrie_reperee_017.png",
+          "pngCor": "static/2nd/geometrie_reperee_017_corr.png"
+        },
+        "2nd_geometrie_reperee_018": {
+          "uuid": "2nd_geometrie_reperee_018",
+          "url": "static/2nd/geometrie_reperee_018.tex",
+          "png": "static/2nd/geometrie_reperee_018.png",
+          "pngCor": "static/2nd/geometrie_reperee_018_corr.png"
+        },
+        "2nd_geometrie_reperee_019": {
+          "uuid": "2nd_geometrie_reperee_019",
+          "url": "static/2nd/geometrie_reperee_019.tex",
+          "png": "static/2nd/geometrie_reperee_019.png",
+          "pngCor": "static/2nd/geometrie_reperee_019_corr.png"
+        },
+        "2nd_geometrie_reperee_020": {
+          "uuid": "2nd_geometrie_reperee_020",
+          "url": "static/2nd/geometrie_reperee_020.tex",
+          "png": "static/2nd/geometrie_reperee_020.png",
+          "pngCor": "static/2nd/geometrie_reperee_020_corr.png"
+        },
+        "2nd_geometrie_reperee_021": {
+          "uuid": "2nd_geometrie_reperee_021",
+          "url": "static/2nd/geometrie_reperee_021.tex",
+          "png": "static/2nd/geometrie_reperee_021.png",
+          "pngCor": "static/2nd/geometrie_reperee_021_corr.png"
+        },
+        "2nd_geometrie_reperee_022": {
+          "uuid": "2nd_geometrie_reperee_022",
+          "url": "static/2nd/geometrie_reperee_022.tex",
+          "png": "static/2nd/geometrie_reperee_022.png",
+          "pngCor": "static/2nd/geometrie_reperee_022_corr.png"
+        }
+      },
+      "Géométrie sans repère": {
+        "2nd_geometrieSansRepere_001": {
+          "uuid": "2nd_geometrieSansRepere_001",
+          "url": "static/2nd/geometrieSansRepere_001.tex",
+          "png": "static/2nd/geometrieSansRepere_001.png",
+          "pngCor": "static/2nd/geometrieSansRepere_001_corr.png"
+        },
+        "2nd_geometrieSansRepere_002": {
+          "uuid": "2nd_geometrieSansRepere_002",
+          "url": "static/2nd/geometrieSansRepere_002.tex",
+          "png": "static/2nd/geometrieSansRepere_002.png",
+          "pngCor": "static/2nd/geometrieSansRepere_002_corr.png"
+        },
+        "2nd_geometrieSansRepere_003": {
+          "uuid": "2nd_geometrieSansRepere_003",
+          "url": "static/2nd/geometrieSansRepere_003.tex",
+          "png": "static/2nd/geometrieSansRepere_003.png",
+          "pngCor": "static/2nd/geometrieSansRepere_003_corr.png"
+        },
+        "2nd_geometrieSansRepere_004": {
+          "uuid": "2nd_geometrieSansRepere_004",
+          "url": "static/2nd/geometrieSansRepere_004.tex",
+          "png": "static/2nd/geometrieSansRepere_004.png",
+          "pngCor": "static/2nd/geometrieSansRepere_004_corr.png"
+        },
+        "2nd_geometrieSansRepere_005": {
+          "uuid": "2nd_geometrieSansRepere_005",
+          "url": "static/2nd/geometrieSansRepere_005.tex",
+          "png": "static/2nd/geometrieSansRepere_005.png",
+          "pngCor": "static/2nd/geometrieSansRepere_005_corr.png"
+        },
+        "2nd_geometrieSansRepere_006": {
+          "uuid": "2nd_geometrieSansRepere_006",
+          "url": "static/2nd/geometrieSansRepere_006.tex",
+          "png": "static/2nd/geometrieSansRepere_006.png",
+          "pngCor": "static/2nd/geometrieSansRepere_006_corr.png"
+        },
+        "2nd_geometrieSansRepere_007": {
+          "uuid": "2nd_geometrieSansRepere_007",
+          "url": "static/2nd/geometrieSansRepere_007.tex",
+          "png": "static/2nd/geometrieSansRepere_007.png",
+          "pngCor": "static/2nd/geometrieSansRepere_007_corr.png"
+        },
+        "2nd_geometrieSansRepere_008": {
+          "uuid": "2nd_geometrieSansRepere_008",
+          "url": "static/2nd/geometrieSansRepere_008.tex",
+          "png": "static/2nd/geometrieSansRepere_008.png",
+          "pngCor": "static/2nd/geometrieSansRepere_008_corr.png"
+        },
+        "2nd_geometrieSansRepere_009": {
+          "uuid": "2nd_geometrieSansRepere_009",
+          "url": "static/2nd/geometrieSansRepere_009.tex",
+          "png": "static/2nd/geometrieSansRepere_009.png",
+          "pngCor": "static/2nd/geometrieSansRepere_009_corr.png"
+        },
+        "2nd_geometrieSansRepere_010": {
+          "uuid": "2nd_geometrieSansRepere_010",
+          "url": "static/2nd/geometrieSansRepere_010.tex",
+          "png": "static/2nd/geometrieSansRepere_010.png",
+          "pngCor": "static/2nd/geometrieSansRepere_010_corr.png"
+        },
+        "2nd_geometrieSansRepere_011": {
+          "uuid": "2nd_geometrieSansRepere_011",
+          "url": "static/2nd/geometrieSansRepere_011.tex",
+          "png": "static/2nd/geometrieSansRepere_011.png",
+          "pngCor": "static/2nd/geometrieSansRepere_011_corr.png"
+        },
+        "2nd_geometrieSansRepere_012": {
+          "uuid": "2nd_geometrieSansRepere_012",
+          "url": "static/2nd/geometrieSansRepere_012.tex",
+          "png": "static/2nd/geometrieSansRepere_012.png",
+          "pngCor": "static/2nd/geometrieSansRepere_012_corr.png"
+        },
+        "2nd_geometrieSansRepere_013": {
+          "uuid": "2nd_geometrieSansRepere_013",
+          "url": "static/2nd/geometrieSansRepere_013.tex",
+          "png": "static/2nd/geometrieSansRepere_013.png",
+          "pngCor": "static/2nd/geometrieSansRepere_013_corr.png"
+        },
+        "2nd_geometrieSansRepere_014": {
+          "uuid": "2nd_geometrieSansRepere_014",
+          "url": "static/2nd/geometrieSansRepere_014.tex",
+          "png": "static/2nd/geometrieSansRepere_014.png",
+          "pngCor": "static/2nd/geometrieSansRepere_014_corr.png"
+        }
+      },
+      "Vecteurs avec coordonnées": {},
+      "Vecteurs sans coordonnées": {
+        "2nd_vecteurs_ex01": {
+          "uuid": "2nd_vecteurs_ex01",
+          "url": "static/2nd/vecteurs_ex01.tex",
+          "png": "static/2nd/vecteurs_ex01.png",
+          "pngCor": "static/2nd/vecteurs_ex01_corr.png"
+        },
+        "2nd_vecteurs_ex01R": {
+          "uuid": "2nd_vecteurs_ex01R",
+          "url": "static/2nd/vecteurs_ex01R.tex",
+          "png": "static/2nd/vecteurs_ex01R.png",
+          "pngCor": "static/2nd/vecteurs_ex01R_corr.png"
+        },
+        "2nd_vecteurs_ex02": {
+          "uuid": "2nd_vecteurs_ex02",
+          "url": "static/2nd/vecteurs_ex02.tex",
+          "png": "static/2nd/vecteurs_ex02.png",
+          "pngCor": "static/2nd/vecteurs_ex02_corr.png"
+        },
+        "2nd_vecteurs_ex02R": {
+          "uuid": "2nd_vecteurs_ex02R",
+          "url": "static/2nd/vecteurs_ex02R.tex",
+          "png": "static/2nd/vecteurs_ex02R.png",
+          "pngCor": "static/2nd/vecteurs_ex02R_corr.png"
+        },
+        "2nd_vecteurs_ex03": {
+          "uuid": "2nd_vecteurs_ex03",
+          "url": "static/2nd/vecteurs_ex03.tex",
+          "png": "static/2nd/vecteurs_ex03.png",
+          "pngCor": "static/2nd/vecteurs_ex03_corr.png"
+        },
+        "2nd_vecteurs_ex03R": {
+          "uuid": "2nd_vecteurs_ex03R",
+          "url": "static/2nd/vecteurs_ex03R.tex",
+          "png": "static/2nd/vecteurs_ex03R.png",
+          "pngCor": "static/2nd/vecteurs_ex03R_corr.png"
+        }
+      }
+    },
+    "Nombres": {
+      "Arithmétique": {},
+      "Ensemble de nombres": {
+        "2nd_ensembles_de_nombres_001": {
+          "uuid": "2nd_ensembles_de_nombres_001",
+          "url": "static/2nd/ensembles_de_nombres_001.tex",
+          "png": "static/2nd/ensembles_de_nombres_001.png",
+          "pngCor": "static/2nd/ensembles_de_nombres_001_corr.png"
+        },
+        "2nd_ensembles_de_nombres_002": {
+          "uuid": "2nd_ensembles_de_nombres_002",
+          "url": "static/2nd/ensembles_de_nombres_002.tex",
+          "png": "static/2nd/ensembles_de_nombres_002.png",
+          "pngCor": "static/2nd/ensembles_de_nombres_002_corr.png"
+        },
+        "2nd_ensembles_de_nombres_003": {
+          "uuid": "2nd_ensembles_de_nombres_003",
+          "url": "static/2nd/ensembles_de_nombres_003.tex",
+          "png": "static/2nd/ensembles_de_nombres_003.png",
+          "pngCor": "static/2nd/ensembles_de_nombres_003_corr.png"
+        },
+        "2nd_ensembles_de_nombres_004": {
+          "uuid": "2nd_ensembles_de_nombres_004",
+          "url": "static/2nd/ensembles_de_nombres_004.tex",
+          "png": "static/2nd/ensembles_de_nombres_004.png",
+          "pngCor": "static/2nd/ensembles_de_nombres_004_corr.png"
+        },
+        "2nd_ensembles_de_nombres_005": {
+          "uuid": "2nd_ensembles_de_nombres_005",
+          "url": "static/2nd/ensembles_de_nombres_005.tex",
+          "png": "static/2nd/ensembles_de_nombres_005.png",
+          "pngCor": "static/2nd/ensembles_de_nombres_005_corr.png"
+        },
+        "2nd_ensembles_de_nombres_006": {
+          "uuid": "2nd_ensembles_de_nombres_006",
+          "url": "static/2nd/ensembles_de_nombres_006.tex",
+          "png": "static/2nd/ensembles_de_nombres_006.png",
+          "pngCor": "static/2nd/ensembles_de_nombres_006_corr.png"
+        },
+        "2nd_ensembles_de_nombres_007": {
+          "uuid": "2nd_ensembles_de_nombres_007",
+          "url": "static/2nd/ensembles_de_nombres_007.tex",
+          "png": "static/2nd/ensembles_de_nombres_007.png",
+          "pngCor": "static/2nd/ensembles_de_nombres_007_corr.png"
+        },
+        "2nd_ensembles_de_nombres_008": {
+          "uuid": "2nd_ensembles_de_nombres_008",
+          "url": "static/2nd/ensembles_de_nombres_008.tex",
+          "png": "static/2nd/ensembles_de_nombres_008.png",
+          "pngCor": "static/2nd/ensembles_de_nombres_008_corr.png"
+        },
+        "2nd_ensembles_de_nombres_009": {
+          "uuid": "2nd_ensembles_de_nombres_009",
+          "url": "static/2nd/ensembles_de_nombres_009.tex",
+          "png": "static/2nd/ensembles_de_nombres_009.png",
+          "pngCor": "static/2nd/ensembles_de_nombres_009_corr.png"
+        },
+        "2nd_ensembles_de_nombres_010": {
+          "uuid": "2nd_ensembles_de_nombres_010",
+          "url": "static/2nd/ensembles_de_nombres_010.tex",
+          "png": "static/2nd/ensembles_de_nombres_010.png",
+          "pngCor": "static/2nd/ensembles_de_nombres_010_corr.png"
+        },
+        "2nd_ensembles_de_nombres_011": {
+          "uuid": "2nd_ensembles_de_nombres_011",
+          "url": "static/2nd/ensembles_de_nombres_011.tex",
+          "png": "static/2nd/ensembles_de_nombres_011.png",
+          "pngCor": "static/2nd/ensembles_de_nombres_011_corr.png"
+        },
+        "2nd_ensembles_de_nombres_012": {
+          "uuid": "2nd_ensembles_de_nombres_012",
+          "url": "static/2nd/ensembles_de_nombres_012.tex",
+          "png": "static/2nd/ensembles_de_nombres_012.png",
+          "pngCor": "static/2nd/ensembles_de_nombres_012_corr.png"
+        },
+        "2nd_ensembles_de_nombres_013": {
+          "uuid": "2nd_ensembles_de_nombres_013",
+          "url": "static/2nd/ensembles_de_nombres_013.tex",
+          "png": "static/2nd/ensembles_de_nombres_013.png",
+          "pngCor": "static/2nd/ensembles_de_nombres_013_corr.png"
+        },
+        "2nd_ensembles_de_nombres_014": {
+          "uuid": "2nd_ensembles_de_nombres_014",
+          "url": "static/2nd/ensembles_de_nombres_014.tex",
+          "png": "static/2nd/ensembles_de_nombres_014.png",
+          "pngCor": "static/2nd/ensembles_de_nombres_014_corr.png"
+        },
+        "2nd_ensembles_de_nombres_015": {
+          "uuid": "2nd_ensembles_de_nombres_015",
+          "url": "static/2nd/ensembles_de_nombres_015.tex",
+          "png": "static/2nd/ensembles_de_nombres_015.png",
+          "pngCor": "static/2nd/ensembles_de_nombres_015_corr.png"
+        },
+        "2nd_ensembles_de_nombres_016": {
+          "uuid": "2nd_ensembles_de_nombres_016",
+          "url": "static/2nd/ensembles_de_nombres_016.tex",
+          "png": "static/2nd/ensembles_de_nombres_016.png",
+          "pngCor": "static/2nd/ensembles_de_nombres_016_corr.png"
+        },
+        "2nd_ensembles_de_nombres_017": {
+          "uuid": "2nd_ensembles_de_nombres_017",
+          "url": "static/2nd/ensembles_de_nombres_017.tex",
+          "png": "static/2nd/ensembles_de_nombres_017.png",
+          "pngCor": "static/2nd/ensembles_de_nombres_017_corr.png"
+        }
+      },
+      "Intervalles": {}
+    },
+    "Probabilités et statistiques": {
+      "Probabilités": {},
+      "Statistiques": {}
+    }
+  }
+}

@@ -1,0 +1,73 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "dev",
+      "runtimeExecutable": "pnpm",
+      "runtimeArgs": [
+        "run",
+        "dev",
+        "--port",
+        "5199"
+      ],
+      "port": 5199
+    },
+    {
+      "name": "dev-5201",
+      "runtimeExecutable": "pnpm",
+      "runtimeArgs": [
+        "run",
+        "dev",
+        "--port",
+        "5201"
+      ],
+      "port": 5201
+    },
+    {
+      "name": "dev-5203",
+      "runtimeExecutable": "pnpm",
+      "runtimeArgs": [
+        "run",
+        "dev",
+        "--port",
+        "5203"
+      ],
+      "port": 5203
+    },
+    {
+      "name": "dev-vitrine",
+      "runtimeExecutable": "env",
+      "runtimeArgs": [
+        "WWW_PROXY_TARGET=http://localhost:4321",
+        "pnpm",
+        "run",
+        "dev",
+        "--port",
+        "5205"
+      ],
+      "port": 5205
+    },
+    {
+      "name": "dev-auto",
+      "runtimeExecutable": "sh",
+      "runtimeArgs": [
+        "-c",
+        "pnpm makeJson && vite --port \"$PORT\""
+      ],
+      "port": 5199,
+      "autoPort": true
+    },
+    {
+      "name": "preview",
+      "runtimeExecutable": "pnpm",
+      "runtimeArgs": [
+        "exec",
+        "vite",
+        "preview",
+        "--port",
+        "5299"
+      ],
+      "port": 5299
+    }
+  ]
+}

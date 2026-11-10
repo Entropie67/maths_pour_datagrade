@@ -1,0 +1,128 @@
+
+\medskip
+
+Pour fêter les 25 ans de sa boutique, un chocolatier souhaite offrir aux premiers clients de la journée une boîte contenant des truffes au chocolat.
+
+%\medskip
+
+\begin{enumerate}
+\item Il a confectionné $300$ truffes: $125$ truffes parfumées au café et $175$ truffes enrobées de noix de coco. Il souhaite fabriquer ces boîtes de sorte que:
+
+\setlength\parindent{1cm}
+\begin{itemize}
+\item[$\bullet~~$] Le nombre de truffes parfumées au café soit le même dans chaque boîte;
+\item[$\bullet~~$] Le nombre de truffes enrobées de noix de coco soit le même dans chaque boîte;
+\item[$\bullet~~$] Toutes les truffes soient utilisées.
+\end{itemize}
+\setlength\parindent{0cm}
+
+	\begin{enumerate}
+		\item $125=5\times 5\times 5 = 5^3$ et $175=5\times 5\times 7 = 5^2\times 7$
+		
+		\item% En déduire la liste des diviseurs communs à $125$ et $175$.
+On cherche le PGCD de 125 et 175.
+
+\begin{center}
+\begin{tabularx}{0.6\linewidth}{|c|*{4}{>{\centering \arraybackslash} X|}}
+\hline
+125 & 5 & 5 & 5 & \\
+\hline
+175 & & 5 & 5 & 7 \\
+\hline
+PGCD & & 5 & 5 & \\
+\hline
+\end{tabularx}		
+\end{center}		
+		
+Donc le PGCD de 125 et 175 est $5\times 5=25$, donc les diviseurs communs de 125 et 175 sont ceux de 25, c'est-à-dire: 1, 5 et 25.
+	
+		\item %Quel nombre maximal de boîtes pourra-t-il réaliser ?
+Le chocolatier pourra donc réaliser un maximum de 25 boîtes.
+		
+		\item $\dfrac{125}{25}=5$ donc il y aura 5 truffes parfumées au café dans chacune des 25 boîtes.
+		
+$\dfrac{175}{25}=7$ donc il y aura 7 truffes enrobées de noix de coco dans chacune des 25 boîtes.
+		
+%Dans ce cas, combien y aura-t-il de truffes de chaque sorte dans chaque boîte?
+	\end{enumerate}	
+
+\item Le chocolatier souhaite fabriquer des boîtes contenant $12$ truffes. Pour cela, il a le choix entre deux types de boites qui peuvent contenir les $12$ truffes, et dont les caractéristiques sont données ci-dessous.
+
+\begin{figure}[!t]
+\centering
+\begin{tabularx}{0.75\linewidth}{|*{2}{>{\centering \arraybackslash}X|}}\hline
+\textbf{Type A}&\textbf{Type B}\\
+\psset{unit=1cm}
+\begin{pspicture}(4,3.4)
+\pspolygon(0,0)(2.9,0)(3.7,1)(1.85,3.2)(2.9,0)
+\psline(0,0)(1.85,3.2)
+\psline[linestyle=dashed](0,0)(0.8,1)(3.7,1)
+\psline[linestyle=dashed](0.8,1)(1.85,3.2)
+\end{pspicture}&
+\psset{unit=1cm}
+\begin{pspicture}(4,3.4)
+\psframe(0.4,0.2)(3.1,2.1)
+\psline(3.1,0.2)(3.7,1.1)(3.7,3)(3.1,2.1)
+\psline(3.7,3)(1,3)(0.4,2.1)
+\psline[linestyle=dashed](0.4,0.2)(1,1.1)(3.7,1.1)
+\psline[linestyle=dashed](1,1.1)(1,3)
+\end{pspicture}\\ \hline
+Pyramide à base carrée&Pavé droit\\
+de côté 4,8 cm&de longueur 5 cm,\\
+et de hauteur 5 cm& de largeur 3,5 cm\\
+&et de hauteur 3,5 cm\\ \hline
+\end{tabularx}
+\end{figure}
+
+Chacune des $12$ truffes est assimilée à une boule de diamètre $1,5$~cm.
+
+À l'intérieur d'une boîte, pour que les truffes ne s'abîment pas pendant le transport, le volume occupé par les truffes doit être supérieur au volume non occupé par les truffes.
+
+%Quel(s) type(s) de boîte le chocolatier doit-il choisir pour que cette condition soit respectée?
+
+\begin{list}{\textbullet}{}
+\item \textbf{Les truffes}
+
+La truffe est assimilée  à une boule de diamètre $1,5$~cm, donc de rayon $0,75$~cm; son volume est donc, en cm$^3$:
+$\dfrac{4}{3}\times \pi\times 0,75^3$.
+
+Le volume occupé par 12 truffes est donc de $12\times \dfrac{4}{3}\times \pi\times 0,75^3=6,75\pi$ soit environ $21,2$~cm$^3$.
+
+\item \textbf{La pyramide}
+
+La pyramide a une base carrée de côté $4,8$~cm; l'aire de sa base est donc, en cm$^2$:
+$4,8\times 4,8 = 23,04$.
+
+%La hauteur de la pyramide est de 5~cm.
+
+Son volume est, en cm$^3$:
+$\dfrac{\text{aire de la base} \times \text{hauteur}}{3}
+= \dfrac{23,04\times 5}{3}=38,4$.
+
+Le volume de la pyramide est de $38,4$~cm$^3$; celui des 12 truffes est d'environ $21,2$~cm$^3$.
+
+Le volume non occupé par les truffes  est d'environ $38,4 - 21,2$ soit $17,2$~cm$^3$; il  est  inférieur au volume des 12 truffes donc la boîte en forme de pyramide convient.
+
+\item \textbf{Le pavé droit}
+
+Le pavé droit a pour volume, en cm$^3$:
+$5\times 3,5 \times 3,5 = 61,25$.
+
+Si on met 12 truffes dans cette boîte, le volume  non occupé par les truffes  est d'environ
+$61,25-21,2$ soit $40,05$~cm$^3$; il  est  supérieur au volume des 12 truffes donc la boîte en forme de pavé droit ne convient pas.
+\end{list}
+
+\end{enumerate}
+
+%\medskip
+%
+%\begin{center}
+%\renewcommand\arraystretch{2}
+%\begin{tabularx}{\linewidth}{|X|}\hline
+%\textbf{Rappels :}\\
+%Le volume d'une boule de rayon $r$ est: $\dfrac43 \times \pi \times r^3$\\ 
+%Le volume d'une pyramide est : $\dfrac{\text{aire de la base} \times \text{hauteur}}{3}$\\
+%Le volume d'un pavé droit est : longueur $\times$ largeur $\times$ hauteur\\ \hline
+%\end{tabularx}
+%\end{center}
+

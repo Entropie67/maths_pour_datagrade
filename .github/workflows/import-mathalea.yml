@@ -47,21 +47,33 @@ jobs:
 
           git switch -c integration/mathalea-complet
           mkdir -p mathalea
-          rsync -a --exclude='.git' "$UPSTREAM/" mathalea/
+          git -C "$UPSTREAM" archive HEAD | tar -x -C mathalea
 
           cat > UPSTREAM.md <<EOF
           # Origine du moteur MathALÉA
 
           - Projet original : https://forge.apps.education.fr/coopmaths/mathalea
-          - Commit source : `$UPSTREAM_COMMIT`
-          - Code importé intégralement dans `mathalea/`, sans suppression des générateurs ni de leurs dépendances.
-          - Licence : GNU AGPL-3.0 (voir les fichiers de licence et les mentions d'origine dans `mathalea/`).
+          - Commit source : $UPSTREAM_COMMIT
+          - Code suivi par Git importé intégralement dans mathalea/, sans suppression des générateurs ni de leurs dépendances déclarées.
+          - Licence : GNU AGPL-3.0 (voir les fichiers de licence et les mentions d'origine dans mathalea/).
+          - Les ressources externes non versionnées par le projet amont nécessitent une validation distincte.
 
           Le sous-projet doit rester utilisable indépendamment de DataGrade.
           Toute nouvelle intégration doit préserver le catalogue et les formats de réponse.
           EOF
 
-          git add -A mathalea UPSTREAM.md
+          # Respecter tous les fichiers suivis en amont, même ignorés par son .gitignore.
+          git -C "$UPSTREAM" ls-files -z | while IFS= read -r -d '' file; do
+            git add -f -- "mathalea/$file"
+          done
+          git add UPSTREAM.md
+          SOURCE_TREE="$(git -C "$UPSTREAM" rev-parse HEAD^{tree})"
+          IMPORT_TREE="$(git write-tree --prefix=mathalea/)"
+          test "$SOURCE_TREE" = "$IMPORT_TREE"
+          # Le code amont contient un jeton dans un helper de test : ne jamais le publier.
+          node scripts/sanitize-upstream.mjs
+          git add -f mathalea/tests/e2e/helpers/issue.ts
+          git add upstream-overrides.json
           COUNT="$(git ls-files mathalea | wc -l)"
           echo "Fichiers importés : $COUNT"
           test "$COUNT" -gt 500

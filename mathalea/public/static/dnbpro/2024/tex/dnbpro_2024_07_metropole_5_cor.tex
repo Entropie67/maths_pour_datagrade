@@ -1,0 +1,65 @@
+
+\medskip
+
+On considère le programme suivant, dont on a numéroté les lignes:
+
+\begin{center}
+\begin{scratch}[num blocks]
+\blockinit{Quand \greenflag est cliqué}
+\blockvariable{demander \ovalnum{Quelle est la valeur de x ?} et attendre}
+\blockvariable{mettre \selectmenu{x} à \ovaloperator{réponse}}
+\blockvariable{mettre \selectmenu{résultat} à \ovaloperator{\ovaloperator{\ovalvariable{x} * \ovalnum{5}} + 2}}
+\blocklook{dire \ovaloperator{regrouper \ovalnum{Le résultat est} et \ovalcontrol{résultat}} pendant \ovalnum{2} secondes}
+\end{scratch}
+\end{center}
+
+\begin{enumerate}
+\item %Parmi les algorithmes suivants, choisir celui qui correspond au programme ci-dessus en nommant la réponse (A, B ou C) sur la copie. Justifier.
+Voici 3 algorithmes:
+
+\begin{center}
+\renewcommand\arraystretch{1.2}
+\begin{tabular}{|p{0.26\linewidth}|c|p{0.26\linewidth}|c|p{0.26\linewidth}|}
+%\centering\textbf{A} && \hfill{}\textbf{B}\hfill~ && \hfill{}\textbf{C}\hfill~ \\
+\multicolumn{1}{c}{\textbf{A}} &\multicolumn{1}{c}{} & \multicolumn{1}{c}{\textbf{B}} & \multicolumn{1}{c}{} & \multicolumn{1}{c}{\textbf{C}} \\
+\cline{1-1} \cline{3-3} \cline{5-5} 
+\small
+ Demander la valeur de $x$\newline
+La multiplier par 5 et\newline ajouter 2\newline
+Afficher le résultat
+&&
+\small
+Demander la valeur de $x$\newline
+La multiplier par 2 et\newline ajouter 5\newline
+Afficher le résultat
+&&
+\small
+Demander la valeur de $x$\newline
+La multiplier par 5 et\newline ajouter 5\newline
+Afficher le résultat\\
+\cline{1-1} \cline{3-3} \cline{5-5}
+\end{tabular}
+\end{center}
+
+À la ligne 4, on calcule $5x + 2$; il s'agit donc de multiplier par 5 puis d'ajouter 2.
+
+Le bon algorithme est le \textbf{A}.
+
+\item Le temps d'affichage du résultat est de 2 secondes (ligne 5).
+ 
+ \item On veut faire afficher le message \og gagné \fg{}  pendant 5 secondes si le résultat de $5x+2$ est égal à 97.
+
+%Indiquer pour quelle valeur de $x$, le programme afficherait \og gagné \fg{}.
+
+On cherche $x$ pour que $5x+2$ soit égal à 97, donc on résout l'équation $5x+2=97$:
+
+\begin{align*}
+5x+2 &= 97\\
+5x &= 97-2\\
+5x &= 95\\
+x &= \dfrac{95}{5}\\
+x &= 19
+\end{align*}
+
+Le programme affiche \og gagné \fg{} pour $x=19$.
+\end{enumerate}

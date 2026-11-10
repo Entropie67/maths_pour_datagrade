@@ -1,0 +1,87 @@
+
+\medskip
+
+\textbf{Question 1}
+
+\medskip
+
+Appliquons aux deux membres de l'inégalité la fonction $\ln$.
+
+Étant une fonction strictement croissante sur $\R_+^*$ elle conserve l'ordre.
+
+Nous obtenons :
+\begin{align*}
+\ln(\e^{2t}) > \ln (0,12) \\
+2t > \ln (0,12) \\
+t > \dfrac{\ln (0,12)}{2} \\
+\left(\dfrac{\ln (0,12)}{2} \approx - 1,06\right)
+\end{align*}
+
+\bigskip
+
+\textbf{Question 2}
+
+\medskip
+
+\begin{enumerate}
+\item La dérivée de la fonction $F$ est : $F'(t)=a\times 2 \e^{2t + 6} = f(t) = 6\e^{2t+6}$
+
+Par conséquent $2a = 6$ d'où $a = 3$.
+\item Une autre primitive de la fonction $f$, est la fonction $G$ définie par $G(t)= 3\e^{-2t+6}+\lambda$ où $\lambda$ est un nombre réel quelconque.
+\end{enumerate}
+
+\bigskip
+
+\textbf{Question 3}
+
+\medskip
+
+On sait que quel que soit $t \in \R$ :
+\begin{align*}
+\e^{0,6 - 0,2t} &> 0 \\
+\iff 1 + \e^{0,6 - 0,2t} &> 1 + 0 \\
+\iff 1 + \e^{0,6 - 0,2t} &> 1 \\
+\iff \dfrac{1}{1 + \e^{0,6 - 0,2t}} &< 1 \\
+\iff \dfrac{94,6}{1 + \e^{0,6 - 0,2t}} &< 94,6
+\end{align*}
+
+soit $f(t) < 94,6$.
+
+\medskip
+
+\textit{Correction alternative}
+
+\medskip
+
+Déterminons la limite de $f$ lorsque $t$ tend vers $+ \infty$.
+
+\[\displaystyle \lim_{t\to +\infty} 1+\e^{0,6-0,2t}=1 \text{ puisque }  \lim_{t\to +\infty} \e^{0,6-0,2t}=0.\]
+
+Il en résulte :
+\[\displaystyle \lim_{t\to +\infty} \dfrac{94,6}{1+\e^{0,6-0,2t}}=94,6.\]
+
+Le taux d'équipement ne pourra donc jamais dépasser $94,6\,\%$.
+
+\bigskip
+
+\textbf{Question 4}
+
+\medskip
+
+\[f(x)=\dfrac{\e^x}{x^2\left(1+\frac{26}{x}\right)}=\dfrac{\e^x}{x^2}\times \dfrac{1}{1+\frac{26}{x}}.\]
+
+On sait que :
+\[\displaystyle  \lim_{x\to +\infty} \dfrac{26}{x} = 0,\]
+d'où par somme de limites :
+\[\displaystyle  \lim_{x\to +\infty} 1 + \dfrac{26}{x} = 1,\]
+et, par quotient de limites :
+\[\displaystyle  \lim_{x\to +\infty} \dfrac{1}{1+\frac{26}{x}} = 1.\]
+
+On sait également (croissances comparées) que :
+\[\displaystyle  \lim_{x\to +\infty} \dfrac{\e^x}{x^2} = + \infty,\]
+donc finalement par produit de limites :
+\[\displaystyle  \lim_{x\to +\infty}\dfrac{\e^x}{x^2\left(1+\frac{26}{x}\right)} = + \infty.\]
+
+\bigskip
+
+

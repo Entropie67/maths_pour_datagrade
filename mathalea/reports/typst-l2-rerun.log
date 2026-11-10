@@ -1,0 +1,355 @@
+$ vitest src --run --exclude .pnpm-store -- typst-batch-check
+
+ RUN  v4.1.8 /home/nathan/Documents/projets/mathalea
+
+  canTExa-NY2024 (60653)…(node:505055) ExperimentalWarning: `--experimental-loader` may be removed in the future; instead use `register()`:
+--import 'data:text/javascript,import { register } from "node:module"; import { pathToFileURL } from "node:url"; register("file%3A///home/nathan/Documents/projets/mathalea/src/components/setup/typst/typst-worker-loader.mjs", pathToFileURL("./"));'
+(Use `node --trace-warnings ...` to show where the warning was created)
+ ❌ compile_error
+      [sup=0:sup2=undefined:sup3=undefined:sup4=undefined:sup5=undefined] error: unclosed delimiter | error: unclosed delimiter
+  2N11-3 (67469)… ❌ compile_error
+      [sup=1:sup2=undefined:sup3=undefined:sup4=undefined:sup5=undefined] error: unclosed delimiter | error: unclosed delimiter | error: unclosed delimiter
+  canTSpea-NY2026 (91563)… ❌ compile_error
+      [sup=false:sup2=1-2-3-4-5-6-7-8-9-10-11-12-13-14-15-16-17-18-19-20-21-22-23-24-25-26-27-28-29-30:sup3=false:sup4=undefined:sup5=undefined] error: unclosed delimiter
+  2S30-5 (92022)… ❌ compile_error
+      [sup=5:sup2=undefined:sup3=undefined:sup4=undefined:sup5=undefined] error: unknown variable: lightgray
+  can2L21 (94237)… ❌ compile_error
+      [sup=undefined:sup2=undefined:sup3=undefined:sup4=undefined:sup5=undefined] error: unclosed delimiter
+  1A-C10-9 (96187)… ✅
+  1A-A01-12 (ea612)… ❌ compile_error
+      [sup=true:sup2=1-2-3-4-5-6-7-8:sup3=false:sup4=undefined:sup5=undefined] error: unclosed delimiter
+  1A-A01-9 (d2665)… ❌ compile_error
+      [sup=false:sup2=1-2-3-4-5-6-7-8:sup3=false:sup4=undefined:sup5=undefined] error: unclosed delimiter
+  1A-C10-10 (3b917)… ✅
+  1A-C14-4 (d7ba2)… ❌ compile_error
+      [sup=true:sup2=true:sup3=undefined:sup4=true:sup5=undefined] error: unclosed delimiter
+  1A-C14-5 (af470)… ✅
+  1A-F03-1 (4c3c0)… ✅
+  1A-F04-3 (0b1fc)… ✅
+  1A-F04-5 (6d6ea)… ❌ compile_error
+      [sup=false:sup2=true:sup3=undefined:sup4=true:sup5=undefined] error: unclosed delimiter | error: unclosed delimiter
+  1AL10-4 (b8c14)… ✅
+  1AL13-1 (33e54)… ✅
+  1AL23-24 (2a6c7)… ✅
+  1AN30-5 (61ed2)… ❌ compile_error
+      [sup=2:sup2=undefined:sup3=undefined:sup4=undefined:sup5=undefined] error: unclosed delimiter | error: unclosed delimiter
+  227f0 (227f0)… ✅
+  1P10-1 (227f1)… ✅
+  200F3-02 (e46e6)… ❌ compile_error
+      [sup=2:sup2=undefined:sup3=undefined:sup4=undefined:sup5=undefined] error: unclosed delimiter | error: unclosed delimiter
+  2F10-2 (93f13)… ✅
+  2F25-2 (1e362)… ✅
+  2F31-3 (2f857)… ✅
+  2G21-2 (6cf42)… ✅
+  2G22-1 (3a3ec)… ✅
+  2G34-3 (ccb71)… ✅
+  2N11-1 (31c01)… ❌ compile_error
+      [sup=1:sup2=1:sup3=1:sup4=undefined:sup5=undefined] error: unclosed delimiter
+  2N11-2 (dc2a5)… ❌ compile_error
+      [sup=undefined:sup2=undefined:sup3=undefined:sup4=undefined:sup5=undefined] error: unclosed delimiter | error: unclosed delimiter
+  2N20-2 (d5a6d)… ✅
+  2N32-3 (d9495)… ✅
+  2N40-1 (0a01e)… ✅
+  2N40-7 (80c0e)… ❌ compile_error
+      [sup=1:sup2=1:sup3=1:sup4=true:sup5=undefined] error: missing argument: body
+  2N41-4 (877a9)… ✅
+  2N41-5 (5a4ad)… ✅
+  2N41-6 (04b0a)… ✅
+  874e8 (874e8)… ✅
+  2N51-2 (ad208)… ❌ compile_error
+      [sup=undefined:sup2=undefined:sup3=undefined:sup4=undefined:sup5=undefined] error: missing argument: body
+  2N61-2 (fa1c5)… ❌ compile_error
+      [sup=3:sup2=true:sup3=undefined:sup4=undefined:sup5=undefined] error: unclosed delimiter | error: unclosed delimiter | error: unclosed delimiter
+  014a4 (014a4)… ❌ compile_error
+      [sup=3:sup2=undefined:sup3=undefined:sup4=undefined:sup5=undefined] error: unclosed delimiter | error: unclosed delimiter | error: unclosed delimiter
+  2N61-4 (0c09b)… ❌ compile_error
+      [sup=2:sup2=true:sup3=undefined:sup4=undefined:sup5=undefined] error: unclosed delimiter | error: unclosed delimiter
+  2S12-2 (018f3)… ❌ compile_error
+      [sup=2:sup2=undefined:sup3=undefined:sup4=undefined:sup5=undefined] error: unknown variable: none_2
+  e1938 (e1938)… ❌ compile_error
+      [sup=5:sup2=undefined:sup3=undefined:sup4=undefined:sup5=undefined] error: unknown variable: lightgray
+  2S30-6 (ea35b)… ✅
+  3G10-1 (d4088)… ❌ compile_error
+      [sup=1:sup2=undefined:sup3=undefined:sup4=undefined:sup5=undefined] error: unknown variable: brown
+  3G10-2 (d5f34)… ❌ compile_error
+      [sup=8:sup2=undefined:sup3=undefined:sup4=undefined:sup5=undefined] error: unknown variable: brown
+  3G12 (442e0)… ❌ compile_error
+      [sup=1:sup2=true:sup3=1:sup4=true:sup5=undefined] error: unknown variable: violet
+  3G20-2 (6fd12)… ✅
+  3G20 (74eac)… ✅
+  3G30 (bd6b1)… ✅
+  3G40 (75ea2)… ✅
+  4b495 (4b495)… ❌ runtime_error
+      Timeout (>50s) : exercice bloqué
+  3L11-3b (d28ff)…(node:505055) ExperimentalWarning: `--experimental-loader` may be removed in the future; instead use `register()`:
+--import 'data:text/javascript,import { register } from "node:module"; import { pathToFileURL } from "node:url"; register("file%3A///home/nathan/Documents/projets/mathalea/src/components/setup/typst/typst-worker-loader.mjs", pathToFileURL("./"));'
+(Use `node --trace-warnings ...` to show where the warning was created)
+ ❌ compile_error
+      [sup=1:sup2=1:sup3=1:sup4=true:sup5=undefined] error: missing argument: body
+  04f53 (04f53)… ❌ compile_error
+      [sup=5:sup2=undefined:sup3=undefined:sup4=undefined:sup5=undefined] error: unknown variable: lightgray
+  4C32-3 (5c9c2)… ❌ compile_error
+      [sup=9:sup2=undefined:sup3=undefined:sup4=undefined:sup5=undefined] error: unknown variable: none_2
+  4G10-1 (7b40c)… ❌ compile_error
+      [sup=1:sup2=undefined:sup3=undefined:sup4=undefined:sup5=undefined] error: unknown variable: brown
+  4G10 (cf7ce)… ❌ compile_error
+      [sup=8:sup2=undefined:sup3=undefined:sup4=undefined:sup5=undefined] error: unknown variable: brown
+  c0f90 (c0f90)… ❌ runtime_error
+      [sup=3:sup2=1:sup3=undefined:sup4=undefined:sup5=undefined] Runtime: Cannot set properties of undefined (setting 'start')
+  4G30-1 (ff410)… ✅
+  4G30 (18a21)… ✅
+  4G40 (3303a)… ✅
+  4L15-0 (df5a3)… ❌ compile_error
+      [sup=undefined:sup2=undefined:sup3=undefined:sup4=undefined:sup5=undefined] error: missing argument: body
+  4P10-1 (c668a)… ❌ compile_error
+      [sup=undefined:sup2=undefined:sup3=undefined:sup4=undefined:sup5=undefined] error: unclosed delimiter
+  4P16 (63cdb)… ⚠️  unprocessed_math
+      [sup=4:sup2=undefined:sup3=undefined:sup4=undefined:sup5=undefined] Maths non converties : $"198\\text{ cL/km"$ | $"252\\text{ mL/km"$ | $"81\\text{ cL/dm"$
+  4S10 (26ea7)… ❌ compile_error
+      [sup=1:sup2=1:sup3=3:sup4=true:sup5=undefined] error: failed to parse SVG (width, height, or viewbox is invalid)
+  a55d2 (a55d2)… ✅
+  5A11-4 (fa3ec)… ✅
+  fa2eb (fa2eb)… ✅
+  5G10 (da157)… ❌ compile_error
+      [sup=1:sup2=undefined:sup3=undefined:sup4=undefined:sup5=undefined] error: unknown variable: brown
+  5G11-4 (08f60)… ❌ compile_error
+      [sup=1:sup2=undefined:sup3=undefined:sup4=undefined:sup5=undefined] error: unknown variable: brown
+  ec32b (ec32b)… ❌ compile_error
+      [sup=8:sup2=undefined:sup3=undefined:sup4=undefined:sup5=undefined] error: unknown variable: brown
+  5G32 (329fe)… ❌ compile_error
+      [sup=1:sup2=undefined:sup3=undefined:sup4=undefined:sup5=undefined] error: unknown variable: pink
+  5G33-1 (5bac3)… ❌ compile_error
+      [sup=1:sup2=undefined:sup3=undefined:sup4=undefined:sup5=undefined] error: unknown variable: brown
+  5G42-2 (37e38)… ❌ runtime_error
+      Timeout (>50s) : exercice bloqué
+  5G42-3 (37e39)…(node:505055) ExperimentalWarning: `--experimental-loader` may be removed in the future; instead use `register()`:
+--import 'data:text/javascript,import { register } from "node:module"; import { pathToFileURL } from "node:url"; register("file%3A///home/nathan/Documents/projets/mathalea/src/components/setup/typst/typst-worker-loader.mjs", pathToFileURL("./"));'
+(Use `node --trace-warnings ...` to show where the warning was created)
+ ❌ runtime_error
+      Timeout (>50s) : exercice bloqué
+  5L10-2 (12bb6)…(node:505055) ExperimentalWarning: `--experimental-loader` may be removed in the future; instead use `register()`:
+--import 'data:text/javascript,import { register } from "node:module"; import { pathToFileURL } from "node:url"; register("file%3A///home/nathan/Documents/projets/mathalea/src/components/setup/typst/typst-worker-loader.mjs", pathToFileURL("./"));'
+(Use `node --trace-warnings ...` to show where the warning was created)
+ ✅
+  5L10-4 (0024b)… ⚠️  unprocessed_math
+      [sup=0:sup2=0:sup3=undefined:sup4=undefined:sup5=undefined] Maths non converties : $"\\text{Longueur"$
+  7aba6 (7aba6)… ⚠️  unprocessed_math
+      [sup=1:sup2=undefined:sup3=undefined:sup4=undefined:sup5=undefined] Maths non converties : $"\\text{Longueur"$ | $"du côté (en \\text{m})}"$
+  5M22-1 (f4d29)… ✅
+  5M22 (33ac2)… ✅
+  5P12-2 (2621f)… ✅
+  5P13 (edb61)… ❌ compile_error
+      [sup=4:sup2=true:sup3=undefined:sup4=undefined:sup5=undefined] error: missing argument: body
+  ab968 (ab968)… ✅
+  5R12-2 (ab969)… ✅
+  5R20-4 (6667e)… ❌ compile_error
+      [sup=undefined:sup2=undefined:sup3=undefined:sup4=undefined:sup5=undefined] error: unclosed delimiter | error: unclosed delimiter | error: unclosed delimiter
+  5S12 (d3ca7)… ❌ compile_error
+      [sup=1:sup2=1:sup3=3:sup4=true:sup5=undefined] error: failed to parse SVG (width, height, or viewbox is invalid)
+  6G2B (f8dee)… ✅
+  6G3B (0dbe7)…Figure destroyed successfully
+ ✅
+  6G4B-1 (ff2ce)…Figure destroyed successfully
+Figure destroyed successfully
+Figure destroyed successfully
+Figure destroyed successfully
+Figure destroyed successfully
+Figure destroyed successfully
+Figure destroyed successfully
+Figure destroyed successfully
+Figure destroyed successfully
+Figure destroyed successfully
+Figure destroyed successfully
+Figure destroyed successfully
+Figure destroyed successfully
+Figure destroyed successfully
+Figure destroyed successfully
+Figure destroyed successfully
+Figure destroyed successfully
+Figure destroyed successfully
+Figure destroyed successfully
+Figure destroyed successfully
+Figure destroyed successfully
+Figure destroyed successfully
+Figure destroyed successfully
+Figure destroyed successfully
+Figure destroyed successfully
+Figure destroyed successfully
+Figure destroyed successfully
+Figure destroyed successfully
+Figure destroyed successfully
+Figure destroyed successfully
+Figure destroyed successfully
+Figure destroyed successfully
+Figure destroyed successfully
+Figure destroyed successfully
+Figure destroyed successfully
+Figure destroyed successfully
+Figure destroyed successfully
+Figure destroyed successfully
+Figure destroyed successfully
+Figure destroyed successfully
+Figure destroyed successfully
+Figure destroyed successfully
+Figure destroyed successfully
+Figure destroyed successfully
+Figure destroyed successfully
+Figure destroyed successfully
+Figure destroyed successfully
+Figure destroyed successfully
+Figure destroyed successfully
+Figure destroyed successfully
+Figure destroyed successfully
+ ❌ runtime_error
+      Timeout (>50s) : exercice bloqué
+  ff2cc (ff2cc)…(node:505055) ExperimentalWarning: `--experimental-loader` may be removed in the future; instead use `register()`:
+--import 'data:text/javascript,import { register } from "node:module"; import { pathToFileURL } from "node:url"; register("file%3A///home/nathan/Documents/projets/mathalea/src/components/setup/typst/typst-worker-loader.mjs", pathToFileURL("./"));'
+(Use `node --trace-warnings ...` to show where the warning was created)
+ ❌ runtime_error
+      Timeout (>50s) : exercice bloqué
+  6G6D-1 (c2f77)…(node:505055) ExperimentalWarning: `--experimental-loader` may be removed in the future; instead use `register()`:
+--import 'data:text/javascript,import { register } from "node:module"; import { pathToFileURL } from "node:url"; register("file%3A///home/nathan/Documents/projets/mathalea/src/components/setup/typst/typst-worker-loader.mjs", pathToFileURL("./"));'
+(Use `node --trace-warnings ...` to show where the warning was created)
+ ⚠️  unprocessed_math
+      [sup=1:sup2=undefined:sup3=undefined:sup4=undefined:sup5=undefined] Maths non converties : $"\\text{"$ | $"\\text{"$ | $"\\text{"$
+  6G7B-5 (49cb2)… ❌ compile_error
+      [sup=true:sup2=undefined:sup3=undefined:sup4=undefined:sup5=undefined] error: unknown variable: magenta
+  6G7B-7 (328b1)… ✅
+  6G7B (e9d29)… ❌ compile_error
+      [sup=1:sup2=undefined:sup3=undefined:sup4=undefined:sup5=undefined] error: unknown variable: brown
+  6I1B-1 (594ee)… ❌ compile_error
+      [sup=1:sup2=true:sup3=true:sup4=undefined:sup5=undefined] error: unclosed delimiter | error: unclosed delimiter
+  594eb (594eb)… ❌ compile_error
+      [sup=1:sup2=true:sup3=true:sup4=undefined:sup5=undefined] error: unclosed delimiter | error: unclosed delimiter
+  6I1B-8 (e9dac)… ❌ runtime_error
+      Timeout (>50s) : exercice bloqué
+  6I1B (c8fee)…(node:505055) ExperimentalWarning: `--experimental-loader` may be removed in the future; instead use `register()`:
+--import 'data:text/javascript,import { register } from "node:module"; import { pathToFileURL } from "node:url"; register("file%3A///home/nathan/Documents/projets/mathalea/src/components/setup/typst/typst-worker-loader.mjs", pathToFileURL("./"));'
+(Use `node --trace-warnings ...` to show where the warning was created)
+ ❌ compile_error
+      [sup=1:sup2=true:sup3=true:sup4=undefined:sup5=undefined] error: unclosed delimiter | error: unclosed delimiter
+  c8fe9 (c8fe9)… ❌ compile_error
+      [sup=1:sup2=true:sup3=true:sup4=undefined:sup5=undefined] error: unclosed delimiter | error: unclosed delimiter
+  6M2A-1 (6225c)… ✅
+  6M4A-1 (e960d)… ❌ compile_error
+      [sup=1:sup2=undefined:sup3=undefined:sup4=undefined:sup5=undefined] error: unknown variable: xrightarrow
+  6N0B-4 (2be1d)… ✅
+  6P3E (9c78f)… ❌ compile_error
+      [sup=4:sup2=true:sup3=undefined:sup4=undefined:sup5=undefined] error: missing argument: body
+  auto6M1C-1 (ab9ff)… ✅
+  3cb1d (3cb1d)… ✅
+  can1a-2022 (779b0)… ✅
+  can1a-2024 (640f2)… ❌ compile_error
+      [sup=true:sup2=1-2-3-4-5-6-7-8-9-10-11-12-13-14-15-16-17-18-19-20-21-22-23-24-25-26-27-28-29-30:sup3=false:sup4=undefined:sup5=undefined] error: unclosed delimiter
+  can1a-2025 (389e8)… ✅
+  can1a-NY2025 (7244e)… ❌ compile_error
+      [sup=true:sup2=1-2-3-4-5-6-7-8-9-10-11-12-13-14-15-16-17-18-19-20-21-22-23-24-25-26-27-28-29-30:sup3=false:sup4=undefined:sup5=undefined] error: unclosed delimiter
+  can1a-NY2026 (214cd)… ❌ compile_error
+      [sup=false:sup2=1-2-3-4-5-6-7-8-9-10-11-12-13-14-15-16-17-18-19-20-21-22-23-24-25-26-27-28-29-30:sup3=false:sup4=undefined:sup5=undefined] error: unclosed delimiter
+  can1S02 (3f032)… ✅
+  can1S03 (fccb4)… ✅
+  can1S05 (0f014)… ✅
+  can1SD18 (7c76a)… ❌ compile_error
+      [sup=undefined:sup2=undefined:sup3=undefined:sup4=undefined:sup5=undefined] error: unclosed delimiter
+  can1SD19 (b53ea)… ❌ compile_error
+      [sup=undefined:sup2=undefined:sup3=undefined:sup4=undefined:sup5=undefined] error: unclosed delimiter | error: unclosed delimiter
+  can2a-2022 (2a4b1)… ✅
+  can2a-2025 (4581b)… ❌ compile_error
+      [sup=true:sup2=1-2-3-4-5-6-7-8-9-10-11-12-13-14-15-16-17-18-19-20-21-22-23-24-25-26-27-28-29-30:sup3=false:sup4=undefined:sup5=undefined] error: unclosed delimiter
+  can2a-NY2024 (dd9d0)… ❌ compile_error
+      [sup=2:sup2=undefined:sup3=undefined:sup4=undefined:sup5=undefined] error: unclosed delimiter | error: unclosed delimiter
+  can2G07 (651a5)… ❌ compile_error
+      [sup=undefined:sup2=undefined:sup3=undefined:sup4=undefined:sup5=undefined] error: missing argument: body
+  can2G08 (eaebb)… ❌ compile_error
+      [sup=undefined:sup2=undefined:sup3=undefined:sup4=undefined:sup5=undefined] error: missing argument: body
+  can2G14 (0dfad)… ❌ compile_error
+      [sup=undefined:sup2=undefined:sup3=undefined:sup4=undefined:sup5=undefined] error: missing argument: body
+  can2G17 (dacc1)… ❌ compile_error
+      [sup=undefined:sup2=undefined:sup3=undefined:sup4=undefined:sup5=undefined] error: missing argument: body
+  can2G19 (6082f)… ❌ compile_error
+      [sup=undefined:sup2=undefined:sup3=undefined:sup4=undefined:sup5=undefined] error: missing argument: body
+  can2G22 (9ff07)… ❌ compile_error
+      [sup=undefined:sup2=undefined:sup3=undefined:sup4=undefined:sup5=undefined] error: missing argument: body
+  can2L15 (1f55b)… ❌ compile_error
+      [sup=undefined:sup2=undefined:sup3=undefined:sup4=undefined:sup5=undefined] error: unclosed delimiter
+  can2L16 (bdc96)… ❌ compile_error
+      [sup=undefined:sup2=undefined:sup3=undefined:sup4=undefined:sup5=undefined] error: unclosed delimiter
+  can2N04 (bb947)… ❌ compile_error
+      [sup=undefined:sup2=undefined:sup3=undefined:sup4=undefined:sup5=undefined] error: unclosed delimiter
+  can2N08 (7e24e)… ❌ compile_error
+      [sup=1:sup2=1:sup3=1:sup4=undefined:sup5=undefined] error: unclosed delimiter
+  can2N09 (0ff65)… ❌ compile_error
+      [sup=1:sup2=1:sup3=1:sup4=undefined:sup5=undefined] error: unclosed delimiter
+  can3a-2023 (798ec)… ❌ compile_error
+      [sup=undefined:sup2=undefined:sup3=undefined:sup4=undefined:sup5=undefined] error: unknown variable: textbf
+  can3a-2024 (f3ceb)… ✅
+  can3F11 (d85c2)… ✅
+  can3G02 (8e651)… ❌ compile_error
+      [sup=8:sup2=undefined:sup3=undefined:sup4=undefined:sup5=undefined] error: unknown variable: brown
+  can4a-2023 (cae4f)… ❌ compile_error
+      [sup=undefined:sup2=undefined:sup3=undefined:sup4=undefined:sup5=undefined] error: unknown variable: textbf
+  can4G02 (a77ed)… ❌ compile_error
+      [sup=8:sup2=undefined:sup3=undefined:sup4=undefined:sup5=undefined] error: unknown variable: brown
+  can5a-2023 (312eb)… ❌ compile_error
+      [sup=undefined:sup2=undefined:sup3=undefined:sup4=undefined:sup5=undefined] error: unknown variable: textbf
+  can5G01 (6314c)… ❌ compile_error
+      [sup=8:sup2=undefined:sup3=undefined:sup4=undefined:sup5=undefined] error: unknown variable: brown
+  can6G01 (135d4)… ❌ compile_error
+      [sup=8:sup2=undefined:sup3=undefined:sup4=undefined:sup5=undefined] error: unknown variable: brown
+  can6N05 (22f41)… ❌ compile_error
+      [sup=undefined:sup2=undefined:sup3=undefined:sup4=undefined:sup5=undefined] error: unknown variable: textbf
+  6ca15 (6ca15)… ❌ compile_error
+      [sup=0:sup2=undefined:sup3=undefined:sup4=undefined:sup5=undefined] error: unclosed delimiter | error: unclosed delimiter
+  can6C62 (cb93a)… ✅
+  ko2fq (ko2fq)… ✅
+  5uv2z (5uv2z)… ✅
+  f0f67 (f0f67)… ❌ compile_error
+      [sup=undefined:sup2=undefined:sup3=undefined:sup4=undefined:sup5=undefined] error: unclosed delimiter
+  9e9fb (9e9fb)… ✅
+  gletu (gletu)… ❌ compile_error
+      [sup=true:sup2=undefined:sup3=undefined:sup4=undefined:sup5=undefined] error: unclosed delimiter | error: unclosed delimiter
+  can2a-2024-2 (can2a-2024-2)… ❌ compile_error
+      [sup=undefined:sup2=undefined:sup3=undefined:sup4=undefined:sup5=undefined] error: unclosed delimiter
+  ca805 (ca805)… ✅
+  67a5b (67a5b)… ❌ compile_error
+      [sup=undefined:sup2=undefined:sup3=undefined:sup4=undefined:sup5=undefined] error: unclosed delimiter
+  b18a9 (b18a9)… ❌ compile_error
+      [sup=undefined:sup2=undefined:sup3=undefined:sup4=undefined:sup5=undefined] error: missing argument: body
+  4dc1d (4dc1d)… ✅
+  0244d (0244d)… ❌ compile_error
+      [sup=undefined:sup2=undefined:sup3=undefined:sup4=undefined:sup5=undefined] error: unclosed delimiter | error: unclosed delimiter
+  b3jon (b3jon)… ❌ compile_error
+      [sup=undefined:sup2=undefined:sup3=undefined:sup4=undefined:sup5=undefined] error: unclosed delimiter | error: unclosed delimiter
+  85bf3 (85bf3)… ❌ compile_error
+      [sup=undefined:sup2=undefined:sup3=undefined:sup4=undefined:sup5=undefined] error: unclosed delimiter | error: unclosed delimiter
+  31vj3 (31vj3)… ✅
+  gnx1c (gnx1c)… ✅
+  canTSpea-2026 (3aa48)… ❌ compile_error
+      [sup=true:sup2=1-2-3-4-5-6-7-8-9-10-11-12-13-14-15-16-17-18-19-20-21-22-23-24-25-26-27-28-29-30:sup3=false:sup4=undefined:sup5=undefined] error: unclosed delimiter | error: unclosed delimiter
+  canTSpea-NY2025 (90dad)… ❌ compile_error
+      [sup=true:sup2=1-2-3-4-5-6-7-8-9-10-11-12-13-14-15-16-17-18-19-20-21-22-23-24-25-26-27-28-29-30:sup3=false:sup4=undefined:sup5=undefined] error: unclosed delimiter
+  bfd77 (bfd77)… ✅
+  bfc45 (bfc45)… ✅
+  bfce3 (bfce3)… ✅
+  bfc77 (bfc77)… ✅
+  9b4e1 (9b4e1)… ✅
+  7c2e9 (7c2e9)… ✅
+  04b1e (04b1e)… ✅
+  e70ce (e70ce)… ✅
+  5701a (5701a)… ❌ compile_error
+      [sup=false:sup2=true:sup3=undefined:sup4=true:sup5=undefined] error: unclosed delimiter
+  ps265 (ps265)… ❌ compile_error
+      [sup=true:sup2=true:sup3=undefined:sup4=true:sup5=undefined] error: unclosed delimiter
+  P015 (085ed)… ✅
+  debc6 (debc6)… ❌ compile_error
+      [sup=1:sup2=undefined:sup3=undefined:sup4=undefined:sup5=undefined] error: unknown variable: boxed
+  TSP4-10 (6da5f)… ✅
+  TSP4-20 (f25ef)… ✅
+  TTE-9 (364dd)… ❌ compile_error
+      [sup=1:sup2=undefined:sup3=undefined:sup4=undefined:sup5=undefined] error: unclosed delimiter | error: unclosed delimiter
+
+ Test Files  31 passed (31)
+      Tests  641 passed (641)
+   Start at  15:10:01
+   Duration  1083.81s (transform 19.09s, setup 901ms, import 40.91s, tests 1080.05s, environment 29.60s)
+

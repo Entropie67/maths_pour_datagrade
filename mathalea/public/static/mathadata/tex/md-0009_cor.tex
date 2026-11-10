@@ -1,0 +1,104 @@
+%source mathadata
+\begin{multicols}{2}
+			\begin{MADenumerate}
+				\item \textbf{Calcul de l'équation de la droite $(AB)$ :}
+
+				\begin{enumerate}
+					\item \textbf{Coefficient directeur $m$ :}
+
+					      On utilise la formule $m = \dfrac{y_B - y_A}{x_B - x_A}$ avec $A(0;1)$ et $B(-2;-3)$.
+
+					      $$m = \dfrac{-3 - 1}{-2 - 0} = \dfrac{-4}{-2} = 2$$
+
+					\item \textbf{Ordonnée à l'origine $p$ :}
+
+					      On remplace les coordonnées de $A(0;1)$ dans $y = mx + p$ :
+
+					      $$1 = 2 \times 0 + p$$
+					      $$1 = p$$
+
+					      Donc $p = 1$.
+
+					\item \textbf{Équation réduite :}
+
+					      $$\boxed{(AB) : y = 2x + 1}$$
+				\end{enumerate}
+
+				\item \textbf{Position des points $C$, $D$ et $E$ par rapport à la droite $(AB)$ :}
+
+				\begin{enumerate}
+					\item \textbf{Vérification pour chaque point :}
+
+					      \textbf{Point $C(-3;2)$ :}
+
+					      Pour $x = -3$ : $y = 2 \times (-3) + 1 = -6 + 1 = -5$
+
+					      Comme $2 \neq -5$, le point $C$ \textbf{n'est pas aligné} avec $A$ et $B$.
+
+					      \textbf{Point $D(1;-4)$ :}
+
+					      Pour $x = 1$ : $y = 2 \times 1 + 1 = 2 + 1 = 3$
+
+					      Comme $-4 \neq 3$, le point $D$ \textbf{n'est pas aligné} avec $A$ et $B$.
+
+					      \textbf{Point $E(1;3)$ :}
+
+					      Pour $x = 1$ : $y = 2 \times 1 + 1 = 2 + 1 = 3$
+
+					      Comme $3 = 3$, le point $E$ \textbf{est aligné} avec $A$ et $B$.
+
+					\item \textbf{Conclusion :}
+
+					      Seul le point $E$ est aligné avec $A$ et $B$.
+				\end{enumerate}
+
+				\item \textbf{Voir graphique.}
+
+				\item $C$ est vert, $A$, $B$, $D$ et $E$ sont bleus.
+
+			\end{MADenumerate}
+
+			%\columnbreak
+
+			\begin{figure}[H]\centering
+				\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1cm,y=1cm,scale=0.7]
+					\begin{axis}[
+							x=1cm,y=1cm,
+							axis lines=middle,
+							ymajorgrids=true,
+							xmajorgrids=true,
+							xmin=-4.5,
+							xmax=4.5,
+							ymin=-4.5,
+							ymax=4.5,
+							xtick={-4,...,4},
+							ytick={-4,...,4},
+							tick label style={font=\small},
+						]
+
+						% Droite (AB)
+						\addplot[domain=-4.5:1.5, samples=2, thick, blue] {2*x + 1};
+						\node[above right, blue] at (axis cs:1,3.5) {$(AB)$};
+
+						% Points A et B (sur la droite)
+						\addplot[only marks, mark=*, mark size=3pt, fill=blue] coordinates {(0,1)};
+						\node[above right] at (axis cs:0,1) {$A$};
+
+						\addplot[only marks, mark=*, mark size=3pt, fill=blue] coordinates {(-2,-3)};
+						\node[below left] at (axis cs:-2,-3) {$B$};
+
+						% Point E (aligné)
+						\addplot[only marks, mark=*, mark size=3pt, fill=green!70!black] coordinates {(1,3)};
+						\node[above right] at (axis cs:1,3) {$E$};
+
+						% Points C et D (non alignés)
+						\addplot[only marks, mark=*, mark size=3pt, fill=red] coordinates {(-3,2)};
+						\node[above left] at (axis cs:-3,2) {$C$};
+
+						\addplot[only marks, mark=*, mark size=3pt, fill=red] coordinates {(1,-4)};
+						\node[below right] at (axis cs:1,-4) {$D$};
+
+					\end{axis}
+				\end{tikzpicture}
+			\end{figure}
+		\end{multicols}

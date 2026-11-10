@@ -1,0 +1,65 @@
+
+\medskip
+
+%José, un agriculteur vivant dans la commune du Mont-Dore, veut préparer des paniers de légumes bio pour ses clients.
+%
+%Il a déjà récolté 39 salades, 78 carottes et 51 aubergines.
+%
+%Il veut que tous les paniers aient la même composition et utiliser tous les légumes.
+%
+%La décomposition de 39 en produit de facteurs premiers est : $3 \times 13$.
+
+\medskip
+
+\begin{enumerate}
+\item 
+	\begin{enumerate}
+		\item %Décomposer en facteurs premiers les nombres 78 et 51.
+$\bullet~~$De même que $39 = 3 \times 13$, on a $78 = 60 + 18 = 6 \times 10 + 6 \times 3 = 6 \times (10 + 3) = 6 \times 13 = 2 \times 3 \times 13$ ;
+		
+$\bullet~~$ $51 = 30 + 21 = 3 \times 10 + 3 \times7 = 3\times(10 + 7) = 3 \times 17$.
+		\item %En déduire le nombre de paniers maximum que José peut préparer.
+On a donc $\left\{\begin{array}{l c l}
+39&=&3 \times 13\\
+78 &=& 3 \times 26\\
+51&=&3 \times 17
+\end{array}\right.$
+
+On peut donc faire 3 paniers identiques.
+		\item %Combien de salades, de carottes et d'aubergines y aurait-il dans chaque panier?
+		Il suffit de relever les seconds facteurs de chaque produit pour trouver que chacun des 3  paniers sera composé de 13 salades, 26 carottes et 17 aubergines.
+	\end{enumerate}
+\end{enumerate}
+
+Finalement, José décide de préparer 13 paniers.
+
+\begin{enumerate}[resume]
+\item 
+	\begin{enumerate}
+		\item %Combien d'aubergines ne seront pas utilisées? Justifier votre réponse.
+		On a :
+$\left\{\begin{array}{l c l}
+39&=&13 \times 3\\
+78 &=& 13 \times 6\\
+51&=&13 \times 3 + {\red 12}
+\end{array}\right.$
+
+Chacun des 13 paniers aura 3 salades, 6 carottes et 3 aubergines. Resterons 12 aubergines.
+		\item %Combien doit-il cueillir au minimum d'aubergines supplémentaires pour pouvoir toutes les utiliser ?
+Avec 1 aubergine de plus, on aura $52 = 13 \times 4$ : chacun des 13 paniers aura 4 aubergines.
+			\end{enumerate}
+\end{enumerate}
+
+%José souhaite que ses 13 paniers contiennent également des tomates.
+
+%Il estime qu'il en a entre $110$ et $125$~prêtes à être récoltées.
+
+\begin{enumerate}[resume]
+\item %Combien doit-il en cueillir au maximum pour éviter les pertes et pour que chaque panier ait toujours la même composition ?
+On écrit les multiples de 13 aux environs de 110 et 125 :
+
+%\textbf{Toute trace de recherche, même non aboutie, sera prise en compte.}
+$110 < {\red 117 = 13 \times 9}< 125  < {\red 130 = 13 \times 10}$ : le seul multiple de 13 entre 110 et 125 est $117 = 13 \times 9$ ; si l'on récolte 117 tomates, on pourra en mettre exactement 9 dans chacun des 13 paniers.
+\end{enumerate}
+
+

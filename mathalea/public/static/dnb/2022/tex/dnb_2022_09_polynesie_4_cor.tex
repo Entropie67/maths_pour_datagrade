@@ -1,0 +1,101 @@
+
+\medskip
+
+
+\begin{enumerate}
+\item Voici un tableau de valeurs d'une fonction $f$ :
+
+\begin{center}
+\begin{tabularx}{\linewidth}{|*{8}{>{\centering \arraybackslash}X|}}\hline
+$x$		&$-2$	&$-1$	&0	&1		& 3		& 4		& 5\\ \hline
+$f(x)$	&5 		&3 		&1 	&$-1$ 	&$-5$	& $-7$	& $-9$\\ \hline
+\end{tabularx}
+\end{center}
+
+	\begin{enumerate}
+		\item Quelle est l'image de $3$ par la fonction $f$ ?
+		
+L'image de $3$ par la fonction $f$ est $f(3) = - 5$.
+		\item Donner un nombre qui a pour image $5$ par la fonction $f$.
+		
+On a $f(- 2) = 5$, donc $- 2 $ a pour image 5 par la fonction $f$.
+		\item Donner un antécédent de $1$ par la fonction $f$.
+		
+On a $f(0) = 1$, donc 1 a pour antécédent $0$ par $f$.
+	\end{enumerate}
+\item On considère le programme de calcul suivant:
+\begin{center}
+\begin{tabular}{|l|}\hline
+Choisir un nombre\\
+Ajouter 1\\
+Calculer le carré du résultat\\ \hline
+\end{tabular}
+\end{center}
+	\begin{enumerate}
+		\item Quel résultat obtient-on en choisissant $1$ comme nombre de départ?
+		
+On a $1 \to 1 + 1 = 2 \to 2^2 = 4$ : 1 donne 4 comme résultat. 
+
+Et en choisissant $- 2$ comme nombre de départ ?
+
+On a $- 2  \to - 2 + 1 = -1  \to (- 1)^2 = 1$ : $- 2$ donne 1 comme résultat.
+		\item On note $x$ le nombre choisi au départ et on appelle $g$ la fonction qui à $x$ fait correspondre le résultat obtenu avec le programme de calcul.
+		
+Exprimer $g(x)$ en fonction de $x$.
+
+On a $x \to x + 1 \to (x + 1)^2$. Donc $g(x) = (x + 1)^2$.
+	\end{enumerate}
+\item La fonction $h$ est définie par $h(x) = 2x^2 - 3$.
+	\begin{enumerate}
+		\item Quelle est l'image de $3$ par la fonction $h$ ?
+		
+On a $h(3) = 2 \times 3^2 - 3 = 2 \times 9 - 3 = 18 - 3 = 15$.
+		\item Quelle est l'image de $-4$ par la fonction $h$ ?
+		
+On a $h(- 4) = 2 \times (- 4)^2 - 3 = 2 \times 16 - 3 = 32 - 3 = 29$.
+		\item Donner un antécédent de $5$ par la fonction $h$. En existe-t-il un autre ?
+		
+Il faut trouver $x$ tel que $2x^2 - 3 = 5$, soit $2x^2 = 8$ ou $x^2 = 4$ ou $x^2 - 4 = 0$, c'est-à-dire $(x - 2)(x + 2) = 0$ et enfin $\left\{\begin{array}{l c l}
+x - 2&=&0\\
+x + 2&=&0
+\end{array}\right.$ : il y a deux solutions : 2 et $- 2$.
+	\end{enumerate}	
+\item On donne les trois représentations graphiques suivantes qui correspondent chacune à une des fonctions $f$, $g$ et $h$ citées dans les questions précédentes.
+
+Associer à chaque courbe la fonction qui lui correspond, en expliquant la réponse.
+\begin{center}
+\begin{tabularx}{\linewidth}{*{3}{>{\centering \arraybackslash}X}}
+\psset{unit=5mm,arrowsize=2pt 3}
+\begin{pspicture*}(-4,-5)(4,6)
+\rput(0,5.5){Représentation \no 1}
+\psaxes[labelsep=1mm,labelFontSize=\scriptstyle,linewidth=1pt,ticksize=-2pt 2pt, showorigin=false]{->}(0,0)(-4,-4.9)(4,5)
+\psplot[plotpoints=1000,linewidth=1.25pt]{-2}{5}{1 2 x mul sub}
+\uput[dl](0,0){\footnotesize{0}}
+\end{pspicture*} &
+\psset{xunit=5mm,yunit=2.5mm,arrowsize=2pt 3}
+\begin{pspicture*}(-4,-4.5)(4,18.2)
+\rput(0,17){Représentation \no 2}
+\psaxes[labelsep=1mm,labelFontSize=\scriptstyle,linewidth=1pt,ticksize=-2pt 2pt, showorigin=false,Dy=2]{->}(0,0)(-4,-4)(4,16)
+\psplot[plotpoints=1000,linewidth=1.25pt]{-3.1}{3.1}{x dup mul 2 mul 3 sub}
+\uput[dl](0,0){\footnotesize{0}}
+\end{pspicture*}&
+\psset{xunit=4.4mm,,yunit=5mm,arrowsize=2pt 3}
+\begin{pspicture*}(-5,-1.5)(3,11)
+\rput(-1,10.5){Représentation \no 3}
+\psaxes[labelsep=1mm,labelFontSize=\scriptstyle,linewidth=1pt,ticksize=-2pt 2pt, showorigin=false,Dx=2, subticks=1]{->}(0,0)(-5,-1.5)(3,10)
+\psplot[plotpoints=1000,linewidth=1.25pt]{-4.1}{2.1}{1  x add  dup mul}
+\uput[dl](0,0){\footnotesize{0}}
+\end{pspicture*}\\
+\end{tabularx}
+\end{center}
+
+
+La représentation \no 1 est celle de $f$ : c'est la seule pour laquelle l'image de 1 est $-1$.
+
+La représentation \no 2 est celle de $h$ : on a bien $h(0) = - 3$.
+
+La représentation \no 3 est celle de $g$ : on a bien $g(0) = 1$.
+\end{enumerate}
+
+\bigskip
+

@@ -1,0 +1,42 @@
+
+\medskip
+
+On considère la fonction $f$ définie sur $\R$ par : $f(x) = \e^{-x} + 0,5x - 3$,
+
+dont la courbe représentative $\mathcal{C}_f$ est donnée dans le repère orthonormé du plan ci-dessous.
+
+\begin{center}
+\psset{unit=1cm,arrowsize=2pt 3}
+\begin{pspicture*}(-3,-3)(8.5,1.5)
+\psgrid[gridlabels=0pt,subgriddiv=1,gridcolor=lightgray]
+\psaxes[linewidth=1.25pt]{->}(0,0)(-3,-3)(8.5,1.5)
+\psplot[plotpoints=2000,linewidth=1.25pt,linecolor=red,labelFontSize=\scripstyle]{-3}{8.5}{0.5 x mul 3 sub 2.71828 x neg exp add}
+\uput[ur](-1.293,0){\small A}\uput[ul](6,0){\small B}
+\uput[d](8.3,0){$x$} \uput[r](0,1.25){$y$}\uput[r](-1.5,1){\red $\mathcal{C}_f$}
+\psdots(-1.293,0)(6,0)
+\end{pspicture*}
+\end{center}
+
+Les points d'intersection de $\mathcal{C}_f$ avec l'axe des abscisses sont nommés A et B.
+
+L'abscisse de A est négative et celle de B est positive.
+
+On considère le programme Python suivant:
+\begin{center}
+\begin{tabular}{|>{\ttfamily}l|}\hline
+from math import exp\\
+def abscisse():\\
+\quad $x=-1.5$\\
+\quad while exp$(-x)+0.5*x-3 > 0:$\\
+\quad \quad $x = x + 0.01$\\
+\quad return $x$ \\ \hline
+\end{tabular}
+\end{center}
+
+\begin{enumerate}
+\item L'exécution de l'instruction {\ttfamily abscisse()} renvoie la valeur $-1,29$ à $10^{-2}$ près.
+
+Interpréter cette valeur dans le contexte de l'exercice.
+\item Reproduire et modifier sur votre copie le programme Python précédent pour que l'exécution de l'instruction {\ttfamily abscisse()} renvoie une valeur approchée à $10^{-2}$ près de l'abscisse du point B.
+\end{enumerate}
+

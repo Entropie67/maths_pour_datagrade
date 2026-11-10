@@ -1,0 +1,95 @@
+
+\medskip
+
+%Nora veut ouvrir un magasin de souvenirs à Paris et proposer à la vente des tours Eiffel miniatures.
+%
+%Elle contacte deux fournisseurs qui lui envoient chacun sous forme de graphiques le prix à leur payer en fonction du nombre de tours Eiffel achetées.
+
+\begin{center}
+\begin{tabularx}{\linewidth}{*{2}{>{\centering \arraybackslash}X}}
+\psset{unit=0.01cm}
+\begin{pspicture}(-100,-100)(450,1000)
+\multido{\n=0+100}{5}{\psline[linewidth=0.1pt](\n
+,0)(\n,900)}
+\multido{\n=0+100}{10}{\psline[linewidth=0.1pt](0,\n)(500,\n)}
+\psaxes[linewidth=1.25pt,labelFontSize=\scriptstyle,Dx=100,Dy=100]{->}(0,0)(0,0)(450,1000)
+\psline[linewidth=1.25pt,linecolor=red](360,900)
+\uput[d](250,-50){\small Nombre de tours Eiffel}
+\uput[r](0,920){\small Prix en euros}
+\uput[u](250,950){FOURNISSEUR A}
+\psline[linewidth=1.25pt,linestyle=dashed,ArrowInside=->](200,0)(200,500)(0,500)
+\end{pspicture}&
+\psset{unit=0.005cm}
+\begin{pspicture}(-100,-200)(1200,1900)
+\multido{\n=0+100}{12}{\psline[linewidth=0.1pt](\n,0)(\n,1900)}
+\multido{\n=0+100}{19}{\psline[linewidth=0.1pt](0,\n)(1200,\n)}
+\psaxes[linewidth=1.25pt,labelFontSize=\scriptstyle,Dx=100,Dy=100]{->}(0,0)(0,0)(1200,1900)
+\pscurve[linewidth=1.25pt,linecolor=blue](0,0)(100,250)(200,500)(400,925)(600,1300)(900,1700)(1000,1800)(1100,1890)
+\uput[d](600,-100){\small Nombre de tours Eiffel}
+\uput[r](0,1850){\small Prix en euros}
+\uput[u](600,1880){FOURNISSEUR B}
+\psline[linewidth=1.25pt,linestyle=dashed,ArrowInside=->](0,1300)(600,1300)(600,0)
+\end{pspicture}
+\end{tabularx}
+\end{center}
+
+\medskip
+
+\begin{enumerate}
+\item Par lecture graphique, avec la précision qu'elle permet, et sans justification,
+	\begin{enumerate}
+		\item %Déterminer le prix à payer pour acheter $200$ tours Eiffel chez le fournisseur A.
+On lit sur le graphique que $200$ tours Eiffel chez le fournisseur A coûtent 500~\euro.
+		\item %Nora a dépensé \np{1300} euros chez le fournisseur B. Combien de tours Eiffel lui a-t-elle achetées?
+On lit sur le graphique qu'avec \np{1300} euros chez le fournisseur B on peut avoir 600 tours Eiffel.
+	\end{enumerate}
+\item %Ces fournisseurs proposent-ils des prix proportionnels au nombre de tours Eiffel achetées?
+\starredbullet~La représentation graphique du prix à payer chez le fournisseur A est une droite contenant l'origine : c'est donc la représentation d'une fonction linéaire.
+
+\starredbullet~La représentation graphique du prix à payer chez le fournisseur B n'est pas une droite contenant l'origine : ce n'est donc pas la représentation d'une fonction linéaire ; le prix n'est pas proportionnel au nombre de tours Eiffel achetées.
+\item 
+	\begin{enumerate}
+		\item %Pour le fournisseur A, on admet que le prix des tours Eiffel est donné par la fonction linéaire $f$ représentée ci-dessus. On a en particulier $f(100) = 250$. 
+		
+%Déterminer l'expression de $f(x)$ en fonction de $x$.
+On sait que $f(x) = ax$ avec $a \in \R$ ; comme $f(200) = a \times 200 = 500$, on déduit $a = \dfrac{500}{200} = 2,5$.
+
+On a donc pour $x \geqslant 0$, \, $y = f(x) = 2,5x$.
+		\item %Calculer $f(\np{1000})$.
+$f(\np{1000}) = 2,5 \times \np{1000} = \np{2500}$~(\euro).
+		\item %Nora veut acheter \np{1000} tours Eiffel. Quel est le fournisseur le moins cher dans ce cas-là ?
+\starredbullet~Avec le fournisseur A il faut payer 	$f(\np{1000}) = \np{2500}$~(\euro).
+
+\starredbullet~Avec le fournisseur B il faut payer d'après le graphique \np{1800}~(\euro). C'est lui le moins cher.	
+	\end{enumerate}
+\item  %Nora contacte un troisième fournisseur, le fournisseur C, qui lui demande un paiement initial de $150$ euros pour avoir accès à ses articles, en plus d'un prix unitaire de 2 euros par tour Eiffel.
+	\begin{enumerate}
+		\item %Remplir le tableau des tarifs.
+		\begin{center}
+\begin{tabularx}{\linewidth}{|m{3cm}|*{5}{>{\centering \arraybackslash}X|}}\hline
+Nombre de tours Eiffel& 1&100 &200 &1000&$x$\\ \hline
+Prix payé en euros avec le fournisseur C&152& 350&550&\np{2150}&$150 + 2x$\\ \hline
+\end{tabularx}
+\end{center}
+
+		\item %Avec $580$ euros, combien de tours Eiffel peut acheter Nora chez le fournisseur C ?
+		Il faut résoudre l'équation dans $\N$ :
+		
+$150 + 2x = 580$, soit $2x = 430$ et $x = 215$.
+
+Chez le fournisseur C on peut acheter 215 tours Eiffel pour 580~\euro.
+		\item %Résoudre l'équation suivante : $2,5x = 150 + 2x$. 
+$2,5x = 150 + 2x$ donne en ajoutant à chaque membre $- 2x$ :
+
+$0,5x = 150$ et en multipliant par 2 : 
+
+$x = 300$.		
+%Expliquer à quoi correspond la solution trouvée.
+
+$2,5x $ est la prix à payer chez A pour acheter $x$ tours Eiffel et $150 + 2x$ celui à payer chez C pour acheter ces $x$ tours Eiffel.
+
+Résoudre l'équation $2,5x = 150 + 2x$ revient à chercher pour quelle quantité de tours Eiffel $x$, le prix à payer est le même chez les fournisseurs A et C.
+
+La réponse est 300 tours Eiffel achetées chez les fournisseurs A et C coûteront $2,5 \times 300 = 750$~(\euro) ou $150 + 2 \times 300 = 150 + 600 = 750$~(\euro). 
+	\end{enumerate}
+\end{enumerate}

@@ -1,0 +1,104 @@
+{
+  "questions": [
+    {
+      "themes": "Puissances",
+      "level": "4",
+      "id": "pui1",
+      "title": "Puissances",
+      "question": "Simplifier $\\underbrace{a \\times \\cdots \\times a}_{n \\text{facteurs}}=$",
+      "answer": "a^n",
+      "keys": ["a", "b", "n", "p", "POW"]
+    },
+    {
+      "themes": "Puissances",
+      "level": "4",
+      "id": "pui2",
+      "title": "Puissance d'exposant nul",
+      "question": "Simplifier $a^0=$",
+      "answer": "1",
+      "keys": ["a", "b", "n", "p", "POW"]
+    },
+    {
+      "themes": "Puissances",
+      "level": "4",
+      "id": "pui3",
+      "title": "Puissance d'exposant un",
+      "question": "Simplifier $a^1=$",
+      "answer": "a",
+      "keys": ["a", "b", "n", "p", "POW"]
+    },
+    {
+      "themes": "Puissances",
+      "level": "4",
+      "id": "pui4",
+      "title": "Produit de puissances",
+      "question": "Simplifier $a^n \\times a^p=$",
+      "answer": "a^{n+p}",
+      "keys": ["a", "b", "n", "p", "POW"]
+    },
+    {
+      "themes": "Puissances",
+      "level": "4",
+      "id": "pui5",
+      "title": "Puissance de puissance",
+      "question": "Simplifier $\\left(a^n\\right)^p=$",
+      "answer": "a^{n\\times p}",
+      "keys": ["a", "b", "n", "p", "POW"]
+    },
+    {
+      "themes": "Puissances",
+      "level": "4",
+      "id": "pui6",
+      "title": "Puissance d'un produit",
+      "question": "Simplifier $\\left(a\\times b\\right)^n=$",
+      "answer": "a^n \\times b^n",
+      "keys": ["a", "b", "n", "p", "POW"]
+    },
+    {
+      "themes": "Puissances",
+      "level": "3",
+      "id": "pui7",
+      "title": "Puissance négative",
+      "question": "Définir $a^{-n}=$",
+      "answer": ["\\dfrac{1}{a^n}", "\\left(\\dfrac{1}{a}\\right)^n"],
+      "keys": ["a", "b", "n", "p", "POW"]
+    },
+    {
+      "themes": "Puissances",
+      "level": "3",
+      "id": "pui8",
+      "title": "Quotient de puissances",
+      "question": "Simplifier $\\dfrac{a^n}{a^p}=$",
+      "answer": "a^{n-p}",
+      "keys": ["a", "b", "n", "p", "POW"]
+    },
+    {
+      "themes": "Puissances",
+      "level": "3",
+      "id": "pui9",
+      "title": "Puissance d'un quotient",
+      "question": "Simplifier $\\left(\\dfrac{a}{b}\\right)^n=$",
+      "answer": "\\dfrac{a^n}{b^n}",
+      "keys": ["a", "b", "n", "p", "POW"]
+    },
+    {
+      "themes": "Puissances",
+      "level": "3",
+      "id": "pui10",
+      "title": "Puissance avec un exposant pair",
+      "question": "Si $n$ est pair alors $(-a)^n=$",
+      "answer": "a^n",
+      "keys": ["a", "b", "n", "p", "POW"]
+    },
+    {
+      "themes": "Puissances",
+      "level": "3",
+      "id": "pui11",
+      "title": "Puissance avec un exposant impair",
+      "question": "Si $n$ est impair alors $(-a)^n=$",
+      "answer": "-a^n",
+      "keys": ["a", "b", "n", "p", "POW"]
+    }
+     
+  ]
+}

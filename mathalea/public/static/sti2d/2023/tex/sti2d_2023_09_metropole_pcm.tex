@@ -1,0 +1,64 @@
+
+\begin{center}
+\textbf{Contrôle de la température dans un lave-linge.}
+\end{center}
+
+\medskip
+
+Lors d'un cycle de lavage d'une machine à laver le linge, la phase qui consomme le plus d'énergie est le chauffage de l'eau utilisée en phase de lavage.
+
+\medskip
+
+La température de l'eau est contrôlée par une thermistance CTN, qui est un composant dont la valeur de la résistance électrique $R$ varie en fonction de la température.
+
+\medskip
+
+Il est possible, au laboratoire, d'étudier les variations de la résistance d'une thermistance CTN en fonction de la température à l'aide d'un montage adéquat.
+
+\medskip
+
+Les valeurs obtenues pour une thermistance donnée permettent de tracer la courbe suivante.
+
+\begin{center}
+\psset{xunit=0.15cm,yunit=0.0003cm,}
+\begin{pspicture}(-3,-4000)(70,20000)
+\multido{\n=0+10}{8}{\psline[linewidth=0.55pt](\n,-50)(\n,20000)}
+\multido{\n=0+2}{36}{\psline[linewidth=0.3pt,linecolor=lightgray ](\n,-50)(\n,20000)}
+\multido{\n=0+1000}{21}{\psline[linewidth=0.3pt,linecolor=lightgray](0,\n)(70,\n)}
+\multido{\n=0+5000}{5}{\psline[linewidth=0.55pt](0,\n)(70,\n)}
+\psaxes[linewidth=0.95pt,Dx=10,Dy=5000,labelFontSize=\scriptstyle]{-}(0,0)(-0.1,-50)(71,19999)
+\psplot[plotpoints=2000,linewidth=1.25pt,linecolor=blue,linestyle=dashed]{10}{60}{2.71828 x 0.042 neg mul exp 28785 mul}
+\psdots[dotstyle=+,dotscale=1.8,linecolor=red](10,20000)(15,15750)(20,12500)(25,10000)(30,8200)(35,6500)(40,5500)(45,4500)(50,3500)(55,3000)(60,2500)
+\uput[d](32,-2000){Température \textcelsius}\uput[l](-5,12500){R($\Omega$)}
+\end{pspicture}
+\end{center}
+
+\medskip
+
+Cette résistance (en $\Omega$), en fonction de la température $T$ (en \textcelsius), peut être modélisée par la fonction $R$ définie sur $[0~;~100]$ :
+\[R(T) = \np{28785} \times \e^{-0,042\times T}.\]
+
+\medskip
+
+\begin{enumerate}[start=4]
+\item À l'aide du graphique, déterminer à partir de quelle température la résistance devient inférieure à $\np[ k\Omega]{10}$.
+
+\item Résoudre sur $[0~;~100]$ l'équation $R(T) = \np{10000}$. Comparer avec la valeur lue sur le graphique à la question \textbf{4}.
+
+\item On note $R'$ la fonction dérivée de $R$ sur $[0~;~100]$. Déterminer une expression de $R'(T)$ en $\Omega \cdot ^{\text{o}} C^{-1}$.
+\end{enumerate}
+
+\medskip
+
+La sensibilité de la thermistance CTN est donnée par la fonction $S$ définie sur $[0~;~100]$ par:
+\[S = -\dfrac{\mathrm{d}R}{\mathrm{d}T}.\]
+
+Le dispositif de régulation de la température sera d'autant plus performant que la valeur de la sensibilité de la thermistance sera grande.
+
+\begin{enumerate}[start=7]
+\item Montrer que la sensibilité de la thermistance CTN est environ 12 fois plus grande à 30~\textcelsius{} qu'à 90~\textcelsius.
+\end{enumerate}
+
+\bigskip
+
+

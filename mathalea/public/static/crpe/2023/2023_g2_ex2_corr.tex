@@ -1,0 +1,60 @@
+\begin{enumerate}
+    \item \con{Un quadrilatère avec deux angles droits n'est pas nécessairement un rectangle}. \par
+       \begin{minipage}{7cm}
+          Les quadrilatères ci-contre, par exemple, possèdent deux angles droits sans être des rectangles. 
+       \end{minipage}
+       \qquad
+       \begin{minipage}{3cm}
+          \begin{pspicture}(0,-1.2)(2.5,1.2)
+             \pstGeonode[PointSymbol=none,PointName=none,CurveType=polygon]{A}(0.5,-1){B}(2.5,0){C}(0.5,1){D}
+             \pstRightAngle[linecolor=violet,RightAngleSize=0.2]{A}{B}{C}
+             \pstRightAngle[linecolor=violet,RightAngleSize=0.2]{C}{D}{A}
+          \end{pspicture}
+       \end{minipage}
+       \qquad
+       \begin{minipage}{3cm}
+          \begin{pspicture}(0,-0.2)(3,2)
+             \pstGeonode[PointSymbol=none,PointName=none,CurveType=polygon]{A}(3,0){B}(1.5,1.8){C}(0,1.8){D}
+             \pstRightAngle[linecolor=violet,RightAngleSize=0.2]{D}{A}{B}
+             \pstRightAngle[linecolor=violet,RightAngleSize=0.2]{C}{D}{A}
+          \end{pspicture}
+       \end{minipage}
+    \item
+       \begin{enumerate}
+          \item \con{Un quadrilatère dont les côtés opposés sont de même longueur peut être un parallélogramme}. \par
+             \begin{minipage}{8.5cm}
+                Le quadrilatère ci-contre, par exemple, possède deux côtés opposés de même longueur sans être un rectangle. 
+             \end{minipage}
+             \qquad
+             \begin{minipage}{3.5cm}
+                \begin{pspicture}(0,-0.5)(3.5,2)
+                   \pstGeonode[PointSymbol=none,PointName=none,CurveType=polygon]{A}(2.5,0){B}(3.5,1.5){C}(1,1.5){D}
+                   \pstSegmentMark[linecolor=violet]{A}{B}
+                   \pstSegmentMark[linecolor=violet]{C}{D}
+                \end{pspicture}
+             \end{minipage}
+          \item \con{Un quadrilatère dont les diagonales sont de même longueur peut être un cerf-volant}. \par
+             \begin{minipage}{8.5cm}
+                Le quadrilatère ci-contre, par exemple, possède des diagonales de même longueur sans être un rectangle. 
+             \end{minipage}
+             \qquad
+             \begin{minipage}{3.5cm}
+                \begin{pspicture}(0,0.2)(3,3.2)
+                   \pstGeonode[PointSymbol=none,PointName=none,CurveType=polygon](0,1.5){A}(2,0){B}(3,1.5){C}(2,3){D}
+                   \pstSegmentMark[linecolor=violet]{A}{C}
+                   \pstSegmentMark[linecolor=violet]{B}{D}
+                \end{pspicture}
+             \end{minipage}
+       \end{enumerate}
+    \item \con{Un rectangle dont les diagonales sont perpendiculaires est un carré}.
+       \begin{center}
+          \begin{pspicture}(0,-0.1)(2,2.1)
+             \pstGeonode[PointSymbol=none,PointName=none,CurveType=polygon]{A}(2,0){B}(2,2){C}(0,2){D}
+             \pstGeonode[PointSymbol=none,PointName=none](1,1){O}
+             \pstLineAB{A}{C}
+             \pstLineAB{B}{D}
+             \pstRightAngle[linecolor=violet,RightAngleSize=0.2]{A}{O}{D}
+          \end{pspicture}
+       \end{center}
+    \item \con{Le quadrilatère schématisé est un losange} puisqu'il possède quatre côtés de même longueur.
+ \end{enumerate}

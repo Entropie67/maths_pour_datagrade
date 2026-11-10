@@ -1,0 +1,13 @@
+- 1eTec/essaiexpht.ts
+- 6e/6M2C-flash2.ts
+- exercices/MetaExerciceCan.ts
+- beta/QcmJsonGenerator.ts
+- beta/qcmJsonGenerator.test.ts
+- exercices/exerciseMethods.ts
+- modèlesExos/20_exercice_classique.ts
+- modèlesExos/20_exercice_classique_apigeom.ts
+- modèlesExos/20_plusieurs_types.ts
+- modèlesExos/21_parametrable.js
+- modèlesExos/30_questions_differentes_chronologiquesy.ts
+- modèlesExos/JNAPMEP_parametrage.ts
+- profs/test.ts

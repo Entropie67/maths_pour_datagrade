@@ -1,0 +1,38 @@
+
+\medskip
+
+\begin{enumerate}[start=3]
+\item Les solutions de  l'équation différentielle $y'+ay=b$ sur  $\R$ sont les fonctions $y$ définies par :
+\[y(x)=C\e^{-ax}+\dfrac{b}{a},\]
+où $C$ est une constante quelconque.
+
+$a=\np{0.16} \text{ et } b=\np{9.81}$. Par conséquent, sur $[0~;~+\infty[$ :
+$v(t)=C \e^{-\np{0.16}t}+\dfrac{\np{9.81}}{\np{0.16}},$ 
+
+c'est-à-dire $v(t)=C \e^{-\np{0.16}t}+\dfrac{981}{16}$ où $C$ est une constante quelconque.
+
+Déterminons $C$ à l'aide de la condition initiale $v(0)=0$.
+\[ v(0)= C \e^{-\np{0.16}\times 0}+\dfrac{981}{16}=0 \iff C +\dfrac{981}{16}=0 \iff C=-\dfrac{981}{16}.\]
+
+Par conséquent :
+\[v(t)=-\frac{981}{16} \e^{-\np{0.16}t}+\dfrac{981}{16}=\dfrac{981}{16}\left(1-\e^{-\np{0.16}t}\right).\]
+
+\item 200 km$\cdot$h$^{-1}$ est équivalent à environ $\dfrac{\np{200000}}{\np{3600}} \approx \np{55.55} \text{ m} \cdot \text{s}^{-1}.$
+
+\item Déterminons le temps $t$ (en minutes) pour lequel la vitesse est égale à $\np{55.55} \text{ m} \cdot \text{s}^{-1}$.
+
+Résolvons :
+\begin{align*}
+\frac{981}{16}\left(1-\e^{-\np{0.16}t}\right)&=\np{55.55}\\
+1-\e^{-\np{0.16}t}&=\frac{\np{55.55}\times 16}{981}\\
+\e^{-\np{0.16}t}&=1-\frac{\np{55.55}\times 16}{981}\\
+-\np{0.16}t&= \ln\left(1-\frac{\np{55.55}\times 16}{981}\right)\\
+t&=-\dfrac{\ln\left(1-\frac{\np{55.55}\times 16}{981}\right)}{\np{0.16}}\\
+t&\approx \np{14.78}
+\end{align*}
+La brochure indique un temps largement supérieur au temps nécessaire pour atteindre les $200$~km$\cdot$ h$^{-1}$.
+\end{enumerate}
+
+\bigskip
+
+

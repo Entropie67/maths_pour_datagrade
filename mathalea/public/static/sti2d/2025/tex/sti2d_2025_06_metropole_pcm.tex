@@ -1,0 +1,27 @@
+\begin{center}
+\textbf{Pertes d'énergie dans le réseau électrique}
+\end{center}
+
+Lors de l'alimentation d'un équipement électrique en régime sinusoïdal, les pertes d'énergie par effet Joule dans les lignes d'alimentation peuvent être importantes. Afin d'évaluer leur valeur, on doit calculer le facteur de puissance de l'équipement électrique.
+
+\medskip
+
+L'équipement électrique dont on désire déterminer le facteur de puissance est constitué de l'association d'une bobine, composant électrique présent dans de nombreux circuits électriques, et d'un résistor. On réalise et on teste un circuit électrique comprenant cet équipement.
+
+\medskip
+
+On établit un modèle numérique à partir de cette expérience. On suppose que la fonction modélisant la puissance instantanée, exprimée en mW, reçue par l'équipement électrique en fonction du temps $t$, exprimé en secondes, est définie sur l'intervalle $[0~;~+\infty[$ par :
+\[f(t) = 12,25 - 13,91 \sin(\np{12466}t).\]
+
+\begin{enumerate}[start=6]
+\item On considère la fonction $F$ définie sur $[0~;~+\infty[$ par :
+\[F(t) = 12,25t + \dfrac{13,91}{\np{12466}} \cos(\np{12466}t).\]
+
+Montrer que $F$ est une primitive de $f$ sur l'intervalle $[0~;~+\infty[$.
+
+\item L'intégrale $E_{\text{mod}} = \int_{0}^{60} f(t)\,\mathrm{d}t$ modélise l'énergie reçue par l'équipement électrique pendant une minute, exprimée en mJ.
+
+Calculer l'énergie $E_{\text{mod}}$, en arrondissant à l'unité.
+\end{enumerate}
+
+\bigskip

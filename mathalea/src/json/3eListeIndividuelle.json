@@ -1,0 +1,224 @@
+{
+  "3L1": {
+    "titre": "Calcul littéral"
+  },
+  "3L10": {
+    "titre": "Déterminer l'opposé d'une expression littérale"
+  },
+  "3L11": {
+    "titre": "Développer (par simple et double distributivités), factoriser, réduire des expressions algébriques simples"
+  },
+  "3L12": {
+    "titre": "Factoriser une expression du type a2-b2 et développer des expression du type (a+b)(a-b)"
+  },
+  "3L13": {
+    "titre": "Résoudre algébriquement une équation du premier degré"
+  },
+  "3L14": {
+    "titre": "Résoudre algébriquement une équation produit"
+  },
+  "3L15": {
+    "titre": "Résoudre algébriquement une équations de la forme x2= a sur des exemples simples"
+  },
+  "3L16": {
+    "titre": "Résoudre des problèmes se ramenant à une équation, qui peuvent être internes aux mathématiques ou en lien avec d'autres disciplines"
+  },
+  "3L1QCM": {
+    "titre": "QCM"
+  },
+  "3A1": {
+    "titre": "Arithmétique"
+  },
+  "3A10": {
+    "titre": "Décomposer un nombre entier en produit de facteurs premiers (à la main, à l'aide d'un tableur ou d'un logiciel de programmation)"
+  },
+  "3A11": {
+    "titre": "Simplifier une fraction pour la rendre irréductible"
+  },
+  "3A12": {
+    "titre": "Modéliser et résoudre des problèmes mettant en jeu la divisibilité (engrenages, conjonction de phénomènes...)"
+  },
+  "3A1QCM": {
+    "titre": "QCM"
+  },
+  "3C1": {
+    "titre": "Puissances"
+  },
+  "3N1": {
+    "titre": "Nombres et calcul"
+  },
+  "3N10": {
+    "titre": "Utiliser les puissances d'exposants positifs ou négatifs pour simplifier l'écriture des produits"
+  },
+  "3N11": {
+    "titre": "Calcule avec les nombres rationnels, notamment dans le cadre de résolution de problèmes"
+  },
+  "3N12": {
+    "titre": "Résoudre des problèmes mettant en jeu des racines carrées"
+  },
+  "3N13": {
+    "titre": "Résoudre des problèmes avec des puissances, notamment en utilisant la notation scientifique"
+  },
+  "3N1QCM": {
+    "titre": "QCM"
+  },
+  "3F1": {
+    "titre": "Généralités sur les fonctions"
+  },
+  "3F10": {
+    "titre": "Utiliser les notations et le vocabulaire fonctionnels"
+  },
+  "3F11": {
+    "titre": "Passer d'un mode de représentation d'une fonction à un autre"
+  },
+  "3F12": {
+    "titre": "Déterminer, à partir de tous les modes de représentation, l'image d'un nombre"
+  },
+  "3F13": {
+    "titre": "Déterminer un antécédent à partir d'une représentation graphique ou d'un tableau de valeurs d'une fonction"
+  },
+  "3F14": {
+    "titre": "Modéliser un phénomène continu par une fonction"
+  },
+  "3F15": {
+    "titre": "Résoudre des problèmes modélisés par des fonctions en utilisant un ou plusieurs modes de représentation"
+  },
+  "3F1QCM": {
+    "titre": "QCM"
+  },
+  "3F2": {
+    "titre": "Fonctions affines et linéaires"
+  },
+  "3F20": {
+    "titre": "Représenter graphiquement une fonction linéaire, une fonction affine"
+  },
+  "3F21": {
+    "titre": "Interpréter les paramètres d'une fonction affine suivant l'allure de sa courbe représentative"
+  },
+  "3F22": {
+    "titre": "Modéliser une situation de proportionnalité à l'aide d'une fonction linéaire"
+  },
+  "3F23": {
+    "titre": "Déterminer de manière algébrique l'antécédent par une fonction, dans des cas se ramenant à la résolution d'une équation du premier degré"
+  },
+  "3F2QCM": {
+    "titre": "QCM"
+  },
+  "3P1": {
+    "titre": "Proportionnalité"
+  },
+  "3P10": {
+    "titre": "Utiliser le lien entre pourcentage d'évolution et coefficient multiplicateur"
+  },
+  "3P11": {
+    "titre": "Mener des calculs sur des grandeurs mesurables, notamment des grandeurs composées, et exprimer les résultats dans les unités adaptées"
+  },
+  "3P12": {
+    "titre": "Résoudre des problèmes utilisant les conversions d'unités sur des grandeurs composées"
+  },
+  "3P13": {
+    "titre": "Vérifier la cohérence des résultats du point de vue des unités pour les calculs de grandeurs simples ou composées"
+  },
+  "3P14": {
+    "titre": "Résoudre des problèmes en utilisant la proportionnalité dans le cadre de la géométrie"
+  },
+  "3P1QCM": {
+    "titre": "QCM"
+  },
+  "3S1": {
+    "titre": "Statistiques"
+  },
+  "3S10": {
+    "titre": "Lire, interpréter et représenter des données sous forme d'histogrammes pour des classes de même amplitude"
+  },
+  "3S11": {
+    "titre": "Calculer et interpréter l'étendue d'une série présentée sous forme de données brutes, d'un tableau, d'un diagramme en bâtons, d'un diagramme circulaire ou d'un histogramme"
+  },
+  "3S12": {
+    "titre": "Calculer des effectifs et des fréquences"
+  },
+  "3S1QCM": {
+    "titre": "QCM"
+  },
+  "3S2": {
+    "titre": "Probabilités"
+  },
+  "3S20": {
+    "titre": "À partir de dénombrements, calculer des probabilités pour des expériences aléatoires simples à une ou deux épreuves"
+  },
+  "3S21": {
+    "titre": "Faire le lien entre stabilisation des fréquences et probabilités"
+  },
+  "3S2QCM": {
+    "titre": "QCM"
+  },
+  "3G1": {
+    "titre": "Homothétie et rotation"
+  },
+  "3G10": {
+    "titre": "Transformer une figure par rotation et comprendre l'effet d'une rotation"
+  },
+  "3G11": {
+    "titre": "Transformer une figure par homothétie et comprendre l'effet d'une homothétie"
+  },
+  "3G12": {
+    "titre": "Identifier des rotations et des homothéties dans des frises, des pavages et des rosaces"
+  },
+  "3G13": {
+    "titre": "Mobiliser les connaissances des figures, des configurations, de la rotation et de l'homothétie pour déterminer des grandeurs géométriques"
+  },
+  "3G14": {
+    "titre": "Calculer des grandeurs géométriques (longueurs, aires et volumes) en utilisant les transformations (symétries, rotations, translations, homothétie)"
+  },
+  "3G1QCM": {
+    "titre": "QCM"
+  },
+  "3G2": {
+    "titre": "Théorème de Thalès"
+  },
+  "3G20": {
+    "titre": "Calculer une longueur avec le théorème de Thalès"
+  },
+  "3G21": {
+    "titre": "Démontrer que des droites sont parallèles avec le théorème de Thalès"
+  },
+  "3G22": {
+    "titre": "Connaître et utiliser une définition et une propriété caractéristique des triangles semblables"
+  },
+  "3G2QCM": {
+    "titre": "QCM"
+  },
+  "3G3": {
+    "titre": "Trigonométrie"
+  },
+  "3G30": {
+    "titre": "Calculer une longueur dans un triangle rectangle"
+  },
+  "3G31": {
+    "titre": "Calculer la mesure d'un angle dans un triangle rectangle"
+  },
+  "3G32": {
+    "titre": "Résoudre un problème géométrique"
+  },
+  "3G3QCM": {
+    "titre": "QCM"
+  },
+  "3G4": {
+    "titre": "Espace"
+  },
+  "3G40": {
+    "titre": "Se repérer sur une sphère (latitude, longitude)"
+  },
+  "3G41": {
+    "titre": "Construire et mettre en relation différentes représentations des solides étudiés au cours du cycle (représentations en perspective cavalière, vues de face, de dessus, en coupe, patrons) et leurs sections planes"
+  },
+  "3G42": {
+    "titre": "Calculer le volume d'une boule"
+  },
+  "3G43": {
+    "titre": "Calculer les volumes d'assemblages de solides étudiés au cours du cycle"
+  },
+  "3G4QCM": {
+    "titre": "QCM"
+  }
+}

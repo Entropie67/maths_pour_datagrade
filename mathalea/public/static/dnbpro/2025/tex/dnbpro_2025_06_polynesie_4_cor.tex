@@ -1,0 +1,143 @@
+
+\smallskip
+
+Les parents de Teiki lui ont légué un terrain divisé en deux parcelles dont on peut assimiler la forme à la figure ci-dessous:
+
+\begin{minipage}{0.4\linewidth}
+DC = 10 m 
+
+AC = 25 m 
+
+DE = 22 m 
+
+(AB) // (DE)
+
+La figure n'est pas à l'échelle
+\end{minipage}\hfill
+\begin{minipage}{0.58\linewidth}
+\psset{unit=1cm,arrowsize=2pt 3}
+\begin{pspicture}(8.5,5.8)
+\pspolygon(1.6,0.4)(8.4,0.4)(1.6,5)%ABC
+\psline(1.6,3)(4.6,3)%DE
+\psframe(1.6,0.4)(1.85,0.65)
+\psframe(1.6,3)(1.85,3.25)
+\psline[linewidth=0.8pt]{<->}(1.4,3)(1.4,5)\rput{90}(1.2,4){10 m}
+\psline[linewidth=0.8pt]{<->}(1.6,2.8)(4.6,2.8)\uput[d](3.1,2.9){22 m}
+\psline[linewidth=0.8pt]{<->}(0.6,0.4)(0.6,5)\rput{90}(0.4,2.7){25 m}
+\uput[ur](4.6,3){E}\uput[dl](1.6,0.4){A}\uput[dr](8.4,0.4){B}\uput[u](1.6,5){C}\uput[dl](1.6,3){D}
+\uput[r](1.5,3.7){Parcelle 1}\uput[r](1.5,1.1){Parcelle 2}
+\end{pspicture}
+\end{minipage}
+
+\textbf{Partie A}
+
+\medskip
+
+\begin{enumerate}
+\item L'aire de la parcelle 1 correspond à l'aire du triangle CDE.
+	\begin{enumerate}
+		\item %Justifier, par un calcul, que l'aire de la parcelle 1 vaut $110$~m$^2$.
+Le triangle CDE est rectangle en D ; en prenant [DE] comme base et [DC] comme hauteur, son aire est égale à :
+
+$\dfrac{\text{DE} \times \text{DC}}{2} = \dfrac{22 \times 10}{2} \dfrac{220}{2} = 110~\left(\text{m}^2\right)$.
+		\item %Teiki veut planter des arbres sur la parcelle 1, il a besoin de $90$~m$^2$ pour le faire.
+
+%Indiquer s'il pourra planter ces arbres.
+Comme $110 > 90$, Teiki a la place pour planter ses arbres.
+
+%Justifier la réponse.
+	\end{enumerate}
+\item %Le triangle ABC est constitué des parcelles 1 et 2.
+	\begin{enumerate}
+		\item %Vérifier, en utilisant le théorème de Thalès, que AB $= 55$~m. Détailler les calculs sur la copie.
+		Les, droites (DE) et (AB) sont parallèles, C, D, A sont alignés dans cet ordre et C, E et B le sont aussi dans cet ordre : on peut donc utiliser le théorème de Thalès ; en particulier :
+		
+$\dfrac{\text{CD}}{\text{CA}} = \dfrac{\text{DE}}{\text{AB}}$, soit $\dfrac{10}{25} = \dfrac{\text{22}}{\text{AB}}$ d'où on déduit $10\text{AB} = 25 \times 22$, puis AB $ = \dfrac{25 \times 22}{10} = 55$~(m).
+		\item %Calculer l'aire du triangle ABC. Exprimer le résultat en m$^2$.
+		En prenant comme base [AB] de longueur 55~(m) et la hauteur [AC] de longueur 25~(m), l'aire du triangle ABC est égale à $\dfrac{55 \times 25}{2} = 687,5~\left(\text{m}^2\right)$.
+		\item %Calculer l'aire de la parcelle 2.
+
+%Détailler le calcul sur la copie. Exprimer le résultat en $^2$.
+L'aire de la parcelle 2 est égale à la différence entre l'aire du triangle ABC et celle du triangle CDE, soit
+
+$687,5 - 110 = 577,5~\left(\text{m}^2\right)$.
+		\item %Pour construire une maison, il faut au minimum une parcelle de $550$$^2$.
+
+%Indiquer si Teiki pourra construire sa maison sur la parcelle 2.
+
+%Justifier la réponse.
+Comme $557,5 > 550$, Teiki pourra construire sa maison sur la parcelle 2.
+	\end{enumerate}
+\end{enumerate}
+
+\medskip
+
+\textbf{Partie B}
+
+\medskip
+
+%Teiki souhaite clôturer son terrain.
+
+\medskip
+
+\begin{enumerate}
+\item %En utilisant le théorème de Pythagore, vérifier que la longueur BC, arrondie à l'unité, est égale à $60$~m.
+Dans le triangle ABC rectangle en A, le théorème de Pythagore permet d'écrire :
+
+BC$^2 = \text{BA}^2 + \text{AC}^2 = 55^2 + 25^2 = \np{3025} + 625 = \np{3650}$.
+
+Comme BC $ > 0$, on a donc BC $= \sqrt{\np{3650}} \approx 60,4$, soit 60~(m) à l'unité près.
+
+\item %Calculer le périmètre du terrain ABC. Exprimer le résultat en m. Arrondir à l'unité.
+Le périmètre du terrain ABC est égal à AB $ + \text{BC} + \text{CA}$ soit environ $55 + 60 + 25 = 140$~(m) à l'unité près.
+\end{enumerate}
+\medskip
+
+%Teiki souhaite installer une clôture autour de son terrain ABC.
+%
+%Il hésite entre deux types de clôture:
+%
+%\begin{description}
+%\item[ ] Type A : Canisses en Osier à \np{2200}~F le mètre avec livraison gratuite;
+%\item[ ] Type B : Canisses en roseaux fendus à \np{1920}~F le mètre avec un forfait livraison.
+%\end{description}
+
+Le graphique représente le prix en F pour chacun des deux types de clôture en fonction de la longueur en m.
+
+\begin{landscape}
+\psset{xunit=0.125cm,yunit=0.035cm,arrowsize=2pt 3}
+\begin{pspicture}(-30,-2)(150,340)
+\psaxes[linewidth=1.25pt,Dx=5,Dy=20,labelFontSize=\scriptstyle]{->}(0,0)(0,0)(150,340)
+\multido{\n=0+5}{31}{\psline[linewidth=0.2pt](\n,0)(\n,340)}
+\multido{\n=0+20}{18}{\psline[linewidth=0.2pt](0,\n)(150,\n)}
+\psplot[plotpoints=2000,linewidth=1.25pt,linecolor=red]{0}{145}{x 2.207 mul}
+\psplot[plotpoints=2000,linewidth=1.25pt,linecolor=blue]{0}{145}{x 1.931 mul 20 add}
+\uput[r](0,330){Prix en milliers de F $y$}
+\uput[u](135,0){Longueur en m $x$}
+\psline[linewidth=1.75pt,linestyle=dashed,ArrowInside=->](140,0)(140,290)(0,290)
+\uput[l](0,290){\blue $\approx 290$}
+\rput{33}(110,252){\red Type A}\rput{31}(110,222){\blue Type B}
+\end{pspicture}
+\end{landscape}
+
+\begin{enumerate}[resume]
+\item %Écrire sur le graphique, pour chacune des deux représentations graphiques, celle correspondant au « type A » et celle correspondant au
+%« type B ».
+Pour le \og type A \fg{}, le prix est proportionnel à la longueur : la fonction est donc linéaire et sa représentation est une droite qui contient l'origine.
+
+L'autre est donc celle qui correspond à la clôture du \og type B \fg{}.
+
+\item %Déterminer, à l'aide de la représentation graphique correspondant au type B, le montant du forfait livraison. Exprimer le résultat en F.
+Le forfait à la livraison est à payer même pour $0$~(m) de clôture : on lit pour $x = 0$,
+
+$y = 20$~(milliers de F), soit \np{20000}~(F).
+\item %Indiquer, à l'aide du graphique, la clôture de type A ou de type B, qui coûtera le moins cher pour une longueur de $140$~m.
+
+%Justifier la réponse et laisser les traits de lecture apparents sur le graphique.
+On trace la droite verticale passant par le point de coordonnées (140~;~0) ; celle-ci coupe en premier  (Le tracé est en tiret), la droite (bleue) correspondant au \og type B \fg{} en un point dont l'ordonnée est égale à environ 290~milliers de F, soit \np{290000}~F.
+
+C'est cette clôture du \og type B \fg{} qui coûtera le moins cher.
+\end{enumerate}
+
+\medskip
+

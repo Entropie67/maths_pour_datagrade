@@ -1,0 +1,111 @@
+
+\medskip
+
+On considère le programme de calcul suivant:
+\hspace{1cm}
+\begin{tabular}[t]{|l|}
+\multicolumn{1}{c}{Nombre de départ}\\
+\multicolumn{1}{c}{\psline[linewidth=4pt,arrowsize=1pt 2,arrowinset=0]{->}(0,0.3)(0,-0.5)}\\
+\multicolumn{1}{c}{}\\
+\hline
+\textbullet~~Calculer le carré de ce nombre\\
+\textbullet~~Multiplier par 5\\
+\textbullet~~Ajouter 4\\
+\textbullet~~Multiplier par 2\\
+\textbullet~~Enlever 8\\
+\hline
+\multicolumn{1}{c}{\psline[linewidth=4pt,arrowsize=1pt 2,arrowinset=0]{->}(0,0.3)(0,-0.5)}\\
+\multicolumn{1}{c}{}\\
+\multicolumn{1}{c}{Résultat}\\
+\end{tabular}
+
+\bigskip
+
+\textbf{PARTIE A}
+
+\begin{enumerate}
+\item Montrer que si 3 est le nombre de départ, le programme donne un résultat égal à 90.
+\item Un élève choisit 2 comme nombre de départ et un autre élève choisit $-2$. \\
+Montrer qu'ils doivent obtenir le même résultat.
+\item Si on nomme $x$ le nombre de départ, montrer que le résultat du programme peut s'écrire $10x^2$.
+\end{enumerate}
+
+\bigskip
+
+\textbf{PARTIE B}
+
+\medskip
+
+Pour cette partie, un élève cherche le ou les nombre(s) qu'il doit choisir pour obtenir 30 comme résultat. 
+
+\begin{enumerate}[resume]
+\item Pour cela, il représente graphiquement la fonction $f$ associée au programme de calcul définie par: $f(x)=10x^2$.
+
+Il obtient la courbe suivante:
+
+%\medskip
+
+\begin{center}
+\scalebox{0.8}{
+\psset{xunit=3.5cm,yunit=0.15cm,arrowsize=3pt 3}
+\def\xmin {-2.4}   \def\xmax {2.4}
+\def\ymin {-5}   \def\ymax {45}
+\begin{pspicture*}(\xmin,\ymin)(\xmax,\ymax)
+\psgrid[gridlabels=0pt,xunit=3.5cm,yunit=0.75cm,subgriddiv=5, gridcolor=gray](-3,-5)(12,45)
+\psaxes[labelFontSize=\small, ticks=none, labels=y,Dy=5]{->}(0,0)(\xmin,-4.9)(\xmax,\ymax)
+\uput[dl](0,0){$0$} \uput[ul](1.8,32){$\blue\mathcal{C}_f$}
+\psplot[linecolor=blue]{\xmin}{\xmax}{10 x dup mul mul}
+\multido{\n=0.2+0.2}{11}{\uput[d](\n,0){\small\np{\n}}}
+\end{pspicture*}
+}% scalebox
+\end{center}
+
+%\medskip
+
+À l'aide du graphique, déterminer une valeur approchée des antécédents de 30 par la fonction $f$. Ne pas justifier.
+
+\item L'élève souhaite trouver une valeur plus précise de l'antécédent \textbf{positif} trouvé à la question précédente. Pour cela il utilise une feuille de calcul dont un extrait est donné ci-dessous:
+
+\begin{center}
+%\renewcommand{\arraystretch}{1.2}
+$\begin{array}{|>{\cellcolor{lightgray}}c| *{3}{>{\centering \arraybackslash}m{1.9cm}|}}
+\hline
+\rowcolor{lightgray} & \text A & \text B & \text C\\
+\hline
+1 & \textbf{Nombre de départ} & \textbf{Résultat} & \\ \hline
+2 & 1,60   & 25,600  & \\ \hline
+3 &  1,61 &   25,921 & \\ \hline
+4 & 1,62  & 26,244  & \\ \hline
+5 & 1,63  &  26,569 & \\ \hline
+6 & 1,64 &  26,896 & \\ \hline
+7 &  1,65 &  27,225 & \\ \hline
+8 &  1,66 &  27,556 & \\ \hline
+9 &  1,67 &  27,889 & \\ \hline
+10 &  1,68 &  28,224 & \\ \hline
+11 &  1,69 &  28,561 & \\ \hline
+12 &  1,70&  28,900 & \\ \hline
+13 &  1,71 &  29,241 & \\ \hline
+14 &  1,72 &  29,584 & \\ \hline
+15 &  1,73 &  29,929 & \\ \hline
+16 &  1,74 &  30,276 & \\ \hline
+17 &  1,75 &  30,625 & \\ \hline
+18 &  1,76 &  30,976 & \\ \hline
+19 &  1,77 &  31,329 & \\ \hline
+20 &  1,78 &  31,684 & \\ \hline
+21 &  1,79 &  32,041 & \\ \hline
+22 &  1,80 &  32,400 & \\ \hline
+23 &  &  & \\ \hline
+\end{array}$
+\end{center}
+
+\begin{enumerate}
+\item Quelle formule a-t-il pu entrer dans la cellule \texttt{B2} avant de l'étirer vers le bas? Ne pas justifier.
+\item Dans ce tableau, quel est le nombre de départ donnant le résultat le plus proche de 30? Ne pas justifier.
+\end{enumerate}
+
+\item Déterminer la valeur exacte du nombre positif cherché par l'élève.
+
+\end{enumerate}
+
+\bigskip
+

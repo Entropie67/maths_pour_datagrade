@@ -1,0 +1,31 @@
+{
+  "questions": [
+    {
+      "themes": "Proportionnalité",
+      "level": "5",
+      "id": "pro1",
+      "title": "Formule de la vitesse",
+      "question": "Exprimer la vitesse $v$ en fonction de la distance $d$ et du temps $t$.",
+      "answer": "v = \\dfrac{d}{t}",
+      "keys": ["v", "d", "t"]
+    },
+    {
+      "themes": "Proportionnalité",
+      "level": "5",
+      "id": "pro2",
+      "title": "Formule de la distance",
+      "question": "Exprimer la distance $d$ en fonction de la vitesse $v$ et du temps $t$.",
+      "answer": "d = v \\times t",
+      "keys": ["v", "d", "t"]
+    },
+    {
+      "themes": "Proportionnalité",
+      "level": "5",
+      "id": "pro3",
+      "title": "Formule du temps",
+      "question": "Exprimer le temps $t$ en fonction de la distance $d$ et de la vitesse $v$.",
+      "answer": "t = \\dfrac{d}{v}",
+      "keys": ["v", "d", "t"]
+    }
+  ]
+}

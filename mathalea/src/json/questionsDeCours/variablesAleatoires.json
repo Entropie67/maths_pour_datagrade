@@ -1,0 +1,181 @@
+{
+  "questions": [
+    
+     
+         {
+      "themes": "Variables aléatoires",
+      "level": "1",
+      "id": "var2",
+      "title": "Espérance d'une variable aléatoire",
+      "type":"qcm",
+      "question": "Soit $X$ une variable aléatoire.  A quel indicateur correspond son espérance ? ",
+      "answer": ["moyenne"],
+      "badPropositions": ["écart-type", "variance", "médiane"]
+        },
+        {
+      "themes": "Variables aléatoires",
+      "level": "1",
+      "id": "var3",
+      "title": "Variance d'une variable aléatoire",
+      "type":"qcm",
+      "question": "Soit $X$ une variable aléatoire.  Sa variance est un indicateur de ... ",
+      "answer": ["dispersion"],
+       "badPropositions": ["position", "décalage", "variation"]
+        }
+        ,{
+      "themes": "Variables aléatoires",
+      "level": "1",
+      "id": "var4",
+      "title": "Variance d'une variable aléatoire",
+      "type":"qcm",
+      "question": "Soit $X$ une variable aléatoire.  Son espérance est un indicateur de ... ",
+      "answer": ["position"],
+       "badPropositions": ["dispersion", "décalage", "variation"]
+        },
+         {
+      "themes": "Variables aléatoires",
+      "level": "1",
+      "id": "var5",
+      "title": "Espérance d'une variable aléatoire",
+      "type":"qcm",
+      "question": "Soit $X$ une variable aléatoire.  $\\mathrm{E}(X)=\\ldots$ ",
+      "answer": ["$\\sum_{i=1}^{n} x_i P(X=x_i)$"],
+       "badPropositions": ["$\\sum_{i=1}^{n} P(X=x_i)$", "$\\sum_{i=1}^{n} x_i^2 P(X=x_i)$", "$\\sum_{i=1}^{n} (x_i-i)^2 P(X=x_i)$"]
+        }
+        ,
+         {"themes": "Variables aléatoires",
+      "level": "1",
+      "id": "var6",
+      "title": "Espérance d'une variable aléatoire",
+      "question": "Soit $X$ une variable aléatoire.  Donner la définition de son espérance. ",
+      "answer": ["E(X)=\\sum_{i=1}^{n} x_i P(X=x_i)","\\sum_{i=1}^{n} x_i P(X=x_i)"],
+       "keys": ["E","X", "P","i", "n", "SIGMA","=", "x_i"]
+        },
+         {
+      "themes": "Variables aléatoires",
+      "level": "1",
+      "id": "var7",
+      "title": "Variance d'une variable aléatoire",
+      "type":"qcm",
+      "question": "Soit $X$ une variable aléatoire.  $\\mathrm{V}(X)=\\ldots$ ",
+      "answer": ["$\\sum_{i=1}^{n} \\left(x_i-\\mathrm{E}(X)\\right)^2 P(X=x_i)$"],
+       "badPropositions": ["$\\sum_{i=1}^{n} x_i P(X=x_i)$", "$\\sum_{i=1}^{n} x_i^2 P(X=x_i)$", "$\\sum_{i=1}^{n} (x_i-i)^2 P(X=x_i)$"]
+        }
+        ,
+         {"themes": "Variables aléatoires",
+      "level": "1",
+      "id": "var8",
+      "title": "Espérance d'une variable aléatoire",
+      "question": "Soit $X$ une variable aléatoire.  Donner la définition de son espérance. ",
+      "answer": ["V(X)=\\sum_{i=1}^{n} \\left(x_i-\\mathrm{E}(X)\\right)^2 P(X=x_i)"],
+       "keys": ["E","X", "P", "i", "n", "SIGMA","=", "x_i","V"]
+        },
+        {
+      "themes": "Variables aléatoires",
+      "level": "1",
+      "id": "var9",
+      "title": "Variance d'une variable aléatoire",
+      "type":"qcm",
+      "question": "Soit $X$ une variable aléatoire.  $\\mathrm{V}(X)=\\ldots$ ",
+      "answer": ["$\\mathrm{E}(X^2)-\\mathrm{E}(X)^2$"],
+       "badPropositions": ["$\\left(\\mathrm{E}(X^2)-\\mathrm{E}(X)\\right)^2$", "$\\mathrm{E}(X)^2-\\mathrm{E}(X^2)$"]
+        }
+        ,
+         {"themes": "Variables aléatoires",
+      "level": "1",
+      "id": "var10",
+      "title": "Variance d'une variable aléatoire",
+      "question": "Soit $X$ une variable aléatoire.  Donner la définition de sa variance en fonction de son espérance. ",
+      "answer": ["V(X)=\\mathrm{E}(X^2)-\\mathrm{E}(X)^2"],
+       "keys": ["E","X", "=", "V"]
+        },
+         {
+      "themes": "Variables aléatoires",
+      "level": "1",
+      "id": "var11",
+      "title": "Espérance loi binomiale",
+      "question": "Soit $X\\sim\\mathcal{B}(n;p)$.  Donner $\\mathrm{E}(X)$ ",
+      "answer": ["np"],
+       "keys": ["n", "p"]
+        },
+         {
+      "themes": "Variables aléatoires",
+      "level": "1",
+      "id": "var12",
+      "title": "Variance loi binomiale",
+      "question": "Soit $X\\sim\\mathcal{B}(n;p)$.  Donner $\\mathrm{V}(X)$ ",
+      "answer": ["np(1-p)"],
+       "keys": ["n", "p"]
+        },
+         {
+      "themes": "Variables aléatoires",
+      "level": "1",
+      "id": "var13",
+      "title": "Espérance loi Bernoulli",
+      "question": "Soit $X$ une variable aléatoire suivant une loi de Bernoulli de paramètre $p$. Donner $\\mathrm{E}(X)$ ",
+      "answer": ["p"],
+       "keys": ["n", "p"]}
+        ,
+         {
+      "themes": "Variables aléatoires",
+      "level": "1",
+     "id": "var14",
+      "title": "Variance loi Bernoulli",
+      "question": "Soit $X$ une variable aléatoire suivant une loi de Bernoulli de paramètre $p$. Donner $\\mathrm{V}(X)$ ",
+      "answer": ["p(1-p)"],
+       "keys": ["n", "p"]
+        },
+                {
+      "themes": "Variables aléatoires",
+      "level": "T",
+      "id": "var15",
+      "title": "Espérance d'une transformation affine de variable aléatoire",
+      "question": "Soit $X$ une variable aléatoire, $a$ et $b$ deux réels. Combien vaut $\\mathrm{E}(aX+b)$ ?",
+      "answer": ["aE(X)+b"],
+      "keys": ["a", "b", "E", "X"]
+    },
+    {
+      "themes": "Variables aléatoires",
+      "level": "T",
+      "id": "var16",
+      "title": "Variance d'une transformation affine de variable aléatoire",
+      "question": "Soit $X$ une variable aléatoire et $a$ un réel. Combien vaut $\\mathrm{V}(aX)$ pour des variables aléatoires indépendantes ?",
+      "answer": ["a^2V(X)"],
+      "keys": ["a", "V", "X"]
+    },
+    {
+      "themes": "Variables aléatoires",
+      "level": "T",
+      "id": "var17",
+      "title": "Inégalité de Bienaymé-Tchebychev",
+      "question": "Donner l'inégalité de Bienaymé-Tchébychev",
+      "answer": [
+        "P(|X-\\mu| \\geqslant \\delta) \\leqslant \\dfrac{V(X)}{\\delta^2}"
+      ],
+      "keys": [
+        "\\delta",
+        "\\mu",
+        "V",
+        "P",
+        "X",
+        "|",
+        "\\leqslant",
+        "\\geqslant",
+        "<",
+        ">"
+      ]
+    },
+    {
+      "themes": "Variables aléatoires",
+      "level": "T",
+      "id": "var18",
+      "title": "Inégalité de Concentration",
+      "question": "Donner l'inégalité de Concentration (loi des grands nombres)",
+      "answer": [
+        "P(|M_n-E(X)| \\geqslant \\delta) \\leqslant \\dfrac{V(X)}{n\\delta^2}"
+      ],
+      "keys": [
+        "\\delta","M_n","E","V","P","X","n","|","\\leqslant","\\geqslant","<",">"]
+    }
+  ]
+}

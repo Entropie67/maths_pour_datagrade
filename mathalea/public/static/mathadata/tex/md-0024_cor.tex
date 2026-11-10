@@ -1,0 +1,49 @@
+%source mathadata
+\begin{MADenumerate}
+			\item Calculons le couple $(x;y)$ pour chacune des quatre images :
+
+			$$M_1(135\,;\,120), M_2(0\,;\,50), M_3(175\,;\,25), M_4(60\,;\,0)$$
+
+			\item    \begin{tikzpicture}[scale=0.9]
+				\begin{axis}[
+						name=plotA,
+						axis lines=middle,
+						ymajorgrids=true,
+						xmajorgrids=true,
+						xmin=-1.1,
+						xmax=180,
+						ymin=-0.1,
+						ymax=180,
+						xtick={20,40,...,180},
+						ytick={20,40,...,180},
+						xlabel={\Large {\color{red} $x$}},
+						xlabel style={at={(axis description cs:1.02,-0.1)}, anchor=north},
+						ylabel={\color{blue}{\Large $y$}},
+						ylabel style={at={(axis description cs:-0.2,1.02)}, anchor=west},
+						scatter/classes={
+								A={mark=square*,mark size = 2pt,draw=blue, fill = BleuCeladon},
+								B={mark=*,mark size = 2pt,draw=black, fill = OrangeCarotte},
+								C={mark=square*,mark size = 4pt,draw=blue, fill = BleuCeladon},
+								D={mark=*,mark size = 4pt,draw=black, fill = OrangeCarotte}
+							}
+					]
+					%\clip(-0.2,-0.2) rectangle (8,6);
+					\addplot[scatter,only marks,scatter src=explicit symbolic,opacity=1]
+					coordinates {
+							(0,115)[A]
+							(140,145)[A]
+							(155,60)[A]
+							(0,40)[B]
+							(51,50)[B]
+							(62,5)[B]
+							(135,120)[C]
+							(0,50)[D]
+							(175,25)[C]
+							(60,0)[D]
+						};
+					\addplot[domain=0:180,samples=100,thick,red]{80-0.5*x};
+				\end{axis}
+				\draw (0,0) node[below left]{\footnotesize $O$};
+
+			\end{tikzpicture}
+		\end{MADenumerate}

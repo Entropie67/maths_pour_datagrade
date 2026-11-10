@@ -1,0 +1,5708 @@
+{
+  "families": {
+    "bac": {
+      "available": 1700,
+      "missing": 17,
+      "bytes": 290025711
+    },
+    "crpe": {
+      "available": 1141,
+      "missing": 210,
+      "bytes": 645285525
+    },
+    "dnb": {
+      "available": 3358,
+      "missing": 7,
+      "bytes": 300782723
+    },
+    "dnbpro": {
+      "available": 209,
+      "missing": 0,
+      "bytes": 41076652
+    },
+    "e3c": {
+      "available": 1120,
+      "missing": 0,
+      "bytes": 97445134
+    },
+    "eam": {
+      "available": 480,
+      "missing": 0,
+      "bytes": 67415339
+    },
+    "evacom": {
+      "available": 33,
+      "missing": 16,
+      "bytes": 691180
+    },
+    "flashbac": {
+      "available": 19,
+      "missing": 153,
+      "bytes": 344438
+    },
+    "mathadata": {
+      "available": 78,
+      "missing": 40,
+      "bytes": 9444131
+    },
+    "sti2d": {
+      "available": 612,
+      "missing": 12,
+      "bytes": 32930470
+    },
+    "stl": {
+      "available": 456,
+      "missing": 32,
+      "bytes": 19542482
+    }
+  },
+  "missing": [
+    {
+      "path": "assets/crpe/2018/2018-g1-dida1-cor-1.png",
+      "exercises": [
+        "crpe-2018-g1-dida",
+        "crpe-2018-g1-dida1"
+      ],
+      "kinds": [
+        "correction-image"
+      ],
+      "optional": false,
+      "activeCatalogue": false
+    },
+    {
+      "path": "assets/crpe/2018/2018-g1-dida1-cor-2.png",
+      "exercises": [
+        "crpe-2018-g1-dida",
+        "crpe-2018-g1-dida1"
+      ],
+      "kinds": [
+        "correction-image"
+      ],
+      "optional": false,
+      "activeCatalogue": false
+    },
+    {
+      "path": "assets/crpe/2018/2018-g1-dida1.png",
+      "exercises": [
+        "crpe-2018-g1-dida",
+        "crpe-2018-g1-dida1"
+      ],
+      "kinds": [
+        "statement-image"
+      ],
+      "optional": false,
+      "activeCatalogue": false
+    },
+    {
+      "path": "assets/crpe/2018/2018-g1-dida2-cor-1.png",
+      "exercises": [
+        "crpe-2018-g1-dida",
+        "crpe-2018-g1-dida2"
+      ],
+      "kinds": [
+        "correction-image"
+      ],
+      "optional": false,
+      "activeCatalogue": false
+    },
+    {
+      "path": "assets/crpe/2018/2018-g1-dida2-cor-2.png",
+      "exercises": [
+        "crpe-2018-g1-dida",
+        "crpe-2018-g1-dida2"
+      ],
+      "kinds": [
+        "correction-image"
+      ],
+      "optional": false,
+      "activeCatalogue": false
+    },
+    {
+      "path": "assets/crpe/2018/2018-g1-dida2.png",
+      "exercises": [
+        "crpe-2018-g1-dida",
+        "crpe-2018-g1-dida2"
+      ],
+      "kinds": [
+        "statement-image"
+      ],
+      "optional": false,
+      "activeCatalogue": false
+    },
+    {
+      "path": "assets/crpe/2018/2018-g1-dida3-cor-1.png",
+      "exercises": [
+        "crpe-2018-g1-dida",
+        "crpe-2018-g1-dida3"
+      ],
+      "kinds": [
+        "correction-image"
+      ],
+      "optional": false,
+      "activeCatalogue": false
+    },
+    {
+      "path": "assets/crpe/2018/2018-g1-dida3-cor-2.png",
+      "exercises": [
+        "crpe-2018-g1-dida",
+        "crpe-2018-g1-dida3"
+      ],
+      "kinds": [
+        "correction-image"
+      ],
+      "optional": false,
+      "activeCatalogue": false
+    },
+    {
+      "path": "assets/crpe/2018/2018-g1-dida3.png",
+      "exercises": [
+        "crpe-2018-g1-dida",
+        "crpe-2018-g1-dida3"
+      ],
+      "kinds": [
+        "statement-image"
+      ],
+      "optional": false,
+      "activeCatalogue": false
+    },
+    {
+      "path": "assets/crpe/2018/2018-g2-dida1-cor-1.png",
+      "exercises": [
+        "crpe-2018-g2-dida",
+        "crpe-2018-g2-dida1"
+      ],
+      "kinds": [
+        "correction-image"
+      ],
+      "optional": false,
+      "activeCatalogue": false
+    },
+    {
+      "path": "assets/crpe/2018/2018-g2-dida1-cor-2.png",
+      "exercises": [
+        "crpe-2018-g2-dida",
+        "crpe-2018-g2-dida1"
+      ],
+      "kinds": [
+        "correction-image"
+      ],
+      "optional": false,
+      "activeCatalogue": false
+    },
+    {
+      "path": "assets/crpe/2018/2018-g2-dida1.png",
+      "exercises": [
+        "crpe-2018-g2-dida",
+        "crpe-2018-g2-dida1"
+      ],
+      "kinds": [
+        "statement-image"
+      ],
+      "optional": false,
+      "activeCatalogue": false
+    },
+    {
+      "path": "assets/crpe/2018/2018-g2-dida2-1.png",
+      "exercises": [
+        "crpe-2018-g2-dida",
+        "crpe-2018-g2-dida2"
+      ],
+      "kinds": [
+        "statement-image"
+      ],
+      "optional": false,
+      "activeCatalogue": false
+    },
+    {
+      "path": "assets/crpe/2018/2018-g2-dida2-2.png",
+      "exercises": [
+        "crpe-2018-g2-dida",
+        "crpe-2018-g2-dida2"
+      ],
+      "kinds": [
+        "statement-image"
+      ],
+      "optional": false,
+      "activeCatalogue": false
+    },
+    {
+      "path": "assets/crpe/2018/2018-g2-dida2-cor-1.png",
+      "exercises": [
+        "crpe-2018-g2-dida",
+        "crpe-2018-g2-dida2"
+      ],
+      "kinds": [
+        "correction-image"
+      ],
+      "optional": false,
+      "activeCatalogue": false
+    },
+    {
+      "path": "assets/crpe/2018/2018-g2-dida2-cor-2.png",
+      "exercises": [
+        "crpe-2018-g2-dida",
+        "crpe-2018-g2-dida2"
+      ],
+      "kinds": [
+        "correction-image"
+      ],
+      "optional": false,
+      "activeCatalogue": false
+    },
+    {
+      "path": "assets/crpe/2018/2018-g2-dida2-cor-3.png",
+      "exercises": [
+        "crpe-2018-g2-dida",
+        "crpe-2018-g2-dida2"
+      ],
+      "kinds": [
+        "correction-image"
+      ],
+      "optional": false,
+      "activeCatalogue": false
+    },
+    {
+      "path": "assets/crpe/2018/2018-g2-dida3-1.png",
+      "exercises": [
+        "crpe-2018-g2-dida",
+        "crpe-2018-g2-dida3"
+      ],
+      "kinds": [
+        "statement-image"
+      ],
+      "optional": false,
+      "activeCatalogue": false
+    },
+    {
+      "path": "assets/crpe/2018/2018-g2-dida3-2.png",
+      "exercises": [
+        "crpe-2018-g2-dida",
+        "crpe-2018-g2-dida3"
+      ],
+      "kinds": [
+        "statement-image"
+      ],
+      "optional": false,
+      "activeCatalogue": false
+    },
+    {
+      "path": "assets/crpe/2018/2018-g2-dida3-3.png",
+      "exercises": [
+        "crpe-2018-g2-dida",
+        "crpe-2018-g2-dida3"
+      ],
+      "kinds": [
+        "statement-image"
+      ],
+      "optional": false,
+      "activeCatalogue": false
+    },
+    {
+      "path": "assets/crpe/2018/2018-g2-dida3-cor-1.png",
+      "exercises": [
+        "crpe-2018-g2-dida",
+        "crpe-2018-g2-dida3"
+      ],
+      "kinds": [
+        "correction-image"
+      ],
+      "optional": false,
+      "activeCatalogue": false
+    },
+    {
+      "path": "assets/crpe/2018/2018-g2-dida3-cor-2.png",
+      "exercises": [
+        "crpe-2018-g2-dida",
+        "crpe-2018-g2-dida3"
+      ],
+      "kinds": [
+        "correction-image"
+      ],
+      "optional": false,
+      "activeCatalogue": false
+    },
+    {
+      "path": "assets/crpe/2018/2018-g3-dida1-cor-1.png",
+      "exercises": [
+        "crpe-2018-g3-dida",
+        "crpe-2018-g3-dida1"
+      ],
+      "kinds": [
+        "correction-image"
+      ],
+      "optional": false,
+      "activeCatalogue": false
+    },
+    {
+      "path": "assets/crpe/2018/2018-g3-dida1.png",
+      "exercises": [
+        "crpe-2018-g3-dida",
+        "crpe-2018-g3-dida1"
+      ],
+      "kinds": [
+        "statement-image"
+      ],
+      "optional": false,
+      "activeCatalogue": false
+    },
+    {
+      "path": "assets/crpe/2018/2018-g3-dida2-1.png",
+      "exercises": [
+        "crpe-2018-g3-dida",
+        "crpe-2018-g3-dida2"
+      ],
+      "kinds": [
+        "statement-image"
+      ],
+      "optional": false,
+      "activeCatalogue": false
+    },
+    {
+      "path": "assets/crpe/2018/2018-g3-dida2-2.png",
+      "exercises": [
+        "crpe-2018-g3-dida",
+        "crpe-2018-g3-dida2"
+      ],
+      "kinds": [
+        "statement-image"
+      ],
+      "optional": false,
+      "activeCatalogue": false
+    },
+    {
+      "path": "assets/crpe/2018/2018-g3-dida2-cor-1.png",
+      "exercises": [
+        "crpe-2018-g3-dida",
+        "crpe-2018-g3-dida2"
+      ],
+      "kinds": [
+        "correction-image"
+      ],
+      "optional": false,
+      "activeCatalogue": false
+    },
+    {
+      "path": "assets/crpe/2018/2018-g3-dida2-cor-2.png",
+      "exercises": [
+        "crpe-2018-g3-dida",
+        "crpe-2018-g3-dida2"
+      ],
+      "kinds": [
+        "correction-image"
+      ],
+      "optional": false,
+      "activeCatalogue": false
+    },
+    {
+      "path": "assets/crpe/2018/2018-g3-dida3-cor-1.png",
+      "exercises": [
+        "crpe-2018-g3-dida",
+        "crpe-2018-g3-dida3"
+      ],
+      "kinds": [
+        "correction-image"
+      ],
+      "optional": false,
+      "activeCatalogue": false
+    },
+    {
+      "path": "assets/crpe/2018/2018-g3-dida3-cor-2.png",
+      "exercises": [
+        "crpe-2018-g3-dida",
+        "crpe-2018-g3-dida3"
+      ],
+      "kinds": [
+        "correction-image"
+      ],
+      "optional": false,
+      "activeCatalogue": false
+    },
+    {
+      "path": "assets/crpe/2018/2018-g3-dida3.png",
+      "exercises": [
+        "crpe-2018-g3-dida",
+        "crpe-2018-g3-dida3"
+      ],
+      "kinds": [
+        "statement-image"
+      ],
+      "optional": false,
+      "activeCatalogue": false
+    },
+    {
+      "path": "assets/crpe/2018/2018-g4-dida1-1.png",
+      "exercises": [
+        "crpe-2018-g4-dida",
+        "crpe-2018-g4-dida1"
+      ],
+      "kinds": [
+        "statement-image"
+      ],
+      "optional": false,
+      "activeCatalogue": false
+    },
+    {
+      "path": "assets/crpe/2018/2018-g4-dida1-2.png",
+      "exercises": [
+        "crpe-2018-g4-dida",
+        "crpe-2018-g4-dida1"
+      ],
+      "kinds": [
+        "statement-image"
+      ],
+      "optional": false,
+      "activeCatalogue": false
+    },
+    {
+      "path": "assets/crpe/2018/2018-g4-dida1-cor-1.png",
+      "exercises": [
+        "crpe-2018-g4-dida",
+        "crpe-2018-g4-dida1"
+      ],
+      "kinds": [
+        "correction-image"
+      ],
+      "optional": false,
+      "activeCatalogue": false
+    },
+    {
+      "path": "assets/crpe/2018/2018-g4-dida1-cor-2.png",
+      "exercises": [
+        "crpe-2018-g4-dida",
+        "crpe-2018-g4-dida1"
+      ],
+      "kinds": [
+        "correction-image"
+      ],
+      "optional": false,
+      "activeCatalogue": false
+    },
+    {
+      "path": "assets/crpe/2018/2018-g4-dida1-cor-3.png",
+      "exercises": [
+        "crpe-2018-g4-dida",
+        "crpe-2018-g4-dida1"
+      ],
+      "kinds": [
+        "correction-image"
+      ],
+      "optional": false,
+      "activeCatalogue": false
+    },
+    {
+      "path": "assets/crpe/2018/2018-g4-dida2-cor-1.png",
+      "exercises": [
+        "crpe-2018-g4-dida",
+        "crpe-2018-g4-dida2"
+      ],
+      "kinds": [
+        "correction-image"
+      ],
+      "optional": false,
+      "activeCatalogue": false
+    },
+    {
+      "path": "assets/crpe/2018/2018-g4-dida2-cor-2.png",
+      "exercises": [
+        "crpe-2018-g4-dida",
+        "crpe-2018-g4-dida2"
+      ],
+      "kinds": [
+        "correction-image"
+      ],
+      "optional": false,
+      "activeCatalogue": false
+    },
+    {
+      "path": "assets/crpe/2018/2018-g4-dida2-cor-3.png",
+      "exercises": [
+        "crpe-2018-g4-dida",
+        "crpe-2018-g4-dida2"
+      ],
+      "kinds": [
+        "correction-image"
+      ],
+      "optional": false,
+      "activeCatalogue": false
+    },
+    {
+      "path": "assets/crpe/2018/2018-g4-dida2.png",
+      "exercises": [
+        "crpe-2018-g4-dida",
+        "crpe-2018-g4-dida2"
+      ],
+      "kinds": [
+        "statement-image"
+      ],
+      "optional": false,
+      "activeCatalogue": false
+    },
+    {
+      "path": "assets/crpe/2018/2018-g4-dida3-1.png",
+      "exercises": [
+        "crpe-2018-g4-dida",
+        "crpe-2018-g4-dida3"
+      ],
+      "kinds": [
+        "statement-image"
+      ],
+      "optional": false,
+      "activeCatalogue": false
+    },
+    {
+      "path": "assets/crpe/2018/2018-g4-dida3-2.png",
+      "exercises": [
+        "crpe-2018-g4-dida",
+        "crpe-2018-g4-dida3"
+      ],
+      "kinds": [
+        "statement-image"
+      ],
+      "optional": false,
+      "activeCatalogue": false
+    },
+    {
+      "path": "assets/crpe/2018/2018-g4-dida3-cor-1.png",
+      "exercises": [
+        "crpe-2018-g4-dida",
+        "crpe-2018-g4-dida3"
+      ],
+      "kinds": [
+        "correction-image"
+      ],
+      "optional": false,
+      "activeCatalogue": false
+    },
+    {
+      "path": "assets/crpe/2018/2018-g4-dida3-cor-2.png",
+      "exercises": [
+        "crpe-2018-g4-dida",
+        "crpe-2018-g4-dida3"
+      ],
+      "kinds": [
+        "correction-image"
+      ],
+      "optional": false,
+      "activeCatalogue": false
+    },
+    {
+      "path": "assets/crpe/2018/2018-g4-dida3-cor-3.png",
+      "exercises": [
+        "crpe-2018-g4-dida",
+        "crpe-2018-g4-dida3"
+      ],
+      "kinds": [
+        "correction-image"
+      ],
+      "optional": false,
+      "activeCatalogue": false
+    },
+    {
+      "path": "assets/crpe/2018/2018-g4-dida3-cor-4.png",
+      "exercises": [
+        "crpe-2018-g4-dida",
+        "crpe-2018-g4-dida3"
+      ],
+      "kinds": [
+        "correction-image"
+      ],
+      "optional": false,
+      "activeCatalogue": false
+    },
+    {
+      "path": "assets/crpe/2018/2018-g5-dida1-1.png",
+      "exercises": [
+        "crpe-2018-g5-dida",
+        "crpe-2018-g5-dida1"
+      ],
+      "kinds": [
+        "statement-image"
+      ],
+      "optional": false,
+      "activeCatalogue": false
+    },
+    {
+      "path": "assets/crpe/2018/2018-g5-dida1-2.png",
+      "exercises": [
+        "crpe-2018-g5-dida",
+        "crpe-2018-g5-dida1"
+      ],
+      "kinds": [
+        "statement-image"
+      ],
+      "optional": false,
+      "activeCatalogue": false
+    },
+    {
+      "path": "assets/crpe/2018/2018-g5-dida1-cor-1.png",
+      "exercises": [
+        "crpe-2018-g5-dida",
+        "crpe-2018-g5-dida1"
+      ],
+      "kinds": [
+        "correction-image"
+      ],
+      "optional": false,
+      "activeCatalogue": false
+    },
+    {
+      "path": "assets/crpe/2018/2018-g5-dida1-cor-2.png",
+      "exercises": [
+        "crpe-2018-g5-dida",
+        "crpe-2018-g5-dida1"
+      ],
+      "kinds": [
+        "correction-image"
+      ],
+      "optional": false,
+      "activeCatalogue": false
+    },
+    {
+      "path": "assets/crpe/2018/2018-g5-dida2-cor-1.png",
+      "exercises": [
+        "crpe-2018-g5-dida",
+        "crpe-2018-g5-dida2"
+      ],
+      "kinds": [
+        "correction-image"
+      ],
+      "optional": false,
+      "activeCatalogue": false
+    },
+    {
+      "path": "assets/crpe/2018/2018-g5-dida2-cor-2.png",
+      "exercises": [
+        "crpe-2018-g5-dida",
+        "crpe-2018-g5-dida2"
+      ],
+      "kinds": [
+        "correction-image"
+      ],
+      "optional": false,
+      "activeCatalogue": false
+    },
+    {
+      "path": "assets/crpe/2018/2018-g5-dida2.png",
+      "exercises": [
+        "crpe-2018-g5-dida",
+        "crpe-2018-g5-dida2"
+      ],
+      "kinds": [
+        "statement-image"
+      ],
+      "optional": false,
+      "activeCatalogue": false
+    },
+    {
+      "path": "assets/crpe/2018/2018-g5-dida3-1.png",
+      "exercises": [
+        "crpe-2018-g5-dida",
+        "crpe-2018-g5-dida3"
+      ],
+      "kinds": [
+        "statement-image"
+      ],
+      "optional": false,
+      "activeCatalogue": false
+    },
+    {
+      "path": "assets/crpe/2018/2018-g5-dida3-2.png",
+      "exercises": [
+        "crpe-2018-g5-dida",
+        "crpe-2018-g5-dida3"
+      ],
+      "kinds": [
+        "statement-image"
+      ],
+      "optional": false,
+      "activeCatalogue": false
+    },
+    {
+      "path": "assets/crpe/2018/2018-g5-dida3-cor-1.png",
+      "exercises": [
+        "crpe-2018-g5-dida",
+        "crpe-2018-g5-dida3"
+      ],
+      "kinds": [
+        "correction-image"
+      ],
+      "optional": false,
+      "activeCatalogue": false
+    },
+    {
+      "path": "assets/crpe/2018/2018-g5-dida3-cor-2.png",
+      "exercises": [
+        "crpe-2018-g5-dida",
+        "crpe-2018-g5-dida3"
+      ],
+      "kinds": [
+        "correction-image"
+      ],
+      "optional": false,
+      "activeCatalogue": false
+    },
+    {
+      "path": "assets/crpe/2018/2018-s0-dida1-cor-1.png",
+      "exercises": [
+        "crpe-2018-s0-dida",
+        "crpe-2018-s0-dida1"
+      ],
+      "kinds": [
+        "correction-image"
+      ],
+      "optional": false,
+      "activeCatalogue": false
+    },
+    {
+      "path": "assets/crpe/2018/2018-s0-dida1-cor-2.png",
+      "exercises": [
+        "crpe-2018-s0-dida",
+        "crpe-2018-s0-dida1"
+      ],
+      "kinds": [
+        "correction-image"
+      ],
+      "optional": false,
+      "activeCatalogue": false
+    },
+    {
+      "path": "assets/crpe/2018/2018-s0-dida1.png",
+      "exercises": [
+        "crpe-2018-s0-dida",
+        "crpe-2018-s0-dida1"
+      ],
+      "kinds": [
+        "statement-image"
+      ],
+      "optional": false,
+      "activeCatalogue": false
+    },
+    {
+      "path": "assets/crpe/2018/2018-s0-dida2-1.png",
+      "exercises": [
+        "crpe-2018-s0-dida",
+        "crpe-2018-s0-dida2"
+      ],
+      "kinds": [
+        "statement-image"
+      ],
+      "optional": false,
+      "activeCatalogue": false
+    },
+    {
+      "path": "assets/crpe/2018/2018-s0-dida2-2.png",
+      "exercises": [
+        "crpe-2018-s0-dida",
+        "crpe-2018-s0-dida2"
+      ],
+      "kinds": [
+        "statement-image"
+      ],
+      "optional": false,
+      "activeCatalogue": false
+    },
+    {
+      "path": "assets/crpe/2018/2018-s0-dida2-cor-1.png",
+      "exercises": [
+        "crpe-2018-s0-dida",
+        "crpe-2018-s0-dida2"
+      ],
+      "kinds": [
+        "correction-image"
+      ],
+      "optional": false,
+      "activeCatalogue": false
+    },
+    {
+      "path": "assets/crpe/2018/2018-s0-dida2-cor-2.png",
+      "exercises": [
+        "crpe-2018-s0-dida",
+        "crpe-2018-s0-dida2"
+      ],
+      "kinds": [
+        "correction-image"
+      ],
+      "optional": false,
+      "activeCatalogue": false
+    },
+    {
+      "path": "assets/crpe/2018/2018-s0-dida3-1.png",
+      "exercises": [
+        "crpe-2018-s0-dida",
+        "crpe-2018-s0-dida3"
+      ],
+      "kinds": [
+        "statement-image"
+      ],
+      "optional": false,
+      "activeCatalogue": false
+    },
+    {
+      "path": "assets/crpe/2018/2018-s0-dida3-2.png",
+      "exercises": [
+        "crpe-2018-s0-dida",
+        "crpe-2018-s0-dida3"
+      ],
+      "kinds": [
+        "statement-image"
+      ],
+      "optional": false,
+      "activeCatalogue": false
+    },
+    {
+      "path": "assets/crpe/2018/2018-s0-dida3-cor-1.png",
+      "exercises": [
+        "crpe-2018-s0-dida",
+        "crpe-2018-s0-dida3"
+      ],
+      "kinds": [
+        "correction-image"
+      ],
+      "optional": false,
+      "activeCatalogue": false
+    },
+    {
+      "path": "assets/crpe/2018/2018-s0-dida3-cor-2.png",
+      "exercises": [
+        "crpe-2018-s0-dida",
+        "crpe-2018-s0-dida3"
+      ],
+      "kinds": [
+        "correction-image"
+      ],
+      "optional": false,
+      "activeCatalogue": false
+    },
+    {
+      "path": "assets/crpe/2018/2018-s0-dida4-1.png",
+      "exercises": [
+        "crpe-2018-s0-dida",
+        "crpe-2018-s0-dida4"
+      ],
+      "kinds": [
+        "statement-image"
+      ],
+      "optional": false,
+      "activeCatalogue": false
+    },
+    {
+      "path": "assets/crpe/2018/2018-s0-dida4-2.png",
+      "exercises": [
+        "crpe-2018-s0-dida",
+        "crpe-2018-s0-dida4"
+      ],
+      "kinds": [
+        "statement-image"
+      ],
+      "optional": false,
+      "activeCatalogue": false
+    },
+    {
+      "path": "assets/crpe/2018/2018-s0-dida4-cor-1.png",
+      "exercises": [
+        "crpe-2018-s0-dida",
+        "crpe-2018-s0-dida4"
+      ],
+      "kinds": [
+        "correction-image"
+      ],
+      "optional": false,
+      "activeCatalogue": false
+    },
+    {
+      "path": "assets/crpe/2018/2018-s0-dida4-cor-2.png",
+      "exercises": [
+        "crpe-2018-s0-dida",
+        "crpe-2018-s0-dida4"
+      ],
+      "kinds": [
+        "correction-image"
+      ],
+      "optional": false,
+      "activeCatalogue": false
+    },
+    {
+      "path": "assets/crpe/2018/2018-s5-dida-1.png",
+      "exercises": [
+        "crpe-2018-s5-dida"
+      ],
+      "kinds": [
+        "statement-image"
+      ],
+      "optional": false,
+      "activeCatalogue": false
+    },
+    {
+      "path": "assets/crpe/2018/2018-s5-dida-2.png",
+      "exercises": [
+        "crpe-2018-s5-dida"
+      ],
+      "kinds": [
+        "statement-image"
+      ],
+      "optional": false,
+      "activeCatalogue": false
+    },
+    {
+      "path": "assets/crpe/2018/2018-s5-dida-3.png",
+      "exercises": [
+        "crpe-2018-s5-dida"
+      ],
+      "kinds": [
+        "statement-image"
+      ],
+      "optional": false,
+      "activeCatalogue": false
+    },
+    {
+      "path": "assets/crpe/2018/2018-s5-dida-cor-1.png",
+      "exercises": [
+        "crpe-2018-s5-dida"
+      ],
+      "kinds": [
+        "correction-image"
+      ],
+      "optional": false,
+      "activeCatalogue": false
+    },
+    {
+      "path": "assets/crpe/2018/2018-s5-dida-cor-2.png",
+      "exercises": [
+        "crpe-2018-s5-dida"
+      ],
+      "kinds": [
+        "correction-image"
+      ],
+      "optional": false,
+      "activeCatalogue": false
+    },
+    {
+      "path": "assets/crpe/2018/2018-s5-dida-cor-3.png",
+      "exercises": [
+        "crpe-2018-s5-dida"
+      ],
+      "kinds": [
+        "correction-image"
+      ],
+      "optional": false,
+      "activeCatalogue": false
+    },
+    {
+      "path": "assets/crpe/2018/2018-s6-dida-1.png",
+      "exercises": [
+        "crpe-2018-s6-dida"
+      ],
+      "kinds": [
+        "statement-image"
+      ],
+      "optional": false,
+      "activeCatalogue": false
+    },
+    {
+      "path": "assets/crpe/2018/2018-s6-dida-cor-1.png",
+      "exercises": [
+        "crpe-2018-s6-dida"
+      ],
+      "kinds": [
+        "correction-image"
+      ],
+      "optional": false,
+      "activeCatalogue": false
+    },
+    {
+      "path": "assets/crpe/2018/2018-s6-dida-cor-2.png",
+      "exercises": [
+        "crpe-2018-s6-dida"
+      ],
+      "kinds": [
+        "correction-image"
+      ],
+      "optional": false,
+      "activeCatalogue": false
+    },
+    {
+      "path": "assets/crpe/2018/2018-s6-dida-cor-3.png",
+      "exercises": [
+        "crpe-2018-s6-dida"
+      ],
+      "kinds": [
+        "correction-image"
+      ],
+      "optional": false,
+      "activeCatalogue": false
+    },
+    {
+      "path": "assets/crpe/2018/2018-s7-dida-1.png",
+      "exercises": [
+        "crpe-2018-s7-dida"
+      ],
+      "kinds": [
+        "statement-image"
+      ],
+      "optional": false,
+      "activeCatalogue": false
+    },
+    {
+      "path": "assets/crpe/2018/2018-s7-dida-2.png",
+      "exercises": [
+        "crpe-2018-s7-dida"
+      ],
+      "kinds": [
+        "statement-image"
+      ],
+      "optional": false,
+      "activeCatalogue": false
+    },
+    {
+      "path": "assets/crpe/2018/2018-s7-dida-3.png",
+      "exercises": [
+        "crpe-2018-s7-dida"
+      ],
+      "kinds": [
+        "statement-image"
+      ],
+      "optional": false,
+      "activeCatalogue": false
+    },
+    {
+      "path": "assets/crpe/2018/2018-s7-dida-cor-1.png",
+      "exercises": [
+        "crpe-2018-s7-dida"
+      ],
+      "kinds": [
+        "correction-image"
+      ],
+      "optional": false,
+      "activeCatalogue": false
+    },
+    {
+      "path": "assets/crpe/2018/2018-s7-dida-cor-2.png",
+      "exercises": [
+        "crpe-2018-s7-dida"
+      ],
+      "kinds": [
+        "correction-image"
+      ],
+      "optional": false,
+      "activeCatalogue": false
+    },
+    {
+      "path": "assets/crpe/2018/2018-s7-dida-cor-3.png",
+      "exercises": [
+        "crpe-2018-s7-dida"
+      ],
+      "kinds": [
+        "correction-image"
+      ],
+      "optional": false,
+      "activeCatalogue": false
+    },
+    {
+      "path": "assets/crpe/2018/2018-s8-dida1-cor-1.png",
+      "exercises": [
+        "crpe-2018-s8-dida",
+        "crpe-2018-s8-dida1"
+      ],
+      "kinds": [
+        "correction-image"
+      ],
+      "optional": false,
+      "activeCatalogue": false
+    },
+    {
+      "path": "assets/crpe/2018/2018-s8-dida1.png",
+      "exercises": [
+        "crpe-2018-s8-dida",
+        "crpe-2018-s8-dida1"
+      ],
+      "kinds": [
+        "statement-image"
+      ],
+      "optional": false,
+      "activeCatalogue": false
+    },
+    {
+      "path": "assets/crpe/2018/2018-s8-dida2-cor-1.png",
+      "exercises": [
+        "crpe-2018-s8-dida",
+        "crpe-2018-s8-dida2"
+      ],
+      "kinds": [
+        "correction-image"
+      ],
+      "optional": false,
+      "activeCatalogue": false
+    },
+    {
+      "path": "assets/crpe/2018/2018-s8-dida2-cor-2.png",
+      "exercises": [
+        "crpe-2018-s8-dida",
+        "crpe-2018-s8-dida2"
+      ],
+      "kinds": [
+        "correction-image"
+      ],
+      "optional": false,
+      "activeCatalogue": false
+    },
+    {
+      "path": "assets/crpe/2018/2018-s8-dida2-cor-3.png",
+      "exercises": [
+        "crpe-2018-s8-dida",
+        "crpe-2018-s8-dida2"
+      ],
+      "kinds": [
+        "correction-image"
+      ],
+      "optional": false,
+      "activeCatalogue": false
+    },
+    {
+      "path": "assets/crpe/2018/2018-s8-dida2.png",
+      "exercises": [
+        "crpe-2018-s8-dida",
+        "crpe-2018-s8-dida2"
+      ],
+      "kinds": [
+        "statement-image"
+      ],
+      "optional": false,
+      "activeCatalogue": false
+    },
+    {
+      "path": "assets/crpe/2018/2018-s8-dida3-cor-1.png",
+      "exercises": [
+        "crpe-2018-s8-dida",
+        "crpe-2018-s8-dida3"
+      ],
+      "kinds": [
+        "correction-image"
+      ],
+      "optional": false,
+      "activeCatalogue": false
+    },
+    {
+      "path": "assets/crpe/2018/2018-s8-dida3-cor-2.png",
+      "exercises": [
+        "crpe-2018-s8-dida",
+        "crpe-2018-s8-dida3"
+      ],
+      "kinds": [
+        "correction-image"
+      ],
+      "optional": false,
+      "activeCatalogue": false
+    },
+    {
+      "path": "assets/crpe/2018/2018-s8-dida3.png",
+      "exercises": [
+        "crpe-2018-s8-dida",
+        "crpe-2018-s8-dida3"
+      ],
+      "kinds": [
+        "statement-image"
+      ],
+      "optional": false,
+      "activeCatalogue": false
+    },
+    {
+      "path": "assets/crpe/2018/2018-s9-dida1-1.png",
+      "exercises": [
+        "crpe-2018-s9-dida",
+        "crpe-2018-s9-dida1"
+      ],
+      "kinds": [
+        "statement-image"
+      ],
+      "optional": false,
+      "activeCatalogue": false
+    },
+    {
+      "path": "assets/crpe/2018/2018-s9-dida1-2.png",
+      "exercises": [
+        "crpe-2018-s9-dida",
+        "crpe-2018-s9-dida1"
+      ],
+      "kinds": [
+        "statement-image"
+      ],
+      "optional": false,
+      "activeCatalogue": false
+    },
+    {
+      "path": "assets/crpe/2018/2018-s9-dida1-3.png",
+      "exercises": [
+        "crpe-2018-s9-dida",
+        "crpe-2018-s9-dida1"
+      ],
+      "kinds": [
+        "statement-image"
+      ],
+      "optional": false,
+      "activeCatalogue": false
+    },
+    {
+      "path": "assets/crpe/2018/2018-s9-dida1-4.png",
+      "exercises": [
+        "crpe-2018-s9-dida",
+        "crpe-2018-s9-dida1"
+      ],
+      "kinds": [
+        "statement-image"
+      ],
+      "optional": false,
+      "activeCatalogue": false
+    },
+    {
+      "path": "assets/crpe/2018/2018-s9-dida1-cor-1.png",
+      "exercises": [
+        "crpe-2018-s9-dida",
+        "crpe-2018-s9-dida1"
+      ],
+      "kinds": [
+        "correction-image"
+      ],
+      "optional": false,
+      "activeCatalogue": false
+    },
+    {
+      "path": "assets/crpe/2018/2018-s9-dida1-cor-2.png",
+      "exercises": [
+        "crpe-2018-s9-dida",
+        "crpe-2018-s9-dida1"
+      ],
+      "kinds": [
+        "correction-image"
+      ],
+      "optional": false,
+      "activeCatalogue": false
+    },
+    {
+      "path": "assets/crpe/2018/2018-s9-dida1-cor-3.png",
+      "exercises": [
+        "crpe-2018-s9-dida",
+        "crpe-2018-s9-dida1"
+      ],
+      "kinds": [
+        "correction-image"
+      ],
+      "optional": false,
+      "activeCatalogue": false
+    },
+    {
+      "path": "assets/crpe/2018/2018-s9-dida1-cor-4.png",
+      "exercises": [
+        "crpe-2018-s9-dida",
+        "crpe-2018-s9-dida1"
+      ],
+      "kinds": [
+        "correction-image"
+      ],
+      "optional": false,
+      "activeCatalogue": false
+    },
+    {
+      "path": "assets/crpe/2018/2018-s9-dida1-cor-5.png",
+      "exercises": [
+        "crpe-2018-s9-dida",
+        "crpe-2018-s9-dida1"
+      ],
+      "kinds": [
+        "correction-image"
+      ],
+      "optional": false,
+      "activeCatalogue": false
+    },
+    {
+      "path": "assets/crpe/2018/2018-s9-dida2-1.png",
+      "exercises": [
+        "crpe-2018-s9-dida",
+        "crpe-2018-s9-dida2"
+      ],
+      "kinds": [
+        "statement-image"
+      ],
+      "optional": false,
+      "activeCatalogue": false
+    },
+    {
+      "path": "assets/crpe/2018/2018-s9-dida2-2.png",
+      "exercises": [
+        "crpe-2018-s9-dida",
+        "crpe-2018-s9-dida2"
+      ],
+      "kinds": [
+        "statement-image"
+      ],
+      "optional": false,
+      "activeCatalogue": false
+    },
+    {
+      "path": "assets/crpe/2018/2018-s9-dida2-cor-1.png",
+      "exercises": [
+        "crpe-2018-s9-dida",
+        "crpe-2018-s9-dida2"
+      ],
+      "kinds": [
+        "correction-image"
+      ],
+      "optional": false,
+      "activeCatalogue": false
+    },
+    {
+      "path": "assets/crpe/2018/2018-s9-dida2-cor-2.png",
+      "exercises": [
+        "crpe-2018-s9-dida",
+        "crpe-2018-s9-dida2"
+      ],
+      "kinds": [
+        "correction-image"
+      ],
+      "optional": false,
+      "activeCatalogue": false
+    },
+    {
+      "path": "assets/crpe/2019/2019-aix-dida-1.png",
+      "exercises": [
+        "crpe-2019-aix-dida"
+      ],
+      "kinds": [
+        "statement-image"
+      ],
+      "optional": false,
+      "activeCatalogue": false
+    },
+    {
+      "path": "assets/crpe/2019/2019-aix-dida-2.png",
+      "exercises": [
+        "crpe-2019-aix-dida"
+      ],
+      "kinds": [
+        "statement-image"
+      ],
+      "optional": false,
+      "activeCatalogue": false
+    },
+    {
+      "path": "assets/crpe/2019/2019-aix-dida-3.png",
+      "exercises": [
+        "crpe-2019-aix-dida"
+      ],
+      "kinds": [
+        "statement-image"
+      ],
+      "optional": false,
+      "activeCatalogue": false
+    },
+    {
+      "path": "assets/crpe/2019/2019-aix-dida-cor-1.png",
+      "exercises": [
+        "crpe-2019-aix-dida"
+      ],
+      "kinds": [
+        "correction-image"
+      ],
+      "optional": false,
+      "activeCatalogue": false
+    },
+    {
+      "path": "assets/crpe/2019/2019-aix-dida-cor-2.png",
+      "exercises": [
+        "crpe-2019-aix-dida"
+      ],
+      "kinds": [
+        "correction-image"
+      ],
+      "optional": false,
+      "activeCatalogue": false
+    },
+    {
+      "path": "assets/crpe/2019/2019-aix-dida2-1.png",
+      "exercises": [
+        "crpe-2019-aix-dida",
+        "crpe-2019-aix-dida2"
+      ],
+      "kinds": [
+        "statement-image"
+      ],
+      "optional": false,
+      "activeCatalogue": false
+    },
+    {
+      "path": "assets/crpe/2019/2019-aix-dida2-cor-1.png",
+      "exercises": [
+        "crpe-2019-aix-dida",
+        "crpe-2019-aix-dida2"
+      ],
+      "kinds": [
+        "correction-image"
+      ],
+      "optional": false,
+      "activeCatalogue": false
+    },
+    {
+      "path": "assets/crpe/2019/2019-aix-dida2-cor-2.png",
+      "exercises": [
+        "crpe-2019-aix-dida",
+        "crpe-2019-aix-dida2"
+      ],
+      "kinds": [
+        "correction-image"
+      ],
+      "optional": false,
+      "activeCatalogue": false
+    },
+    {
+      "path": "assets/crpe/2019/2019-aix-dida2-cor-3.png",
+      "exercises": [
+        "crpe-2019-aix-dida",
+        "crpe-2019-aix-dida2"
+      ],
+      "kinds": [
+        "correction-image"
+      ],
+      "optional": false,
+      "activeCatalogue": false
+    },
+    {
+      "path": "assets/crpe/2019/2019-aix-dida3-1.png",
+      "exercises": [
+        "crpe-2019-aix-dida",
+        "crpe-2019-aix-dida3"
+      ],
+      "kinds": [
+        "statement-image"
+      ],
+      "optional": false,
+      "activeCatalogue": false
+    },
+    {
+      "path": "assets/crpe/2019/2019-aix-dida3-2.png",
+      "exercises": [
+        "crpe-2019-aix-dida",
+        "crpe-2019-aix-dida3"
+      ],
+      "kinds": [
+        "statement-image"
+      ],
+      "optional": false,
+      "activeCatalogue": false
+    },
+    {
+      "path": "assets/crpe/2019/2019-bre-dida-1.png",
+      "exercises": [
+        "crpe-2019-bre-dida"
+      ],
+      "kinds": [
+        "statement-image"
+      ],
+      "optional": false,
+      "activeCatalogue": false
+    },
+    {
+      "path": "assets/crpe/2019/2019-bre-dida-2.png",
+      "exercises": [
+        "crpe-2019-bre-dida"
+      ],
+      "kinds": [
+        "statement-image"
+      ],
+      "optional": false,
+      "activeCatalogue": false
+    },
+    {
+      "path": "assets/crpe/2019/2019-bre-dida-3.png",
+      "exercises": [
+        "crpe-2019-bre-dida"
+      ],
+      "kinds": [
+        "statement-image"
+      ],
+      "optional": false,
+      "activeCatalogue": false
+    },
+    {
+      "path": "assets/crpe/2019/2019-bre-dida-4.png",
+      "exercises": [
+        "crpe-2019-bre-dida"
+      ],
+      "kinds": [
+        "statement-image"
+      ],
+      "optional": false,
+      "activeCatalogue": false
+    },
+    {
+      "path": "assets/crpe/2019/2019-bre-dida-cor-1.png",
+      "exercises": [
+        "crpe-2019-bre-dida"
+      ],
+      "kinds": [
+        "correction-image"
+      ],
+      "optional": false,
+      "activeCatalogue": false
+    },
+    {
+      "path": "assets/crpe/2019/2019-bre-dida-cor-2.png",
+      "exercises": [
+        "crpe-2019-bre-dida"
+      ],
+      "kinds": [
+        "correction-image"
+      ],
+      "optional": false,
+      "activeCatalogue": false
+    },
+    {
+      "path": "assets/crpe/2019/2019-cle-dida-1.png",
+      "exercises": [
+        "crpe-2019-cle-dida"
+      ],
+      "kinds": [
+        "statement-image"
+      ],
+      "optional": false,
+      "activeCatalogue": false
+    },
+    {
+      "path": "assets/crpe/2019/2019-cle-dida-2.png",
+      "exercises": [
+        "crpe-2019-cle-dida"
+      ],
+      "kinds": [
+        "statement-image"
+      ],
+      "optional": false,
+      "activeCatalogue": false
+    },
+    {
+      "path": "assets/crpe/2019/2019-cle-dida-3.png",
+      "exercises": [
+        "crpe-2019-cle-dida"
+      ],
+      "kinds": [
+        "statement-image"
+      ],
+      "optional": false,
+      "activeCatalogue": false
+    },
+    {
+      "path": "assets/crpe/2019/2019-cle-dida-cor-1.png",
+      "exercises": [
+        "crpe-2019-cle-dida"
+      ],
+      "kinds": [
+        "correction-image"
+      ],
+      "optional": false,
+      "activeCatalogue": false
+    },
+    {
+      "path": "assets/crpe/2019/2019-cle-dida-cor-2.png",
+      "exercises": [
+        "crpe-2019-cle-dida"
+      ],
+      "kinds": [
+        "correction-image"
+      ],
+      "optional": false,
+      "activeCatalogue": false
+    },
+    {
+      "path": "assets/crpe/2019/2019-cle-dida2-1.png",
+      "exercises": [
+        "crpe-2019-cle-dida",
+        "crpe-2019-cle-dida2"
+      ],
+      "kinds": [
+        "statement-image"
+      ],
+      "optional": false,
+      "activeCatalogue": false
+    },
+    {
+      "path": "assets/crpe/2019/2019-cle-dida2-cor-1.png",
+      "exercises": [
+        "crpe-2019-cle-dida",
+        "crpe-2019-cle-dida2"
+      ],
+      "kinds": [
+        "correction-image"
+      ],
+      "optional": false,
+      "activeCatalogue": false
+    },
+    {
+      "path": "assets/crpe/2019/2019-cle-dida2-cor-2.png",
+      "exercises": [
+        "crpe-2019-cle-dida",
+        "crpe-2019-cle-dida2"
+      ],
+      "kinds": [
+        "correction-image"
+      ],
+      "optional": false,
+      "activeCatalogue": false
+    },
+    {
+      "path": "assets/crpe/2019/2019-dij-dida-1.png",
+      "exercises": [
+        "crpe-2019-dij-dida"
+      ],
+      "kinds": [
+        "statement-image"
+      ],
+      "optional": false,
+      "activeCatalogue": false
+    },
+    {
+      "path": "assets/crpe/2019/2019-dij-dida-2.png",
+      "exercises": [
+        "crpe-2019-dij-dida"
+      ],
+      "kinds": [
+        "statement-image"
+      ],
+      "optional": false,
+      "activeCatalogue": false
+    },
+    {
+      "path": "assets/crpe/2019/2019-dij-dida-cor-1.png",
+      "exercises": [
+        "crpe-2019-dij-dida"
+      ],
+      "kinds": [
+        "correction-image"
+      ],
+      "optional": false,
+      "activeCatalogue": false
+    },
+    {
+      "path": "assets/crpe/2019/2019-dij-dida-cor-2.png",
+      "exercises": [
+        "crpe-2019-dij-dida"
+      ],
+      "kinds": [
+        "correction-image"
+      ],
+      "optional": false,
+      "activeCatalogue": false
+    },
+    {
+      "path": "assets/crpe/2019/2019-dij-dida-cor-3.png",
+      "exercises": [
+        "crpe-2019-dij-dida"
+      ],
+      "kinds": [
+        "correction-image"
+      ],
+      "optional": false,
+      "activeCatalogue": false
+    },
+    {
+      "path": "assets/crpe/2019/2019-dij-dida2-1.png",
+      "exercises": [
+        "crpe-2019-dij-dida",
+        "crpe-2019-dij-dida2"
+      ],
+      "kinds": [
+        "statement-image"
+      ],
+      "optional": false,
+      "activeCatalogue": false
+    },
+    {
+      "path": "assets/crpe/2019/2019-dij-dida2-cor-1.png",
+      "exercises": [
+        "crpe-2019-dij-dida",
+        "crpe-2019-dij-dida2"
+      ],
+      "kinds": [
+        "correction-image"
+      ],
+      "optional": false,
+      "activeCatalogue": false
+    },
+    {
+      "path": "assets/crpe/2019/2019-dij-dida2-cor-2.png",
+      "exercises": [
+        "crpe-2019-dij-dida",
+        "crpe-2019-dij-dida2"
+      ],
+      "kinds": [
+        "correction-image"
+      ],
+      "optional": false,
+      "activeCatalogue": false
+    },
+    {
+      "path": "assets/crpe/2019/2019-dij-pb-1.png",
+      "exercises": [
+        "crpe-2019-dij-dida3"
+      ],
+      "kinds": [
+        "statement-image"
+      ],
+      "optional": false,
+      "activeCatalogue": false
+    },
+    {
+      "path": "assets/crpe/2019/2019-dij-pb-2.png",
+      "exercises": [
+        "crpe-2019-dij-dida3"
+      ],
+      "kinds": [
+        "statement-image"
+      ],
+      "optional": false,
+      "activeCatalogue": false
+    },
+    {
+      "path": "assets/crpe/2019/2019-g1-dida1-cor-1.png",
+      "exercises": [
+        "crpe-2019-g1-dida",
+        "crpe-2019-g1-dida1"
+      ],
+      "kinds": [
+        "correction-image"
+      ],
+      "optional": false,
+      "activeCatalogue": false
+    },
+    {
+      "path": "assets/crpe/2019/2019-g1-dida1.png",
+      "exercises": [
+        "crpe-2019-g1-dida",
+        "crpe-2019-g1-dida1"
+      ],
+      "kinds": [
+        "statement-image"
+      ],
+      "optional": false,
+      "activeCatalogue": false
+    },
+    {
+      "path": "assets/crpe/2019/2019-g1-dida2-cor-1.png",
+      "exercises": [
+        "crpe-2019-g1-dida",
+        "crpe-2019-g1-dida2"
+      ],
+      "kinds": [
+        "correction-image"
+      ],
+      "optional": false,
+      "activeCatalogue": false
+    },
+    {
+      "path": "assets/crpe/2019/2019-g1-dida2-cor-2.png",
+      "exercises": [
+        "crpe-2019-g1-dida",
+        "crpe-2019-g1-dida2"
+      ],
+      "kinds": [
+        "correction-image"
+      ],
+      "optional": false,
+      "activeCatalogue": false
+    },
+    {
+      "path": "assets/crpe/2019/2019-g1-dida2.png",
+      "exercises": [
+        "crpe-2019-g1-dida",
+        "crpe-2019-g1-dida2"
+      ],
+      "kinds": [
+        "statement-image"
+      ],
+      "optional": false,
+      "activeCatalogue": false
+    },
+    {
+      "path": "assets/crpe/2019/2019-g1-dida3-1.png",
+      "exercises": [
+        "crpe-2019-g1-dida",
+        "crpe-2019-g1-dida3"
+      ],
+      "kinds": [
+        "statement-image"
+      ],
+      "optional": false,
+      "activeCatalogue": false
+    },
+    {
+      "path": "assets/crpe/2019/2019-g1-dida3-2.png",
+      "exercises": [
+        "crpe-2019-g1-dida",
+        "crpe-2019-g1-dida3"
+      ],
+      "kinds": [
+        "statement-image"
+      ],
+      "optional": false,
+      "activeCatalogue": false
+    },
+    {
+      "path": "assets/crpe/2019/2019-g1-dida3-cor-1.png",
+      "exercises": [
+        "crpe-2019-g1-dida",
+        "crpe-2019-g1-dida3"
+      ],
+      "kinds": [
+        "correction-image"
+      ],
+      "optional": false,
+      "activeCatalogue": false
+    },
+    {
+      "path": "assets/crpe/2019/2019-g1-dida3-cor-2.png",
+      "exercises": [
+        "crpe-2019-g1-dida",
+        "crpe-2019-g1-dida3"
+      ],
+      "kinds": [
+        "correction-image"
+      ],
+      "optional": false,
+      "activeCatalogue": false
+    },
+    {
+      "path": "assets/crpe/2019/2019-g1-dida3-cor-3.png",
+      "exercises": [
+        "crpe-2019-g1-dida",
+        "crpe-2019-g1-dida3"
+      ],
+      "kinds": [
+        "correction-image"
+      ],
+      "optional": false,
+      "activeCatalogue": false
+    },
+    {
+      "path": "assets/crpe/2019/2019-g1-dida3-cor-4.png",
+      "exercises": [
+        "crpe-2019-g1-dida",
+        "crpe-2019-g1-dida3"
+      ],
+      "kinds": [
+        "correction-image"
+      ],
+      "optional": false,
+      "activeCatalogue": false
+    },
+    {
+      "path": "assets/crpe/2019/2019-g2-dida1-cor-1.png",
+      "exercises": [
+        "crpe-2019-g2-dida",
+        "crpe-2019-g2-dida1"
+      ],
+      "kinds": [
+        "correction-image"
+      ],
+      "optional": false,
+      "activeCatalogue": false
+    },
+    {
+      "path": "assets/crpe/2019/2019-g2-dida1-cor-3.png",
+      "exercises": [
+        "crpe-2019-g2-dida",
+        "crpe-2019-g2-dida1"
+      ],
+      "kinds": [
+        "correction-image"
+      ],
+      "optional": false,
+      "activeCatalogue": false
+    },
+    {
+      "path": "assets/crpe/2019/2019-g2-dida1.png",
+      "exercises": [
+        "crpe-2019-g2-dida",
+        "crpe-2019-g2-dida1"
+      ],
+      "kinds": [
+        "statement-image"
+      ],
+      "optional": false,
+      "activeCatalogue": false
+    },
+    {
+      "path": "assets/crpe/2019/2019-g2-dida2-1.png",
+      "exercises": [
+        "crpe-2019-g2-dida",
+        "crpe-2019-g2-dida2"
+      ],
+      "kinds": [
+        "statement-image"
+      ],
+      "optional": false,
+      "activeCatalogue": false
+    },
+    {
+      "path": "assets/crpe/2019/2019-g2-dida2-2.png",
+      "exercises": [
+        "crpe-2019-g2-dida",
+        "crpe-2019-g2-dida2"
+      ],
+      "kinds": [
+        "statement-image"
+      ],
+      "optional": false,
+      "activeCatalogue": false
+    },
+    {
+      "path": "assets/crpe/2019/2019-g2-dida2-cor-1.png",
+      "exercises": [
+        "crpe-2019-g2-dida",
+        "crpe-2019-g2-dida2"
+      ],
+      "kinds": [
+        "correction-image"
+      ],
+      "optional": false,
+      "activeCatalogue": false
+    },
+    {
+      "path": "assets/crpe/2019/2019-g2-dida2-cor-2.png",
+      "exercises": [
+        "crpe-2019-g2-dida",
+        "crpe-2019-g2-dida2"
+      ],
+      "kinds": [
+        "correction-image"
+      ],
+      "optional": false,
+      "activeCatalogue": false
+    },
+    {
+      "path": "assets/crpe/2019/2019-g2-dida2-cor-3.png",
+      "exercises": [
+        "crpe-2019-g2-dida",
+        "crpe-2019-g2-dida2"
+      ],
+      "kinds": [
+        "correction-image"
+      ],
+      "optional": false,
+      "activeCatalogue": false
+    },
+    {
+      "path": "assets/crpe/2019/2019-g2-dida3-cor-1.png",
+      "exercises": [
+        "crpe-2019-g2-dida",
+        "crpe-2019-g2-dida3"
+      ],
+      "kinds": [
+        "correction-image"
+      ],
+      "optional": false,
+      "activeCatalogue": false
+    },
+    {
+      "path": "assets/crpe/2019/2019-g2-dida3-cor-2.png",
+      "exercises": [
+        "crpe-2019-g2-dida",
+        "crpe-2019-g2-dida3"
+      ],
+      "kinds": [
+        "correction-image"
+      ],
+      "optional": false,
+      "activeCatalogue": false
+    },
+    {
+      "path": "assets/crpe/2019/2019-g2-dida3-cor-3.png",
+      "exercises": [
+        "crpe-2019-g2-dida",
+        "crpe-2019-g2-dida3"
+      ],
+      "kinds": [
+        "correction-image"
+      ],
+      "optional": false,
+      "activeCatalogue": false
+    },
+    {
+      "path": "assets/crpe/2019/2019-g2-dida3.png",
+      "exercises": [
+        "crpe-2019-g2-dida",
+        "crpe-2019-g2-dida3"
+      ],
+      "kinds": [
+        "statement-image"
+      ],
+      "optional": false,
+      "activeCatalogue": false
+    },
+    {
+      "path": "assets/crpe/2019/2019-g3-dida1-cor-1.png",
+      "exercises": [
+        "crpe-2019-g3-dida",
+        "crpe-2019-g3-dida1"
+      ],
+      "kinds": [
+        "correction-image"
+      ],
+      "optional": false,
+      "activeCatalogue": false
+    },
+    {
+      "path": "assets/crpe/2019/2019-g3-dida1-cor-2.png",
+      "exercises": [
+        "crpe-2019-g3-dida",
+        "crpe-2019-g3-dida1"
+      ],
+      "kinds": [
+        "correction-image"
+      ],
+      "optional": false,
+      "activeCatalogue": false
+    },
+    {
+      "path": "assets/crpe/2019/2019-g3-dida1-cor-3.png",
+      "exercises": [
+        "crpe-2019-g3-dida",
+        "crpe-2019-g3-dida1"
+      ],
+      "kinds": [
+        "correction-image"
+      ],
+      "optional": false,
+      "activeCatalogue": false
+    },
+    {
+      "path": "assets/crpe/2019/2019-g3-dida1.png",
+      "exercises": [
+        "crpe-2019-g3-dida",
+        "crpe-2019-g3-dida1"
+      ],
+      "kinds": [
+        "statement-image"
+      ],
+      "optional": false,
+      "activeCatalogue": false
+    },
+    {
+      "path": "assets/crpe/2019/2019-g3-dida2-cor-1.png",
+      "exercises": [
+        "crpe-2019-g3-dida",
+        "crpe-2019-g3-dida2"
+      ],
+      "kinds": [
+        "correction-image"
+      ],
+      "optional": false,
+      "activeCatalogue": false
+    },
+    {
+      "path": "assets/crpe/2019/2019-g3-dida2-cor-2.png",
+      "exercises": [
+        "crpe-2019-g3-dida",
+        "crpe-2019-g3-dida2"
+      ],
+      "kinds": [
+        "correction-image"
+      ],
+      "optional": false,
+      "activeCatalogue": false
+    },
+    {
+      "path": "assets/crpe/2019/2019-g3-dida2-cor-3png.png",
+      "exercises": [
+        "crpe-2019-g3-dida",
+        "crpe-2019-g3-dida2"
+      ],
+      "kinds": [
+        "correction-image"
+      ],
+      "optional": false,
+      "activeCatalogue": false
+    },
+    {
+      "path": "assets/crpe/2019/2019-g3-dida2.png",
+      "exercises": [
+        "crpe-2019-g3-dida",
+        "crpe-2019-g3-dida2"
+      ],
+      "kinds": [
+        "statement-image"
+      ],
+      "optional": false,
+      "activeCatalogue": false
+    },
+    {
+      "path": "assets/crpe/2019/2019-g3-dida3-1.png",
+      "exercises": [
+        "crpe-2019-g3-dida",
+        "crpe-2019-g3-dida3"
+      ],
+      "kinds": [
+        "statement-image"
+      ],
+      "optional": false,
+      "activeCatalogue": false
+    },
+    {
+      "path": "assets/crpe/2019/2019-g3-dida3-2.png",
+      "exercises": [
+        "crpe-2019-g3-dida",
+        "crpe-2019-g3-dida3"
+      ],
+      "kinds": [
+        "statement-image"
+      ],
+      "optional": false,
+      "activeCatalogue": false
+    },
+    {
+      "path": "assets/crpe/2019/2019-g3-dida3-cor-1.png",
+      "exercises": [
+        "crpe-2019-g3-dida",
+        "crpe-2019-g3-dida3"
+      ],
+      "kinds": [
+        "correction-image"
+      ],
+      "optional": false,
+      "activeCatalogue": false
+    },
+    {
+      "path": "assets/crpe/2019/2019-g3-dida3-cor-2.png",
+      "exercises": [
+        "crpe-2019-g3-dida",
+        "crpe-2019-g3-dida3"
+      ],
+      "kinds": [
+        "correction-image"
+      ],
+      "optional": false,
+      "activeCatalogue": false
+    },
+    {
+      "path": "assets/crpe/2019/2019-g4-dida1-cor-1.png",
+      "exercises": [
+        "crpe-2019-g4-dida",
+        "crpe-2019-g4-dida1"
+      ],
+      "kinds": [
+        "correction-image"
+      ],
+      "optional": false,
+      "activeCatalogue": false
+    },
+    {
+      "path": "assets/crpe/2019/2019-g4-dida1-cor-2.png",
+      "exercises": [
+        "crpe-2019-g4-dida",
+        "crpe-2019-g4-dida1"
+      ],
+      "kinds": [
+        "correction-image"
+      ],
+      "optional": false,
+      "activeCatalogue": false
+    },
+    {
+      "path": "assets/crpe/2019/2019-g4-dida1-cor-3.png",
+      "exercises": [
+        "crpe-2019-g4-dida",
+        "crpe-2019-g4-dida1"
+      ],
+      "kinds": [
+        "correction-image"
+      ],
+      "optional": false,
+      "activeCatalogue": false
+    },
+    {
+      "path": "assets/crpe/2019/2019-g4-dida1.png",
+      "exercises": [
+        "crpe-2019-g4-dida",
+        "crpe-2019-g4-dida1"
+      ],
+      "kinds": [
+        "statement-image"
+      ],
+      "optional": false,
+      "activeCatalogue": false
+    },
+    {
+      "path": "assets/crpe/2019/2019-g4-dida2-1.png",
+      "exercises": [
+        "crpe-2019-g4-dida",
+        "crpe-2019-g4-dida2"
+      ],
+      "kinds": [
+        "statement-image"
+      ],
+      "optional": false,
+      "activeCatalogue": false
+    },
+    {
+      "path": "assets/crpe/2019/2019-g4-dida2-2.png",
+      "exercises": [
+        "crpe-2019-g4-dida",
+        "crpe-2019-g4-dida2"
+      ],
+      "kinds": [
+        "statement-image"
+      ],
+      "optional": false,
+      "activeCatalogue": false
+    },
+    {
+      "path": "assets/crpe/2019/2019-g4-dida2-cor-2.png",
+      "exercises": [
+        "crpe-2019-g4-dida",
+        "crpe-2019-g4-dida2"
+      ],
+      "kinds": [
+        "correction-image"
+      ],
+      "optional": false,
+      "activeCatalogue": false
+    },
+    {
+      "path": "assets/crpe/2019/2019-g4-dida2-cor-3.png",
+      "exercises": [
+        "crpe-2019-g4-dida",
+        "crpe-2019-g4-dida2"
+      ],
+      "kinds": [
+        "correction-image"
+      ],
+      "optional": false,
+      "activeCatalogue": false
+    },
+    {
+      "path": "assets/crpe/2019/2019-g4-dida3-cor-1.png",
+      "exercises": [
+        "crpe-2019-g4-dida",
+        "crpe-2019-g4-dida3"
+      ],
+      "kinds": [
+        "correction-image"
+      ],
+      "optional": false,
+      "activeCatalogue": false
+    },
+    {
+      "path": "assets/crpe/2019/2019-g4-dida3-cor-2.png",
+      "exercises": [
+        "crpe-2019-g4-dida",
+        "crpe-2019-g4-dida3"
+      ],
+      "kinds": [
+        "correction-image"
+      ],
+      "optional": false,
+      "activeCatalogue": false
+    },
+    {
+      "path": "assets/crpe/2019/2019-g4-dida3-cor-3.png",
+      "exercises": [
+        "crpe-2019-g4-dida",
+        "crpe-2019-g4-dida3"
+      ],
+      "kinds": [
+        "correction-image"
+      ],
+      "optional": false,
+      "activeCatalogue": false
+    },
+    {
+      "path": "assets/crpe/2019/2019-g4-dida3.png",
+      "exercises": [
+        "crpe-2019-g4-dida",
+        "crpe-2019-g4-dida3"
+      ],
+      "kinds": [
+        "statement-image"
+      ],
+      "optional": false,
+      "activeCatalogue": false
+    },
+    {
+      "path": "assets/crpe/2019/2019-g5-dida1-cor-1.png",
+      "exercises": [
+        "crpe-2019-g5-dida",
+        "crpe-2019-g5-dida1"
+      ],
+      "kinds": [
+        "correction-image"
+      ],
+      "optional": false,
+      "activeCatalogue": false
+    },
+    {
+      "path": "assets/crpe/2019/2019-g5-dida1-cor-2.png",
+      "exercises": [
+        "crpe-2019-g5-dida",
+        "crpe-2019-g5-dida1"
+      ],
+      "kinds": [
+        "correction-image"
+      ],
+      "optional": false,
+      "activeCatalogue": false
+    },
+    {
+      "path": "assets/crpe/2019/2019-g5-dida1-cor-3.png",
+      "exercises": [
+        "crpe-2019-g5-dida",
+        "crpe-2019-g5-dida1"
+      ],
+      "kinds": [
+        "correction-image"
+      ],
+      "optional": false,
+      "activeCatalogue": false
+    },
+    {
+      "path": "assets/crpe/2019/2019-g5-dida1.png",
+      "exercises": [
+        "crpe-2019-g5-dida",
+        "crpe-2019-g5-dida1"
+      ],
+      "kinds": [
+        "statement-image"
+      ],
+      "optional": false,
+      "activeCatalogue": false
+    },
+    {
+      "path": "assets/crpe/2019/2019-g5-dida2-cor-1.png",
+      "exercises": [
+        "crpe-2019-g5-dida",
+        "crpe-2019-g5-dida2"
+      ],
+      "kinds": [
+        "correction-image"
+      ],
+      "optional": false,
+      "activeCatalogue": false
+    },
+    {
+      "path": "assets/crpe/2019/2019-g5-dida2-cor-2.png",
+      "exercises": [
+        "crpe-2019-g5-dida",
+        "crpe-2019-g5-dida2"
+      ],
+      "kinds": [
+        "correction-image"
+      ],
+      "optional": false,
+      "activeCatalogue": false
+    },
+    {
+      "path": "assets/crpe/2019/2019-g5-dida2.png",
+      "exercises": [
+        "crpe-2019-g5-dida",
+        "crpe-2019-g5-dida2"
+      ],
+      "kinds": [
+        "statement-image"
+      ],
+      "optional": false,
+      "activeCatalogue": false
+    },
+    {
+      "path": "assets/crpe/2019/2019-g5-dida3-cor-1.png",
+      "exercises": [
+        "crpe-2019-g5-dida",
+        "crpe-2019-g5-dida3"
+      ],
+      "kinds": [
+        "correction-image"
+      ],
+      "optional": false,
+      "activeCatalogue": false
+    },
+    {
+      "path": "assets/crpe/2019/2019-g5-dida3-cor-2.png",
+      "exercises": [
+        "crpe-2019-g5-dida",
+        "crpe-2019-g5-dida3"
+      ],
+      "kinds": [
+        "correction-image"
+      ],
+      "optional": false,
+      "activeCatalogue": false
+    },
+    {
+      "path": "assets/crpe/2019/2019-g5-dida3.png",
+      "exercises": [
+        "crpe-2019-g5-dida",
+        "crpe-2019-g5-dida3"
+      ],
+      "kinds": [
+        "statement-image"
+      ],
+      "optional": false,
+      "activeCatalogue": false
+    },
+    {
+      "path": "assets/crpe/2019/2019-g5-dida4-cor-1.png",
+      "exercises": [
+        "crpe-2019-g5-dida",
+        "crpe-2019-g5-dida4"
+      ],
+      "kinds": [
+        "correction-image"
+      ],
+      "optional": false,
+      "activeCatalogue": false
+    },
+    {
+      "path": "assets/crpe/2019/2019-g5-dida4.png",
+      "exercises": [
+        "crpe-2019-g5-dida",
+        "crpe-2019-g5-dida4"
+      ],
+      "kinds": [
+        "statement-image"
+      ],
+      "optional": false,
+      "activeCatalogue": false
+    },
+    {
+      "path": "static/bac/2022/tex/bac_2022_09_sujet2_ameriquesud_1_cor.tex",
+      "exercises": [
+        "bac_2022_09_sujet2_ameriquesud_1"
+      ],
+      "kinds": [
+        "correction-tex"
+      ],
+      "optional": false,
+      "activeCatalogue": true
+    },
+    {
+      "path": "static/bac/2022/tex/bac_2022_09_sujet2_ameriquesud_2_cor.tex",
+      "exercises": [
+        "bac_2022_09_sujet2_ameriquesud_2"
+      ],
+      "kinds": [
+        "correction-tex"
+      ],
+      "optional": false,
+      "activeCatalogue": true
+    },
+    {
+      "path": "static/bac/2022/tex/bac_2022_09_sujet2_ameriquesud_3_cor.tex",
+      "exercises": [
+        "bac_2022_09_sujet2_ameriquesud_3"
+      ],
+      "kinds": [
+        "correction-tex"
+      ],
+      "optional": false,
+      "activeCatalogue": true
+    },
+    {
+      "path": "static/bac/2022/tex/bac_2022_09_sujet2_ameriquesud_4_cor.tex",
+      "exercises": [
+        "bac_2022_09_sujet2_ameriquesud_4"
+      ],
+      "kinds": [
+        "correction-tex"
+      ],
+      "optional": false,
+      "activeCatalogue": true
+    },
+    {
+      "path": "static/bac/2022/tex/png/bac_2022_09_sujet2_ameriquesud_1_cor.png",
+      "exercises": [
+        "bac_2022_09_sujet2_ameriquesud_1"
+      ],
+      "kinds": [
+        "correction-image"
+      ],
+      "optional": false,
+      "activeCatalogue": true
+    },
+    {
+      "path": "static/bac/2022/tex/png/bac_2022_09_sujet2_ameriquesud_2_cor.png",
+      "exercises": [
+        "bac_2022_09_sujet2_ameriquesud_2"
+      ],
+      "kinds": [
+        "correction-image"
+      ],
+      "optional": false,
+      "activeCatalogue": true
+    },
+    {
+      "path": "static/bac/2022/tex/png/bac_2022_09_sujet2_ameriquesud_3_cor.png",
+      "exercises": [
+        "bac_2022_09_sujet2_ameriquesud_3"
+      ],
+      "kinds": [
+        "correction-image"
+      ],
+      "optional": false,
+      "activeCatalogue": true
+    },
+    {
+      "path": "static/bac/2022/tex/png/bac_2022_09_sujet2_ameriquesud_4_cor.png",
+      "exercises": [
+        "bac_2022_09_sujet2_ameriquesud_4"
+      ],
+      "kinds": [
+        "correction-image"
+      ],
+      "optional": false,
+      "activeCatalogue": true
+    },
+    {
+      "path": "static/bac/2024/tex/eps/pyramide.eps",
+      "exercises": [],
+      "kinds": [
+        "latex-figure"
+      ],
+      "optional": false,
+      "referencedBy": [
+        "static/bac/2024/tex/bac_2024_09_sujet1_polynesie_3.tex"
+      ],
+      "activeCatalogue": true
+    },
+    {
+      "path": "static/bac/2026/tex/bac_2026_06_sujet1_antilles_1_cor.tex",
+      "exercises": [
+        "bac_2026_06_sujet1_antilles_1"
+      ],
+      "kinds": [
+        "correction-tex"
+      ],
+      "optional": false,
+      "activeCatalogue": true
+    },
+    {
+      "path": "static/bac/2026/tex/bac_2026_06_sujet1_antilles_2_cor.tex",
+      "exercises": [
+        "bac_2026_06_sujet1_antilles_2"
+      ],
+      "kinds": [
+        "correction-tex"
+      ],
+      "optional": false,
+      "activeCatalogue": true
+    },
+    {
+      "path": "static/bac/2026/tex/bac_2026_06_sujet1_antilles_3_cor.tex",
+      "exercises": [
+        "bac_2026_06_sujet1_antilles_3"
+      ],
+      "kinds": [
+        "correction-tex"
+      ],
+      "optional": false,
+      "activeCatalogue": true
+    },
+    {
+      "path": "static/bac/2026/tex/bac_2026_06_sujet1_antilles_4_cor.tex",
+      "exercises": [
+        "bac_2026_06_sujet1_antilles_4"
+      ],
+      "kinds": [
+        "correction-tex"
+      ],
+      "optional": false,
+      "activeCatalogue": true
+    },
+    {
+      "path": "static/bac/2026/tex/png/bac_2026_06_sujet1_antilles_1_cor.png",
+      "exercises": [
+        "bac_2026_06_sujet1_antilles_1"
+      ],
+      "kinds": [
+        "correction-image"
+      ],
+      "optional": false,
+      "activeCatalogue": true
+    },
+    {
+      "path": "static/bac/2026/tex/png/bac_2026_06_sujet1_antilles_2_cor.png",
+      "exercises": [
+        "bac_2026_06_sujet1_antilles_2"
+      ],
+      "kinds": [
+        "correction-image"
+      ],
+      "optional": false,
+      "activeCatalogue": true
+    },
+    {
+      "path": "static/bac/2026/tex/png/bac_2026_06_sujet1_antilles_3_cor.png",
+      "exercises": [
+        "bac_2026_06_sujet1_antilles_3"
+      ],
+      "kinds": [
+        "correction-image"
+      ],
+      "optional": false,
+      "activeCatalogue": true
+    },
+    {
+      "path": "static/bac/2026/tex/png/bac_2026_06_sujet1_antilles_4_cor.png",
+      "exercises": [
+        "bac_2026_06_sujet1_antilles_4"
+      ],
+      "kinds": [
+        "correction-image"
+      ],
+      "optional": false,
+      "activeCatalogue": true
+    },
+    {
+      "path": "static/crpe/2022/2022_g4_ex1.tex",
+      "exercises": [
+        "crpe_2022_g4_ex1"
+      ],
+      "kinds": [
+        "statement-image"
+      ],
+      "optional": false,
+      "activeCatalogue": true
+    },
+    {
+      "path": "static/crpe/2022/2022_g4_ex2.tex",
+      "exercises": [
+        "crpe_2022_g4_ex2"
+      ],
+      "kinds": [
+        "statement-image"
+      ],
+      "optional": false,
+      "activeCatalogue": true
+    },
+    {
+      "path": "static/crpe/2022/2022_g4_ex3.tex",
+      "exercises": [
+        "crpe_2022_g4_ex3"
+      ],
+      "kinds": [
+        "statement-image"
+      ],
+      "optional": false,
+      "activeCatalogue": true
+    },
+    {
+      "path": "static/crpe/2022/2022_g4_ex4.tex",
+      "exercises": [
+        "crpe_2022_g4_ex4"
+      ],
+      "kinds": [
+        "statement-image"
+      ],
+      "optional": false,
+      "activeCatalogue": true
+    },
+    {
+      "path": "static/crpe/2023/images/Images/Plan.png",
+      "exercises": [],
+      "kinds": [
+        "latex-figure"
+      ],
+      "optional": false,
+      "referencedBy": [
+        "static/crpe/2023/2023_g1_ex5.tex"
+      ],
+      "activeCatalogue": true
+    },
+    {
+      "path": "static/crpe/2023/images/Images/Plantations.png",
+      "exercises": [],
+      "kinds": [
+        "latex-figure"
+      ],
+      "optional": false,
+      "referencedBy": [
+        "static/crpe/2023/2023_g1_ex4.tex"
+      ],
+      "activeCatalogue": true
+    },
+    {
+      "path": "static/dnb/2023/tex/eps/Jeu2.eps",
+      "exercises": [],
+      "kinds": [
+        "latex-figure"
+      ],
+      "optional": false,
+      "referencedBy": [
+        "static/dnb/2023/tex/dnb_2023_06_polynesie_3.tex"
+      ],
+      "activeCatalogue": true
+    },
+    {
+      "path": "static/dnb/2026/tex/eps/interdit_arret.eps",
+      "exercises": [],
+      "kinds": [
+        "latex-figure"
+      ],
+      "optional": false,
+      "referencedBy": [
+        "static/dnb/2026/tex/dnb_2026_07_polynesie_4.tex",
+        "static/dnb/2026/tex/dnb_2026_07_polynesie_4_cor.tex"
+      ],
+      "activeCatalogue": true
+    },
+    {
+      "path": "static/dnb/2026/tex/eps/interdit_dangereux.eps",
+      "exercises": [],
+      "kinds": [
+        "latex-figure"
+      ],
+      "optional": false,
+      "referencedBy": [
+        "static/dnb/2026/tex/dnb_2026_07_polynesie_4.tex",
+        "static/dnb/2026/tex/dnb_2026_07_polynesie_4_cor.tex"
+      ],
+      "activeCatalogue": true
+    },
+    {
+      "path": "static/dnb/2026/tex/eps/interdit_doubler.eps",
+      "exercises": [],
+      "kinds": [
+        "latex-figure"
+      ],
+      "optional": false,
+      "referencedBy": [
+        "static/dnb/2026/tex/dnb_2026_07_polynesie_4.tex",
+        "static/dnb/2026/tex/dnb_2026_07_polynesie_4_cor.tex"
+      ],
+      "activeCatalogue": true
+    },
+    {
+      "path": "static/dnb/2026/tex/eps/priorite_droite.eps",
+      "exercises": [],
+      "kinds": [
+        "latex-figure"
+      ],
+      "optional": false,
+      "referencedBy": [
+        "static/dnb/2026/tex/dnb_2026_07_polynesie_4.tex",
+        "static/dnb/2026/tex/dnb_2026_07_polynesie_4_cor.tex"
+      ],
+      "activeCatalogue": true
+    },
+    {
+      "path": "static/dnb/2026/tex/eps/route_prioritaire.eps",
+      "exercises": [],
+      "kinds": [
+        "latex-figure"
+      ],
+      "optional": false,
+      "referencedBy": [
+        "static/dnb/2026/tex/dnb_2026_07_polynesie_4.tex",
+        "static/dnb/2026/tex/dnb_2026_07_polynesie_4_cor.tex"
+      ],
+      "activeCatalogue": true
+    },
+    {
+      "path": "static/dnb/2026/tex/eps/sens_interdit.eps",
+      "exercises": [],
+      "kinds": [
+        "latex-figure"
+      ],
+      "optional": false,
+      "referencedBy": [
+        "static/dnb/2026/tex/dnb_2026_07_polynesie_4.tex",
+        "static/dnb/2026/tex/dnb_2026_07_polynesie_4_cor.tex"
+      ],
+      "activeCatalogue": true
+    },
+    {
+      "path": "static/evacom/2023/tex/evacom_LS_P1_4_cor.tex",
+      "exercises": [
+        "evacom_2023_LS_p1_4"
+      ],
+      "kinds": [
+        "correction-tex"
+      ],
+      "optional": false,
+      "activeCatalogue": true
+    },
+    {
+      "path": "static/evacom/2023/tex/evacom_LS_P1_5_cor.tex",
+      "exercises": [
+        "evacom_2023_LS_p1_5"
+      ],
+      "kinds": [
+        "correction-tex"
+      ],
+      "optional": false,
+      "activeCatalogue": true
+    },
+    {
+      "path": "static/evacom/2023/tex/evacom_LS_P1_6_cor.tex",
+      "exercises": [
+        "evacom_2023_LS_p1_6"
+      ],
+      "kinds": [
+        "correction-tex"
+      ],
+      "optional": false,
+      "activeCatalogue": true
+    },
+    {
+      "path": "static/evacom/2023/tex/evacom_LS_P1_7_cor.tex",
+      "exercises": [
+        "evacom_2023_LS_p1_7"
+      ],
+      "kinds": [
+        "correction-tex"
+      ],
+      "optional": false,
+      "activeCatalogue": true
+    },
+    {
+      "path": "static/evacom/2023/tex/evacom_LS_P2_10_cor.tex",
+      "exercises": [
+        "evacom_2023_LS_p2_10"
+      ],
+      "kinds": [
+        "correction-tex"
+      ],
+      "optional": false,
+      "activeCatalogue": true
+    },
+    {
+      "path": "static/evacom/2023/tex/evacom_LS_P2_11_cor.tex",
+      "exercises": [
+        "evacom_2023_LS_p2_11"
+      ],
+      "kinds": [
+        "correction-tex"
+      ],
+      "optional": false,
+      "activeCatalogue": true
+    },
+    {
+      "path": "static/evacom/2023/tex/evacom_LS_P2_12_cor.tex",
+      "exercises": [
+        "evacom_2023_LS_p2_12"
+      ],
+      "kinds": [
+        "correction-tex"
+      ],
+      "optional": false,
+      "activeCatalogue": true
+    },
+    {
+      "path": "static/evacom/2023/tex/evacom_LS_P2_13_cor.tex",
+      "exercises": [
+        "evacom_2023_LS_p2_13"
+      ],
+      "kinds": [
+        "correction-tex"
+      ],
+      "optional": false,
+      "activeCatalogue": true
+    },
+    {
+      "path": "static/evacom/2023/tex/evacom_LS_P2_14_cor.tex",
+      "exercises": [
+        "evacom_2023_LS_p2_14"
+      ],
+      "kinds": [
+        "correction-tex"
+      ],
+      "optional": false,
+      "activeCatalogue": true
+    },
+    {
+      "path": "static/evacom/2023/tex/evacom_LS_P2_8_cor.tex",
+      "exercises": [
+        "evacom_2023_LS_p2_8"
+      ],
+      "kinds": [
+        "correction-tex"
+      ],
+      "optional": false,
+      "activeCatalogue": true
+    },
+    {
+      "path": "static/evacom/2023/tex/evacom_LS_P2_9_cor.tex",
+      "exercises": [
+        "evacom_2023_LS_p2_9"
+      ],
+      "kinds": [
+        "correction-tex"
+      ],
+      "optional": false,
+      "activeCatalogue": true
+    },
+    {
+      "path": "static/evacom/2023/tex/png/evacom_LS_P1_3_cor.png",
+      "exercises": [
+        "evacom_2023_LS_p1_3"
+      ],
+      "kinds": [
+        "correction-image"
+      ],
+      "optional": false,
+      "activeCatalogue": true
+    },
+    {
+      "path": "static/evacom/2023/tex/png/evacom_LS_P1_4_cor.png",
+      "exercises": [
+        "evacom_2023_LS_p1_4"
+      ],
+      "kinds": [
+        "correction-image"
+      ],
+      "optional": false,
+      "activeCatalogue": true
+    },
+    {
+      "path": "static/evacom/2023/tex/png/evacom_LS_P1_5_cor.png",
+      "exercises": [
+        "evacom_2023_LS_p1_5"
+      ],
+      "kinds": [
+        "correction-image"
+      ],
+      "optional": false,
+      "activeCatalogue": true
+    },
+    {
+      "path": "static/evacom/2023/tex/png/evacom_LS_P1_6_cor.png",
+      "exercises": [
+        "evacom_2023_LS_p1_6"
+      ],
+      "kinds": [
+        "correction-image"
+      ],
+      "optional": false,
+      "activeCatalogue": true
+    },
+    {
+      "path": "static/evacom/2023/tex/png/evacom_LS_P1_7_cor.png",
+      "exercises": [
+        "evacom_2023_LS_p1_7"
+      ],
+      "kinds": [
+        "correction-image"
+      ],
+      "optional": false,
+      "activeCatalogue": true
+    },
+    {
+      "path": "static/flashbac/2024/tex/QCM_bac_2024_06_sujet1_metropole_cor_ex1_q1.tex",
+      "exercises": [
+        "QCM_bac_2024_06_sujet1_metropole_cor_ex1_q1"
+      ],
+      "kinds": [
+        "statement-tex"
+      ],
+      "optional": false,
+      "activeCatalogue": false
+    },
+    {
+      "path": "static/flashbac/2024/tex/QCM_bac_2024_06_sujet1_metropole_cor_ex1_q1_cor.tex",
+      "exercises": [
+        "QCM_bac_2024_06_sujet1_metropole_cor_ex1_q1"
+      ],
+      "kinds": [
+        "correction-tex"
+      ],
+      "optional": false,
+      "activeCatalogue": false
+    },
+    {
+      "path": "static/flashbac/2024/tex/QCM_bac_2024_06_sujet1_metropole_cor_ex1_q2.tex",
+      "exercises": [
+        "QCM_bac_2024_06_sujet1_metropole_cor_ex1_q2"
+      ],
+      "kinds": [
+        "statement-tex"
+      ],
+      "optional": false,
+      "activeCatalogue": false
+    },
+    {
+      "path": "static/flashbac/2024/tex/QCM_bac_2024_06_sujet1_metropole_cor_ex1_q2_cor.tex",
+      "exercises": [
+        "QCM_bac_2024_06_sujet1_metropole_cor_ex1_q2"
+      ],
+      "kinds": [
+        "correction-tex"
+      ],
+      "optional": false,
+      "activeCatalogue": false
+    },
+    {
+      "path": "static/flashbac/2024/tex/QCM_bac_2024_06_sujet1_metropole_cor_ex1_q3.tex",
+      "exercises": [
+        "QCM_bac_2024_06_sujet1_metropole_cor_ex1_q3"
+      ],
+      "kinds": [
+        "statement-tex"
+      ],
+      "optional": false,
+      "activeCatalogue": false
+    },
+    {
+      "path": "static/flashbac/2024/tex/QCM_bac_2024_06_sujet1_metropole_cor_ex1_q3_cor.tex",
+      "exercises": [
+        "QCM_bac_2024_06_sujet1_metropole_cor_ex1_q3"
+      ],
+      "kinds": [
+        "correction-tex"
+      ],
+      "optional": false,
+      "activeCatalogue": false
+    },
+    {
+      "path": "static/flashbac/2024/tex/QCM_bac_2024_06_sujet1_metropole_cor_ex1_q4.tex",
+      "exercises": [
+        "QCM_bac_2024_06_sujet1_metropole_cor_ex1_q4"
+      ],
+      "kinds": [
+        "statement-tex"
+      ],
+      "optional": false,
+      "activeCatalogue": false
+    },
+    {
+      "path": "static/flashbac/2024/tex/QCM_bac_2024_06_sujet1_metropole_cor_ex1_q4_cor.tex",
+      "exercises": [
+        "QCM_bac_2024_06_sujet1_metropole_cor_ex1_q4"
+      ],
+      "kinds": [
+        "correction-tex"
+      ],
+      "optional": false,
+      "activeCatalogue": false
+    },
+    {
+      "path": "static/flashbac/2024/tex/QCM_bac_2024_06_sujet1_metropole_ex1_q1.tex",
+      "exercises": [
+        "QCM_bac_2024_06_sujet1_metropole_ex1_q1"
+      ],
+      "kinds": [
+        "statement-tex"
+      ],
+      "optional": false,
+      "activeCatalogue": false
+    },
+    {
+      "path": "static/flashbac/2024/tex/QCM_bac_2024_06_sujet1_metropole_ex1_q1_cor.tex",
+      "exercises": [
+        "QCM_bac_2024_06_sujet1_metropole_ex1_q1"
+      ],
+      "kinds": [
+        "correction-tex"
+      ],
+      "optional": false,
+      "activeCatalogue": false
+    },
+    {
+      "path": "static/flashbac/2024/tex/QCM_bac_2024_06_sujet1_metropole_ex1_q2.tex",
+      "exercises": [
+        "QCM_bac_2024_06_sujet1_metropole_ex1_q2"
+      ],
+      "kinds": [
+        "statement-tex"
+      ],
+      "optional": false,
+      "activeCatalogue": false
+    },
+    {
+      "path": "static/flashbac/2024/tex/QCM_bac_2024_06_sujet1_metropole_ex1_q2_cor.tex",
+      "exercises": [
+        "QCM_bac_2024_06_sujet1_metropole_ex1_q2"
+      ],
+      "kinds": [
+        "correction-tex"
+      ],
+      "optional": false,
+      "activeCatalogue": false
+    },
+    {
+      "path": "static/flashbac/2024/tex/QCM_bac_2024_06_sujet1_metropole_ex1_q3.tex",
+      "exercises": [
+        "QCM_bac_2024_06_sujet1_metropole_ex1_q3"
+      ],
+      "kinds": [
+        "statement-tex"
+      ],
+      "optional": false,
+      "activeCatalogue": false
+    },
+    {
+      "path": "static/flashbac/2024/tex/QCM_bac_2024_06_sujet1_metropole_ex1_q3_cor.tex",
+      "exercises": [
+        "QCM_bac_2024_06_sujet1_metropole_ex1_q3"
+      ],
+      "kinds": [
+        "correction-tex"
+      ],
+      "optional": false,
+      "activeCatalogue": false
+    },
+    {
+      "path": "static/flashbac/2024/tex/QCM_bac_2024_06_sujet1_metropole_ex1_q4.tex",
+      "exercises": [
+        "QCM_bac_2024_06_sujet1_metropole_ex1_q4"
+      ],
+      "kinds": [
+        "statement-tex"
+      ],
+      "optional": false,
+      "activeCatalogue": false
+    },
+    {
+      "path": "static/flashbac/2024/tex/QCM_bac_2024_06_sujet1_metropole_ex1_q4_cor.tex",
+      "exercises": [
+        "QCM_bac_2024_06_sujet1_metropole_ex1_q4"
+      ],
+      "kinds": [
+        "correction-tex"
+      ],
+      "optional": false,
+      "activeCatalogue": false
+    },
+    {
+      "path": "static/flashbac/2024/tex/QCM_bac_2024_06_sujet2_polynesie_cor_ex2_q1.tex",
+      "exercises": [
+        "QCM_bac_2024_06_sujet2_polynesie_cor_ex2_q1"
+      ],
+      "kinds": [
+        "statement-tex"
+      ],
+      "optional": false,
+      "activeCatalogue": false
+    },
+    {
+      "path": "static/flashbac/2024/tex/QCM_bac_2024_06_sujet2_polynesie_cor_ex2_q1_cor.tex",
+      "exercises": [
+        "QCM_bac_2024_06_sujet2_polynesie_cor_ex2_q1"
+      ],
+      "kinds": [
+        "correction-tex"
+      ],
+      "optional": false,
+      "activeCatalogue": false
+    },
+    {
+      "path": "static/flashbac/2024/tex/QCM_bac_2024_06_sujet2_polynesie_cor_ex2_q2.tex",
+      "exercises": [
+        "QCM_bac_2024_06_sujet2_polynesie_cor_ex2_q2"
+      ],
+      "kinds": [
+        "statement-tex"
+      ],
+      "optional": false,
+      "activeCatalogue": false
+    },
+    {
+      "path": "static/flashbac/2024/tex/QCM_bac_2024_06_sujet2_polynesie_cor_ex2_q2_cor.tex",
+      "exercises": [
+        "QCM_bac_2024_06_sujet2_polynesie_cor_ex2_q2"
+      ],
+      "kinds": [
+        "correction-tex"
+      ],
+      "optional": false,
+      "activeCatalogue": false
+    },
+    {
+      "path": "static/flashbac/2024/tex/QCM_bac_2024_06_sujet2_polynesie_cor_ex2_q3.tex",
+      "exercises": [
+        "QCM_bac_2024_06_sujet2_polynesie_cor_ex2_q3"
+      ],
+      "kinds": [
+        "statement-tex"
+      ],
+      "optional": false,
+      "activeCatalogue": false
+    },
+    {
+      "path": "static/flashbac/2024/tex/QCM_bac_2024_06_sujet2_polynesie_cor_ex2_q3_cor.tex",
+      "exercises": [
+        "QCM_bac_2024_06_sujet2_polynesie_cor_ex2_q3"
+      ],
+      "kinds": [
+        "correction-tex"
+      ],
+      "optional": false,
+      "activeCatalogue": false
+    },
+    {
+      "path": "static/flashbac/2024/tex/QCM_bac_2024_06_sujet2_polynesie_cor_ex2_q4.tex",
+      "exercises": [
+        "QCM_bac_2024_06_sujet2_polynesie_cor_ex2_q4"
+      ],
+      "kinds": [
+        "statement-tex"
+      ],
+      "optional": false,
+      "activeCatalogue": false
+    },
+    {
+      "path": "static/flashbac/2024/tex/QCM_bac_2024_06_sujet2_polynesie_cor_ex2_q4_cor.tex",
+      "exercises": [
+        "QCM_bac_2024_06_sujet2_polynesie_cor_ex2_q4"
+      ],
+      "kinds": [
+        "correction-tex"
+      ],
+      "optional": false,
+      "activeCatalogue": false
+    },
+    {
+      "path": "static/flashbac/2024/tex/QCM_bac_2024_06_sujet2_polynesie_cor_ex2_q5.tex",
+      "exercises": [
+        "QCM_bac_2024_06_sujet2_polynesie_cor_ex2_q5"
+      ],
+      "kinds": [
+        "statement-tex"
+      ],
+      "optional": false,
+      "activeCatalogue": false
+    },
+    {
+      "path": "static/flashbac/2024/tex/QCM_bac_2024_06_sujet2_polynesie_cor_ex2_q5_cor.tex",
+      "exercises": [
+        "QCM_bac_2024_06_sujet2_polynesie_cor_ex2_q5"
+      ],
+      "kinds": [
+        "correction-tex"
+      ],
+      "optional": false,
+      "activeCatalogue": false
+    },
+    {
+      "path": "static/flashbac/2024/tex/QCM_bac_2024_06_sujet2_polynesie_ex2_q1.tex",
+      "exercises": [
+        "QCM_bac_2024_06_sujet2_polynesie_ex2_q1"
+      ],
+      "kinds": [
+        "statement-tex"
+      ],
+      "optional": false,
+      "activeCatalogue": false
+    },
+    {
+      "path": "static/flashbac/2024/tex/QCM_bac_2024_06_sujet2_polynesie_ex2_q1_cor.tex",
+      "exercises": [
+        "QCM_bac_2024_06_sujet2_polynesie_ex2_q1"
+      ],
+      "kinds": [
+        "correction-tex"
+      ],
+      "optional": false,
+      "activeCatalogue": false
+    },
+    {
+      "path": "static/flashbac/2024/tex/QCM_bac_2024_06_sujet2_polynesie_ex2_q2.tex",
+      "exercises": [
+        "QCM_bac_2024_06_sujet2_polynesie_ex2_q2"
+      ],
+      "kinds": [
+        "statement-tex"
+      ],
+      "optional": false,
+      "activeCatalogue": false
+    },
+    {
+      "path": "static/flashbac/2024/tex/QCM_bac_2024_06_sujet2_polynesie_ex2_q2_cor.tex",
+      "exercises": [
+        "QCM_bac_2024_06_sujet2_polynesie_ex2_q2"
+      ],
+      "kinds": [
+        "correction-tex"
+      ],
+      "optional": false,
+      "activeCatalogue": false
+    },
+    {
+      "path": "static/flashbac/2024/tex/QCM_bac_2024_06_sujet2_polynesie_ex2_q3.tex",
+      "exercises": [
+        "QCM_bac_2024_06_sujet2_polynesie_ex2_q3"
+      ],
+      "kinds": [
+        "statement-tex"
+      ],
+      "optional": false,
+      "activeCatalogue": false
+    },
+    {
+      "path": "static/flashbac/2024/tex/QCM_bac_2024_06_sujet2_polynesie_ex2_q3_cor.tex",
+      "exercises": [
+        "QCM_bac_2024_06_sujet2_polynesie_ex2_q3"
+      ],
+      "kinds": [
+        "correction-tex"
+      ],
+      "optional": false,
+      "activeCatalogue": false
+    },
+    {
+      "path": "static/flashbac/2024/tex/QCM_bac_2024_06_sujet2_polynesie_ex2_q4.tex",
+      "exercises": [
+        "QCM_bac_2024_06_sujet2_polynesie_ex2_q4"
+      ],
+      "kinds": [
+        "statement-tex"
+      ],
+      "optional": false,
+      "activeCatalogue": false
+    },
+    {
+      "path": "static/flashbac/2024/tex/QCM_bac_2024_06_sujet2_polynesie_ex2_q4_cor.tex",
+      "exercises": [
+        "QCM_bac_2024_06_sujet2_polynesie_ex2_q4"
+      ],
+      "kinds": [
+        "correction-tex"
+      ],
+      "optional": false,
+      "activeCatalogue": false
+    },
+    {
+      "path": "static/flashbac/2024/tex/QCM_bac_2024_06_sujet2_polynesie_ex2_q5.tex",
+      "exercises": [
+        "QCM_bac_2024_06_sujet2_polynesie_ex2_q5"
+      ],
+      "kinds": [
+        "statement-tex"
+      ],
+      "optional": false,
+      "activeCatalogue": false
+    },
+    {
+      "path": "static/flashbac/2024/tex/QCM_bac_2024_06_sujet2_polynesie_ex2_q5_cor.tex",
+      "exercises": [
+        "QCM_bac_2024_06_sujet2_polynesie_ex2_q5"
+      ],
+      "kinds": [
+        "correction-tex"
+      ],
+      "optional": false,
+      "activeCatalogue": false
+    },
+    {
+      "path": "static/flashbac/2024/tex/png/QCM_bac_2024_06_sujet1_metropole_cor_ex1_q1.png",
+      "exercises": [
+        "QCM_bac_2024_06_sujet1_metropole_cor_ex1_q1"
+      ],
+      "kinds": [
+        "statement-image"
+      ],
+      "optional": false,
+      "activeCatalogue": false
+    },
+    {
+      "path": "static/flashbac/2024/tex/png/QCM_bac_2024_06_sujet1_metropole_cor_ex1_q1_cor.png",
+      "exercises": [
+        "QCM_bac_2024_06_sujet1_metropole_cor_ex1_q1"
+      ],
+      "kinds": [
+        "correction-image"
+      ],
+      "optional": false,
+      "activeCatalogue": false
+    },
+    {
+      "path": "static/flashbac/2024/tex/png/QCM_bac_2024_06_sujet1_metropole_cor_ex1_q2.png",
+      "exercises": [
+        "QCM_bac_2024_06_sujet1_metropole_cor_ex1_q2"
+      ],
+      "kinds": [
+        "statement-image"
+      ],
+      "optional": false,
+      "activeCatalogue": false
+    },
+    {
+      "path": "static/flashbac/2024/tex/png/QCM_bac_2024_06_sujet1_metropole_cor_ex1_q2_cor.png",
+      "exercises": [
+        "QCM_bac_2024_06_sujet1_metropole_cor_ex1_q2"
+      ],
+      "kinds": [
+        "correction-image"
+      ],
+      "optional": false,
+      "activeCatalogue": false
+    },
+    {
+      "path": "static/flashbac/2024/tex/png/QCM_bac_2024_06_sujet1_metropole_cor_ex1_q3.png",
+      "exercises": [
+        "QCM_bac_2024_06_sujet1_metropole_cor_ex1_q3"
+      ],
+      "kinds": [
+        "statement-image"
+      ],
+      "optional": false,
+      "activeCatalogue": false
+    },
+    {
+      "path": "static/flashbac/2024/tex/png/QCM_bac_2024_06_sujet1_metropole_cor_ex1_q3_cor.png",
+      "exercises": [
+        "QCM_bac_2024_06_sujet1_metropole_cor_ex1_q3"
+      ],
+      "kinds": [
+        "correction-image"
+      ],
+      "optional": false,
+      "activeCatalogue": false
+    },
+    {
+      "path": "static/flashbac/2024/tex/png/QCM_bac_2024_06_sujet1_metropole_cor_ex1_q4.png",
+      "exercises": [
+        "QCM_bac_2024_06_sujet1_metropole_cor_ex1_q4"
+      ],
+      "kinds": [
+        "statement-image"
+      ],
+      "optional": false,
+      "activeCatalogue": false
+    },
+    {
+      "path": "static/flashbac/2024/tex/png/QCM_bac_2024_06_sujet1_metropole_cor_ex1_q4_cor.png",
+      "exercises": [
+        "QCM_bac_2024_06_sujet1_metropole_cor_ex1_q4"
+      ],
+      "kinds": [
+        "correction-image"
+      ],
+      "optional": false,
+      "activeCatalogue": false
+    },
+    {
+      "path": "static/flashbac/2024/tex/png/QCM_bac_2024_06_sujet1_metropole_ex1_q1.png",
+      "exercises": [
+        "QCM_bac_2024_06_sujet1_metropole_ex1_q1"
+      ],
+      "kinds": [
+        "statement-image"
+      ],
+      "optional": false,
+      "activeCatalogue": false
+    },
+    {
+      "path": "static/flashbac/2024/tex/png/QCM_bac_2024_06_sujet1_metropole_ex1_q1_cor.png",
+      "exercises": [
+        "QCM_bac_2024_06_sujet1_metropole_ex1_q1"
+      ],
+      "kinds": [
+        "correction-image"
+      ],
+      "optional": false,
+      "activeCatalogue": false
+    },
+    {
+      "path": "static/flashbac/2024/tex/png/QCM_bac_2024_06_sujet1_metropole_ex1_q2.png",
+      "exercises": [
+        "QCM_bac_2024_06_sujet1_metropole_ex1_q2"
+      ],
+      "kinds": [
+        "statement-image"
+      ],
+      "optional": false,
+      "activeCatalogue": false
+    },
+    {
+      "path": "static/flashbac/2024/tex/png/QCM_bac_2024_06_sujet1_metropole_ex1_q2_cor.png",
+      "exercises": [
+        "QCM_bac_2024_06_sujet1_metropole_ex1_q2"
+      ],
+      "kinds": [
+        "correction-image"
+      ],
+      "optional": false,
+      "activeCatalogue": false
+    },
+    {
+      "path": "static/flashbac/2024/tex/png/QCM_bac_2024_06_sujet1_metropole_ex1_q3.png",
+      "exercises": [
+        "QCM_bac_2024_06_sujet1_metropole_ex1_q3"
+      ],
+      "kinds": [
+        "statement-image"
+      ],
+      "optional": false,
+      "activeCatalogue": false
+    },
+    {
+      "path": "static/flashbac/2024/tex/png/QCM_bac_2024_06_sujet1_metropole_ex1_q3_cor.png",
+      "exercises": [
+        "QCM_bac_2024_06_sujet1_metropole_ex1_q3"
+      ],
+      "kinds": [
+        "correction-image"
+      ],
+      "optional": false,
+      "activeCatalogue": false
+    },
+    {
+      "path": "static/flashbac/2024/tex/png/QCM_bac_2024_06_sujet1_metropole_ex1_q4.png",
+      "exercises": [
+        "QCM_bac_2024_06_sujet1_metropole_ex1_q4"
+      ],
+      "kinds": [
+        "statement-image"
+      ],
+      "optional": false,
+      "activeCatalogue": false
+    },
+    {
+      "path": "static/flashbac/2024/tex/png/QCM_bac_2024_06_sujet1_metropole_ex1_q4_cor.png",
+      "exercises": [
+        "QCM_bac_2024_06_sujet1_metropole_ex1_q4"
+      ],
+      "kinds": [
+        "correction-image"
+      ],
+      "optional": false,
+      "activeCatalogue": false
+    },
+    {
+      "path": "static/flashbac/2024/tex/png/QCM_bac_2024_06_sujet2_polynesie_cor_ex2_q1.png",
+      "exercises": [
+        "QCM_bac_2024_06_sujet2_polynesie_cor_ex2_q1"
+      ],
+      "kinds": [
+        "statement-image"
+      ],
+      "optional": false,
+      "activeCatalogue": false
+    },
+    {
+      "path": "static/flashbac/2024/tex/png/QCM_bac_2024_06_sujet2_polynesie_cor_ex2_q1_cor.png",
+      "exercises": [
+        "QCM_bac_2024_06_sujet2_polynesie_cor_ex2_q1"
+      ],
+      "kinds": [
+        "correction-image"
+      ],
+      "optional": false,
+      "activeCatalogue": false
+    },
+    {
+      "path": "static/flashbac/2024/tex/png/QCM_bac_2024_06_sujet2_polynesie_cor_ex2_q2.png",
+      "exercises": [
+        "QCM_bac_2024_06_sujet2_polynesie_cor_ex2_q2"
+      ],
+      "kinds": [
+        "statement-image"
+      ],
+      "optional": false,
+      "activeCatalogue": false
+    },
+    {
+      "path": "static/flashbac/2024/tex/png/QCM_bac_2024_06_sujet2_polynesie_cor_ex2_q2_cor.png",
+      "exercises": [
+        "QCM_bac_2024_06_sujet2_polynesie_cor_ex2_q2"
+      ],
+      "kinds": [
+        "correction-image"
+      ],
+      "optional": false,
+      "activeCatalogue": false
+    },
+    {
+      "path": "static/flashbac/2024/tex/png/QCM_bac_2024_06_sujet2_polynesie_cor_ex2_q3.png",
+      "exercises": [
+        "QCM_bac_2024_06_sujet2_polynesie_cor_ex2_q3"
+      ],
+      "kinds": [
+        "statement-image"
+      ],
+      "optional": false,
+      "activeCatalogue": false
+    },
+    {
+      "path": "static/flashbac/2024/tex/png/QCM_bac_2024_06_sujet2_polynesie_cor_ex2_q3_cor.png",
+      "exercises": [
+        "QCM_bac_2024_06_sujet2_polynesie_cor_ex2_q3"
+      ],
+      "kinds": [
+        "correction-image"
+      ],
+      "optional": false,
+      "activeCatalogue": false
+    },
+    {
+      "path": "static/flashbac/2024/tex/png/QCM_bac_2024_06_sujet2_polynesie_cor_ex2_q4.png",
+      "exercises": [
+        "QCM_bac_2024_06_sujet2_polynesie_cor_ex2_q4"
+      ],
+      "kinds": [
+        "statement-image"
+      ],
+      "optional": false,
+      "activeCatalogue": false
+    },
+    {
+      "path": "static/flashbac/2024/tex/png/QCM_bac_2024_06_sujet2_polynesie_cor_ex2_q4_cor.png",
+      "exercises": [
+        "QCM_bac_2024_06_sujet2_polynesie_cor_ex2_q4"
+      ],
+      "kinds": [
+        "correction-image"
+      ],
+      "optional": false,
+      "activeCatalogue": false
+    },
+    {
+      "path": "static/flashbac/2024/tex/png/QCM_bac_2024_06_sujet2_polynesie_cor_ex2_q5.png",
+      "exercises": [
+        "QCM_bac_2024_06_sujet2_polynesie_cor_ex2_q5"
+      ],
+      "kinds": [
+        "statement-image"
+      ],
+      "optional": false,
+      "activeCatalogue": false
+    },
+    {
+      "path": "static/flashbac/2024/tex/png/QCM_bac_2024_06_sujet2_polynesie_cor_ex2_q5_cor.png",
+      "exercises": [
+        "QCM_bac_2024_06_sujet2_polynesie_cor_ex2_q5"
+      ],
+      "kinds": [
+        "correction-image"
+      ],
+      "optional": false,
+      "activeCatalogue": false
+    },
+    {
+      "path": "static/flashbac/2024/tex/png/QCM_bac_2024_06_sujet2_polynesie_ex2_q1.png",
+      "exercises": [
+        "QCM_bac_2024_06_sujet2_polynesie_ex2_q1"
+      ],
+      "kinds": [
+        "statement-image"
+      ],
+      "optional": false,
+      "activeCatalogue": false
+    },
+    {
+      "path": "static/flashbac/2024/tex/png/QCM_bac_2024_06_sujet2_polynesie_ex2_q1_cor.png",
+      "exercises": [
+        "QCM_bac_2024_06_sujet2_polynesie_ex2_q1"
+      ],
+      "kinds": [
+        "correction-image"
+      ],
+      "optional": false,
+      "activeCatalogue": false
+    },
+    {
+      "path": "static/flashbac/2024/tex/png/QCM_bac_2024_06_sujet2_polynesie_ex2_q2.png",
+      "exercises": [
+        "QCM_bac_2024_06_sujet2_polynesie_ex2_q2"
+      ],
+      "kinds": [
+        "statement-image"
+      ],
+      "optional": false,
+      "activeCatalogue": false
+    },
+    {
+      "path": "static/flashbac/2024/tex/png/QCM_bac_2024_06_sujet2_polynesie_ex2_q2_cor.png",
+      "exercises": [
+        "QCM_bac_2024_06_sujet2_polynesie_ex2_q2"
+      ],
+      "kinds": [
+        "correction-image"
+      ],
+      "optional": false,
+      "activeCatalogue": false
+    },
+    {
+      "path": "static/flashbac/2024/tex/png/QCM_bac_2024_06_sujet2_polynesie_ex2_q3.png",
+      "exercises": [
+        "QCM_bac_2024_06_sujet2_polynesie_ex2_q3"
+      ],
+      "kinds": [
+        "statement-image"
+      ],
+      "optional": false,
+      "activeCatalogue": false
+    },
+    {
+      "path": "static/flashbac/2024/tex/png/QCM_bac_2024_06_sujet2_polynesie_ex2_q3_cor.png",
+      "exercises": [
+        "QCM_bac_2024_06_sujet2_polynesie_ex2_q3"
+      ],
+      "kinds": [
+        "correction-image"
+      ],
+      "optional": false,
+      "activeCatalogue": false
+    },
+    {
+      "path": "static/flashbac/2024/tex/png/QCM_bac_2024_06_sujet2_polynesie_ex2_q4.png",
+      "exercises": [
+        "QCM_bac_2024_06_sujet2_polynesie_ex2_q4"
+      ],
+      "kinds": [
+        "statement-image"
+      ],
+      "optional": false,
+      "activeCatalogue": false
+    },
+    {
+      "path": "static/flashbac/2024/tex/png/QCM_bac_2024_06_sujet2_polynesie_ex2_q4_cor.png",
+      "exercises": [
+        "QCM_bac_2024_06_sujet2_polynesie_ex2_q4"
+      ],
+      "kinds": [
+        "correction-image"
+      ],
+      "optional": false,
+      "activeCatalogue": false
+    },
+    {
+      "path": "static/flashbac/2024/tex/png/QCM_bac_2024_06_sujet2_polynesie_ex2_q5.png",
+      "exercises": [
+        "QCM_bac_2024_06_sujet2_polynesie_ex2_q5"
+      ],
+      "kinds": [
+        "statement-image"
+      ],
+      "optional": false,
+      "activeCatalogue": false
+    },
+    {
+      "path": "static/flashbac/2024/tex/png/QCM_bac_2024_06_sujet2_polynesie_ex2_q5_cor.png",
+      "exercises": [
+        "QCM_bac_2024_06_sujet2_polynesie_ex2_q5"
+      ],
+      "kinds": [
+        "correction-image"
+      ],
+      "optional": false,
+      "activeCatalogue": false
+    },
+    {
+      "path": "static/flashbac/2024/tex/png/bac_2024_06_sujet1_metropole_devoile_4_1_cor.png",
+      "exercises": [
+        "bac_2024_06_sujet1_metropole_devoile_4_1"
+      ],
+      "kinds": [
+        "correction-image"
+      ],
+      "optional": false,
+      "activeCatalogue": false
+    },
+    {
+      "path": "static/flashbac/bac_/tex/png/qcm_bac_2024_02_sujet0_cor_ex4_q1.png",
+      "exercises": [
+        "qcm_bac_2024_02_sujet0_cor_ex4_q1"
+      ],
+      "kinds": [
+        "statement-image"
+      ],
+      "optional": false,
+      "activeCatalogue": false
+    },
+    {
+      "path": "static/flashbac/bac_/tex/png/qcm_bac_2024_02_sujet0_cor_ex4_q1_cor.png",
+      "exercises": [
+        "qcm_bac_2024_02_sujet0_cor_ex4_q1"
+      ],
+      "kinds": [
+        "correction-image"
+      ],
+      "optional": false,
+      "activeCatalogue": false
+    },
+    {
+      "path": "static/flashbac/bac_/tex/png/qcm_bac_2024_02_sujet0_cor_ex4_q2.png",
+      "exercises": [
+        "qcm_bac_2024_02_sujet0_cor_ex4_q2"
+      ],
+      "kinds": [
+        "statement-image"
+      ],
+      "optional": false,
+      "activeCatalogue": false
+    },
+    {
+      "path": "static/flashbac/bac_/tex/png/qcm_bac_2024_02_sujet0_cor_ex4_q2_cor.png",
+      "exercises": [
+        "qcm_bac_2024_02_sujet0_cor_ex4_q2"
+      ],
+      "kinds": [
+        "correction-image"
+      ],
+      "optional": false,
+      "activeCatalogue": false
+    },
+    {
+      "path": "static/flashbac/bac_/tex/png/qcm_bac_2024_02_sujet0_cor_ex4_q3.png",
+      "exercises": [
+        "qcm_bac_2024_02_sujet0_cor_ex4_q3"
+      ],
+      "kinds": [
+        "statement-image"
+      ],
+      "optional": false,
+      "activeCatalogue": false
+    },
+    {
+      "path": "static/flashbac/bac_/tex/png/qcm_bac_2024_02_sujet0_cor_ex4_q3_cor.png",
+      "exercises": [
+        "qcm_bac_2024_02_sujet0_cor_ex4_q3"
+      ],
+      "kinds": [
+        "correction-image"
+      ],
+      "optional": false,
+      "activeCatalogue": false
+    },
+    {
+      "path": "static/flashbac/bac_/tex/png/qcm_bac_2024_02_sujet0_cor_ex4_q4.png",
+      "exercises": [
+        "qcm_bac_2024_02_sujet0_cor_ex4_q4"
+      ],
+      "kinds": [
+        "statement-image"
+      ],
+      "optional": false,
+      "activeCatalogue": false
+    },
+    {
+      "path": "static/flashbac/bac_/tex/png/qcm_bac_2024_02_sujet0_cor_ex4_q4_cor.png",
+      "exercises": [
+        "qcm_bac_2024_02_sujet0_cor_ex4_q4"
+      ],
+      "kinds": [
+        "correction-image"
+      ],
+      "optional": false,
+      "activeCatalogue": false
+    },
+    {
+      "path": "static/flashbac/bac_/tex/png/qcm_bac_2024_02_sujet0_cor_ex4_q5.png",
+      "exercises": [
+        "qcm_bac_2024_02_sujet0_cor_ex4_q5"
+      ],
+      "kinds": [
+        "statement-image"
+      ],
+      "optional": false,
+      "activeCatalogue": false
+    },
+    {
+      "path": "static/flashbac/bac_/tex/png/qcm_bac_2024_02_sujet0_cor_ex4_q5_cor.png",
+      "exercises": [
+        "qcm_bac_2024_02_sujet0_cor_ex4_q5"
+      ],
+      "kinds": [
+        "correction-image"
+      ],
+      "optional": false,
+      "activeCatalogue": false
+    },
+    {
+      "path": "static/flashbac/bac_/tex/png/qcm_bac_2024_02_sujet0_cor_ex5_q1.png",
+      "exercises": [
+        "qcm_bac_2024_02_sujet0_cor_ex5_q1"
+      ],
+      "kinds": [
+        "statement-image"
+      ],
+      "optional": false,
+      "activeCatalogue": false
+    },
+    {
+      "path": "static/flashbac/bac_/tex/png/qcm_bac_2024_02_sujet0_cor_ex5_q1_cor.png",
+      "exercises": [
+        "qcm_bac_2024_02_sujet0_cor_ex5_q1"
+      ],
+      "kinds": [
+        "correction-image"
+      ],
+      "optional": false,
+      "activeCatalogue": false
+    },
+    {
+      "path": "static/flashbac/bac_/tex/png/qcm_bac_2024_02_sujet0_cor_ex5_q2.png",
+      "exercises": [
+        "qcm_bac_2024_02_sujet0_cor_ex5_q2"
+      ],
+      "kinds": [
+        "statement-image"
+      ],
+      "optional": false,
+      "activeCatalogue": false
+    },
+    {
+      "path": "static/flashbac/bac_/tex/png/qcm_bac_2024_02_sujet0_cor_ex5_q2_cor.png",
+      "exercises": [
+        "qcm_bac_2024_02_sujet0_cor_ex5_q2"
+      ],
+      "kinds": [
+        "correction-image"
+      ],
+      "optional": false,
+      "activeCatalogue": false
+    },
+    {
+      "path": "static/flashbac/bac_/tex/png/qcm_bac_2024_02_sujet0_cor_ex5_q3.png",
+      "exercises": [
+        "qcm_bac_2024_02_sujet0_cor_ex5_q3"
+      ],
+      "kinds": [
+        "statement-image"
+      ],
+      "optional": false,
+      "activeCatalogue": false
+    },
+    {
+      "path": "static/flashbac/bac_/tex/png/qcm_bac_2024_02_sujet0_cor_ex5_q3_cor.png",
+      "exercises": [
+        "qcm_bac_2024_02_sujet0_cor_ex5_q3"
+      ],
+      "kinds": [
+        "correction-image"
+      ],
+      "optional": false,
+      "activeCatalogue": false
+    },
+    {
+      "path": "static/flashbac/bac_/tex/png/qcm_bac_2024_02_sujet0_cor_ex5_q4.png",
+      "exercises": [
+        "qcm_bac_2024_02_sujet0_cor_ex5_q4"
+      ],
+      "kinds": [
+        "statement-image"
+      ],
+      "optional": false,
+      "activeCatalogue": false
+    },
+    {
+      "path": "static/flashbac/bac_/tex/png/qcm_bac_2024_02_sujet0_cor_ex5_q4_cor.png",
+      "exercises": [
+        "qcm_bac_2024_02_sujet0_cor_ex5_q4"
+      ],
+      "kinds": [
+        "correction-image"
+      ],
+      "optional": false,
+      "activeCatalogue": false
+    },
+    {
+      "path": "static/flashbac/bac_/tex/png/qcm_bac_2024_02_sujet0_cor_ex5_q5.png",
+      "exercises": [
+        "qcm_bac_2024_02_sujet0_cor_ex5_q5"
+      ],
+      "kinds": [
+        "statement-image"
+      ],
+      "optional": false,
+      "activeCatalogue": false
+    },
+    {
+      "path": "static/flashbac/bac_/tex/png/qcm_bac_2024_02_sujet0_cor_ex5_q5_cor.png",
+      "exercises": [
+        "qcm_bac_2024_02_sujet0_cor_ex5_q5"
+      ],
+      "kinds": [
+        "correction-image"
+      ],
+      "optional": false,
+      "activeCatalogue": false
+    },
+    {
+      "path": "static/flashbac/bac_/tex/png/qcm_bac_2024_02_sujet0_ex4_q1.png",
+      "exercises": [
+        "qcm_bac_2024_02_sujet0_ex4_q1"
+      ],
+      "kinds": [
+        "statement-image"
+      ],
+      "optional": false,
+      "activeCatalogue": false
+    },
+    {
+      "path": "static/flashbac/bac_/tex/png/qcm_bac_2024_02_sujet0_ex4_q1_cor.png",
+      "exercises": [
+        "qcm_bac_2024_02_sujet0_ex4_q1"
+      ],
+      "kinds": [
+        "correction-image"
+      ],
+      "optional": false,
+      "activeCatalogue": false
+    },
+    {
+      "path": "static/flashbac/bac_/tex/png/qcm_bac_2024_02_sujet0_ex4_q2.png",
+      "exercises": [
+        "qcm_bac_2024_02_sujet0_ex4_q2"
+      ],
+      "kinds": [
+        "statement-image"
+      ],
+      "optional": false,
+      "activeCatalogue": false
+    },
+    {
+      "path": "static/flashbac/bac_/tex/png/qcm_bac_2024_02_sujet0_ex4_q2_cor.png",
+      "exercises": [
+        "qcm_bac_2024_02_sujet0_ex4_q2"
+      ],
+      "kinds": [
+        "correction-image"
+      ],
+      "optional": false,
+      "activeCatalogue": false
+    },
+    {
+      "path": "static/flashbac/bac_/tex/png/qcm_bac_2024_02_sujet0_ex4_q3.png",
+      "exercises": [
+        "qcm_bac_2024_02_sujet0_ex4_q3"
+      ],
+      "kinds": [
+        "statement-image"
+      ],
+      "optional": false,
+      "activeCatalogue": false
+    },
+    {
+      "path": "static/flashbac/bac_/tex/png/qcm_bac_2024_02_sujet0_ex4_q3_cor.png",
+      "exercises": [
+        "qcm_bac_2024_02_sujet0_ex4_q3"
+      ],
+      "kinds": [
+        "correction-image"
+      ],
+      "optional": false,
+      "activeCatalogue": false
+    },
+    {
+      "path": "static/flashbac/bac_/tex/png/qcm_bac_2024_02_sujet0_ex4_q4.png",
+      "exercises": [
+        "qcm_bac_2024_02_sujet0_ex4_q4"
+      ],
+      "kinds": [
+        "statement-image"
+      ],
+      "optional": false,
+      "activeCatalogue": false
+    },
+    {
+      "path": "static/flashbac/bac_/tex/png/qcm_bac_2024_02_sujet0_ex4_q4_cor.png",
+      "exercises": [
+        "qcm_bac_2024_02_sujet0_ex4_q4"
+      ],
+      "kinds": [
+        "correction-image"
+      ],
+      "optional": false,
+      "activeCatalogue": false
+    },
+    {
+      "path": "static/flashbac/bac_/tex/png/qcm_bac_2024_02_sujet0_ex4_q5.png",
+      "exercises": [
+        "qcm_bac_2024_02_sujet0_ex4_q5"
+      ],
+      "kinds": [
+        "statement-image"
+      ],
+      "optional": false,
+      "activeCatalogue": false
+    },
+    {
+      "path": "static/flashbac/bac_/tex/png/qcm_bac_2024_02_sujet0_ex4_q5_cor.png",
+      "exercises": [
+        "qcm_bac_2024_02_sujet0_ex4_q5"
+      ],
+      "kinds": [
+        "correction-image"
+      ],
+      "optional": false,
+      "activeCatalogue": false
+    },
+    {
+      "path": "static/flashbac/bac_/tex/png/qcm_bac_2024_02_sujet0_ex5_q1.png",
+      "exercises": [
+        "qcm_bac_2024_02_sujet0_ex5_q1"
+      ],
+      "kinds": [
+        "statement-image"
+      ],
+      "optional": false,
+      "activeCatalogue": false
+    },
+    {
+      "path": "static/flashbac/bac_/tex/png/qcm_bac_2024_02_sujet0_ex5_q1_cor.png",
+      "exercises": [
+        "qcm_bac_2024_02_sujet0_ex5_q1"
+      ],
+      "kinds": [
+        "correction-image"
+      ],
+      "optional": false,
+      "activeCatalogue": false
+    },
+    {
+      "path": "static/flashbac/bac_/tex/png/qcm_bac_2024_02_sujet0_ex5_q2.png",
+      "exercises": [
+        "qcm_bac_2024_02_sujet0_ex5_q2"
+      ],
+      "kinds": [
+        "statement-image"
+      ],
+      "optional": false,
+      "activeCatalogue": false
+    },
+    {
+      "path": "static/flashbac/bac_/tex/png/qcm_bac_2024_02_sujet0_ex5_q2_cor.png",
+      "exercises": [
+        "qcm_bac_2024_02_sujet0_ex5_q2"
+      ],
+      "kinds": [
+        "correction-image"
+      ],
+      "optional": false,
+      "activeCatalogue": false
+    },
+    {
+      "path": "static/flashbac/bac_/tex/png/qcm_bac_2024_02_sujet0_ex5_q3.png",
+      "exercises": [
+        "qcm_bac_2024_02_sujet0_ex5_q3"
+      ],
+      "kinds": [
+        "statement-image"
+      ],
+      "optional": false,
+      "activeCatalogue": false
+    },
+    {
+      "path": "static/flashbac/bac_/tex/png/qcm_bac_2024_02_sujet0_ex5_q3_cor.png",
+      "exercises": [
+        "qcm_bac_2024_02_sujet0_ex5_q3"
+      ],
+      "kinds": [
+        "correction-image"
+      ],
+      "optional": false,
+      "activeCatalogue": false
+    },
+    {
+      "path": "static/flashbac/bac_/tex/png/qcm_bac_2024_02_sujet0_ex5_q4.png",
+      "exercises": [
+        "qcm_bac_2024_02_sujet0_ex5_q4"
+      ],
+      "kinds": [
+        "statement-image"
+      ],
+      "optional": false,
+      "activeCatalogue": false
+    },
+    {
+      "path": "static/flashbac/bac_/tex/png/qcm_bac_2024_02_sujet0_ex5_q4_cor.png",
+      "exercises": [
+        "qcm_bac_2024_02_sujet0_ex5_q4"
+      ],
+      "kinds": [
+        "correction-image"
+      ],
+      "optional": false,
+      "activeCatalogue": false
+    },
+    {
+      "path": "static/flashbac/bac_/tex/png/qcm_bac_2024_02_sujet0_ex5_q5.png",
+      "exercises": [
+        "qcm_bac_2024_02_sujet0_ex5_q5"
+      ],
+      "kinds": [
+        "statement-image"
+      ],
+      "optional": false,
+      "activeCatalogue": false
+    },
+    {
+      "path": "static/flashbac/bac_/tex/png/qcm_bac_2024_02_sujet0_ex5_q5_cor.png",
+      "exercises": [
+        "qcm_bac_2024_02_sujet0_ex5_q5"
+      ],
+      "kinds": [
+        "correction-image"
+      ],
+      "optional": false,
+      "activeCatalogue": false
+    },
+    {
+      "path": "static/flashbac/bac_/tex/qcm_bac_2024_02_sujet0_cor_ex4_q1.tex",
+      "exercises": [
+        "qcm_bac_2024_02_sujet0_cor_ex4_q1"
+      ],
+      "kinds": [
+        "statement-tex"
+      ],
+      "optional": false,
+      "activeCatalogue": false
+    },
+    {
+      "path": "static/flashbac/bac_/tex/qcm_bac_2024_02_sujet0_cor_ex4_q1_cor.tex",
+      "exercises": [
+        "qcm_bac_2024_02_sujet0_cor_ex4_q1"
+      ],
+      "kinds": [
+        "correction-tex"
+      ],
+      "optional": false,
+      "activeCatalogue": false
+    },
+    {
+      "path": "static/flashbac/bac_/tex/qcm_bac_2024_02_sujet0_cor_ex4_q2.tex",
+      "exercises": [
+        "qcm_bac_2024_02_sujet0_cor_ex4_q2"
+      ],
+      "kinds": [
+        "statement-tex"
+      ],
+      "optional": false,
+      "activeCatalogue": false
+    },
+    {
+      "path": "static/flashbac/bac_/tex/qcm_bac_2024_02_sujet0_cor_ex4_q2_cor.tex",
+      "exercises": [
+        "qcm_bac_2024_02_sujet0_cor_ex4_q2"
+      ],
+      "kinds": [
+        "correction-tex"
+      ],
+      "optional": false,
+      "activeCatalogue": false
+    },
+    {
+      "path": "static/flashbac/bac_/tex/qcm_bac_2024_02_sujet0_cor_ex4_q3.tex",
+      "exercises": [
+        "qcm_bac_2024_02_sujet0_cor_ex4_q3"
+      ],
+      "kinds": [
+        "statement-tex"
+      ],
+      "optional": false,
+      "activeCatalogue": false
+    },
+    {
+      "path": "static/flashbac/bac_/tex/qcm_bac_2024_02_sujet0_cor_ex4_q3_cor.tex",
+      "exercises": [
+        "qcm_bac_2024_02_sujet0_cor_ex4_q3"
+      ],
+      "kinds": [
+        "correction-tex"
+      ],
+      "optional": false,
+      "activeCatalogue": false
+    },
+    {
+      "path": "static/flashbac/bac_/tex/qcm_bac_2024_02_sujet0_cor_ex4_q4.tex",
+      "exercises": [
+        "qcm_bac_2024_02_sujet0_cor_ex4_q4"
+      ],
+      "kinds": [
+        "statement-tex"
+      ],
+      "optional": false,
+      "activeCatalogue": false
+    },
+    {
+      "path": "static/flashbac/bac_/tex/qcm_bac_2024_02_sujet0_cor_ex4_q4_cor.tex",
+      "exercises": [
+        "qcm_bac_2024_02_sujet0_cor_ex4_q4"
+      ],
+      "kinds": [
+        "correction-tex"
+      ],
+      "optional": false,
+      "activeCatalogue": false
+    },
+    {
+      "path": "static/flashbac/bac_/tex/qcm_bac_2024_02_sujet0_cor_ex4_q5.tex",
+      "exercises": [
+        "qcm_bac_2024_02_sujet0_cor_ex4_q5"
+      ],
+      "kinds": [
+        "statement-tex"
+      ],
+      "optional": false,
+      "activeCatalogue": false
+    },
+    {
+      "path": "static/flashbac/bac_/tex/qcm_bac_2024_02_sujet0_cor_ex4_q5_cor.tex",
+      "exercises": [
+        "qcm_bac_2024_02_sujet0_cor_ex4_q5"
+      ],
+      "kinds": [
+        "correction-tex"
+      ],
+      "optional": false,
+      "activeCatalogue": false
+    },
+    {
+      "path": "static/flashbac/bac_/tex/qcm_bac_2024_02_sujet0_cor_ex5_q1.tex",
+      "exercises": [
+        "qcm_bac_2024_02_sujet0_cor_ex5_q1"
+      ],
+      "kinds": [
+        "statement-tex"
+      ],
+      "optional": false,
+      "activeCatalogue": false
+    },
+    {
+      "path": "static/flashbac/bac_/tex/qcm_bac_2024_02_sujet0_cor_ex5_q1_cor.tex",
+      "exercises": [
+        "qcm_bac_2024_02_sujet0_cor_ex5_q1"
+      ],
+      "kinds": [
+        "correction-tex"
+      ],
+      "optional": false,
+      "activeCatalogue": false
+    },
+    {
+      "path": "static/flashbac/bac_/tex/qcm_bac_2024_02_sujet0_cor_ex5_q2.tex",
+      "exercises": [
+        "qcm_bac_2024_02_sujet0_cor_ex5_q2"
+      ],
+      "kinds": [
+        "statement-tex"
+      ],
+      "optional": false,
+      "activeCatalogue": false
+    },
+    {
+      "path": "static/flashbac/bac_/tex/qcm_bac_2024_02_sujet0_cor_ex5_q2_cor.tex",
+      "exercises": [
+        "qcm_bac_2024_02_sujet0_cor_ex5_q2"
+      ],
+      "kinds": [
+        "correction-tex"
+      ],
+      "optional": false,
+      "activeCatalogue": false
+    },
+    {
+      "path": "static/flashbac/bac_/tex/qcm_bac_2024_02_sujet0_cor_ex5_q3.tex",
+      "exercises": [
+        "qcm_bac_2024_02_sujet0_cor_ex5_q3"
+      ],
+      "kinds": [
+        "statement-tex"
+      ],
+      "optional": false,
+      "activeCatalogue": false
+    },
+    {
+      "path": "static/flashbac/bac_/tex/qcm_bac_2024_02_sujet0_cor_ex5_q3_cor.tex",
+      "exercises": [
+        "qcm_bac_2024_02_sujet0_cor_ex5_q3"
+      ],
+      "kinds": [
+        "correction-tex"
+      ],
+      "optional": false,
+      "activeCatalogue": false
+    },
+    {
+      "path": "static/flashbac/bac_/tex/qcm_bac_2024_02_sujet0_cor_ex5_q4.tex",
+      "exercises": [
+        "qcm_bac_2024_02_sujet0_cor_ex5_q4"
+      ],
+      "kinds": [
+        "statement-tex"
+      ],
+      "optional": false,
+      "activeCatalogue": false
+    },
+    {
+      "path": "static/flashbac/bac_/tex/qcm_bac_2024_02_sujet0_cor_ex5_q4_cor.tex",
+      "exercises": [
+        "qcm_bac_2024_02_sujet0_cor_ex5_q4"
+      ],
+      "kinds": [
+        "correction-tex"
+      ],
+      "optional": false,
+      "activeCatalogue": false
+    },
+    {
+      "path": "static/flashbac/bac_/tex/qcm_bac_2024_02_sujet0_cor_ex5_q5.tex",
+      "exercises": [
+        "qcm_bac_2024_02_sujet0_cor_ex5_q5"
+      ],
+      "kinds": [
+        "statement-tex"
+      ],
+      "optional": false,
+      "activeCatalogue": false
+    },
+    {
+      "path": "static/flashbac/bac_/tex/qcm_bac_2024_02_sujet0_cor_ex5_q5_cor.tex",
+      "exercises": [
+        "qcm_bac_2024_02_sujet0_cor_ex5_q5"
+      ],
+      "kinds": [
+        "correction-tex"
+      ],
+      "optional": false,
+      "activeCatalogue": false
+    },
+    {
+      "path": "static/flashbac/bac_/tex/qcm_bac_2024_02_sujet0_ex4_q1.tex",
+      "exercises": [
+        "qcm_bac_2024_02_sujet0_ex4_q1"
+      ],
+      "kinds": [
+        "statement-tex"
+      ],
+      "optional": false,
+      "activeCatalogue": false
+    },
+    {
+      "path": "static/flashbac/bac_/tex/qcm_bac_2024_02_sujet0_ex4_q1_cor.tex",
+      "exercises": [
+        "qcm_bac_2024_02_sujet0_ex4_q1"
+      ],
+      "kinds": [
+        "correction-tex"
+      ],
+      "optional": false,
+      "activeCatalogue": false
+    },
+    {
+      "path": "static/flashbac/bac_/tex/qcm_bac_2024_02_sujet0_ex4_q2.tex",
+      "exercises": [
+        "qcm_bac_2024_02_sujet0_ex4_q2"
+      ],
+      "kinds": [
+        "statement-tex"
+      ],
+      "optional": false,
+      "activeCatalogue": false
+    },
+    {
+      "path": "static/flashbac/bac_/tex/qcm_bac_2024_02_sujet0_ex4_q2_cor.tex",
+      "exercises": [
+        "qcm_bac_2024_02_sujet0_ex4_q2"
+      ],
+      "kinds": [
+        "correction-tex"
+      ],
+      "optional": false,
+      "activeCatalogue": false
+    },
+    {
+      "path": "static/flashbac/bac_/tex/qcm_bac_2024_02_sujet0_ex4_q3.tex",
+      "exercises": [
+        "qcm_bac_2024_02_sujet0_ex4_q3"
+      ],
+      "kinds": [
+        "statement-tex"
+      ],
+      "optional": false,
+      "activeCatalogue": false
+    },
+    {
+      "path": "static/flashbac/bac_/tex/qcm_bac_2024_02_sujet0_ex4_q3_cor.tex",
+      "exercises": [
+        "qcm_bac_2024_02_sujet0_ex4_q3"
+      ],
+      "kinds": [
+        "correction-tex"
+      ],
+      "optional": false,
+      "activeCatalogue": false
+    },
+    {
+      "path": "static/flashbac/bac_/tex/qcm_bac_2024_02_sujet0_ex4_q4.tex",
+      "exercises": [
+        "qcm_bac_2024_02_sujet0_ex4_q4"
+      ],
+      "kinds": [
+        "statement-tex"
+      ],
+      "optional": false,
+      "activeCatalogue": false
+    },
+    {
+      "path": "static/flashbac/bac_/tex/qcm_bac_2024_02_sujet0_ex4_q4_cor.tex",
+      "exercises": [
+        "qcm_bac_2024_02_sujet0_ex4_q4"
+      ],
+      "kinds": [
+        "correction-tex"
+      ],
+      "optional": false,
+      "activeCatalogue": false
+    },
+    {
+      "path": "static/flashbac/bac_/tex/qcm_bac_2024_02_sujet0_ex4_q5.tex",
+      "exercises": [
+        "qcm_bac_2024_02_sujet0_ex4_q5"
+      ],
+      "kinds": [
+        "statement-tex"
+      ],
+      "optional": false,
+      "activeCatalogue": false
+    },
+    {
+      "path": "static/flashbac/bac_/tex/qcm_bac_2024_02_sujet0_ex4_q5_cor.tex",
+      "exercises": [
+        "qcm_bac_2024_02_sujet0_ex4_q5"
+      ],
+      "kinds": [
+        "correction-tex"
+      ],
+      "optional": false,
+      "activeCatalogue": false
+    },
+    {
+      "path": "static/flashbac/bac_/tex/qcm_bac_2024_02_sujet0_ex5_q1.tex",
+      "exercises": [
+        "qcm_bac_2024_02_sujet0_ex5_q1"
+      ],
+      "kinds": [
+        "statement-tex"
+      ],
+      "optional": false,
+      "activeCatalogue": false
+    },
+    {
+      "path": "static/flashbac/bac_/tex/qcm_bac_2024_02_sujet0_ex5_q1_cor.tex",
+      "exercises": [
+        "qcm_bac_2024_02_sujet0_ex5_q1"
+      ],
+      "kinds": [
+        "correction-tex"
+      ],
+      "optional": false,
+      "activeCatalogue": false
+    },
+    {
+      "path": "static/flashbac/bac_/tex/qcm_bac_2024_02_sujet0_ex5_q2.tex",
+      "exercises": [
+        "qcm_bac_2024_02_sujet0_ex5_q2"
+      ],
+      "kinds": [
+        "statement-tex"
+      ],
+      "optional": false,
+      "activeCatalogue": false
+    },
+    {
+      "path": "static/flashbac/bac_/tex/qcm_bac_2024_02_sujet0_ex5_q2_cor.tex",
+      "exercises": [
+        "qcm_bac_2024_02_sujet0_ex5_q2"
+      ],
+      "kinds": [
+        "correction-tex"
+      ],
+      "optional": false,
+      "activeCatalogue": false
+    },
+    {
+      "path": "static/flashbac/bac_/tex/qcm_bac_2024_02_sujet0_ex5_q3.tex",
+      "exercises": [
+        "qcm_bac_2024_02_sujet0_ex5_q3"
+      ],
+      "kinds": [
+        "statement-tex"
+      ],
+      "optional": false,
+      "activeCatalogue": false
+    },
+    {
+      "path": "static/flashbac/bac_/tex/qcm_bac_2024_02_sujet0_ex5_q3_cor.tex",
+      "exercises": [
+        "qcm_bac_2024_02_sujet0_ex5_q3"
+      ],
+      "kinds": [
+        "correction-tex"
+      ],
+      "optional": false,
+      "activeCatalogue": false
+    },
+    {
+      "path": "static/flashbac/bac_/tex/qcm_bac_2024_02_sujet0_ex5_q4.tex",
+      "exercises": [
+        "qcm_bac_2024_02_sujet0_ex5_q4"
+      ],
+      "kinds": [
+        "statement-tex"
+      ],
+      "optional": false,
+      "activeCatalogue": false
+    },
+    {
+      "path": "static/flashbac/bac_/tex/qcm_bac_2024_02_sujet0_ex5_q4_cor.tex",
+      "exercises": [
+        "qcm_bac_2024_02_sujet0_ex5_q4"
+      ],
+      "kinds": [
+        "correction-tex"
+      ],
+      "optional": false,
+      "activeCatalogue": false
+    },
+    {
+      "path": "static/flashbac/bac_/tex/qcm_bac_2024_02_sujet0_ex5_q5.tex",
+      "exercises": [
+        "qcm_bac_2024_02_sujet0_ex5_q5"
+      ],
+      "kinds": [
+        "statement-tex"
+      ],
+      "optional": false,
+      "activeCatalogue": false
+    },
+    {
+      "path": "static/flashbac/bac_/tex/qcm_bac_2024_02_sujet0_ex5_q5_cor.tex",
+      "exercises": [
+        "qcm_bac_2024_02_sujet0_ex5_q5"
+      ],
+      "kinds": [
+        "correction-tex"
+      ],
+      "optional": false,
+      "activeCatalogue": false
+    },
+    {
+      "path": "static/mathadata/tex/md-0005_cor.tex",
+      "exercises": [
+        "md-0005"
+      ],
+      "kinds": [
+        "mathadata-tex"
+      ],
+      "optional": false,
+      "activeCatalogue": true
+    },
+    {
+      "path": "static/mathadata/tex/md-0016_cor.tex",
+      "exercises": [
+        "md-0016"
+      ],
+      "kinds": [
+        "mathadata-tex"
+      ],
+      "optional": false,
+      "activeCatalogue": true
+    },
+    {
+      "path": "static/mathadata/tex/md-0017_cor.tex",
+      "exercises": [
+        "md-0017"
+      ],
+      "kinds": [
+        "mathadata-tex"
+      ],
+      "optional": false,
+      "activeCatalogue": true
+    },
+    {
+      "path": "static/mathadata/tex/md-0019_cor.tex",
+      "exercises": [
+        "md-0019"
+      ],
+      "kinds": [
+        "mathadata-tex"
+      ],
+      "optional": false,
+      "activeCatalogue": true
+    },
+    {
+      "path": "static/mathadata/tex/md-0020_cor.tex",
+      "exercises": [
+        "md-0020"
+      ],
+      "kinds": [
+        "mathadata-tex"
+      ],
+      "optional": false,
+      "activeCatalogue": true
+    },
+    {
+      "path": "static/mathadata/tex/md-0021_cor.tex",
+      "exercises": [
+        "md-0021"
+      ],
+      "kinds": [
+        "mathadata-tex"
+      ],
+      "optional": false,
+      "activeCatalogue": true
+    },
+    {
+      "path": "static/mathadata/tex/md-0022_cor.tex",
+      "exercises": [
+        "md-0022"
+      ],
+      "kinds": [
+        "mathadata-tex"
+      ],
+      "optional": false,
+      "activeCatalogue": true
+    },
+    {
+      "path": "static/mathadata/tex/md-0023_cor.tex",
+      "exercises": [
+        "md-0023"
+      ],
+      "kinds": [
+        "mathadata-tex"
+      ],
+      "optional": false,
+      "activeCatalogue": true
+    },
+    {
+      "path": "static/mathadata/tex/md-0026_cor.tex",
+      "exercises": [
+        "md-0026"
+      ],
+      "kinds": [
+        "mathadata-tex"
+      ],
+      "optional": false,
+      "activeCatalogue": true
+    },
+    {
+      "path": "static/mathadata/tex/md-0027_cor.tex",
+      "exercises": [
+        "md-0027"
+      ],
+      "kinds": [
+        "mathadata-tex"
+      ],
+      "optional": false,
+      "activeCatalogue": true
+    },
+    {
+      "path": "static/mathadata/tex/md-0028_cor.tex",
+      "exercises": [
+        "md-0028"
+      ],
+      "kinds": [
+        "mathadata-tex"
+      ],
+      "optional": false,
+      "activeCatalogue": true
+    },
+    {
+      "path": "static/mathadata/tex/png/md-0005_cor.png",
+      "exercises": [
+        "md-0005"
+      ],
+      "kinds": [
+        "mathadata-image"
+      ],
+      "optional": false,
+      "activeCatalogue": true
+    },
+    {
+      "path": "static/mathadata/tex/png/md-0016_cor.png",
+      "exercises": [
+        "md-0016"
+      ],
+      "kinds": [
+        "mathadata-image"
+      ],
+      "optional": false,
+      "activeCatalogue": true
+    },
+    {
+      "path": "static/mathadata/tex/png/md-0017_cor.png",
+      "exercises": [
+        "md-0017"
+      ],
+      "kinds": [
+        "mathadata-image"
+      ],
+      "optional": false,
+      "activeCatalogue": true
+    },
+    {
+      "path": "static/mathadata/tex/png/md-0019_cor.png",
+      "exercises": [
+        "md-0019"
+      ],
+      "kinds": [
+        "mathadata-image"
+      ],
+      "optional": false,
+      "activeCatalogue": true
+    },
+    {
+      "path": "static/mathadata/tex/png/md-0020_cor.png",
+      "exercises": [
+        "md-0020"
+      ],
+      "kinds": [
+        "mathadata-image"
+      ],
+      "optional": false,
+      "activeCatalogue": true
+    },
+    {
+      "path": "static/mathadata/tex/png/md-0021_cor.png",
+      "exercises": [
+        "md-0021"
+      ],
+      "kinds": [
+        "mathadata-image"
+      ],
+      "optional": false,
+      "activeCatalogue": true
+    },
+    {
+      "path": "static/mathadata/tex/png/md-0022_cor.png",
+      "exercises": [
+        "md-0022"
+      ],
+      "kinds": [
+        "mathadata-image"
+      ],
+      "optional": false,
+      "activeCatalogue": true
+    },
+    {
+      "path": "static/mathadata/tex/png/md-0023_cor.png",
+      "exercises": [
+        "md-0023"
+      ],
+      "kinds": [
+        "mathadata-image"
+      ],
+      "optional": false,
+      "activeCatalogue": true
+    },
+    {
+      "path": "static/mathadata/tex/png/md-0026_cor.png",
+      "exercises": [
+        "md-0026"
+      ],
+      "kinds": [
+        "mathadata-image"
+      ],
+      "optional": false,
+      "activeCatalogue": true
+    },
+    {
+      "path": "static/mathadata/tex/png/md-0027_cor.png",
+      "exercises": [
+        "md-0027"
+      ],
+      "kinds": [
+        "mathadata-image"
+      ],
+      "optional": false,
+      "activeCatalogue": true
+    },
+    {
+      "path": "static/mathadata/tex/png/md-0028_cor.png",
+      "exercises": [
+        "md-0028"
+      ],
+      "kinds": [
+        "mathadata-image"
+      ],
+      "optional": false,
+      "activeCatalogue": true
+    },
+    {
+      "path": "static/mathadata/tex/tex/jpg/images/image_2_rec_1.jpg",
+      "exercises": [],
+      "kinds": [
+        "latex-figure"
+      ],
+      "optional": false,
+      "referencedBy": [
+        "static/mathadata/tex/md-0007.tex"
+      ],
+      "activeCatalogue": true
+    },
+    {
+      "path": "static/mathadata/tex/tex/jpg/images/image_2_rec_2.jpg",
+      "exercises": [],
+      "kinds": [
+        "latex-figure"
+      ],
+      "optional": false,
+      "referencedBy": [
+        "static/mathadata/tex/md-0007.tex"
+      ],
+      "activeCatalogue": true
+    },
+    {
+      "path": "static/mathadata/tex/tex/jpg/images/image_2_rec_3.jpg",
+      "exercises": [],
+      "kinds": [
+        "latex-figure"
+      ],
+      "optional": false,
+      "referencedBy": [
+        "static/mathadata/tex/md-0007.tex"
+      ],
+      "activeCatalogue": true
+    },
+    {
+      "path": "static/mathadata/tex/tex/jpg/images/image_2_rec_4.jpg",
+      "exercises": [],
+      "kinds": [
+        "latex-figure"
+      ],
+      "optional": false,
+      "referencedBy": [
+        "static/mathadata/tex/md-0007.tex"
+      ],
+      "activeCatalogue": true
+    },
+    {
+      "path": "static/mathadata/tex/tex/jpg/images/image_2_rec_5.jpg",
+      "exercises": [],
+      "kinds": [
+        "latex-figure"
+      ],
+      "optional": false,
+      "referencedBy": [
+        "static/mathadata/tex/md-0007.tex"
+      ],
+      "activeCatalogue": true
+    },
+    {
+      "path": "static/mathadata/tex/tex/jpg/images/image_7_rec_1.jpg",
+      "exercises": [],
+      "kinds": [
+        "latex-figure"
+      ],
+      "optional": false,
+      "referencedBy": [
+        "static/mathadata/tex/md-0007.tex"
+      ],
+      "activeCatalogue": true
+    },
+    {
+      "path": "static/mathadata/tex/tex/jpg/images/image_7_rec_2.jpg",
+      "exercises": [],
+      "kinds": [
+        "latex-figure"
+      ],
+      "optional": false,
+      "referencedBy": [
+        "static/mathadata/tex/md-0007.tex"
+      ],
+      "activeCatalogue": true
+    },
+    {
+      "path": "static/mathadata/tex/tex/jpg/images/image_7_rec_3.jpg",
+      "exercises": [],
+      "kinds": [
+        "latex-figure"
+      ],
+      "optional": false,
+      "referencedBy": [
+        "static/mathadata/tex/md-0007.tex"
+      ],
+      "activeCatalogue": true
+    },
+    {
+      "path": "static/mathadata/tex/tex/jpg/images/image_7_rec_4.jpg",
+      "exercises": [],
+      "kinds": [
+        "latex-figure"
+      ],
+      "optional": false,
+      "referencedBy": [
+        "static/mathadata/tex/md-0007.tex"
+      ],
+      "activeCatalogue": true
+    },
+    {
+      "path": "static/mathadata/tex/tex/jpg/images/image_7_rec_5.jpg",
+      "exercises": [],
+      "kinds": [
+        "latex-figure"
+      ],
+      "optional": false,
+      "referencedBy": [
+        "static/mathadata/tex/md-0007.tex"
+      ],
+      "activeCatalogue": true
+    },
+    {
+      "path": "static/mathadata/tex/tex/png/images/dart1.png",
+      "exercises": [],
+      "kinds": [
+        "latex-figure"
+      ],
+      "optional": false,
+      "referencedBy": [
+        "static/mathadata/tex/md-0022.tex"
+      ],
+      "activeCatalogue": true
+    },
+    {
+      "path": "static/mathadata/tex/tex/png/images/dart2.png",
+      "exercises": [],
+      "kinds": [
+        "latex-figure"
+      ],
+      "optional": false,
+      "referencedBy": [
+        "static/mathadata/tex/md-0021.tex"
+      ],
+      "activeCatalogue": true
+    },
+    {
+      "path": "static/mathadata/tex/tex/png/images/zone_2_cara_image1.png",
+      "exercises": [],
+      "kinds": [
+        "latex-figure"
+      ],
+      "optional": false,
+      "referencedBy": [
+        "static/mathadata/tex/md-0006.tex",
+        "static/mathadata/tex/md-0024.tex"
+      ],
+      "activeCatalogue": true
+    },
+    {
+      "path": "static/mathadata/tex/tex/png/images/zone_2_cara_image2.png",
+      "exercises": [],
+      "kinds": [
+        "latex-figure"
+      ],
+      "optional": false,
+      "referencedBy": [
+        "static/mathadata/tex/md-0006.tex",
+        "static/mathadata/tex/md-0024.tex"
+      ],
+      "activeCatalogue": true
+    },
+    {
+      "path": "static/mathadata/tex/tex/png/images/zone_2_cara_image3.png",
+      "exercises": [],
+      "kinds": [
+        "latex-figure"
+      ],
+      "optional": false,
+      "referencedBy": [
+        "static/mathadata/tex/md-0006.tex",
+        "static/mathadata/tex/md-0024.tex"
+      ],
+      "activeCatalogue": true
+    },
+    {
+      "path": "static/mathadata/tex/tex/png/images/zone_2_cara_image4.png",
+      "exercises": [],
+      "kinds": [
+        "latex-figure"
+      ],
+      "optional": false,
+      "referencedBy": [
+        "static/mathadata/tex/md-0006.tex",
+        "static/mathadata/tex/md-0024.tex"
+      ],
+      "activeCatalogue": true
+    },
+    {
+      "path": "static/mathadata/tex/tex/png/images/zone_2_cara_image5.png",
+      "exercises": [],
+      "kinds": [
+        "latex-figure"
+      ],
+      "optional": false,
+      "referencedBy": [
+        "static/mathadata/tex/md-0006.tex",
+        "static/mathadata/tex/md-0024.tex"
+      ],
+      "activeCatalogue": true
+    },
+    {
+      "path": "static/mathadata/tex/tex/png/images/zone_2_cara_image6.png",
+      "exercises": [],
+      "kinds": [
+        "latex-figure"
+      ],
+      "optional": false,
+      "referencedBy": [
+        "static/mathadata/tex/md-0006.tex",
+        "static/mathadata/tex/md-0024.tex"
+      ],
+      "activeCatalogue": true
+    },
+    {
+      "path": "static/sti2d/2026/tex/png/sti2d_2026_06_antilles_j2_maths_cor.png",
+      "exercises": [
+        "sti2d_2026_06_antilles_j2_maths"
+      ],
+      "kinds": [
+        "correction-image"
+      ],
+      "optional": false,
+      "activeCatalogue": true
+    },
+    {
+      "path": "static/sti2d/2026/tex/png/sti2d_2026_06_antilles_j2_pcm_cor.png",
+      "exercises": [
+        "sti2d_2026_06_antilles_j2_pcm"
+      ],
+      "kinds": [
+        "correction-image"
+      ],
+      "optional": false,
+      "activeCatalogue": true
+    },
+    {
+      "path": "static/sti2d/2026/tex/png/sti2d_2026_06_metropole_j2_maths_cor.png",
+      "exercises": [
+        "sti2d_2026_06_metropole_j2_maths"
+      ],
+      "kinds": [
+        "correction-image"
+      ],
+      "optional": false,
+      "activeCatalogue": true
+    },
+    {
+      "path": "static/sti2d/2026/tex/png/sti2d_2026_06_metropole_j2_pcm_cor.png",
+      "exercises": [
+        "sti2d_2026_06_metropole_j2_pcm"
+      ],
+      "kinds": [
+        "correction-image"
+      ],
+      "optional": false,
+      "activeCatalogue": true
+    },
+    {
+      "path": "static/sti2d/2026/tex/png/sti2d_2026_06_polynesie_j2_maths_cor.png",
+      "exercises": [
+        "sti2d_2026_06_polynesie_j2_maths"
+      ],
+      "kinds": [
+        "correction-image"
+      ],
+      "optional": false,
+      "activeCatalogue": true
+    },
+    {
+      "path": "static/sti2d/2026/tex/png/sti2d_2026_06_polynesie_j2_pcm_cor.png",
+      "exercises": [
+        "sti2d_2026_06_polynesie_j2_pcm"
+      ],
+      "kinds": [
+        "correction-image"
+      ],
+      "optional": false,
+      "activeCatalogue": true
+    },
+    {
+      "path": "static/sti2d/2026/tex/sti2d_2026_06_antilles_j2_maths_cor.tex",
+      "exercises": [
+        "sti2d_2026_06_antilles_j2_maths"
+      ],
+      "kinds": [
+        "correction-tex"
+      ],
+      "optional": false,
+      "activeCatalogue": true
+    },
+    {
+      "path": "static/sti2d/2026/tex/sti2d_2026_06_antilles_j2_pcm_cor.tex",
+      "exercises": [
+        "sti2d_2026_06_antilles_j2_pcm"
+      ],
+      "kinds": [
+        "correction-tex"
+      ],
+      "optional": false,
+      "activeCatalogue": true
+    },
+    {
+      "path": "static/sti2d/2026/tex/sti2d_2026_06_metropole_j2_maths_cor.tex",
+      "exercises": [
+        "sti2d_2026_06_metropole_j2_maths"
+      ],
+      "kinds": [
+        "correction-tex"
+      ],
+      "optional": false,
+      "activeCatalogue": true
+    },
+    {
+      "path": "static/sti2d/2026/tex/sti2d_2026_06_metropole_j2_pcm_cor.tex",
+      "exercises": [
+        "sti2d_2026_06_metropole_j2_pcm"
+      ],
+      "kinds": [
+        "correction-tex"
+      ],
+      "optional": false,
+      "activeCatalogue": true
+    },
+    {
+      "path": "static/sti2d/2026/tex/sti2d_2026_06_polynesie_j2_maths_cor.tex",
+      "exercises": [
+        "sti2d_2026_06_polynesie_j2_maths"
+      ],
+      "kinds": [
+        "correction-tex"
+      ],
+      "optional": false,
+      "activeCatalogue": true
+    },
+    {
+      "path": "static/sti2d/2026/tex/sti2d_2026_06_polynesie_j2_pcm_cor.tex",
+      "exercises": [
+        "sti2d_2026_06_polynesie_j2_pcm"
+      ],
+      "kinds": [
+        "correction-tex"
+      ],
+      "optional": false,
+      "activeCatalogue": true
+    },
+    {
+      "path": "static/stl/2025/tex/png/stl_2025_06_metropole_maths.png",
+      "exercises": [
+        "stl_2025_06_metropole_maths"
+      ],
+      "kinds": [
+        "statement-image"
+      ],
+      "optional": false,
+      "activeCatalogue": true
+    },
+    {
+      "path": "static/stl/2025/tex/png/stl_2025_06_metropole_maths_cor.png",
+      "exercises": [
+        "stl_2025_06_metropole_maths"
+      ],
+      "kinds": [
+        "correction-image"
+      ],
+      "optional": false,
+      "activeCatalogue": true
+    },
+    {
+      "path": "static/stl/2025/tex/png/stl_2025_06_metropole_mq1.png",
+      "exercises": [
+        "stl_2025_06_metropole_mq1"
+      ],
+      "kinds": [
+        "statement-image"
+      ],
+      "optional": false,
+      "activeCatalogue": true
+    },
+    {
+      "path": "static/stl/2025/tex/png/stl_2025_06_metropole_mq1_cor.png",
+      "exercises": [
+        "stl_2025_06_metropole_mq1"
+      ],
+      "kinds": [
+        "correction-image"
+      ],
+      "optional": false,
+      "activeCatalogue": true
+    },
+    {
+      "path": "static/stl/2025/tex/png/stl_2025_06_metropole_mq2.png",
+      "exercises": [
+        "stl_2025_06_metropole_mq2"
+      ],
+      "kinds": [
+        "statement-image"
+      ],
+      "optional": false,
+      "activeCatalogue": true
+    },
+    {
+      "path": "static/stl/2025/tex/png/stl_2025_06_metropole_mq2_cor.png",
+      "exercises": [
+        "stl_2025_06_metropole_mq2"
+      ],
+      "kinds": [
+        "correction-image"
+      ],
+      "optional": false,
+      "activeCatalogue": true
+    },
+    {
+      "path": "static/stl/2025/tex/png/stl_2025_06_metropole_mq3.png",
+      "exercises": [
+        "stl_2025_06_metropole_mq3"
+      ],
+      "kinds": [
+        "statement-image"
+      ],
+      "optional": false,
+      "activeCatalogue": true
+    },
+    {
+      "path": "static/stl/2025/tex/png/stl_2025_06_metropole_mq3_cor.png",
+      "exercises": [
+        "stl_2025_06_metropole_mq3"
+      ],
+      "kinds": [
+        "correction-image"
+      ],
+      "optional": false,
+      "activeCatalogue": true
+    },
+    {
+      "path": "static/stl/2025/tex/png/stl_2025_06_metropole_mq4.png",
+      "exercises": [
+        "stl_2025_06_metropole_mq4"
+      ],
+      "kinds": [
+        "statement-image"
+      ],
+      "optional": false,
+      "activeCatalogue": true
+    },
+    {
+      "path": "static/stl/2025/tex/png/stl_2025_06_metropole_mq4_cor.png",
+      "exercises": [
+        "stl_2025_06_metropole_mq4"
+      ],
+      "kinds": [
+        "correction-image"
+      ],
+      "optional": false,
+      "activeCatalogue": true
+    },
+    {
+      "path": "static/stl/2025/tex/png/stl_2025_06_metropole_pcm.png",
+      "exercises": [
+        "stl_2025_06_metropole_pcm"
+      ],
+      "kinds": [
+        "statement-image"
+      ],
+      "optional": false,
+      "activeCatalogue": true
+    },
+    {
+      "path": "static/stl/2025/tex/png/stl_2025_06_metropole_pcm_cor.png",
+      "exercises": [
+        "stl_2025_06_metropole_pcm"
+      ],
+      "kinds": [
+        "correction-image"
+      ],
+      "optional": false,
+      "activeCatalogue": true
+    },
+    {
+      "path": "static/stl/2025/tex/stl_2025_06_metropole_maths.tex",
+      "exercises": [
+        "stl_2025_06_metropole_maths"
+      ],
+      "kinds": [
+        "statement-tex"
+      ],
+      "optional": false,
+      "activeCatalogue": true
+    },
+    {
+      "path": "static/stl/2025/tex/stl_2025_06_metropole_maths_cor.tex",
+      "exercises": [
+        "stl_2025_06_metropole_maths"
+      ],
+      "kinds": [
+        "correction-tex"
+      ],
+      "optional": false,
+      "activeCatalogue": true
+    },
+    {
+      "path": "static/stl/2025/tex/stl_2025_06_metropole_mq1.tex",
+      "exercises": [
+        "stl_2025_06_metropole_mq1"
+      ],
+      "kinds": [
+        "statement-tex"
+      ],
+      "optional": false,
+      "activeCatalogue": true
+    },
+    {
+      "path": "static/stl/2025/tex/stl_2025_06_metropole_mq1_cor.tex",
+      "exercises": [
+        "stl_2025_06_metropole_mq1"
+      ],
+      "kinds": [
+        "correction-tex"
+      ],
+      "optional": false,
+      "activeCatalogue": true
+    },
+    {
+      "path": "static/stl/2025/tex/stl_2025_06_metropole_mq2.tex",
+      "exercises": [
+        "stl_2025_06_metropole_mq2"
+      ],
+      "kinds": [
+        "statement-tex"
+      ],
+      "optional": false,
+      "activeCatalogue": true
+    },
+    {
+      "path": "static/stl/2025/tex/stl_2025_06_metropole_mq2_cor.tex",
+      "exercises": [
+        "stl_2025_06_metropole_mq2"
+      ],
+      "kinds": [
+        "correction-tex"
+      ],
+      "optional": false,
+      "activeCatalogue": true
+    },
+    {
+      "path": "static/stl/2025/tex/stl_2025_06_metropole_mq3.tex",
+      "exercises": [
+        "stl_2025_06_metropole_mq3"
+      ],
+      "kinds": [
+        "statement-tex"
+      ],
+      "optional": false,
+      "activeCatalogue": true
+    },
+    {
+      "path": "static/stl/2025/tex/stl_2025_06_metropole_mq3_cor.tex",
+      "exercises": [
+        "stl_2025_06_metropole_mq3"
+      ],
+      "kinds": [
+        "correction-tex"
+      ],
+      "optional": false,
+      "activeCatalogue": true
+    },
+    {
+      "path": "static/stl/2025/tex/stl_2025_06_metropole_mq4.tex",
+      "exercises": [
+        "stl_2025_06_metropole_mq4"
+      ],
+      "kinds": [
+        "statement-tex"
+      ],
+      "optional": false,
+      "activeCatalogue": true
+    },
+    {
+      "path": "static/stl/2025/tex/stl_2025_06_metropole_mq4_cor.tex",
+      "exercises": [
+        "stl_2025_06_metropole_mq4"
+      ],
+      "kinds": [
+        "correction-tex"
+      ],
+      "optional": false,
+      "activeCatalogue": true
+    },
+    {
+      "path": "static/stl/2025/tex/stl_2025_06_metropole_pcm.tex",
+      "exercises": [
+        "stl_2025_06_metropole_pcm"
+      ],
+      "kinds": [
+        "statement-tex"
+      ],
+      "optional": false,
+      "activeCatalogue": true
+    },
+    {
+      "path": "static/stl/2025/tex/stl_2025_06_metropole_pcm_cor.tex",
+      "exercises": [
+        "stl_2025_06_metropole_pcm"
+      ],
+      "kinds": [
+        "correction-tex"
+      ],
+      "optional": false,
+      "activeCatalogue": true
+    },
+    {
+      "path": "static/stl/2026/tex/png/stl_2026_06_antilles_j2_mq1_cor.png",
+      "exercises": [
+        "stl_2026_06_antilles_j2_mq1"
+      ],
+      "kinds": [
+        "correction-image"
+      ],
+      "optional": false,
+      "activeCatalogue": true
+    },
+    {
+      "path": "static/stl/2026/tex/png/stl_2026_06_antilles_j2_mq2_cor.png",
+      "exercises": [
+        "stl_2026_06_antilles_j2_mq2"
+      ],
+      "kinds": [
+        "correction-image"
+      ],
+      "optional": false,
+      "activeCatalogue": true
+    },
+    {
+      "path": "static/stl/2026/tex/png/stl_2026_06_metropole_j2_mq1_cor.png",
+      "exercises": [
+        "stl_2026_06_metropole_j2_mq1"
+      ],
+      "kinds": [
+        "correction-image"
+      ],
+      "optional": false,
+      "activeCatalogue": true
+    },
+    {
+      "path": "static/stl/2026/tex/png/stl_2026_06_metropole_j2_mq2_cor.png",
+      "exercises": [
+        "stl_2026_06_metropole_j2_mq2"
+      ],
+      "kinds": [
+        "correction-image"
+      ],
+      "optional": false,
+      "activeCatalogue": true
+    },
+    {
+      "path": "static/stl/2026/tex/stl_2026_06_antilles_j2_mq1_cor.tex",
+      "exercises": [
+        "stl_2026_06_antilles_j2_mq1"
+      ],
+      "kinds": [
+        "correction-tex"
+      ],
+      "optional": false,
+      "activeCatalogue": true
+    },
+    {
+      "path": "static/stl/2026/tex/stl_2026_06_antilles_j2_mq2_cor.tex",
+      "exercises": [
+        "stl_2026_06_antilles_j2_mq2"
+      ],
+      "kinds": [
+        "correction-tex"
+      ],
+      "optional": false,
+      "activeCatalogue": true
+    },
+    {
+      "path": "static/stl/2026/tex/stl_2026_06_metropole_j2_mq1_cor.tex",
+      "exercises": [
+        "stl_2026_06_metropole_j2_mq1"
+      ],
+      "kinds": [
+        "correction-tex"
+      ],
+      "optional": false,
+      "activeCatalogue": true
+    },
+    {
+      "path": "static/stl/2026/tex/stl_2026_06_metropole_j2_mq2_cor.tex",
+      "exercises": [
+        "stl_2026_06_metropole_j2_mq2"
+      ],
+      "kinds": [
+        "correction-tex"
+      ],
+      "optional": false,
+      "activeCatalogue": true
+    }
+  ],
+  "invalidImageReferences": [
+    {
+      "path": "static/crpe/2022/2022_g4_ex1.tex",
+      "exercises": [
+        "crpe_2022_g4_ex1"
+      ],
+      "kinds": [
+        "statement-image"
+      ],
+      "optional": false
+    },
+    {
+      "path": "static/crpe/2022/2022_g4_ex1_corr.tex",
+      "exercises": [
+        "crpe_2022_g4_ex1"
+      ],
+      "kinds": [
+        "correction-image"
+      ],
+      "optional": false
+    },
+    {
+      "path": "static/crpe/2022/2022_g4_ex2.tex",
+      "exercises": [
+        "crpe_2022_g4_ex2"
+      ],
+      "kinds": [
+        "statement-image"
+      ],
+      "optional": false
+    },
+    {
+      "path": "static/crpe/2022/2022_g4_ex2_corr.tex",
+      "exercises": [
+        "crpe_2022_g4_ex2"
+      ],
+      "kinds": [
+        "correction-image"
+      ],
+      "optional": false
+    },
+    {
+      "path": "static/crpe/2022/2022_g4_ex3.tex",
+      "exercises": [
+        "crpe_2022_g4_ex3"
+      ],
+      "kinds": [
+        "statement-image"
+      ],
+      "optional": false
+    },
+    {
+      "path": "static/crpe/2022/2022_g4_ex3_corr.tex",
+      "exercises": [
+        "crpe_2022_g4_ex3"
+      ],
+      "kinds": [
+        "correction-image"
+      ],
+      "optional": false
+    },
+    {
+      "path": "static/crpe/2022/2022_g4_ex4.tex",
+      "exercises": [
+        "crpe_2022_g4_ex4"
+      ],
+      "kinds": [
+        "statement-image"
+      ],
+      "optional": false
+    },
+    {
+      "path": "static/crpe/2022/2022_g4_ex4_corr.tex",
+      "exercises": [
+        "crpe_2022_g4_ex4"
+      ],
+      "kinds": [
+        "correction-image"
+      ],
+      "optional": false
+    }
+  ],
+  "missingActiveCatalogue": 130,
+  "verifiedFiles": 9206,
+  "verifiedBytes": 1504983785
+}

@@ -1,0 +1,52 @@
+{
+  "questions": [
+       {
+      "themes": "Racines carrées",
+      "level": "4",
+      "id": "rac1",
+      "title": "Racine carrée",
+      "question": "Pour $a\\lt 0$, $\\sqrt{a}^2=$",
+      "answer": "a",
+      "keys": ["a"]
+    },
+    {
+      "themes": "Racines carrées",
+      "level": "2",
+      "id": "rac2",
+      "title": "Racine carrée",
+      "question": "Pour tout réel $a$, $\\sqrt{a^2}=$",
+      "answer": "\\|a\\|",
+      "keys": ["a", "NORM"]
+    },
+    {
+      "themes": "Racines carrées",
+      "level": "2",
+      "id": "rac3",
+      "title": "Racine carrée d'un produit",
+      "question": "Pour tout réel positifs $a$ et $b$, $\\sqrt{a\\times b}=$",
+      "answer": "\\sqrt{a}\\times\\sqrt{b}",
+      "keys": ["a", "b", "\\lt", "\\gt", "\\neq"]
+    },
+    {
+      "themes": "Racines carrées",
+      "level": "2",
+      "id": "rac4",
+      "title": "Racine carrée d'un quotient",
+      "question": "Pour tout réel positifs $a$ et $b$, avec $b$ non nul, $\\sqrt{\\dfrac{a}{b}}=$",
+      "answer": "\\dfrac{\\sqrt{a}}{\\sqrt{b}}",
+      "keys": ["a", "b", "\\lt", "\\gt", "\\neq"]
+    },
+    {
+      "themes": "Racines carrées",
+      "level": "2",
+      "id": "rac5",
+      "title": "Racine carrée d'une somme",
+      "question": "Pour tout réel strictements positifs $a$ et $b$, $\\sqrt{a+b}$",
+      "answer": [
+        "\\sqrt{a+b}\\lt\\sqrt{a}+\\sqrt{b}",
+        "\\sqrt{a+b}\\neq\\sqrt{a}+\\sqrt{b}"
+      ],
+      "keys": ["a", "\\lt", "\\gt", "\\neq"]
+    }
+  ]
+}

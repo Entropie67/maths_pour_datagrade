@@ -1,0 +1,70 @@
+
+\medskip
+
+%Un club de natation propose un après-midi découverte pour les enfants. 
+%
+%\bigskip
+
+\textbf{PARTIE A}
+
+\medskip
+
+%La présidente du club veut offrir des petits sachets cadeaux tous identiques contenant des autocollants et des drapeaux avec le logo du club. Elle a acheté 330 autocollants et 132 drapeaux et veut tous les utiliser. Elle veut que, dans chaque sachet, il y ait exactement le même nombre d'autocollants et que, dans chaque sachet, il y ait exactement le même nombre de drapeaux.
+
+\medskip
+
+\begin{enumerate}
+\item %Pourquoi n'est-il pas possible de faire 15 sachets ?
+On a $\dfrac{330}{15} = \dfrac{66}{3} = 22$, mais $\dfrac{132}{15} = \dfrac{3 \times 44}{3 \times 5} = \dfrac{44}{5} = 8,8$ qui n'est pas entier.
+
+On ne peut donc pas faire 15 sachets car 132 n'est pas un multiple de 15.
+\item 
+	\begin{enumerate}
+		\item %Décomposer 330 et 132 en produits de facteurs premiers.
+On a $330 = 33 \times 10 = 3 \times 11 \times 2 \times 5 = 2 \times 3\times 5\times 11$ et 
+
+$132 = 6 \times 22 = 2 \times 3 \times  2  \times 11 = 2^2 \times 3\times 11$.
+
+		\item On constate que 330 et 132 ont en commun dans leur écriture sous forme de produits de nombres premiers un facteur 2, un facteur 3 et un facteur 11 : ils sont donc tous les deux multiples de $2 \times 3\times 11 = 6 \times 11 = 66$.
+%En déduire le plus grand nombre de sachets que la présidente pourra réaliser.
+
+La présidente pourra donc faire 66 sachets. 
+		\item %Dans ce cas, combien mettra-t-elle d'autocollants et de drapeaux dans chaque sachet ?
+Comme $330 = 66 \times 5$ et $132 = 66 \times 2$, chaque sachet contiendra 5 autocollants et 2 drapeaux.
+	\end{enumerate}
+\end{enumerate}
+
+\bigskip
+
+\textbf{PARTIE B}
+
+\medskip
+
+%La piscine a la forme d'un pavé droit représenté ci-dessous.
+%
+%\begin{minipage}{7cm}
+%Elle est remplie aux $\dfrac{9}{10}$ du volume.
+%
+%1 m$^3$ d'eau coûte 4,14~\euro.
+%
+%Combien coûte le remplissage de la piscine ?
+%\end{minipage}\hfill
+%\begin{minipage}{7cm}
+%\psset{unit=1cm,arrowsize=2pt 3}
+%\begin{pspicture}(6,4.4)
+%%\psgrid
+%\psframe(2,0.5)(5.5,2.1)%face avant
+%\psline(5.5,2.1)(4,3.9)(0.8,3.9)(2,2.1)%haut
+%\psline(2,0.5)(0.8,2.3)(0.8,3.9)(2,2.1)%gauche
+%\psline[linestyle=dashed](0.8,2.3)(4,2.3)(4,3.9)
+%\psline[linestyle=dashed](4,2.3)(5.5,0.5)
+%\psline[linewidth=0.6pt]{<->}(2,0.4)(5.5,0.4)\uput[d](3.75,0.4){15 m}
+%\psline[linewidth=0.6pt]{<->}(5.6,0.5)(5.6,2.1)\uput[r](5.6,1.3){2 m}
+%\psline[linewidth=0.6pt]{<->}(1.9,0.4)(0.7,2.2)\uput[dl](1.3,1.3){25 m}
+%\end{pspicture}
+%\end{minipage}
+Le volume de la piscine est $V = 25 \times 15 \times 2 = 25 \times 2 \times 15 = 50 \times 15 = 750~\left(\text{m}^3\right)$.
+
+On met dans cette piscine : $750 \times \dfrac{9}{10} = 75 \times 9 = 675~\left(\text{m}^3\right)$ d'eau.
+
+Remplir la piscine coûtera donc : $675 \times 4,14 = \np{2794,50}$~\euro.

@@ -1,0 +1,119 @@
+{
+  "questions": [
+   {
+      "themes": "Probabilités",
+      "level": "2",
+      "id": "proba1",
+      "title": "Formule du crible",
+      "question": "Compléter l'égalité pour deux évènements quelconques $A$ et $B$ : $P(A \\cup B) = \\ldots$",
+      "answer": ["P(A) + P(B) - P(A \\cap B)"],
+      "keys": ["P", "A", "B", "\\cap", "\\cup"],
+       "comparison": "expressionsForcementReduites"
+    },
+    {
+      "themes": "Probabilités",
+      "level": "2",
+      "id": "proba2",
+      "title": "Evènements indépendants",
+      "question": "Compléter l'égalité pour deux évènements indépendants $A$ et $B$ : $P(A \\cap B) = \\ldots$",
+      "answer": ["P(A) \\times P(B)"],
+      "keys": ["P", "A", "B", "\\cap", "\\cup"]
+    },
+    {
+      "themes": "Probabilités",
+      "level": "2",
+      "id": "proba3",
+      "type": "text",
+      "title": "Évènements incompatibles",
+      "question": "Si $P(A \\cap B) = 0$ alors $A$ et $B$ sont",
+      "answer": ["incompatibles", "incompatible"],
+      "badPropositions": [
+        "indépendants",
+        "impossibles",
+        "irréalisables"
+      ]
+    },
+    {
+      "themes": "Probabilités",
+      "level": "2",
+      "id": "proba4",
+      "type": "qcm",
+      "title": "Évènements incompatibles (QCM)",
+      "question": "Si $P(A \\cap B) = 0$ alors $A$ et $B$ sont",
+      "answer": ["incompatibles"],
+      "badPropositions": [
+        "indépendants",
+        "impossibles",
+        "irréalisables"
+      ]
+    },
+    {
+      "themes": "Probabilités",
+      "level": "2",
+      "id": "proba5",
+      "type": "qcm",
+      "title": "Évènements indépendants (QCM)",
+      "question": "Si $P(A \\cap B) = P(A)\\times P(B)$ alors $A$ et $B$ sont",
+      "answer": ["indépendants"],
+      "badPropositions": [
+        "impossibles",
+        "incompatibles",
+        "irréalisables"
+      ]
+    },
+    {
+      "themes": "Probabilités",
+      "level": "2",
+      "id": "proba6",
+      "type": "text",
+      "title": "Évènements indépendants",
+      "question": "Si $P(A \\cap B) = P(A)\\times P(B)$ alors $A$ et $B$ sont",
+      "answer": ["indépendants"],
+      "badPropositions": [
+        "impossibles",
+        "incompatibles",
+        "irréalisables"
+      ]
+    },
+    {
+      "themes": "Probabilités",
+      "level": "1",
+      "id": "proba7",
+      "title": "Définition de la probabilité conditionnelle",
+      "question": "Donner la définition de la probabilité de $P_A(B)$ .",
+      "answer": ["\\dfrac{P(A \\cap B)}{P(A)}","P_A(B)=\\dfrac{P(A \\cap B)}{P(A)}"],
+      "keys": ["P", "A", "B", "INDICE", "\\cap", "\\cup"]
+    },
+    {
+      "themes": "Probabilités",
+      "level": "1",
+      "id": "proba8",
+      "title": "Formule des probabilités totales",
+      "question": "On considère $2$ évènements $A$ et $B$. Donner la formule des probabilités totales $P(B)$.",
+      "answer": [
+        "P(A\\cap B)+P(\\overline{A}\\cap B)",
+        "P(A)\\times P_A(B)+P(\\overline{A})\\times P_{\\overline{A}}(B)"
+      ],
+      "keys": [
+        "P","A","B","\\overline A","\\overline B","\\cap","\\cup","INDICE"]
+    },
+    {
+      "themes": "Probabilités",
+      "level": "1",
+      "id": "proba9",
+      "title": "Formule de Bayes",
+      "question": "Donner la formule de Bayes pour $P_A(B)$.",
+      "answer": ["\\dfrac{P_B(A)\\times P(B)}{P(B)}"],
+      "keys": ["P", "A", "B", "INDICE", "\\cap", "\\cup"]
+    },
+    {
+      "themes": "Probabilités",
+      "level": "1",
+      "id": "proba10",
+      "title": "Indépendance et probabilité conditionnelle",
+      "question": "Que vaut $P_B(A)$ si $A$ et $B$ sont indépendants ?",
+      "answer": ["P(A)"],
+      "keys": ["P", "A", "B", "INDICE"]
+    }
+  ]
+}

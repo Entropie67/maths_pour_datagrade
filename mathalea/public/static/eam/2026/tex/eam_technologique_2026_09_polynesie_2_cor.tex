@@ -1,0 +1,52 @@
+%Au 1\up{er} janvier 2025, une réserve d’eau naturelle contient \np[m^3]{3000} d'eau.
+%
+%Une étude indique que la réserve perd chaque année 10~\% du volume d'eau qu'elle avait en début d'année.
+%
+%On modélise l'évolution du volume d'eau de cette réserve par une suite $\left(u_n\right)$, où $u_n$ désigne la quantité d'eau, exprimée en mètres cubes, contenue dans la réserve au 1\up{er} janvier de l'année $2025 + n$.
+%
+%On a donc $u_0 = \np{3000}$.
+
+\begin{enumerate}
+  \item 
+%  Montrer que $u_1 = \np{2700}$.
+Chaque année, le volume diminue de 10\%. Comme 10\% de \np{3000} c'est 300 (le dixième), le volume de la réserve sera égal à \mbox{$\np{3000}-300=\np{2700}$} au 1\up{er} janvier 2026, et donc \mbox{$u_1=\np{2700}$}.
+  \item 
+%  Pour tout entier naturel $n$, exprimer $u_{n+1}$ en fonction de $u_n$ .
+Enlever 10\% d'une quantité revient à multiplier celle-ci par \mbox{$1-\dfrac{10}{100}=\np{0.9}$}.
+
+Donc, pour tout \mbox{$n \in \N, u_{n+1}=\np{0.9}u_n$}.
+  \item 
+%  Quelle est la nature de la suite $(u_n)$ ? Préciser sa raison.
+\mbox{$(u_n)$} est donc une suite géométrique (relation de récurrence multiplicative), et sa raison est \np{0.9}.
+  \item 
+%  Dans la feuille de calcul suivante on a calculé les premiers termes de la suite $(u_n)$. Le format des cellules de la ligne 2 permet d’afficher les nombres arrondis à l’unité.
+%
+%\begin{center}  
+%\begin{minipage}{.6\linewidth}\renewcommand{\arraystretch}{1.15}
+%\helvbx
+%\begin{tblr}{
+%	row{1} = {gray9,c,m},
+%	row{2} = {c},
+%	row{3} = {c},
+%	column{1} = {gray9,c,m},
+%	hlines,vlines,
+%	}
+%    & A & B & C & D & E & F & G & H & I  \\
+%  1 & $n$ & 0 & 1 & 2 & 3 & 4 & 5 & 6 & 7  \\
+%  2 & $u_n$ & 3000 & 2700 & 2430 & 2187 & 1968 & 1771 & 1594 & 1435 
+%\end{tblr}
+%\end{minipage}
+%\end{center}
+%
+%Quelle formule a été saisie en cellule {\helvbx C2} afin d'obtenir, par glisser-coller vers
+%la droite, les premiers termes de la suite $(u_n)$ ?
+On a utilisé dans la cellule \textbf{C2} la relation de récurrence, pour écrire \texttt{=0,9*B2}.
+  \item 
+%  Pour assurer la sécurité de la lutte contre les incendies on estime que la réserve doit contenir au moins \np[m^3]{2000}.
+%
+%D’après le tableau précédent, à partir de quelle année la quantité d’eau dans la réserve deviendra insuffisante ?
+D'après le tableau, la quantité d'eau devient inférieure à \np[~m^3]{2000} pour \mbox{$n=4$} : c'est donc à partir du 1\up{er} janvier 2029 que la quantité d’eau dans la réserve deviendra insuffisante.
+\end{enumerate}  
+
+\needspace{10\baselineskip}
+% saut de page si moins de 10 lignes disponibles

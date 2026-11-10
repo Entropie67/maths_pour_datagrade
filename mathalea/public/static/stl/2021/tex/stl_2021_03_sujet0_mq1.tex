@@ -1,0 +1,66 @@
+
+\medskip
+
+\begin{center}
+\psset{xunit=1cm,yunit=1cm,labelFontSize=\scriptstyle,comma=true}
+\begin{pspicture}(-1,-0.75)(11,3.75)
+\multido{\n=0+1}{11}{\psline[linewidth=0.75pt,linecolor=lightgray](\n,0)(\n,3.5)}
+\multido{\n=0+1}{4}{\psline[linewidth=0.75pt,linecolor=lightgray](0,\n)(10.25,\n)}
+\psframe[linewidth=0.8pt, linecolor=gray](9,0)(9.3,0.3)
+\psaxes[linewidth=0.8pt,Dx=1,Dy=1]{->}(0,0)(10.25,3.5)
+\psplot[linewidth=0.75pt, linestyle=dashed]{0}{4.5}{x 1 sub}
+\psplot[linewidth=0.75pt, linestyle=dashed]{-0.75}{10.25}{9 ln}
+\pstVerb{ /xmax 9 ln 1 add def }
+\pscustom[fillstyle=solid,fillcolor=cyan!30,linestyle=none]{
+	\psplot[plotpoints=1000]{1}{9}{x ln}
+	\psplot[plotpoints=1000]{9}{xmax}{9 ln}
+	\psplot[plotpoints=1000]{xmax}{1}{x 1 sub}
+	\closepath
+}
+\pscustom[fillstyle=solid,fillcolor=cyan!30,linestyle=none]{
+	\psplot[plotpoints=1000]{1}{9}{x ln}
+	\psline(9,0)
+	\psplot[plotpoints=1000]{9}{1}{0}
+	\closepath
+}
+\psplot[plotpoints=1000,linewidth=1.25pt,linecolor=blue]{1}{9}{x ln}
+\psplot[plotpoints=1000,linewidth=1.25pt,linecolor=blue]{1}{xmax}{x 1 sub}
+\psplot[plotpoints=1000,linewidth=1.25pt,linecolor=blue]{xmax}{9}{9 ln}
+\psplot[plotpoints=1000,linewidth=1.25pt,linecolor=blue]{1}{9}{0}
+\psline[linecolor=blue,linewidth=1.25pt](9,0)(!9 9 ln)
+\uput[ul](4,3){$T$}\uput[ul](1,0){A}\uput[dr](9,0){B}\uput[ur](!9 9 ln){C}\uput[ul](!xmax 9 ln){D}\uput[ur](5.4,2.4){$C_f$}
+\psline[arrows=->,linewidth=1pt](5.5,2.5)(!5 5 ln)
+\psdot[dotsize=4pt,linecolor=red](1,0)
+\psdot[dotsize=4pt,linecolor=red](9,0)
+\psdot[dotsize=4pt,linecolor=red](!9 9 ln)
+\psdot[dotsize=4pt,linecolor=red](!xmax 9 ln)
+\end{pspicture}
+\end{center}
+
+\begin{itemize}
+\item Sur la figure ci-dessus, l'unité de longueur est le centimètre ;
+\item la courbe $C_f$ tracée est celle de la fonction $f$ définie sur $[1~;~9]$ par $f(x) = \ln(x)$ ;
+\item la droite $T$ est la tangente à la courbe $C_f$ au point A d'abscisse 1 ;
+\item le point B a pour coordonnées $(9~;~0)$ ;
+\item C est le point de $C_f$ d'abscisse 9 ;
+\item la parallèle à l'axe des abscisses passant par C coupe la droite $T$ au point D.
+\end{itemize}
+
+\smallskip
+
+Calcul de l'aire $A_1$ du trapèze ABCD :
+\begin{enumerate}
+\item Justifier que la tangente $T$ a pour équation réduite $y = x - 1$.
+\end{enumerate}
+
+\smallskip
+
+On admet que le point D a pour coordonnées : $(2 \ln(3) + 1~;~2 \ln(3))$.
+
+\begin{enumerate}[resume]
+\item Démontrer que la valeur de $A_1$, exprimée en cm$^2$, est égale à :
+\[16 \ln(3) - 2 (\ln(3))^2.\]
+\end{enumerate}
+
+\bigskip
+

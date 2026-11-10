@@ -1,0 +1,203 @@
+{
+  "2N1": {
+    "titre": "Manipuler les nombres réels"
+  },
+  "2N10": {
+    "titre": "Associer à chaque point de la droite graduée un unique nombre réel et réciproquement"
+  },
+  "2N11": {
+    "titre": "Représenter un intervalle de la droite numérique. Déterminer si un nombre réel appartient à un intervalle donné"
+  },
+  "2N12": {
+    "titre": "Donner un encadrement, d'amplitude donnée, d'un nombre réel par des décimaux"
+  },
+  "2N13": {
+    "titre": "Dans le cadre de la résolution de problèmes, arrondir en donnant le nombre de chiffres significatifs adapté à la situation étudiée"
+  },
+  "2N14": {
+    "titre": "Connaître Les ensembles de nombres"
+  },
+  "2N15": {
+    "titre": "Connaître et utiliser la notation |a|"
+  },
+  "2N2": {
+    "titre": "Utiliser les notions de multiple, diviseur et de nombre premier"
+  },
+  "2N20": {
+    "titre": "Modéliser et résoudre des problèmes mobilisant les notions de multiple, de diviseur, de nombre pair, de nombre impair, de nombre premier"
+  },
+  "2N3": {
+    "titre": "Utiliser les fractions, les puissances et les racines carrées"
+  },
+  "2N30": {
+    "titre": "Effectuer des calculs numériques mettant en jeu des écritures fractionnaires"
+  },
+  "2N31": {
+    "titre": "Effectuer des calculs numériques mettant en jeu des puissances"
+  },
+  "2N32": {
+    "titre": "Effectuer des calculs numériques mettant en jeu des racines carrées"
+  },
+  "2N4": {
+    "titre": "Utiliser le calcul littéral"
+  },
+  "2N40": {
+    "titre": "Les bases du calcul littéral"
+  },
+  "2N41": {
+    "titre": "Factoriser, développer avec, ou sans, les identités remarquables"
+  },
+  "2N42": {
+    "titre": "Utiliser le calcul littéral"
+  },
+  "2N5": {
+    "titre": "Équations"
+  },
+  "2N50": {
+    "titre": "Modéliser un problème par une équation"
+  },
+  "2N51": {
+    "titre": "Résoudre une équation du premier degré"
+  },
+  "2N52": {
+    "titre": "Résoudre une équation avec un produit nul"
+  },
+  "2N6": {
+    "titre": "Inéquations"
+  },
+  "2N60": {
+    "titre": "Résoudre une inéquation du premier degré"
+  },
+  "2N61": {
+    "titre": "Résoudre une inéquation produit"
+  },
+  "2G1": {
+    "titre": "Les bases en géométrie"
+  },
+  "2G10": {
+    "titre": "Connaître les définitions et propriétés de bases en géométrie plane"
+  },
+  "2G12": {
+    "titre": "Calculer la distance entre deux points. Calculer les coordonnées du milieu d'un segment"
+  },
+  "2G13": {
+    "titre": "Traiter des problèmes d'optimisation"
+  },
+  "2G2": {
+    "titre": "Les vecteurs"
+  },
+  "2G20": {
+    "titre": "Représenter géométriquement des vecteurs"
+  },
+  "2G21": {
+    "titre": "Construire géométriquement la somme de deux vecteurs"
+  },
+  "2G22": {
+    "titre": "Représenter un vecteur dont on connaît les coordonnées. Lire les coordonnées d'un vecteur"
+  },
+  "2G23": {
+    "titre": "Utiliser et connaître les translations définies par des vecteurs"
+  },
+  "2G24": {
+    "titre": "Calculer les coordonnées d'une somme de vecteurs, d'un produit d'un vecteur par un nombre réel"
+  },
+  "2G25": {
+    "titre": "Caractériser alignement et parallélisme par la colinéarité de vecteurs"
+  },
+  "2G26": {
+    "titre": "Résoudre des problèmes en utilisant la représentation la plus adaptée des vecteurs"
+  },
+  "2G3": {
+    "titre": "Représenter et caractériser les droites du plan"
+  },
+  "2G30": {
+    "titre": "Déterminer une équation de droite à partir de deux points, un point et un vecteur directeur ou un point et la pente"
+  },
+  "2G31": {
+    "titre": "Déterminer la pente ou un vecteur directeur d'une droite donnée par une équation ou une représentation graphique"
+  },
+  "2G32": {
+    "titre": "Tracer une droite connaissant son équation cartésienne ou réduite"
+  },
+  "2G33": {
+    "titre": "Établir alignement et parallélisme"
+  },
+  "2G34": {
+    "titre": "Résoudre un système de deux équations linéaires à deux inconnues, déterminer le point d'intersection de deux droites sécantes"
+  },
+  "2F1": {
+    "titre": "Se constituer un répertoire de fonctions de référence"
+  },
+  "2F10": {
+    "titre": "Connaître les fonctions affines"
+  },
+  "2F11": {
+    "titre": "Comparer et calculer des images en utilisant les fonctions de référence"
+  },
+  "2F2": {
+    "titre": "Représenter algébriquement et graphiquement les fonctions"
+  },
+  "2F20": {
+    "titre": "Exploiter l'équation y=f(x) d'une courbe : appartenance, calcul de coordonnées"
+  },
+  "2F21": {
+    "titre": "Modéliser par des fonctions des situations issues des mathématiques, des autres disciplines"
+  },
+  "2F22": {
+    "titre": "Résoudre f(x)=k ou f(x)<k en choisissant une méthode adaptée"
+  },
+  "2F23": {
+    "titre": "Résoudre une équation, une inéquation produit ou quotient, à l'aide d'un tableau de signes"
+  },
+  "2F24": {
+    "titre": "Résoudre graphiquement ou avec un outil numérique, f(x)=g(x) ou f(x)<g(x)"
+  },
+  "2F25": {
+    "titre": "Etudier la parité d'une fonction"
+  },
+  "2F3": {
+    "titre": "Étudier les variations et les extremums d'une fonction"
+  },
+  "2F30": {
+    "titre": "Relier représentation graphique et tableau de variations"
+  },
+  "2F31": {
+    "titre": "Utiliser les variations d'une fonction"
+  },
+  "2F32": {
+    "titre": "Déterminer les extremums d'une fonction"
+  },
+  "2S1": {
+    "titre": "Utiliser l'information chiffrée"
+  },
+  "2S10": {
+    "titre": "Exploiter la relation entre effectifs, proportions et pourcentages. Pourcentage de pourcentage"
+  },
+  "2S11": {
+    "titre": "Exploiter la relation entre deux valeurs successives et leur taux d'évolution"
+  },
+  "2S12": {
+    "titre": "Calculer le taux d'évolution global à partir des taux d'évolution successifs. Calculer un taux d'évolution réciproque"
+  },
+  "2S2": {
+    "titre": "Statistique descriptive"
+  },
+  "2S21": {
+    "titre": "Décrire les différences entre deux séries statistiques"
+  },
+  "2S22": {
+    "titre": "Lire et comprendre une fonction écrite en Python renvoyant la moyenne (m), l'écart type (s) et la proportion d'éléments dans [m-2s;m+2s]"
+  },
+  "2S3": {
+    "titre": "Modéliser le hasard, calculer des probabilités"
+  },
+  "2S30": {
+    "titre": "Calculer des probabilités dans des cas simples"
+  },
+  "2S31": {
+    "titre": "Utiliser des modèles théoriques de référence"
+  },
+  "2S4": {
+    "titre": "Echantillonnage"
+  }
+}

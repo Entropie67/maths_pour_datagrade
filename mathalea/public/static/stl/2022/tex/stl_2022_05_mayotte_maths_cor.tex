@@ -1,0 +1,112 @@
+
+\medskip
+
+\textbf{Question 1}
+
+\medskip
+
+\begin{enumerate}
+\item L'équation réduite d'une droite est de la forme $y=mx + p$ où :
+\[m = \dfrac{y_{\text{B}}-y_{\text{A}}}{x_{\text{B}}-x_{\text{A}}} = \dfrac{-4-(-2)}{-2-(-3)} = -2\]
+ 
+Écrivons qu'elle passe par A$(-3~;~-2)$ : $-2 = -2 \times (-3) + p$ d'où $p = -8$. 
+
+L'équation réduite de (AB) est : $y = - 2x - 8$.
+\item Il en résulte que la valeur exacte de $h'(-2)$ est $-2$, puisque le nombre dérivé de la fonction en $a$ est le coefficient directeur de la tangente à la courbe en ce point.
+\item Déterminons les coordonnées des points d'intersection de la droite $T$ avec chacun des axes du repère.
+\begin{itemize}
+\item Avec l'axe des abscisses, $y = 0$ soit $-2x-8 = 0$ d'où $x = - 4$. Le point a pour coordonnées $(-4~;~0)$.
+\item Avec l'axe des ordonnées, $x = 0$ soit $y = -8$. Le point a pour coordonnées $(0~;~-8)$.
+\end{itemize}
+\end{enumerate}
+
+\bigskip
+
+\textbf{Question 2}
+
+\medskip
+
+Si pour tout $x\in I,\:f'(x) < 0$ alors $f$ est  strictement décroissante sur $I$. 
+
+Sur $]-5~;~2[,\:h(x) < 0$ par conséquent $H$ est strictement décroissante sur cet intervalle.
+
+Si pour tout $x\in I, \:f'(x) > 0$ alors la fonction $f$ est strictement croissante sur $I$.
+
+Sur $]2~;~5],\:h(x)>0$ par conséquent $H$ est strictement croissante sur  cet intervalle.
+
+\bigskip
+
+\textbf{Question 3}
+
+\medskip
+
+Les solutions de l'équation différentielle $y'+ay=b$ sur $\R$ sont les fonctions $y$ définies par :
+\[y(x)=C\e^{-ax}+\dfrac{b}{a}, \text{ où } C \text{ est une constante quelconque.}\]
+
+Ici $a=\np{0.04}\ \text{ et } b=\np{0.8}$. Par conséquent, sur $[0~;~+\infty[$ :
+\[f(x) = C\e^{-\np{0.04}x} + \dfrac{\np{0.8}}{\np{0.04}} = C \e^{-\np{0.04}x}+20.\]
+
+Déterminons $C$ :
+\[f(0) = C\e^{-\np{0.04} \times 0} + 20 = C + 20 = 100 \quad \text{d'où}\quad C = 80.\]
+
+Au final : $f(x) = 80\e^{-0,04 x} + 20.$
+
+\bigskip
+
+\textbf{Question 4}
+
+\medskip
+
+\begin{enumerate}
+\item Si $f = uv$ alors $f' = u'v + uv'$, d'où :
+\[f'(x) = 1 \times \e^{-x} + (x + 1) \times (-1 \times \e^{-x}) = (1 - x -1)\e^{-x} = -x\e^{-x}.\]
+\item Comme $\e^{-x} > 0$, le signe de $f'(x)$ est celui de $-x$.
+
+Pour tout $x\in \R_-^*,\; f'(x)>0$. Par conséquent $f$ est strictement croissante sur $\R_-^*$.
+
+Pour tout $x\in \R_+^*,\; f'(x)<0$. Par conséquent $f$ est strictement décroissante sur $\R_+^*$.
+\end{enumerate}
+
+\bigskip
+
+\textbf{Question 5}
+
+\medskip
+
+\begin{enumerate}
+\item Remplaçons $I$ par sa valeur :
+\[L = 10 \text{\,Log\,}\left(\dfrac{10^{-5}}{10^{-12}}\right) = 10 \text{\,Log\,} 10^7 = 10\times 7 = 70.\]
+Le niveau sonore  est de \np[dB]{70}.
+\item Résolvons l'équation en $I$ :
+\begin{align*}
+10 \text{\,Log\,} \dfrac{I}{10^{-12}}&=130\\
+\text{\,Log\,} \dfrac{I}{10^{-12}}&=13\\
+\dfrac{I}{10^{-12}}&=10^{13}\\
+I&=10^{13}\times 10^{-12}\\
+I&=10
+\end{align*}
+
+Son intensité sonore $I$ est $\np[W\cdot m^{-2}]{10}$.
+\end{enumerate}
+
+\bigskip
+
+\textbf{Question 6}
+
+\medskip
+
+Exprimons $I'$ en fonction de $I$ :
+\begin{align*}
+L' &= L - 10\\
+10\text{\,Log\,}\left(\frac{I'}{I_0}\right)&=10\text{\,Log\,}\left(\frac{I}{I_0}\right)-10\\
+\text{\,Log\,}\left(\frac{I'}{I_0}\right)&=\text{\,Log\,}\left(\frac{I}{I_0}\right)-1\\
+\text{\,Log\,}\left(\frac{I'}{I_0}\right)-\text{\,Log\,}\left(\frac{I}{I_0}\right)&=-1\\
+\text{\,Log\,}\dfrac{\left(\frac{I'}{I_0}\right)}{\left(\frac{I}{I_0}\right)}&=-1\\
+\dfrac{I'}{I}&=10^{-1}\\
+I'&=I\times 10^{-1} = \dfrac{I}{10}.
+\end{align*}
+Donc baisser le niveau sonore de $10$ dB reviens à diviser l'intensité sonore par $10$.
+
+\bigskip
+
+

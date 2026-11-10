@@ -1,0 +1,1305 @@
+{
+  "Cycle d'orientation": {
+    "9R3": {
+      "9R3NO": {
+        "9R3NO0": {
+          "9R3NO2": {
+            "9R3NO2A": {},
+            "9R3NO2B": {},
+            "9R3NO2C": {},
+            "9R3NO2D": {}
+          },
+          "9R3NO6": {
+            "9R3NO6A": {},
+            "9R3NO6B": {},
+            "9R3NO6C": {},
+            "9R3NO6D": {},
+            "9R3NO6E": {},
+            "9R3NO6F": {},
+            "9R3NO6G": {},
+            "9R3NO6H": {}
+          },
+          "9R3NO7": {
+            "9R3NO7A": {},
+            "9R3NO7B": {},
+            "9R3NO7C": {},
+            "9R3NO8A": {},
+            "9R3NO8B": {},
+            "9R3NO8C": {},
+            "9R3NO7D": {}
+          },
+          "9R3NO9": {
+            "9R3NO7E": {},
+            "9R3NO7F": {},
+            "9R3NO7G": {}
+          }
+        },
+        "9R3NO1": {
+          "9R3NO1A": {},
+          "9R3NO1B": {},
+          "9R3NO1C": {},
+          "9R3NO1D": {},
+          "9R3NO1E": {},
+          "9R3NO1F": {},
+          "9R3NO1G": {},
+          "9R3NO1H": {}
+        },
+        "9R3NO3": {
+          "9R3NO3A": {},
+          "9R3NO3B": {},
+          "9R3NO3C": {},
+          "9R3NO3D": {}
+        },
+        "9R3NO4": {
+          "9R3NO4A": {},
+          "9R3NO4B": {},
+          "9R3NO4C": {},
+          "9R3NO4D": {},
+          "9R3NO4E": {},
+          "9R3NO4F": {},
+          "9R3NO4G": {},
+          "9R3NO4H": {},
+          "9R3NO4I": {},
+          "9R3NO4J": {},
+          "9R3NO4K": {}
+        },
+        "9R3NO5": {
+          "9R3NO5A": {},
+          "9R3NO5B": {}
+        }
+      },
+      "9R3FA": {
+        "9R3FA1": {
+          "9R3FA1A": {},
+          "9R3FA1B": {},
+          "9R3FA1C": {},
+          "9R3FA1D": {},
+          "9R3FA1E": {}
+        },
+        "9R3FA2": {
+          "9R3FA2A": {},
+          "9R3FA2B": {},
+          "9R3FA2C": {}
+        },
+        "9R3FA3": {
+          "9R3FA3A": {},
+          "9R3FA3B": {},
+          "9R3FA3C": {}
+        }
+      },
+      "9R3ES": {
+        "9R3ES0": {
+          "9R3ES1": {
+            "9R3ES1A": {},
+            "9R3ES1B": {},
+            "9R3ES1C": {},
+            "9R3ES2D": {},
+            "9R3ES1D": {}
+          },
+          "9R3ES2": {
+            "9R3ES2A": {},
+            "9R3ES2C": {},
+            "9R3ES2B": {},
+            "9R3ES2E": {},
+            "9R3ES2F": {}
+          },
+          "9R3ES6": {
+            "9R3ES2H": {},
+            "9R3ES2I": {}
+          },
+          "9R3ES7": {
+            "9R3ES7A": {},
+            "9R3ES7B": {},
+            "9R3ES7C": {}
+          }
+        },
+        "9R3ES3": {
+          "9R3ES3A": {},
+          "9R3ES3B": {},
+          "9R3ES3C": {}
+        },
+        "9R3ES4": {
+          "9R3ES4A": {},
+          "9R3ES4B": {},
+          "9R3ES4C": {},
+          "9R3ES4D": {},
+          "9R3ES4E": {},
+          "9R3ES4F": {}
+        },
+        "9R3ES5": {
+          "9R3ES5A": {}
+        }
+      },
+      "9R3GM": {
+        "9R3GM0": {
+          "9R3GM1": {
+            "9R3GM1A": {}
+          },
+          "9R3GM2": {
+            "9R3GM2A": {},
+            "9R3GM2B": {},
+            "9R3GM2C": {},
+            "9R3GM2D": {},
+            "9R3GM2E": {}
+          }
+        },
+        "9R3GM3": {
+          "9R3GM3A": {},
+          "9R3GM3B": {}
+        },
+        "9R3GM4": {
+          "9R3GM4A": {},
+          "9R3GM4B": {},
+          "9R3GM4C": {},
+          "9R3GM4D": {},
+          "9R3GM4E": {}
+        }
+      },
+      "9R3QCM": {
+        "9R3QCMNO": {},
+        "9R3QCMFA": {},
+        "9R3QCMES": {},
+        "9R3QCMGM": {}
+      }
+    },
+    "9R2": {
+      "9R2NO": {
+        "9R2NO0": {
+          "9R2NO2": {
+            "9R2NO2A": {},
+            "9R2NO2B": {},
+            "9R2NO2C": {},
+            "9R2NO2D": {}
+          },
+          "9R2NO6": {
+            "9R2NO6A": {},
+            "9R2NO6B": {},
+            "9R2NO6C": {},
+            "9R2NO6D": {},
+            "9R2NO6E": {},
+            "9R2NO6F": {},
+            "9R2NO6G": {},
+            "9R2NO6H": {}
+          },
+          "9R2NO7": {
+            "9R2NO7A": {},
+            "9R2NO7B": {},
+            "9R2NO7C": {},
+            "9R2NO8A": {},
+            "9R2NO8B": {},
+            "9R2NO8C": {},
+            "9R2NO7D": {}
+          },
+          "9R2NO9": {
+            "9R2NO7E": {},
+            "9R2NO7F": {},
+            "9R2NO7G": {}
+          }
+        },
+        "9R2NO1": {
+          "9R2NO1A": {},
+          "9R2NO1B": {},
+          "9R2NO1C": {},
+          "9R2NO1D": {},
+          "9R2NO1E": {},
+          "9R2NO1F": {},
+          "9R2NO1G": {},
+          "9R2NO1H": {}
+        },
+        "9R2NO3": {
+          "9R2NO3A": {},
+          "9R2NO3B": {},
+          "9R2NO3C": {},
+          "9R2NO3D": {}
+        },
+        "9R2NO4": {
+          "9R2NO4A": {},
+          "9R2NO4B": {},
+          "9R2NO4C": {},
+          "9R2NO4D": {},
+          "9R2NO4E": {},
+          "9R2NO4F": {},
+          "9R2NO4G": {},
+          "9R2NO4H": {},
+          "9R2NO4I": {}
+        },
+        "9R2NO5": {
+          "9R2NO5A": {},
+          "9R2NO5B": {}
+        }
+      },
+      "9R2FA": {
+        "9R2FA1": {
+          "9R2FA1A": {},
+          "9R2FA1B": {},
+          "9R2FA1C": {},
+          "9R2FA1D": {},
+          "9R2FA1E": {}
+        },
+        "9R2FA2": {
+          "9R2FA2A": {},
+          "9R2FA2B": {},
+          "9R2FA2C": {}
+        },
+        "9R2FA3": {
+          "9R2FA3A": {},
+          "9R2FA3B": {},
+          "9R2FA3C": {}
+        }
+      },
+      "9R2ES": {
+        "9R2ES0": {
+          "9R2ES1": {
+            "9R2ES1A": {},
+            "9R2ES1B": {},
+            "9R2ES1C": {},
+            "9R2ES2D": {},
+            "9R2ES1D": {}
+          },
+          "9R2ES2": {
+            "9R2ES2A": {},
+            "9R2ES2C": {},
+            "9R2ES2B": {},
+            "9R2ES2E": {},
+            "9R2ES2F": {}
+          },
+          "9R2ES6": {
+            "9R2ES2H": {},
+            "9R2ES2I": {}
+          },
+          "9R2ES7": {
+            "9R2ES7A": {},
+            "9R2ES7B": {},
+            "9R2ES7C": {}
+          }
+        },
+        "9R2ES3": {
+          "9R2ES3A": {},
+          "9R2ES3B": {},
+          "9R2ES3C": {}
+        },
+        "9R2ES4": {
+          "9R2ES4A": {},
+          "9R2ES4B": {},
+          "9R2ES4C": {},
+          "9R2ES4D": {},
+          "9R2ES4E": {},
+          "9R2ES4F": {}
+        },
+        "9R2ES5": {
+          "9R2ES5A": {}
+        }
+      },
+      "9R2GM": {
+        "9R2GM0": {
+          "9R2GM1": {
+            "9R2GM1A": {}
+          },
+          "9R2GM2": {
+            "9R2GM2A": {},
+            "9R2GM2B": {},
+            "9R2GM2C": {},
+            "9R2GM2D": {},
+            "9R2GM2E": {}
+          }
+        },
+        "9R2GM3": {
+          "9R2GM3A": {},
+          "9R2GM3B": {}
+        },
+        "9R2GM4": {
+          "9R2GM4A": {},
+          "9R2GM4B": {},
+          "9R2GM4C": {},
+          "9R2GM4D": {},
+          "9R2GM4E": {}
+        }
+      },
+      "9R2QCM": {
+        "9R2QCMNO": {},
+        "9R2QCMFA": {},
+        "9R2QCMES": {},
+        "9R2QCMGM": {}
+      }
+    },
+    "9R1": {
+      "9R1NO": {
+        "9R1NO0": {
+          "9R1NO2": {
+            "9R1NO2A": {},
+            "9R1NO2B": {},
+            "9R1NO2C": {},
+            "9R1NO2D": {}
+          },
+          "9R1NO6": {
+            "9R1NO6A": {},
+            "9R1NO6B": {},
+            "9R1NO6C": {},
+            "9R1NO6D": {},
+            "9R1NO6E": {},
+            "9R1NO6F": {},
+            "9R1NO6G": {},
+            "9R1NO6H": {}
+          },
+          "9R1NO7": {
+            "9R1NO7A": {},
+            "9R1NO7B": {},
+            "9R1NO7C": {},
+            "9R1NO8A": {},
+            "9R1NO8B": {},
+            "9R1NO8C": {},
+            "9R1NO7D": {}
+          },
+          "9R1NO9": {
+            "9R1NO7E": {},
+            "9R1NO7F": {},
+            "9R1NO7G": {}
+          }
+        },
+        "9R1NO1": {
+          "9R1NO1A": {},
+          "9R1NO1B": {},
+          "9R1NO1C": {},
+          "9R1NO1D": {},
+          "9R1NO1E": {}
+        },
+        "9R1NO3": {
+          "9R1NO3A": {},
+          "9R1NO3B": {}
+        },
+        "9R1NO4": {
+          "9R1NO4A": {},
+          "9R1NO4B": {},
+          "9R1NO4C": {},
+          "9R1NO4D": {},
+          "9R1NO4E": {},
+          "9R1NO4F": {},
+          "9R1NO4G": {},
+          "9R1NO4H": {},
+          "9R1NO4I": {}
+        },
+        "9R1NO5": {
+          "9R1NO5A": {},
+          "9R1NO5B": {}
+        }
+      },
+      "9R1FA": {
+        "9R1FA1": {
+          "9R1FA1A": {},
+          "9R1FA1B": {},
+          "9R1FA1C": {},
+          "9R1FA1D": {},
+          "9R1FA1E": {}
+        },
+        "9R1FA2": {
+          "9R1FA2A": {},
+          "9R1FA2B": {},
+          "9R1FA2C": {}
+        }
+      },
+      "9R1ES": {
+        "9R1ES0": {
+          "9R1ES1": {
+            "9R1ES1A": {},
+            "9R1ES1B": {},
+            "9R1ES1C": {},
+            "9R1ES2D": {},
+            "9R1ES1D": {}
+          },
+          "9R1ES2": {
+            "9R1ES2A": {},
+            "9R1ES2C": {},
+            "9R1ES2B": {},
+            "9R1ES2E": {}
+          },
+          "9R1ES6": {
+            "9R1ES2H": {},
+            "9R1ES2I": {}
+          },
+          "9R1ES7": {
+            "9R1ES7A": {},
+            "9R1ES7B": {},
+            "9R1ES7C": {}
+          }
+        },
+        "9R1ES3": {
+          "9R1ES3A": {},
+          "9R1ES3B": {},
+          "9R1ES3C": {}
+        },
+        "9R1ES4": {
+          "9R1ES4A": {},
+          "9R1ES4B": {},
+          "9R1ES4C": {},
+          "9R1ES4D": {},
+          "9R1ES4E": {},
+          "9R1ES4F": {}
+        },
+        "9R1ES5": {
+          "9R1ES5A": {}
+        }
+      },
+      "9R1GM": {
+        "9R1GM0": {
+          "9R1GM1": {
+            "9R1GM1A": {}
+          },
+          "9R1GM2": {
+            "9R1GM2A": {},
+            "9R1GM2B": {},
+            "9R1GM2C": {},
+            "9R1GM2D": {},
+            "9R1GM2E": {}
+          }
+        },
+        "9R1GM3": {
+          "9R1GM3A": {},
+          "9R1GM3B": {}
+        },
+        "9R1GM4": {
+          "9R1GM4A": {},
+          "9R1GM4B": {},
+          "9R1GM4C": {},
+          "9R1GM4D": {},
+          "9R1GM4E": {}
+        }
+      },
+      "9R1QCM": {
+        "9R1QCMNO": {},
+        "9R1QCMFA": {},
+        "9R1QCMES": {},
+        "9R1QCMGM": {}
+      }
+    },
+    "10LS": {
+      "10LSNO": {
+        "10LSNO2": {
+          "10LSNO2B": {},
+          "10LSNO2C": {},
+          "10LSNO2D": {}
+        },
+        "10LSNO3": {
+          "10LSNO3A": {},
+          "10LSNO3B": {},
+          "10LSNO3C": {},
+          "10LSNO3D": {}
+        },
+        "10LSNO0": {
+          "10LSNO4": {
+            "10LSNO4A": {},
+            "10LSNO4B": {},
+            "10LSNO4C": {}
+          },
+          "10LSNO5": {
+            "10LSNO5A": {},
+            "10LSNO5B": {}
+          },
+          "10LSNO6": {
+            "10LSNO6A": {},
+            "10LSNO6B": {}
+          }
+        }
+      },
+      "10LSFA": {
+        "10LSFA1": {
+          "10LSFA1A": {},
+          "10LSFA1B": {},
+          "10LSFA1C": {},
+          "10LSFA1D": {},
+          "10LSFA1E": {},
+          "10LSFA1F": {}
+        },
+        "10LSFA3": {
+          "10LSFA3A": {},
+          "10LSFA3B": {},
+          "10LSFA3C": {},
+          "10LSFA3D": {}
+        },
+        "10LSFA2": {
+          "10LSFA2A": {},
+          "10LSFA2B": {}
+        },
+        "10LSFA4": {
+          "10LSFA4A": {},
+          "10LSFA4B": {},
+          "10LSFA4C": {},
+          "10LSFA4D": {},
+          "10LSFA4E": {},
+          "10LSFA4F": {}
+        },
+        "10LSFA5": {
+          "10LSFA5A": {},
+          "10LSFA5B": {},
+          "10LSFA5C": {},
+          "10LSFA5D": {},
+          "10LSFA5E": {}
+        }
+      },
+      "10LSES": {
+        "10LSES1": {
+          "10LSES1A": {},
+          "10LSES1B": {}
+        },
+        "10LSES2": {
+          "10LSES2A": {},
+          "10LSES2B": {},
+          "10LSES2C": {}
+        }
+      },
+      "10LSGM": {
+        "10LSGM1": {
+          "10LSGM1A": {},
+          "10LSGM1B": {},
+          "10LSGM1C": {},
+          "10LSGM1D": {}
+        },
+        "10LSGM3": {
+          "10LSGM3A": {},
+          "10LSGM3B": {}
+        },
+        "10LSGM2": {
+          "10LSGM2A": {},
+          "10LSGM2B": {},
+          "10LSGM2C": {}
+        },
+        "10LSGM4": {
+          "10LSGM4A": {},
+          "10LSGM4B": {}
+        }
+      },
+      "10LSQCM": {
+        "10LSQCMNO": {},
+        "10LSQCMFA": {
+          "10LSQCMFA1": {},
+          "10LSQCMFA2": {},
+          "10LSQCMFA3": {},
+          "10LSQCMFA4": {},
+          "10LSQCMFA5": {}
+        },
+        "10LSQCMGM": {}
+      }
+    },
+    "10LC": {
+      "10LCNO": {
+        "10LCNO2": {
+          "10LCNO2B": {},
+          "10LCNO2C": {},
+          "10LCNO2D": {}
+        },
+        "10LCNO3": {
+          "10LCNO3A": {},
+          "10LCNO3D": {}
+        },
+        "10LCNO0": {
+          "10LCNO4": {
+            "10LCNO4A": {},
+            "10LCNO4B": {},
+            "10LCNO4C": {}
+          },
+          "10LCNO5": {
+            "10LCNO5A": {},
+            "10LCNO5B": {}
+          },
+          "10LCNO6": {
+            "10LCNO6A": {},
+            "10LCNO6B": {}
+          }
+        }
+      },
+      "10LCFA": {
+        "10LCFA1": {
+          "10LCFA1A": {},
+          "10LCFA1B": {},
+          "10LCFA1C": {},
+          "10LCFA1D": {},
+          "10LCFA1E": {},
+          "10LCFA1F": {}
+        },
+        "10LCFA3": {
+          "10LCFA3A": {},
+          "10LCFA3B": {},
+          "10LCFA3C": {},
+          "10LCFA3D": {}
+        },
+        "10LCFA2": {
+          "10LCFA2A": {},
+          "10LCFA2B": {}
+        },
+        "10LCFA4": {
+          "10LCFA4A": {},
+          "10LCFA4B": {},
+          "10LCFA4C": {},
+          "10LCFA4D": {},
+          "10LCFA4E": {},
+          "10LCFA4F": {}
+        },
+        "10LCFA5": {
+          "10LCFA5A": {},
+          "10LCFA5B": {},
+          "10LCFA5C": {},
+          "10LCFA5D": {},
+          "10LCFA5E": {}
+        }
+      },
+      "10LCES": {
+        "10LCES1": {
+          "10LCES1A": {},
+          "10LCES1B": {}
+        },
+        "10LCES2": {
+          "10LCES2A": {},
+          "10LCES2B": {},
+          "10LCES2C": {}
+        }
+      },
+      "10LCGM": {
+        "10LCGM1": {
+          "10LCGM1A": {},
+          "10LCGM1B": {},
+          "10LCGM1C": {},
+          "10LCGM1D": {}
+        },
+        "10LCGM3": {
+          "10LCGM3A": {}
+        },
+        "10LCGM2": {
+          "10LCGM2A": {},
+          "10LCGM2B": {},
+          "10LCGM2C": {}
+        },
+        "10LCGM4": {
+          "10LCGM4A": {},
+          "10LCGM4B": {}
+        }
+      },
+      "10LCQCM": {
+        "10LCQCMNO": {},
+        "10LCQCMFA": {
+          "10LCQCMFA1": {},
+          "10LCQCMFA2": {},
+          "10LCQCMFA3": {},
+          "10LCQCMFA4": {},
+          "10LCQCMFA5": {}
+        },
+        "10LCQCMGM": {}
+      }
+    },
+    "10CT": {
+      "10CTNO": {
+        "10CTNO1": {
+          "10CTNO1A": {},
+          "10CTNO1B": {}
+        },
+        "10CTNO2": {
+          "10CTNO2A": {}
+        },
+        "10CTNO3": {
+          "10CTNO3A": {},
+          "10CTNO3D": {}
+        },
+        "10CTNO0": {
+          "10CTNO5": {
+            "10CTNO5A": {}
+          },
+          "10CTNO6": {
+            "10CTNO6A": {},
+            "10CTNO6B": {}
+          }
+        }
+      },
+      "10CTFA": {
+        "10CTFA1": {
+          "10CTFA1A": {},
+          "10CTFA1B": {},
+          "10CTFA1C": {},
+          "10CTFA1D": {},
+          "10CTFA1E": {},
+          "10CTFA1F": {}
+        },
+        "10CTFA2": {
+          "10CTFA2A": {},
+          "10CTFA2B": {}
+        },
+        "10CTFA4": {
+          "10CTFA4A": {},
+          "10CTFA4B": {}
+        }
+      },
+      "10CTES": {
+        "10CTES1": {
+          "10CTES1A": {},
+          "10CTES1B": {}
+        },
+        "10CTES2": {
+          "10CTES2A": {},
+          "10CTES2B": {},
+          "10CTES2C": {}
+        }
+      },
+      "10CTGM": {
+        "10CTGM1": {
+          "10CTGM1A": {},
+          "10CTGM1C": {},
+          "10CTGM1D": {}
+        },
+        "10CTGM2": {
+          "10CTGM2A": {},
+          "10CTGM2C": {}
+        },
+        "10CTGM4": {
+          "10CTGM4A": {},
+          "10CTGM4B": {}
+        }
+      },
+      "10CTQCM": {
+        "10CTQCMNO": {},
+        "10CTQCMFA": {
+          "10CTQCMFA1": {},
+          "10CTQCMFA3": {},
+          "10CTQCMFA4": {}
+        },
+        "10CTQCMGM": {}
+      }
+    },
+    "11LS": {
+      "11LSNO": {
+        "11LSNO5": {
+          "11LSNO5A": {}
+        },
+        "11LSNO3": {
+          "11LSNO3B": {},
+          "11LSNO3A": {},
+          "11LSNO3C": {}
+        },
+        "11LSNO4": {
+          "11LSNO4A": {},
+          "11LSNO4B": {},
+          "11LSNO4C": {}
+        }
+      },
+      "11LSFA": {
+        "11LSFA1": {
+          "11LSFA1A": {},
+          "11LSFA1C": {}
+        },
+        "11LSFA2": {
+          "11LSFA2C": {},
+          "11LSFA2D": {},
+          "11LSFA2E": {},
+          "11LSFA2F": {},
+          "11LSFA2G": {},
+          "11LSFA2H": {}
+        },
+        "11LSFA3": {
+          "11LSFA3B": {},
+          "11LSFA3C": {},
+          "11LSFA3D": {},
+          "11LSFA3E": {},
+          "11LSFA3F": {},
+          "11LSFA3G": {},
+          "11LSFA3H": {},
+          "11LSFA3I": {},
+          "11LSFA3J": {}
+        },
+        "11LSFA4": {
+          "11LSFA4A": {},
+          "11LSFA4C": {},
+          "11LSFA4D": {},
+          "11LSFA4E": {},
+          "11LSFA4F": {},
+          "11LSFA4G": {}
+        }
+      },
+      "11LSES": {
+        "11LSES1": {
+          "11LSES1A": {}
+        },
+        "11LSES2": {
+          "11LSES2A": {},
+          "11LSES2B": {}
+        },
+        "11LSES3": {
+          "11LSES3A": {}
+        }
+      },
+      "11LSGM": {
+        "11LSGM2": {
+          "11LSGM2B": {}
+        },
+        "11LSGM3": {
+          "11LSGM3A": {},
+          "11LSGM3B": {},
+          "11LSGM3C": {}
+        },
+        "11LSGM1": {
+          "11LSGM1B": {},
+          "11LSGM1C": {},
+          "11LSGM1D": {},
+          "11LSGM1E": {},
+          "11LSGM1F": {}
+        },
+        "11LSGM4": {
+          "11LSGM4A": {}
+        }
+      },
+      "11LSQCM": {
+        "11LSQCMNO": {},
+        "11LSQCMFA": {
+          "11LSQCMFA1": {},
+          "11LSQCMFA2": {
+            "11LSQCMFA2A": {},
+            "11LSQCMFA2B": {},
+            "11LSQCMFA2C": {},
+            "11LSQCMFA2D": {}
+          },
+          "11LSQCMFA4": {},
+          "11LSQCMFA5": {}
+        }
+      }
+    },
+    "11LC": {
+      "11LCNO": {
+        "11LCNO5": {
+          "11LCNO5A": {}
+        },
+        "11LCNO2": {
+          "11LCNO2A": {},
+          "11LCNO2B": {},
+          "11LCNO2C": {}
+        },
+        "11LCNO3": {
+          "11LCNO3B": {}
+        },
+        "11LCNO4": {
+          "11LCNO4A": {},
+          "11LCNO4B": {}
+        }
+      },
+      "11LCFA": {
+        "11LCFA1": {
+          "11LCFA1A": {}
+        },
+        "11LCFA2": {
+          "11LCFA2C": {},
+          "11LCFA2D": {},
+          "11LCFA2E": {},
+          "11LCFA2F": {},
+          "11LCFA2H": {}
+        },
+        "11LCFA3": {
+          "11LCFA3B": {},
+          "11LCFA3C": {},
+          "11LCFA3D": {},
+          "11LCFA3E": {},
+          "11LCFA3F": {}
+        },
+        "11LCFA4": {
+          "11LCFA4A": {},
+          "11LCFA4C": {},
+          "11LCFA4D": {},
+          "11LCFA4H": {}
+        }
+      },
+      "11LCES": {
+        "11LCES1": {
+          "11LCES1A": {}
+        },
+        "11LCES2": {
+          "11LCES2A": {},
+          "11LCES2B": {}
+        },
+        "11LCES3": {
+          "11LCES3A": {}
+        }
+      },
+      "11LCGM": {
+        "11LCGM2": {
+          "11LCGM2B": {}
+        },
+        "11LCGM3": {
+          "11LCGM3A": {},
+          "11LCGM3B": {},
+          "11LCGM3C": {}
+        },
+        "11LCGM1": {
+          "11LCGM1B": {},
+          "11LCGM1C": {},
+          "11LCGM1E": {},
+          "11LCGM1F": {}
+        },
+        "11LCGM4": {
+          "11LCGM4A": {}
+        }
+      },
+      "11LCQCM": {
+        "11LCQCMNO": {},
+        "11LCQCMFA": {
+          "11LCQCMFA1": {},
+          "11LCQCMFA2": {
+            "11LCQCMFA2A": {},
+            "11LCQCMFA2B": {},
+            "11LCQCMFA2C": {}
+          },
+          "11LCQCMFA4": {},
+          "11LCQCMFA5": {}
+        }
+      }
+    },
+    "11CT": {
+      "11CTNO": {
+        "11CTNO1": {
+          "11CTNO1A": {},
+          "11CTNO1B": {},
+          "11CTNO1C": {}
+        },
+        "11CTNO2": {
+          "11CTNO2A": {},
+          "11CTNO2B": {}
+        },
+        "11CTNO3": {
+          "11CTNO3A": {}
+        },
+        "11CTNO4": {
+          "11CTNO4A": {}
+        }
+      },
+      "11CTFA": {
+        "11CTFA1": {
+          "11CTFA1A": {}
+        },
+        "11CTFA2": {
+          "11CTFA2A": {},
+          "11CTFA2B": {},
+          "11CTFA2C": {},
+          "11CTFA2D": {},
+          "11CTFA2H": {}
+        },
+        "11CTFA3": {
+          "11CTFA3A": {},
+          "11CTFA3B": {},
+          "11CTFA3C": {},
+          "11CTFA3D": {},
+          "11CTFA3E": {}
+        },
+        "11CTFA4": {
+          "11CTFA4A": {},
+          "11CTFA4B": {},
+          "11CTFA4C": {},
+          "11CTFA4H": {}
+        }
+      },
+      "11CTES": {
+        "11CTES2": {
+          "11CTES2A": {},
+          "11CTES2B": {}
+        }
+      },
+      "11CTGM": {
+        "11CTGM2": {
+          "11CTGM2A": {}
+        },
+        "11CTGM1": {
+          "11CTGM1A": {},
+          "11CTGM1E": {},
+          "11CTGM1F": {}
+        },
+        "11CTGM4": {
+          "11CTGM4A": {}
+        }
+      },
+      "11CTQCM": {
+        "11CTQCMNO": {},
+        "11CTQCMFA": {
+          "11CTQCMFA1": {},
+          "11CTQCMFA2": {},
+          "11CTQCMFA4": {},
+          "11CTQCMFA5": {}
+        }
+      }
+    }
+  },
+  "Collège": {
+    "1re année": {
+      "1mCN": {},
+      "1mEI": {},
+      "1mSE": {},
+      "1mF1": {},
+      "1mF2": {},
+      "1mF3": {},
+      "1mG1": {},
+      "1mG2": {},
+      "1mG3": {},
+      "1mG4": {},
+      "1mT": {},
+      "1mCL1": {},
+      "1mCL2": {},
+      "1mCL3": {},
+      "1mCL4": {},
+      "1mCL5": {},
+      "1mQCM": {}
+    },
+    "2e année": {
+      "2mEqCar": {},
+      "2mFctPoly": {},
+      "2mFctRat": {},
+      "2mIneq": {},
+      "2mQCM": {},
+      "2mLogExp": {},
+      "2mRecComp": {},
+      "2mTrigo": {}
+    },
+    "3e année": {
+      "3mA1": {},
+      "3mLimCont": {},
+      "3mA2": {},
+      "3mA3": {},
+      "3mComb": {},
+      "3mGeomVect": {
+        "3G90": {},
+        "3G91": {},
+        "3G92": {},
+        "3G93": {},
+        "3G94": {},
+        "3G95": {},
+        "3G96": {},
+        "3G97": {},
+        "3G98": {},
+        "3G99": {}
+      },
+      "3mQCM": {},
+      "3mNC": {},
+      "3mAlgLin": {}
+    },
+    "4e année": {
+      "4mAna": {
+        "4mDer": {},
+        "4mInt": {},
+        "4mExpLog": {},
+        "4mEqDif": {}
+      },
+      "4mAlgLin": {},
+      "4mProbStat": {},
+      "4mQCM": {}
+    }
+  },
+  "Préqualifiant": {
+    "PRQST": {
+      "PRQST01": {
+        "PRQST01A": {},
+        "PRQST01B": {}
+      },
+      "PRQST02": {
+        "PRQST02A": {},
+        "PRQST02B": {},
+        "PRQST02C": {}
+      },
+      "PRQST03": {
+        "PRQST03A": {},
+        "PRQST03B": {}
+      },
+      "PRQST04": {
+        "PRQST04A": {}
+      }
+    },
+    "PRQNO": {
+      "PRQNO01": {
+        "PRQNO01A": {}
+      },
+      "PRQNO02": {
+        "PRQNO02A": {},
+        "PRQNO02B": {}
+      },
+      "PRQNO03": {
+        "PRQNO03A": {},
+        "PRQNO03B": {}
+      },
+      "PRQNO04": {
+        "PRQNO04A": {},
+        "PRQNO04B": {}
+      },
+      "PRQNO05": {
+        "PRQNO05A": {},
+        "PRQNO05B": {}
+      },
+      "PRQNO06": {
+        "PRQNO06A": {},
+        "PRQNO06B": {}
+      },
+      "PRQNO07": {
+        "PRQNO07A": {},
+        "PRQNO07B": {},
+        "PRQNO07C": {}
+      },
+      "PRQNO08": {
+        "PRQNO08A": {},
+        "PRQNO08B": {}
+      },
+      "PRQNO09": {
+        "PRQNO09A": {},
+        "PRQNO09B": {},
+        "PRQNO09C": {}
+      },
+      "PRQNO10": {
+        "PRQNO10A": {},
+        "PRQNO10B": {}
+      },
+      "PRQNO11": {
+        "PRQNO11A": {},
+        "PRQNO11B": {}
+      },
+      "PRQNO12": {
+        "PRQNO12A": {},
+        "PRQNO12B": {},
+        "PRQNO12C": {}
+      },
+      "PRQNO13": {
+        "PRQNO13A": {},
+        "PRQNO13B": {},
+        "PRQNO13C": {}
+      },
+      "PRQNO14": {
+        "PRQNO14A": {}
+      },
+      "PRQNO15": {
+        "PRQNO15A": {},
+        "PRQNO15B": {},
+        "PRQNO15C": {}
+      }
+    },
+    "PRQAL": {
+      "PRQAL01": {
+        "PRQAL01A": {},
+        "PRQAL01B": {}
+      },
+      "PRQAL02": {
+        "PRQAL02A": {},
+        "PRQAL02B": {}
+      },
+      "PRQAL03": {
+        "PRQAL03A": {},
+        "PRQAL03B": {},
+        "PRQAL03C": {},
+        "PRQAL03D": {},
+        "PRQAL03E": {}
+      },
+      "PRQAL04": {
+        "PRQAL04A": {},
+        "PRQAL04B": {},
+        "PRQAL04C": {},
+        "PRQAL04D": {},
+        "PRQAL04E": {}
+      },
+      "PRQAL05": {
+        "PRQAL05A": {},
+        "PRQAL05B": {},
+        "PRQAL05C": {}
+      },
+      "PRQAL06": {
+        "PRQAL06A": {}
+      }
+    },
+    "PRQES": {
+      "PRQES01": {
+        "PRQES01A": {},
+        "PRQES01B": {},
+        "PRQES01C": {}
+      },
+      "PRQES02": {
+        "PRQES02A": {},
+        "PRQES02B": {},
+        "PRQES02C": {},
+        "PRQES02D": {}
+      },
+      "PRQES03": {
+        "PRQES03A": {}
+      },
+      "PRQES04": {
+        "PRQES04A": {},
+        "PRQES04B": {}
+      },
+      "PRQES05": {
+        "PRQES05A": {}
+      },
+      "PRQES06": {
+        "PRQES06B": {},
+        "PRQES06C": {}
+      },
+      "PRQES07": {
+        "PRQES07A": {},
+        "PRQES07B": {},
+        "PRQES07C": {},
+        "PRQES07D": {}
+      }
+    },
+    "PRQMG": {
+      "PRQMG01": {
+        "PRQMG01A": {},
+        "PRQMG01B": {},
+        "PRQMG01C": {},
+        "PRQMG01D": {}
+      },
+      "PRQMG02": {
+        "PRQMG02A": {},
+        "PRQMG02B": {},
+        "PRQMG02C": {},
+        "PRQMG02D": {}
+      },
+      "PRQMG03": {
+        "PRQMG03A": {},
+        "PRQMG03B": {},
+        "PRQMG03C": {}
+      },
+      "PRQMG04": {
+        "PRQMG04A": {},
+        "PRQMG04B": {},
+        "PRQMG04C": {},
+        "PRQMG04D": {},
+        "PRQMG04E": {}
+      },
+      "PRQMG05": {
+        "PRQMG05A": {},
+        "PRQMG05B": {}
+      }
+    },
+    "PRQPF": {
+      "PRQPF01": {
+        "PRQPF01A": {},
+        "PRQPF01B": {},
+        "PRQPF01C": {}
+      },
+      "PRQPF02": {
+        "PRQPF02A": {},
+        "PRQPF02B": {},
+        "PRQPF02C": {}
+      },
+      "PRQPF03": {
+        "PRQPF03A": {},
+        "PRQPF03B": {},
+        "PRQPF03C": {}
+      },
+      "PRQPF04": {
+        "PRQPF04A": {},
+        "PRQPF04B": {},
+        "PRQPF04C": {}
+      },
+      "PRQPF05": {
+        "PRQPF05A": {},
+        "PRQPF05B": {}
+      }
+    }
+  },
+  "Non classés": {
+    "divers": {},
+    "autres": {}
+  },
+  "Primaire": {
+    "PR": {}
+  },
+  "Géométrie dynamique": {
+    "elements": {},
+    "triangle": {},
+    "rectangle": {},
+    "carre": {},
+    "parallelogramme": {}
+  }
+}

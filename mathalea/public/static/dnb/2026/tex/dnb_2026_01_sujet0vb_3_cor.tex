@@ -1,0 +1,58 @@
+\medskip
+
+%Un paquet de lessive vide pèse 200~g. On y verse de la lessive.
+%
+%On sait que 1~cm$^3$ de lessive pèse 1,5~g.
+%
+%\medskip
+
+\begin{enumerate}
+\item %Quelle est la masse totale d’un paquet de lessive (masse de la lessive et masse du paquet vide) contenant \np{600}~ cm$^3$ de lessive ?
+On passe d'un volume de lessive en cm$^3$ à son poids en grammes en multipliant par 1,5, donc \np{1600}~cm$^3$ de lessive ont une masse de $\np{1600} \times 1,5 = \np{2400}$~(g).
+
+En ajoutant la masse du paquet vide, on arrive à une masse de $\np{2400} + 200 = \np{2600}$~(g) ou 2,6~(kg).
+\item %On considère la fonction $f$ qui à $x$ associe $1,5x + 200$.
+	\begin{enumerate}
+		\item %Lorsque $x$ représente le volume de lessive en cm$^3$, que représente la valeur $f(x)$ ?
+On a vu que le produit par 1,5 fait passer de u volume de lessive à sa masse ; ensuite l'ajout de 200 correspond au poids du paquet vide ; donc $f(x) = 1,5x + 200$ représente la masse d'un paquet de lessive contenant $x$ cm$^3$ de lessive.
+		\item ~%Représenter graphiquement la fonction $f$ dans un repère orthogonal.
+
+%On placera l’origine du repère en bas à gauche sur une feuille de papier millimétré. Sur l’axe des abscisses on prendra 1 cm pour 200~cm$^3$ et sur l’axe des ordonnées 1~cm pour $200$~g.
+\begin{center}
+\psset{unit=0.005cm,arrowsize=2pt 3}
+\begin{pspicture*}(-250,-150)(2000,2850)
+\psaxes[linewidth=1.25pt,Dx=200,Dy=200]{->}(0,0)(0,0)(2000,2800)
+\multido{\n=0+200}{11}{\psline[linewidth=0.25pt](\n,0)(\n,2800)}
+\multido{\n=0+200}{16}{\psline[linewidth=0.25pt](0,\n)(2000,\n)}
+%\psgrid[gridlabels=0,subgriddiv=0](0,0)(2000,2000)
+%\psplot[plotpoints=2000,linewidth=1.25pt,linecolor=red]{0}{2000}{x 1.5 mul 2 add 100 mul}
+\psline[linewidth=1.25pt,linecolor=red](0,200)(1733.33,2800)
+\psline[linewidth=1.25pt,ArrowInside=->](0,2300)(1400,2300)(1400,0)
+\uput[d](1400,16){\red \np{1400}}
+\uput[l](-35,2300){\blue \np{2300}}
+\uput[u](1600,0){volume de lessive (cm$^3$)}
+\uput[r](0,2750){masse de la lessive (g)}
+\end{pspicture*}
+\end{center}
+
+	\end{enumerate}
+\item
+	\begin{enumerate}
+		\item %En laissant les traits de construction apparents, trouver, par lecture graphique, le volume de lessive contenu dans un paquet de lessive de \np{2300}~g.
+		\item %Retrouver ce résultat par le calcul.
+Il faut trouver le volume $x$ tel que $f(x) = 1,5x + 200 = \np{2300}$ soit en ajoutant $- 200$ à chaque membre :
+
+$1,5x = \np{2100}$ \quad et enfin $x = \dfrac{\np{2100}}{1,5} = \np{1400}$~(g) ou encore 1,4 kg de lessive.
+		\item %Un paquet de lessive en forme de pavé de largeur 12~cm, de profondeur 8~cm et de
+%hauteur 15~cm peut-il contenir un tel volume ? 
+
+%\textbf{Argumenter la réponse en précisant la démarche.}
+Le volume d'un pavé s'obtient en calculant le produit des trois nombres correspondant à la longueur, la largeur et la hauteur, ici :
+
+$V = 12 \times 8 \times15 = 96 \times 15 = \np{1440}$~(cm$^3$).
+
+Comme $\np{1440} > \np{1400}$ ce paquet pourra contenir la lessive.
+	\end{enumerate}
+\end{enumerate}
+
+\medskip

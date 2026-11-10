@@ -1,0 +1,88 @@
+%source mathadata
+Des points associés aux images de 2 et de 7 sont représentés dans le repère ci-dessous
+	(bleus pour les 2, oranges pour les 7).
+	Les points de référence choisis sont $R(20\,;\,30)$ pour le 2 et $S(70\,;\,80)$ pour le 7.
+	Une image inconnue a pour point associé $C(30\,;\,60)$.
+
+	\begin{MADenumerate}
+
+		\item Placer les points de référence $R$ et $S$ ainsi que le point inconnu $C$ dans le repère.
+
+		\item Placer le point $H(x_R\,;\,y_C)$ ayant l'abscisse de $R$ et l'ordonnée de $C$.
+		Quelle est la nature du triangle $HCR$ ?
+
+		\item En utilisant le triangle tracé :
+		\begin{enumerate}
+			\item Calculer les longueurs du côté horizontal et du côté vertical.
+			\item Calculer la distance $CR$ au dixième près.
+		\end{enumerate}
+
+		\item En s'appuyant sur la question précédente, expliquer pourquoi on peut
+		calculer la distance $CS$ avec la formule :
+		\[
+			CS = \sqrt{(x_S - x_C)^2 + (y_S - y_C)^2}
+		\]
+
+		\item Calculer $CS$ en utilisant directement la formule.
+
+		\item Compléter l'algorithme ci-dessous :
+
+		\begin{center}
+			\begin{tabular}{|l|l|}
+				\hline
+				\textbf{Entrée}       & Image numérique                                             \\ \hline
+				\textbf{Instructions} & Calcul de $x$ et $y$ (caractéristiques)                     \\ \cline{2-2}
+				                      & Calcul de $CR = \sqrt{(x_R - \ldots)^2 + (y_R - \ldots)^2}$ \\ \cline{2-2}
+				                      & Calcul de $CS = \ldots\ldots\ldots$                         \\ \cline{2-2}
+				                      & Si $\ldots < \ldots$, alors chiffre estimé $=$ \textbf{2}   \\ \cline{2-2}
+				                      & Sinon chiffre estimé $=$ \textbf{7}                         \\ \hline
+				\textbf{Sortie}       & Afficher le chiffre estimé                                  \\ \hline
+			\end{tabular}
+		\end{center}
+
+		\item Quelle est la plus petite distance : $CR$ ou $CS$ ?
+		Quel chiffre l'algorithme estime-t-il pour cette image inconnue ?
+
+	\end{MADenumerate}
+
+	\begin{center}
+		\begin{tikzpicture}
+			\begin{axis}[
+					name=plotB,
+					axis lines=middle,
+					ymajorgrids=true,
+					xmajorgrids=true,
+					xmin=-1.1,
+					xmax=110,
+					ymin=-1.1,
+					ymax=110,
+					xtick={0,10,...,100},
+					ytick={0,10,...,100},
+					xlabel={\Large{\color{red}$x$}},
+					xlabel style={at={(axis description cs:1.02,-0.1)}, anchor=north},
+					ylabel={\color{blue}{\Large$y$}},
+					ylabel style={at={(axis description cs:-0.12,1.02)}, anchor=west},
+					width=10cm,
+					height=10cm,
+					scatter/classes={
+							A={mark=square*,mark size=2pt,draw=blue,  fill=BleuCeladon},
+							B={mark=*,      mark size=2pt,draw=black, fill=OrangeCarotte}
+						}
+				]
+				\addplot[scatter,only marks,scatter src=explicit symbolic,opacity=0.35]
+				coordinates {
+						(12,18)[A]
+						(22,38)[A]
+						(28,22)[A]
+						(8,35)[A]
+						(25,28)[A]
+						(63,73)[B]
+						(78,88)[B]
+						(73,68)[B]
+						(58,85)[B]
+						(82,75)[B]
+					};
+			\end{axis}
+			\draw (0,0) node[below left]{\footnotesize $O$};
+		\end{tikzpicture}
+	\end{center}

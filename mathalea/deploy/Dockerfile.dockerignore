@@ -1,0 +1,25 @@
+# Exclusions du contexte de construction de deploy/Dockerfile. Docker lit ce
+# fichier, nommé comme le Dockerfile, à la place d'un .dockerignore à
+# la racine du dépôt.
+
+# Reconstruits dans l'image
+node_modules/
+.pnpm-store/
+dist/
+dist-moteur/
+
+# Inutiles pour construire le site
+.git/
+.gitlab-ci.yml
+.husky/
+.vscode/
+.zed/
+.claude/
+tests/
+reports/
+documentation/
+docker/
+playwright-report/
+test-results/
+*.log
+.env

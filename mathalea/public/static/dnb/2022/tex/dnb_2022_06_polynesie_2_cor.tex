@@ -1,0 +1,50 @@
+
+\medskip
+
+\begin{enumerate}
+\item Le prix payé avec le tarif \og liberté \fg{} est représenté par la droite 
+$\left(d_1\right)$ qui passe par l'origine donc ce prix est bien proportionnel au nombre d'heures effectuées dans la salle de sport. (la fonction associée, voir plus bas est une fonction linéaire)
+\item 
+	\begin{enumerate}
+		\item $f(5) = 25$. L'image de 5 par $f$ est 25.
+		\item L'antécédent de 10 par la fonction g est 1
+	\end{enumerate}
+Voir les lectures sur la figure ci-dessous.
+	\begin{center}
+
+\psset{xunit=1cm,yunit=0.2cm,arrowsize=2pt 4}
+\begin{pspicture}(-1,-4)(11,35)
+\multido{\n=0+1}{12}{\psline[linewidth=0.4pt](\n,0)(\n,35)}
+\multido{\n=0+5}{8}{\psline[linewidth=0.4pt](0,\n)(11,\n)}
+\psaxes[linewidth=1.25pt,Dy=5,labelFontSize=\scriptstyle]{->}(0,0)(0,0)(11,35)
+\psplot[plotpoints=400,linewidth=1.25pt,linecolor=red]{0}{11}{2.5 x mul 7.5 add}
+\psplot[plotpoints=400,linewidth=1.25pt,linecolor=blue]{0}{7}{5 x mul}
+\uput[u](6.5,33){\blue $\left(d_1\right)$}
+\uput[u](10.3,33){\red $\left(d_2\right)$}
+\rput{90}(-1,26){Prix payé en euro}
+\uput[d](9,-2){Nombres d'heures effectuées}
+\psline[linewidth=1.25pt,linestyle=dashed,ArrowInside=->](5,0)(5,25)(0,25)
+\psline[linewidth=1.25pt,linestyle=dashed,ArrowInside=->](0,10)(1,10)(1,0)
+\end{pspicture}
+\end{center}
+
+\item ~
+\begin{itemize}
+\item[$\bullet~~$] Si la personne effectue moins de 3h dans la salle de sport il est plus avantageux qu'elle choisisse le tarif \og liberté\fg (car la droite 
+$\left(d_1\right)$ est en dessous de la droite $\left(d_2\right)$)
+\item[$\bullet~~$] Si la personne effectue 3~h il est équivalent qu'elle choisisse l'un ou l'autre des deux tarifs.
+\item[$\bullet~~$] Si la personne effectue plus de 3~h il est plus avantageux qu'elle choisisse le tarif \og abonné \fg (car la droite $\left(d_2\right)$ est en dessous de la droite $\left(d_1\right)$).
+\end{itemize}
+
+\item  Comme la droite $\left(d_1\right)$ passe par l'origine elle représente une fonction linéaire, donc $f(x) = ax$ avec $a$ un réel.
+
+$\left(d_1\right)$ passe par les points de coordonnées (0~;~0) et (3~;~15) donc
+$a = \dfrac{15-0}{3 - 0} =  \dfrac{15}{3} = 5$.
+
+Par conséquent $f(x) = 5x$. Et $f(15) = 5 \times 15 = 75$.
+
+Le prix payé avec le tarif \og liberté\fg{} pour 15 heures effectuées est de $75$~\euro.
+\end{enumerate}
+
+\bigskip
+

@@ -1,0 +1,81 @@
+
+\medskip
+
+On a relevé dans une feuille de calcul les températures maximales Tmax (en \degres{} C) atteintes à Strasbourg le 25 juin de chaque année de 2010 à 2018 (source : meteociel.fr).
+
+\begin{center}
+\begin{tabularx}{\linewidth}{|>{\centering\arraybackslash\cellcolor{lightgray}} c|c|*{9}{>{\centering \arraybackslash}X|}}\hline
+\rowcolor{lightgray}	&A			&B		&C&D&E&F&G&H&I&J\\ \hline
+1	&Année		&2010 	&2011	&2012	&2013	&2014	&2015	&2016	&2017	&2018\\ \hline
+2	&Tmax		& 29 	&$23,1$	& $22,6$	&$17,4$	&$23,4$	&$25,7$	&$25,2$	&26		&24\\ \hline
+3	&			&		&		&		&		&		&		&		&		&\\ \hline
+4	&Moyenne	&		&		&		&		&		&		&		&		&\\ \hline
+5	&Médiane	&24		&		&		&		&		&		&		&		&\\ \hline
+6	&Étendue	&$11,6$	&		&		&		&		&		&		&		&\\ \hline
+\end{tabularx}
+\end{center}
+
+%\medskip
+
+\begin{enumerate}
+\item %On a oublié de calculer la moyenne de cette série.
+
+%Quelle formule peut-on saisir dans la cellule B4 pour que ce calcul soit effectué ? 
+
+La formule à saisir dans la case \texttt{B4} pour calculer la moyenne de la série est:\\ \fbox{= SOMME(B2 : J2) / 9}
+
+\item %Donner, sans détailler les calculs, une valeur approchée au degré Celsius près de la moyenne de la série.
+$\dfrac{29 +23,1+ 22,6	+17,4	+23,4	+25,7	+25,2	+26	+24}{9} = \dfrac{216,4}{9}\approx 24,04$
+
+Donc une valeur approchée au degré Celsius près de la moyenne de la série est 24\,$\degres{}$~C.
+
+\item Le nombre 24 est la médiane de cette série veut dire qu'il y a, dans la série, au moins la moitié de nombres inférieurs ou égaux à 24, et au moins la moitié de nombres supérieurs ou égaux à 24.
+
+\item Pour cette question seulement, on considère la série des températures maximales atteintes à Strasbourg le 25 juin de chaque année de 2010 à 2019. 
+
+On sait que l'étendue des températures de cette nouvelle série est égale à $18,5\,\degres{}$~C.
+
+%Déterminer la température maximale atteinte à Strasbourg le 25 juin 2019.
+
+La température la plus basse est de $17,4\,\degres{}$, et l'étendue est la différence entre la température la plus élevée et la température la plus basse.\\
+Donc la température la plus élevée est de $17,4+18,5$ soit $35,9\,\degres{}$.
+
+Comme ce n'est la température d'aucune des années entre 2010 et 2018, c'est donc le 25 juin 2019 qu'il a fait $35,9\,\degres{}$~C.
+\end{enumerate}
+
+\medskip
+
+Les questions suivantes portent sur la série des températures maximales atteintes à Strasbourg le 25 juin de chaque année de 2010 à 2018.
+
+\medskip
+
+\begin{enumerate}[resume]
+\item  On crée 9 fiches, une par année, sur lesquelles figure la température maximale atteinte le 25 juin de l'année. On prend une fiche au hasard. Chacune des fiches a la même probabilité d'être tirée.
+
+On range les 9 températures en ordre croissant.
+
+\begin{center}
+\begin{tabularx}{0.9\linewidth}{| *9{>{\centering\arraybackslash} X|}}
+\hline
+$17,4$	& $22,6$ & $23,1$ & $23,4$	& 24 	& $25,2$ & $25,7$	& 26	 & 29\\
+\hline
+\end{tabularx}
+\end{center}
+
+	\begin{enumerate}
+		\item% Quelle est la probabilité que la température écrite sur cette fiche soit égale à $26\degres{}$~C ?
+Sur les 9 températures, il n'y a qu'une seule fois $26\,\degres{}$~C; donc la probabilité que la température écrite sur cette fiche soit égale à $26\,\degres{}$~C est égale à $\dfrac{1}{9}$.
+
+		\item %Quelle est la probabilité que la température écrite sur cette fiche soit inférieure ou égale à 24$\degres{}$~C?
+		Sur les 9 températures, il y en a 5 qui sont inférieures ou égales à 24$\,\degres{}$~C, donc la probabilité que la température écrite sur cette fiche soit inférieure ou égale à 24$\,\degres{}$~C est égale à $\dfrac{5}{9}$.
+		
+		\item %A-t-on raison de dire que l'on a plus de 40\,\% de chance de prendre une fiche sur laquelle la température est supérieure à $25\degres{}$~C?
+Sur les 9 températures, il y en a 4 qui sont supérieures à 25$\,\degres{}$~C, donc la probabilité que la température écrite sur cette fiche soit supérieure à 25$\,\degres{}$~C est égale à $\dfrac{4}{9}$ soit $\dfrac{4}{9}\times 100 \approx 44,4\,\%$.
+
+Donc on a  raison de dire que l'on a plus de 40\,\% de chance de prendre une fiche sur laquelle la température est supérieure à $25\,\degres{}$~C.
+	\end{enumerate}
+\end{enumerate}
+
+\bigskip
+
+

@@ -1,0 +1,146 @@
+[
+  {
+    "uuid": "dnb_2013_04_pondichery_1",
+    "statementAndCorrection": "passed",
+    "images": [
+      {
+        "src": "http://localhost:5180/alea/static/dnb/2013/tex/png/dnb_2013_04_pondichery_1.png",
+        "width": 2238,
+        "height": 858
+      },
+      {
+        "src": "http://localhost:5180/alea/static/dnb/2013/tex/png/dnb_2013_04_pondichery_1_cor.png",
+        "width": 2238,
+        "height": 462
+      }
+    ],
+    "externalRequestsBlocked": [],
+    "pageErrors": []
+  },
+  {
+    "uuid": "bac_2021_01_sujet0_1",
+    "statementAndCorrection": "passed",
+    "images": [
+      {
+        "src": "http://localhost:5180/alea/static/bac/2021/tex/png/bac_2021_01_sujet0_1.png",
+        "width": 2225,
+        "height": 2288
+      },
+      {
+        "src": "http://localhost:5180/alea/static/bac/2021/tex/png/bac_2021_01_sujet0_1_cor.png",
+        "width": 2175,
+        "height": 2463
+      }
+    ],
+    "externalRequestsBlocked": [],
+    "pageErrors": []
+  },
+  {
+    "uuid": "crpe_2022_g1_ex1",
+    "statementAndCorrection": "passed",
+    "images": [
+      {
+        "src": "http://localhost:5180/alea/static/crpe/2022/2022_g1_ex1.png",
+        "width": 3798,
+        "height": 8688
+      },
+      {
+        "src": "http://localhost:5180/alea/static/crpe/2022/2022_g1_ex1_corr.png",
+        "width": 3798,
+        "height": 4676
+      }
+    ],
+    "externalRequestsBlocked": [],
+    "pageErrors": []
+  },
+  {
+    "uuid": "dnbpro_2024_06_polynesie_1",
+    "statementAndCorrection": "passed",
+    "images": [
+      {
+        "src": "http://localhost:5180/alea/static/dnbpro/2024/tex/png/dnbpro_2024_06_polynesie_1.png",
+        "width": 2238,
+        "height": 1998
+      },
+      {
+        "src": "http://localhost:5180/alea/static/dnbpro/2024/tex/png/dnbpro_2024_06_polynesie_1_cor.png",
+        "width": 2238,
+        "height": 2305
+      }
+    ],
+    "externalRequestsBlocked": [],
+    "pageErrors": []
+  },
+  {
+    "uuid": "e3c_2021_01_specimen1_1",
+    "statementAndCorrection": "passed",
+    "images": [
+      {
+        "src": "http://localhost:5180/alea/static/e3c/2021/tex/png/e3c_2021_01_specimen1_1.png",
+        "width": 2225,
+        "height": 1926
+      },
+      {
+        "src": "http://localhost:5180/alea/static/e3c/2021/tex/png/e3c_2021_01_specimen1_1_cor.png",
+        "width": 2225,
+        "height": 2059
+      }
+    ],
+    "externalRequestsBlocked": [],
+    "pageErrors": []
+  },
+  {
+    "uuid": "eam_specialite_2025_06_sujet0v1_1",
+    "statementAndCorrection": "passed",
+    "images": [
+      {
+        "src": "http://localhost:5180/alea/static/eam/2025/tex/png/eam_specialite_2025_06_sujet0v1_1.png",
+        "width": 2238,
+        "height": 5532
+      },
+      {
+        "src": "http://localhost:5180/alea/static/eam/2025/tex/png/eam_specialite_2025_06_sujet0v1_1_cor.png",
+        "width": 2238,
+        "height": 8426
+      }
+    ],
+    "externalRequestsBlocked": [],
+    "pageErrors": []
+  },
+  {
+    "uuid": "sti2d_2021_03_sujet0v1_maths",
+    "statementAndCorrection": "passed",
+    "images": [
+      {
+        "src": "http://localhost:5180/alea/static/sti2d/2021/tex/png/sti2d_2021_03_sujet0v1_maths.png",
+        "width": 2238,
+        "height": 3816
+      },
+      {
+        "src": "http://localhost:5180/alea/static/sti2d/2021/tex/png/sti2d_2021_03_sujet0v1_maths_cor.png",
+        "width": 2238,
+        "height": 3069
+      }
+    ],
+    "externalRequestsBlocked": [],
+    "pageErrors": []
+  },
+  {
+    "uuid": "stl_2021_03_metropole_maths",
+    "statementAndCorrection": "passed",
+    "images": [
+      {
+        "src": "http://localhost:5180/alea/static/stl/2021/tex/png/stl_2021_03_metropole_maths.png",
+        "width": 2238,
+        "height": 1898
+      },
+      {
+        "src": "http://localhost:5180/alea/static/stl/2021/tex/png/stl_2021_03_metropole_maths_cor.png",
+        "width": 2238,
+        "height": 2846
+      }
+    ],
+    "externalRequestsBlocked": [],
+    "pageErrors": []
+  }
+]

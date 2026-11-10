@@ -1,0 +1,54 @@
+
+\medskip
+
+Le programme suivant permet de calculer l'aire d'un trapèze.
+
+\begin{minipage}{0.6\linewidth}
+\begin{scratch}[scale=0.85]
+\blockinit{quand \greenflag est cliqué}
+\blocksensing{demander \ovalnum{Quelle est la longueur B de la grande base du trapèze ?}}
+\blockvariable{mettre \ovalvariable{B} à \ovalvariable{réponse}}
+\blocksensing{demander \ovalnum{Quelle est la longueur b de la grande base du trapèze ?}}
+\blockvariable{mettre \ovalvariable{b} à \ovalvariable{réponse}}
+\blocksensing{demander \ovalnum{Quelle est la longueur h du trapèze ?}}
+\blockvariable{mettre \ovalvariable{h} à \ovalvariable{réponse}}
+\blocklook{dire \ovalvariable{ regrouper \ovalnum{ l'aire du trapèze est égale à } et \ovalcontrol{\ovalcontrol{\ovalvariable{B} + \ovalvariable{b}} * \ovalvariable{h}} / \ovalnum{2}}}
+\end{scratch}
+\end{minipage}\hfill
+\begin{minipage}{0.37\linewidth}
+\begin{center}
+\begin{pspicture}(5,4.4)
+\psset{arrowsize=2pt 3}
+\pspolygon(0,0.6)(4.6,0.6)(3.4,3.6)(1.2,3.6)
+\psline{<->}(1.2,3.6)(1.2,0.6) \uput[r](1.2,2.1){Hauteur $h$}
+\psline{<->}(3.4,3.8)(1.2,3.8) \uput[u](2.3,3.8){Petite base $b$}
+\psline{<->}(0,0.4)(4.6,0.4) \uput[d](2.3,0.4){Grande base $B$}
+\end{pspicture}
+\end{center}
+\end{minipage}
+
+\begin{enumerate}
+\item En s'aidant de la dernière instruction du programme,  la formule de l'aire d'un trapèze est: $\dfrac{(B + b) \times h}{2}$.
+
+\item Si $B = 12$, $b = 8$ et $h = 6$, le résultat affiché par le programme est : 
+$\dfrac{(12+8)\times 6}{2}=60$.
+
+\item  On complète le programme de calcul d'aire d'un rectangle avec les lignes numérotées dans le script ci-dessous.
+
+\medskip
+
+\begin{scratch}
+\blockinit{quand \greenflag est cliqué}
+\blocksensing{ demander \ovalnum{Quelle est la longueur  du rectangle ?} et attendre }
+ \setscratch{num blocks}
+\renewcommand*\numblock[1]{\No 5~~} 
+\blockvariable{mettre \ovalvariable{longueur} à \ovalvariable{réponse}}
+\renewcommand*\numblock[1]{\No 4~~}
+\blocksensing{demander \ovalnum{Quelle est la largeur du rectangle ?} et attendre}
+\renewcommand*\numblock[1]{\No 6~~}
+\blockvariable{mettre \ovalvariable{largeur} à \ovalvariable{réponse}}
+\renewcommand*\numblock[1]{\No 3~~}
+\blocklook{Dire \ovaloperator{regrouper \ovalnum{L'aire du rectangle est égale à } et \ovaloperator{\ovalcontrol{longueur} * \ovalcontrol{largeur}}}}
+\end{scratch}
+\end{enumerate}
+

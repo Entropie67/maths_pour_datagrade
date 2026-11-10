@@ -1,0 +1,24 @@
+
+\medskip
+
+ABCD est un carré de côté 3 cm et DCE est un triangle rectangle et isocèle en C.
+
+\begin{center}
+\psset{unit=1cm}
+\begin{pspicture}(7,3.5)
+\pspolygon(0,0)(6.4,0)(3.2,3.2)(0,3.2)%BEDA
+\psline(3.2,0)(3.2,3.2)%CD
+\uput[ul](0,3.2){A} \uput[dl](0,0){B} \uput[d](3.2,0){C} 
+\uput[ur](3.2,3.2){D} \uput[d](6.4,0){E}
+\def\barre{\psline(-0.15,-0.15)(0.15,0.15)}
+\rput(0,1.6){\barre}\rput(3.2,1.6){\barre} \rput(1.6,0){\barre}\rput(1.6,3.2){\barre}
+\psframe(0.2,0.2)\psframe(0,3)(0.2,3.2)\psframe(3.2,3.2)(3,3)\psframe(3.2,0)(3.4,0.2)
+\psarc(6.4,0){0.45}{135}{180}\rput(5.75,0.25){$45\degres$}
+\rput(4.8,0){\barre}
+\end{pspicture}
+\end{center}
+
+\medskip
+
+Donner la valeur du produit scalaire $\vect{\text{EB}} \cdot \vect{\text{ED}}$.
+

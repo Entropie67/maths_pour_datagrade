@@ -1,0 +1,22 @@
+
+\medskip
+
+ABC est un triangle tel que : AB = 10, BC = 4, $\widehat{\text{ABC}} = 60^\circ$. Déterminer la longueur AC.
+
+\begin{center}
+\psset{unit=0.5cm}
+\begin{pspicture}(-0.5,-0.5)(10.5,4)
+\psdot[dotstyle=x,dotsize=8pt,linecolor=red](0,0)
+\psdot[dotstyle=x,dotsize=8pt,linecolor=red](10,0)
+% (10+4*cos(120)=8,4*sin(120)=3.464)
+\psdot[dotstyle=x,dotsize=8pt,linecolor=red](8,3.464)
+\psline(0,0)(10,0)(8,3.464)(0,0)
+\psline(0,0)(10,0)
+\uput[-135](0,0){A}
+\uput[-45](10,0){B}
+\uput[45](8,3.464){C}
+\psarc[linecolor=blue](10,0){0.90}{120}{180}
+\rput(8.5,0.5){\textcolor{blue}{$60\degres$}}
+\end{pspicture}
+\end{center}
+

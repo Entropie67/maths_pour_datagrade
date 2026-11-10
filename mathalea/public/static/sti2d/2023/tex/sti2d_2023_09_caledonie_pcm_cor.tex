@@ -1,0 +1,43 @@
+
+\medskip
+
+\begin{enumerate}[start=7]
+\item Déterminons les solutions sur $[0~;~+\infty[$ de cette équation différentielle.
+
+Les solutions de  l'équation différentielle $y'+ay=b$ sur  $\R$ sont les fonctions $y$ définies par  
+
+$y(x)=C\e^{-ax}+\dfrac{b}{a}$ où $C$ est une constante quelconque.
+
+$a=\dfrac{1}{180}\ b=\dfrac{4}{9}$  par conséquent sur $[0~;~+\infty[$ $y(t)=C \e^{-\frac{1}{180}t}+\dfrac{\frac{4}{9}}{\frac{1}{180}}$ 
+
+c'est-à-dire $\theta(t)=C \e^{-\frac{1}{180}t}+80$ où $C$ est une constante quelconque.
+
+À $t = 0$, la température du moteur est de $20\degres$ C.
+
+\item Déterminons $C$ pour que la condition initiale soit vérifiée.
+
+$\theta(0)=20$ \:ou \: $C\e^0+80 = 20$ d'où $C=20 - 80 = - 60$.
+
+La fonction $\theta$ est définie sur $[0~;~+\infty[$ par :
+\[\theta (t) = 80 - 60\e^{-\frac{1}{180}t}.\]
+
+\item Résolvons sur $[0~;~+\infty[$ l'équation $\theta(t) = 79$.
+
+\begin{align*}
+80 - 60\e^{-\frac{1}{180}t}&=79\\
+- 60\e^{-\frac{1}{180}t}&=-1\\
+\e^{-\frac{1}{180}t}&=\dfrac{1}{60}\\
+-\frac{1}{180}t&=-\ln 60\\
+t&=\ln 60\times 180\\
+\end{align*}
+L'ensemble solution de l'équation est $\{180 \ln 60\}$
+
+\item La condition est respectée,
+car $180\times \ln 60\approx 737$, or à 20 minutes correspondent $\np[s]{1200}$.
+
+Nous avons bien $737<\np{1200}$
+\end{enumerate}
+
+\bigskip
+
+

@@ -1,0 +1,61 @@
+{
+  "canStart": "passed",
+  "catalogueEntries": 4439,
+  "uniqueUuids": 3041,
+  "niveaux": [
+    "CAN",
+    "cm1",
+    "cm2",
+    "6e",
+    "5e",
+    "4e",
+    "3e",
+    "2e",
+    "BP2",
+    "BP1",
+    "1e",
+    "Terminale",
+    "Égalité filles-garçons",
+    "HP",
+    "PE",
+    "EN"
+  ],
+  "samples": [
+    {
+      "id": "6N2A-1",
+      "uuid": "cfa6a",
+      "questions": 2
+    },
+    {
+      "id": "5N2G",
+      "uuid": "cbc26",
+      "questions": 2
+    },
+    {
+      "id": "4A11-0",
+      "uuid": "1eaf7",
+      "questions": 2
+    },
+    {
+      "id": "3L11",
+      "uuid": "db2e0",
+      "questions": 2
+    },
+    {
+      "id": "2N10-1",
+      "uuid": "25fb4",
+      "questions": 2
+    },
+    {
+      "id": "1AL10-1",
+      "uuid": "6487c",
+      "questions": 2
+    },
+    {
+      "id": "TSA1-10",
+      "uuid": "7f24e",
+      "questions": 2
+    }
+  ],
+  "pageErrors": []
+}

@@ -1,0 +1,35 @@
+\begin{enumerate}[start=7]
+\item  L'équation différentielle $y' = -0,1y$ peut s'écrire $y' + 0,1y = 0$.
+    
+Il s'agit d'une équation différentielle linéaire du premier ordre de la forme :
+\[y' + ay = b \text{ avec } a = 0,1 \text{ et } b = 0.\]
+
+La solution générale est :
+\[A(t) = k\e^{-at} = k\e^{-0,1t} \text{ où } k \in \mathbb{R}.\]
+
+Avec la condition initiale :
+\begin{align*}
+A(0) &= \np{7400} \\
+k\e^{-0,1\times0} &= \np{7400} \\
+k\e^0 &= \np{7400} \\
+k &= \np{7400}.
+\end{align*}
+
+La solution est donc bien :
+\[A(t) = \np{7400}\e^{-0,1t}.\]
+
+\item Au bout de 70 jours, l'activité radioactive vaut environ :
+\[A(70)=\np{7400}\e^{-0,1\times 70}=\np{7400}\e^{-7}\approx \np{6,75}.\]
+
+Il reste donc environ $\np{6,75}$ MBq sur les $\np{7400}$ MBq initiaux.
+
+Perdre plus de $99,9\,\%$ de sa valeur initiale signifie qu'il reste moins de $0,1\,\%$ de cette valeur, soit : $0,001\times \np{7400}=\np{7,4}$.
+
+Comme $\np{6,75}<\np{7,4}$, l'activité a bien diminué de plus de $99,9\,\%$ au bout de 70 jours.
+
+\item D'après la question précédente, au bout de 70 jours, l'activité radioactive du lutécium 177 est inférieure à $0,1\,\%$ de sa valeur initiale. Elle est donc considérée comme négligeable et sans risque pour l'environnement.
+
+La préconisation du fabricant est donc cohérente : attendre 70 jours avant de jeter le sac aux ordures ménagères permet de laisser l'activité radioactive diminuer suffisamment.
+\end{enumerate}
+
+\bigskip

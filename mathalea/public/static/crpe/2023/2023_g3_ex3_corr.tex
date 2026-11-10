@@ -1,0 +1,73 @@
+\begin{enumerate}
+    \item Remarquons tout d'abord que le script construit bien un polygone : en effet, il s'agit d'une ligne brisée à quatre segments et la somme des angles est égale à $4\times90° =360°$. Donc, la ligne polygonale tracée est fermée. \par
+       \begin{description}
+          \item[Pierre] : \con{les quatre côtés sont égaux, c'est donc bien un losange.} Pierre a raison.
+          \item[Ana] : \con{le quadrilatère possède quatre angles droits, c'est donc un rectangle}. Ana a tort.
+          \item[Karim] : \con{la figure possède quatre côtés, c'est donc bien un quadrilatère}. Karim a raison.
+          \item[Lucie] : \con{la figure est un quadrilatère à quatre côtés égaux, c'est donc un losange et il possède de plus au moins un angle droit, c'est un carré}. Lucie a raison.
+       \end{description}
+    \item 
+       \begin{enumerate}
+          \item Nous sommes dans uns situation de proportionnalité. Notons $s$ la longueur du segment recherché. \vskip-6mm
+             \Propor[Largeur=2.5cm,Stretch=1.7,Math,GrandeurA=Longueur du segment de départ en cm,GrandeurB=Longueur du côté du pentagone en cm,]{4/$\sqrt{10-2\sqrt5}$,$s$/7} \vskip-6mm
+             $$s =\dfrac{\Lg{4}\times\Lg{7}}{\sqrt{10-2\sqrt5}\Lg{}} \approx\Lg{11,9091}$$ 
+             \con{Pour construire un pentagone de côté \Lg{7}, il faut commencer par tracer un segment $[RS]$ d'environ \Lg{11,9}.}
+          \item On obtient la figure suivante :
+             \begin{center}
+                \begin{pspicture}(-6,-6)(6,6)
+                   \rput(0,0){\PstPentagon[unit=5.95,linecolor=violet]}
+                   \psset{linecolor=gray}
+                      \pstGeonode[PosAngle={-90,180,0,-90,90,-90},PointSymbol=x,dotscale=2]{O}(-5.95,0){R}(5.95,0){S}(2.975,0){I}(0,5.95){L}(-3.68,0){D}
+                      \pstLineAB{R}{S}
+                      \pstCircleOA{O}{S}
+                      \pstLineAB{O}{L}
+                      \pstSegmentMark[MarkAngle=90]{O}{I}
+                      \pstSegmentMark[MarkAngle=90]{I}{S}
+                      \pstRightAngle{S}{O}{L}
+                      \pstArcOAB{I}{L}{D}
+                      \pstLineAB[linestyle=dashed]{L}{D}  
+                \end{pspicture}
+             \end{center}
+          \item La partie de la boucle de répétition dessine une branche (constituée de deux segments) de l'étoile. Le nombre de répétition est donc de 4. \par
+             \begin{minipage}{9cm}
+                On considère, par exemple, la première branche. \par
+                -- Arrivé en $C$, le script nous indique de tourner à droite d'un angle de 72°. L'angle $\widehat{ACB}$ lui est opposé par le somment il mesure donc aussi 72°. \par
+                -- $BA =BC$, le triangle $ABC$ est isocèle en $B$. Par conséquent, ses angles à la base sont égaux, on a donc $\widehat{CAB} =\widehat{ACB} =72°$. \par
+                -- La somme des angles d'un triangle faisant 180°, l'angle $\widehat{ABC}$ mesure $180°-2\times72° =36°$. \par
+                -- Enfin, l'angle recherché dans la ligne 9 est l'angle supplémentaire à $\widehat{ABC}$, il mesure $180°-36° =144°$.
+             \end{minipage}
+             \qquad
+             \begin{minipage}{6cm}
+                \begin{pspicture}(-5,-1)(1,4)
+                   \pstGeonode[PointSymbol=none,PosAngle={-50,-145,25}]{B}(4;180){A}(4;144){C}
+                   \pstGeonode[PointSymbol=none,PointName=none](1,0){D}(5;144){E}(-2.92,3.33){F}
+                   \pstLineAB[nodesepA=-0.7]{->}{A}{D}
+                   \pstLineAB[nodesepA=-0.5]{A}{F}
+                   \pstLineAB{->}{B}{E}
+                   \pstMarkAngle[arrows=->]{D}{B}{C}{?}
+                   \pstMarkAngle[arrows=<-]{F}{C}{E}{72°}
+                   \rput(-2,-0.4){80 pas}
+                   \pstMarkAngle{A}{C}{B}{\gray 72°}
+                   \pstMarkAngle{B}{A}{C}{\gray 72°}
+                   \pstMarkAngle{C}{B}{A}{\gray 36°}
+                   \pstSegmentMark[MarkAngle=90]{A}{B}
+                   \pstSegmentMark[MarkAngle=90]{C}{B}
+                \end{pspicture} 
+             \end{minipage} \par \medskip
+             Finalement, les lignes 7 et 9 peuvent être complétées ainsi : \par \smallskip
+             \con{Ligne 7 : \begin{Scratch}[Echelle=0.8]Place Repeter("5");\end{Scratch} \; et ligne 9 : \begin{Scratch}[Echelle=0.8] Place Tournerg("144");\end{Scratch}.}
+          \item Cette étoile comporte 5 fois 2 segments de 80 pas, soit $10\times80$ pas. \par
+             \con{Le périmètre de l'étoile est de 800 pas.}
+          \item Doubler le périmètre revient à faire un agrandissement de la figure d'un facteur 2. Les longueurs sont alors multipliées par 2 mais les angles restent inchangés. On obtient donc les lignes 8 à 11 suivantes :
+             \begin{center}
+                \begin{center}
+                   \begin{Scratch}[Echelle=0.8]
+                      Place Avancer("160");
+                      Place Tournerg("144");
+                      Place Avancer("160");
+                      Place Tournerd("72");
+                   \end{Scratch}
+                \end{center} 
+             \end{center}
+       \end{enumerate}
+ \end{enumerate}

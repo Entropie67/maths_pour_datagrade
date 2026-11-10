@@ -1,0 +1,69 @@
+
+\medskip
+
+Pour se promener le long d'un canal, deux sociétés proposent une location de bateaux électriques.
+
+Les bateaux se louent pour un nombre entier d'heures.
+
+\medskip
+
+\begin{enumerate}
+\item \textbf{Étude du tarif proposé par la société A}
+
+\medskip
+
+Pour la société A, le prix à payer en fonction de la durée de location en heure est donné par ce graphique.
+
+\begin{center}
+\textbf{Prix payé pour la location d'un bateau en fonction de la durée de la location}
+
+\medskip
+
+\psset{xunit=1.4cm,yunit=0.028cm,arrowsize=2pt 3}
+\begin{pspicture}(-0.5,-20)(8.25,295)
+\multido{\n=0.0+0.5}{17}{\psline[linewidth=0.6pt](\n,0)(\n,280)}
+\multido{\n=0+10}{29}{\psline[linewidth=0.6pt](0,\n)(8.25,\n)}
+\psaxes[linewidth=1.25pt,Dy=50]{->}(0,0)(0,0)(8.25,280)
+\psplot[linewidth=1.25pt,linecolor=blue,plotpoints=500]{0}{8.25}{30 x mul}
+\uput[d](6.5,-15){Durée de location (en heures)}
+\uput[r](0,290){Prix payé (en \euro)}
+\rput{31}(8,250){Société A}
+\end{pspicture}
+\end{center}
+
+Répondre aux questions ci-dessous à l'aide du graphique.
+
+Aucune justification n'est attendue pour les questions a. et b.
+	\begin{enumerate}
+		\item Quel prix va-t-on payer en louant un bateau pour 2 heures ?
+		\item On dispose d'un budget de $100$~\euro, combien d'heures entières peut-on louer un bateau ?
+		\item Expliquer pourquoi le prix est proportionnel à la durée de location.
+		\item En déduire à l'aide d'un calcul, le prix à payer pour une durée de location de $10$~heures.
+	\end{enumerate}
+\item \textbf{Étude du tarif proposé par la société B}
+
+\medskip
+
+La société B propose le tarif suivant : $60$~\euro{} de frais de dossier plus $15$~\euro{} par heure de location.
+	\begin{enumerate}
+		\item Montrer qu'en louant un bateau pour une durée de 2 heures, le prix à payer sera de $90$~\euro.
+		\item On désigne par $x$ le nombre d'heures de location. On appelle $f$ la fonction qui, au nombre d'heures de location, associe le prix, en euro, avec le tarif proposé par la société B.
+
+On admet que $f$ est définie par : $f(x) = 15x + 60$.
+
+Sur le graphique, tracer la courbe représentative de la fonction $f$.
+		\item Le prix payé est-il proportionnel à la durée de location ?
+	\end{enumerate}
+\item \textbf{Comparaison des deux tarifs}
+	\begin{enumerate}
+		\item On souhaite louer un bateau pour une durée de 3 heures.
+
+Quelle société doit-on choisir pour avoir le tarif le moins cher ?
+
+Quel prix va-t-on payer dans ce cas ?
+		\item Pour quelle durée de location le prix payé est-il identique pour les deux sociétés ?
+	\end{enumerate}
+\end{enumerate}
+
+
+

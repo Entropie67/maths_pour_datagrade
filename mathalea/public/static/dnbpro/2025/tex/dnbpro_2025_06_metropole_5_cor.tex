@@ -1,0 +1,36 @@
+
+\medskip
+
+Dans un avion, les valises sont placées en cabine ou en soute. Les compagnies aériennes appliquent un surcoût aux valises en cabine qui pèsent plus de 15 kilogrammes.
+Le programme scratch ci-dessous permet de calculer la masse en trop et le montant du surcoût en euros demandé aux clients pour conserver leur valise de plus de 15 kilogrammes en cabine.
+
+\medskip
+
+\begin{enumerate}
+\item %À l'aide de la ligne 5, donner le prix en euros (\euro) du kilogramme supplémentaire.
+On lit à la ligne 5 que tout kilo au dessus des 15 premiers kilos est facturé 12,30~\euro. 
+\item %Indiquer ce que permet de calculer la ligne 4.
+La ligne 4 calcule le montant à payer pour les kilos au delà de 15.
+\item %Calculer la valeur du montant affiché par le programme pour une valise de $17,50$~kg.
+On a $(17,50 - 15) \times 12,30 = 30,75$~(\euro)
+\end{enumerate}
+
+%En soute, un surcoût est appliqué aux valises qui pèsent plus de $23$~kg.
+%
+%Chaque kilogramme supplémentaire coûte $10,70$~\euro.
+
+\begin{enumerate}[resume]
+\item %Indiquer, sur la copie, le numéro des deux lignes à modifier pour adapter le programme à une valise en soute.
+Il faut modifier les lignes 3 et 4.
+\item %Écrire, sur la copie, les deux lignes avec les valeurs modifiées pour obtenir le prix à payer pour une valise en soute pesant $23$ kg.
+
+\begin{scratch}[numblocks,scale=0.8,start=3]
+\blockvariable{mettre \selectmenu{$x$} à \ovaloperator{\ovalvariable{masse} -\ovalnum{23}}}
+\blockvariable{mettre \selectmenu{résultat} à \ovaloperator{\ovalvariable{x} *\ovalnum{10,70}}}
+\end{scratch}
+
+\end{enumerate}
+
+
+
+

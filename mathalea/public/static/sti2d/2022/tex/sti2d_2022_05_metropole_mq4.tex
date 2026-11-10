@@ -1,0 +1,37 @@
+
+\medskip
+
+On considère la fonction $f$ définie sur $\R$ par $f(x) = a + b\text{e}^{x}$, où $a$ et $b$ sont deux nombres réels.
+
+On considère la fonction $g$ définie sur $\R$ par$g(x) = x^2 - 4x - 1$.
+
+On note $\mathcal{C}_f$ et $\mathcal{C}_g$ les courbes représentatives des fonctions $f$ et $g$, tracées dans le repère orthogonal ci-dessous.
+
+\begin{center}
+\psset{xunit=1cm,yunit=0.2cm}
+\begin{pspicture*}(-4,-12)(3.2,16)
+\psaxes[linewidth=1.25pt,labelFontSize=\scriptstyle,Dy=5]{->}(0,0)(-4,-12)(3.2,16)
+\psplot[plotpoints=2000,linewidth=1.25pt,linecolor=red,linestyle=dashed]{-4}{3}{x dup mul x 4 mul sub 1 sub}
+\psplot[plotpoints=2000,linewidth=1.25pt,linecolor=blue]{-4}{3}{3 2.71828 x exp 4 mul sub}
+\uput[dl](0,-1){\small A}\uput[r](-2.25,15){\small \red $\mathcal{C}_g$}
+\uput[u](-3.8,3){\small \blue $\mathcal{C}_f$}
+\psplot[plotpoints=2000,linewidth=1pt]{-4}{3}{4 x mul 1 add neg}
+\uput[d](-3.8,15){\small $T$}
+\end{pspicture*}
+\end{center}
+
+\begin{enumerate}
+\item On admet que les deux courbes $\mathcal{C}_f$ et $\mathcal{C}_g$ ont un unique point en commun, noté A d'abscisse 0.
+
+Calculer $g(0)$, puis en déduire que $a + b= - 1$.
+
+\item On admet que les deux courbes $\mathcal{C}_f$ et $\mathcal{C}_g$ ont la même tangente $T$ au point A.
+	\begin{enumerate}
+		\item Donner, pour tout réel $x$, une expression de $g'(x)$ puis calculer $g'(0)$.
+		
+		\item En déduire la valeur de $b$, puis celle de $a$.
+	\end{enumerate}
+\end{enumerate}
+
+\bigskip
+

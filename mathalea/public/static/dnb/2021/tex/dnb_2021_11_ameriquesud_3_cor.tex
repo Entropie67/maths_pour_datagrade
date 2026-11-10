@@ -1,0 +1,67 @@
+
+\medskip
+
+Un club de handball souhaite commander des maillots avec le nom du club inscrit dessus. À l'issue de sa commande, le club veut recevoir exactement $350$~maillots.
+
+Après quelques recherches, deux sites internet ont été sélectionnés:
+
+\setlength\parindent{1cm}
+\begin{itemize}
+\item[$\bullet~~$] sur le site A : les maillots sont vendus à 12~\euro{} l'unité;
+\item[$\bullet~~$] sur le site B : les maillots sont vendus à 13~\euro{} l'unité, avec la promotion :
+
+\begin{center}\og 10 maillots offerts pour 100 achetés \fg.\end{center}
+\end{itemize}
+\setlength\parindent{0cm}
+
+%\medskip
+
+\begin{enumerate}
+\item $12\times 350=\np{4200}$ donc le montant, exprimé en euro, de la commande du club envisagée sur le site A est de \np{4200}.
+
+\item Un tableur ci-dessous présente des exemples de dépenses en fonction du nombre de maillots payés sur le site B. Voici une copie d'écran de ce tableur.
+
+\begin{center}
+\begin{tabularx}{\linewidth}{|c|>{\small}p{4cm}|*{8}{>{\centering \arraybackslash}X|}}\hline
+ &\hfill{}A\hfill~	&B	&C	&D	&E		& F	& G	& H	&I\\ \hline 
+1&Nombre de maillots payés		&50 &100&150&200 &250	&300&350&400\\ \hline
+2&Nombre de maillots offerts	&0	&10	&10	&20	&20	&30	&30	&40\\ \hline
+3&Nombre total de maillots reçus&50 &110 &160	&220	&270&330&380 &440\\ \hline
+4&Coût total (en \euro)			&650&\np{1300}&\np{1950}&\np{2600}&\np{3250}&\np{3900}&\np{4550}& \np{5200}\\ \hline
+\end{tabularx}
+\end{center}
+
+	\begin{enumerate}
+		\item À la lecture de ce tableur, le trésorier du club affirme que le montant de la commande sera compris entre \np{3900}~\euro{} et \np{4550}~\euro. %Son affirmation est-elle vraie ?
+
+La livraison de 330 maillots coûte \np{3900}~\euro{} et la livraison de 380 maillots coûte \np{4550}~\euro; donc le montant de la commande de 350 maillots sera compris entre \np{3900}~\euro{} et \np{4550}~\euro. 
+		
+		\item Sachant que les lignes 1 et 2 du tableur ont été complétées auparavant, la formule qu'on a saisie ensuite dans la cellule B3 avant de l'étirer jusqu'à la cellule I3, pour remplir la ligne 3 du tableur est: \fbox{\texttt{= B1 + B2}}
+		
+		\item% Le coût total exprimé en euro est-il proportionnel au nombre de maillots reçus ?
+Pour 650~\euro, on a 50 maillots. Pour le triple, c'est-à-dire \np{1950}~\euro, on a 160 maillots, soit plus du triple. Donc le coût total exprimé en euro n'est pas proportionnel au nombre de maillots reçus.		
+		
+	\end{enumerate}
+	
+\item %Sur quel site le club doit-il passer sa commande pour recevoir exactement $350$~maillots, tout en payant le moins cher ?
+\begin{list}{\textbullet}{Pour recevoir exactement 350 maillots:}
+\item Sur le site A, la commande de 350 maillots coûte \np{4200}~\euro.
+\item Sur le site B, comme on va commander entre 300 et 400 maillots, on aura 30 maillots offerts. Il en reste 320 à payer, ce qui va coûter $320\times 13$ soit \np{4160}~\euro.
+\end{list}
+
+Le club doit passer sa commande sur le site B pour recevoir exactement $350$~maillots, tout en payant le moins cher.
+
+\item Le club souhaite que ces $350$~maillots soient répartis entre des maillots noirs et des maillots rouges dans le ratio 5 : 2.
+
+$5+2=7$ et $\dfrac{350}{7}=50$; $50\times 5=250$ et $50\times 2=100$
+
+Il faut donc commander 250 maillots noirs et 100 maillots rouges.
+
+\item Le club a aussi commandé des gourdes. Les cartons reçus sont indiscernables tant par leurs dimensions que par leur forme. 
+Il y a 4 cartons de gourdes blanches et 3 cartons de gourdes bleues.
+On ouvre un carton au hasard. 
+
+Il y a 3 cartons de gourdes bleues sur un total de 7 donc la probabilité que le carton ouvert au hasard contienne des gourdes bleues est de $\dfrac{3}{7}$.
+\end{enumerate}
+
+

@@ -1,0 +1,39 @@
+Soit $f$ la fonction définie sur $\left ]0\;;\;+\infty\strut\right [$ par $f(x)=x\,\ln(x)-1$.
+
+$x\, \ln (x) = 1 \iff x\, \ln (x) - 1 = 0 \iff f(x)=0$
+
+\begin{list}{\textbullet}{}
+	\item La fonction $f$ est dérivable et $f'(x)=1\times \ln(x) + x\times \dfrac{1}{x}-0=\ln(x)+1$.
+	\item $f'(x)>0 \iff \ln(x) +1>0 \iff \ln(x)>-1 \iff x>\e^{-1}$
+	\item $\ds\lim_{x\to 0 \atop x>0} x\,\ln(x)=0$ donc $\ds\lim_{x\to 0 \atop x>0} f(x)=-1$
+	\item $\ds\lim_{x\to +\infty} x =+\infty$ et $\ds\lim_{x\to +\infty} \ln(x)=+\infty$ donc $\ds\lim_{x\to +\infty} f(x)=+\infty$
+	\item  $f(\e^{-1})=\e^{-1}\,\ln(\e^{-1})-1 = -\e^{-1}-1<0$
+\end{list}
+
+D'où le tableau de variation de $f$:
+
+\begin{center}
+	{\renewcommand{\arraystretch}{1.1}
+		\psset{nodesep=3pt,arrowsize=2pt 3}  % paramètres
+		\def\esp{\hspace*{2cm}}% pour modifier la largeur du tableau
+		\def\hauteur{0pt}% mettre au moins 20pt pour augmenter la hauteur
+		$\begin{array}{|c| l  *4{c}|}
+			\hline
+			x & 0 & \esp & \e^{-1} & \esp & +\infty \\
+			\hline
+			f'(x) & \vline\;\vline &  \pmb{-} & \vline\hspace{-2.7pt}0 & \pmb{+} & \\  
+			\hline
+			& \vline\;\vline~\Rnode{max1}{-1}  &  &  &  & \Rnode{max2}{+\infty} \\
+			f(x) &\vline\;\vline &  & & &  \rule{0pt}{\hauteur} \\
+			& \vline\;\vline & &   \Rnode{min}{-\e^{-1}-1} & & \rule{0pt}{\hauteur}
+			\ncline{->}{max1}{min} \ncline{->}{min}{max2}\\
+			\hline
+		\end{array}$
+	}
+\end{center}	
+
+Sur l'intervalle $\left ]0\;;\;\e^{-1}\strut\right [$, la fonction $f$ est négative, donc l'équation $f(x)=0$ n'a pas de solution.
+
+Sur l'intervalle $\left ]\e^{-1}\;;\; +\infty\strut\right [$, la fonction $f$, continue et strictement croissante, passe du négatif au positif: d'après le corollaire du théorème des valeurs intermédiaires, l'équation $f(x)=0$ admet une solution unique.
+
+\hfill\textbf{Affirmation fausse}

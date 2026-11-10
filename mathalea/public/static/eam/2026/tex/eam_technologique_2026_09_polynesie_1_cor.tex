@@ -1,0 +1,47 @@
+%Dans une station balnéaire on a interrogé 600 touristes, français ou étrangers, sur leur séjour.
+%Tous ont répondu. Les effectifs sont reportés dans le tableau suivant :
+%
+%\begin{tblr}	{
+%    colspec = {*5{X[c,m]}},
+%	  hline{2-Z},
+%    vline{2-Z},
+%    vline{1} = {2-4}{},
+%    hline{1} = {2-5}{},
+%	}
+%	& Camping 	& Location 	& Hôtel 	& \textbf{Total} 	\\
+%Français 			& 232 		& 116 		& 12 	& 360 	\\
+%Étrangers 			& 96 		& 96 		& 48 	& 240 	\\
+%\textbf{Total} 		& 328 		& 212 		& 60 	& 600 	\\
+%\end{tblr}
+%
+%Les réponses des questions suivantes seront données sous forme de fractions non nécessairement simplifiées.
+%
+%On choisit une personne au hasard. On suppose que toutes les personnes ont la même probabilité d’être choisies.
+%
+%On considère les événements :
+%\begin{itemize}
+%\item $E$ : « La personne choisie est un touriste étranger ».
+%\item $C$ : « La personne choisie séjourne dans un camping ».
+%\end{itemize}
+%
+Puisque la personne est choisie au hasard, on est dans une situation d'équiprobabilité.
+\begin{enumerate}
+  \item 
+  %Donner la probabilité $P\left({C}\right)$ de l’événement $C$.
+  Il y a 600 touristes, dont 328 séjournent dans un camping, donc \mbox{$P(C)=\dfrac{328}{600}=\dfrac{41}{75}$}
+  \item 
+  %Donner la probabilité $P\left(\overline{C}\right)$ où $\overline{C}$ désigne l’événement contraire de $C$.
+  $\overline{C}$ est l’événement contraire de $C$, donc \mbox{$P(\overline{C})=1-P(C)=\dfrac{600}{600}-\dfrac{328}{600}=\dfrac{272}{600}=\dfrac{34}{75}$}.
+  \item 
+  %Donner la probabilité de l'événement : « La personne interrogée est un touriste étranger et séjourne dans un camping ».
+  On cherche \mbox{$P(E\cap C)$}. Il y a 600 personnes, dont 96 sont à la fois des touristes étrangers et séjournent dans un camping.
+  
+  Donc \mbox{$P(E\cap C)=\dfrac{96}{600}=\dfrac{4}{25}$}.
+  \item
+%  Sachant que la personne choisie est en location, donner la probabilité qu'elle soit un touriste français.
+   Il y a 212 personnes qui sont en location, dont 116 français. Donc la probabilité que la personne choisie, sachant qu'elle est en location, soit française, est \mbox{$\dfrac{116}{212}=\dfrac{29}{53}$}.
+\end{enumerate}
+
+
+\needspace{10\baselineskip}
+% saut de page si moins de 10 lignes disponibles

@@ -1,0 +1,62 @@
+
+\vspace{0.25cm}
+
+Les deux programmes ci-dessous sont réalisés à l'aide du logiciel Scratch.
+
+\medskip
+
+\textbf{Programme A~~~~}
+\begin{scratch}%[num blocks,baseline=10]
+\blockinit{quand \greenflag est cliqué}
+\blockmove{demander \ovalnum{Saisir une valeur} et attendre}
+\blockvariable{mettre \selectmenu{x} à \ovalmove{réponse}}
+\blockvariable{mettre \selectmenu{x} à \ovaloperator{\ovalmove{x} * \ovalnum{6}}}
+\blocklook{Dire \ovaloperator{regrouper \ovalnum{Le résultat est} et \ovalmove{x}} pendant \ovalnum{3} secondes}
+\end{scratch}
+
+\bigskip
+
+\textbf{Programme B~~~~}
+\begin{scratch}[num blocks]
+\renewcommand*\numblock[1]{Ligne \no \the\numexpr#1~~}
+\blockinit{quand \greenflag est cliqué}
+\renewcommand*\numblock[1]{\the\numexpr#1~~}
+\blockmove{demander \ovalnum{Saisir une valeur} et attendre}
+\blockvariable{mettre \selectmenu{x} à \ovalmove{réponse}}
+\blockvariable{mettre \selectmenu{x} à \ovaloperator{\ovalmove{x} * \ovalnum{2}}}
+\blockvariable{mettre \selectmenu{x} à \ovaloperator{\ovalmove{x} + \ovalnum{26}}}
+\blocklook{Dire \ovaloperator{regrouper \ovalnum{Le résultat est} et \ovalmove{x}} pendant \ovalnum{3} secondes}
+\end{scratch}
+
+\begin{enumerate}
+\item  Le résultat affiché par le programme A si la valeur saisie est 5 est 30.
+
+\item La valeur 4 est saisie dans le programme B.
+
+$4\times 2 = 8$ (ligne 4)
+
+$8+26=34$ (ligne 5)
+
+Donc le résultat affiché par ce programme est 34.
+
+\item Les instructions des lignes 4 et 5 du programme B peuvent être remplacées par la ligne
+
+\begin{center}
+{\ovaloperator{\ovaloperator{\ovalmove{x} * \ovalnum{2}} + \ovalnum{26}}}
+\end{center}
+
+\item On note $x$ le nombre saisi. \\
+L'expression algébrique qui traduit le programme B est $2x+26$.\\
+L'expression algébrique qui traduit le programme A est $6x$.
+
+\item Un seul nombre conduit les deux programmes à afficher le même résultat; c'est le nombre $x$ tel que $6x=2x+26$.
+
+Cela équivaut à
+$6x-2x=26$ soit
+$4x=26$ soit
+$x=\dfrac{26}{4}$ soit
+$x=6,5$
+
+Le nombre $6,5$ conduit les deux programmes à afficher le même résultat.
+\end{enumerate}
+
