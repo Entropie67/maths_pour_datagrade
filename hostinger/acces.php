@@ -33,12 +33,25 @@ function axio_sign(string $secret, string $purpose, string $expires): string
     return substr(hash_hmac('sha256', $purpose . '|' . $expires, $secret), 0, 32);
 }
 
-/** Vérifie une valeur `<expiration>.<signature>` pour un usage donné. */
-function axio_valid(string $secret, string $purpose, string $value, int $skew = 0): bool
+/**
+ * Vérifie une valeur `<expiration>.<signature>` pour un usage donné.
+ * @return string '' si elle est valide, sinon le motif du refus : 'format', 'expire' ou 'signature'
+ */
+function axio_check(string $secret, string $purpose, string $value, int $skew = 0): string
 {
-    if (!preg_match('/^(\d{9,12})\.([0-9a-f]{32})$/', $value, $m)) return false;
-    if ((int) $m[1] + $skew < time()) return false;
-    return hash_equals(axio_sign($secret, $purpose, $m[1]), $m[2]);
+    if (!preg_match('/^(\d{9,12})\.([0-9a-f]{32})$/', $value, $m)) return 'format';
+    if (!hash_equals(axio_sign($secret, $purpose, $m[1]), $m[2])) return 'signature';
+    if ((int) $m[1] + $skew < time()) return 'expire';
+    return '';
+}
+
+/**
+ * Empreinte publique de la clé (six caractères) : permet de comparer la clé du
+ * site et celle de DataGrade sans jamais afficher ni l'une ni l'autre.
+ */
+function axio_fingerprint(string $secret): string
+{
+    return substr(hash('sha256', 'axiomaths-empreinte|' . $secret), 0, 6);
 }
 
 function axio_serve_app(): never
@@ -55,7 +68,8 @@ function axio_serve_app(): never
 if ($secret === '') axio_serve_app();
 
 $token = (string) ($_GET['dg'] ?? '');
-if ($token !== '' && axio_valid($secret, 'acces', $token, AXIO_TOKEN_SKEW)) {
+$tokenProblem = $token === '' ? 'absent' : axio_check($secret, 'acces', $token, AXIO_TOKEN_SKEW);
+if ($tokenProblem === '') {
     $expires = (string) (time() + AXIO_COOKIE_TTL);
     setcookie(AXIO_COOKIE, $expires . '.' . axio_sign($secret, 'cookie', $expires), [
         'expires'  => (int) $expires,
@@ -68,9 +82,18 @@ if ($token !== '' && axio_valid($secret, 'acces', $token, AXIO_TOKEN_SKEW)) {
 }
 
 $cookie = (string) ($_COOKIE[AXIO_COOKIE] ?? '');
-if ($cookie !== '' && axio_valid($secret, 'cookie', $cookie)) axio_serve_app();
+if ($cookie !== '' && axio_check($secret, 'cookie', $cookie) === '') axio_serve_app();
 
-// Refus : explication et retour vers DataGrade.
+// Refus : explication et retour vers DataGrade. Le motif aide à régler le
+// portier quand la page apparaît DANS DataGrade (clé non enregistrée, clés
+// différentes) ; il ne révèle rien de la clé.
+$motifs = [
+    'absent'    => 'aucun jeton reçu : DataGrade n\'a pas de clé du portier enregistrée, ou le lien ne vient pas de DataGrade',
+    'format'    => 'jeton illisible',
+    'signature' => 'jeton signé avec une autre clé : la clé enregistrée dans DataGrade et celle du site sont différentes',
+    'expire'    => 'jeton expiré : recharge la page DataGrade',
+];
+$motif = $motifs[$tokenProblem] ?? $tokenProblem;
 http_response_code(403);
 header('Content-Type: text/html; charset=utf-8');
 header('Cache-Control: no-store');
@@ -97,6 +120,8 @@ header('X-Robots-Tag: noindex');
   a.btn:hover { background: #6d28d9; }
   small { display: block; margin-top: 18px; color: #8b85a0; font-size: 12px; }
   small a { color: #7c3aed; }
+  .diag { font-size: 12.5px; color: #8b85a0; margin-top: 14px; }
+  .diag code { font-family: ui-monospace, monospace; color: #4c1d95; }
 </style>
 </head>
 <body>
@@ -106,9 +131,18 @@ header('X-Robots-Tag: noindex');
   <p>Les exercices de maths sont réservés aux élèves et aux professeurs de DataGrade.</p>
   <p>Élève : connecte-toi avec ton code et ouvre ta séance depuis la brique <strong>AxioMaths</strong>.
      Prof : passe par le menu <strong>AxioMaths</strong>.</p>
-  <a class="btn" href="https://datagrade.fr/">Aller sur DataGrade</a>
+  <a class="btn" id="aller" href="https://datagrade.fr/" target="_top">Aller sur DataGrade</a>
+  <p class="diag" id="diag-cadre" hidden>Cette page s'affiche dans DataGrade : le portier a refusé l'accès. Prof administrateur, vérifie la clé du portier en bas de la page AxioMaths (bouton « Tester le portier »).</p>
+  <p class="diag">Motif : <?= htmlspecialchars($motif, ENT_QUOTES, 'UTF-8') ?>.<br>Empreinte de la clé du site : <code><?= axio_fingerprint($secret) ?></code></p>
   <small>AxioMaths est propulsé par <a href="https://coopmaths.fr/alea/">MathALÉA</a> (CoopMaths, AGPL-3.0) ·
          <a href="/alea/deploiement.json">sources de cette version</a></small>
 </main>
+<script>
+  // Dans le cadre de DataGrade, « Aller sur DataGrade » n'a pas de sens : on l'explique à la place.
+  if (window.top !== window.self) {
+    document.getElementById('aller').hidden = true;
+    document.getElementById('diag-cadre').hidden = false;
+  }
+</script>
 </body>
 </html>
