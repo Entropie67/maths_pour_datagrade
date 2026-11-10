@@ -26,6 +26,7 @@
     enregistrePreferenceClavierReduit,
     lisPreferenceClavierReduit,
   } from './lib/modeClavier'
+  import { gardeChampVisible } from './lib/champVisible'
   import { latexMatriceAvecPlaceholders } from './lib/matrix'
   import {
     enregistreTouchesPersonnalisees,
@@ -177,6 +178,11 @@
       currentPageIndex = 0
     }
     isVisible = value.isVisible
+    // AxioMaths (DataGrade) : le champ en cours de saisie reste visible
+    // au-dessus du clavier (cf. lib/champVisible.ts).
+    if (value.isVisible && value.idMathField !== '') {
+      gardeChampVisible(value.idMathField)
+    }
     isInLine = value.isInLine
     pageType = value.alphanumericLayout
     myKeyboard.empty()

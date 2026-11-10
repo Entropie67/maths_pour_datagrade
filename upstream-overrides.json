@@ -86,5 +86,9 @@
   "src/lib/stores/banquesIntegrees.test.ts": {
     "sha256": "97af5f972939aaefe4199f267a187a075f07c5bcca323e300b63ca2f71af419f",
     "reason": "Banque intégrée Annales TeSciA (AORES) pour AxioMaths"
+  },
+  "src/components/keyboard/Keyboard.svelte": {
+    "sha256": "720969e7dc7b9ae30a866abf1a05b736780cc495c0b91def7cee3aaedf5f16b7",
+    "reason": "AxioMaths : champ en cours de saisie gardé visible au-dessus du clavier virtuel"
   }
 }
